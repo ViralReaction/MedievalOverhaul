@@ -35,10 +35,9 @@ namespace MedievalOverhaul.Patches
                 }
                 if (recipeDef.HasModExtension<RecipeExtension_Timber>())
                 {
-                    Thing thing = null;
                     for (int i = 0; i < ingredients.Count; i++)
                     {
-                        thing = ingredients[i];
+                        Thing thing = ingredients[i];
                         if (thing?.def?.butcherProducts?.Count <= 0)
                         {
                             Log.Error("Attempting to butcher object without butcherProducts. Please report this to the authers of " + ingredients[i].ContentSource.Name + ". " + "RecipeDef: " + recipeDef + " " +  " Ingredient: " + ingredients[i].def);
@@ -50,7 +49,7 @@ namespace MedievalOverhaul.Patches
                             int num = thing.stackCount * thingDefCountClass.count;
                             if (num > 2)
                             {
-                                num = num - 2;
+                                num -= 2;
                             }
                             ThingDef butcherDef = thingDefCountClass.thingDef;
                             Thing butcherThing = ThingMaker.MakeThing(butcherDef, null);

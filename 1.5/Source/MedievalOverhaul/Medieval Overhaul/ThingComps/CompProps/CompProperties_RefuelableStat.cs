@@ -100,7 +100,6 @@ namespace MedievalOverhaul
             {
                 yield return text;
             }
-            IEnumerator<string> enumerator = null;
             if (this.destroyOnNoFuel && this.initialFuelPercent <= 0f)
             {
                 yield return "Refuelable component has destroyOnNoFuel, but initialFuelPercent <= 0";
@@ -117,7 +116,6 @@ namespace MedievalOverhaul
             {
                 yield return statDrawEntry;
             }
-            IEnumerator<StatDrawEntry> enumerator = null;
             if (((ThingDef)req.Def).building.IsTurret)
             {
                 yield return new StatDrawEntry(StatCategoryDefOf.Building, "ShotsBeforeRearm".Translate(), ((int)this.fuelCapacity).ToString(), "ShotsBeforeRearmExplanation".Translate(), 3171, null, null, false, false);

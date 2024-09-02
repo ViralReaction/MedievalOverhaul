@@ -47,15 +47,13 @@ namespace MedievalOverhaul
                     yield return floatMenuOption;
                 }
             }
-            IEnumerator<ICommunicable> enumerator = null;
             foreach (FloatMenuOption floatMenuOption2 in base.GetFloatMenuOptions(myPawn))
             {
                 yield return floatMenuOption2;
             }
-            IEnumerator<FloatMenuOption> enumerator2 = null;
             yield break;
         }
-        private FloatMenuOption GetFailureReason(Pawn myPawn)
+        private new FloatMenuOption GetFailureReason(Pawn myPawn)
         {
             if (this.facilities.LinkedFacilitiesListForReading.Count < extension.linkablesNeeded)
             {
@@ -88,14 +86,14 @@ namespace MedievalOverhaul
             }
             return null;
         }
-        private void AnnounceTradeShips()
+        private new void AnnounceTradeShips()
         {
             foreach (TradeShip tradeShip in from s in base.Map.passingShipManager.passingShips.OfType<TradeShip>()
                                             where !s.WasAnnounced
                                             select s)
             {
                 TaggedString baseLetterText = "TraderArrival".Translate(tradeShip.name, tradeShip.def.label, (tradeShip.Faction == null) ? "TraderArrivalNoFaction".Translate() : "TraderArrivalFromFaction".Translate(tradeShip.Faction.Named("FACTION")));
-                IncidentParms incidentParms = new IncidentParms();
+                IncidentParms incidentParms = new ();
                 incidentParms.target = base.Map;
                 incidentParms.traderKind = tradeShip.TraderKind;
                 IncidentWorker.SendIncidentLetter(tradeShip.def.LabelCap, baseLetterText, LetterDefOf.PositiveEvent, incidentParms, LookTargets.Invalid, null, Array.Empty<NamedArgument>());

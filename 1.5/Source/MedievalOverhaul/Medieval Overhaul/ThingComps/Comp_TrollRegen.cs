@@ -20,34 +20,18 @@ namespace MedievalOverhaul
             {
                 fireFlag = true;
             }
-            if (this.parent.IsHashIntervalTick(Props.tickInterval) && !fireFlag)
+            if (this.parent.IsHashIntervalTick(Props.tickInterval) && !fireFlag && this.parent is Pawn pawn && pawn.health?.hediffSet.hediffs is { Count: > 0 } hediffs)
             {
-                Pawn pawn = this.parent as Pawn;
-                if (pawn.health != null)
+                var injuryList = hediffs.OfType<Hediff_Injury>().ToList();
+                if (injuryList.Count > 0)
                 {
-                    List<Hediff_Injury> injuryList = new List<Hediff_Injury>();
-                    List<Hediff> injuryCheck = pawn.health.hediffSet.hediffs;
-                    for (int i = 0; i < injuryCheck.Count; i++)
-                    {
-                        Hediff_Injury injury = injuryCheck[i] as Hediff_Injury;
-                        if (injury != null)
-                        {
-                            injuryList.Add(injury);
-                        }
-                    }
-                    if (injuryList.Count > 0)
-                    {
-                        Hediff_Injury hurt = injuryList.RandomElement();
-                        hurt.Severity = hurt.Severity - Props.healAmount;
-                    }
+                    var hurt = injuryList.RandomElement();
+                    hurt.Severity -= Props.healAmount;
                 }
             }
-            if (this.parent.IsHashIntervalTick(Props.tickRegenBurn) && fireFlag)
+            if (this.parent.IsHashIntervalTick(Props.tickRegenBurn) && fireFlag && !this.parent.HasAttachment(ThingDefOf.Fire))
             {
-                if (!this.parent.HasAttachment(ThingDefOf.Fire))
-                { 
-                    fireFlag = false;
-                }
+                fireFlag = false;
             }
         }
     }

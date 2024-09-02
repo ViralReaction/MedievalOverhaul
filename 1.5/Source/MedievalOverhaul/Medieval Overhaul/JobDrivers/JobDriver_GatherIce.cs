@@ -26,7 +26,7 @@ namespace MedievalOverhaul
 
         public override IEnumerable<Toil> MakeNewToils()
         {
-            this.FailOn(() => (!job.ignoreDesignations && base.Map.designationManager.DesignationAt(base.TargetLocA, DesDef) == null) ? true : false);
+            this.FailOn(() => !job.ignoreDesignations && base.Map.designationManager.DesignationAt(base.TargetLocA, DesDef) == null);
             yield return Toils_Goto.GotoCell(TargetIndex.A, PathEndMode.Touch);
             Toil doWork = new Toil();
             doWork.initAction = delegate
@@ -37,7 +37,7 @@ namespace MedievalOverhaul
             {
                 float num = ((SpeedStat == null) ? 1f : StatExtension.GetStatValue((Thing)doWork.actor, SpeedStat, true));
                 workLeft -= num;
-                if (doWork.actor.skills != null)
+                if (doWork.actor.skills is null)
                 {
                     doWork.actor.skills.Learn(SkillDefOf.Mining, 0.03f);
                 }
@@ -79,7 +79,7 @@ namespace MedievalOverhaul
             Scribe_Values.Look<float>(ref this.workLeft, "workLeft", 0f, false);
         }
 
-        private float workLeft = -1000f;
+        private new float workLeft = -1000f;
 
         protected new bool clearSnow;
     }

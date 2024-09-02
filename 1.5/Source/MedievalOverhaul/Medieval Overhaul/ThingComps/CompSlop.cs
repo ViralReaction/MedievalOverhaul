@@ -8,7 +8,7 @@ namespace MedievalOverhaul
 {
 	public class CompSlop : ThingComp
 	{
-        public List<ThingDef> ingredients = new List<ThingDef>();
+        public List<ThingDef> ingredients = [];
         public CompProperties_Slop Props => (CompProperties_Slop)props;
         public override void PostExposeData()
         {
@@ -16,12 +16,12 @@ namespace MedievalOverhaul
             Scribe_Collections.Look<ThingDef>(ref this.ingredients, "ingredients", LookMode.Def, Array.Empty<object>());
             if (Scribe.mode == LoadSaveMode.PostLoadInit && this.ingredients == null)
             {
-                this.ingredients = new List<ThingDef>();
+                this.ingredients = [];
             }
         }
         public string GetIngredientsString(bool includeMergeCompatibility, out bool hasMergeCompatibilityIngredients)
         {
-            StringBuilder stringBuilder = new StringBuilder();
+            StringBuilder stringBuilder = new ();
             hasMergeCompatibilityIngredients = false;
             for (int i = 0; i < this.ingredients.Count; i++)
             {

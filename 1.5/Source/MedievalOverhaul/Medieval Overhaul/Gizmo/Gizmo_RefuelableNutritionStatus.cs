@@ -24,7 +24,7 @@ namespace MedievalOverhaul
 
         public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
         {
-            Rect overRect = new Rect(topLeft.x, topLeft.y, this.GetWidth(maxWidth), 75f);
+            Rect overRect = new (topLeft.x, topLeft.y, this.GetWidth(maxWidth), 75f);
             Find.WindowStack.ImmediateWindow(1523289473, overRect, WindowLayer.GameUI, delegate
             {
                 Rect rect2;
@@ -59,6 +59,5 @@ namespace MedievalOverhaul
 
         private static readonly Texture2D TargetLevelArrow = ContentFinder<Texture2D>.Get("UI/Misc/BarInstantMarkerRotated", true);
 
-        private const float ArrowScale = 0.5f;
     }
 }

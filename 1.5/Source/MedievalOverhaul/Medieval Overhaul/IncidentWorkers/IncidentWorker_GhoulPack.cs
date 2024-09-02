@@ -8,12 +8,6 @@ namespace MedievalOverhaul
 {
     public class IncidentWorker_GhoulPack : IncidentWorker
     {
-        private const float PointsFactor = 1f;
-
-        private const int AnimalsStayDurationMin = 60000;
-
-        private const int AnimalsStayDurationMax = 120000;
-
         public override bool CanFireNowSub(IncidentParms parms)
         {
             if (!base.CanFireNowSub(parms))
@@ -21,8 +15,7 @@ namespace MedievalOverhaul
                 return false;
             }
             Map map = (Map)parms.target;
-            IntVec3 result;
-            return RCellFinder.TryFindRandomPawnEntryCell(out result, map, CellFinder.EdgeRoadChance_Animal);
+            return RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 result, map, CellFinder.EdgeRoadChance_Animal);
         }
 
         public override bool TryExecuteWorker(IncidentParms parms)

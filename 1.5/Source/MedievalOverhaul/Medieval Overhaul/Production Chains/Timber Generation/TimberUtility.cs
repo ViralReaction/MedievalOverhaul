@@ -15,12 +15,12 @@ namespace MedievalOverhaul
 {
     public static class TimberUtility
     {
-        public static List<ThingDef> AllTreesForGenerator = new List<ThingDef>();
-        public static List<ThingDef> AllLeatheredAnimals = new List<ThingDef>();
-        public static List<ThingDef> AllButchered = new List<ThingDef>();
-        public static List<ThingDef> AllProductSpawner = new List<ThingDef>();
-        public static Dictionary<ThingDef, ThingDef> WoodDefsSeen = new Dictionary<ThingDef, ThingDef>();
-        public static List<ThingDef> AllPlanks = new List<ThingDef>();
+        public static List<ThingDef> AllTreesForGenerator = [];
+        public static List<ThingDef> AllLeatheredAnimals = [];
+        public static List<ThingDef> AllButchered = [];
+        public static List<ThingDef> AllProductSpawner = [];
+        public static Dictionary<ThingDef, ThingDef> WoodDefsSeen = [];
+        public static List<ThingDef> AllPlanks = [];
         public static void MakeListOfTrees()
         {
             if (MedievalOverhaulSettings.settings.woodChain)
@@ -54,14 +54,11 @@ namespace MedievalOverhaul
         {
             if (!WoodDefsSeen.ContainsKey(tree))
             {
-                log.descriptionHyperlinks = log.descriptionHyperlinks ?? new List<DefHyperlink>();
+                log.descriptionHyperlinks ??= [];
                 log.descriptionHyperlinks.Add(new DefHyperlink { def = wood });
                 log.modContentPack = Utility.myContentPack;
-                ThingFilter filter = new ThingFilter();
-                List<ThingDef> list = new List<ThingDef>
-                {
-                    { log }
-                };
+                ThingFilter filter = new ();
+                List<ThingDef> list = [log];
                 AccessTools.Field(typeof(ThingFilter), "thingDefs").SetValue(filter, list);
                 if (!WoodDefsSeen.ContainsKey(wood))
                 {
@@ -70,16 +67,16 @@ namespace MedievalOverhaul
             }
         }
 
-        public static void DetermineButcherProducts(ThingDef tree, ThingDef wood, ThingDef log)
+        public static void DetermineButcherProducts(ThingDef tree, ThingDef log)
         {
             if (!HideUtility.AnimalDefsSeen.ContainsKey(tree))
             {
-                tree.butcherProducts = tree.butcherProducts ?? new List<ThingDefCountClass>();
+                tree.butcherProducts ??= [];
                 tree.butcherProducts.Add(new ThingDefCountClass { thingDef = log, count = 2 });
             }
         }
 
-        public static ThingDef MakeHideFor(ThingDef wood, ThingDef tree)
+        public static ThingDef MakeLogFor(ThingDef wood)
         {
             ThingDef log = BasicLogDef(wood);
             SetNameAndDesc(wood, log);
@@ -100,14 +97,14 @@ namespace MedievalOverhaul
             }
             try
             {
-                log.butcherProducts = new List<ThingDefCountClass>
-            {
-                new ThingDefCountClass
-                {
-                    thingDef = wood,
-                    count = 2
-                }
-            };
+                log.butcherProducts = 
+                    [
+                        new ThingDefCountClass
+                        {
+                            thingDef = wood,
+                            count = 2
+                        }
+                    ];
             }
             catch
             {
@@ -127,12 +124,12 @@ namespace MedievalOverhaul
             {
                 if (wood.thingCategories.NullOrEmpty())
                 {
-                    wood.thingCategories = new List<ThingCategoryDef> { };
+                    wood.thingCategories = [];
                 }
                 if (wood.thingCategories.Contains(ThingCategoryDefOf.ResourcesRaw))
                 {
                     List<ThingCategoryDef> thingCategory = wood.thingCategories;
-                    List<ThingCategoryDef> newThingCategory = new List<ThingCategoryDef> { };
+                    List<ThingCategoryDef> newThingCategory = [];
                     for (int i = 0; i < thingCategory.Count; i++)
                     {
                         ThingCategoryDef thing = thingCategory[i];
@@ -157,7 +154,7 @@ namespace MedievalOverhaul
         }
         private static ThingDef BasicLogDef(ThingDef wood)
         {
-            ThingDef log = new ThingDef
+            ThingDef log = new ()
             {
                 description = "DankPyon_Plank_Description".Translate(),
                 thingClass = typeof(ThingWithComps),
@@ -175,7 +172,7 @@ namespace MedievalOverhaul
                 tickerType = TickerType.Rare,
                 healthAffectsPrice = false,
                 soundInteract = SoundDefOf.Standard_Drop,
-                statBases = new List<StatModifier>(),
+                statBases = [],
                 terrainAffordanceNeeded = TerrainAffordanceDefOf.Light,
                 isTechHediff = true,
                 burnableByRecipe = true,
@@ -183,61 +180,21 @@ namespace MedievalOverhaul
             };
             log.SetStatBaseValue(StatDefOf.Beauty, -4f);
             log.SetStatBaseValue(StatDefOf.MaxHitPoints, 30f);
-
-            if (wood.GetStatValueAbstract(StatDefOf.Flammability) != null)
-                log.SetStatBaseValue(StatDefOf.Flammability, wood.GetStatValueAbstract(StatDefOf.Flammability));
-            else
-                log.SetStatBaseValue(StatDefOf.Flammability, 1f);
-
+            log.SetStatBaseValue(StatDefOf.Flammability, wood.GetStatValueAbstract(StatDefOf.Flammability));
             log.SetStatBaseValue(StatDefOf.DeteriorationRate, 2f);
-
-            if (wood.GetStatValueAbstract(StatDefOf.Mass) != null)
-                log.SetStatBaseValue(StatDefOf.Mass, (wood.GetStatValueAbstract(StatDefOf.Mass) * 3));
-            else
-                log.SetStatBaseValue(StatDefOf.Mass, 1.2f);
-
-            if (wood.GetStatValueAbstract(StatDefOf.MarketValue) != null)
-                log.SetStatBaseValue(StatDefOf.MarketValue, (wood.GetStatValueAbstract(StatDefOf.MarketValue) * 2));
-            else
-                log.SetStatBaseValue(StatDefOf.MarketValue, 1.2f);
-
-            if (wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Sharp) != null)
-                log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Sharp, wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Sharp));
-            else
-                log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Sharp, 0.54f);
-
-            if (wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Blunt) != null)
-                log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Blunt, wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Blunt));
-            else
-                log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Blunt, 0.54f);
+            log.SetStatBaseValue(StatDefOf.Mass, (wood.GetStatValueAbstract(StatDefOf.Mass) * 3));
+            log.SetStatBaseValue(StatDefOf.MarketValue, (wood.GetStatValueAbstract(StatDefOf.MarketValue) * 2));
+            log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Sharp, wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Sharp));
+            log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Blunt, wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Blunt));
             if (Utility.CEIsEnabled)
             {
                 log.SetStatBaseValue(MedievalOverhaulDefOf.Bulk, wood.GetStatValueAbstract(MedievalOverhaulDefOf.Bulk)*2);
             }
-
-            if (wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Heat) != null)
-                log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Heat, wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Heat));
-            else
-                log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Heat, 0.40f);
-
-            if (wood.GetStatValueAbstract(StatDefOf.StuffPower_Insulation_Cold) != null)
-                log.SetStatBaseValue(StatDefOf.StuffPower_Insulation_Cold, wood.GetStatValueAbstract(StatDefOf.StuffPower_Insulation_Cold));
-            else
-                log.SetStatBaseValue(StatDefOf.StuffPower_Insulation_Cold, 8);
-
-            if (wood.GetStatValueAbstract(StatDefOf.StuffPower_Insulation_Heat) != null)
-                log.SetStatBaseValue(StatDefOf.StuffPower_Insulation_Heat, wood.GetStatValueAbstract(StatDefOf.StuffPower_Insulation_Heat));
-            else
-                log.SetStatBaseValue(StatDefOf.StuffPower_Insulation_Heat, 4f);
-
-            if (wood.GetStatValueAbstract(StatDefOf.SharpDamageMultiplier) != null)
-                log.SetStatBaseValue(StatDefOf.SharpDamageMultiplier, wood.GetStatValueAbstract(StatDefOf.SharpDamageMultiplier));
-            else
-                log.SetStatBaseValue(StatDefOf.SharpDamageMultiplier, 0.40f);
-            if (wood.GetStatValueAbstract(StatDefOf.BluntDamageMultiplier) != null)
-                log.SetStatBaseValue(StatDefOf.BluntDamageMultiplier, wood.GetStatValueAbstract(StatDefOf.BluntDamageMultiplier));
-            else
-                log.SetStatBaseValue(StatDefOf.BluntDamageMultiplier, 0.9f);
+            log.SetStatBaseValue(StatDefOf.StuffPower_Armor_Heat, wood.GetStatValueAbstract(StatDefOf.StuffPower_Armor_Heat));
+            log.SetStatBaseValue(StatDefOf.StuffPower_Insulation_Cold, wood.GetStatValueAbstract(StatDefOf.StuffPower_Insulation_Cold));
+            log.SetStatBaseValue(StatDefOf.StuffPower_Insulation_Heat, wood.GetStatValueAbstract(StatDefOf.StuffPower_Insulation_Heat));
+            log.SetStatBaseValue(StatDefOf.SharpDamageMultiplier, wood.GetStatValueAbstract(StatDefOf.SharpDamageMultiplier));
+            log.SetStatBaseValue(StatDefOf.BluntDamageMultiplier, wood.GetStatValueAbstract(StatDefOf.BluntDamageMultiplier));
             log.tools = wood.tools;
             log.comps = wood.comps;
             log.techLevel = wood.techLevel;
@@ -257,19 +214,11 @@ namespace MedievalOverhaul
             };
 
             log.comps.Add(new CompProperties_Forbiddable());
-            log.thingCategories = new List<ThingCategoryDef>
+            log.thingCategories = [MedievalOverhaulDefOf.DankPyon_RawWood];
+
+            log.stuffProps = new ()
             {
-                MedievalOverhaulDefOf.DankPyon_RawWood,
-
-            };
-
-
-            log.stuffProps = new StuffProperties
-            {
-                categories = new List<StuffCategoryDef>
-                {
-                   StuffabilityDefOf.DankPyon_RawWood,
-                },
+                categories = [StuffabilityDefOf.DankPyon_RawWood],
                 stuffAdjective = wood.stuffProps.stuffAdjective.ToString(),
                 constructEffect = wood.stuffProps.constructEffect,
                 soundImpactBullet = wood?.stuffProps?.soundImpactBullet ?? MedievalOverhaulDefOf.BulletImpact_Wood,
@@ -279,13 +228,11 @@ namespace MedievalOverhaul
                 color = wood.stuffProps.color,
                 statFactors = wood.stuffProps.statFactors,
             };
-            log.modExtensions = new List<DefModExtension>
-            {
-                new FuelValueProperty()
+
+            log.modExtensions = [new FuelValueProperty()
                 {
                     fuelValue = 2,
-                },
-            };
+                }];
 
 
             return log;

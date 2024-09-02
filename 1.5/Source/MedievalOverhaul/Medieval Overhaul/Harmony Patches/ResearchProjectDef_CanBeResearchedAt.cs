@@ -12,7 +12,7 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch(typeof(ResearchProjectDef), "CanBeResearchedAt")]
     public static class ResearchProjectDef_CanBeResearchedAt
     {
-        public static void Postfix(Building_ResearchBench bench, bool ignoreResearchBenchPowerStatus, ResearchProjectDef __instance, ref bool __result)
+        public static void Postfix(Building_ResearchBench bench, ref bool __result)
         {
             if (__result)
             {

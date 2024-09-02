@@ -14,6 +14,6 @@ namespace MedievalOverhaul
     {
         public override DesignationDef DesDef => MedievalOverhaulDefOf.DankPyon_GatherIce;
 
-        public override Job JobOnCell(Pawn pawn, IntVec3 cell, bool forced = false) => new Job(MedievalOverhaulDefOf.DankPyon_JobGatherIce, cell);
+        public override Job JobOnCell(Pawn pawn, IntVec3 cell, bool forced = false) => new (MedievalOverhaulDefOf.DankPyon_JobGatherIce, cell);
     }
 }

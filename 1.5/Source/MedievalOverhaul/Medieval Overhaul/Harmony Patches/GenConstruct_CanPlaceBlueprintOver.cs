@@ -8,7 +8,7 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch(typeof(GenConstruct), "CanPlaceBlueprintAt")]
     public static class GenConstruct_CanPlaceBlueprintOver
     {
-        public static void Postfix(ref AcceptanceReport __result, BuildableDef entDef, IntVec3 center, Rot4 rot, Map map, bool godMode = false, Thing thingToIgnore = null, Thing thing = null, ThingDef stuffDef = null)
+        public static void Postfix(ref AcceptanceReport __result, BuildableDef entDef, IntVec3 center, Rot4 rot, Map map, Thing thingToIgnore = null)
         {
             CellRect cellRect = GenAdj.OccupiedRect(center, rot, entDef.Size);
             foreach (IntVec3 cell in cellRect)

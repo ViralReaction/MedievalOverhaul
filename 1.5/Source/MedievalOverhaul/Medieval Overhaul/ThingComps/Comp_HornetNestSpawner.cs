@@ -10,6 +10,7 @@ using Verse.Sound;
 using Verse;
 using UnityEngine;
 using static System.Collections.Specialized.BitVector32;
+using Verse.AI;
 
 namespace MedievalOverhaul
 {
@@ -56,21 +57,21 @@ namespace MedievalOverhaul
                 if (named != null)
                 {
                     Faction faction = Props.faction != null && FactionUtility.DefaultFactionFrom(Props.faction) != null ? FactionUtility.DefaultFactionFrom(Props.faction) : null;
-                    PawnGenerationRequest pawnRequest = new PawnGenerationRequest(named, faction, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, 1f, false, false, true, true, false, false);
+                    PawnGenerationRequest pawnRequest = new (named, faction, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, 1f, false, false, true, true, false, false);
                     Pawn pawnToCreate = PawnGenerator.GeneratePawn(pawnRequest);
                     GenSpawn.Spawn((Thing)pawnToCreate, CellFinder.RandomClosewalkCellNear(this.parent.Position, this.parent.Map, this.Props.pawnSpawnRadius), this.parent.Map);
                     if (this.parent.Map != null)
                     {
                         Lord lord = (Lord)null;
                         if (this.parent.Map.mapPawns.SpawnedPawnsInFaction(faction).Any<Pawn>((Predicate<Pawn>)(p => p != pawnToCreate)))
+                        {
                             lord = ((Pawn)GenClosest.ClosestThing_Global(this.parent.Position, (IEnumerable)this.parent.Map.mapPawns.SpawnedPawnsInFaction(faction), 30f, (Predicate<Thing>)(p => p != pawnToCreate && ((Pawn)p).GetLord() != null))).GetLord();
-                        if (lord == null)
-                            lord = LordMaker.MakeNewLord(faction, (LordJob)new LordJob_DefendPoint(this.parent.Position, new float?(10f)), this.parent.Map);
+                        }
+                        lord ??= LordMaker.MakeNewLord(faction, (LordJob)new LordJob_DefendPoint(this.parent.Position, new float?(10f)), this.parent.Map);
                         lord.AddPawn(pawnToCreate);
                     }
                     pawn = pawnToCreate;
-                    if (this.Props.spawnSound != null)
-                        this.Props.spawnSound.PlayOneShot((SoundInfo)(Thing)this.parent);
+                    this.Props.spawnSound?.PlayOneShot((SoundInfo)(Thing)this.parent);
                     return true;
                 }
                 pawn = (Pawn)null;
@@ -86,8 +87,7 @@ namespace MedievalOverhaul
                 this.SpawnInitialPawns();
             if (!this.parent.Spawned || Find.TickManager.TicksGame < this.nextPawnSpawnTick)
                 return;
-            Pawn pawn;
-            if (this.TrySpawnPawn(out pawn) && pawn.caller != null)
+            if (this.TrySpawnPawn(out Pawn pawn) && pawn.caller != null)
                 pawn.caller.DoCall();
             this.CalculateNextPawnSpawnTick();
         }
@@ -102,8 +102,7 @@ namespace MedievalOverhaul
                     icon = TexCommand.ReleaseAnimals,
                     action = delegate ()
                     {
-                        Pawn pawn;
-                        this.TrySpawnPawn(out pawn);
+                        this.TrySpawnPawn(out Pawn pawn);
                     }
                 };
             }

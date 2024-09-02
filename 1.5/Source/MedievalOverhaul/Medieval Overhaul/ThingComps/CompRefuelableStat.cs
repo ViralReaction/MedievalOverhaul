@@ -10,7 +10,7 @@ namespace MedievalOverhaul
     [StaticConstructorOnStartup]
     public class CompRefuelableStat : ThingComp, IThingGlower
     {
-        public new CompProperties_RefuelableStat Props => props as CompProperties_RefuelableStat;
+        public CompProperties_RefuelableStat Props => props as CompProperties_RefuelableStat;
         public CompSlop stewComp;
         private ThingFilter allowedFuelFilter;
         public float TargetFuelLevel
@@ -253,10 +253,10 @@ namespace MedievalOverhaul
 
         private static readonly Texture2D SetTargetFuelLevelCommand = ContentFinder<Texture2D>.Get("UI/Commands/SetTargetFuelLevel", true);
 
-        private static readonly Vector2 FuelBarSize = new Vector2(1f, 0.2f);
+        private static readonly Vector2 FuelBarSize = new (1f, 0.2f);
 
-        private static readonly Material FuelBarFilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.6f, 0.56f, 0.13f), false);
+        private static readonly Material FuelBarFilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new (0.6f, 0.56f, 0.13f), false);
 
-        private static readonly Material FuelBarUnfilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.3f, 0.3f, 0.3f), false);
+        private static readonly Material FuelBarUnfilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new (0.3f, 0.3f, 0.3f), false);
     }
 }

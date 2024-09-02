@@ -55,7 +55,6 @@ namespace MedievalOverhaul
             {
                 yield return floatMenuOption;
             }
-            IEnumerator<FloatMenuOption> enumerator = null;
             if (!this.CanOpen)
             {
                 yield break;
@@ -268,8 +267,8 @@ namespace MedievalOverhaul
             base.ExposeData();
         }
 
-        private static List<Pawn> tmpCanReach = new List<Pawn>();
-        private static List<Pawn> tmpCanOpen = new List<Pawn>();
-        private static List<Pawn> tmpAllowedPawns = new List<Pawn>();
+        private static List<Pawn> tmpCanReach = [];
+        private static List<Pawn> tmpCanOpen = [];
+        private static List<Pawn> tmpAllowedPawns = [];
     }
 }

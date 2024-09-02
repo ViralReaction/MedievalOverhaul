@@ -1,24 +1,24 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Verse;
 using Verse.AI;
-using RimWorld;
 
 namespace MedievalOverhaul
 {
     public class WorkGiver_DoMending : WorkGiver_Scanner
     {
-        private List<ThingCount> chosenIngThings = new List<ThingCount>();
-        private static List<IngredientCount> missingIngredients = new List<IngredientCount>();
-        private static List<Thing> tmpMissingUniqueIngredients = new List<Thing>();
-        private static readonly IntRange ReCheckFailedBillTicksRange = new IntRange(500, 600);
-        private static List<Thing> relevantThings = new List<Thing>();
-        private static HashSet<Thing> processedThings = new HashSet<Thing>();
-        private static List<Thing> newRelevantThings = new List<Thing>();
-        private static List<Thing> tmpMedicine = new List<Thing>();
-        private static WorkGiver_DoMending.DefCountList availableCounts = new WorkGiver_DoMending.DefCountList();
+        private readonly List<ThingCount> chosenIngThings = [];
+        private static readonly List<IngredientCount> missingIngredients = [];
+        private static readonly List<Thing> tmpMissingUniqueIngredients = [];
+        private static readonly IntRange ReCheckFailedBillTicksRange = new(500, 600);
+        private static readonly List<Thing> relevantThings = [];
+        private static readonly HashSet<Thing> processedThings = [];
+        private static readonly List<Thing> newRelevantThings = [];
+        private static readonly List<Thing> tmpMedicine = [];
+        private static readonly WorkGiver_DoMending.DefCountList availableCounts = new();
 
         public override PathEndMode PathEndMode => PathEndMode.InteractionCell;
 
@@ -39,7 +39,7 @@ namespace MedievalOverhaul
 
         public override Job JobOnThing(Pawn pawn, Thing thing, bool forced = false)
         {
-            if (!(thing is IBillGiver giver) || !this.ThingIsUsableBillGiver(thing) || !giver.BillStack.AnyShouldDoNow || !giver.UsableForBillsAfterFueling() || !pawn.CanReserve((LocalTargetInfo)thing, ignoreOtherReservations: forced) || thing.IsBurning() || thing.IsForbidden(pawn))
+            if (thing is not IBillGiver giver || !this.ThingIsUsableBillGiver(thing) || !giver.BillStack.AnyShouldDoNow || !giver.UsableForBillsAfterFueling() || !pawn.CanReserve((LocalTargetInfo)thing, ignoreOtherReservations: forced) || thing.IsBurning() || thing.IsForbidden(pawn))
                 return (Job)null;
             if (thing.def.hasInteractionCell && !ReservationUtility.CanReserveSittableOrSpot(pawn, thing.InteractionCell))
                 return (Job)null;
@@ -50,12 +50,10 @@ namespace MedievalOverhaul
             return this.StartOrResumeBillJob(pawn, giver, forced);
         }
 
-        private static UnfinishedThing ClosestUnfinishedThingForBill(
-          Pawn pawn,
-          Bill_ProductionWithUft bill)
+        private static UnfinishedThing ClosestUnfinishedThingForBill(Pawn pawn, Bill_ProductionWithUft bill)
         {
-            Predicate<Thing> validator = (Predicate<Thing>)(t => !t.IsForbidden(pawn) && ((UnfinishedThing)t).Recipe == bill.recipe && ((UnfinishedThing)t).Creator == pawn && ((UnfinishedThing)t).ingredients.TrueForAll((Predicate<Thing>)(x => bill.IsFixedOrAllowedIngredient(x.def))) && pawn.CanReserve((LocalTargetInfo)t));
-            return (UnfinishedThing)GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(bill.recipe.unfinishedThingDef), PathEndMode.InteractionCell, TraverseParms.For(pawn, pawn.NormalMaxDanger()), validator: validator);
+            bool ValidateUnfinishedThing(Thing t) => !t.IsForbidden(pawn) && t is UnfinishedThing unfinishedThing && unfinishedThing.Recipe == bill.recipe && unfinishedThing.Creator == pawn && unfinishedThing.ingredients.TrueForAll(x => bill.IsFixedOrAllowedIngredient(x.def)) && pawn.CanReserve(t);
+            return (UnfinishedThing)GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(bill.recipe.unfinishedThingDef), PathEndMode.InteractionCell, TraverseParms.For(pawn, pawn.NormalMaxDanger()), validator: ValidateUnfinishedThing);
         }
 
         private static Job FinishUftJob(Pawn pawn, UnfinishedThing uft, Bill_ProductionWithUft bill)
@@ -70,11 +68,8 @@ namespace MedievalOverhaul
                 return job1;
             Job job2 = JobMaker.MakeJob(MedievalOverhaulDefOf.DankPyon_DoBillMending, (LocalTargetInfo)(Thing)bill.billStack.billGiver);
             job2.bill = (Bill)bill;
-            job2.targetQueueB = new List<LocalTargetInfo>()
-      {
-        (LocalTargetInfo) (Thing) uft
-      };
-            job2.countQueue = new List<int>() { 1 };
+            job2.targetQueueB = [(LocalTargetInfo)(Thing)uft];
+            job2.countQueue = [1];
             job2.haulMode = HaulMode.ToCellNonStorage;
             return job2;
         }
@@ -183,7 +178,7 @@ namespace MedievalOverhaul
           Bill bill,
           List<IngredientCount> missingIngredients)
         {
-            if (!(giver is Pawn billGiver))
+            if (giver is not Pawn billGiver)
                 return false;
             bool flag = false;
             foreach (IngredientCount missingIngredient in missingIngredients)
@@ -382,7 +377,7 @@ namespace MedievalOverhaul
 
         private static IntVec3 GetBillGiverRootCell(Thing billGiver, Pawn forPawn)
         {
-            if (!(billGiver is Building building))
+            if (billGiver is not Building building)
                 return billGiver.Position;
             if (building.def.hasInteractionCell)
                 return building.InteractionCell;
@@ -540,8 +535,8 @@ namespace MedievalOverhaul
 
         private class DefCountList
         {
-            private List<ThingDef> defs = new List<ThingDef>();
-            private List<float> counts = new List<float>();
+            private List<ThingDef> defs = [];
+            private List<float> counts = [];
 
             public int Count => this.defs.Count;
 
@@ -598,7 +593,7 @@ namespace MedievalOverhaul
                     this[things[index].def] += (float)things[index].stackCount;
             }
 
-            
+
         }
     }
 }

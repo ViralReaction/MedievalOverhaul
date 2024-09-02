@@ -33,7 +33,7 @@ namespace MedievalOverhaul
             if (Props.kindToSpawn != null && Rand.Chance(Props.chance))
             {
                 int target = Props.numberToSpawn.RandomInRange;
-                List<Pawn> pawns = new() { };
+                List<Pawn> pawns = [];
                 for (int i = 0; i < target; i++)
                 {
                     pawns.Add(PawnSpawner(previousMap));

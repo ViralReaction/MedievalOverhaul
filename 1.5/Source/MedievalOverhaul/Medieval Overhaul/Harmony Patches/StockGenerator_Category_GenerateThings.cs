@@ -13,7 +13,7 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch(typeof(StockGenerator_Category), "GenerateThings")]
     public static class StockGenerator_Category_GenerateThings
     {
-        public static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result, StockGenerator_Category __instance)
+        public static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result)
         {
             if (__result != null)
             {

@@ -33,12 +33,12 @@ namespace MedievalOverhaul
             }
             set
             {
-                RotStage stage = this.Stage;
+                //RotStage stage = this.Stage;
                 this.meltProgressInt = value;
             }
         }
 
-        public new RotStage Stage
+        public RotStage Stage
         {
             get
             {
@@ -122,7 +122,7 @@ namespace MedievalOverhaul
             {
                 return null;
             }
-            StringBuilder stringBuilder = new StringBuilder();
+            StringBuilder stringBuilder = new ();
             if ((float)this.PropsRot.TicksToMeltStart - MeltProgress > 0f)
             {
                 float num = MeltRateAtTemperature((float)Mathf.RoundToInt(this.parent.AmbientTemperature));

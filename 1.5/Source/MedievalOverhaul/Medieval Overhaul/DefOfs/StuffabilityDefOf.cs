@@ -1,16 +1,13 @@
 ﻿using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MedievalOverhaul
 {
     [DefOf]
-    internal class StuffabilityDefOf
+    public static class StuffabilityDefOf
     {
+        #pragma warning disable CS0649
         public static StuffCategoryDef DankPyon_RawWood;
+        #pragma warning restore CS0649
 
         static StuffabilityDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(StuffabilityDefOf));
     }

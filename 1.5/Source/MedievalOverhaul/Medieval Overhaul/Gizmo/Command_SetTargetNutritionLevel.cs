@@ -15,10 +15,7 @@ namespace MedievalOverhaul
         public override void ProcessInput(Event ev)
         {
             base.ProcessInput(ev);
-            if (this.refuelables == null)
-            {
-                this.refuelables = new List<CompRefuelableStat>();
-            }
+            this.refuelables ??= [];
             if (!this.refuelables.Contains(this.refuelable))
             {
                 this.refuelables.Add(this.refuelable);
@@ -49,7 +46,7 @@ namespace MedievalOverhaul
             {
                 textGetter = ((int x) => "SetTargetFuelLevel".Translate(x));
             }
-            Dialog_Slider dialog_Slider = new Dialog_Slider(textGetter, 0, num, delegate (int value)
+            Dialog_Slider dialog_Slider = new (textGetter, 0, num, delegate (int value)
             {
                 for (int k = 0; k < this.refuelables.Count; k++)
                 {
@@ -65,10 +62,7 @@ namespace MedievalOverhaul
 
         public override bool InheritInteractionsFrom(Gizmo other)
         {
-            if (this.refuelables == null)
-            {
-                this.refuelables = new List<CompRefuelableStat>();
-            }
+            this.refuelables ??= [];
             this.refuelables.Add(((Command_SetTargetNutritionLevel)other).refuelable);
             return false;
         }

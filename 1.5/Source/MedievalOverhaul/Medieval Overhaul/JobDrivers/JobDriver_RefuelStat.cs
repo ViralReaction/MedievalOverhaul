@@ -13,7 +13,7 @@ namespace MedievalOverhaul
 
 		private const int RefuelingDuration = 240;
 
-		protected Thing Refuelable => job.GetTarget(TargetIndex.A).Thing;
+		protected Thing Refuelable => job.GetTarget(RefuelableInd).Thing;
 
 		protected CompRefuelableStat RefuelableComp => Refuelable.TryGetComp<CompRefuelableStat>();
 
@@ -27,26 +27,26 @@ namespace MedievalOverhaul
 
         public override IEnumerable<Toil> MakeNewToils()
 		{
-			this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
+			this.FailOnDespawnedNullOrForbidden(RefuelableInd);
 			AddEndCondition(() => !RefuelableComp.IsFull ? JobCondition.Ongoing : JobCondition.Succeeded);
 			AddFailCondition(() => !job.playerForced && !RefuelableComp.ShouldAutoRefuelNowIgnoringFuelPct);
 			AddFailCondition(() => !RefuelableComp.allowAutoRefuel && !job.playerForced);
 			yield return Toils_General.DoAtomic(delegate { job.count = RefuelableComp.GetFuelCountToFullyRefuel(Fuel); });
-			Toil reserveFuel = Toils_Reserve.Reserve(TargetIndex.B);
+			Toil reserveFuel = Toils_Reserve.Reserve(FuelInd);
 			yield return reserveFuel;
-			yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.ClosestTouch)
-				.FailOnDespawnedNullOrForbidden(TargetIndex.B).FailOnSomeonePhysicallyInteracting(TargetIndex.B);
+			yield return Toils_Goto.GotoThing(FuelInd, PathEndMode.ClosestTouch)
+				.FailOnDespawnedNullOrForbidden(FuelInd).FailOnSomeonePhysicallyInteracting(FuelInd);
 			yield return Toils_Haul
 				.StartCarryThing(TargetIndex.B, false, true)
-				.FailOnDestroyedNullOrForbidden(TargetIndex.B);
-			yield return Toils_Haul.CheckForGetOpportunityDuplicate(reserveFuel, TargetIndex.B, TargetIndex.None,
+				.FailOnDestroyedNullOrForbidden(FuelInd);
+			yield return Toils_Haul.CheckForGetOpportunityDuplicate(reserveFuel, FuelInd, TargetIndex.None,
 				true);
-			yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.InteractionCell);
-			yield return Toils_General.Wait(240).FailOnDestroyedNullOrForbidden(TargetIndex.B)
-				.FailOnDestroyedNullOrForbidden(TargetIndex.A)
-				.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch)
-				.WithProgressBarToilDelay(TargetIndex.A);
-			yield return FinalizeRefueling(TargetIndex.A, TargetIndex.B);
+			yield return Toils_Goto.GotoThing(RefuelableInd, PathEndMode.InteractionCell);
+			yield return Toils_General.Wait(RefuelingDuration).FailOnDestroyedNullOrForbidden(FuelInd)
+				.FailOnDestroyedNullOrForbidden(RefuelableInd)
+				.FailOnCannotTouch(RefuelableInd, PathEndMode.Touch)
+				.WithProgressBarToilDelay(RefuelableInd);
+			yield return FinalizeRefueling(RefuelableInd, FuelInd);
 		}
 
 		public static Toil FinalizeRefueling(TargetIndex refuelableInd, TargetIndex fuelInd)

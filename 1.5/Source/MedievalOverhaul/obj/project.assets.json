@@ -16,7 +16,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4104": {
+      "Krafs.Rimworld.Ref/1.5.4146-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -104,19 +104,6 @@
           "ref/net472/UnityEngine.dll": {},
           "ref/net472/com.rlabrecque.steamworks.net.dll": {},
           "ref/net472/mscorlib.dll": {}
-        }
-      },
-      "Lib.Harmony/2.3.3": {
-        "type": "package",
-        "compile": {
-          "lib/net48/0Harmony.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net48/0Harmony.dll": {
-            "related": ".pdb;.xml"
-          }
         }
       }
     },
@@ -135,7 +122,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4104": {
+      "Krafs.Rimworld.Ref/1.5.4146-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -223,19 +210,6 @@
           "ref/net472/UnityEngine.dll": {},
           "ref/net472/com.rlabrecque.steamworks.net.dll": {},
           "ref/net472/mscorlib.dll": {}
-        }
-      },
-      "Lib.Harmony/2.3.3": {
-        "type": "package",
-        "compile": {
-          "lib/net48/0Harmony.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net48/0Harmony.dll": {
-            "related": ".pdb;.xml"
-          }
         }
       }
     },
@@ -254,7 +228,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4104": {
+      "Krafs.Rimworld.Ref/1.5.4146-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -342,19 +316,6 @@
           "ref/net472/UnityEngine.dll": {},
           "ref/net472/com.rlabrecque.steamworks.net.dll": {},
           "ref/net472/mscorlib.dll": {}
-        }
-      },
-      "Lib.Harmony/2.3.3": {
-        "type": "package",
-        "compile": {
-          "lib/net48/0Harmony.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net48/0Harmony.dll": {
-            "related": ".pdb;.xml"
-          }
         }
       }
     },
@@ -373,7 +334,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4104": {
+      "Krafs.Rimworld.Ref/1.5.4146-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -461,19 +422,6 @@
           "ref/net472/UnityEngine.dll": {},
           "ref/net472/com.rlabrecque.steamworks.net.dll": {},
           "ref/net472/mscorlib.dll": {}
-        }
-      },
-      "Lib.Harmony/2.3.3": {
-        "type": "package",
-        "compile": {
-          "lib/net48/0Harmony.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net48/0Harmony.dll": {
-            "related": ".pdb;.xml"
-          }
         }
       }
     },
@@ -492,7 +440,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4104": {
+      "Krafs.Rimworld.Ref/1.5.4146-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -580,19 +528,6 @@
           "ref/net472/UnityEngine.dll": {},
           "ref/net472/com.rlabrecque.steamworks.net.dll": {},
           "ref/net472/mscorlib.dll": {}
-        }
-      },
-      "Lib.Harmony/2.3.3": {
-        "type": "package",
-        "compile": {
-          "lib/net48/0Harmony.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net48/0Harmony.dll": {
-            "related": ".pdb;.xml"
-          }
         }
       }
     }
@@ -616,17 +551,17 @@
         "krafs.publicizer.nuspec"
       ]
     },
-    "Krafs.Rimworld.Ref/1.5.4104": {
-      "sha512": "/EQrSATOpDbBNtYDQJIT27FMNTuzL6fVuvyCxoqHWWdoINjljPna8s2/9wqD5AwDGiG9A8QN53zXnWTqUdy0Cw==",
+    "Krafs.Rimworld.Ref/1.5.4146-beta": {
+      "sha512": "n0lxQmmiaNep+fqwbt6KSz+adpEmDAe1OVimt77Z4GUjvu0kniOndl0jYnGremwqZGl7ZGydfr0JaXvFIdQZrg==",
       "type": "package",
-      "path": "krafs.rimworld.ref/1.5.4104",
+      "path": "krafs.rimworld.ref/1.5.4146-beta",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "README.md",
         "icon.png",
-        "krafs.rimworld.ref.1.5.4104.nupkg.sha512",
+        "krafs.rimworld.ref.1.5.4146-beta.nupkg.sha512",
         "krafs.rimworld.ref.nuspec",
         "ref/net472/Assembly-CSharp-firstpass.dll",
         "ref/net472/Assembly-CSharp.dll",
@@ -714,83 +649,38 @@
         "ref/net472/com.rlabrecque.steamworks.net.dll",
         "ref/net472/mscorlib.dll"
       ]
-    },
-    "Lib.Harmony/2.3.3": {
-      "sha512": "qxO8d2q7luoY8mTfCStQFOgRSd3dWZSS0Ffi5nrjX4qFkZxEBAEvNh5b/ZejTl2kY0fJs62LmfRJkBBTeiuuyQ==",
-      "type": "package",
-      "path": "lib.harmony/2.3.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "HarmonyLogo.png",
-        "LICENSE",
-        "README.md",
-        "lib.harmony.2.3.3.nupkg.sha512",
-        "lib.harmony.nuspec",
-        "lib/net35/0Harmony.dll",
-        "lib/net35/0Harmony.pdb",
-        "lib/net35/0Harmony.xml",
-        "lib/net452/0Harmony.dll",
-        "lib/net452/0Harmony.pdb",
-        "lib/net452/0Harmony.xml",
-        "lib/net472/0Harmony.dll",
-        "lib/net472/0Harmony.pdb",
-        "lib/net472/0Harmony.xml",
-        "lib/net48/0Harmony.dll",
-        "lib/net48/0Harmony.pdb",
-        "lib/net48/0Harmony.xml",
-        "lib/net5.0/0Harmony.dll",
-        "lib/net5.0/0Harmony.pdb",
-        "lib/net5.0/0Harmony.xml",
-        "lib/net6.0/0Harmony.dll",
-        "lib/net6.0/0Harmony.pdb",
-        "lib/net6.0/0Harmony.xml",
-        "lib/net7.0/0Harmony.dll",
-        "lib/net7.0/0Harmony.pdb",
-        "lib/net7.0/0Harmony.xml",
-        "lib/net8.0/0Harmony.dll",
-        "lib/net8.0/0Harmony.pdb",
-        "lib/net8.0/0Harmony.xml",
-        "lib/netcoreapp3.0/0Harmony.dll",
-        "lib/netcoreapp3.0/0Harmony.pdb",
-        "lib/netcoreapp3.0/0Harmony.xml",
-        "lib/netcoreapp3.1/0Harmony.dll",
-        "lib/netcoreapp3.1/0Harmony.pdb",
-        "lib/netcoreapp3.1/0Harmony.xml",
-        "lib/netstandard2.0/_._"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
       "Krafs.Publicizer >= 2.2.1",
-      "Krafs.Rimworld.Ref >= 1.5.4104",
-      "Lib.Harmony >= 2.3.3"
+      "Krafs.Rimworld.Ref >= 1.5.4146-beta"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vova\\.nuget\\packages\\": {}
+    "C:\\Users\\Enurta\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\1.5\\Source\\MedievalOverhaul\\MedievalOverhaul.csproj",
+      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\MedievalOverhaul.csproj",
       "projectName": "MedievalOverhaul",
-      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\1.5\\Source\\MedievalOverhaul\\MedievalOverhaul.csproj",
-      "packagesPath": "C:\\Users\\Vova\\.nuget\\packages\\",
-      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul\\1.5\\Source\\MedievalOverhaul\\obj\\",
+      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\MedievalOverhaul.csproj",
+      "packagesPath": "C:\\Users\\Enurta\\.nuget\\packages\\",
+      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Vova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Enurta\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net48"
       ],
       "sources": {
+        "C:\\Games\\Rimworld C# Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://nuget.info/packages/Krafs.Rimworld.Ref/1.5.4045-beta": {}
       },
       "frameworks": {
         "net48": {
@@ -814,11 +704,7 @@
           },
           "Krafs.Rimworld.Ref": {
             "target": "Package",
-            "version": "[1.5.4104, )"
-          },
-          "Lib.Harmony": {
-            "target": "Package",
-            "version": "[2.3.3, )"
+            "version": "[1.5.4146-beta, )"
           }
         }
       }

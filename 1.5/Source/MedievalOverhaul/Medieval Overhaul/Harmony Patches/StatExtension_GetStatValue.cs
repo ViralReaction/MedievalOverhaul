@@ -12,7 +12,7 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch(typeof(StatExtension), nameof(StatExtension.GetStatValue))]
     public static class StatExtension_GetStatValue
     {
-        private static void Postfix(Thing thing, StatDef stat, bool applyPostProcess, ref float __result)
+        private static void Postfix(Thing thing, StatDef stat, ref float __result)
         {
 
             if (HideUtility.IsHide(thing.def))

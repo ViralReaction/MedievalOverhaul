@@ -13,7 +13,7 @@ namespace MedievalOverhaul.Patches
     [StaticConstructorOnStartup]
     public static class HarmonyInstance
     {
-        public static Dictionary<HediffDef, StatDef> statMultipliers = new Dictionary<HediffDef, StatDef>();
+        public static Dictionary<HediffDef, StatDef> statMultipliers = [];
 
         //public static Harmony harmony;
         static HarmonyInstance()
@@ -51,7 +51,7 @@ namespace MedievalOverhaul.Patches
     [StaticConstructorOnStartup]
     public static class ArtillerySearchGroup
     {
-        private static readonly Dictionary<ThingDef, ThingRequestGroup> registeredArtillery = new Dictionary<ThingDef, ThingRequestGroup>();
+        private static readonly Dictionary<ThingDef, ThingRequestGroup> registeredArtillery = [];
         static ArtillerySearchGroup()
         {
             RegisterArtillery(MedievalOverhaulDefOf.DankPyon_Artillery_Trebuchet, ThingRequestGroup.Chunk);
@@ -74,7 +74,7 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch(typeof(HediffComp_Immunizable), "SeverityChangePerDay")]
     public class HediffComp_Immunizable_Patch
     {
-        private static void Postfix(HediffComp_SeverityPerDay __instance, ref float __result)
+        public static void Postfix(HediffComp_SeverityPerDay __instance, ref float __result)
         {
             if (HarmonyInstance.statMultipliers.TryGetValue(__instance.Def, out var stat))
             {
@@ -86,7 +86,7 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch(typeof(ResearchProjectDef), "CanBeResearchedAt")]
     public static class ResearchProjectDef_CanBeResearchedAt_Patch
     {
-        public static void Postfix(Building_ResearchBench bench, bool ignoreResearchBenchPowerStatus, ResearchProjectDef __instance, ref bool __result)
+        public static void Postfix(Building_ResearchBench bench, ResearchProjectDef __instance, ref bool __result)
         {
             if (__result)
             {

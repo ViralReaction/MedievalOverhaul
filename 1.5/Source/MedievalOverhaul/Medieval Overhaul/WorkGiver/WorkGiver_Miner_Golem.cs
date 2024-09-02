@@ -56,7 +56,7 @@ namespace MedievalOverhaul
                     }
                 }
             }
-            List<Designation>.Enumerator enumerator = default(List<Designation>.Enumerator);
+            //List<Designation>.Enumerator enumerator = default;
             yield break;
         }
 
@@ -125,13 +125,8 @@ namespace MedievalOverhaul
             return JobMaker.MakeJob(MedievalOverhaulDefOf.DankPyon_Mine_Golem, t, 20000, true);
         }
 
-        // Token: 0x04002B67 RID: 11111
         private static string NoPathTrans;
 
-        // Token: 0x04002B68 RID: 11112
-        private const int MiningJobTicks = 20000;
-
-        // Token: 0x04002B69 RID: 11113
-        private static List<Designation> tmpDesignations = new List<Designation>();
+        private static List<Designation> tmpDesignations = [];
     }
 }

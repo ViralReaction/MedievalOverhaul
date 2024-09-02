@@ -14,11 +14,18 @@ namespace MedievalOverhaul.Patches
     public static class JobDriver_Ingest_GetReport
     {
         [HarmonyPrefix]
-        public static bool Prefix(ref string __result, JobDriver_Ingest __instance, bool ___usingNutrientPasteDispenser, Job ___job, Pawn ___pawn)
+        public static bool Prefix(ref string __result, bool ___usingNutrientPasteDispenser, Job ___job, Pawn ___pawn)
         {
-            if (!___usingNutrientPasteDispenser || ___job.targetA.Thing?.def is { } mealDef && mealDef == ThingDefOf.MealNutrientPaste) return true;
+            if (!___usingNutrientPasteDispenser || ___job.targetA.Thing?.def is { } mealDef && mealDef == ThingDefOf.MealNutrientPaste)
+            {
+                return true;
+            }
             ThingDef thingDef = ___job.targetA.Thing?.def;
-            if (thingDef == null) return true;
+            if (thingDef == null)
+            {
+                return true;
+            }
+            Log.Message("Target of Job " + ___job.targetA.Thing.def + " Pawn meal setting " + ___pawn.foodRestriction);
             if (thingDef.ingestible != null)
             {
                 if (!thingDef.ingestible.ingestReportStringEat.NullOrEmpty() &&

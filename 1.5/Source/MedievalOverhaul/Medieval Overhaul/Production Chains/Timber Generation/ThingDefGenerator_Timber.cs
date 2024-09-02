@@ -13,27 +13,31 @@ namespace MedievalOverhaul
             foreach (ThingDef tree in TimberUtility.AllTreesForGenerator)
             {
                 ThingDef woodDef = tree.plant.harvestedThingDef;
-                string defName = TimberUtility.GetNameString(woodDef);
-                ThingDef timberDef = hotReload ? DefDatabase<ThingDef>.GetNamed(defName, false) ?? new ThingDef() : new ThingDef();
-                if (woodDef != null && !Utility.LogList.blackListWood.Contains(woodDef))
+                // Determine if timberDef should be retrieved from the database or created anew
+                if (woodDef == null || Utility.LogList.blackListWood.Contains(woodDef))
                 {
-                    if (!Utility.LogList.plankDict.ContainsValue(woodDef))
+                    continue;
+                }
+                if (!Utility.LogList.plankDict.ContainsValue(woodDef))
+                {
+                    string defName = TimberUtility.GetNameString(woodDef);
+                    ThingDef timberDef = hotReload ? DefDatabase<ThingDef>.GetNamed(defName, false) ?? new() : new();
+                    if (TimberUtility.WoodDefsSeen.TryGetValue(woodDef, out ThingDef existingTimberDef))
                     {
-                        if (TimberUtility.WoodDefsSeen.ContainsKey(woodDef))
-                        {
-                            timberDef = TimberUtility.WoodDefsSeen[woodDef];
-                            HideUtility.DetermineButcherProducts(tree, woodDef, timberDef);
-                            tree.plant.harvestedThingDef = timberDef;
-                            continue;
-                        }
-                        timberDef = TimberUtility.MakeHideFor(woodDef, tree);
-                        TimberUtility.TryAddEntry(tree, woodDef, timberDef);
-                        TimberUtility.DetermineButcherProducts(tree, woodDef, timberDef);
+                        timberDef = existingTimberDef;
+                        HideUtility.DetermineButcherProducts(tree, woodDef, timberDef);
                         tree.plant.harvestedThingDef = timberDef;
-                        yield return timberDef;
+                        continue;
                     }
+
+                    timberDef = TimberUtility.MakeLogFor(woodDef);
+                    TimberUtility.TryAddEntry(tree, woodDef, timberDef);
+                    TimberUtility.DetermineButcherProducts(tree, timberDef);
+                    tree.plant.harvestedThingDef = timberDef;
+                    yield return timberDef;
                 }
             }
+
             foreach (ThingDef animal in TimberUtility.AllButchered)
             {
                 List<ThingDefCountClass> butcherProductList = animal.butcherProducts;
@@ -48,15 +52,14 @@ namespace MedievalOverhaul
                         {
                             double productCount = butcherProduct.count / 2;
                             int productNum = (int)Math.Round(productCount);
-                            animal.butcherProducts = new List<ThingDefCountClass>
-                        {
-                            new ThingDefCountClass
-                            {
+                            animal.butcherProducts = 
+                                [
+                                new ThingDefCountClass
+                                {
                                 thingDef = product,
                                 count = productNum
-                            }
-                        };
-
+                                    }
+                                ];
                         }
                     }
                 }

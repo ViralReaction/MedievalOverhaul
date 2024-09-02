@@ -49,10 +49,9 @@ namespace MedievalOverhaul
                     }
                     this.effecter.Trigger(actor, mineTarget, -1);
                     int num = mineTarget.def.building.isNaturalRock ? 80 : 40;
-                    Mineable_CompSpawnerDestroy mineable = mineTarget as Mineable_CompSpawnerDestroy;
-                    if (mineable == null || mineTarget.HitPoints > num)
+                    if (mineTarget is not Mineable_CompSpawnerDestroy mineable || mineTarget.HitPoints > num)
                     {
-                        DamageInfo dinfo = new DamageInfo(DamageDefOf.Mining, (float)num, 0f, -1f, mine.actor, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null, true, true, QualityCategory.Normal, true);
+                        var dinfo = new DamageInfo(DamageDefOf.Mining, num, 0f, -1f, mine.actor);
                         mineTarget.TakeDamage(dinfo);
                     }
                     else
@@ -133,10 +132,10 @@ namespace MedievalOverhaul
 
         public const int BaseTicksBetweenPickHits = 100;
 
-        private const int BaseDamagePerPickHit_NaturalRock = 80;
+        //private const int BaseDamagePerPickHit_NaturalRock = 80;
 
-        private const int BaseDamagePerPickHit_NotNaturalRock = 40;
+       // private const int BaseDamagePerPickHit_NotNaturalRock = 40;
 
-        private const float MinMiningSpeedFactorForNPCs = 0.6f;
+        //private const float MinMiningSpeedFactorForNPCs = 0.6f;
     }
 }

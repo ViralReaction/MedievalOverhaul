@@ -61,7 +61,6 @@ namespace MedievalOverhaul
                     };
                 }
             }
-            IEnumerator<ThingDef> enumerator = null;
             yield break;
         }
     }

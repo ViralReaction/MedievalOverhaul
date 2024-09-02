@@ -20,7 +20,7 @@ namespace MedievalOverhaul.Patches
         [HarmonyPrefix]
         public static bool Prefix(Pawn pawn, Thing refuelable, ref Thing __result)
         {
-            if (Utility.LWMFuelFilterIsEnabled || !(refuelable is Building))
+            if (Utility.LWMFuelFilterIsEnabled || refuelable is not Building)
             {
                 return true;
             }
@@ -35,8 +35,8 @@ namespace MedievalOverhaul.Patches
                     ThingDef fuelUsed = compStorage.fuelUsed;
                     if (pawn.Map.listerThings.AnyThingWithDef(fuelUsed))
                     {
-                        Predicate<Thing> validator = (Thing x) => !x.IsForbidden(pawn) && pawn.CanReserve(x, 1, -1, null, false) && filter.Allows(x);
-                        __result = GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(fuelUsed), PathEndMode.ClosestTouch, TraverseParms.For(pawn, Danger.Some, TraverseMode.ByPawn), 9999f, validator, null, 0, -1, false, RegionType.Set_Passable, false);
+                        bool Validator(Thing x) => !x.IsForbidden(pawn) && pawn.CanReserve(x, 1, -1, null, false) && filter.Allows(x);
+                        __result = GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(fuelUsed), PathEndMode.ClosestTouch, TraverseParms.For(pawn, Danger.Some, TraverseMode.ByPawn), 9999f, Validator, null, 0, -1, false, RegionType.Set_Passable, false); 
                         return false;
                     }
                     __result = null;
@@ -44,9 +44,9 @@ namespace MedievalOverhaul.Patches
                 }
                 if (Utility.FilterItemExists(filter, pawn))
                 {
-                    Predicate<Thing> validator = (Thing x) => !x.IsForbidden(pawn) && pawn.CanReserve(x, 1, -1, null, false) && filter.Allows(x);
+                    bool Validator(Thing x) => !x.IsForbidden(pawn) && pawn.CanReserve(x, 1, -1, null, false) && filter.Allows(x);
                     IEnumerable<Thing> searchSet = pawn.Map.listerThings.ThingsMatchingFilter(filter);
-                    __result = GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, filter.BestThingRequest, PathEndMode.ClosestTouch, TraverseParms.For(pawn, Danger.Some, TraverseMode.ByPawn), 9999f, validator, searchSet, 0, -1, false, RegionType.Set_Passable, false);
+                    __result = GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, filter.BestThingRequest, PathEndMode.ClosestTouch, TraverseParms.For(pawn, Danger.Some, TraverseMode.ByPawn), 9999f, Validator, searchSet, 0, -1, false, RegionType.Set_Passable, false);
                 }
                 return false;
             }

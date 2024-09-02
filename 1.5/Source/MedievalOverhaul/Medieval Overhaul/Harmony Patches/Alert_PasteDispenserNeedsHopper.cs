@@ -13,12 +13,11 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch(typeof(Alert_PasteDispenserNeedsHopper), "BadDispensers", MethodType.Getter)]
     public static class Alert_BadDispensers
     {
-        static List <Thing> Postfix(List<Thing> __result)
+        public static List <Thing> Postfix(List<Thing> __result)
         {
             for (int i = 0; i < __result.Count; i++)
             {
-                Building_SlopPot slopPot = __result[i] as Building_SlopPot;
-                if (slopPot != null)
+                if (__result[i] is Building_SlopPot)
                 {
                     __result.RemoveAt(i);
                     i--;

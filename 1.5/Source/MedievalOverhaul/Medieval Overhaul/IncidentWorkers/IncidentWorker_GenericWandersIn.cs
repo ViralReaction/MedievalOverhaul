@@ -24,26 +24,24 @@ namespace MedievalOverhaul
         {
             IncidentProperties incidentProperties = IncidentProperties.Get((Def)this.def);
             Map target = (Map)parms.target;
-            IntVec3 cell;
-            if (!this.TryFindEntryCell(target, out cell))
+            if (!this.TryFindEntryCell(target, out IntVec3 cell))
                 return false;
-            int num1 = Mathf.Clamp(GenMath.RoundRandom(StorytellerUtility.DefaultThreatPointsNow((IIncidentTarget)target) / incidentProperties.kindDef.combatPower), 1, incidentProperties.max.RandomInRange);
-            int num2 = Rand.RangeInclusive(90000, 150000);
-            IntVec3 result = IntVec3.Invalid;
-            if (!RCellFinder.TryFindRandomCellOutsideColonyNearTheCenterOfTheMap(cell, target, 10f, out result))
-                result = IntVec3.Invalid;
+            int numPawns = Mathf.Clamp(GenMath.RoundRandom(StorytellerUtility.DefaultThreatPointsNow((IIncidentTarget)target) / incidentProperties.kindDef.combatPower), 1, incidentProperties.max.RandomInRange);
+            int exitTickOffset = Rand.RangeInclusive(90000, 150000);
+            if (!RCellFinder.TryFindRandomCellOutsideColonyNearTheCenterOfTheMap(cell, target, 10f, out IntVec3 forcedGotoCell))
+                forcedGotoCell = IntVec3.Invalid;
             Pawn pawn = (Pawn)null;
-            for (int index = 0; index < num1; ++index)
+            for (int index = 0; index < numPawns; ++index)
             {
                 IntVec3 intVec3 = CellFinder.RandomClosewalkCellNear(cell, target, 10);
                 pawn = PawnGenerator.GeneratePawn(incidentProperties.kindDef);
                 GenSpawn.Spawn((Thing)pawn, intVec3, target, Rot4.Random, WipeMode.Vanish, false);
                 if (incidentProperties.leaveMapAfterTime)
-                    pawn.mindState.exitMapAfterTick = Find.TickManager.TicksGame + num2;
-                if (result.IsValid)
-                    pawn.mindState.forcedGotoPosition = CellFinder.RandomClosewalkCellNear(result, target, 10);
+                    pawn.mindState.exitMapAfterTick = Find.TickManager.TicksGame + exitTickOffset;
+                if (forcedGotoCell.IsValid)
+                    pawn.mindState.forcedGotoPosition = CellFinder.RandomClosewalkCellNear(forcedGotoCell, target, 10);
             }
-            Find.LetterStack.ReceiveLetter(this.def.letterLabel.Formatted((NamedArgument)incidentProperties.kindDef.label).CapitalizeFirst(), this.def.letterText.Formatted((NamedArgument)num1, (NamedArgument)incidentProperties.kindDef.label), this.def.letterDef, (LookTargets)(Thing)pawn, (Faction)null, (Quest)null, (List<ThingDef>)null, (string)null);
+            Find.LetterStack.ReceiveLetter(this.def.letterLabel.Formatted((NamedArgument)incidentProperties.kindDef.label).CapitalizeFirst(), this.def.letterText.Formatted((NamedArgument)numPawns, (NamedArgument)incidentProperties.kindDef.label), this.def.letterDef, (LookTargets)(Thing)pawn, (Faction)null, (Quest)null, (List<ThingDef>)null, (string)null);
             return true;
         }
 

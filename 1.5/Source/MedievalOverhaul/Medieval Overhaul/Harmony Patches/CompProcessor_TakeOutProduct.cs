@@ -55,7 +55,7 @@ namespace MedievalOverhaul.Patches
             }
             return true;
         }
-        public static void Postfix(CompProcessor __instance, ref Thing __result, ActiveProcess activeProcess)
+        public static void Postfix(ref Thing __result, ActiveProcess activeProcess)
         {
             if (activeProcess.processDef == MedievalOverhaulDefOf.DankPyon_RawHidesProcess)
             {

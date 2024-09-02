@@ -14,13 +14,9 @@ namespace MedievalOverhaul
         }
         public static void Postfix(Thing __state)
         {
-            if (__state != null)
+            if (__state?.TryGetComp<CompGlowerOnlyWhenUsed>() is { } comp)
             {
-                var comp = __state.TryGetComp<CompGlowerOnlyWhenUsed>();
-                if (comp != null)
-                {
-                    comp.UpdateLit(__state.Map);
-                }
+                comp.UpdateLit(__state.Map);
             }
         }
     }
