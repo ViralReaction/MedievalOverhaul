@@ -216,7 +216,7 @@
 		</statBases>
 	</ThingDef>
 
-	<!--=============== Webknecht ====================-->
+	<!--=============== Lindwurm ====================-->
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_LindwurmBlood</defName>
 		<label>lindwurm blood</label>

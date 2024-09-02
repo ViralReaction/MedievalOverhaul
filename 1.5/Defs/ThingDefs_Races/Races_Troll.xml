@@ -213,6 +213,17 @@
 				<factionToReturnTo>DankPyon_Forest_Faction</factionToReturnTo>			
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="MedievalOverhaul.AdditionalButcherProducts">
+                <butcherOptions>
+                    <li>
+                        <thingDef>DankPyon_TrollHeart</thingDef>
+                        <amount>1</amount>
+                        <chance>0.5</chance>
+                    </li>
+                </butcherOptions>
+            </li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

@@ -549,6 +549,27 @@
 		<tradeTags>
 			<li>AnimalExotic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="MedievalOverhaul.AdditionalButcherProducts">
+                <butcherOptions>
+                    <li>
+                        <thingDef>DankPyon_LindwurmScales</thingDef>
+                        <amount>1~2</amount>
+                        <chance>1</chance>
+                    </li>
+					<li>
+                        <thingDef>DankPyon_LindwurmBones</thingDef>
+                        <amount>1~2</amount>
+                        <chance>1</chance>
+                    </li>
+					<li>
+                        <thingDef>DankPyon_LindwurmBlood</thingDef>
+                        <amount>1~2</amount>
+                        <chance>1</chance>
+                    </li>
+                </butcherOptions>
+            </li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
