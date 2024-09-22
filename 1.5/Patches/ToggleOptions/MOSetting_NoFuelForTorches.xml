@@ -57,83 +57,144 @@
 						</xpath>
 					</match>
 				</li>
-				
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[
-			@Name="TorchBase" or
-			defName="TorchLamp" or 
-			defName="TorchWallLamp" or
-			defName="DankPyon_RusticTorchLamp" or
-			defName="DankPyon_WallTorch" or
-			defName="DankPyon_WallLamp" or
-			defName="DankPyon_LampPost"
-			]/comps/li[@Class="CompProperties_Refuelable"]
-					</xpath>
-					<match Class="PatchOperationRemove">
-						<xpath>Defs/ThingDef[
-				@Name="TorchBase" or
-				defName="TorchLamp" or 
-				defName="TorchWallLamp" or
-				defName="DankPyon_RusticTorchLamp" or
-				defName="DankPyon_WallTorch" or
-				defName="DankPyon_WallLamp" or
-				defName="DankPyon_LampPost"
-				]/comps/li[@Class="MedievalOverhaul.CompProperties_RefuelableCustom"]
-						</xpath>
-					</match>
-				</li>
+
+				<!-- <li Class="PatchOperationConditional"> -->
+					<!-- <xpath>Defs/ThingDef[ -->
+			<!-- @Name="TorchBase" or -->
+			<!-- defName="TorchLamp" or  -->
+			<!-- defName="TorchWallLamp" or -->
+			<!-- defName="DankPyon_RusticTorchLamp" or -->
+			<!-- defName="DankPyon_WallTorch" or -->
+			<!-- defName="DankPyon_WallLamp" or -->
+			<!-- defName="DankPyon_LampPost" -->
+			<!-- ]/comps/li[@Class="MedievalOverhaul.CompProperties_RefuelableCustom"] -->
+					<!-- </xpath> -->
+					<!-- <match Class="PatchOperationRemove"> -->
+						<!-- <xpath>Defs/ThingDef[ -->
+				<!-- @Name="TorchBase" or -->
+				<!-- defName="TorchLamp" or  -->
+				<!-- defName="TorchWallLamp" or -->
+				<!-- defName="DankPyon_RusticTorchLamp" or -->
+				<!-- defName="DankPyon_WallTorch" or -->
+				<!-- defName="DankPyon_WallLamp" or -->
+				<!-- defName="DankPyon_LampPost" -->
+				<!-- ]/comps/li[@Class="MedievalOverhaul.CompProperties_RefuelableCustom"] -->
+						<!-- </xpath> -->
+					<!-- </match> -->
+				<!-- </li> -->
 		
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[
-			@Name="TorchBase" or
-			defName="TorchLamp" or 
-			defName="TorchWallLamp" or
-			defName="DankPyon_RusticTorchLamp" or
-			defName="DankPyon_WallTorch" or
-			defName="DankPyon_WallLamp" or
-			defName="DankPyon_LampPost"
-			]/inspectorTabs
-					</xpath>
-					<match Class="PatchOperationRemove">
-						<xpath>Defs/ThingDef[
-				@Name="TorchBase" or
-				defName="TorchLamp" or 
-				defName="TorchWallLamp" or
-				defName="DankPyon_RusticTorchLamp" or
-				defName="DankPyon_WallTorch" or
-				defName="DankPyon_WallLamp" or
-				defName="DankPyon_LampPost"
-				]/inspectorTabs
-						</xpath>
-					</match>
-				</li>
+				<!-- <li Class="PatchOperationConditional"> -->
+					<!-- <xpath>Defs/ThingDef[ -->
+			<!-- @Name="TorchBase" or -->
+			<!-- defName="TorchLamp" or  -->
+			<!-- defName="TorchWallLamp" or -->
+			<!-- defName="DankPyon_RusticTorchLamp" or -->
+			<!-- defName="DankPyon_WallTorch" or -->
+			<!-- defName="DankPyon_WallLamp" or -->
+			<!-- defName="DankPyon_LampPost" -->
+			<!-- ]/inspectorTabs -->
+					<!-- </xpath> -->
+					<!-- <match Class="PatchOperationRemove"> -->
+						<!-- <xpath>Defs/ThingDef[ -->
+				<!-- @Name="TorchBase" or -->
+				<!-- defName="TorchLamp" or  -->
+				<!-- defName="TorchWallLamp" or -->
+				<!-- defName="DankPyon_RusticTorchLamp" or -->
+				<!-- defName="DankPyon_WallTorch" or -->
+				<!-- defName="DankPyon_WallLamp" or -->
+				<!-- defName="DankPyon_LampPost" -->
+				<!-- ]/inspectorTabs -->
+						<!-- </xpath> -->
+					<!-- </match> -->
+				<!-- </li> -->
 		
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[
-			@Name="TorchBase" or
-			defName="TorchLamp" or 
-			defName="TorchWallLamp" or
-			defName="DankPyon_RusticTorchLamp" or
-			defName="DankPyon_WallTorch" or
-			defName="DankPyon_WallLamp" or
-			defName="DankPyon_LampPost"
-			]/comps/li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"]
-					</xpath>
-					<match Class="PatchOperationRemove">
-						<xpath>Defs/ThingDef[
-				@Name="TorchBase" or
-				defName="TorchLamp" or 
-				defName="TorchWallLamp" or
-				defName="DankPyon_RusticTorchLamp" or
-				defName="DankPyon_WallTorch" or
-				defName="DankPyon_WallLamp" or
-				defName="DankPyon_LampPost"
-				]/comps/li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"]
-						</xpath>
-					</match>
-				</li>
+				<!-- <li Class="PatchOperationConditional"> -->
+					<!-- <xpath>Defs/ThingDef[ -->
+			<!-- @Name="TorchBase" or -->
+			<!-- defName="TorchLamp" or  -->
+			<!-- defName="TorchWallLamp" or -->
+			<!-- defName="DankPyon_RusticTorchLamp" or -->
+			<!-- defName="DankPyon_WallTorch" or -->
+			<!-- defName="DankPyon_WallLamp" or -->
+			<!-- defName="DankPyon_LampPost" -->
+			<!-- ]/comps/li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"] -->
+					<!-- </xpath> -->
+					<!-- <match Class="PatchOperationRemove"> -->
+						<!-- <xpath>Defs/ThingDef[ -->
+				<!-- @Name="TorchBase" or -->
+				<!-- defName="TorchLamp" or  -->
+				<!-- defName="TorchWallLamp" or -->
+				<!-- defName="DankPyon_RusticTorchLamp" or -->
+				<!-- defName="DankPyon_WallTorch" or -->
+				<!-- defName="DankPyon_WallLamp" or -->
+				<!-- defName="DankPyon_LampPost" -->
+				<!-- ]/comps/li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"] -->
+						<!-- </xpath> -->
+					<!-- </match> -->
+				<!-- </li> -->
 
 			</operations>
 		</active>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]][not(defName[.="PassiveCooler"])]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]</xpath>
+				<value>
+					<li>DankPyon_Coal</li>
+					<li>DankPyon_Tar</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../categories</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDe/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../categories</xpath>
+					<value>
+						<li>DankPyon_RawWood</li>
+						<li>DankPyon_Wood</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/..</xpath>
+					<value>
+						<categories>
+							<li>DankPyon_RawWood</li>
+							<li>DankPyon_Wood</li>
+						</categories>
+					</value>
+				</nomatch>
+			</li>
+
+			<!-- If there is no inspector tab, add inspector tab AND MedievalOverhaul.ITab_Fuel-->
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not(inspectorTabs)][not (@ParentName="TorchLamp")]</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not(inspectorTabs)][not (@ParentName="TorchLamp")]</xpath>
+					<value>
+						<inspectorTabs>
+							<li>MedievalOverhaul.ITab_FuelCustom</li>
+						</inspectorTabs>
+					</value>
+				</match>
+			</li>
+
+			<!-- <Operation Class="PatchOperationConditional"> -->
+			<!-- <xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not (@ParentName="TorchLamp")]/inspectorTabs</xpath> -->
+			<!-- <match Class="PatchOperationAdd"> -->
+			<!-- <xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not (@ParentName="TorchLamp")]/inspectorTabs</xpath> -->
+			<!-- <value> -->
+			<!-- <li>MedievalOverhaul.ITab_FuelCustom</li> -->
+			<!-- </value> -->
+			<!-- </match> -->
+			<!-- </Operation> -->
+
+			<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"] and not(comps/li[@Class="CompProperties_Power"]) and not(defName[.="PassiveCooler"])]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+				<attribute>Class</attribute>
+				<value>MedievalOverhaul.CompProperties_RefuelableCustom</value>
+			</li>
+			
+			</operations>
+		</inactive>
 	</Operation>
 </Patch>
