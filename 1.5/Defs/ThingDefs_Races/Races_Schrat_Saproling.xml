@@ -84,6 +84,17 @@
 		<butcherProducts>
 			<DankPyon_RawDarkWood>20</DankPyon_RawDarkWood>
 		</butcherProducts>
+		<modExtensions>
+			<li Class="MedievalOverhaul.AdditionalButcherProducts">
+                <butcherOptions>
+                    <li>
+                        <thingDef>DankPyon_Amber</thingDef>
+                        <amount>1~5</amount>
+                        <chance>1</chance>
+                    </li>
+                </butcherOptions>
+            </li>
+		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef>

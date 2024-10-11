@@ -278,7 +278,7 @@
 				<butcherOptions>
                     <li>
                         <thingDef>DankPyon_NachHorns</thingDef>
-                        <amount>1</amount>
+                        <amount>1~2</amount>
                         <chance>0.5</chance>
                     </li>
                 </butcherOptions>

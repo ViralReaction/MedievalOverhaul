@@ -90,7 +90,7 @@
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>DankPyon_Gossamer</resourceDef>
-				<gatheringIntervalDays>14</gatheringIntervalDays>
+				<gatheringIntervalDays>7</gatheringIntervalDays>
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>DankPyon_Gossamer_Desc</customResourceString>
 			</li>
