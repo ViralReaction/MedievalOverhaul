@@ -177,7 +177,7 @@
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<wildGroupSize>5~8</wildGroupSize>
 		<defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
-		<alternateGraphicChance>0.8</alternateGraphicChance>
+		<alternateGraphicChance>0.33</alternateGraphicChance>
 		<alternateGraphics>
 			<li><texPath>Animal/Alp2</texPath></li>
 			<li><texPath>Animal/Alp3</texPath></li>
