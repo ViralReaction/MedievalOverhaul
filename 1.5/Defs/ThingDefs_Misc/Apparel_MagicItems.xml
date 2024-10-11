@@ -32,6 +32,11 @@
 		<equippedStatOffsets>
 			<CarryingCapacity>50</CarryingCapacity>
 		</equippedStatOffsets>
+		<modExtensions>
+			<li Class="MedievalOverhaul.ItemLootExtension">
+				<qualityRange>4~6</qualityRange>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_Ruin_Ring">
@@ -56,6 +61,11 @@
 		<equippedStatOffsets>
 			<MoveSpeed>0.6</MoveSpeed>
 		</equippedStatOffsets>
+		<modExtensions>
+			<li Class="MedievalOverhaul.ItemLootExtension">
+				<qualityRange>4~6</qualityRange>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_Ruin_Ring">
@@ -81,6 +91,11 @@
 			<InjuryHealingFactor>0.1</InjuryHealingFactor>
 			<MedicalTendQuality>0.2</MedicalTendQuality>
 		</equippedStatOffsets>
+		<modExtensions>
+			<li Class="MedievalOverhaul.ItemLootExtension">
+				<qualityRange>4~6</qualityRange>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_Ruin_Ring">
@@ -108,6 +123,11 @@
 			<PsychicSensitivity>0.3</PsychicSensitivity>
 			<MentalBreakThreshold>-0.2</MentalBreakThreshold>
 		</equippedStatOffsets>
+		<modExtensions>
+			<li Class="MedievalOverhaul.ItemLootExtension">
+				<qualityRange>4~6</qualityRange>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_Ruin_Ring">
@@ -136,6 +156,11 @@
 				<part>Body</part>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="MedievalOverhaul.ItemLootExtension">
+				<qualityRange>4~6</qualityRange>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 </Defs>
