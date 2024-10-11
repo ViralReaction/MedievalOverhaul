@@ -760,6 +760,35 @@
 		</stages>
 	</HediffDef>
 
+	<HediffDef>
+		<defName>DankPyon_Nightmares</defName>
+		<label>nightmares</label>
+		<makesSickThought>true</makesSickThought>
+		<description>A temporary state of mind that hinders combat effectiveness.</description>
+		<tendable>false</tendable>
+		<isBad>true</isBad>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>1200</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.10</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
 	<!-- Apparel Added Hediffs -->
 	<HediffDef>
 		<defName>DankPyon_LindwurmAcidImmune</defName>

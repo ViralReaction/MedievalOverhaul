@@ -195,6 +195,21 @@
 		<harmsHealth>false</harmsHealth>
 		<combatLogRules>Damage_Stun</combatLogRules>
 		<consideredHelpful>false</consideredHelpful>
-	  </DamageDef>
+	</DamageDef>
+	  
+	<DamageDef>
+		<defName>DankPyon_AlpSleep</defName>
+		<label>sleep</label>
+		<workerClass>MedievalOverhaul.DamageWorker_AlpSleep</workerClass>
+		<canInterruptJobs>false</canInterruptJobs>
+		<makesBlood>false</makesBlood>
+		<defaultDamage>40</defaultDamage>
+		<hediff>DankPyon_Nightmares</hediff>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<soundExplosion>Explosion_Stun</soundExplosion>
+		<harmsHealth>false</harmsHealth>
+		<combatLogRules>Damage_Stun</combatLogRules>
+		<consideredHelpful>false</consideredHelpful>
+	</DamageDef>
 
 </Defs>
