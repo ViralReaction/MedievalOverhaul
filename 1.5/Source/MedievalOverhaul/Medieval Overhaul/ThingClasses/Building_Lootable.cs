@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Microsoft.Win32;
 using RimWorld;
+using UnityEngine;
 using Verse;
 using Verse.AI;
 using static HarmonyLib.Code;
@@ -117,15 +119,17 @@ namespace MedievalOverhaul
 
             if (!contentsKnown)
             {
-                    if (Rand.Chance(lootableExt.lootChance))
-                    {
-                        ThingDef lootableTD;
+                if (Rand.Chance(lootableExt.lootChance))
+                {
+                    ThingDef lootableTD;
                     // Random search results.
                     if (lootableExt.isRandom == true)
                     {
                         lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.randomItems.RandomElement());
                         if (lootableTD != null)
                         {
+                            //QualityCategory qualityLevel = lootableTD.GetModExtension<ItemLootExtension>()?.qualityCategory ?? QualityCategory.Normal;
+
                             if (lootableTD.thingClass.Name == "Book")
                             {
                                 Thing book = BookUtility.MakeBook(lootableTD, ArtGenerationContext.Outsider);
@@ -133,9 +137,23 @@ namespace MedievalOverhaul
                             }
                             else
                             {
-                                Thing t1 = ThingMaker.MakeThing(lootableTD, GenStuff.RandomStuffFor(lootableTD));
-                                t1.stackCount = lootableExt.lootCount.RandomInRange;
-                                innerContainer.TryAdd(t1, lootableExt.lootCount.RandomInRange);
+                                Thing randomThing = ThingMaker.MakeThing(lootableTD, GenStuff.RandomStuffFor(lootableTD));
+                                CompQuality compQuality = randomThing.TryGetComp<CompQuality>();
+                                if (compQuality != null)
+                                {
+                                    IntRange qualityRange = lootableTD.GetModExtension<ItemLootExtension>()?.qualityRange ?? new IntRange(2, 2);
+                                    int qualityInt = Rand.Range(qualityRange.min, qualityRange.max);
+                                    QualityCategory qualityLevel = (QualityCategory)qualityInt;
+                                    compQuality.SetQuality(qualityLevel, ArtGenerationContext.Outsider);
+                                }
+                                if (randomThing.def.stackLimit > 1)
+                                {
+                                    randomThing.stackCount = lootableExt.lootCount.RandomInRange;
+                                }
+                                if (randomThing.stackCount > 0)
+                                {
+                                    innerContainer.TryAdd(randomThing, randomThing.stackCount);
+                                }
                             }
                         }
                     }
@@ -145,6 +163,7 @@ namespace MedievalOverhaul
                         lootableTD = DefDatabase<ThingDef>.GetNamedSilentFail(lootableExt.itemDefName);
                         if (lootableTD != null)
                         {
+
                             if (lootableTD.thingClass.Name == "Book")
                             {
                                 Thing book = BookUtility.MakeBook(lootableTD, ArtGenerationContext.Outsider);
@@ -152,16 +171,31 @@ namespace MedievalOverhaul
                             }
                             else
                             {
-                                Thing t2 = ThingMaker.MakeThing(lootableTD, GenStuff.RandomStuffFor(lootableTD));
-                                t2.stackCount = lootableExt.lootCount.RandomInRange;
-                                innerContainer.TryAdd(t2, lootableExt.lootCount.RandomInRange);
+
+                                Thing madeThing = ThingMaker.MakeThing(lootableTD, GenStuff.RandomStuffFor(lootableTD));
+                                CompQuality compQuality = madeThing.TryGetComp<CompQuality>();
+                                if (compQuality != null)
+                                {
+                                    IntRange qualityRange = lootableTD.GetModExtension<ItemLootExtension>()?.qualityRange ?? new IntRange(0, 4);
+                                    int qualityInt = Rand.Range(qualityRange.min, qualityRange.max);
+                                    QualityCategory qualityLevel = (QualityCategory)qualityInt;
+                                    compQuality.SetQuality(qualityLevel, ArtGenerationContext.Outsider);
+                                }
+                                if (madeThing.def.stackLimit > 1)
+                                {
+                                    madeThing.stackCount = lootableExt.lootCount.RandomInRange;
+                                }
+                                if (madeThing.stackCount > 0)
+                                {
+                                    innerContainer.TryAdd(madeThing, madeThing.stackCount);
+                                }
                             }
-                            
+
                         }
                     }
-                    }
-                contentsKnown = false;
+                }
             }
+            contentsKnown = false;
         }
 
         /// <summary>
