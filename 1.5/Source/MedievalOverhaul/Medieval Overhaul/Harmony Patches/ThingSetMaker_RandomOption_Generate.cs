@@ -13,6 +13,10 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch]
     public class ThingSetMaker_RandomOption_Generate
     {
+        public static bool Prepare()
+        {
+            return MedievalOverhaulSettings.settings.leatherChain;
+        }
         public static MethodBase TargetMethod()
         {
             // use normal reflection or helper methods in <AccessTools> to find the method/constructor
@@ -25,7 +29,7 @@ namespace MedievalOverhaul.Patches
         protected static void Postfix(ref List<Thing> __result)
         {
 
-            if (__result != null && MedievalOverhaulSettings.settings.leatherChain)
+            if (__result != null)
             {
                 for (int i = 0; i < __result.Count; i++)
                 {

@@ -6,13 +6,19 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using TransparentThings;
 using Verse;
+using MedievalOverhaul;
 
 namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch]
     public class ThingSetMaker_RandomGeneralGoods_Generate
     {
+        public static bool Prepare()
+        {
+            return MedievalOverhaulSettings.settings.leatherChain;
+        }
         public static MethodBase TargetMethod()
         {
             // use normal reflection or helper methods in <AccessTools> to find the method/constructor
@@ -25,7 +31,7 @@ namespace MedievalOverhaul.Patches
         protected static void Postfix(ref List<Thing> __result)
         {
 
-            if (__result != null && MedievalOverhaulSettings.settings.leatherChain)
+            if (__result != null)
             {
                 for (int i = 0; i < __result.Count; i++)
                 {
@@ -54,8 +60,6 @@ namespace MedievalOverhaul.Patches
                             comp.massValue = (comp.leatherAmount * comp.Props.leatherType.GetStatValueAbstract(StatDefOf.Mass));
                         }
                     }
-
-
                 }
             }
         }
