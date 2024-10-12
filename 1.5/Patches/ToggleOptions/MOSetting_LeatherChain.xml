@@ -317,15 +317,30 @@
 		</inactive>
 		<active Class="PatchOperationSequence">
 			<operations>
-			<li Class="PatchOperationConditional">
-				<xpath>/Defs/SitePartDef/workerClass[.="SitePartWorker_WorkSite_Hunting"]</xpath>
-				<match Class="PatchOperationReplace">
+				<li Class="PatchOperationConditional">
 					<xpath>/Defs/SitePartDef/workerClass[.="SitePartWorker_WorkSite_Hunting"]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>/Defs/SitePartDef/workerClass[.="SitePartWorker_WorkSite_Hunting"]</xpath>
+						<value>
+							<workerClass>MedievalOverhaul.SitePartWorker_WorkSite_Hunting</workerClass>
+						</value>
+					</match>
+				</li>
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[@Name="MarketValueBase"]/parts</xpath>
 					<value>
-						<workerClass>MedievalOverhaul.SitePartWorker_WorkSite_Hunting</workerClass>
+						<li Class="MedievalOverhaul.StatPart_MarketValue_Hide"/>
 					</value>
-				</match>
-			</li>
+				</li>
+	
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="Mass"]/parts</xpath>
+					<value>
+						<li Class="MedievalOverhaul.StatPart_Mass_Hide"/>
+					</value>
+				</li>
+
 			</operations>
 		</active>
 	</Operation>

@@ -44,6 +44,8 @@
     <Compile Include="Medieval Overhaul\QuestStuff\GameCondition_AlpEclipse.cs" />
     <Compile Include="Medieval Overhaul\QuestStuff\QuestNode_Root_AlpEclipse.cs" />
     <Compile Include="Medieval Overhaul\QuestStuff\QuestPart_AlpDarkness.cs" />
+    <Compile Include="Medieval Overhaul\StatWorkers\StatPart_Mass_Hide.cs" />
+    <Compile Include="Medieval Overhaul\StatWorkers\StatPart_MarketValue.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ItemLootExtension.cs" />
     <Compile Include="Medieval Overhaul\Utilities\CachingUtility.cs" />
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />
@@ -83,7 +85,6 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerTrader_PowerOn.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\DamageWorker_Stun_Result.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Alert_PasteDispenserNeedsHopper.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\StatExtension_GetStatValue.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Quest_End_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\StaggerHandler_StaggerFor.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_Meteorite_Reset.cs" />

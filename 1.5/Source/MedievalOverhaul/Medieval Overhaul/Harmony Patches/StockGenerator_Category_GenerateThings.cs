@@ -1,14 +1,25 @@
 ﻿using HarmonyLib;
 using RimWorld;
 using System.Collections.Generic;
+using System.Reflection;
 using Verse;
 
 namespace MedievalOverhaul.Patches
 {
-
-    [HarmonyPatch(typeof(StockGenerator_Category), "GenerateThings")]
-    public static class StockGenerator_Category_GenerateThings
+    [HarmonyPatch]
+    public class StockGenerator_Category_GenerateThings
     {
+        public static bool Prepare()
+        {
+            return MedievalOverhaulSettings.settings.leatherChain;
+        }
+        public static MethodBase TargetMethod()
+        {
+            // use normal reflection or helper methods in <AccessTools> to find the method/constructor
+            // you want to patch and return its MethodInfo/ConstructorInfo
+            //
+            return AccessTools.Method(typeof(StockGenerator_Category), nameof(StockGenerator_Category.GenerateThings));
+        }
         public static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result)
         {
             if (__result != null)
