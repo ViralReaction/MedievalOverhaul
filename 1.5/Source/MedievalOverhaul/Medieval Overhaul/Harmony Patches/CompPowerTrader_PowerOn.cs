@@ -7,6 +7,10 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch(typeof(CompPowerTrader), nameof(CompPowerTrader.PowerOn), MethodType.Getter)]
     public static class CompPowerTrader_PowerOn
     {
+        public static bool Prepare()
+        {
+            return MedievalOverhaulSettings.settings.slopDispenser;
+        }
         [HarmonyPostfix]
         public static bool Postfix(bool result, CompPowerTrader __instance)
         {

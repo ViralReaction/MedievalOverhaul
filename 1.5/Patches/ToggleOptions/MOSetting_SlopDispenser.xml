@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>
+			<li>slopDispenser</li>
+		</settings>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_SlopPot"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="DankPyon_SlopPot"]</xpath>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_SlopPot_Stew"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="DankPyon_SlopPot_Stew"]</xpath>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_SlopPot_Fondue"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="DankPyon_SlopPot_Fondue"]</xpath>
+					</match>
+				</li>
+
+			</operations>
+		</inactive>
+	</Operation>
+
+</Patch>

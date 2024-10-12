@@ -9,7 +9,11 @@ namespace MedievalOverhaul.Patches
 		MethodType.Getter)]
 	public static class Building_NutrientPasteDispenser_CanDispenseNow
 	{
-		[HarmonyPrefix]
+        public static bool Prepare()
+        {
+            return MedievalOverhaulSettings.settings.slopDispenser;
+        }
+        [HarmonyPrefix]
 		public static bool Prefix(ref bool __result, Building_NutrientPasteDispenser __instance)
 		{
 			if (__instance.GetComp<CompUnpowered>() is null) return true;

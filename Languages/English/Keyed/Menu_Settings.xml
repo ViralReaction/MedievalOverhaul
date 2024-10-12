@@ -6,22 +6,48 @@
 
 	<!-- Production Chain Options -->
 	<DankPyon_Settings_ProductionChain>Production Chain Options</DankPyon_Settings_ProductionChain>
+
 	<DankPyon_Settings_LeatherChain>Leather Production Chain:</DankPyon_Settings_LeatherChain>
+	<DankPyon_Settings_LeatherChain_Tooltip>Enables leather production chain, where animals give hides that must be processed into leather.</DankPyon_Settings_LeatherChain_Tooltip>
+	
 	<DankPyon_Settings_WoodChain>Timber Production Chain:</DankPyon_Settings_WoodChain>
+	<DankPyon_Settings_WoodChain_Tooltip>Enables timber production chain, where trees give logs that have to be cut into planks for more use.</DankPyon_Settings_WoodChain_Tooltip>
+	
 	<DankPyon_Settings_ClothChain>Cloth Production Chain:</DankPyon_Settings_ClothChain>
+	<DankPyon_Settings_ClothChain_Tooltip>Enables the cloth production chain, where raw materials from plans have to be spun into cloth.</DankPyon_Settings_ClothChain_Tooltip>
 
 	<!-- Map Generation Stuff -->
 	<DankPyon_Settings_MapGen>Map Generation Options</DankPyon_Settings_MapGen>
-	<DankPyon_Settings_IndustrialJunk>Remove vanilla industrial junk during map creation:</DankPyon_Settings_IndustrialJunk>
-	<DankPyon_Settings_ExostriderRemains>Remove Biotech's exostrider remains during map creation:</DankPyon_Settings_ExostriderRemains>
-	<DankPyon_Settings_HornetNest>Remove hornet nests during map creation:</DankPyon_Settings_HornetNest>
-	<DankPyon_Settings_VanillaMine>Restore vanilla mineables:</DankPyon_Settings_VanillaMine>
+
+	<DankPyon_Settings_IndustrialJunk>Remove Vanilla Junk:</DankPyon_Settings_IndustrialJunk>
+	<DankPyon_Settings_IndustrialJunk_Tooltip>Remove vanilla industrial junk during map creation.</DankPyon_Settings_IndustrialJunk_Tooltip>
+	
+	<DankPyon_Settings_ExostriderRemains>Remove Exostrider Remains:</DankPyon_Settings_ExostriderRemains>
+	<DankPyon_Settings_ExostriderRemains_Tooltip>Remove Biotech's exostrider remains during map creation.</DankPyon_Settings_ExostriderRemains_Tooltip>
+	
+	
+	<DankPyon_Settings_HornetNest>Remove Hornet Nests:</DankPyon_Settings_HornetNest>
+	<DankPyon_Settings_HornetNest_Tooltip>Remove hornet nests during map creation.</DankPyon_Settings_HornetNest_Tooltip>
+
+	<DankPyon_Settings_VanillaMine>Vanilla mineables:</DankPyon_Settings_VanillaMine>
+	<DankPyon_Settings_VanillaMine_Tooltip>Restores vanilla mineables. Medieval Overhaul mineables will still be available.</DankPyon_Settings_VanillaMine_Tooltip>
 
 	<!-- Misc. Settings -->
 	<DankPyon_Settings_MiscOption>Miscellaneous Settings</DankPyon_Settings_MiscOption>
+	
 	<DankPyon_Settings_RefuelableTorch>Remove fuel req. from torches:</DankPyon_Settings_RefuelableTorch>
-	<DankPyon_Settings_BoomalopeTar>Replace chemfuel with tar from Boomalopes and similar animals:</DankPyon_Settings_BoomalopeTar>
-	<DankPyon_Settings_MealRetexture>Replace vanilla meal textures:</DankPyon_Settings_MealRetexture>
-	<DankPyon_Settings_SchematicRework>Replace schematics building with Biotech style analyzer:</DankPyon_Settings_SchematicRework>
+	<DankPyon_Settings_RefuelableTorch_Tooltip>Removes fuel and heat from Vanilla and Medieval Overhaul torches.</DankPyon_Settings_RefuelableTorch_Tooltip>
+
+	<DankPyon_Settings_BoomalopeTar>Chemfuel to Tar Animals:</DankPyon_Settings_BoomalopeTar>
+	<DankPyon_Settings_BoomalopeTar_Tooltip>Replace chemfuel with tar from Boomalopes and similar animals.</DankPyon_Settings_BoomalopeTar_Tooltip>
+
+	<DankPyon_Settings_MealRetexture>Retexture vanilla meal textures:</DankPyon_Settings_MealRetexture>
+	<DankPyon_Settings_MealRetexture_Tooltip>Retextures vanilla meal textures with Medieval Overhaul style graphics.</DankPyon_Settings_MealRetexture_Tooltip>
+
+	<DankPyon_Settings_SchematicRework>Biotech Analyzer Schematics:</DankPyon_Settings_SchematicRework>
+	<DankPyon_Settings_SchematicRework_Tooltip>Replace schematics scrolls with Biotech style analyzer.</DankPyon_Settings_SchematicRework_Tooltip>
+
+	<DankPyon_Settings_SlopDispenser>Medieval Nutrient Paste Dispenser:</DankPyon_Settings_SlopDispenser>
+	<DankPyon_Settings_SlopDispenser_Tooltip>Recommend turning off for industrial playthroughs.</DankPyon_Settings_SlopDispenser_Tooltip>
 
 </LanguageData>

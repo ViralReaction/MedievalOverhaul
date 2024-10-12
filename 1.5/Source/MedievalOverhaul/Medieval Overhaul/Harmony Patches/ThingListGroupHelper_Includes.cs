@@ -12,6 +12,10 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch(typeof(ThingListGroupHelper), nameof(ThingListGroupHelper.Includes))]
     public static class ThingListGroupHelper_Includes
     {
+        public static bool Prepare()
+        {
+            return MedievalOverhaulSettings.settings.slopDispenser;
+        }
         [HarmonyPrefix]
         public static bool Prefix(this ThingRequestGroup group, ThingDef def, ref bool __result)
         {

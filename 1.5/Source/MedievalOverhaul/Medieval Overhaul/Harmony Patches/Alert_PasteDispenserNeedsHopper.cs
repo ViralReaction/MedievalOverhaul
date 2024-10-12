@@ -9,6 +9,10 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch(typeof(Alert_PasteDispenserNeedsHopper), "BadDispensers", MethodType.Getter)]
     public static class Alert_BadDispensers
     {
+        public static bool Prepare()
+        {
+            return MedievalOverhaulSettings.settings.slopDispenser;
+        }
         public static List <Thing> Postfix(List<Thing> __result)
         {
             for (int i = 0; i < __result.Count; i++)
