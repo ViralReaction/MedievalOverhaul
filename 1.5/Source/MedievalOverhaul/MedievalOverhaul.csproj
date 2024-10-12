@@ -35,9 +35,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_AlpSleep.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\RitualObligationTargetWorker_CampfireParty_CanUseTargetInternal_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\StageFailTrigger_TargetNotLit_Failed_Patch.cs" />
+    <Compile Include="Medieval Overhaul\HediffComps\HediffComp_Nightmare.cs" />
     <Compile Include="Medieval Overhaul\MapComponent\RefuelableMapComponent.cs" />
+    <Compile Include="Medieval Overhaul\QuestStuff\ThoughtWorker_AlpEclipse.cs" />
+    <Compile Include="Medieval Overhaul\QuestStuff\GameCondition_AlpEclipse.cs" />
+    <Compile Include="Medieval Overhaul\QuestStuff\QuestNode_Root_AlpEclipse.cs" />
+    <Compile Include="Medieval Overhaul\QuestStuff\QuestPart_AlpDarkness.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ItemLootExtension.cs" />
     <Compile Include="Medieval Overhaul\Utilities\CachingUtility.cs" />
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />

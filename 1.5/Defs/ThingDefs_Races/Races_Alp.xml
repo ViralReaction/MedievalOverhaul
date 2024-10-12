@@ -79,10 +79,10 @@
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
-				<accuracyTouch>1</accuracyTouch>
-				<accuracyShort>1</accuracyShort>
-				<accuracyMedium>1</accuracyMedium>
-				<accuracyLong>1</accuracyLong>
+				<accuracyTouch>2</accuracyTouch>
+				<accuracyShort>2</accuracyShort>
+				<accuracyMedium>2</accuracyMedium>
+				<accuracyLong>2</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DankPyon_AlpSleep</defaultProjectile>
 				<warmupTime>3</warmupTime>
@@ -92,7 +92,7 @@
 				<soundCast>ThrowMolotovCocktail</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<label>alp sleep</label>
-				<commonality>0.2</commonality>
+				<commonality>0.8</commonality>
 			</li>
 		</verbs>
 		<comps>

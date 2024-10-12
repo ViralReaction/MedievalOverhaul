@@ -13,7 +13,6 @@
 		<colorSpectrum>
 			<li>(0.78, 0.79, 0.71)</li>
 		</colorSpectrum>
-    
 		<displayInFactionSelection>false</displayInFactionSelection>
 		<humanlikeFaction>false</humanlikeFaction>
 		<hidden>true</hidden>
@@ -34,6 +33,16 @@
 		<allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
 		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>80</configurationListOrderPriority>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<!-- Alps -->
+				<kindDef>DankPyon_AlpGroup</kindDef>
+				<commonality>100</commonality>
+				<options>
+				  <DankPyon_Alp>1</DankPyon_Alp>
+				</options>
+			  </li>
+		</pawnGroupMakers>
 	</FactionDef>
 
 	<FactionDef ParentName="FactionBase">

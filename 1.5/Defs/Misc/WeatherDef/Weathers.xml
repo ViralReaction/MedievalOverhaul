@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<WeatherDef>
+		<defName>DankPyon_AlpEclipse_Weather</defName>
+		<label>darkening terror</label>
+		<description>An unnatural eclipse casts an eerie darkness over the land, shrouding everything in a thick, swirling fog that obscures vision and heightens the sense of dread, as unseen horrors lurk just beyond sight. </description>
+		<isBad>true</isBad>
+		<canOccurAsRandomForcedEvent>false</canOccurAsRandomForcedEvent>
+		<favorability>VeryBad</favorability>
+		<perceivePriority>3</perceivePriority>
+		<!-- Same as clear night -->
+		<skyColorsDay>
+			<sky>(0.17,0.17,0.17)</sky>
+			<shadow>(0.8,0.8,0.83)</shadow>
+			<overlay>(0.3,0.3,0.6)</overlay>
+			<saturation>1.25</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(0.17,0.17,0.17)</sky>
+			<shadow>(0.8,0.8,0.83)</shadow>
+			<overlay>(0.3,0.3,0.6)</overlay>
+			<saturation>1.25</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.17,0.17,0.17)</sky>
+			<shadow>(0.8,0.8,0.83)</shadow>
+			<overlay>(0.3,0.3,0.6)</overlay>
+			<saturation>1.25</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.17,0.17,0.17)</sky>
+			<shadow>(0.8,0.8,0.83)</shadow>
+			<overlay>(0.3,0.3,0.6)</overlay>
+			<saturation>1.25</saturation>
+		</skyColorsNightMid>
+		<ambientSounds>
+		  <li>Ambient_Wind_Fog</li>
+		</ambientSounds>
+		<overlayClasses>
+		  <li>WeatherOverlay_Fog</li>
+		</overlayClasses>
+	</WeatherDef>
+
+</Defs>

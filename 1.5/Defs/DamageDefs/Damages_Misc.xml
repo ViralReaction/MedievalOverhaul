@@ -196,7 +196,8 @@
 		<combatLogRules>Damage_Stun</combatLogRules>
 		<consideredHelpful>false</consideredHelpful>
 	</DamageDef>
-	  
+	
+	<!-- Alp Sleep/Nightmare -->
 	<DamageDef>
 		<defName>DankPyon_AlpSleep</defName>
 		<label>sleep</label>
@@ -204,12 +205,26 @@
 		<canInterruptJobs>false</canInterruptJobs>
 		<makesBlood>false</makesBlood>
 		<defaultDamage>40</defaultDamage>
-		<hediff>DankPyon_Nightmares</hediff>
+		<hediff>DankPyon_AlpSleep</hediff>
 		<explosionCellFleck>BlastDry</explosionCellFleck>
 		<soundExplosion>Explosion_Stun</soundExplosion>
 		<harmsHealth>false</harmsHealth>
 		<combatLogRules>Damage_Stun</combatLogRules>
 		<consideredHelpful>false</consideredHelpful>
+	</DamageDef>
+
+	<DamageDef>
+		<defName>DankPyon_AlpNightmare</defName>
+		<label>nightmare</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been stabbed to death.</deathMessage>
+		<hediff>DankPyon_NightmareDamage</hediff>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
 	</DamageDef>
 
 </Defs>

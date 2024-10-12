@@ -761,8 +761,8 @@
 	</HediffDef>
 
 	<HediffDef>
-		<defName>DankPyon_Nightmares</defName>
-		<label>nightmares</label>
+		<defName>DankPyon_AlpSleep</defName>
+		<label>magical sleep</label>
 		<makesSickThought>true</makesSickThought>
 		<description>A temporary state of mind that hinders combat effectiveness.</description>
 		<tendable>false</tendable>
@@ -776,6 +776,9 @@
 				<disappearsAfterTicks>1200</disappearsAfterTicks>
 				<showRemainingTime>true</showRemainingTime>
 			</li>
+			<li Class="HediffCompProperties">
+				<compClass>MedievalOverhaul.HediffComp_Nightmare</compClass>
+			</li>
 		</comps>
 		<stages>
 			<li>
@@ -788,6 +791,24 @@
 			</li>
 		</stages>
 	</HediffDef>
+	
+	<HediffDef ParentName="InjuryBase">
+		<defName>DankPyon_NightmareDamage</defName>
+		<label>mental trauma</label>
+		<labelNoun>mental trauma</labelNoun>
+		<description>mental trauma</description>
+		<comps>
+		  <li Class="HediffCompProperties_TendDuration">
+			<labelTendedWell>set</labelTendedWell>
+			<labelTendedWellInner>set</labelTendedWellInner>
+			<labelSolidTendedWell>set</labelSolidTendedWell>
+		  </li>
+		</comps>
+		<injuryProps>
+		  <painPerSeverity>0.01</painPerSeverity>
+		  <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+		</injuryProps>
+	  </HediffDef>
 
 	<!-- Apparel Added Hediffs -->
 	<HediffDef>

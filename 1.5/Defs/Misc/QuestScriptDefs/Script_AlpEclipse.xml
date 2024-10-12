@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<QuestScriptDef>
+		<defName>DankPyon_AlpEclipse</defName>
+		<autoAccept>true</autoAccept>
+		<defaultHidden>true</defaultHidden>
+		<isRootSpecial>true</isRootSpecial>
+		<questNameRules>
+			<rulesStrings>
+				<li>questDescription->darkening terror</li><!-- hidden -->
+			</rulesStrings>
+		</questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription-></li><!-- hidden -->
+			</rulesStrings>
+		</questDescriptionRules>
+		<questContentRules>
+			<rulesStrings>
+				<li>initialPhaseLetterLabel->Dimming sky</li>
+				<li>initialPhaseLetterText->The sky is dimming and a dense fog is starting to creep in. Soon it will be hard to see anything not lit by fire.</li>
+				<li>mainPhaseLetterLabel->Darkening terror</li>
+				<li>mainPhaseLetterText->A darkening terror is descending. Reports of screams outside the colony have come in.</li>
+				<li>darknessLiftedLetterLabel->Darkness lifting</li>
+				<li>darknessLiftedLetterText->The darkening terror has begun to dissipate. The alps have started to retreat!</li>
+			</rulesStrings>
+		</questContentRules>
+		<root Class="MedievalOverhaul.QuestNode_Root_AlpEclipse"/>
+	</QuestScriptDef>
+
+</Defs>

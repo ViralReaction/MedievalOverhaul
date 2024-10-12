@@ -13,6 +13,7 @@
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Stun</damageDef>
 			<damageAmountBase>5</damageAmountBase>
+			<armorPenetrationBase>2.0</armorPenetrationBase>
 			<speed>15</speed>
 		</projectile>
 	</ThingDef>
@@ -21,14 +22,14 @@
 		<defName>DankPyon_AlpSleep</defName>
 		<label>sleep</label>
 		<graphicData>
-			<texPath>Projectile/Web</texPath>
+			<texPath>Projectile/Projectile_AlpBolt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>2</drawSize>
 		</graphicData>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>DankPyon_AlpSleep</damageDef>
-			<damageAmountBase>5</damageAmountBase>
+			<armorPenetrationBase>2.0</armorPenetrationBase>
 			<speed>30</speed>
 		</projectile>
 	</ThingDef>

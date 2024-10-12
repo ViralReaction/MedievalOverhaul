@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TaleDef>
+    <defName>DankPyon_AlpEclipseTale</defName>
+    <label>unnatural eclipse</label>
+    <taleClass>Tale_SinglePawn</taleClass>
+    <type>Volatile</type>
+    <baseInterest>5</baseInterest>
+    <rulePack>
+      <rulesStrings>
+        <li>tale_noun->an eclipse over [PAWN_nameDef]'s [Community]</li>
+        <li>image->an unnaturally dark sky, [circumstance_phrase]</li>
+        <li>image->a crepuscular sky, [circumstance_phrase]</li>
+        <li>image->a moon, ringed by a faint circle of sunlight, [circumstance_phrase]</li>
+        <li>image->[Quantity_adjphrase] [Animal]s milling around uncertainly in darkness, [circumstance_phrase]</li>
+        <li>circumstance_phrase->the air still and quiet</li>
+        <li>circumstance_phrase->twilight blanketing a nearby [TerrainFeature]</li>
+        <li>circumstance_phrase->twilight blanketing [Quantity_adjphrase] nearby [TerrainFeature]s</li>
+        <li>circumstance_phrase->with stars visible</li>
+        <li>desc_sentence->Below, [PAWN_nameDef] plays [Game] with a [AdjectiveFriendly] look.</li>
+        <li>desc_sentence->[PAWN_nameDef] watches with awe on [PAWN_possessive] face.</li>
+        <li>desc_sentence->[Quantity_adjphrase] [PersonJob]s watch from below.</li>
+        <li>desc_sentence->[PAWN_nameDef] sits near a [TerrainFeature], gazing at the sky.</li>
+        <li>desc_sentence->A [Community] of spectators watches the sky peacefully.</li>
+        <li>desc_sentence->There is no [Enemy] in sight.</li>
+      </rulesStrings>
+    </rulePack>
+  </TaleDef>
+
+</Defs>

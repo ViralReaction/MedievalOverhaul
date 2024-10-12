@@ -143,4 +143,9 @@
 	<DankPyon_MustBeOnSoil>Terrain must be soil</DankPyon_MustBeOnSoil>
 	<DankPyon_MeltedAwayInStorage>{1_label} has melted away in storage.</DankPyon_MeltedAwayInStorage>
 	<DankPyon_RequiredSchematic>Required Schematic</DankPyon_RequiredSchematic>
+	
+	<!-- Alp Game Condition -->
+	<DankPyon_AlpAttackLetterLabel>Alp Sighted</DankPyon_AlpAttackLetterLabel>
+	<DankPyon_AlpAttackLetterText>A chilling wind sweeps through the area as multiple Alps emerge from the shadows, their ghastly forms gliding silently amidst the dense fog. With their pale, featureless faces and unsettling exposed teeth, they evoke a deep sense of dread in those who catch a glimpse. Whispers of fear spread through the camp as the undead raiders advance, hungry for chaos and despair.</DankPyon_AlpAttackLetterText>
+
 </LanguageData>

@@ -16,8 +16,8 @@ namespace MedievalOverhaul
             Pawn pawn = victim as Pawn;
             if (pawn != null && pawn.needs.rest != null)
             {
-                float sleepDamage = dinfo.Amount / 100f;
-                float newRestLevel = pawn.needs.rest.curLevelInt - sleepDamage;
+                float restDamage = dinfo.Amount / 100f;
+                float newRestLevel = pawn.needs.rest.curLevelInt - restDamage;
                 pawn.needs.rest.curLevelInt = newRestLevel < 0 ? 0 : newRestLevel;
                 if (pawn.needs.rest.curLevelInt < 0.3f)
                 {

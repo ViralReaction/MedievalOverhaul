@@ -85,6 +85,13 @@ namespace MedievalOverhaul
         public static ThingDef DankPyon_Coal;
         public static ThingDef DankPyon_Tar;
 
+        public static DamageDef DankPyon_AlpNightmare;
+        public static GameConditionDef DankPyon_AlpEclipse;
+        public static PawnGroupKindDef DankPyon_AlpGroup;
+        public static TaleDef DankPyon_AlpEclipseTale;
+        public static WeatherDef DankPyon_AlpEclipse_Weather;
+        public static ThoughtDef DankPyon_AlpRaidFinished;
+
         [MayRequireCE]
         public static StatDef Bulk;
 

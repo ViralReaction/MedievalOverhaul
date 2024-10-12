@@ -15,5 +15,37 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>DankPyon_AlpRaidFinished</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>2</durationDays>
+		<nullifyingHediffs>
+			<li MayRequire="ludeon.rimworld.anomaly">Inhumanized</li>
+		</nullifyingHediffs>
+		<stages>
+			<li>
+				<label>darkening terror stopped</label>
+				<description>The alps have finally stopped their assault!</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>DankPyon_AlpEclipse</defName>
+		<workerClass>MedievalOverhaul.ThoughtWorker_AlpEclipse</workerClass>
+		<gameCondition>DankPyon_AlpEclipse</gameCondition>
+		<nullifyingHediffs>
+			<li MayRequire="ludeon.rimworld.anomaly">Inhumanized</li>
+		</nullifyingHediffs>
+		<stages>
+			<li>
+				<label>darkening terror</label>
+				<description>I have to get to get out of here. The screams are getting closer...</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 
 </Defs>
