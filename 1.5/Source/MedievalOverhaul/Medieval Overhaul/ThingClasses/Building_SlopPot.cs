@@ -20,6 +20,13 @@ namespace MedievalOverhaul
 		public CompSlop slopComp;
 		public float nutritionAmount;
 
+        public new bool CanDispenseNow
+        {
+            get
+            {
+                return this.HasEnoughFeedstockInHoppers();
+            }
+        }
         public override ThingDef DispensableDef => slopComp.Props.mealDef;
 
 		public override Color DrawColor =>

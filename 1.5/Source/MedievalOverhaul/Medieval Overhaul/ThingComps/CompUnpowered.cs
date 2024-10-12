@@ -11,7 +11,8 @@ namespace MedievalOverhaul
 			yield break;
 		}
 
-		public override string CompInspectStringExtra()
+
+        public override string CompInspectStringExtra()
 		{
 			return null;
 		}
