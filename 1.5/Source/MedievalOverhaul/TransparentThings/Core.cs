@@ -161,6 +161,10 @@ namespace TransparentThings
         [HarmonyPatch(typeof(Thing), "SpawnSetup")]
         public class Thing_SpawnSetup_Patch
         {
+            public static bool Prepare()
+            {
+                return TransparentThingsMod.settings.enableTreeTransparency;
+            }
             private static void Postfix(Thing __instance)
             {
                 if (!__instance.TransparencyAllowed())
@@ -187,6 +191,10 @@ namespace TransparentThings
         [HarmonyPatch(typeof(Thing), "DeSpawn")]
         public class Thing_DeSpawn_Patch
         {
+            public static bool Prepare()
+            {
+                return TransparentThingsMod.settings.enableTreeTransparency;
+            }
             private static void Prefix(Thing __instance)
             {
                 Core.cachedTransparentableThingsByExtensions.Remove(__instance);
@@ -202,6 +210,10 @@ namespace TransparentThings
         [HarmonyPatch(typeof(Thing), "Position", MethodType.Setter)]
         public class Thing_Position_Patch
         {
+            public static bool Prepare()
+            {
+                return TransparentThingsMod.settings.enableTreeTransparency;
+            }
             public static void Prefix(Thing __instance, out bool __state, IntVec3 value)
             {
                 if (Core.BaseItemMatches(__instance) && __instance.Map != null && __instance.Position != value)
@@ -233,6 +245,10 @@ namespace TransparentThings
         [HarmonyPatch(typeof(Thing), "Graphic", MethodType.Getter)]
         public class Patch_Graphic_Postfix
         {
+            public static bool Prepare()
+            {
+                return TransparentThingsMod.settings.enableTreeTransparency;
+            }
             private static void Postfix(Thing __instance, ref Graphic __result)
             {
                 ThingExtension extension;
@@ -259,7 +275,10 @@ namespace TransparentThings
         public static class PlaySettings_DoPlaySettingsGlobalControls_Patch
         {
             [HarmonyPrepare]
-            public static bool Prepare() => Core.hasTransparentRoofs;
+            public static bool Prepare()
+            {
+                return Core.hasTransparentRoofs;
+            }
 
             public static void Postfix(WidgetRow row, bool worldView)
             {
