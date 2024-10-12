@@ -13,14 +13,14 @@ namespace MedievalOverhaul.Patches
 
         static HarmonyInstance()
         {
-            foreach (var stat in DefDatabase<StatDef>.AllDefs)
-            {
-                var extension = stat.GetModExtension<HediffFallRateMultiplier>();
-                if (extension != null && extension.hediffDef != null)
-                {
-                    statMultipliers[extension.hediffDef] = stat;
-                }
-            }
+            //foreach (var stat in DefDatabase<StatDef>.AllDefs)
+            //{
+            //    var extension = stat.GetModExtension<HediffFallRateMultiplier>();
+            //    if (extension != null && extension.hediffDef != null)
+            //    {
+            //        statMultipliers[extension.hediffDef] = stat;
+            //    }
+            //}
             foreach (var def in DefDatabase<ThingDef>.AllDefsListForReading)
             {
                 if (def.IsChunk() && def.projectileWhenLoaded is null)
@@ -65,18 +65,20 @@ namespace MedievalOverhaul.Patches
         public static bool TryGetArtillery(this Thing thing, out ThingRequestGroup group) => registeredArtillery.TryGetValue(thing.def, out group);
     }
 
-    [HarmonyPatch(typeof(HediffComp_SeverityPerDay), "SeverityChangePerDay")]
-    [HarmonyPatch(typeof(HediffComp_Immunizable), "SeverityChangePerDay")]
-    public class HediffComp_Immunizable_Patch
-    {
-        public static void Postfix(HediffComp_SeverityPerDay __instance, ref float __result)
-        {
-            if (HarmonyInstance.statMultipliers.TryGetValue(__instance.Def, out var stat))
-            {
-                __result *= __instance.Pawn.GetStatValue(stat);
-            }
-        }
-    }
+
+    // Not implemented, but causing overhead.
+    //[HarmonyPatch(typeof(HediffComp_SeverityPerDay), "SeverityChangePerDay")]
+    //[HarmonyPatch(typeof(HediffComp_Immunizable), "SeverityChangePerDay")]
+    //public class HediffComp_Immunizable_Patch
+    //{
+    //    public static void Postfix(HediffComp_SeverityPerDay __instance, ref float __result)
+    //    {
+    //        if (HarmonyInstance.statMultipliers.TryGetValue(__instance.Def, out var stat))
+    //        {
+    //            __result *= __instance.Pawn.GetStatValue(stat);
+    //        }
+    //    }
+    //}
 
     
 }
