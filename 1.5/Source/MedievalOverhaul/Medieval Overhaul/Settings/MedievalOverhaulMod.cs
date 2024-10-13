@@ -12,7 +12,7 @@ namespace MedievalOverhaul
     public class MedievalOverhaulSettings : Mod
     {
         public static MedievalOverhaul_Settings settings;
-        public string version = "1.5.0.1";
+        public string version = "1.5.0.2";
         public MedievalOverhaulSettings(ModContentPack content) : base(content)
         {
             settings = GetSettings<MedievalOverhaul_Settings>();
