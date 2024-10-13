@@ -42,7 +42,7 @@ namespace MedievalOverhaul
             }).debugLabel = "Main phase delay";
             quest.AddPart(new QuestPart_AlpDarkness(mainPhaseBeganSignal, map.Parent));
             quest.Letter(LetterDefOf.ThreatBig, mainPhaseBeganSignal, null, null, null, useColonistsFromCaravanArg: false, QuestPart.SignalListenMode.OngoingOnly, null, filterDeadPawnsFromLookTargets: false, "[mainPhaseLetterText]", null, "[mainPhaseLetterLabel]");
-            quest.AddPart(new QuestPart_RandomWaves(mainPhaseBeganSignal, text, 24f, 12f, 48f));
+            quest.AddPart(new QuestPart_RandomWaves(mainPhaseBeganSignal, text, 24f, 12f, 36f));
             Faction faction = FactionUtility.DefaultFactionFrom(MedievalOverhaulDefOf.DankPyon_Forest_Faction) != null ? FactionUtility.DefaultFactionFrom(MedievalOverhaulDefOf.DankPyon_Forest_Faction) : null;
             quest.SignalPass(delegate
             {
@@ -72,7 +72,7 @@ namespace MedievalOverhaul
 
         private static readonly FloatRange InitialPhaseDurationDaysRange = new FloatRange(0.25f, 0.50f);
 
-        private static readonly FloatRange MainPhaseDurationDaysRange = new FloatRange(6f, 8f);
+        private static readonly FloatRange MainPhaseDurationDaysRange = new FloatRange(2f, 3f);
 
     }
 }
