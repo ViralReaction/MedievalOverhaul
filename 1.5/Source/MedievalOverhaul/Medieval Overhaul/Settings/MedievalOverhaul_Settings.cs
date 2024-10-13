@@ -32,7 +32,7 @@ namespace MedievalOverhaul
 
         // Misc
         public bool refuelableTorch = false;
-        public bool boomalopeTar = true;
+        public bool boomalopeTar = false;
         public bool mealRetexture = true;
         public bool biotechSchematic = false;
         public bool slopDispenser = true;
@@ -47,7 +47,7 @@ namespace MedievalOverhaul
             Scribe_Values.Look(ref hornetNest, "hornetNest", false);
             Scribe_Values.Look(ref vanillaMine, "vanillaMine", false);
             Scribe_Values.Look(ref refuelableTorch, "refuelableTorch", false);
-            Scribe_Values.Look(ref boomalopeTar, "boomalopeTar", true);
+            Scribe_Values.Look(ref boomalopeTar, "boomalopeTar", false);
             Scribe_Values.Look(ref mealRetexture, "mealRetexture", true);
             Scribe_Values.Look(ref biotechSchematic, "biotechSchematic", false);
             Scribe_Values.Look(ref slopDispenser, "slopDispenser", true);
@@ -97,7 +97,32 @@ namespace MedievalOverhaul
             {
                 listingStandard.CheckboxLabeled((string)"DankPyon_Settings_SchematicRework".Translate(), ref this.biotechSchematic, "DankPyon_Settings_SchematicRework_Tooltip".Translate());
             }
+            listingStandard.GapLine();
+            listingStandard.Gap();
+            if (listingStandard.ButtonText("Reset to Defaults"))
+            {
+                ResetSettingsToDefault();
+            }
             listingStandard.End();
+        }
+        public void ResetSettingsToDefault()
+        {
+            leatherChain = true;
+            woodChain = true;
+            clothChain = true;
+
+            industrialJunk = false;
+            exostriderRemains = false;
+            hornetNest = false;
+            vanillaMine = false;
+
+            slopDispenser = true;
+            refuelableTorch = false;
+            boomalopeTar = false;
+            mealRetexture = true;
+
+            biotechSchematic = false;
+
         }
     }
 }
