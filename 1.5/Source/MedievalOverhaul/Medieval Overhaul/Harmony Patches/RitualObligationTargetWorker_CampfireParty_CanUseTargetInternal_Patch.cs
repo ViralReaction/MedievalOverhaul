@@ -11,7 +11,6 @@ namespace MedievalOverhaul.Patches
         {
                 Thing thing = target.Thing;
                 CompRefuelableCustom compRefuelableCustom = thing.TryGetComp<CompRefuelableCustom>();
-                Log.Message(compRefuelableCustom);
                 if (compRefuelableCustom != null && !compRefuelableCustom.HasFuel)
                 {
                     return "RitualTargetCampfireNoFuel".Translate();
