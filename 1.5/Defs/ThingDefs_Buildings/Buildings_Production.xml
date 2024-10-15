@@ -1501,7 +1501,7 @@
 		<rotatable>false</rotatable>
 		<size>(3,3)</size>
 		<comps>
-			<li Class="CompProperties_CreatesInfestations"/>
+			<li Class="MedievalOverhaul.CompProperties_CreatesInfestations_Mine"/>
 		</comps>
 		<passability>Standable</passability>
 		<pathCost>50</pathCost>

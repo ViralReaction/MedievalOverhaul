@@ -143,5 +143,24 @@
 		<requireColonistsPresent>True</requireColonistsPresent>
 		<tale>DankPyon_AlpEclipseTale</tale>
 	</IncidentDef>
+	
+	<IncidentDef>
+		<defName>DankPyon_Mineshaftfestation</defName>
+		<label>mineshaft infestation</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+			<li>Map_TempIncident</li>
+			<li>Map_Misc</li>
+			<li>Map_RaidBeacon</li>
+		</targetTags>
+		<workerClass>MedievalOverhaul.IncidentWorker_DeepDrillInfestation</workerClass>
+		<letterLabel>Too deep: Infestation</letterLabel>
+		<letterText>Delving too greedily and too deep has awoken some underground insects. Now they're tunneling upwards to seek revenge!\n\nBeware - the insects have been angered and will try to destroy your base.</letterText>
+		<letterDef>ThreatBig</letterDef>
+		<baseChance>1</baseChance>
+		<category>DeepDrillInfestation</category>
+		<pointsScaleable>true</pointsScaleable>
+		<tale>Infestation</tale>
+	</IncidentDef>
 
 </Defs>

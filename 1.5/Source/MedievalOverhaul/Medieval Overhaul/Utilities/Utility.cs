@@ -109,5 +109,18 @@ namespace MedievalOverhaul
             }
             return null;
         }
+        public static void GetUsableDeepDrills(Map map, List<Thing> outDrills)
+        {
+            outDrills.Clear();
+            List<Thing> list = map.listerThings.ThingsOfDef(MedievalOverhaulDefOf.DankPyon_MineShaft);
+            Faction ofPlayer = Faction.OfPlayer;
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (list[i].Faction == ofPlayer && list[i].TryGetComp<CompCreatesInfestations_Mine>().CanCreateInfestationNow)
+                {
+                    outDrills.Add(list[i]);
+                }
+            }
+        }
     }
 }

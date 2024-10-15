@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StorytellerDef[@Name="BaseStoryteller"]/comps</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/StorytellerDef[@Name="BaseStoryteller"]/comps</xpath>
+			<value>
+				<!-- Infestations from deep drilling -->
+				<li Class="MedievalOverhaul.StorytellerCompProperties_MineshaftInfestation">
+					<baseMtbDaysPerDrill>20</baseMtbDaysPerDrill>
+					<allowedTargetTags>
+						<li>Map_PlayerHome</li>
+						<li>Map_TempIncident</li>
+						<li>Map_Misc</li>
+						<li>Map_RaidBeacon</li>
+					</allowedTargetTags>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>
