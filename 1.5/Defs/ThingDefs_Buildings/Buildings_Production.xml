@@ -428,8 +428,9 @@
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<heatPerTickWhileWorking>0.10</heatPerTickWhileWorking>
 		</building>
-		<inspectorTabs>
+		<inspectorTabs Inherit="False">
 			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_BillCustom</li>
 		</inspectorTabs>
 	</ThingDef>
 
@@ -491,6 +492,10 @@
 			<li>DankPyon_Oven</li>
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
+		<inspectorTabs Inherit="False">
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_BillCustom</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
@@ -554,8 +559,9 @@
 			<li>DankPyon_Oven</li>
 			<li>Stonecutting</li>
 		</researchPrerequisites>
-		<inspectorTabs>
+		<inspectorTabs Inherit="False">
 			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_BillCustom</li>
 		</inspectorTabs>
 	</ThingDef>
 
@@ -598,9 +604,9 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 		<surfaceType>Item</surfaceType>
-		<inspectorTabs>
-			<li>ITab_Bills</li>
+		<inspectorTabs Inherit="False">
 			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_BillCustom</li>
 		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
@@ -681,9 +687,9 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 		<surfaceType>Item</surfaceType>
-		<inspectorTabs>
-			<li>ITab_Bills</li>
+		<inspectorTabs Inherit="False">
 			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_BillCustom</li>
 		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
@@ -1342,9 +1348,9 @@
 			<li>DestroyApparel</li>
 			<li>CremateCorpse</li>
 		</recipes>
-		<inspectorTabs>
-			<li>ITab_Bills</li>
+		<inspectorTabs Inherit="False">
 			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_BillCustom</li>
 		</inspectorTabs>
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_GlowerOnlyWhenUsed">

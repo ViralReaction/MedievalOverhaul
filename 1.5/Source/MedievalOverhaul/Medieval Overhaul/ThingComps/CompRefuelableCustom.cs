@@ -9,9 +9,10 @@ namespace MedievalOverhaul
     [StaticConstructorOnStartup]
     public class CompRefuelableCustom : ThingComp, IThingGlower
     {
-        public static int HashInterval = 250;
+        public static int HashInterval = 60;
 
         private readonly static float ticksPerDay = 60000f / HashInterval;
+        public int tickCounterWork = 0;
         public CompProperties_RefuelableCustom Props
         {
             get
@@ -315,11 +316,14 @@ namespace MedievalOverhaul
         }
         public void Notify_UsedThisTick()
         {
-            if (this.parent.IsHashIntervalTick(HashInterval))
+            if (tickCounterWork >= HashInterval)
             {
                 this.ConsumeFuel(this.ConsumptionRatePerTick);
+                tickCounterWork = 0;
             }
+            tickCounterWork++;
         }
+
         public int GetFuelCountToFullyRefuel()
         {
             if (this.Props.atomicFueling)

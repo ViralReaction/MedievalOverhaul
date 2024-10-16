@@ -8,48 +8,120 @@ using Verse;
 
 namespace MedievalOverhaul
 {
-    public class Building_WorkTableCustom : Building_WorkTable
+    public class Building_WorkTableCustom : Building, IBillGiver, IBillGiverWithTickAction
     {
-        public new bool CanWorkWithoutFuel
+        public BillStack billStack;
+
+        private CompPowerTrader powerComp;
+
+        private CompRefuelable refuelableComp;
+
+        private CompBreakdownable breakdownableComp;
+
+        private CompMoteEmitter moteEmitterComp;
+
+        public bool CanWorkWithoutFuel
         {
             get
             {
-                return this.fuelComp == null;
+                return this.fuelCompCustom == null;
+            }
+        }
+        public bool CanWorkWithoutPower
+        {
+            get
+            {
+                if (powerComp == null)
+                {
+                    return true;
+                }
+                if (def.building.unpoweredWorkTableWorkSpeedFactor > 0f)
+                {
+                    return true;
+                }
+                return false;
             }
         }
 
+
+        public BillStack BillStack => billStack;
+
+        public IntVec3 BillInteractionCell => InteractionCell;
+
+        public IEnumerable<IntVec3> IngredientStackCells => GenAdj.CellsOccupiedBy(this);
+        public Building_WorkTableCustom()
+        {
+            billStack = new BillStack(this);
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Deep.Look(ref billStack, "billStack", this);
+        }
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            this.fuelComp = base.GetComp<CompRefuelableCustom>();
+            powerComp = GetComp<CompPowerTrader>();
+            fuelCompCustom = GetComp<CompRefuelableCustom>();
+            breakdownableComp = GetComp<CompBreakdownable>();
+            moteEmitterComp = GetComp<CompMoteEmitter>();
+            foreach (Bill item in billStack)
+            {
+                item.ValidateSettings();
+            }
+            
         }
 
-        public override void UsedThisTick()
+        public virtual void UsedThisTick()
         {
-            if (this.fuelComp != null)
+            if (fuelCompCustom != null)
             {
-                this.fuelComp.Notify_UsedThisTick();
+                fuelCompCustom.Notify_UsedThisTick();
             }
-            if (this.moteEmitterComp != null)
+            if (moteEmitterComp != null)
             {
-                if (!this.moteEmitterComp.MoteLive)
+                if (!moteEmitterComp.MoteLive)
                 {
                     this.moteEmitterComp.Emit();
                 }
-                this.moteEmitterComp.Maintain();
+                moteEmitterComp.Maintain();
             }
         }
 
-        public new bool CurrentlyUsableForBills()
+        public bool CurrentlyUsableForBills()
         {
-            return this.UsableForBillsAfterFueling() && (this.CanWorkWithoutPower || (this.powerComp != null && this.powerComp.PowerOn)) && (this.CanWorkWithoutFuel || (this.fuelComp != null && this.fuelComp.HasFuel));
+            if (!UsableForBillsAfterFueling())
+            {
+                return false;
+            }
+            if (!CanWorkWithoutPower && (powerComp == null || !powerComp.PowerOn))
+            {
+                return false;
+            }
+            if (!CanWorkWithoutFuel && (fuelCompCustom == null || !fuelCompCustom.HasFuel))
+            {
+                return false;
+            }
+            return true;
         }
-        public new bool UsableForBillsAfterFueling()
+        public bool UsableForBillsAfterFueling()
         {
-            return (this.CanWorkWithoutPower || (this.powerComp != null && this.powerComp.PowerOn)) && (this.breakdownableComp == null || !this.breakdownableComp.BrokenDown);
+            if (!CanWorkWithoutPower && (powerComp == null || !powerComp.PowerOn))
+            {
+                return false;
+            }
+            if (breakdownableComp != null && breakdownableComp.BrokenDown)
+            {
+                return false;
+            }
+            return true;
         }
 
-        private CompRefuelableCustom fuelComp;
+        private CompRefuelableCustom fuelCompCustom;
+        public virtual void Notify_BillDeleted(Bill bill)
+        {
+        }
 
     }
 }

@@ -117,15 +117,18 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[defName="FueledStove" or defName="Campfire" or defName="FueledSmithy"]</xpath>
 			<value>
-				<inspectorTabs></inspectorTabs>
+				<inspectorTabs Inherit="False"></inspectorTabs>
 			</value>
 		</nomatch>
 	</Operation>
 	
-	<Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="FueledStove" or defName="Campfire" or defName="FueledSmithy"]/inspectorTabs</xpath>
 		<value>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<inspectorTabs Inherit="False">
+				<li>MedievalOverhaul.ITab_FuelCustom</li>
+				<li>MedievalOverhaul.ITab_BillCustom</li>
+			</inspectorTabs>
 		</value>
 	</Operation>
 	

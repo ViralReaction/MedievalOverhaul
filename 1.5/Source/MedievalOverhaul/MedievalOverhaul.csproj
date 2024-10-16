@@ -40,6 +40,7 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\StageFailTrigger_TargetNotLit_Failed_Patch.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_Nightmare.cs" />
     <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_DeepDrillInfestation.cs" />
+    <Compile Include="Medieval Overhaul\ITab\FileName.cs" />
     <Compile Include="Medieval Overhaul\MapComponent\RefuelableMapComponent.cs" />
     <Compile Include="Medieval Overhaul\QuestStuff\ThoughtWorker_AlpEclipse.cs" />
     <Compile Include="Medieval Overhaul\QuestStuff\GameCondition_AlpEclipse.cs" />
