@@ -36,21 +36,21 @@
 		<forceCompleteBeforeNextJob>true</forceCompleteBeforeNextJob>
 	</JobDef>
 
-	<JobDef>
-		<defName>DankPyon_RefuelCustom</defName>
-		<driverClass>MedievalOverhaul.JobDriver_RefuelCustom</driverClass>
-		<reportString>refueling TargetA.</reportString>
-		<suspendable>false</suspendable>
-		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-	</JobDef>
+	<!-- <JobDef> -->
+		<!-- <defName>DankPyon_RefuelCustom</defName> -->
+		<!-- <driverClass>MedievalOverhaul.JobDriver_RefuelCustom</driverClass> -->
+		<!-- <reportString>refueling TargetA.</reportString> -->
+		<!-- <suspendable>false</suspendable> -->
+		<!-- <allowOpportunisticPrefix>true</allowOpportunisticPrefix> -->
+	<!-- </JobDef> -->
 
-	<JobDef>
-		<defName>DankPyon_RefuelAtomicCustom</defName>
-		<driverClass>MedievalOverhaul.JobDriver_RefuelAtomicCustom</driverClass>
-		<reportString>refueling TargetA.</reportString>
-		<suspendable>false</suspendable>
-		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-	</JobDef>
+	<!-- <JobDef> -->
+		<!-- <defName>DankPyon_RefuelAtomicCustom</defName> -->
+		<!-- <driverClass>MedievalOverhaul.JobDriver_RefuelAtomicCustom</driverClass> -->
+		<!-- <reportString>refueling TargetA.</reportString> -->
+		<!-- <suspendable>false</suspendable> -->
+		<!-- <allowOpportunisticPrefix>true</allowOpportunisticPrefix> -->
+	<!-- </JobDef> -->
 
 	<JobDef>
 		<defName>DankPyon_Play_CupAndDice</defName>

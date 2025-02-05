@@ -107,6 +107,7 @@ namespace MedievalOverhaul
             this.allowAutoRefuel = this.Props.initialAllowAutoRefuel;
             this.fuel = this.Props.fuelCapacity * this.Props.initialFuelPercent;
             this.flickComp = this.parent.GetComp<CompFlickable>();
+            this.powerComp = this.parent.GetComp<CompPowerTrader>();
         }
         public override void PostExposeData()
         {
@@ -253,8 +254,7 @@ namespace MedievalOverhaul
         {
             if (this.parent.IsHashIntervalTick(HashInterval))
             {
-                CompPowerTrader comp = this.parent.GetComp<CompPowerTrader>();
-                if (!this.Props.consumeFuelOnlyWhenUsed && (this.flickComp == null || this.flickComp.SwitchIsOn) && (!this.Props.consumeFuelOnlyWhenPowered || (comp != null && comp.PowerOn)) && !this.Props.externalTicking)
+                if (!this.Props.consumeFuelOnlyWhenUsed && (this.flickComp == null || this.flickComp.SwitchIsOn) && (!this.Props.consumeFuelOnlyWhenPowered || (powerComp != null && powerComp.PowerOn)) && !this.Props.externalTicking)
                 {
                     this.ConsumeFuel(this.ConsumptionRatePerTick);
                 }
@@ -422,6 +422,7 @@ namespace MedievalOverhaul
         public bool allowAutoRefuel = true;
 
         private CompFlickable flickComp;
+        private CompPowerTrader powerComp;
 
         public const string RefueledSignal = "Refueled";
 

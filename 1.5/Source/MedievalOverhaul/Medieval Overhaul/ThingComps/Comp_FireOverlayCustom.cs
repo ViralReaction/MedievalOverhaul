@@ -4,8 +4,7 @@ using UnityEngine;
 
 namespace MedievalOverhaul
 {
-    [StaticConstructorOnStartup]
-    public class Comp_FireOverlayCustom : CompFireOverlayBase
+    public class Comp_FireOverlayCustom : CompFireOverlay
     {
         public new CompProperties_FireOverlayCustom Props
         {
@@ -17,7 +16,7 @@ namespace MedievalOverhaul
         public override void PostDraw()
         {
             base.PostDraw();
-            if (this.refuelableCompCustom != null && !this.refuelableCompCustom.HasFuel)
+            if (this.refuelableComp != null && !this.refuelableComp.HasFuel)
             {
                 return;
             }

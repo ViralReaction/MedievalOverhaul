@@ -75,10 +75,7 @@ namespace MedievalOverhaul
 
         public virtual void UsedThisTick()
         {
-            if (fuelCompCustom != null)
-            {
-                fuelCompCustom.Notify_UsedThisTick();
-            }
+            fuelCompCustom?.Notify_UsedThisTick();
             if (moteEmitterComp != null)
             {
                 if (!moteEmitterComp.MoteLive)

@@ -57,15 +57,9 @@
 		</active>
 		<inactive Class="PatchOperationSequence">
 			<operations>
-			
-				<li Class="PatchOperationAttributeSet">
-					<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
-					<attribute>Class</attribute>
-					<value>MedievalOverhaul.CompProperties_RefuelableCustom</value>
-				</li>
-			
+
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="MedievalOverhaul.CompProperties_RefuelableCustom"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
+					<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
 					<value>
 						<li>DankPyon_Coal</li>
 						<li>DankPyon_Tar</li>
@@ -73,7 +67,7 @@
 				</li>
 			
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="MedievalOverhaul.CompProperties_RefuelableCustom"]/fuelFilter</xpath>
+					<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
 					<value>
 						<categories>
 							<li>DankPyon_RawWood</li>
@@ -81,14 +75,7 @@
 						</categories>
 					</value>
 				</li>
-			
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="CompProperties_HeatPusher"]/compClass[.="CompHeatPusherPowered"]</xpath>
-					<value>
-						<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
-					</value>
-				</li>
-			
+
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="CompProperties_FireOverlay"]</xpath>
 					<match Class="PatchOperationAttributeSet">
@@ -111,7 +98,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[@Name="Brazier"]/inspectorTabs</xpath>
 					<value>
-						<li>MedievalOverhaul.ITab_FuelCustom</li>
+						<li>MedievalOverhaul.ITab_Fuel</li>
 					</value>
 				</li>
 

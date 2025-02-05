@@ -12,9 +12,9 @@ namespace MedievalOverhaul
     {
         private class DefCountList
         {
-            private List<ThingDef> defs = new List<ThingDef>();
+            private List<ThingDef> defs = [];
 
-            private List<float> counts = new List<float>();
+            private List<float> counts = [];
 
             public int Count => defs.Count;
 

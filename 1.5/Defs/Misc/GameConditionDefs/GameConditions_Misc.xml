@@ -19,7 +19,7 @@
 			<li MayRequire="Ludeon.RimWorld.Anomaly">UnnaturalDarkness</li>
 			<li>Eclipse</li>
 		</silencedByConditions>
-		<weatherDef>DankPyon_AlpEclipse_Weather</weatherDef>
+		<!-- <weatherDef>DankPyon_AlpEclipse_Weather</weatherDef> -->
 	</GameConditionDef>
 
 </Defs>
