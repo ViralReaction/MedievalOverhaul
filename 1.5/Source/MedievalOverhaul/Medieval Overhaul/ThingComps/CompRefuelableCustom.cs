@@ -306,14 +306,11 @@ namespace MedievalOverhaul
                     return;
                 }
             }
-            int fullFuelCount = this.GetFuelCountToFullyRefuel();
+            int fullFuelCount = this.GetFuelCountToFullyRefuel(fuelThings[0]);
             while (fullFuelCount > 0 && fuelThings.Count > 0)
             {
                 Thing thing = fuelThings.Pop<Thing>();
-               // float fuelValue = CachingUtility.FuelValueDict.GetValueOrDefault(thing.def, 1f);
                 float fuelAmount = Mathf.Min((float)thing.stackCount * thing.def.ingestible.cachedNutrition, Props.fuelCapacity - Fuel);
-                //int maxFuelNeededFromStack = Mathf.CeilToInt(fullFuelCount / fuelValue);
-                //int num2 = Mathf.Min(num, thing.stackCount);
                 int amountToFuel = Mathf.Min(fullFuelCount, thing.stackCount);
                 this.Refuel(fuelAmount);
                 thing.SplitOff(amountToFuel).Destroy(DestroyMode.Vanish);

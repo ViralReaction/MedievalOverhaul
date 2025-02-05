@@ -1642,8 +1642,8 @@
 				</items>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
-				<fuelConsumptionRate>4.0</fuelConsumptionRate>
-				<fuelCapacity>20</fuelCapacity>
+				<fuelConsumptionRate>0.20</fuelConsumptionRate>
+				<fuelCapacity>1</fuelCapacity>
 				<autoRefuelPercent>0.2</autoRefuelPercent>
 				<initialFuelPercent>0</initialFuelPercent>
 				<fuelConsumptionPerTickInRain>0.00006</fuelConsumptionPerTickInRain>
