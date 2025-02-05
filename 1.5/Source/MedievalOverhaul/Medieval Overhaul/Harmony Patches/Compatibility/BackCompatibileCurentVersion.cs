@@ -18,7 +18,7 @@ namespace MedievalOverhaul.Patches
                 node["stuff"].InnerText = "DankPyon_RawDarkWood";
                 Log.Message(node["stuff"].InnerText.ToString());
             }
-            if (providedClassName == "Building_WorkTableCustom" && node["def"] != null)
+            if (providedClassName == "MedievalOverhaul.Building_WorkTable_HeatPushCustom")
             {
                 //if (node["def"].InnerText.ToString() == "DankPyon_Furnace" ||
                 //    node["def"].InnerText.ToString() == "DankPyon_RusticCookingTable" ||
@@ -36,7 +36,7 @@ namespace MedievalOverhaul.Patches
                     return false;
                 //}
             }
-            if (providedClassName == "Building_WorkTableCustom" && node["def"] != null)
+            if (providedClassName == "MedievalOverhaul.Building_WorkTableCustom")
             {
                 //if (node["def"].InnerText.ToString() == "Campfire" ||
                 //    node["def"].InnerText.ToString() == "FueledSmithy"
