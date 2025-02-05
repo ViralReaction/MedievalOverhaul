@@ -12,7 +12,7 @@ namespace MedievalOverhaul
 
 	public class Building_SlopPot : Building_NutrientPasteDispenser
 	{
-		public CompRefuelableCustom fuelComp;
+		public CompRefuelable fuelComp;
 
 		public int lastFueledTick = -999;
 
@@ -41,7 +41,7 @@ namespace MedievalOverhaul
 		public override void SpawnSetup(Map map, bool respawningAfterLoad)
 		{
 			base.SpawnSetup(map, respawningAfterLoad);
-			fuelComp = GetComp<CompRefuelableCustom>();
+			fuelComp = GetComp<CompRefuelable>();
 			nutritionComp = GetComp<CompRefuelableStat>();
 			slopComp = GetComp<CompSlop>();
 			if (slopComp == null) throw new Exception($"{def.defName} does not have CompProperties_Slop");

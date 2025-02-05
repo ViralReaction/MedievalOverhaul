@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,7 +37,7 @@ namespace MedievalOverhaul
                 {
                     foreach (var comp in thing.comps)
                     {
-                        if (comp != null && comp is CompRefuelableCustom)
+                        if (comp != null && comp is CompRefuelable)
                         {
                             refuelableCustomThing.Add(thing);
                         }

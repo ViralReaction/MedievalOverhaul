@@ -55,9 +55,7 @@
     <Compile Include="Medieval Overhaul\Utilities\CachingUtility.cs" />
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />
     <Compile Include="Medieval Overhaul\Designator_GatherIce.cs" />
-    <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetFuelLevelCustom.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetNutritionLevel.cs" />
-    <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableStatusCustom.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableNutritionStatus.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_DoTicks_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Compatibility\BackCompatibileCurentVersion.cs" />
@@ -79,8 +77,6 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_RandomOption_Generate.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_MarketValue_Generate.cs" />
     <Compile Include="Medieval Overhaul\ITab\ITab_Fuel.cs" />
-    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelCustom.cs" />
-    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelAtomicCustom.cs" />
     <Compile Include="Medieval Overhaul\Recipes\RecipeWorker_GrindWheat.cs" />
     <Compile Include="Medieval Overhaul\Recipes\RecipeWorker_MakeSkillBook.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_ResourcePod_Generate.cs" />
@@ -110,8 +106,6 @@
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_Melt.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_StoreFuelThing.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_TrollRegen.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_RefuelableCustom.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompRefuelableCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompStoreFuelThing.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_TrollRegen.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompGenericHide.cs" />

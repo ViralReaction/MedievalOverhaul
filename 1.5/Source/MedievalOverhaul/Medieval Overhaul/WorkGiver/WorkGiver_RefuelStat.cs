@@ -51,7 +51,7 @@ namespace MedievalOverhaul
 		public static bool CanRefuel(Pawn pawn, Thing t, bool forced = false)
 		{
 			CompRefuelableStat comp1 = t.TryGetComp<CompRefuelableStat>();
-            CompRefuelableCustom comp2 = t.TryGetComp<CompRefuelableCustom>();
+            CompRefuelable comp2 = t.TryGetComp<CompRefuelable>();
             if (comp1 == null || comp1.IsFull || (!forced && !comp1.allowAutoRefuel))
             {
                 return false;
