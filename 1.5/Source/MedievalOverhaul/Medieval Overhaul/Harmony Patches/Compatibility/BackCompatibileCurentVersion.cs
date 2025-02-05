@@ -20,60 +20,14 @@ namespace MedievalOverhaul.Patches
             }
             if (providedClassName == "MedievalOverhaul.Building_WorkTable_HeatPushCustom")
             {
-                //if (node["def"].InnerText.ToString() == "DankPyon_Furnace" ||
-                //    node["def"].InnerText.ToString() == "DankPyon_RusticCookingTable" ||
-                //    node["def"].InnerText.ToString() == "DankPyon_StoneOven" ||
-                //    node["def"].InnerText.ToString() == "DankPyon_StoneOvenLarge" ||
-                //    node["def"].InnerText.ToString() == "DankPyon_Grill" ||
-                //    node["def"].InnerText.ToString() == "DankPyon_StewPot" ||
-                //    node["def"].InnerText.ToString() == "DankPyon_Pyre" ||
-                //    node["def"].InnerText.ToString() == "DankPyon_PyreRound" ||
-                //    node["def"].InnerText.ToString() == "DankPyon_RusticHearth" ||
-                //    node["def"].InnerText.ToString() == "FueledStove"
-                //    )
-                //{
-                    __result = typeof(Building_WorkTable_HeatPush);
-                    return false;
-                //}
+                __result = typeof(Building_WorkTable_HeatPush);
+                return false;
             }
             if (providedClassName == "MedievalOverhaul.Building_WorkTableCustom")
             {
-                //if (node["def"].InnerText.ToString() == "Campfire" ||
-                //    node["def"].InnerText.ToString() == "FueledSmithy"
-                //    )
-                //{
-                    __result = typeof(Building_WorkTable);
-                    return false;
-                //}
+                __result = typeof(Building_WorkTable);
+                return false;
             }
-            //if (providedClassName == "Building_WorkTable_HeatPush" && node["def"] != null)
-            //{
-            //    if (node["def"].InnerText.ToString() == "DankPyon_Furnace" ||
-            //        node["def"].InnerText.ToString() == "DankPyon_RusticCookingTable" ||
-            //        node["def"].InnerText.ToString() == "DankPyon_StoneOven" ||
-            //        node["def"].InnerText.ToString() == "DankPyon_StoneOvenLarge" ||
-            //        node["def"].InnerText.ToString() == "DankPyon_Grill" ||
-            //        node["def"].InnerText.ToString() == "DankPyon_StewPot" ||
-            //        node["def"].InnerText.ToString() == "DankPyon_Pyre" ||
-            //        node["def"].InnerText.ToString() == "DankPyon_PyreRound" ||
-            //        node["def"].InnerText.ToString() == "DankPyon_RusticHearth" ||
-            //        node["def"].InnerText.ToString() == "FueledStove"
-            //        )
-            //    {
-            //        __result = typeof(Building_WorkTable_HeatPushCustom);
-            //        return false;
-            //    }
-            //}
-            //if (providedClassName == "Building_WorkTable" && node["def"] != null)
-            //{
-            //    if (node["def"].InnerText.ToString() == "Campfire" ||
-            //        node["def"].InnerText.ToString() == "FueledSmithy"
-            //        )
-            //    {
-            //        __result = typeof(Building_WorkTableCustom);
-            //        return false;
-            //    }
-            //}
             return true;
         }
     }
