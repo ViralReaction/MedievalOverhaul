@@ -98,7 +98,7 @@
 				<painFactor>1.2</painFactor>
 				<statFactors>
 					<RestFallRateFactor>0.65</RestFallRateFactor>
-					<GlobalLearningFactor>0.25</GlobalLearningFactor>
+					<GlobalLearningFactor>1.25</GlobalLearningFactor>
 				</statFactors>
 
 				<capMods>
