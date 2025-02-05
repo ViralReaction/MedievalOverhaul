@@ -1,9 +1,4 @@
-﻿using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Verse;
 
 namespace MedievalOverhaul
@@ -37,9 +32,10 @@ namespace MedievalOverhaul
                 {
                     foreach (var comp in thing.comps)
                     {
-                        if (comp != null && comp is CompRefuelable)
+                        if (comp != null && comp is CompRefuelableStat)
                         {
-                            refuelableCustomThing.Add(thing);
+                            Register(thing);
+                            break;
                         }
                     }
                 }
@@ -48,25 +44,34 @@ namespace MedievalOverhaul
         }
         public void Reset()
         {
-            this.refuelableCustomThing.Clear();
+            this.refuelableStatThing.Clear();
         }
         public void Register(ThingWithComps thing)
         {
-            if (refuelableCustomThing.Contains(thing))
+            if (refuelableStatThing.Contains(thing))
             {
                 return;
             }
-            refuelableCustomThing.Add(thing);
+            refuelableStatThing.Add(thing);
         }
         public void Deregister(ThingWithComps thing)
         {
-            if (!refuelableCustomThing.Contains(thing))
+            if (!refuelableStatThing.Contains(thing))
             {
                 return;
             }
-            refuelableCustomThing.Remove(thing);
+            refuelableStatThing.Remove(thing);
         }
 
-        public HashSet<Thing> refuelableCustomThing = [];
+        public override void MapComponentTick()
+        {
+            base.MapComponentTick();
+            foreach (var thing in refuelableStatThing)
+            {
+                Log.Message(thing);
+            }
+        }
+
+        public HashSet<Thing> refuelableStatThing = [];
     }
 }

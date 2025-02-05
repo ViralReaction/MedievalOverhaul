@@ -24,13 +24,13 @@ namespace MedievalOverhaul
 
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
-            return pawn.Map.GetComponent<RefuelableMapComponent>().refuelableCustomThing;
+            return pawn.Map.GetComponent<RefuelableMapComponent>().refuelableStatThing;
         }
 
         public override bool ShouldSkip(Pawn pawn, bool forced = false)
         {
             RefuelableMapComponent mapComp = pawn.Map.GetComponent<RefuelableMapComponent>();
-            return !mapComp.refuelableCustomThing.Any();
+            return !mapComp.refuelableStatThing.Any();
         }
         public bool CanRefuelThing(Thing t)
 		{

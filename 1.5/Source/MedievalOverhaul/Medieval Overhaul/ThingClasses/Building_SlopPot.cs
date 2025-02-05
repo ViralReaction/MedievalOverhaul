@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.Win32;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -20,6 +21,19 @@ namespace MedievalOverhaul
 		public CompSlop slopComp;
 		public float nutritionAmount;
 
+		private RefuelableMapComponent _MapComponent
+		{
+			get
+			{
+				if (mapComponent == null)
+				{
+					this.mapComponent = this.Map.GetComponent<RefuelableMapComponent>();
+                }
+				return this.mapComponent;
+			}
+		}
+
+		public RefuelableMapComponent mapComponent;
         public new bool CanDispenseNow
         {
             get
@@ -43,6 +57,7 @@ namespace MedievalOverhaul
 			base.SpawnSetup(map, respawningAfterLoad);
 			fuelComp = GetComp<CompRefuelable>();
 			nutritionComp = GetComp<CompRefuelableStat>();
+			_MapComponent.Register(this);
 			slopComp = GetComp<CompSlop>();
 			if (slopComp == null) throw new Exception($"{def.defName} does not have CompProperties_Slop");
 			if (nutritionComp == null)
@@ -50,7 +65,13 @@ namespace MedievalOverhaul
 					$"{def.defName} does not have CompProperties_RefuelableStat with with at least one food category defined");
 		}
 
-		public override void Tick()
+        public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
+        {
+            base.DeSpawn(mode);
+            _MapComponent.Deregister(this);
+        }
+
+        public override void Tick()
 		{
 			base.Tick();
 
