@@ -38,7 +38,6 @@
   <ItemGroup>
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_AlpSleep.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\RitualObligationTargetWorker_CampfireParty_CanUseTargetInternal_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\StageFailTrigger_TargetNotLit_Failed_Patch.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_Nightmare.cs" />
     <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_DeepDrillInfestation.cs" />
     <Compile Include="Medieval Overhaul\MapComponent\RefuelableMapComponent.cs" />
