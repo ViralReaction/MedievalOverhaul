@@ -62,7 +62,6 @@
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableNutritionStatus.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_DoTicks_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Compatibility\BackCompatibileCurentVersion.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\Compatibility\Harmony_BetterPyro.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\CompRefuelable_Refuel.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Refuel_MakeNewToils_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Pawn_JobTracker_EndCurrentJob_Patch.cs" />
