@@ -940,7 +940,7 @@
 		</stuffCategories>
 		<costStuffCount>30</costStuffCount>
 		<comps>
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>2.2</fuelConsumptionRate>
 				<fuelCapacity>10.0</fuelCapacity>
 				<fuelFilter>
@@ -952,31 +952,30 @@
 						<li>Kibble</li>
 					</thingDefs>
 				</fuelFilter>
-				<!-- <defaultIngredientFilter> -->
-					<!-- <categories> -->
-						<!-- <li>FoodRaw</li> -->
-					<!-- </categories> -->
-					<!-- <thingDefs> -->
-						<!-- <li>Hay</li> -->
-						<!-- <li>Kibble</li> -->
-					<!-- </thingDefs> -->
-					<!-- <disallowedCategories> -->
-						<!-- <li>EggsFertilized</li> -->
-					<!-- </disallowedCategories> -->
-					<!-- <disallowedThingDefs> -->
-						<!-- <li>InsectJelly</li> -->
-					<!-- </disallowedThingDefs> -->
-				<!-- </defaultIngredientFilter> -->
+				<defaultIngredientFilter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<thingDefs>
+						<li>Hay</li>
+						<li>Kibble</li>
+					</thingDefs>
+					<disallowedCategories>
+						<li>EggsFertilized</li>
+					</disallowedCategories>
+					<disallowedThingDefs>
+						<li>InsectJelly</li>
+					</disallowedThingDefs>
+				</defaultIngredientFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				<fuelIconPath>UI/EmptyMeat_Icon</fuelIconPath>
 			</li>
 			<li Class="CompProperties_Facility">
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
+			<li>MedievalOverhaul.ITab_FuelCustom</li>
 		</inspectorTabs>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Misc</designationCategory>

@@ -1623,7 +1623,7 @@
 		<canOverlapZones>false</canOverlapZones>
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_ThingProducer">
-				<requireFuel>true</requireFuel>
+				<requireFuelCustom>true</requireFuelCustom>
 				<restAtNight>true</restAtNight>
 				<viableTempRange>13,37</viableTempRange>
 				<timeRequired>300000</timeRequired>				<!-- 60 000 ticks equal 1 day-->
@@ -1641,7 +1641,7 @@
 					</li>
 				</items>
 			</li>
-			<li Class="CompProperties_Refuelable">
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
 				<fuelConsumptionRate>4.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<autoRefuelPercent>0.2</autoRefuelPercent>
@@ -1652,11 +1652,11 @@
 						<li>MeatRaw</li>
 					</categories>
 				</fuelFilter>
-				<!-- <defaultIngredientFilter> -->
-					<!-- <disallowedCategories> -->
-						<!-- <li>EggsFertilized</li> -->
-					<!-- </disallowedCategories> -->
-				<!-- </defaultIngredientFilter> -->
+				<defaultIngredientFilter>
+					<disallowedCategories>
+						<li>EggsFertilized</li>
+					</disallowedCategories>
+				</defaultIngredientFilter>
 				<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
 				<destroyOnNoFuel>false</destroyOnNoFuel>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
@@ -1665,7 +1665,6 @@
 				<fuelIconPath>UI/EmptyMeat_Icon</fuelIconPath>
 				<fuelGizmoLabel>Meat</fuelGizmoLabel>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<researchPrerequisites>
 			<li>DankPyon_RusticFurniture</li>
@@ -1673,7 +1672,7 @@
 		<designationCategory>Production</designationCategory>
 		<techLevel>Medieval</techLevel>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
+			<li>MedievalOverhaul.ITab_StewPot</li>
 		</inspectorTabs>
 	</ThingDef>
 

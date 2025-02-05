@@ -13,6 +13,20 @@ namespace MedievalOverhaul
         public CompProperties_RefuelableStat Props => props as CompProperties_RefuelableStat;
         public CompSlop stewComp;
         private ThingFilter allowedFuelFilter;
+
+        private RefuelableMapComponent _MapComponent
+        {
+            get
+            {
+                if (mapComponent == null)
+                {
+                    this.mapComponent = this.parent.Map.GetComponent<RefuelableMapComponent>();
+                }
+                return this.mapComponent;
+            }
+        }
+
+        public RefuelableMapComponent mapComponent;
         public float TargetFuelLevel
         {   
             get
@@ -94,6 +108,7 @@ namespace MedievalOverhaul
             base.PostSpawnSetup(respawningAfterLoad);
             if (this.allowedFuelFilter != null)
                 return;
+            _MapComponent.RegisterRefuelStat(this.parent);
             this.allowedFuelFilter = new ThingFilter();
             var parentComp = this.parent.GetComp<CompRefuelableStat>().Props;
             this.allowedFuelFilter.CopyAllowancesFrom(this.parent.GetComp<CompRefuelableStat>().Props.fuelFilter);
@@ -119,12 +134,18 @@ namespace MedievalOverhaul
             }
         }
 
+        public override void PostDeSpawn(Map map)
+        {
+            base.PostDeSpawn(map);
+            _MapComponent.DeregisterRefuelStat(this.parent);
+        }
+
         public override void Initialize(CompProperties props)
         {
             base.Initialize(props);
             this.allowAutoRefuel = this.Props.initialAllowAutoRefuel;
             this.fuel = this.Props.fuelCapacity * this.Props.initialFuelPercent;
-            this.flickComp = this.parent.GetComp<CompFlickable>();
+            this.flickComp = this.parent.TryGetComp<CompFlickable>();
         }
         public override void PostExposeData()
         {

@@ -3,6 +3,7 @@ using Verse;
 using System.Linq;
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 namespace MedievalOverhaul
 {
@@ -20,6 +21,19 @@ namespace MedievalOverhaul
                 return (CompProperties_RefuelableCustom)this.props;
             }
         }
+        private RefuelableMapComponent _MapComponent
+        {
+            get
+            {
+                if (mapComponent == null)
+                {
+                    this.mapComponent = this.parent.Map.GetComponent<RefuelableMapComponent>();
+                }
+                return this.mapComponent;
+            }
+        }
+
+        public RefuelableMapComponent mapComponent;
         private ThingFilter allowedFuelFilter;
         public ThingFilter AllowedFuelFilter => this.allowedFuelFilter;
         private float ConsumptionRatePerTick
@@ -151,14 +165,14 @@ namespace MedievalOverhaul
                 }
             }
             RefuelableMapComponent mapComp = this.parent.Map.GetComponent<RefuelableMapComponent>();
-				mapComp.Register(parent);
+				mapComp.RegisterRefuel(parent);
             
         }
         public override void PostDeSpawn(Map map)
         {
             base.PostDeSpawn(map);
             RefuelableMapComponent mapComp = map.GetComponent<RefuelableMapComponent>();
-            mapComp.Deregister(parent);
+            mapComp.DeregisterRefuel(parent);
         }
         public override void PostDraw()
         {
@@ -296,12 +310,14 @@ namespace MedievalOverhaul
             while (fullFuelCount > 0 && fuelThings.Count > 0)
             {
                 Thing thing = fuelThings.Pop<Thing>();
-                float fuelValue = CachingUtility.FuelValueDict.GetValueOrDefault(thing.def, 1f);
-                int maxFuelNeededFromStack = Mathf.CeilToInt(fullFuelCount / fuelValue);
-                int amountToFuel = Mathf.Min(maxFuelNeededFromStack, thing.stackCount);
-                this.Refuel((float)amountToFuel * fuelValue);
+               // float fuelValue = CachingUtility.FuelValueDict.GetValueOrDefault(thing.def, 1f);
+                float fuelAmount = Mathf.Min((float)thing.stackCount * thing.def.ingestible.cachedNutrition, Props.fuelCapacity - Fuel);
+                //int maxFuelNeededFromStack = Mathf.CeilToInt(fullFuelCount / fuelValue);
+                //int num2 = Mathf.Min(num, thing.stackCount);
+                int amountToFuel = Mathf.Min(fullFuelCount, thing.stackCount);
+                this.Refuel(fuelAmount);
                 thing.SplitOff(amountToFuel).Destroy(DestroyMode.Vanish);
-                fullFuelCount -= (int)(amountToFuel * fuelValue);
+                fullFuelCount -= (int)(amountToFuel);
             }
         }
 
@@ -334,7 +350,7 @@ namespace MedievalOverhaul
         }
         public int GetFuelCountToFullyRefuel(Thing thing)
         {
-            float fuelValue = CachingUtility.FuelValueDict.GetValueOrDefault(thing.def, 1f);
+            float fuelValue = thing.def.ingestible?.cachedNutrition ?? 0f;
             return Mathf.CeilToInt(GetFuelCountToFullyRefuel() / fuelValue);
         }
         public override IEnumerable<Gizmo> CompGetGizmosExtra()

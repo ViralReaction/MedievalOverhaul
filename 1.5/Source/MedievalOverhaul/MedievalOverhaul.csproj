@@ -37,8 +37,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_AlpSleep.cs" />
+    <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetFuelLevelCustom.cs" />
+    <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableStatusCustom.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_Nightmare.cs" />
     <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_DeepDrillInfestation.cs" />
+    <Compile Include="Medieval Overhaul\ITab\ITab_FuelCustom.cs" />
+    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelAtomicCustom.cs" />
+    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelCustom.cs" />
     <Compile Include="Medieval Overhaul\MapComponent\RefuelableMapComponent.cs" />
     <Compile Include="Medieval Overhaul\QuestStuff\ThoughtWorker_AlpEclipse.cs" />
     <Compile Include="Medieval Overhaul\QuestStuff\GameCondition_AlpEclipse.cs" />
@@ -51,6 +56,8 @@
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ItemLootExtension.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompCreatesInfestations_Mine.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_CreatesInfestations_Mine.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_RefuelableCustom.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompRefuelableCustom.cs" />
     <Compile Include="Medieval Overhaul\Utilities\CachingUtility.cs" />
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />
     <Compile Include="Medieval Overhaul\Designator_GatherIce.cs" />
@@ -198,6 +205,7 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\HarmonyInstance.cs" />
     <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_OperateQuest.cs" />
     <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_Miner_Golem.cs" />
+    <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_RefuelCustom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Medieval Overhaul\Utilities\DebugTools.cs" />
     <Compile Include="Properties\Settings.Designer.cs">

@@ -32,21 +32,27 @@ namespace MedievalOverhaul
                 {
                     foreach (var comp in thing.comps)
                     {
-                        if (comp != null && comp is CompRefuelableStat)
+                        if (comp != null)
                         {
-                            Register(thing);
-                            break;
+                            if (comp is CompRefuelableStat)
+                            {
+                                RegisterRefuelStat(thing);
+                            }
+                            if (comp is CompRefuelableCustom)
+                            {
+                                RegisterRefuel(thing);
+                            }
                         }
+
                     }
                 }
             }
-
         }
         public void Reset()
         {
             this.refuelableStatThing.Clear();
         }
-        public void Register(ThingWithComps thing)
+        public void RegisterRefuelStat(ThingWithComps thing)
         {
             if (refuelableStatThing.Contains(thing))
             {
@@ -54,7 +60,7 @@ namespace MedievalOverhaul
             }
             refuelableStatThing.Add(thing);
         }
-        public void Deregister(ThingWithComps thing)
+        public void DeregisterRefuelStat(ThingWithComps thing)
         {
             if (!refuelableStatThing.Contains(thing))
             {
@@ -63,15 +69,29 @@ namespace MedievalOverhaul
             refuelableStatThing.Remove(thing);
         }
 
+        public void RegisterRefuel(ThingWithComps thing)
+        {
+            if (refuelableStatThing.Contains(thing))
+            {
+                return;
+            }
+            refuelableCustomThing.Add(thing);
+        }
+        public void DeregisterRefuel(ThingWithComps thing)
+        {
+            if (!refuelableStatThing.Contains(thing))
+            {
+                return;
+            }
+            refuelableCustomThing.Remove(thing);
+        }
+
         public override void MapComponentTick()
         {
             base.MapComponentTick();
-            foreach (var thing in refuelableStatThing)
-            {
-                Log.Message(thing);
-            }
         }
 
         public HashSet<Thing> refuelableStatThing = [];
+        public HashSet<Thing> refuelableCustomThing = [];
     }
 }
