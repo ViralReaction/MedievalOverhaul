@@ -10,7 +10,7 @@ namespace MedievalOverhaul.Patches
         public static RitualTargetUseReport Postfix(RitualTargetUseReport __result, TargetInfo target)
         {
                 Thing thing = target.Thing;
-                CompRefuelableCustom compRefuelableCustom = thing.TryGetComp<CompRefuelableCustom>();
+                CompRefuelable compRefuelableCustom = thing.TryGetComp<CompRefuelable>();
                 if (compRefuelableCustom != null && !compRefuelableCustom.HasFuel)
                 {
                     return "RitualTargetCampfireNoFuel".Translate();
