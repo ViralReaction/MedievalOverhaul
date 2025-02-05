@@ -605,6 +605,7 @@
 		<surfaceType>Item</surfaceType>
 		<inspectorTabs>
 			<li>MedievalOverhaul.ITab_Fuel</li>
+			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
@@ -687,6 +688,7 @@
 		<surfaceType>Item</surfaceType>
 		<inspectorTabs>
 			<li>MedievalOverhaul.ITab_Fuel</li>
+			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
