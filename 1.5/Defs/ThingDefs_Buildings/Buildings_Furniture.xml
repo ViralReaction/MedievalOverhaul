@@ -222,6 +222,7 @@
 				<offsetWest>(-.25,0,0.6)</offsetWest>
 				<offsetEast>(0.25,0,.6)</offsetEast>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 	</ThingDef>
 
@@ -353,6 +354,7 @@
 					</li>
 				</offsets>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<inspectorTabs>
 			<li>MedievalOverhaul.ITab_Fuel</li>
@@ -517,6 +519,7 @@
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 		<researchPrerequisites>
@@ -3227,6 +3230,7 @@
 				<heatPerSecond>11</heatPerSecond>
 				<heatPushMaxTemperature>24</heatPushMaxTemperature>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<inspectorTabs>
 			<li>MedievalOverhaul.ITab_Fuel</li>
@@ -3353,6 +3357,7 @@
 				<fireSize>0.8</fireSize>
 				<offset>(0,0,0.1)</offset>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<researchPrerequisites>
 			<li>DankPyon_RusticFurniture</li>

@@ -421,6 +421,7 @@
 					<li>DankPyon_RusticCookingTools</li>
 				</linkableFacilities>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<building>
 			<isMealSource>true</isMealSource>
@@ -481,6 +482,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<building>
 			<isMealSource>true</isMealSource>
@@ -547,6 +549,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<building>
 			<isMealSource>true</isMealSource>
@@ -634,6 +637,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<building>
 			<isMealSource>true</isMealSource>
@@ -710,6 +714,7 @@
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<building>
 			<isMealSource>true</isMealSource>
@@ -1379,6 +1384,7 @@
 					<li>DankPyon_ToolRack</li>
 				</linkableFacilities>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
@@ -1657,6 +1663,7 @@
 				<fuelIconPath>UI/EmptyMeat_Icon</fuelIconPath>
 				<fuelGizmoLabel>Meat</fuelGizmoLabel>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<researchPrerequisites>
 			<li>DankPyon_RusticFurniture</li>
@@ -1775,6 +1782,7 @@
 			<li Class="MedievalOverhaul.CompProperties_Slop">
 				<mealDef>DankPyon_Slop</mealDef>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<size>(2,2)</size>
 		<placeWorkers>
@@ -1900,6 +1908,7 @@
 			<li Class="MedievalOverhaul.CompProperties_Slop">
 				<mealDef>DankPyon_Slop_Simple</mealDef>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<size>(2,2)</size>
 		<placeWorkers>
@@ -2012,6 +2021,7 @@
 				<mealDef>DankPyon_Slop_Fine</mealDef>
 				<fullTexture>Production/Pot/CheesePot</fullTexture>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<size>(2,2)</size>
 		<placeWorkers>
