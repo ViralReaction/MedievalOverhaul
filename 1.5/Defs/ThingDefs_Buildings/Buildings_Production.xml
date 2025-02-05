@@ -1350,6 +1350,7 @@
 		</recipes>
 		<inspectorTabs>
 			<li>MedievalOverhaul.ITab_Fuel</li>
+			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_GlowerOnlyWhenUsed">
