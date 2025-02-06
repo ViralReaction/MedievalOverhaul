@@ -240,7 +240,6 @@
   <ItemGroup>
     <Folder Include="Medieval Overhaul\DeathActionWorker\DeathActionProperties\" />
     <Folder Include="Medieval Overhaul\IncidentWorkers\ThingSetMaker\" />
-    <Folder Include="Medieval Overhaul\Utilities\RefuelableMaker\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">
