@@ -208,8 +208,8 @@
 		</ingredientFilter>
 		<color>(203, 155, 0)</color> <!-- 0-255 or 0.0-1.0 -->
 		<processDays>15</processDays> <!-- in days, a day is 60,000 ticks -->
-		<capacityFactor>1.0</capacityFactor>
-		<efficiency>0.20</efficiency>
+		<capacityFactor>5.0</capacityFactor>
+		<efficiency>1.0</efficiency>
 		<usesTemperature>true</usesTemperature>
 		<temperatureSafe>7~32.0</temperatureSafe>
 		<temperatureIdeal>15~32.0</temperatureIdeal>

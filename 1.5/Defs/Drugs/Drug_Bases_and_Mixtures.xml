@@ -141,8 +141,8 @@
 			<color>(203, 155, 0)</color>
 		</graphicData>
 		<costList>
-			<DankPyon_Waterskin>1</DankPyon_Waterskin>
-			<DankPyon_ThirdEye>1</DankPyon_ThirdEye>
+			<DankPyon_Luhix>1</DankPyon_Luhix>
+			<DankPyon_TrollHeart>1</DankPyon_TrollHeart>
 			<DankPyon_SchratHeart>1</DankPyon_SchratHeart>
 		</costList>
 	</ThingDef>
