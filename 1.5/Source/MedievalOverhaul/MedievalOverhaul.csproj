@@ -58,6 +58,7 @@
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_CreatesInfestations_Mine.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_RefuelableCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompRefuelableCustom.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompPotionUseable.cs" />
     <Compile Include="Medieval Overhaul\Utilities\CachingUtility.cs" />
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />
     <Compile Include="Medieval Overhaul\Designator_GatherIce.cs" />
