@@ -37,21 +37,6 @@
 	</WorkGiverDef>
 
 	<WorkGiverDef>
-		<defName>DankPyon_WorkGatherIce</defName>
-		<label>Gather ice or water</label>
-		<giverClass>MedievalOverhaul.WorkGiver_GatherIce</giverClass>
-		<workType>Mining</workType>
-		<priorityInType>6</priorityInType>
-		<verb>gather ice</verb>
-		<gerund>gathering</gerund>
-		<scanThings>false</scanThings>
-		<scanCells>true</scanCells>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-	</WorkGiverDef>
-
-	<WorkGiverDef>
 		<defName>DankPyon_OperateQuest</defName>
 		<label>operate quest finder</label>
 		<giverClass>MedievalOverhaul.WorkGiver_OperateQuest</giverClass>
@@ -357,6 +342,23 @@
 		</fixedBillGiverDefs>
 		<verb>dig</verb>
 		<gerund>digging at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>DankPyon_DoBillsWaterGather</defName>
+		<label>gather into waterskin at water spot</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Handling</workType>
+		<priorityInType>90</priorityInType>
+		<fixedBillGiverDefs>
+			<li>DankPyon_WaterSpot</li>
+		</fixedBillGiverDefs>
+		<verb>gather</verb>
+		<gerund>gathering at</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>

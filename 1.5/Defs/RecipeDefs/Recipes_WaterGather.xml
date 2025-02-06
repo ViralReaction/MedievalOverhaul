@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Stone Chunks Base Class -->
+	<RecipeDef Name="DankPyon_WaterGatherSpotBase" Abstract="True">
+		<description>Gather water.</description>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Mining</workSkill>
+		<workSkillLearnFactor>0</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<recipeUsers>
+			<li>DankPyon_WaterSpot</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<!-- Water -->
+	<RecipeDef ParentName="DankPyon_WaterGatherSpotBase">
+		<defName>DankPyon_Gather_Water</defName>
+		<workAmount>1200</workAmount>
+		<label>gather water</label>
+		<jobString>Gathering 1 waterskin.</jobString>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<products>
+			<DankPyon_Waterskin>1</DankPyon_Waterskin>
+		</products>
+	</RecipeDef>
+
+</Defs>
