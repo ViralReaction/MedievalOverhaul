@@ -60,7 +60,7 @@
 	<ThingDef ParentName="OrganicProductBase">
 		<defName>DankPyon_DriedMeat</defName>
 		<label>dried Meat</label>
-		<description>Dried meat to preserve and prolong shelf life.</description>
+		<description>Dried meat to preserve and prolong shelf life for later use as an ingredient in meals.</description>
 		<graphicData>
 			<texPath>Meal/DriedMeat</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -86,16 +86,20 @@
 				<daysToRotStart>60</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
+			<li Class="CompProperties_Ingredients">
+				<splitTransferableFoodKind>true</splitTransferableFoodKind>
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+			</li>
 		</comps>
 		<rotatable>false</rotatable>
-		<tradeability>Buyable</tradeability>
+		<tradeability>Sellable</tradeability>
 	</ThingDef>
 
 	<!-- Dried Human Meats -->
 	<ThingDef ParentName="OrganicProductBase">
 		<defName>DankPyon_DriedMeat_Human</defName>
 		<label>dried Human Meat</label>
-		<description>Dried human meat to preserve and prolong shelf life. Does not rehydrate very well and only true cannibals can stomach it.</description>
+		<description>>Dried meat to preserve and prolong shelf life for later use as an ingredient in meals. Does not rehydrate very well and only true cannibals can stomach it.</description>
 		<graphicData>
 			<texPath>Meal/DriedHumanMeat</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -123,9 +127,11 @@
 			</li>
 			<li Class="CompProperties_Ingredients">
 				<splitTransferableFoodKind>true</splitTransferableFoodKind>
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
 			</li>
 		</comps>
 		<rotatable>false</rotatable>
+		<tradeability>Sellable</tradeability>
 	</ThingDef>
 
 	<ThingDef ParentName="OrganicProductBase">
@@ -157,22 +163,29 @@
 				<daysToRotStart>60</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
+			<li Class="CompProperties_Ingredients">
+				<splitTransferableFoodKind>true</splitTransferableFoodKind>
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+			</li>
 		</comps>
 		<rotatable>false</rotatable>
+		<tradeability>Sellable</tradeability>
 	</ThingDef>
 
 	<!-- Smoked Meats -->
-	<ThingDef ParentName="MealBase">
+	<ThingDef ParentName="MealBaseIngredientless">
 		<defName>DankPyon_SmokedMeat</defName>
 		<label>smoked meat</label>
 		<description>Dried meat to preserve and prolong shelf life.</description>
+		<possessionCount>2</possessionCount>
 		<graphicData>
 			<texPath>Meal/SmokedMeat</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>15</MarketValue>
-			<Nutrition>0.85</Nutrition>
+		  <MarketValue>15</MarketValue>
+		  <WorkToMake>450</WorkToMake>
+		  <Nutrition>0.85</Nutrition>
 		</statBases>
 		<ingestible>
 			<preferability>MealAwful</preferability>
@@ -187,23 +200,29 @@
 				<daysToRotStart>30</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
+			<li Class="CompProperties_Ingredients">
+				<splitTransferableFoodKind>true</splitTransferableFoodKind>
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+			</li>
 		</comps>
 		<rotatable>false</rotatable>
-		<tradeability>Buyable</tradeability>
+		<tradeability>Sellable</tradeability>
 	</ThingDef>
 	
 	<!-- Smoke Human Meat -->
-	<ThingDef ParentName="MealBase">
+	<ThingDef ParentName="MealBaseIngredientless">
 		<defName>DankPyon_SmokedMeat_Human</defName>
 		<label>smoked human meat</label>
 		<description>Smoked human meat to preserve and prolong shelf life.</description>
+		<possessionCount>2</possessionCount>
 		<graphicData>
-			<texPath>Meal/SmokedHumanMeat</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
+		  <texPath>Meal/SmokedHumanMeat</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>15</MarketValue>
-			<Nutrition>0.85</Nutrition>
+		  <MarketValue>15</MarketValue>
+		  <WorkToMake>450</WorkToMake>
+		  <Nutrition>0.85</Nutrition>
 		</statBases>
 		<ingestible>
 			<preferability>MealAwful</preferability>
@@ -218,39 +237,54 @@
 				<daysToRotStart>30</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
+			<li Class="CompProperties_Ingredients">
+				<splitTransferableFoodKind>true</splitTransferableFoodKind>
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+			</li>
 		</comps>
 		<rotatable>false</rotatable>
-		<tradeability>Buyable</tradeability>
+		<tradeability>Sellable</tradeability>
 	</ThingDef>
 	
 	<!-- Smoke Insect Meat -->
-	<ThingDef ParentName="MealBase">
+	<ThingDef ParentName="MealBaseIngredientless">
 		<defName>DankPyon_SmokedMeat_Insect</defName>
 		<label>smoked insect meat</label>
-		<description>Dried meat to preserve and prolong shelf life.</description>
+		<description>Smoked insect meat to preserve and prolong shelf life.</description>
+		<possessionCount>2</possessionCount>
 		<graphicData>
-			<texPath>Meal/SmokedInsectMeat</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
+		  <texPath>Meal/SmokedInsectMeat</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>15</MarketValue>
-			<Nutrition>0.85</Nutrition>
+		  <MarketValue>15</MarketValue>
+		  <WorkToMake>450</WorkToMake>
+		  <Nutrition>0.85</Nutrition>
 		</statBases>
 		<ingestible>
-			<foodType>Meat</foodType>
 			<preferability>MealAwful</preferability>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
 			<tasteThought>DankPyon_AteSmokedMeat</tasteThought>
 			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
 			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
 		</ingestible>
+		<ingredient>
+		  <mergeCompatibilityTags>
+			<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+		  </mergeCompatibilityTags>
+		</ingredient>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>30</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
+			<li Class="CompProperties_Ingredients">
+				<splitTransferableFoodKind>true</splitTransferableFoodKind>
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+			</li>
 		</comps>
-		<rotatable>false</rotatable>
-		<tradeability>Buyable</tradeability>
+		<tradeability>Sellable</tradeability>
 	</ThingDef>
 
 	<!--Milk-->
@@ -655,6 +689,7 @@
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Ingredients" Inherit="false">
+				<splitTransferableFoodKind>true</splitTransferableFoodKind>
 				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
 			</li>
 		</comps>
