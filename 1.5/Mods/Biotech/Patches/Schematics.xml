@@ -92,6 +92,8 @@
 				
 				<li Class="PatchOperationRemove">
 					<xpath>/Defs/ResearchProjectDef[
+					defName="DankPyon_IntermediateCooking" or
+					defName="DankPyon_AdvancedCooking" or
 					defName="DankPyon_MilitaryBlades" or
 					defName="DankPyon_MilitaryMaces" or 
 					defName="DankPyon_NobleMaces" or
@@ -106,6 +108,24 @@
 					defName="DankPyon_WarBow"
 					]/modExtensions
 					</xpath>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_IntermediateCooking"]</xpath>
+					<value>
+						<requiredAnalyzed>
+							<li>DankPyon_Schematic_IntermediateCooking</li>
+						</requiredAnalyzed>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ResearchProjectDef[defName="DankPyon_AdvancedCooking"]</xpath>
+					<value>
+						<requiredAnalyzed>
+							<li>DankPyon_Schematic_AdvancedCooking</li>
+						</requiredAnalyzed>
+					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">

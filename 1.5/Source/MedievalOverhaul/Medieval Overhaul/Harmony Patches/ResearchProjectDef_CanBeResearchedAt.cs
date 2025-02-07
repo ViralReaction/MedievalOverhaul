@@ -1,13 +1,29 @@
 ﻿using HarmonyLib;
 using RimWorld;
 using System.Linq;
+using System.Reflection;
 using Verse;
 
 namespace MedievalOverhaul.Patches
 {
-    [HarmonyPatch(typeof(ResearchProjectDef), "CanBeResearchedAt")]
-    public static class ResearchProjectDef_CanBeResearchedAt_Patch
+    [HarmonyPatch]
+    public class ResearchProjectDef_CanBeResearchedAt
     {
+        public static bool Prepare()
+        {
+            if (ModsConfig.BiotechActive)
+            {
+                return !MedievalOverhaulSettings.settings.biotechSchematic;
+            }
+            return true;
+
+        }
+
+        public static MethodBase TargetMethod()
+        {
+            return AccessTools.Method(typeof(ResearchProjectDef), "CanBeResearchedAt");
+        }
+
         private static bool? cachedSchematicCheck;
         private static int cacheStaleAfterTicks = -1;
         private const int CacheDuration = 250;
