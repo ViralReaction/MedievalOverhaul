@@ -115,12 +115,12 @@
 	</WorkGiverDef>
 
 	<WorkGiverDef>
-		<defName>DankPyon_DoBillRefuelCustom</defName>
-		<label>slop pot</label>
+		<defName>DankPyon_RefuelCustom</defName>
+		<label>refuel buildinh</label>
 		<giverClass>MedievalOverhaul.WorkGiver_RefuelCustom</giverClass>
 		<workType>Hauling</workType>
 		<verb>deliver</verb>
-		<gerund>delivering food</gerund>
+		<gerund>refueling building</gerund>
 		<priorityInType>110</priorityInType>
 		<requiredCapacities>
 			<li>Manipulation</li>
