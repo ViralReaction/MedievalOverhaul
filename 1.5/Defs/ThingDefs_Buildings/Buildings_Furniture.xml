@@ -2957,7 +2957,6 @@
 			</damageData>
 		</graphicData>
 		<size>(1,2)</size>
-
 		<statBases>
 			<MaxHitPoints>140</MaxHitPoints>
 			<Beauty>1</Beauty>
@@ -2965,22 +2964,17 @@
 			<Mass>30</Mass>
 			<BedRestEffectiveness>1</BedRestEffectiveness>
 		</statBases>
-		
-		<stuffCategories>
+		<stuffCategories Inherit="False">
 			<li>Leathery</li>
-			<li>Fabric</li>
 		</stuffCategories>
 		<costStuffCount>15</costStuffCount>
-
 		<costList>
 			<WoodLog>45</WoodLog>
 		</costList>
-
 		<uiOrder>2010</uiOrder>
 		<building>
 			<paintable>true</paintable>
 		</building>
-
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_BedCureHediff">
 				<cureHediff>Hypothermia</cureHediff>
@@ -3004,10 +2998,8 @@
 			</damageData>
 		</graphicData>
 		<size>(2,2)</size>
-
-		<stuffCategories>
+		<stuffCategories Inherit="False">
 			<li>Leathery</li>
-			<li>Fabric</li>
 		</stuffCategories>
 		<costStuffCount>30</costStuffCount>
 		<statBases>
