@@ -941,8 +941,8 @@
 		<costStuffCount>30</costStuffCount>
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
-				<fuelConsumptionRate>2.2</fuelConsumptionRate>
-				<fuelCapacity>10.0</fuelCapacity>
+				<fuelConsumptionRate>0.45</fuelConsumptionRate>
+				<fuelCapacity>2</fuelCapacity>
 				<fuelFilter>
 					<categories>
 						<li>FoodRaw</li>

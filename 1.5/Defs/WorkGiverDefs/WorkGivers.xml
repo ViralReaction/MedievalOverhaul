@@ -37,21 +37,6 @@
 	</WorkGiverDef>
 
 	<WorkGiverDef>
-		<defName>DankPyon_WorkGatherIce</defName>
-		<label>Gather ice or water</label>
-		<giverClass>MedievalOverhaul.WorkGiver_GatherIce</giverClass>
-		<workType>Mining</workType>
-		<priorityInType>6</priorityInType>
-		<verb>gather ice</verb>
-		<gerund>gathering</gerund>
-		<scanThings>false</scanThings>
-		<scanCells>true</scanCells>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-	</WorkGiverDef>
-
-	<WorkGiverDef>
 		<defName>DankPyon_OperateQuest</defName>
 		<label>operate quest finder</label>
 		<giverClass>MedievalOverhaul.WorkGiver_OperateQuest</giverClass>
@@ -83,7 +68,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsRusticCookingTable</defName>
 		<label>cook meals</label>
-		<giverClass>MedievalOverhaul.WorkGiver_DoBillCustomRefuelable</giverClass>
+		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Cooking</workType>
 		<priorityInType>110</priorityInType>
 		<fixedBillGiverDefs>
@@ -101,7 +86,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsStewPot</defName>
 		<label>cook soup</label>
-		<giverClass>MedievalOverhaul.WorkGiver_DoBillCustomRefuelable</giverClass>
+		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Cooking</workType>
 		<priorityInType>110</priorityInType>
 		<fixedBillGiverDefs>
@@ -128,26 +113,25 @@
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
-	
+
 	<WorkGiverDef>
 		<defName>DankPyon_RefuelCustom</defName>
-		<label>refuel fuelable buildings</label>
+		<label>refuel buildinh</label>
 		<giverClass>MedievalOverhaul.WorkGiver_RefuelCustom</giverClass>
 		<workType>Hauling</workType>
-		<verb>refuel</verb>
-		<gerund>refueling</gerund>
-		<priorityInType>140</priorityInType>
+		<verb>deliver</verb>
+		<gerund>refueling building</gerund>
+		<priorityInType>110</priorityInType>
 		<requiredCapacities>
-		  <li>Manipulation</li>
+			<li>Manipulation</li>
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
-		<canBeDoneByMutants>false</canBeDoneByMutants>
-	  </WorkGiverDef>
+	</WorkGiverDef>
 
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsStoneOven</defName>
 		<label>bake goods</label>
-		<giverClass>MedievalOverhaul.WorkGiver_DoBillCustomRefuelable</giverClass>
+		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Cooking</workType>
 		<priorityInType>110</priorityInType>
 		<fixedBillGiverDefs>
@@ -201,7 +185,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsGrill</defName>
 		<label>grill</label>
-		<giverClass>MedievalOverhaul.WorkGiver_DoBillCustomRefuelable</giverClass>
+		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Cooking</workType>
 		<priorityInType>110</priorityInType>
 		<fixedBillGiverDefs>
@@ -282,7 +266,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsFurnace</defName>
 		<label>smelt items</label>
-		<giverClass>MedievalOverhaul.WorkGiver_DoBillCustomRefuelable</giverClass>
+		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>80</priorityInType>
 		<fixedBillGiverDefs>
@@ -358,6 +342,23 @@
 		</fixedBillGiverDefs>
 		<verb>dig</verb>
 		<gerund>digging at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>DankPyon_DoBillsWaterGather</defName>
+		<label>gather into waterskin at water spot</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Handling</workType>
+		<priorityInType>90</priorityInType>
+		<fixedBillGiverDefs>
+			<li>DankPyon_WaterSpot</li>
+		</fixedBillGiverDefs>
+		<verb>gather</verb>
+		<gerund>gathering at</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
@@ -487,7 +488,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsCookHearth</defName>
 		<label>cook meals at hearth</label>
-		<giverClass>MedievalOverhaul.WorkGiver_DoBillCustomRefuelable</giverClass>
+		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Cooking</workType>
 		<priorityInType>97</priorityInType>
 		<fixedBillGiverDefs>
@@ -505,7 +506,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsHaulHearth</defName>
 		<label>do bills at hearth</label>
-		<giverClass>MedievalOverhaul.WorkGiver_DoBillCustomRefuelable</giverClass>
+		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Hauling</workType>
 		<priorityInType>30</priorityInType>
 		<fixedBillGiverDefs>
@@ -540,7 +541,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsCremate</defName>
 		<label>do cremation bills</label>
-		<giverClass>MedievalOverhaul.WorkGiver_DoBillCustomRefuelable</giverClass>
+		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Hauling</workType>
 		<priorityInType>40</priorityInType>
 		<fixedBillGiverDefs>

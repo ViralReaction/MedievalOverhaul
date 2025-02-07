@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Verse;
 
 namespace MedievalOverhaul
@@ -36,36 +32,66 @@ namespace MedievalOverhaul
                 {
                     foreach (var comp in thing.comps)
                     {
-                        if (comp != null && comp is CompRefuelableCustom)
+                        if (comp != null)
                         {
-                            refuelableCustomThing.Add(thing);
+                            if (comp is CompRefuelableStat)
+                            {
+                                RegisterRefuelStat(thing);
+                            }
+                            if (comp is CompRefuelableCustom)
+                            {
+                                RegisterRefuel(thing);
+                            }
                         }
+
                     }
                 }
             }
-
         }
         public void Reset()
         {
-            this.refuelableCustomThing.Clear();
+            this.refuelableStatThing.Clear();
         }
-        public void Register(ThingWithComps thing)
+        public void RegisterRefuelStat(ThingWithComps thing)
         {
-            if (refuelableCustomThing.Contains(thing))
+            if (refuelableStatThing.Contains(thing))
+            {
+                return;
+            }
+            refuelableStatThing.Add(thing);
+        }
+        public void DeregisterRefuelStat(ThingWithComps thing)
+        {
+            if (!refuelableStatThing.Contains(thing))
+            {
+                return;
+            }
+            refuelableStatThing.Remove(thing);
+        }
+
+        public void RegisterRefuel(ThingWithComps thing)
+        {
+            if (refuelableStatThing.Contains(thing))
             {
                 return;
             }
             refuelableCustomThing.Add(thing);
         }
-        public void Deregister(ThingWithComps thing)
+        public void DeregisterRefuel(ThingWithComps thing)
         {
-            if (!refuelableCustomThing.Contains(thing))
+            if (!refuelableStatThing.Contains(thing))
             {
                 return;
             }
             refuelableCustomThing.Remove(thing);
         }
 
+        public override void MapComponentTick()
+        {
+            base.MapComponentTick();
+        }
+
+        public HashSet<Thing> refuelableStatThing = [];
         public HashSet<Thing> refuelableCustomThing = [];
     }
 }

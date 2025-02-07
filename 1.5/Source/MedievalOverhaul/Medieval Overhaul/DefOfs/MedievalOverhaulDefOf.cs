@@ -74,12 +74,10 @@ namespace MedievalOverhaul
         public static HediffDef DankPyon_StunImmune;
         public static HediffDef DankPyon_DazeImmune;
 
-        public static DesignationDef DankPyon_GatherIce;
         public static TerrainDef Ice;
         public static ThingDef DankPyon_IceCellar;
         public static ThingDef DankPyon_IceBlock;
         public static ThingDef DankPyon_Waterskin;
-        public static JobDef DankPyon_JobGatherIce;
         public static ThingDef DankPyon_Book_ScribeTable;
         public static ThingDef DankPyon_Flour;
         public static ThingDef DankPyon_Coal;

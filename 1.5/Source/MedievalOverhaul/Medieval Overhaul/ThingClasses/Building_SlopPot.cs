@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.Win32;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -12,7 +13,7 @@ namespace MedievalOverhaul
 
 	public class Building_SlopPot : Building_NutrientPasteDispenser
 	{
-		public CompRefuelableCustom fuelComp;
+		public CompRefuelable fuelComp;
 
 		public int lastFueledTick = -999;
 
@@ -41,7 +42,7 @@ namespace MedievalOverhaul
 		public override void SpawnSetup(Map map, bool respawningAfterLoad)
 		{
 			base.SpawnSetup(map, respawningAfterLoad);
-			fuelComp = GetComp<CompRefuelableCustom>();
+			fuelComp = GetComp<CompRefuelable>();
 			nutritionComp = GetComp<CompRefuelableStat>();
 			slopComp = GetComp<CompSlop>();
 			if (slopComp == null) throw new Exception($"{def.defName} does not have CompProperties_Slop");
@@ -50,7 +51,12 @@ namespace MedievalOverhaul
 					$"{def.defName} does not have CompProperties_RefuelableStat with with at least one food category defined");
 		}
 
-		public override void Tick()
+        public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
+        {
+            base.DeSpawn(mode);
+        }
+
+        public override void Tick()
 		{
 			base.Tick();
 

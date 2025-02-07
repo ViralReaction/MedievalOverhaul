@@ -14,6 +14,7 @@ namespace MedievalOverhaul
         public int timeRequired = 300000;
         public bool displayMessage = true;
         public bool requireFuel = false;
+        public bool requireFuelCustom = false;
         public bool requirePower = false;
         public bool onlyUnroofed = false;
         public bool restAtNight = false;

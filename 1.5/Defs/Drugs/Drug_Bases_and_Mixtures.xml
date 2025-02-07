@@ -133,8 +133,7 @@
 		</costList>
 	</ThingDef>
 
-	<!-- Buy only -->
-	<!--ThingDef ParentName="DankPyon_MixtureBase" Abstract="False">
+	<ThingDef ParentName="DankPyon_MixtureBase" Abstract="False">
 		<defName>DankPyon_Mixture_Knowledge</defName>
 		<label>potion of knowledge mixture</label>
 		<description>A mixture of knowledge. Needs further brewing in order to be used.</description>
@@ -142,11 +141,11 @@
 			<color>(203, 155, 0)</color>
 		</graphicData>
 		<costList>
-			<DankPyon_Waterskin>1</DankPyon_Waterskin>
-			<DankPyon_ThirdEye>1</DankPyon_ThirdEye>
+			<DankPyon_Luhix>1</DankPyon_Luhix>
+			<DankPyon_TrollHeart>1</DankPyon_TrollHeart>
 			<DankPyon_SchratHeart>1</DankPyon_SchratHeart>
 		</costList>
-	</ThingDef-->
+	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_MixtureBase" Abstract="False">
 		<defName>DankPyon_Mixture_Luhix</defName>

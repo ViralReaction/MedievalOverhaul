@@ -3,11 +3,8 @@ using RimWorld.QuestGen;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
-using static RimWorld.BaseGen.SymbolStack;
 
 namespace MedievalOverhaul
 {
@@ -31,9 +28,11 @@ namespace MedievalOverhaul
                 {
                     if (this.facilities.LinkedFacilitiesListForReading[i] is Building building && building.def == ext.requiredLinkable)
                     {
-                        bool refuelComp = building.HasComp<CompRefuelable>();
-                        if (!refuelComp || (refuelComp && building.GetComp<CompRefuelable>().HasFuel))
+                        var refuelComp = building.TryGetComp<CompRefuelableCustom>();
+                        if (refuelComp == null || refuelComp.HasFuel)
+                        {
                             requiredBuilding = true;
+                        }
                         break;
                     }
                 }

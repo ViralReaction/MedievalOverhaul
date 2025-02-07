@@ -149,6 +149,52 @@
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_WaterSpot</defName>
+		<label>water gathering spot</label>
+		<description>A place for gathering water. Production here is slow because of the lack of tools.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/CraftingSpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<uiIconPath>UI/GatherWater</uiIconPath>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<statBases>
+			<WorkToBuild>0</WorkToBuild>
+			<WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
+		</statBases>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<useHitPoints>false</useHitPoints>
+		<size>(1,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>Standable</passability>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<terrainAffordanceNeeded IsNull="True" />
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
+		<placeWorkers>
+			<li>MedievalOverhaul.PlaceWorker_WaterGather</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+	</ThingDef>
 
 	<ThingDef ParentName="BenchBase">
 		<defName>DankPyon_StonecuttingSpot</defName>
@@ -351,7 +397,7 @@
 		<defName>DankPyon_RusticCookingTable</defName>
 		<label>rustic cooking table</label>
 		<description>A wood-fueled oven with an attached countertop for preparing meals.</description>
-		<thingClass>MedievalOverhaul.Building_WorkTable_HeatPushCustom</thingClass>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<graphicData>
 			<texPath>Production/RusticCookingTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -396,7 +442,7 @@
 			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFoodBulk</li>
 		</recipes>
 		<comps>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>160.0</fuelConsumptionRate>
 				<fuelCapacity>50.0</fuelCapacity>
 				<fuelFilter>
@@ -414,7 +460,6 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>4</heatPerSecond>
 			</li>
 			<li Class="CompProperties_AffectedByFacilities">
@@ -422,22 +467,22 @@
 					<li>DankPyon_RusticCookingTools</li>
 				</linkableFacilities>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<building>
 			<isMealSource>true</isMealSource>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<heatPerTickWhileWorking>0.10</heatPerTickWhileWorking>
 		</building>
-		<inspectorTabs Inherit="False">
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
-			<li>MedievalOverhaul.ITab_BillCustom</li>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
 		<defName>DankPyon_StoneOven</defName>
 		<label>rustic oven</label>
-		<thingClass>MedievalOverhaul.Building_WorkTable_HeatPushCustom</thingClass>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<description>A cooking table with a stone oven designed for baking meals.</description>
 		<graphicData>
 			<texPath>Production/Oven</texPath>
@@ -466,7 +511,7 @@
 					<li>DankPyon_TableBaking</li>
 				</linkableFacilities>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>100.0</fuelConsumptionRate>
 				<fuelCapacity>50.0</fuelCapacity>
 				<fuelFilter>
@@ -483,6 +528,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<building>
 			<isMealSource>true</isMealSource>
@@ -492,16 +538,15 @@
 			<li>DankPyon_Oven</li>
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
-		<inspectorTabs Inherit="False">
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
-			<li>MedievalOverhaul.ITab_BillCustom</li>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
 		<defName>DankPyon_StoneOvenLarge</defName>
 		<label>large oven</label>
-		<thingClass>MedievalOverhaul.Building_WorkTable_HeatPushCustom</thingClass>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<description>A cooking table with a stone oven designed for baking meals.</description>
 		<graphicData>
 			<texPath>Production/LargeStoneOven</texPath>
@@ -533,7 +578,7 @@
 					<li>DankPyon_TableBaking</li>
 				</linkableFacilities>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>80.0</fuelConsumptionRate>
 				<fuelCapacity>80.0</fuelCapacity>
 				<fuelFilter>
@@ -550,6 +595,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<building>
 			<isMealSource>true</isMealSource>
@@ -559,16 +605,15 @@
 			<li>DankPyon_Oven</li>
 			<li>Stonecutting</li>
 		</researchPrerequisites>
-		<inspectorTabs Inherit="False">
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
-			<li>MedievalOverhaul.ITab_BillCustom</li>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="BenchBase">
 		<defName>DankPyon_Grill</defName>
 		<label>grill</label>
-		<thingClass>MedievalOverhaul.Building_WorkTable_HeatPushCustom</thingClass>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<description>A wood fueled grill used for cooking meals with an open fire.</description>
 		<graphicData>
 			<texPath>Production/Grill</texPath>
@@ -604,9 +649,9 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 		<surfaceType>Item</surfaceType>
-		<inspectorTabs Inherit="False">
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
-			<li>MedievalOverhaul.ITab_BillCustom</li>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
@@ -614,12 +659,11 @@
 					<li>DankPyon_RusticCookingTools</li>
 				</linkableFacilities>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_FireOverlayCustom">
+			<li Class="CompProperties_FireOverlay">
 				<fireSize>0.4</fireSize>
 				<offset>(0,0,0.2)</offset>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPushMaxTemperature>36</heatPushMaxTemperature>
 				<heatPerSecond>6</heatPerSecond>
 			</li>
@@ -627,7 +671,7 @@
 				<glowRadius>3</glowRadius>
 				<glowColor>(244, 112, 42,0)</glowColor>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>100.0</fuelConsumptionRate>
 				<fuelCapacity>50.0</fuelCapacity>
 				<fuelFilter>
@@ -640,6 +684,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<building>
 			<isMealSource>true</isMealSource>
@@ -653,7 +698,7 @@
 	<ThingDef ParentName="BenchBase">
 		<defName>DankPyon_StewPot</defName>
 		<label>soup pot</label>
-		<thingClass>MedievalOverhaul.Building_WorkTable_HeatPushCustom</thingClass>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<description>A large metal cauldron that can cook delicious soups.</description>
 		<graphicData>
 			<texPath>Production/StewPot</texPath>
@@ -687,9 +732,9 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
 		<surfaceType>Item</surfaceType>
-		<inspectorTabs Inherit="False">
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
-			<li>MedievalOverhaul.ITab_BillCustom</li>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
@@ -701,7 +746,7 @@
 				<glowRadius>4</glowRadius>
 				<glowColor>(217,112,33,0)</glowColor>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>100.0</fuelConsumptionRate>
 				<fuelCapacity>50.0</fuelCapacity>
 				<fuelFilter>
@@ -717,6 +762,7 @@
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<building>
 			<isMealSource>true</isMealSource>
@@ -1307,7 +1353,7 @@
 		<defName>DankPyon_Furnace</defName>
 		<label>Furnace</label>
 		<description>A large stone furnace used to smelt raw ores and refine resources.</description>
-		<thingClass>MedievalOverhaul.Building_WorkTable_HeatPushCustom</thingClass>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<graphicData>
 			<texPath>Production/Furnace</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -1348,16 +1394,16 @@
 			<li>DestroyApparel</li>
 			<li>CremateCorpse</li>
 		</recipes>
-		<inspectorTabs Inherit="False">
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
-			<li>MedievalOverhaul.ITab_BillCustom</li>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_GlowerOnlyWhenUsed">
 				<glowRadius>6</glowRadius>
 				<glowColor>(247,172,65,0)</glowColor>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>80</fuelConsumptionRate>
 				<fuelCapacity>80.0</fuelCapacity>
 				<fuelFilter>
@@ -1377,7 +1423,6 @@
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>9</heatPerSecond>
 			</li>
 			<li Class="CompProperties_AffectedByFacilities">
@@ -1388,6 +1433,7 @@
 					<li>DankPyon_ToolRack</li>
 				</linkableFacilities>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
@@ -1624,7 +1670,7 @@
 		<canOverlapZones>false</canOverlapZones>
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_ThingProducer">
-				<requireFuel>true</requireFuel>
+				<requireFuelCustom>true</requireFuelCustom>
 				<restAtNight>true</restAtNight>
 				<viableTempRange>13,37</viableTempRange>
 				<timeRequired>300000</timeRequired>				<!-- 60 000 ticks equal 1 day-->
@@ -1643,8 +1689,8 @@
 				</items>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
-				<fuelConsumptionRate>4.0</fuelConsumptionRate>
-				<fuelCapacity>20</fuelCapacity>
+				<fuelConsumptionRate>0.20</fuelConsumptionRate>
+				<fuelCapacity>1</fuelCapacity>
 				<autoRefuelPercent>0.2</autoRefuelPercent>
 				<initialFuelPercent>0</initialFuelPercent>
 				<fuelConsumptionPerTickInRain>0.00006</fuelConsumptionPerTickInRain>
@@ -1673,7 +1719,7 @@
 		<designationCategory>Production</designationCategory>
 		<techLevel>Medieval</techLevel>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_StewPot</li>
 		</inspectorTabs>
 	</ThingDef>
 
@@ -1721,14 +1767,14 @@
 		</building>
 		<inspectorTabs>
 			<li>MedievalOverhaul.ITab_StewPot</li>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>MedievalOverhaul.CompUnpowered</compClass>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10.0</fuelConsumptionRate>
 				<fuelCapacity>50.0</fuelCapacity>
 				<fuelFilter>
@@ -1746,7 +1792,6 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>4</heatPerSecond>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">
@@ -1785,6 +1830,7 @@
 			<li Class="MedievalOverhaul.CompProperties_Slop">
 				<mealDef>DankPyon_Slop</mealDef>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<size>(2,2)</size>
 		<placeWorkers>
@@ -1852,14 +1898,14 @@
 		</building>
 		<inspectorTabs>
 			<li>MedievalOverhaul.ITab_StewPot</li>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>MedievalOverhaul.CompUnpowered</compClass>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10.0</fuelConsumptionRate>
 				<fuelCapacity>50.0</fuelCapacity>
 				<fuelFilter>
@@ -1877,7 +1923,6 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>4</heatPerSecond>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">
@@ -1911,6 +1956,7 @@
 			<li Class="MedievalOverhaul.CompProperties_Slop">
 				<mealDef>DankPyon_Slop_Simple</mealDef>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<size>(2,2)</size>
 		<placeWorkers>
@@ -1978,14 +2024,14 @@
 		</building>
 		<inspectorTabs>
 			<li>MedievalOverhaul.ITab_StewPot</li>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>MedievalOverhaul.CompUnpowered</compClass>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10.0</fuelConsumptionRate>
 				<fuelCapacity>50.0</fuelCapacity>
 				<fuelFilter>
@@ -2003,7 +2049,6 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>4</heatPerSecond>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">
@@ -2024,6 +2069,7 @@
 				<mealDef>DankPyon_Slop_Fine</mealDef>
 				<fullTexture>Production/Pot/CheesePot</fullTexture>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<size>(2,2)</size>
 		<placeWorkers>
@@ -2100,7 +2146,7 @@
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<comps>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>0.0003</fuelConsumptionRate>
 				<fuelCapacity>10.0</fuelCapacity>
 				<fuelFilter>

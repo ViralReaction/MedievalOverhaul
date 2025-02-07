@@ -106,7 +106,7 @@
 
 		<comps>
 		<li Class="MedievalOverhaul.CompProperties_DefinableBook">
-			<qualityRange>0~2</qualityRange>
+			<qualityRange>0~3</qualityRange>
 			<nameMaker>Namer_Novel</nameMaker>
 			<descriptionMaker>Description_Novel</descriptionMaker>
 			<ageYearsRange>100~200</ageYearsRange>

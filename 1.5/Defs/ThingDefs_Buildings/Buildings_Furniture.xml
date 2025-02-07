@@ -137,6 +137,7 @@
 			</damageData>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
+		<altitudeLayer>BuildingBelowTop</altitudeLayer>
 		<rotatable>true</rotatable>
 		<uiIconPath>Furniture/RusticTorch_MenuIcon</uiIconPath>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -154,7 +155,7 @@
 				<glowRadius>10</glowRadius>
 				<glowColor>(184,136,83,0)</glowColor>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>2.0</fuelConsumptionRate>
 				<fuelCapacity>24.0</fuelCapacity>
 				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
@@ -173,7 +174,6 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
@@ -216,13 +216,14 @@
 					</li>
 				</offsets>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_FireOverlayCustom">
+			<li Class="CompProperties_FireOverlay">
 				<fireSize>0.4</fireSize>
 				<offsetNorth>(0,0,1)</offsetNorth>
 				<offsetSouth>(0,0,0.2)</offsetSouth>
 				<offsetWest>(-.25,0,0.6)</offsetWest>
 				<offsetEast>(0.25,0,.6)</offsetEast>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 	</ThingDef>
 
@@ -285,7 +286,7 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>2.0</fuelConsumptionRate>
 				<fuelCapacity>24.0</fuelCapacity>
 				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
@@ -308,11 +309,10 @@
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_FireOverlayCustom">
+			<li Class="CompProperties_FireOverlay">
 				<fireSize>0.45</fireSize>
 				<offsetNorth>(0,0,-0.175)</offsetNorth>
 				<offsetSouth>(0,0,0.675)</offsetSouth>
@@ -355,9 +355,10 @@
 					</li>
 				</offsets>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 	</ThingDef>
 
@@ -415,7 +416,7 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>24.0</fuelCapacity>
 				<fuelConsumptionPerTickInRain>0</fuelConsumptionPerTickInRain>
@@ -433,7 +434,6 @@
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
@@ -442,7 +442,7 @@
 			<li>Smithing</li>
 		</researchPrerequisites>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 	</ThingDef>
 
@@ -494,7 +494,7 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.5</fuelConsumptionRate>
 				<fuelCapacity>40.0</fuelCapacity>
 				<!--fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain-->
@@ -517,17 +517,17 @@
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 		<researchPrerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 	</ThingDef>
 
@@ -1455,7 +1455,7 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<initialFuelPercent>1</initialFuelPercent>
@@ -1469,7 +1469,6 @@
 				<fuelIconPath>UI/IconTallow</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>13</heatPushMaxTemperature>
 			</li>
@@ -1525,7 +1524,7 @@
 			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
 		</modExtensions>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 	</ThingDef>
 
@@ -1537,7 +1536,7 @@
 			<DankPyon_Wax>10</DankPyon_Wax>
 		</costList>
 		<comps Inherit="false">
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<initialFuelPercent>1</initialFuelPercent>
@@ -1552,7 +1551,6 @@
 				<fuelIconPath>UI/IconWax</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>13</heatPushMaxTemperature>
 			</li>
@@ -1590,7 +1588,7 @@
 			</li>
 		</comps>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 	</ThingDef>
 
@@ -1647,7 +1645,7 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<initialFuelPercent>1</initialFuelPercent>
@@ -1661,7 +1659,6 @@
 				<fuelIconPath>UI/IconTallow</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
@@ -1717,7 +1714,7 @@
 			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
 		</modExtensions>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 	</ThingDef>
 
@@ -1729,7 +1726,7 @@
 			<DankPyon_Wax>15</DankPyon_Wax>
 		</costList>
 		<comps Inherit="false">
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<initialFuelPercent>1</initialFuelPercent>
@@ -1744,7 +1741,6 @@
 				<fuelIconPath>UI/IconWax</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
@@ -1782,7 +1778,7 @@
 			</li>
 		</comps>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 	</ThingDef>
 
@@ -1835,7 +1831,7 @@
 			<isEdifice>false</isEdifice>
 		</building>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
@@ -1844,7 +1840,7 @@
 		</placeWorkers>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<initialFuelPercent>0</initialFuelPercent>
@@ -1859,7 +1855,6 @@
 				<fuelIconPath>UI/IconTallow</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
@@ -1970,10 +1965,10 @@
 			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 		<comps>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>20</fuelCapacity>
 				<initialFuelPercent>0</initialFuelPercent>
@@ -1988,7 +1983,6 @@
 				<fuelIconPath>UI/IconWax</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
@@ -2099,10 +2093,10 @@
 			<li>PlaceWorker_Heater</li>
 		</placeWorkers>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 		<comps>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
 				<fuelCapacity>24</fuelCapacity>
 				<initialFuelPercent>0</initialFuelPercent>
@@ -2117,7 +2111,6 @@
 				<fuelIconPath>UI/IconTar</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
@@ -3218,7 +3211,7 @@
 				<glowRadius>5</glowRadius>
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>6</fuelConsumptionRate>
 				<fuelCapacity>32.0</fuelCapacity>
 				<fuelFilter>
@@ -3235,20 +3228,20 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>11</heatPerSecond>
 				<heatPushMaxTemperature>24</heatPushMaxTemperature>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="BenchBase">
 		<defName>DankPyon_RusticHearth</defName>
 		<label>hearth</label>
-		<thingClass>MedievalOverhaul.Building_WorkTableCustom</thingClass>
+		<thingClass>Building_WorkTable</thingClass>
 		<description>A stone hearth for warmth and a homey atmosphere.</description>
 		<graphicData>
 			<texPath>Furniture/RusticHearth</texPath>
@@ -3298,7 +3291,7 @@
 		</recipes>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 		<comps>
 			<li>
@@ -3308,7 +3301,7 @@
 				<glowRadius>10</glowRadius>
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
-			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10.0</fuelConsumptionRate>
 				<fuelCapacity>54.0</fuelCapacity>
 				<fuelFilter>
@@ -3325,7 +3318,6 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass>
 				<heatPerSecond>32</heatPerSecond>
 				<heatPushMaxTemperature>21</heatPushMaxTemperature>
 			</li>
@@ -3366,6 +3358,7 @@
 				<fireSize>0.8</fireSize>
 				<offset>(0,0,0.1)</offset>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 		</comps>
 		<researchPrerequisites>
 			<li>DankPyon_RusticFurniture</li>

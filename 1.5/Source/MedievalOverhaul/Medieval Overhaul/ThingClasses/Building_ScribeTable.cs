@@ -58,9 +58,13 @@ namespace MedievalOverhaul
             }
             for (int i = 0; i < this.facilities.LinkedFacilitiesListForReading.Count; i++)
             {
-                if (this.facilities.LinkedFacilitiesListForReading[i] is not Building building || building.HasComp<CompRefuelable>() && !building.GetComp<CompRefuelable>().HasFuel)
+                if (this.facilities.LinkedFacilitiesListForReading[i] is Building building)
                 {
-                    return new FloatMenuOption("Required building needs fuel", null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
+                    var fuelComp = building.TryGetComp<CompRefuelableCustom>();
+                    if (fuelComp != null && !fuelComp.HasFuel)
+                    {
+                        return new FloatMenuOption("Required building needs fuel", null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
+                    }
                 }
             }
             if (!myPawn.CanReach(this, PathEndMode.InteractionCell, Danger.Some, false, false, TraverseMode.ByPawn))

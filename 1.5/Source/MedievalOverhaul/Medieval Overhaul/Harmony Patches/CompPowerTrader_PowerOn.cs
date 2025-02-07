@@ -14,7 +14,7 @@ namespace MedievalOverhaul.Patches
         [HarmonyPostfix]
         public static bool Postfix(bool result, CompPowerTrader __instance)
         {
-            return result || (__instance is CompUnpowered && (__instance.parent.TryGetComp<CompRefuelableCustom>()?.HasFuel ?? true));
+            return result || (__instance is CompUnpowered && (__instance.parent.TryGetComp<CompRefuelable>()?.HasFuel ?? true));
         }
     }
 }

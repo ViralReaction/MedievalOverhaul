@@ -30,18 +30,22 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>..\..\Assemblies\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_AlpSleep.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\RitualObligationTargetWorker_CampfireParty_CanUseTargetInternal_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\StageFailTrigger_TargetNotLit_Failed_Patch.cs" />
+    <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetFuelLevelCustom.cs" />
+    <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableStatusCustom.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_Nightmare.cs" />
     <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_DeepDrillInfestation.cs" />
-    <Compile Include="Medieval Overhaul\ITab\FileName.cs" />
+    <Compile Include="Medieval Overhaul\ITab\ITab_FuelCustom.cs" />
+    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelAtomicCustom.cs" />
+    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelCustom.cs" />
     <Compile Include="Medieval Overhaul\MapComponent\RefuelableMapComponent.cs" />
+    <Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_WaterGather.cs" />
     <Compile Include="Medieval Overhaul\QuestStuff\ThoughtWorker_AlpEclipse.cs" />
     <Compile Include="Medieval Overhaul\QuestStuff\GameCondition_AlpEclipse.cs" />
     <Compile Include="Medieval Overhaul\QuestStuff\QuestNode_Root_AlpEclipse.cs" />
@@ -53,16 +57,15 @@
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ItemLootExtension.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompCreatesInfestations_Mine.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_CreatesInfestations_Mine.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_RefuelableCustom.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompRefuelableCustom.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompPotionUseable.cs" />
     <Compile Include="Medieval Overhaul\Utilities\CachingUtility.cs" />
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />
-    <Compile Include="Medieval Overhaul\Designator_GatherIce.cs" />
-    <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetFuelLevelCustom.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetNutritionLevel.cs" />
-    <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableStatusCustom.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableNutritionStatus.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_DoTicks_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Compatibility\BackCompatibileCurentVersion.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\Compatibility\Harmony_BetterPyro.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\CompRefuelable_Refuel.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Refuel_MakeNewToils_Patch.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Pawn_JobTracker_EndCurrentJob_Patch.cs" />
@@ -81,9 +84,6 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_RandomOption_Generate.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_MarketValue_Generate.cs" />
     <Compile Include="Medieval Overhaul\ITab\ITab_Fuel.cs" />
-    <Compile Include="Medieval Overhaul\ITab\ITab_FuelCustom.cs" />
-    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelCustom.cs" />
-    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelAtomicCustom.cs" />
     <Compile Include="Medieval Overhaul\Recipes\RecipeWorker_GrindWheat.cs" />
     <Compile Include="Medieval Overhaul\Recipes\RecipeWorker_MakeSkillBook.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_ResourcePod_Generate.cs" />
@@ -99,13 +99,10 @@
     <Compile Include="Medieval Overhaul\HediffComps\CompProperties\HediffCompProperties_LindwurmAcid.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_Daze.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_LindwurmAcid.cs" />
-    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_GatherIce.cs" />
     <Compile Include="Medieval Overhaul\Recipes\RoomRoleWorker_Library.cs" />
     <Compile Include="Medieval Overhaul\Recipes\TreatiseSkill.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\BookWithAuthor.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\Building_WorkTableCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ApparelExtension_ImmuneLindwurmAcid.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\Building_WorkTable_HeatPushCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompGlowerOnlyWhenUsed.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompMeltable.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\BookOutcomeProperties_GainResearchDefinable.cs" />
@@ -115,14 +112,9 @@
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_Melt.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_StoreFuelThing.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_TrollRegen.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_RefuelableCustom.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_FireOverlayCustom.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompRefuelableCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompStoreFuelThing.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\Comp_FireOverlayCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_TrollRegen.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompGenericHide.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompHeatPusherPoweredCustom.cs" />
     <Compile Include="Medieval Overhaul\Utilities\Breakdown.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\CannotBePlacedTogetherWithThisModExtension.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\AdditionalButcherProducts.cs" />
@@ -137,8 +129,6 @@
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DoMending.cs" />
     <Compile Include="Medieval Overhaul\Utilities\SitePartWorker_WorkSite_Hunting.cs" />
     <Compile Include="Medieval Overhaul\Utilities\MayRequireCEAttribute.cs" />
-    <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_DoBillCustomRefuelable.cs" />
-    <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_GatherIce.cs" />
     <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_DoMending.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\HediffFallRateMultiplier.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\MeteorProperties.cs" />
@@ -250,7 +240,6 @@
   <ItemGroup>
     <Folder Include="Medieval Overhaul\DeathActionWorker\DeathActionProperties\" />
     <Folder Include="Medieval Overhaul\IncidentWorkers\ThingSetMaker\" />
-    <Folder Include="Medieval Overhaul\Utilities\RefuelableMaker\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">
@@ -275,12 +264,12 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ProcessorFramework">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Games\Rimworld C# Packages\ProcessorFramework.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\ProcessorFramework\1.5\Assemblies\ProcessorFramework.dll</HintPath>
+      <Private>false</Private>
     </Reference>
     <Reference Include="VFECore">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\Games\Rimworld C# Packages\VFECore.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
+      <Private>false</Private>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

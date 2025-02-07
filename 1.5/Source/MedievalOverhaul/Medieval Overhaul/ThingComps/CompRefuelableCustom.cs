@@ -3,6 +3,7 @@ using Verse;
 using System.Linq;
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 namespace MedievalOverhaul
 {
@@ -20,6 +21,19 @@ namespace MedievalOverhaul
                 return (CompProperties_RefuelableCustom)this.props;
             }
         }
+        private RefuelableMapComponent _MapComponent
+        {
+            get
+            {
+                if (mapComponent == null)
+                {
+                    this.mapComponent = this.parent.Map.GetComponent<RefuelableMapComponent>();
+                }
+                return this.mapComponent;
+            }
+        }
+
+        public RefuelableMapComponent mapComponent;
         private ThingFilter allowedFuelFilter;
         public ThingFilter AllowedFuelFilter => this.allowedFuelFilter;
         private float ConsumptionRatePerTick
@@ -107,6 +121,7 @@ namespace MedievalOverhaul
             this.allowAutoRefuel = this.Props.initialAllowAutoRefuel;
             this.fuel = this.Props.fuelCapacity * this.Props.initialFuelPercent;
             this.flickComp = this.parent.GetComp<CompFlickable>();
+            this.powerComp = this.parent.GetComp<CompPowerTrader>();
         }
         public override void PostExposeData()
         {
@@ -150,14 +165,14 @@ namespace MedievalOverhaul
                 }
             }
             RefuelableMapComponent mapComp = this.parent.Map.GetComponent<RefuelableMapComponent>();
-				mapComp.Register(parent);
+				mapComp.RegisterRefuel(parent);
             
         }
         public override void PostDeSpawn(Map map)
         {
             base.PostDeSpawn(map);
             RefuelableMapComponent mapComp = map.GetComponent<RefuelableMapComponent>();
-            mapComp.Deregister(parent);
+            mapComp.DeregisterRefuel(parent);
         }
         public override void PostDraw()
         {
@@ -253,8 +268,7 @@ namespace MedievalOverhaul
         {
             if (this.parent.IsHashIntervalTick(HashInterval))
             {
-                CompPowerTrader comp = this.parent.GetComp<CompPowerTrader>();
-                if (!this.Props.consumeFuelOnlyWhenUsed && (this.flickComp == null || this.flickComp.SwitchIsOn) && (!this.Props.consumeFuelOnlyWhenPowered || (comp != null && comp.PowerOn)) && !this.Props.externalTicking)
+                if (!this.Props.consumeFuelOnlyWhenUsed && (this.flickComp == null || this.flickComp.SwitchIsOn) && (!this.Props.consumeFuelOnlyWhenPowered || (powerComp != null && powerComp.PowerOn)) && !this.Props.externalTicking)
                 {
                     this.ConsumeFuel(this.ConsumptionRatePerTick);
                 }
@@ -292,16 +306,15 @@ namespace MedievalOverhaul
                     return;
                 }
             }
-            int fullFuelCount = this.GetFuelCountToFullyRefuel();
+            int fullFuelCount = this.GetFuelCountToFullyRefuel(fuelThings[0]);
             while (fullFuelCount > 0 && fuelThings.Count > 0)
             {
                 Thing thing = fuelThings.Pop<Thing>();
-                float fuelValue = CachingUtility.FuelValueDict.GetValueOrDefault(thing.def, 1f);
-                int maxFuelNeededFromStack = Mathf.CeilToInt(fullFuelCount / fuelValue);
-                int amountToFuel = Mathf.Min(maxFuelNeededFromStack, thing.stackCount);
-                this.Refuel((float)amountToFuel * fuelValue);
+                float fuelAmount = Mathf.Min((float)thing.stackCount * thing.def.ingestible.cachedNutrition, Props.fuelCapacity - Fuel);
+                int amountToFuel = Mathf.Min(fullFuelCount, thing.stackCount);
+                this.Refuel(fuelAmount);
                 thing.SplitOff(amountToFuel).Destroy(DestroyMode.Vanish);
-                fullFuelCount -= (int)(amountToFuel * fuelValue);
+                fullFuelCount -= (int)(amountToFuel);
             }
         }
 
@@ -334,7 +347,7 @@ namespace MedievalOverhaul
         }
         public int GetFuelCountToFullyRefuel(Thing thing)
         {
-            float fuelValue = CachingUtility.FuelValueDict.GetValueOrDefault(thing.def, 1f);
+            float fuelValue = thing.def.ingestible?.cachedNutrition ?? 0f;
             return Mathf.CeilToInt(GetFuelCountToFullyRefuel() / fuelValue);
         }
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
@@ -422,6 +435,7 @@ namespace MedievalOverhaul
         public bool allowAutoRefuel = true;
 
         private CompFlickable flickComp;
+        private CompPowerTrader powerComp;
 
         public const string RefueledSignal = "Refueled";
 

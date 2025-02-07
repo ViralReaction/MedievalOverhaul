@@ -15,10 +15,26 @@ namespace MedievalOverhaul
 
         public CompProperties_ThingProducer Props => (CompProperties_ThingProducer)this.props;
 
+        public CompRefuelable compRefuelRef;
+        public CompRefuelableCustom compRefuelableCustomRef;
+        public CompPowerTrader compPowerRef;
+
         public override void PostPostMake()
         {
             base.PostPostMake();
             this.ticksUntilDone = 0;
+            if (this.Props.requireFuel)
+            {
+                compRefuelRef = this.parent.TryGetComp<CompRefuelable>();
+            }
+            if (this.Props.requireFuelCustom)
+            {
+                compRefuelableCustomRef = this.parent.TryGetComp<CompRefuelableCustom>();
+            }
+            if (this.Props.requirePower)
+            {
+                compPowerRef = this.parent.TryGetComp<CompPowerTrader>();
+            }
         }
 
         public override void PostExposeData()
@@ -54,17 +70,23 @@ namespace MedievalOverhaul
             }
             if (this.Props.requireFuel)
             {
-                CompRefuelable comp = this.parent.GetComp<CompRefuelable>();
-                if (comp != null && !comp.HasFuel)
+                if (compRefuelRef != null && !compRefuelRef.HasFuel)
                 {
                     ++num;
                     this.pausedReason = (string)"ESCP_Tools_ThingProducer_Reason_fuel".Translate();
                 }
             }
+            if (this.Props.requireFuelCustom)
+            {
+                if (compRefuelableCustomRef != null && !compRefuelableCustomRef.HasFuel)
+                {
+                    ++num;
+                    this.pausedReason = (string)"ESCP_Tools_ThingProducer_Reason_nutrition".Translate();
+                }
+            }
             if (this.Props.requirePower)
             {
-                CompPowerTrader comp = this.parent.GetComp<CompPowerTrader>();
-                if (comp != null && !comp.PowerOn)
+                if (compPowerRef != null && !compPowerRef.PowerOn)
                 {
                     ++num;
                     this.pausedReason = (string)"ESCP_Tools_ThingProducer_Reason_power".Translate();
