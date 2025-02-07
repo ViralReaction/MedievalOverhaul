@@ -445,8 +445,8 @@
 		<baseCost>1000</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
-		<researchViewX>7</researchViewX>
-		<researchViewY>6.6</researchViewY>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>5.90</researchViewY>
 		<hiddenPrerequisites>
 			<li>DankPyon_RusticFurniture</li>
 		</hiddenPrerequisites>
@@ -464,12 +464,14 @@
 		<baseCost>2000</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
-		<researchViewX>8</researchViewX>
-		<researchViewY>6</researchViewY>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>5.90</researchViewY>
 		<prerequisites>
-			<li>Smithing</li>
 			<li>DankPyon_Alchemy</li>
 		</prerequisites>
+		<hiddenPrerequisites>
+			<li>Smithing</li>
+		</hiddenPrerequisites>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->steel production</li>
@@ -485,7 +487,7 @@
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>12</researchViewX>
-		<researchViewY>6</researchViewY>
+		<researchViewY>5.90</researchViewY>
 		<prerequisites>
 			<li>DankPyon_Engineering</li>
 			<li>DankPyon_Steel</li>
@@ -510,8 +512,8 @@
 		<baseCost>400</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
-		<researchViewX>8</researchViewX>
-		<researchViewY>6.6</researchViewY>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>5.40</researchViewY>
 		<prerequisites>
 			<li>DankPyon_Alchemy</li>
 		</prerequisites>
@@ -534,8 +536,8 @@
 		<baseCost>1000</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
-		<researchViewX>8</researchViewX>
-		<researchViewY>7.4</researchViewY>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>4.80</researchViewY>
 		<prerequisites>
 			<li>DankPyon_Alchemy</li>
 		</prerequisites>
@@ -950,7 +952,7 @@
 			<li>DankPyon_MedievalStart</li>
 		</tags>
 		<researchViewX>0</researchViewX>
-		<researchViewY>6</researchViewY>
+		<researchViewY>4.8</researchViewY>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->basic cooking</li>
@@ -969,7 +971,7 @@
 			<li>DankPyon_BasicCooking</li>
 		</prerequisites>
 		<researchViewX>1</researchViewX>
-		<researchViewY>6</researchViewY>
+		<researchViewY>4.8</researchViewY>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->intermediate cooking</li>
@@ -993,7 +995,7 @@
 			<li>DankPyon_IntermediateCooking</li>
 		</prerequisites>
 		<researchViewX>2</researchViewX>
-		<researchViewY>6</researchViewY>
+		<researchViewY>4.8</researchViewY>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->advanced cooking</li>
@@ -1041,7 +1043,7 @@
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>1</researchViewX>
-		<researchViewY>4.8</researchViewY>
+		<researchViewY>3.40</researchViewY>
 		<prerequisites>
 			<li>DankPyon_BasicCooking</li>
 		</prerequisites>
@@ -1062,7 +1064,7 @@
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>1</researchViewX>
-		<researchViewY>5.4</researchViewY>
+		<researchViewY>4.10</researchViewY>
 		<prerequisites>
 			<li>DankPyon_BasicCooking</li>
 		</prerequisites>
@@ -1081,7 +1083,7 @@
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>1</researchViewX>
-		<researchViewY>6.6</researchViewY>
+		<researchViewY>5.40</researchViewY>
 		<prerequisites>
 			<li>DankPyon_BasicCooking</li>
 		</prerequisites>
@@ -1100,7 +1102,7 @@
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>1</researchViewX>
-		<researchViewY>7.2</researchViewY>
+		<researchViewY>6.00</researchViewY>
 		<prerequisites>
 			<li>DankPyon_BasicCooking</li>
 		</prerequisites>
