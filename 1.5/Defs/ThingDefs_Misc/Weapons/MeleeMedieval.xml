@@ -563,10 +563,10 @@
 				<Crafting>3</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-
 		<modExtensions>
 			<li Class="VFECore.ThingDefExtension">
 				<usableWithShields>true</usableWithShields>
+				<meleeRangeOverride>3</meleeRangeOverride>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -633,6 +633,7 @@
 		<modExtensions>
 			<li Class="VFECore.ThingDefExtension">
 				<usableWithShields>true</usableWithShields>
+				<meleeRangeOverride>3</meleeRangeOverride>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -699,6 +700,7 @@
 		<modExtensions>
 			<li Class="VFECore.ThingDefExtension">
 				<usableWithShields>true</usableWithShields>
+				<meleeRangeOverride>3</meleeRangeOverride>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -792,6 +794,11 @@
 				<Crafting>3</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<meleeRangeOverride>3</meleeRangeOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_Base_Sharp_Oversize">
@@ -852,6 +859,11 @@
 				<Crafting>3</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<meleeRangeOverride>3</meleeRangeOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<!-- ==================== Polearms ==================== -->
@@ -916,6 +928,11 @@
 				<Crafting>2</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<meleeRangeOverride>3</meleeRangeOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_Base_Sharp_Oversize">
@@ -978,6 +995,11 @@
 				<Crafting>2</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<meleeRangeOverride>3</meleeRangeOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_Base_Sharp_Oversize">
@@ -1038,6 +1060,11 @@
 				<Crafting>3</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<meleeRangeOverride>3</meleeRangeOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_Base_Sharp_Oversize" Name="DankPyon_PikeBase">
@@ -1098,6 +1125,11 @@
 				<Crafting>3</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<meleeRangeOverride>3</meleeRangeOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_PikeBase">
@@ -1249,6 +1281,11 @@
 				<Crafting>3</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<meleeRangeOverride>3</meleeRangeOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_Base_Sharp_Oversize">
@@ -1305,6 +1342,11 @@
 				<Crafting>5</Crafting>
 			</skillRequirements>
 		</recipeMaker>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<meleeRangeOverride>3</meleeRangeOverride>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<!-- ==================== Hammers Base ==================== -->
