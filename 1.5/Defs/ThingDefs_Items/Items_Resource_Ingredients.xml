@@ -207,7 +207,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<Nutrition>0.2</Nutrition>
+			<Nutrition>0.50</Nutrition>
 			<MarketValue>10</MarketValue>
 			<Mass>0.010</Mass>
 			<Flammability>1.8</Flammability>
@@ -217,14 +217,16 @@
 		</thingCategories>
 		<ingestible>
 			<tasteThought>AteRawFood</tasteThought>
-			<preferability>NeverForNutrition</preferability>
+			<preferability>DesperateOnlyForHumanlikes</preferability>
 			<optimalityOffsetFeedingAnimals>6</optimalityOffsetFeedingAnimals>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Ingredients">
+				<splitTransferableFoodKind>true</splitTransferableFoodKind>
 				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
 			</li>
 		</comps>
+		<tradeability>Sellable</tradeability>
 	</ThingDef>
 
 </Defs>
