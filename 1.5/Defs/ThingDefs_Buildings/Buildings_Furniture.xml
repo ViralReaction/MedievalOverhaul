@@ -137,7 +137,7 @@
 			</damageData>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
-		<altitudeLayer>BuildingBelowTop</altitudeLayer>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<rotatable>true</rotatable>
 		<uiIconPath>Furniture/RusticTorch_MenuIcon</uiIconPath>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
