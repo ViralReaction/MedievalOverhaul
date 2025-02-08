@@ -135,6 +135,7 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 			<li Class="CompProperties_Glower">
 				<glowRadius>25</glowRadius>
 				<glowColor>(252,187,113,0)</glowColor>
