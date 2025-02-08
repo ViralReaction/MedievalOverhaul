@@ -24,6 +24,7 @@ namespace MedievalOverhaul
             base.FinalizeInit();
             GetRefuelableMap();
         }
+
         public void GetRefuelableMap()
         {
             foreach (var thing in this.map.listerBuildings.allBuildingsColonist)
@@ -71,7 +72,7 @@ namespace MedievalOverhaul
 
         public void RegisterRefuel(ThingWithComps thing)
         {
-            if (refuelableStatThing.Contains(thing))
+            if (refuelableCustomThing.Contains(thing))
             {
                 return;
             }
@@ -79,7 +80,7 @@ namespace MedievalOverhaul
         }
         public void DeregisterRefuel(ThingWithComps thing)
         {
-            if (!refuelableStatThing.Contains(thing))
+            if (!refuelableCustomThing.Contains(thing))
             {
                 return;
             }

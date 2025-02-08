@@ -60,8 +60,14 @@
     <Compile Include="Medieval Overhaul\ThingComps\CompCreatesInfestations_Mine.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_CreatesInfestations_Mine.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_RefuelableCustom.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\NewFolder1\CompUsablePoisonOil.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompRefuelableCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompPotionUseable.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\NewFolder1\CompPoisonWeapon.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\NewFolder1\CompUseEffect_AddOil.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\NewFolder1\CompProperties_UseEffectAddOil.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\NewFolder1\Pawn_GetGizmos.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\NewFolder1\Patch_VerbMeleeAttack_TryCastShot.cs" />
     <Compile Include="Medieval Overhaul\Utilities\CachingUtility.cs" />
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetNutritionLevel.cs" />

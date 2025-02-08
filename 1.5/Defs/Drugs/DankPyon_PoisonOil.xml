@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef>
+		<defName>DankPyon_PoisonOil</defName>
+		<label>poison oil</label>
+		<description>A vial of potent poison that can be applied to melee weapons, causing them to inflict poison damage.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Special/PoisonedOil</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<category>Item</category>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<techLevel>Medieval</techLevel>
+		<useHitPoints>true</useHitPoints>
+		<pathCost>14</pathCost>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<tickerType>Never</tickerType>
+		<alwaysHaulable>true</alwaysHaulable>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<statBases>
+			<MarketValue>25</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<compClass>MedievalOverhaul.CompUsablePoisonOil</compClass>
+				<useJob>UseItem</useJob>
+				<useLabel>Use oil to poison weapon</useLabel>
+				<showUseGizmo>true</showUseGizmo>
+			</li>
+			<li Class="MedievalOverhaul.CompProperties_UseEffectAddOil">
+				<hediffDef>DankPyon_Neurotoxin</hediffDef>
+				<oilType>Poison</oilType>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf"/>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
+
+</Defs>
