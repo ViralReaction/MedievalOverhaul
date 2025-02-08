@@ -46,9 +46,5 @@
 		<orderedTakeGroup>DankPyon_Oil</orderedTakeGroup>
 	</ThingDef>
 	
-	<OrderedTakeGroupDef>
-		<defName>DankPyon_Oil</defName>
-		<label>weapon oil</label>
-	</OrderedTakeGroupDef>
 
 </Defs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+   <OrderedTakeGroupDef>
+		<defName>DankPyon_Oil</defName>
+		<label>weapon oil</label>
+	</OrderedTakeGroupDef>
+
+</Defs>
