@@ -57,13 +57,7 @@
 		</active>
 		<inactive Class="PatchOperationSequence">
 			<operations>
-			
-				<!-- <li Class="PatchOperationAttributeSet"> -->
-					<!-- <xpath>Defs/ThingDef[defName="Darktorch"]/comps/li[@Class="CompProperties_Refuelable"]</xpath> -->
-					<!-- <attribute>Class</attribute> -->
-					<!-- <value>MedievalOverhaul.CompProperties_RefuelableCustom</value> -->
-				<!-- </li> -->
-			
+
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="Darktorch"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
 					<value>
@@ -81,22 +75,6 @@
 						</categories>
 					</value>
 				</li>
-			
-				<!-- <li Class="PatchOperationReplace"> -->
-					<!-- <xpath>Defs/ThingDef[defName="Darktorch"]/comps/li[@Class="CompProperties_HeatPusher"]/compClass[.="CompHeatPusherPowered"]</xpath> -->
-					<!-- <value> -->
-						<!-- <compClass>MedievalOverhaul.CompHeatPusherPoweredCustom</compClass> -->
-					<!-- </value> -->
-				<!-- </li> -->
-			
-				<!-- <li Class="PatchOperationConditional"> -->
-					<!-- <xpath>Defs/ThingDef[defName="Darktorch"]/comps/li[@Class="CompProperties_FireOverlay"]</xpath> -->
-					<!-- <match Class="PatchOperationAttributeSet"> -->
-						<!-- <xpath>Defs/ThingDef[defName="Darktorch"]/comps/li[@Class="CompProperties_FireOverlay"]</xpath> -->
-						<!-- <attribute>Class</attribute> -->
-						<!-- <value>MedievalOverhaul.CompProperties_FireOverlayCustom</value> -->
-					<!-- </match> -->
-				<!-- </li> -->
 
 			</operations>
 		</inactive>

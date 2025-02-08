@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]/li</xpath>
+		<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]/li</xpath>
 		<value>
 			<li>DankPyon_Coal</li>
 			<li>DankPyon_Tar</li>
@@ -67,9 +67,9 @@
 
 				<!-- If there is no inspector tab, add inspector tab AND MedievalOverhaul.ITab_Fuel -->
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[not(@ParentName="TorchLamp")][comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not(inspectorTabs)]</xpath>
+					<xpath>Defs/ThingDef[not(@ParentName="TorchLamp")][not (@ParentName="Brazier")][comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not(inspectorTabs)]</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[not(@ParentName="TorchLamp")][comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not(inspectorTabs)]</xpath>
+						<xpath>Defs/ThingDef[not(@ParentName="TorchLamp")][not (@ParentName="Brazier")][comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not(inspectorTabs)]</xpath>
 						<value>
 							<inspectorTabs>
 								<li>MedievalOverhaul.ITab_Fuel</li>
@@ -79,9 +79,9 @@
 				</li>
 
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not (@ParentName="TorchLamp")]/inspectorTabs[not(li[.="MedievalOverhaul.ITab_Fuel"])]</xpath>
+					<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not (@ParentName="TorchLamp")][not (@ParentName="Brazier")]/inspectorTabs[not(li[.="MedievalOverhaul.ITab_Fuel"])]</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not (@ParentName="TorchLamp")]/inspectorTabs[not(li[.="MedievalOverhaul.ITab_Fuel"])]</xpath>
+						<xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"][fuelFilter/thingDefs/li="DankPyon_Coal"]][not (@ParentName="TorchLamp")][not (@ParentName="Brazier")]/inspectorTabs[not(li[.="MedievalOverhaul.ITab_Fuel"])]</xpath>
 						<value>
 							<li>MedievalOverhaul.ITab_Fuel</li>
 						</value>

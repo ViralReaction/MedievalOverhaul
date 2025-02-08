@@ -1523,9 +1523,6 @@
 		<modExtensions>
 			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
 		</modExtensions>
-		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
-		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SingleCandleBase">
@@ -1587,9 +1584,6 @@
 				</offsets>
 			</li>
 		</comps>
-		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
-		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BuildingBase" Name="DankPyon_CandleBase">
@@ -1713,9 +1707,6 @@
 		<modExtensions>
 			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
 		</modExtensions>
-		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
-		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_CandleBase">
@@ -1777,9 +1768,6 @@
 				</offsets>
 			</li>
 		</comps>
-		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
-		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BuildingBase">
@@ -1830,9 +1818,6 @@
 		<building>
 			<isEdifice>false</isEdifice>
 		</building>
-		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
-		</inspectorTabs>
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 			<li>PlaceWorker_Heater</li>
@@ -1964,9 +1949,6 @@
 			<li>PlaceWorker_Heater</li>
 			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
-		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
-		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
