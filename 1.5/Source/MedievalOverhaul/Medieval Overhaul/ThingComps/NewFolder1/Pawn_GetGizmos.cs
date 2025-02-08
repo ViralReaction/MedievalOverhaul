@@ -20,18 +20,17 @@ namespace MedievalOverhaul.Patches
 
             if (__instance.IsColonistPlayerControlled && __instance.equipment?.Primary is ThingWithComps weapon)
             {
-                CompPoisonWeapon poisonComp = weapon.TryGetComp<CompPoisonWeapon>();
-
-                if (poisonComp != null && poisonComp.poisonCharges > 0)
+                CompWeaponOil oilComp = weapon.TryGetComp<CompWeaponOil>();
+                if (oilComp != null && oilComp.oilCharges > 0)
                 {
                     yield return new Command_Action
                     {
-                        defaultLabel = "DankPyon_OilWeaponStatus".Translate(poisonComp.oilType, poisonComp.poisonCharges),
-                        defaultDesc = "DankPyon_OilWeaponDesc".Translate(poisonComp.oilType, poisonComp.poisonCharges),
+                        defaultLabel = "DankPyon_OilWeaponStatus".Translate(oilComp.oilType, oilComp.oilCharges),
+                        defaultDesc = "DankPyon_OilWeaponDesc".Translate(oilComp.oilType, oilComp.oilCharges),
                         icon = OilGizmoIcon,
                         action = () =>
                         {
-                            Messages.Message("DankPyon_OilWeaponInfo".Translate(poisonComp.oilType, weapon.LabelShort, poisonComp.poisonCharges), MessageTypeDefOf.NeutralEvent);
+                            Messages.Message("DankPyon_OilWeaponInfo".Translate(oilComp.oilType, weapon.LabelShort, oilComp.oilCharges), MessageTypeDefOf.NeutralEvent);
                         },
                         defaultIconColor = Color.white
                     };

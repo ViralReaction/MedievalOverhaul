@@ -11,7 +11,9 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<stackLimit>10</stackLimit>
+		<possessionCount>5</possessionCount>
 		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<techLevel>Medieval</techLevel>
 		<useHitPoints>true</useHitPoints>
@@ -20,6 +22,7 @@
 		<altitudeLayer>Item</altitudeLayer>
 		<tickerType>Never</tickerType>
 		<alwaysHaulable>true</alwaysHaulable>
+		<allowedArchonexusCount>-1</allowedArchonexusCount>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
 		<statBases>
 			<MarketValue>25</MarketValue>
@@ -35,10 +38,17 @@
 			<li Class="MedievalOverhaul.CompProperties_UseEffectAddOil">
 				<hediffDef>DankPyon_Neurotoxin</hediffDef>
 				<oilType>Poison</oilType>
+				<maxCharges>20</maxCharges>
 			</li>
 			<li Class="CompProperties_UseEffectDestroySelf"/>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
+		<orderedTakeGroup>DankPyon_Oil</orderedTakeGroup>
 	</ThingDef>
+	
+	<OrderedTakeGroupDef>
+		<defName>DankPyon_Oil</defName>
+		<label>weapon oil</label>
+	</OrderedTakeGroupDef>
 
 </Defs>

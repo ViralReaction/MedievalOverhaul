@@ -17,7 +17,7 @@ namespace MedievalOverhaul
 
         public override void DoEffect(Pawn user)
         {
-            ApplyPoisonEffect(user, pawnWeapon);
+            ApplyOil(user, pawnWeapon);
         }
 
         public override AcceptanceReport CanBeUsedBy(Pawn pawn)
@@ -30,20 +30,15 @@ namespace MedievalOverhaul
             return false;
         }
 
-        private void ApplyPoisonEffect(Pawn pawn, ThingWithComps weapon)
+        private void ApplyOil(Pawn pawn, ThingWithComps weapon)
         {
-            CompPoisonWeapon poisonComp = weapon.TryGetComp<CompPoisonWeapon>();
-            if (poisonComp == null)
+            CompWeaponOil oilComp = weapon.TryGetComp<CompWeaponOil>();
+            if (oilComp == null)
             {
-                poisonComp = new CompPoisonWeapon();
-                poisonComp.hediffDef = Props.hediffDef;
-                poisonComp.oilType = Props.oilType;
-                weapon.AllComps.Add(poisonComp);
+                oilComp = new CompWeaponOil();
+                weapon.AllComps.Add(oilComp);
             }
-
-            poisonComp.RefreshPoisonDuration();
-
-            Messages.Message("MessagePoisonApplied".Translate(pawn.LabelShort, weapon.LabelShort), pawn, MessageTypeDefOf.PositiveEvent);
+            oilComp.RefreshOil(Props.maxCharges, Props.oilType, Props.hediffDef);
         }
     }
 }

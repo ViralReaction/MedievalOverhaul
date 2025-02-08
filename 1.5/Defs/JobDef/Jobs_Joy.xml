@@ -91,5 +91,12 @@
 		<suspendable>false</suspendable>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
+	
+	<JobDef>
+		<defName>DankPyon_UseOil</defName>
+		<driverClass>MedievalOverhaul.JobDriver_UseOil</driverClass>
+		<reportString>using TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
 
 </Defs>
