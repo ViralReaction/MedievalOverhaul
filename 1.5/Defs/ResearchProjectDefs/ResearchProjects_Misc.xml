@@ -291,7 +291,7 @@
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>12</researchViewX>
-		<researchViewY>3.6</researchViewY>
+		<researchViewY>3.0</researchViewY>
 		<prerequisites>
 			<li>DankPyon_Engineering</li>
 		</prerequisites>
@@ -325,13 +325,13 @@
 
 	<ResearchProjectDef>
 		<defName>DankPyon_Watermill</defName>
-		<label>windmill</label>
+		<label>watermill</label>
 		<description>Harness the power of the water to automate grinding wheatlike and sawing lumberlike products.</description>
 		<baseCost>400</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
-		<researchViewX>13</researchViewX>
-		<researchViewY>4.2</researchViewY>
+		<researchViewX>12</researchViewX>
+		<researchViewY>3.6</researchViewY>
 		<prerequisites>
 			<li>DankPyon_Engineering</li>
 		</prerequisites>
@@ -420,7 +420,7 @@
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>12</researchViewX>
-		<researchViewY>3</researchViewY>
+		<researchViewY>2.4</researchViewY>
 		<prerequisites>
 			<li>DankPyon_Engineering</li>
 		</prerequisites>
