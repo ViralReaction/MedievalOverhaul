@@ -1111,7 +1111,6 @@
 				<processes>
 					<li>DankPyon_WaterMillProcess</li>
 					<li>DankPyon_WaterLumberMillProcess</li>
-					<li>DankPyon_WaterDarkLumberMillProcess</li>
 				</processes>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>

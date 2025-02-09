@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\compprocessor_takeoutproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\harmony patches\\compprocessor_takeoutproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\medieval overhaul\\thingcomps\\comppowerwaterwheel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\thingcomps\\comppowerwaterwheel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\activeprocess_calcspeedfactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\harmony patches\\activeprocess_calcspeedfactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\comprefuelable_consumptionratepertick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\activeprocess_doticks_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\harmony patches\\activeprocess_doticks_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\activeprocess_calcspeedfactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\harmony patches\\activeprocess_calcspeedfactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\defgenerator_generateimplieddefs_preresolve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "CompProcessor_TakeOutProduct.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\CompProcessor_TakeOutProduct.cs",
+              "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\CompProcessor_TakeOutProduct.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\CompProcessor_TakeOutProduct.cs",
+              "RelativeToolTip": "Medieval Overhaul\\Harmony Patches\\CompProcessor_TakeOutProduct.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCkAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T21:24:31.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ActiveProcess_DoTicks_Patch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\ActiveProcess_DoTicks_Patch.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\ActiveProcess_DoTicks_Patch.cs",
@@ -47,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CompRefuelable_ConsumptionRatePerTick.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\CompRefuelable_ConsumptionRatePerTick.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\CompRefuelable_ConsumptionRatePerTick.cs",
@@ -60,7 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "DefGenerator_GenerateImpliedDefs_PreResolve.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\DefGenerator_GenerateImpliedDefs_PreResolve.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\DefGenerator_GenerateImpliedDefs_PreResolve.cs",
@@ -73,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ActiveProcess_CalcSpeedFactor.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\ActiveProcess_CalcSpeedFactor.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\ActiveProcess_CalcSpeedFactor.cs",
@@ -86,13 +103,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CompPowerWaterWheel.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingComps\\CompPowerWaterWheel.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\ThingComps\\CompPowerWaterWheel.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingComps\\CompPowerWaterWheel.cs",
               "RelativeToolTip": "Medieval Overhaul\\ThingComps\\CompPowerWaterWheel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJcAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAswJcAAACQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-09T17:43:30.084Z",
               "EditorCaption": ""
