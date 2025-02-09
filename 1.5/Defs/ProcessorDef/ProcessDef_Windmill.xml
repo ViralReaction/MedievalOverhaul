@@ -40,7 +40,7 @@
 
 	<!-- Wood Plank -->
 	<ProcessorFramework.ProcessDef>
-		<defName>RNSMO_LumberWindMillProcess</defName>
+		<defName>RNSMO_LumberMillProcess</defName>
 		<thingDef>WoodLog</thingDef>
 		<ingredientFilter>
 			<thingDefs>
@@ -74,7 +74,7 @@
 
 	<!-- Dark Wood Plank -->
 	<ProcessorFramework.ProcessDef>
-		<defName>RNSMO_DarkLumberWindMillProcess</defName>
+		<defName>RNSMO_DarkLumberMillProcess</defName>
 		<thingDef>DankPyon_DarkWood</thingDef>
 		<ingredientFilter>
 			<thingDefs>
