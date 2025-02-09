@@ -3,7 +3,7 @@
 
 	<!-- Flour -->
 	<ProcessorFramework.ProcessDef>
-		<defName>RNSMO_WaterMillProcess</defName>
+		<defName>DankPyon_WaterMillProcess</defName>
 		<thingDef>DankPyon_Flour</thingDef>
 		<ingredientFilter>
 			<thingDefs>
@@ -40,7 +40,7 @@
 
 	<!-- Wood Plank -->
 	<ProcessorFramework.ProcessDef>
-		<defName>RNSMO_WaterLumberMillProcess</defName>
+		<defName>DankPyon_WaterLumberMillProcess</defName>
 		<thingDef>WoodLog</thingDef>
 		<ingredientFilter>
 			<thingDefs>
@@ -74,7 +74,7 @@
 
 	<!-- Dark Wood Plank -->
 	<ProcessorFramework.ProcessDef>
-		<defName>RNSMO_WaterDarkLumberMillProcess</defName>
+		<defName>DankPyon_WaterDarkLumberMillProcess</defName>
 		<thingDef>DankPyon_DarkWood</thingDef>
 		<ingredientFilter>
 			<thingDefs>
