@@ -25,7 +25,7 @@ namespace MedievalOverhaul
             if (pawn?.equipment?.Primary is ThingWithComps weapon && weapon.def.IsMeleeWeapon)
             {
                 pawnWeapon = weapon;
-                return true;   
+                return true;
             }
             return false;
         }
@@ -38,7 +38,9 @@ namespace MedievalOverhaul
                 oilComp = new CompWeaponOil();
                 weapon.AllComps.Add(oilComp);
             }
-            oilComp.RefreshOil(Props.maxCharges, Props.oilType, Props.hediffDef);
+            oilComp.RefreshOil(Props.maxCharges, Props.oilType, Props.hediffDef, Props.oilRefillDef);
+            OiledWeaponsComponent comp = OiledWeaponsManager.GetComp();
+            comp.RegisterOilWeapon(weapon, oilComp);
         }
     }
 }

@@ -13,6 +13,7 @@ namespace MedievalOverhaul
         public HediffDef hediffDef;
         public int maxCharges;
         public string oilType;
+        public ThingDef oilRefillDef;
 
     }
 }

@@ -23,18 +23,19 @@ namespace MedievalOverhaul.Patches
                 CompWeaponOil oilComp = weapon.TryGetComp<CompWeaponOil>();
                 if (oilComp != null && oilComp.oilCharges > 0)
                 {
-                    yield return new Command_Action
-                    {
-                        defaultLabel = "DankPyon_OilWeaponStatus".Translate(oilComp.oilType, oilComp.oilCharges),
-                        defaultDesc = "DankPyon_OilWeaponDesc".Translate(oilComp.oilType, oilComp.oilCharges),
-                        icon = OilGizmoIcon,
-                        action = () =>
-                        {
-                            Messages.Message("DankPyon_OilWeaponInfo".Translate(oilComp.oilType, weapon.LabelShort, oilComp.oilCharges), MessageTypeDefOf.NeutralEvent);
-                        },
-                        defaultIconColor = Color.white
-                    };
+                    yield return new Gizmo_OilChargesBar(oilComp, __instance);
                 }
+                //yield return new Command_Action
+                //{
+                //    defaultLabel = "DankPyon_OilWeaponStatus".Translate(oilComp.oilType, oilComp.oilCharges),
+                //    defaultDesc = "DankPyon_OilWeaponDesc".Translate(oilComp.oilType, oilComp.oilCharges),
+                //    icon = OilGizmoIcon,
+                //    action = () =>
+                //    {
+                //        Messages.Message("DankPyon_OilWeaponInfo".Translate(oilComp.oilType, weapon.LabelShort, oilComp.oilCharges), MessageTypeDefOf.NeutralEvent);
+                //    },
+                //    defaultIconColor = Color.white
+                //};
             }
         }
     }

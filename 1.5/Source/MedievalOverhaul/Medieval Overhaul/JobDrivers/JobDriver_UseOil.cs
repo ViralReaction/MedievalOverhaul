@@ -1,10 +1,7 @@
 ﻿using System.Collections.Generic;
-using UnityEngine;
 using Verse;
 using Verse.AI;
 using RimWorld;
-using System;
-using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 namespace MedievalOverhaul
 {
@@ -12,20 +9,15 @@ namespace MedievalOverhaul
     {
 
         #region Fields
-        private bool usingFromInventory;
-
         private int useDuration = 600;
-
-        private Mote warmupMote;
-
 
         #endregion Fields
 
         #region Properties
 
         private ThingWithComps OilSource =>  TargetThingB as ThingWithComps;
-        private TargetIndex holder => TargetIndex.A;
-        private TargetIndex targetOil => TargetIndex.B;
+        private TargetIndex Pawn => TargetIndex.A;
+        private TargetIndex TargetOil => TargetIndex.B;
         
 
         #endregion Properties
@@ -34,15 +26,15 @@ namespace MedievalOverhaul
         {
             this.FailOnIncapable(PawnCapacityDefOf.Manipulation);
             this.FailOn(() => !base.TargetThingB.TryGetComp<CompUsable>().CanBeUsedBy(this.pawn, false, false));
-            Toil waitToil = new Toil()
+            Toil waitToil = new ()
             {
                 actor = pawn
             };
             waitToil.initAction = () => waitToil.actor.pather.StopDead();
             waitToil.defaultCompleteMode = ToilCompleteMode.Delay;
             waitToil.defaultDuration = 300;
-            yield return waitToil.WithProgressBarToilDelay(holder);
-            Toil addOil = new Toil();
+            yield return waitToil.WithProgressBarToilDelay(Pawn);
+            Toil addOil = new ();
             addOil.AddFinishAction(() => UseEffect());
             yield return addOil;
             yield break;
@@ -51,7 +43,7 @@ namespace MedievalOverhaul
         public void UseEffect()
         {
 
-            CompUseEffect_AddOil compUsable = this.job.GetTarget(targetOil).Thing.TryGetComp<CompUseEffect_AddOil>();
+            CompUseEffect_AddOil compUsable = this.job.GetTarget(TargetOil).Thing.TryGetComp<CompUseEffect_AddOil>();
             OilSource.stackCount--;
             if (OilSource.stackCount == 0)
             {

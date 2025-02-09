@@ -39,6 +39,7 @@
 				<hediffDef>DankPyon_Neurotoxin</hediffDef>
 				<oilType>Poison</oilType>
 				<maxCharges>20</maxCharges>
+				<oilRefillDef>DankPyon_PoisonOil</oilRefillDef>
 			</li>
 			<li Class="CompProperties_UseEffectDestroySelf"/>
 			<li Class="CompProperties_Forbiddable"/>
