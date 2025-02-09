@@ -1116,7 +1116,7 @@
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Power">
-				<compClass>CompPowerPlantWater</compClass>
+				<compClass>MedievalOverhaul.CompPowerWaterWheel</compClass>
 				<basePowerConsumption>-1</basePowerConsumption>
 				<transmitsPower>false</transmitsPower>
 				<soundAmbientProducingPower>WaterMill_Ambience</soundAmbientProducingPower>
@@ -1126,7 +1126,7 @@
 		<terrainAffordanceNeeded />
 		<designationCategory>Production</designationCategory>
 		<placeWorkers>
-			<li>PlaceWorker_WatermillGenerator</li>
+			<li>MedievalOverhaul.PlaceWorker_WaterWheel</li>
 		</placeWorkers>
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>

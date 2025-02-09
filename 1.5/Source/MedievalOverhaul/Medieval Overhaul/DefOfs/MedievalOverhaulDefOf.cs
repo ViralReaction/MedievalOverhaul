@@ -82,6 +82,7 @@ namespace MedievalOverhaul
         public static ThingDef DankPyon_Flour;
         public static ThingDef DankPyon_Coal;
         public static ThingDef DankPyon_Tar;
+        public static ThingDef DankPyon_WaterMill;
 
         public static DamageDef DankPyon_AlpNightmare;
         public static GameConditionDef DankPyon_AlpEclipse;
