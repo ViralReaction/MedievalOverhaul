@@ -71,7 +71,7 @@ namespace MedievalOverhaul.Patches
             if (!activeProcess.Ruined)
             {
                 thing = ThingMaker.MakeThing(thingDefCount.thingDef);
-                thing.stackCount = thingDefCount.count * ingredientThing.stackCount;
+                thing.stackCount = thingDefCount.count * activeProcess.ingredientCount;
             }
             foreach (Thing ingredientThing2 in activeProcess.ingredientThings)
             {
@@ -87,6 +87,7 @@ namespace MedievalOverhaul.Patches
             {
                 __instance.emptyNow = false;
             }
+            Log.Message(thing.stackCount);
             return thing;
         }
     }
