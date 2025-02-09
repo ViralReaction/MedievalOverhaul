@@ -978,7 +978,7 @@
 		<thingClass>Building</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<label>windmill</label>
-		<description>A wind-powered mill to automate grinding of produce. Requires a large clear space in front and behind for optimal air flow.</description>
+		<description>A wind-powered mill to automate grinding and sawing produce. Requires a large clear space in front and behind for optimal air flow.</description>
 		<graphicData>
 			<texPath>Buildings/Windmill/WindmillBody</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -1028,6 +1028,8 @@
 				<colorCoded>false</colorCoded>
 				<processes>
 					<li>DankPyon_MillProcess</li>
+					<li>DankPyon_LumberMillProcess</li>
+					<li>DankPyon_DarkLumberMillProcess</li>
 				</processes>
 			</li>
 
@@ -1048,6 +1050,92 @@
 		</building>
 		<constructEffect>ConstructWood</constructEffect>
 		<researchPrerequisites><li>DankPyon_Windmill</li></researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<!-- Watermill -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_WaterMill</defName>
+		<thingClass>Building</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<label>watermill</label>
+		<description>A water-powered mill to automate grinding and sawing produce. Must be placed with its wheel in moving water. If watermills are placed too close together, the turbulence they generate will interfere.</description>
+		<graphicData>
+			<texPath>Buildings/Windmill/WindmillBody</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,6)</drawSize>
+			<shadowData>
+				<volume>(2.6,1,2.16)</volume>
+				<offset>(-0.20,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<rectN>(0.1,1.2,4.75,3.25)</rectN>
+				<rectE>(1.25,0.2,3.5,4.7)</rectE>
+				<rectS>(0.2,1.2,4.7,3.25)</rectS>
+				<rectW>(1.25,0.2,3.5,4.7)</rectW>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>4000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(5,6)</size>
+		<costList>
+			<WoodLog>280</WoodLog>
+			<DankPyon_IronIngot>80</DankPyon_IronIngot>
+			<DankPyon_ComponentBasic>3</DankPyon_ComponentBasic>
+		</costList>
+		<comps>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>200</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(2.0, 2.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_WaterMillProcess</li>
+					<li>DankPyon_WaterLumberMillProcess</li>
+					<li>DankPyon_WaterDarkLumberMillProcess</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlantWater</compClass>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>false</transmitsPower>
+				<soundAmbientProducingPower>WaterMill_Ambience</soundAmbientProducingPower>
+			</li>
+		</comps>
+		<rotatable>true</rotatable>
+		<terrainAffordanceNeeded />
+		<designationCategory>Production</designationCategory>
+		<placeWorkers>
+			<li>PlaceWorker_WatermillGenerator</li>
+		</placeWorkers>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<destroySound>BuildingDestroyed_Wood_Big</destroySound>
+		</building>
+		<constructEffect>ConstructWood</constructEffect>
+		<researchPrerequisites>
+			<li>DankPyon_Watermill</li>
+		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<techLevel>Medieval</techLevel>
 	</ThingDef>
