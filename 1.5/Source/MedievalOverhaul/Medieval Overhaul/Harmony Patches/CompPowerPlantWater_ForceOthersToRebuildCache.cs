@@ -2,7 +2,7 @@
 using RimWorld;
 using Verse;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(CompPowerPlantWater), nameof(CompPowerPlantWater.ForceOthersToRebuildCache))]
     public static class CompPowerPlantWater_ForceOthersToRebuildCache

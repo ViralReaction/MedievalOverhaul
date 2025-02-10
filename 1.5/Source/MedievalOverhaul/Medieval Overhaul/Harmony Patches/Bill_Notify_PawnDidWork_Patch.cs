@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using RimWorld;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(Bill), "Notify_PawnDidWork")]
     public static class Bill_Notify_PawnDidWork_Patch

@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using ProcessorFramework;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(ActiveProcess), "DoTicks")]
     public static class ActiveProcess_DoTicks_Patch

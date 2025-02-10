@@ -1036,6 +1036,9 @@
 			<li>
 				<compClass>MedievalOverhaul.Comp_WindMill</compClass>
 			</li>
+			<li>
+				<compClass>CompAutoCutWindTurbine</compClass>
+			</li>
 		</comps>
 		<rotatable>true</rotatable>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -1051,6 +1054,9 @@
 		<researchPrerequisites><li>DankPyon_Windmill</li></researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<techLevel>Medieval</techLevel>
+		<inspectorTabs>
+			<li>ITab_WindTurbineAutoCut</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<!-- Watermill -->
