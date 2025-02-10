@@ -116,7 +116,7 @@ namespace MedievalOverhaul
         {
             if (this.windPathCells.Count == 0)
             {
-                IEnumerable<IntVec3> collection = WindTurbineUtility.CalculateWindCells(this.parent.Position, this.parent.Rotation, this.parent.def.size);
+                IEnumerable<IntVec3> collection = WindMillUtility.CalculateWindCells(this.parent.Position, this.parent.Rotation, this.parent.def.size);
                 this.windPathCells.AddRange(collection);
             }
             this.windPathBlockedCells.Clear();
@@ -135,7 +135,7 @@ namespace MedievalOverhaul
                     for (int j = 0; j < list.Count; j++)
                     {
                         Thing thing = list[j];
-                        if (thing.def.blockWind && thing != this.parent)
+                        if (thing.def.blockWind)
                         {
                             this.windPathBlockedByThings.Add(thing);
                             this.windPathBlockedCells.Add(intVec);

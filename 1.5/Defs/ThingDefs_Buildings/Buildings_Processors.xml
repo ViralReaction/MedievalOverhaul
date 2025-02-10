@@ -1044,7 +1044,7 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Production</designationCategory>
 		<placeWorkers>
-			<li>PlaceWorker_WindTurbine</li>
+			<li>MedievalOverhaul.PlaceWorker_WindMill</li>
 		</placeWorkers>
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
