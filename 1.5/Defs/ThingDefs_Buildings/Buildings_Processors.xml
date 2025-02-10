@@ -1046,6 +1046,7 @@
 		<placeWorkers>
 			<li>MedievalOverhaul.PlaceWorker_WindMill</li>
 		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
 			<destroySound>BuildingDestroyed_Wood_Big</destroySound>
