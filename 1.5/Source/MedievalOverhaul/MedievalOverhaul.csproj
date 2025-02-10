@@ -43,6 +43,7 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerPlantWater_RebuildCache.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CalcSpeedFactor.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CurrentWindFactor.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\MainTabWindow_Inspect_CurTabs.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\PlaceWorker_WatermillGenerator_DrawGhost.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_ClearSnow_MakeNewToils.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ResearchProjectDef_CanResearchNow.cs" />
