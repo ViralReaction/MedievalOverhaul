@@ -39,6 +39,11 @@
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_AlpSleep.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetFuelLevelCustom.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableStatusCustom.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerPlantWater_ForceOthersToRebuildCache.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerPlantWater_RebuildCache.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CalcSpeedFactor.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CurrentWindFactor.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\PlaceWorker_WatermillGenerator_DrawGhost.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_ClearSnow_MakeNewToils.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ResearchProjectDef_CanResearchNow.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_Nightmare.cs" />
@@ -47,6 +52,8 @@
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelAtomicCustom.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelCustom.cs" />
     <Compile Include="Medieval Overhaul\MapComponent\RefuelableMapComponent.cs" />
+    <Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_WindMill.cs" />
+    <Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_WaterWheel.cs" />
     <Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_WaterGather.cs" />
     <Compile Include="Medieval Overhaul\QuestStuff\ThoughtWorker_AlpEclipse.cs" />
     <Compile Include="Medieval Overhaul\QuestStuff\GameCondition_AlpEclipse.cs" />
@@ -62,6 +69,7 @@
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_RefuelableCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompRefuelableCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompPotionUseable.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompPowerWaterWheel.cs" />
     <Compile Include="Medieval Overhaul\Utilities\CachingUtility.cs" />
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetNutritionLevel.cs" />
@@ -129,6 +137,7 @@
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_OperateQuest.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_Mine_Golem.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DoMending.cs" />
+    <Compile Include="Medieval Overhaul\Utilities\WindMillUtility.cs" />
     <Compile Include="Medieval Overhaul\Utilities\SitePartWorker_WorkSite_Hunting.cs" />
     <Compile Include="Medieval Overhaul\Utilities\MayRequireCEAttribute.cs" />
     <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_DoMending.cs" />

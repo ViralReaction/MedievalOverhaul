@@ -3,7 +3,7 @@
 
 	<!-- Flour -->
 	<ProcessorFramework.ProcessDef>
-		<defName>DankPyon_MillProcess</defName>
+		<defName>DankPyon_WaterMillProcess</defName>
 		<thingDef>DankPyon_Flour</thingDef>
 		<ingredientFilter>
 			<thingDefs>
@@ -13,7 +13,7 @@
 		<bonusOutputs>
 			<Hay>(1,200)</Hay>
 		</bonusOutputs>
-		<processDays>0.2</processDays><!-- in days, a day is 60,000 ticks -->
+		<processDays>0.25</processDays><!-- in days, a day is 60,000 ticks -->
 		<capacityFactor>1.0</capacityFactor>
 		<efficiency>1.0</efficiency>
 		<usesTemperature>false</usesTemperature>
@@ -25,7 +25,7 @@
 		<sunFactor>1.0~1.0</sunFactor>
 		<rainFactor>1.0~1.0</rainFactor>
 		<snowFactor>1.0~1.0</snowFactor>
-		<windFactor>0.0~3.0</windFactor>
+		<windFactor>1.0~1.0</windFactor>
 		<unpoweredFactor>0.0</unpoweredFactor>
 		<unfueledFactor>0.0</unfueledFactor>
 		<powerUseFactor>1.0</powerUseFactor>
@@ -40,14 +40,14 @@
 
 	<!-- Wood Plank -->
 	<ProcessorFramework.ProcessDef>
-		<defName>DankPyon_LumberMillProcess</defName>
+		<defName>DankPyon_WaterLumberMillProcess</defName>
 		<thingDef>WoodLog</thingDef>
 		<ingredientFilter>
 			<categories>
 				<li>DankPyon_RawWood</li>
 			</categories>
 		</ingredientFilter>
-		<processDays>0.2</processDays><!-- in days, a day is 60,000 ticks -->
+		<processDays>0.25</processDays><!-- in days, a day is 60,000 ticks -->
 		<capacityFactor>1.0</capacityFactor>
 		<efficiency>2.0</efficiency>
 		<usesTemperature>false</usesTemperature>
@@ -59,7 +59,7 @@
 		<sunFactor>1.0~1.0</sunFactor>
 		<rainFactor>1.0~1.0</rainFactor>
 		<snowFactor>1.0~1.0</snowFactor>
-		<windFactor>0.0~3.0</windFactor>
+		<windFactor>1.0~1.0</windFactor>
 		<unpoweredFactor>0.0</unpoweredFactor>
 		<unfueledFactor>0.0</unfueledFactor>
 		<powerUseFactor>1.0</powerUseFactor>

@@ -3,26 +3,34 @@ using Verse;
 using UnityEngine;
 using System;
 using Verse.Sound;
+using System.Collections.Generic;
+using System.Text;
 
 namespace MedievalOverhaul
 {
     [StaticConstructorOnStartup]
 	public class Comp_WindMill : ThingComp
 	{
-		public int updateWeatherEveryXTicks = 250;
+        private float cachedPowerOutput;
+        private float PowerPercent => cachedPowerOutput / 250f;
 
-		private int ticksSinceWeatherUpdate;
+        public int updateWeatherEveryXTicks = 250;
 
-		private float spinPosition;
+        private int ticksSinceWeatherUpdate;
 
-		private Sustainer sustainer;
+        private float spinPosition;
 
-		//[TweakValue("APSGraphics", 0f, 1f)]
-		private static float SpinRateFactor = 0.035f;
+        private Sustainer sustainer;
 
-		private static readonly Material WindTurbineBladesMat = MaterialPool.MatFrom("Buildings/Windmill/WindmillBlades");
+        private static float SpinRateFactor = 0.035f;
 
-		public override void PostSpawnSetup(bool respawningAfterLoad)
+        private static readonly Material WindTurbineBladesMat = MaterialPool.MatFrom("Buildings/Windmill/WindmillBlades");
+
+        private List<IntVec3> windPathCells = new List<IntVec3>();
+        private List<Thing> windPathBlockedByThings = new List<Thing>();
+        private List<IntVec3> windPathBlockedCells = new List<IntVec3>();
+
+        public override void PostSpawnSetup(bool respawningAfterLoad)
 		{
 			base.PostSpawnSetup(respawningAfterLoad);
 			spinPosition = Rand.Range(0f, 15f);
@@ -42,18 +50,27 @@ namespace MedievalOverhaul
 			base.PostExposeData();
 			Scribe_Values.Look(ref ticksSinceWeatherUpdate, "updateCounter", 0);
 		}
-		private float cachedPowerOutput;
-		private float PowerPercent => cachedPowerOutput / 250f;
+
 		public override void CompTick()
 		{
 			base.CompTick();
 			ticksSinceWeatherUpdate++;
 			if (ticksSinceWeatherUpdate >= updateWeatherEveryXTicks)
 			{
-				float num = Mathf.Min(parent.Map.windManager.WindSpeed, 1.5f);
+                float windSpeed = Mathf.Min(parent.Map.windManager.WindSpeed, 1.5f);
 				ticksSinceWeatherUpdate = 0;
-				cachedPowerOutput = 250 * num;
-			}
+				cachedPowerOutput = 250 * windSpeed;
+                this.RecalculateBlockages();
+                if (this.windPathBlockedCells.Count > 0)
+                {
+                    cachedPowerOutput *= BlockageFactor; // Apply blockage effect
+                }
+                if (cachedPowerOutput < 0f)
+                {
+                    cachedPowerOutput = 0f;
+                }
+
+            }
 			if (cachedPowerOutput > 0.01f)
 			{
 				spinPosition += PowerPercent * SpinRateFactor;
@@ -82,5 +99,76 @@ namespace MedievalOverhaul
 				Graphics.DrawMesh(num2 ? MeshPool.plane10 : MeshPool.plane10Flip, matrix, WindTurbineBladesMat, 0);
 			}
 		}
-	}
+
+        // Calculates how much the wind blockage affects output (1.0 = no blockage, 0.0 = fully blocked)
+        public float BlockageFactor
+        {
+            get
+            {
+                if (this.windPathBlockedCells.Count == 0) return 1f; // No blockages, full efficiency
+
+                float blockedEffect = 1f - (this.windPathBlockedCells.Count * 0.2f);
+                return Mathf.Clamp(blockedEffect, 0f, 1f); // Keeps within 0% - 100%
+            }
+        }
+
+        private void RecalculateBlockages()
+        {
+            if (this.windPathCells.Count == 0)
+            {
+                IEnumerable<IntVec3> collection = WindMillUtility.CalculateWindCells(this.parent.Position, this.parent.Rotation, this.parent.def.size);
+                this.windPathCells.AddRange(collection);
+            }
+            this.windPathBlockedCells.Clear();
+            this.windPathBlockedByThings.Clear();
+            for (int i = 0; i < this.windPathCells.Count; i++)
+            {
+                IntVec3 intVec = this.windPathCells[i];
+                if (this.parent.Map.roofGrid.Roofed(intVec))
+                {
+                    this.windPathBlockedByThings.Add(null);
+                    this.windPathBlockedCells.Add(intVec);
+                }
+                else
+                {
+                    List<Thing> list = this.parent.Map.thingGrid.ThingsListAt(intVec);
+                    for (int j = 0; j < list.Count; j++)
+                    {
+                        Thing thing = list[j];
+                        if (thing.def.blockWind)
+                        {
+                            this.windPathBlockedByThings.Add(thing);
+                            this.windPathBlockedCells.Add(intVec);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        public override string CompInspectStringExtra()
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            if (this.windPathBlockedCells.Count > 0)
+            {
+                Thing thing = null;
+                if (this.windPathBlockedByThings != null)
+                {
+                    thing = this.windPathBlockedByThings[0];
+                }
+                if (thing != null)
+                {
+                    stringBuilder.Append("WindTurbine_WindPathIsBlockedBy".Translate() + " " + thing.Label);
+                }
+                else
+                {
+                    stringBuilder.Append("WindTurbine_WindPathIsBlockedByRoof".Translate());
+                }
+                return stringBuilder.ToString();
+            }
+            return null;
+            
+        }
+
+    }
 }
