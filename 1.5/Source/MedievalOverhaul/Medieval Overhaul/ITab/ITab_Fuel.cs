@@ -162,6 +162,69 @@ namespace MedievalOverhaul
             listRect.y += LineHeight;
         }
 
+        private ThingCategoryDef FindCommonAncestorCategory(HashSet<ThingCategoryDef> categories)
+        {
+            if (categories.Count == 0)
+            {
+                Log.Message("[ITab_Fuel] No categories detected.");
+                return null;
+            }
+
+            Log.Message($"[ITab_Fuel] Detected {categories.Count} categories: {string.Join(", ", categories.Select(c => c.defName))}");
+
+            // Step 1: Get the full ancestor chains for each category
+            List<List<ThingCategoryDef>> ancestorChains = categories
+                .Select(GetFullCategoryChain)
+                .ToList();
+
+            // Step 2: Find the deepest common ancestor
+            ThingCategoryDef commonAncestor = FindDeepestCommonAncestor(ancestorChains);
+
+            Log.Message($"[ITab_Fuel] Common Ancestor Found: {commonAncestor?.defName ?? "None"}");
+
+            return commonAncestor;
+        }
+
+        private List<ThingCategoryDef> GetFullCategoryChain(ThingCategoryDef category)
+        {
+            List<ThingCategoryDef> chain = new();
+
+            while (category != null)
+            {
+                chain.Add(category);
+                category = category.parent;
+            }
+
+            chain.Reverse(); // Root first, child last
+            return chain;
+        }
+
+        private ThingCategoryDef FindDeepestCommonAncestor(List<List<ThingCategoryDef>> ancestorChains)
+        {
+            if (ancestorChains.Count == 0)
+                return null;
+
+            int minDepth = ancestorChains.Min(chain => chain.Count);
+
+            ThingCategoryDef commonAncestor = null;
+
+            for (int i = 0; i < minDepth; i++)
+            {
+                ThingCategoryDef candidate = ancestorChains[0][i];
+
+                if (ancestorChains.All(chain => chain[i] == candidate))
+                {
+                    commonAncestor = candidate;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            return commonAncestor;
+        }
+
         private MultiCheckboxState CategoryStateOf(ThingCategoryDef category, List<ThingDef> fuels, List<CompStoreFuelThing> fuelBuildings)
         {
             int enabledCount = fuels.Count(fuel => fuelBuildings.All(comp => comp.AllowedFuelFilter.Allows(fuel)));
@@ -187,6 +250,9 @@ namespace MedievalOverhaul
             }
             return MultiCheckboxState.Off; // None allow it
         }
+
+
+
 
     }
 }
