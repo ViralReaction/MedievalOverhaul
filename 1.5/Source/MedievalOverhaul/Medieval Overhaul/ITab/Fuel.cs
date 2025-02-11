@@ -158,7 +158,7 @@ namespace MedievalOverhaul
 
             float indent = depth * 12f;
             Rect categoryRect = new(listRect.x + indent, listRect.y - 95f, listRect.width - 44f - indent, LineHeight);
-            Rect checkboxRect = new(categoryRect.xMax + 2f, categoryRect.y, 20f, 20f);
+            Rect checkboxRect = new(categoryRect.xMax - 2f, categoryRect.y, 20f, 20f);
 
             MultiCheckboxState categoryState = CategoryStateOf(category, categorizedFuels, fuelBuildings);
             MultiCheckboxState newCategoryState = Widgets.CheckboxMulti(checkboxRect, categoryState, true);
@@ -229,8 +229,6 @@ namespace MedievalOverhaul
                 parent = parent.parent;
             }
         }
-
-
 
         private void DoFuelList(ref Rect listRect, ThingDef fuelDef, List<CompStoreFuelThing> fuelBuildings, int depth)
         {
@@ -312,12 +310,8 @@ namespace MedievalOverhaul
         {
             if (categories == null || categories.Count == 0)
             {
-                Log.Message("[ITab_Fuel] No categories detected.");
                 return null;
             }
-
-            Log.Message($"[ITab_Fuel] Detected {categories.Count} categories: {string.Join(", ", categories.Select(c => c.defName))}");
-
             // Step 1: Get the full ancestor chains for each category
             List<List<ThingCategoryDef>> ancestorChains = categories
                 .Select(GetFullCategoryChain)
@@ -325,9 +319,6 @@ namespace MedievalOverhaul
 
             // Step 2: Find the deepest common ancestor
             ThingCategoryDef commonAncestor = FindDeepestCommonAncestor(ancestorChains);
-
-            Log.Message($"[ITab_Fuel] Common Ancestor Found: {commonAncestor?.defName ?? "None"}");
-
             return commonAncestor;
         }
         private List<ThingCategoryDef> GetFullCategoryChain(ThingCategoryDef category)
@@ -400,7 +391,7 @@ namespace MedievalOverhaul
                     else if (noneEnabled)
                         hasDisabled = true;
                     else
-                        hasPartial = true;
+                        hasPartial = true; // Some fuels are mixed, so category should be Partial
                 }
             }
 
@@ -410,7 +401,7 @@ namespace MedievalOverhaul
                 MultiCheckboxState subState = CategoryStateOf(subcategory, categorizedFuels, fuelBuildings);
 
                 if (subState == MultiCheckboxState.Partial)
-                    return MultiCheckboxState.Partial; // If any child is Partial, parent must be Partial
+                    hasPartial = true; // If any child is Partial, parent should be Partial
                 if (subState == MultiCheckboxState.On)
                     hasEnabled = true;
                 if (subState == MultiCheckboxState.Off)
@@ -418,14 +409,12 @@ namespace MedievalOverhaul
             }
 
             // Determine final state
-            if (hasEnabled && hasDisabled)
-                return MultiCheckboxState.Partial; // If mix of On and Off, set Partial
+            if (hasPartial || (hasEnabled && hasDisabled))
+                return MultiCheckboxState.Partial; // If any mix exists, return Partial
             if (hasEnabled)
                 return MultiCheckboxState.On;
             return MultiCheckboxState.Off;
         }
-
-
 
         private void CalculateCategoryHeight(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, int depth, ref float contentHeight)
         {
