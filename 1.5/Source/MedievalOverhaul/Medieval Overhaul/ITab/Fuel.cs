@@ -102,10 +102,8 @@ namespace MedievalOverhaul
                 CalculateFilteredCategoryHeight(rootCategory, categorizedFuels, fuelBuildings, searchFilter, 0, ref contentHeight);
             }
 
-
-
             // Offset height to move the scroll area below the buttons
-            float buttonHeight = 30f; // Height of the buttons
+            float buttonHeight = 60f; // Height of the buttons
             float padding = 5f;       // Extra spacing
             Rect listRect = new(bottomSection.x, bottomSection.y + buttonHeight + padding, bottomSection.width - 2f, bottomSection.height - buttonHeight - padding);
             Rect viewRect = new(0f, 0f, bottomSection.width - 18f, contentHeight + 10f);
@@ -145,7 +143,6 @@ namespace MedievalOverhaul
             }
         }
 
-
         private void DrawCategoryRecursive(ref Rect listRect, ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, int depth, List<CompStoreFuelThing> fuelBuildings, string searchFilter)
         {
             if (!categoryOpen.ContainsKey(category))
@@ -160,8 +157,8 @@ namespace MedievalOverhaul
                 return;
 
             float indent = depth * 6f;
-            Rect categoryRect = new(listRect.x + indent, listRect.y, listRect.width - 44f - indent, LineHeight);
-            Rect checkboxRect = new(categoryRect.xMax + 2f, categoryRect.y, 20f, 20f);
+            Rect categoryRect = new(listRect.x + indent, listRect.y - 95f, listRect.width - 44f - indent, LineHeight);
+            Rect checkboxRect = new(categoryRect.xMax - 2f, categoryRect.y, 20f, 20f);
 
             MultiCheckboxState categoryState = categorizedFuels.ContainsKey(category)
                 ? CategoryStateOf(category, categorizedFuels, fuelBuildings)
@@ -211,17 +208,38 @@ namespace MedievalOverhaul
             }
         }
 
-        private bool MatchesSearch(ThingDef fuelDef, string searchFilter)
+        private void DoFuelList(ref Rect listRect, ThingDef fuelDef, List<CompStoreFuelThing> fuelBuildings, int depth)
         {
-            return searchFilter == null || fuelDef.label.ToLower().Contains(searchFilter);
+            float indent = depth * 6f; // Proper indentation for nested fuels
+
+            Rect headerRect = new(listRect.x, listRect.y - 95f, listRect.width, LineHeight);
+            Rect iconRect = new(headerRect.x + indent, headerRect.y, 24f, 24f);
+            Rect labelRect = new(headerRect.x + indent + 28f, headerRect.y, headerRect.width - 28f - indent, 24f);
+            Rect checkboxRect = new(headerRect.xMax - 48f, headerRect.y, 20f, 20f);
+
+            Widgets.DefIcon(iconRect, fuelDef);
+
+            Text.Font = GameFont.Small;
+            Widgets.Label(labelRect, fuelDef.LabelCap);
+            Text.Font = GameFont.Small; // Reset font size after drawing
+
+            MultiCheckboxState fuelState = FuelStateOf(fuelDef, fuelBuildings);
+            MultiCheckboxState newFuelState = Widgets.CheckboxMulti(checkboxRect, fuelState, true);
+
+            if (fuelState != newFuelState && newFuelState != MultiCheckboxState.Partial)
+            {
+                foreach (var comp in fuelBuildings)
+                {
+                    comp.AllowedFuelFilter.SetAllow(fuelDef, newFuelState == MultiCheckboxState.On);
+                }
+            }
+
+            listRect.y += LineHeight; // Move to the next line to avoid overlap
         }
 
-        private bool MatchesSearch(ThingCategoryDef category, string searchFilter)
-        {
-            return searchFilter == null || category.label.ToLower().Contains(searchFilter);
-        }
+        private bool MatchesSearch(ThingDef fuelDef, string searchFilter) => searchFilter == null || fuelDef.label.ToLower().Contains(searchFilter);
 
-
+        private bool MatchesSearch(ThingCategoryDef category, string searchFilter) => searchFilter == null || category.label.ToLower().Contains(searchFilter);
 
         private Dictionary<ThingCategoryDef, List<ThingDef>> GroupByHierarchy(List<ThingDef> fuelDefs, ThingCategoryDef commonCategory)
         {
@@ -326,34 +344,6 @@ namespace MedievalOverhaul
 
             return commonAncestor;
         }
-        private void DoFuelList(ref Rect listRect, ThingDef fuelDef, List<CompStoreFuelThing> fuelBuildings, int depth)
-        {
-            float indent = depth * 6f; // Proper indentation for nested fuels
-
-            Rect headerRect = new(listRect.x, listRect.y, listRect.width, LineHeight);
-            Rect iconRect = new(headerRect.x + indent, headerRect.y, 24f, 24f);
-            Rect labelRect = new(headerRect.x + indent + 28f, headerRect.y, headerRect.width - 28f - indent, 24f);
-            Rect checkboxRect = new(headerRect.xMax - 48f, headerRect.y, 20f, 20f);
-
-            Widgets.DefIcon(iconRect, fuelDef);
-
-            Text.Font = GameFont.Small;
-            Widgets.Label(labelRect, fuelDef.LabelCap);
-            Text.Font = GameFont.Small; // Reset font size after drawing
-
-            MultiCheckboxState fuelState = FuelStateOf(fuelDef, fuelBuildings);
-            MultiCheckboxState newFuelState = Widgets.CheckboxMulti(checkboxRect, fuelState, true);
-
-            if (fuelState != newFuelState && newFuelState != MultiCheckboxState.Partial)
-            {
-                foreach (var comp in fuelBuildings)
-                {
-                    comp.AllowedFuelFilter.SetAllow(fuelDef, newFuelState == MultiCheckboxState.On);
-                }
-            }
-
-            listRect.y += LineHeight; // Move to the next line to avoid overlap
-        }
 
         private MultiCheckboxState FuelStateOf(ThingDef fuelDef, List<CompStoreFuelThing> fuelBuildings)
         {
@@ -367,19 +357,6 @@ namespace MedievalOverhaul
             return MultiCheckboxState.Partial;
         }
 
-
-        //private MultiCheckboxState CategoryStateOf(ThingCategoryDef category, List<ThingDef> fuels, List<CompStoreFuelThing> fuelBuildings)
-        //{
-        //    int enabledCount = fuels.Count(fuel => fuelBuildings.Any(comp => comp.AllowedFuelFilter.Allows(fuel)));
-        //    int totalFuels = fuels.Count;
-
-        //    if (enabledCount == 0)
-        //        return MultiCheckboxState.Off;
-        //    if (enabledCount == totalFuels)
-        //        return MultiCheckboxState.On;
-
-        //    return MultiCheckboxState.Partial;
-        //}
         private MultiCheckboxState CategoryStateOf(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, List<CompStoreFuelThing> fuelBuildings)
         {
             int enabledCount = 0;
@@ -426,11 +403,6 @@ namespace MedievalOverhaul
 
             return MultiCheckboxState.Partial; // Some are selected, some aren't
         }
-
-
-
-
-
 
         private void CalculateCategoryHeight(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, int depth, ref float contentHeight)
         {
