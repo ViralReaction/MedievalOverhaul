@@ -12,6 +12,7 @@ namespace MedievalOverhaul
         private static readonly Vector2 WinSize = new Vector2(300f, 480f);
         private ThingFilterUI.UIState fuelFilterState = new ();
         private Dictionary<ThingCategoryDef, bool> categoryOpen = new(); // Tracks open/closed categories
+        private const int LineHeight = 22;
 
 
         private const int lineHeight = 22;
@@ -38,31 +39,34 @@ namespace MedievalOverhaul
 
         public override void FillTab()
         {
-            List<CompStoreFuelThing> fuelBuildings = Find.Selector.SelectedObjects
+            var fuelBuildings = Find.Selector.SelectedObjects
                 .Select(o => (o as ThingWithComps)?.TryGetComp<CompStoreFuelThing>())
                 .Where(comp => comp != null)
                 .ToList();
 
-            if (!fuelBuildings.Any())
-            {
-                return;
-            }
+            if (!fuelBuildings.Any()) return;
 
-            CompRefuelable refuelable = fuelBuildings.First().parent.GetComp<CompRefuelable>();
-            if (refuelable == null || refuelable.Props.fuelFilter == null)
-            {
-                return; // No fuel filter, exit
-            }
+            var refuelable = fuelBuildings.First().parent.GetComp<CompRefuelable>();
+            if (refuelable?.Props.fuelFilter == null) return;
 
-            List<ThingDef> fuelDefs = refuelable.Props.fuelFilter.AllowedThingDefs.ToList();
+            var fuelDefs = refuelable.Props.fuelFilter.AllowedThingDefs.ToList();
             var categorizedFuels = fuelDefs
                 .Where(fuelDef => fuelDef.thingCategories != null && fuelDef.thingCategories.Any())
-                .GroupBy(fuelDef => fuelDef.thingCategories.First()) // Use first category
+                .GroupBy(fuelDef => fuelDef.thingCategories.First())
                 .ToDictionary(g => g.Key, g => g.ToList());
 
-            Rect outRect = new Rect(0f, 0f, ITab_Fuel.WinSize.x, ITab_Fuel.WinSize.y).ContractedBy(10f);
-            Rect buttonRect = new Rect(outRect.x, outRect.y, (outRect.width - 2f) / 2f, 24f);
-            if (Widgets.ButtonText(buttonRect, "ClearAll".Translate(), true, true, true))
+            Rect outerRect = new(0f, 0f, WinSize.x, WinSize.y);
+            Rect innerRect = outerRect.ContractedBy(10f);
+            innerRect.SplitHorizontally(18f, out _, out Rect bottomSection);
+
+            // Draw Section
+            Widgets.DrawMenuSection(bottomSection);
+            //float num = bottomSection.width - 2f;
+            float buttonWidth = ((bottomSection.width - 2f) / 2f) - 4.5f;
+            Rect clearAllButton = new Rect(bottomSection.x + 3f, bottomSection.y + 3f, buttonWidth, 24f);
+            Rect allowAllButton = new Rect(clearAllButton.xMax + 3f, clearAllButton.y, buttonWidth, 24f);
+
+            if (Widgets.ButtonText(clearAllButton, "ClearAll".Translate(), true, true, true))
             {
                 foreach (var comp in fuelBuildings)
                 {
@@ -70,8 +74,8 @@ namespace MedievalOverhaul
                 }
                 SoundDefOf.Checkbox_TurnedOff.PlayOneShotOnCamera(null);
             }
-            Rect allowAllRect = new Rect(buttonRect.xMax + 3f, buttonRect.y, buttonRect.width, 24f);
-            if (Widgets.ButtonText(allowAllRect, "AllowAll".Translate(), true, true, true))
+
+            if (Widgets.ButtonText(allowAllButton, "AllowAll".Translate(), true, true, true, null))
             {
                 foreach (var comp in fuelBuildings)
                 {
@@ -79,27 +83,28 @@ namespace MedievalOverhaul
                 }
                 SoundDefOf.Checkbox_TurnedOn.PlayOneShotOnCamera(null);
             }
-            outRect.yMin += buttonRect.height + 6;
-            Rect listRect = new Rect(0f, 2f, 280, 9999f);
-            Rect viewRect = new Rect(0f, 0f, outRect.width - GUI.skin.verticalScrollbar.fixedWidth - 1f, fuelDefs.Count * lineHeight + 80);
-            Widgets.BeginScrollView(outRect, ref fuelFilterState.scrollPosition, viewRect);
 
+            // Adjust layout after buttons
+            bottomSection.yMin = allowAllButton.yMax - 24f;
+            bottomSection.xMax -= 4f;
+            bottomSection.yMax -= 6f;
+            Rect listRect = new(bottomSection.x, bottomSection.y, bottomSection.width - 16f, bottomSection.height - 30f);
+            //Rect listRect = new(bottomSection.x, bottomSection.y, bottomSection.width - 16f, bottomSection.height - 30f);
+            Rect viewRect = new(0f, 0f, listRect.width, fuelDefs.Count * LineHeight + 80);
+
+            Widgets.BeginScrollView(listRect, ref fuelFilterState.scrollPosition, viewRect);
+            
             foreach (var category in categorizedFuels.Keys)
             {
                 if (!categoryOpen.ContainsKey(category))
-                {
-                    categoryOpen[category] = false; // Default to collapsed
-                }
+                    categoryOpen[category] = false;
 
-                // Draw category label & checkbox
-                Rect categoryRect = new Rect(listRect.x, listRect.y, listRect.width - 24f, lineHeight);
-                Rect checkboxRect = new Rect(categoryRect.xMax, categoryRect.y, 20f, 20f);
+                Rect categoryRect = new(listRect.x, listRect.y, listRect.width - 44f, LineHeight);
+                Rect checkboxRect = new(categoryRect.xMax + 2f, categoryRect.y, 20f, 20f);
 
-                // ✅ Check if all/some/none of the fuels in this category are enabled
                 MultiCheckboxState categoryState = CategoryStateOf(category, categorizedFuels[category], fuelBuildings);
                 MultiCheckboxState newCategoryState = Widgets.CheckboxMulti(checkboxRect, categoryState, true);
-
-                // ✅ Click on checkbox: Enable/Disable all fuels in category
+                
                 if (categoryState != newCategoryState && newCategoryState != MultiCheckboxState.Partial)
                 {
                     foreach (ThingDef fuelDef in categorizedFuels[category])
@@ -111,7 +116,6 @@ namespace MedievalOverhaul
                     }
                 }
 
-                // ✅ Click on label: Expand/Collapse category
                 Widgets.Label(categoryRect, (categoryOpen[category] ? "▼ " : "▶ ") + category.LabelCap);
                 if (Mouse.IsOver(categoryRect) && Event.current.type == EventType.MouseDown && Event.current.button == 0)
                 {
@@ -120,9 +124,8 @@ namespace MedievalOverhaul
                     Event.current.Use();
                 }
 
-                listRect.y += lineHeight;
-
-                // Show fuels if category is expanded
+                listRect.y += LineHeight;
+                
                 if (categoryOpen[category])
                 {
                     foreach (ThingDef fuelDef in categorizedFuels[category])
@@ -132,35 +135,31 @@ namespace MedievalOverhaul
                 }
             }
 
-
             Widgets.EndScrollView();
         }
 
         private void DoFuelList(ref Rect listRect, ThingDef fuelDef, List<CompStoreFuelThing> fuelBuildings)
         {
             Rect headerRect = listRect.TopPartPixels(24);
-            Rect checkboxRect = new Rect(headerRect.x + headerRect.width - 48f, headerRect.y, 20, 20);
+            Rect checkboxRect = new(headerRect.xMax - 42f, headerRect.y, 20, 20);
+            Rect iconRect = new(headerRect.x, headerRect.y, 24f, 24f);
+            Rect labelRect = new(headerRect.x + 28f, headerRect.y, headerRect.width - 28f, 24f);
 
-            Rect iconRect = new Rect(headerRect.x, headerRect.y, 24f, 24f);
             Widgets.DefIcon(iconRect, fuelDef);
-
-            // Adjust label position to the right of the icon
-            Rect labelRect = new Rect(headerRect.x + 28f, headerRect.y, headerRect.width - 28f, 24f);
             Widgets.Label(labelRect, fuelDef.LabelCap);
-
 
             MultiCheckboxState fuelState = FuelStateOf(fuelDef, fuelBuildings);
             MultiCheckboxState newFuelState = Widgets.CheckboxMulti(checkboxRect, fuelState, true);
 
             if (fuelState != newFuelState && newFuelState != MultiCheckboxState.Partial)
             {
-                foreach (CompStoreFuelThing comp in fuelBuildings)
+                foreach (var comp in fuelBuildings)
                 {
                     comp.AllowedFuelFilter.SetAllow(fuelDef, newFuelState == MultiCheckboxState.On);
                 }
             }
 
-            listRect.y += lineHeight;
+            listRect.y += LineHeight;
         }
 
         private MultiCheckboxState CategoryStateOf(ThingCategoryDef category, List<ThingDef> fuels, List<CompStoreFuelThing> fuelBuildings)
@@ -188,7 +187,6 @@ namespace MedievalOverhaul
             }
             return MultiCheckboxState.Off; // None allow it
         }
-
 
     }
 }
