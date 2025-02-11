@@ -152,35 +152,24 @@ namespace MedievalOverhaul
             bool hasMatchingFuels = categorizedFuels.ContainsKey(category) && categorizedFuels[category].Any(fuel => MatchesSearch(fuel, searchFilter));
             bool hasMatchingSubcategories = categorizedFuels.Keys.Any(sub => sub.parent == category && MatchesSearch(sub, searchFilter));
 
-            // If the category and its children do not match, skip rendering
+            // Skip categories that don't match the search
             if (searchFilter != null && !hasMatchingFuels && !hasMatchingSubcategories)
                 return;
 
-            float indent = depth * 6f;
+            float indent = depth * 12f;
             Rect categoryRect = new(listRect.x + indent, listRect.y - 95f, listRect.width - 44f - indent, LineHeight);
-            Rect checkboxRect = new(categoryRect.xMax - 2f, categoryRect.y, 20f, 20f);
+            Rect checkboxRect = new(categoryRect.xMax + 2f, categoryRect.y, 20f, 20f);
 
-            MultiCheckboxState categoryState = categorizedFuels.ContainsKey(category)
-                ? CategoryStateOf(category, categorizedFuels, fuelBuildings)
-                : MultiCheckboxState.Off;
-
+            MultiCheckboxState categoryState = CategoryStateOf(category, categorizedFuels, fuelBuildings);
             MultiCheckboxState newCategoryState = Widgets.CheckboxMulti(checkboxRect, categoryState, true);
 
+            // **Apply state change to all children when toggling**
             if (categoryState != newCategoryState && newCategoryState != MultiCheckboxState.Partial)
             {
-                if (categorizedFuels.ContainsKey(category))
-                {
-                    foreach (ThingDef fuelDef in categorizedFuels[category])
-                    {
-                        foreach (CompStoreFuelThing comp in fuelBuildings)
-                        {
-                            comp.AllowedFuelFilter.SetAllow(fuelDef, newCategoryState == MultiCheckboxState.On);
-                        }
-                    }
-                }
+                SetCategoryStateRecursive(category, categorizedFuels, fuelBuildings, newCategoryState == MultiCheckboxState.On);
             }
 
-            Widgets.Label(categoryRect, (categoryOpen[category] ? "▼ " : "▶ ") + category.LabelCap);
+            Widgets.Label(categoryRect, (categoryOpen[category] ? "▼ " : "◢ ") + category.LabelCap);
             if (Mouse.IsOver(categoryRect) && Event.current.type == EventType.MouseDown && Event.current.button == 0)
             {
                 categoryOpen[category] = !categoryOpen[category];
@@ -188,7 +177,6 @@ namespace MedievalOverhaul
                 Event.current.Use();
             }
 
-            // **Ensure listRect is updated after drawing a category**
             listRect.y += LineHeight;
 
             if (categoryOpen[category])
@@ -207,6 +195,42 @@ namespace MedievalOverhaul
                 }
             }
         }
+
+        private void SetCategoryStateRecursive(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, List<CompStoreFuelThing> fuelBuildings, bool allow)
+        {
+            // Enable/Disable all fuels in this category
+            if (categorizedFuels.ContainsKey(category))
+            {
+                foreach (ThingDef fuelDef in categorizedFuels[category])
+                {
+                    foreach (CompStoreFuelThing comp in fuelBuildings)
+                    {
+                        comp.AllowedFuelFilter.SetAllow(fuelDef, allow);
+                    }
+                }
+            }
+
+            // Recursively apply state to subcategories
+            foreach (var subcategory in categorizedFuels.Keys.Where(c => c.parent == category))
+            {
+                SetCategoryStateRecursive(subcategory, categorizedFuels, fuelBuildings, allow);
+            }
+
+            // **Fully Recalculate Parent States**
+            ThingCategoryDef parent = category.parent;
+            while (parent != null)
+            {
+                MultiCheckboxState newState = CategoryStateOf(parent, categorizedFuels, fuelBuildings);
+
+                // Ensure parent updates correctly based on all child categories
+                if (newState == MultiCheckboxState.Partial)
+                    break; // Stop updating if already Partial (no need to go higher)
+
+                parent = parent.parent;
+            }
+        }
+
+
 
         private void DoFuelList(ref Rect listRect, ThingDef fuelDef, List<CompStoreFuelThing> fuelBuildings, int depth)
         {
@@ -359,24 +383,24 @@ namespace MedievalOverhaul
 
         private MultiCheckboxState CategoryStateOf(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, List<CompStoreFuelThing> fuelBuildings)
         {
-            int enabledCount = 0;
-            int totalFuels = 0;
+            bool hasEnabled = false;
+            bool hasDisabled = false;
             bool hasPartial = false;
 
-            // Check fuels directly in this category
+            // Check direct fuels in this category
             if (categorizedFuels.ContainsKey(category))
             {
                 foreach (ThingDef fuel in categorizedFuels[category])
                 {
-                    totalFuels++;
-                    int enabledBuildings = fuelBuildings.Count(comp => comp.AllowedFuelFilter.Allows(fuel));
+                    bool allEnabled = fuelBuildings.All(comp => comp.AllowedFuelFilter.Allows(fuel));
+                    bool noneEnabled = fuelBuildings.All(comp => !comp.AllowedFuelFilter.Allows(fuel));
 
-                    if (enabledBuildings == 0)
-                        continue; // Fully disabled
-                    if (enabledBuildings == fuelBuildings.Count)
-                        enabledCount++; // Fully enabled
+                    if (allEnabled)
+                        hasEnabled = true;
+                    else if (noneEnabled)
+                        hasDisabled = true;
                     else
-                        hasPartial = true; // Some buildings allow, some don’t
+                        hasPartial = true;
                 }
             }
 
@@ -384,25 +408,24 @@ namespace MedievalOverhaul
             foreach (var subcategory in categorizedFuels.Keys.Where(c => c.parent == category))
             {
                 MultiCheckboxState subState = CategoryStateOf(subcategory, categorizedFuels, fuelBuildings);
-                if (subState == MultiCheckboxState.Partial)
-                    return MultiCheckboxState.Partial; // Any partial child makes parent partial
 
+                if (subState == MultiCheckboxState.Partial)
+                    return MultiCheckboxState.Partial; // If any child is Partial, parent must be Partial
                 if (subState == MultiCheckboxState.On)
-                    enabledCount++; // Fully enabled subcategory
+                    hasEnabled = true;
                 if (subState == MultiCheckboxState.Off)
-                    continue;
-                hasPartial |= (subState == MultiCheckboxState.Partial);
-                totalFuels++; // Count subcategories as part of total
+                    hasDisabled = true;
             }
 
-            if (enabledCount == totalFuels)
-                return MultiCheckboxState.On; // Everything is selected
-
-            if (enabledCount == 0)
-                return MultiCheckboxState.Off; // Nothing is selected
-
-            return MultiCheckboxState.Partial; // Some are selected, some aren't
+            // Determine final state
+            if (hasEnabled && hasDisabled)
+                return MultiCheckboxState.Partial; // If mix of On and Off, set Partial
+            if (hasEnabled)
+                return MultiCheckboxState.On;
+            return MultiCheckboxState.Off;
         }
+
+
 
         private void CalculateCategoryHeight(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, int depth, ref float contentHeight)
         {
