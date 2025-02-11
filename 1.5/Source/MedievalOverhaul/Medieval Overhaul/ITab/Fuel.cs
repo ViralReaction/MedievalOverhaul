@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -61,8 +62,6 @@ namespace MedievalOverhaul
             Rect innerRect = outerRect.ContractedBy(10f);
             innerRect.SplitHorizontally(18f, out Rect _, out Rect bottomSection);
 
-            
-
             Widgets.DrawMenuSection(bottomSection);
             float buttonWidth = ((bottomSection.width - 2f) / 2f) - 4.5f;
             Rect clearAllButton = new Rect(bottomSection.x + 3f, bottomSection.y + 3f, buttonWidth, 24f);
@@ -86,8 +85,9 @@ namespace MedievalOverhaul
                 SoundDefOf.Checkbox_TurnedOn.PlayOneShotOnCamera(null);
             }
 
-            Rect searchBarRect = new Rect(bottomSection.x + 3f, bottomSection.y + 3f, bottomSection.width - 16f - 6f, 24f);
+            Rect searchBarRect = new Rect(bottomSection.x + 3f, clearAllButton.y + 3f + 24f, bottomSection.width - 16f - 6f, 24f);
             fuelFilterState.quickSearch.OnGUI(searchBarRect, null, null);
+            string searchFilter = fuelFilterState.quickSearch.filter.Active ? fuelFilterState.quickSearch.filter.Text?.ToLower() : null;
 
             bottomSection.yMin = allowAllButton.yMax - 24f;
             bottomSection.xMax -= 4f;
@@ -96,10 +96,12 @@ namespace MedievalOverhaul
             // Adjust listRect to account for scrollbar width
 
             float contentHeight = 0f;
+
             foreach (var rootCategory in categorizedFuels.Keys.Where(c => c.parent == null || !categorizedFuels.ContainsKey(c.parent)))
             {
-                CalculateCategoryHeight(rootCategory, categorizedFuels, 0, ref contentHeight);
+                CalculateFilteredCategoryHeight(rootCategory, categorizedFuels, fuelBuildings, searchFilter, 0, ref contentHeight);
             }
+
 
 
             // Offset height to move the scroll area below the buttons
@@ -107,28 +109,64 @@ namespace MedievalOverhaul
             float padding = 5f;       // Extra spacing
             Rect listRect = new(bottomSection.x, bottomSection.y + buttonHeight + padding, bottomSection.width - 2f, bottomSection.height - buttonHeight - padding);
             Rect viewRect = new(0f, 0f, bottomSection.width - 18f, contentHeight + 10f);
+            
 
             Widgets.BeginScrollView(listRect, ref fuelFilterState.scrollPosition, viewRect);
 
             foreach (var rootCategory in categorizedFuels.Keys.Where(c => c.parent == null || !categorizedFuels.ContainsKey(c.parent)))
             {
-                DrawCategoryRecursive(ref listRect, rootCategory, categorizedFuels, 0, fuelBuildings);
+                DrawCategoryRecursive(ref listRect, rootCategory, categorizedFuels, 0, fuelBuildings, searchFilter);
             }
 
             Widgets.EndScrollView();
         }
 
+        private void CalculateFilteredCategoryHeight(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, List<CompStoreFuelThing> fuelBuildings, string searchFilter, int depth, ref float contentHeight)
+        {
+            bool hasMatchingFuels = categorizedFuels.ContainsKey(category) && categorizedFuels[category].Any(fuel => MatchesSearch(fuel, searchFilter));
+            bool hasMatchingSubcategories = categorizedFuels.Keys.Any(sub => sub.parent == category && MatchesSearch(sub, searchFilter));
 
-        private void DrawCategoryRecursive(ref Rect listRect, ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, int depth, List<CompStoreFuelThing> fuelBuildings)
+            if (searchFilter != null && !hasMatchingFuels && !hasMatchingSubcategories)
+                return; // Skip categories that don't match search
+
+            contentHeight += LineHeight; // Account for category height
+
+            if (categoryOpen.ContainsKey(category) && categoryOpen[category])
+            {
+                foreach (var subcategory in categorizedFuels.Keys.Where(c => c.parent == category))
+                {
+                    CalculateFilteredCategoryHeight(subcategory, categorizedFuels, fuelBuildings, searchFilter, depth + 1, ref contentHeight);
+                }
+
+                if (categorizedFuels.ContainsKey(category))
+                {
+                    contentHeight += categorizedFuels[category].Count(f => MatchesSearch(f, searchFilter)) * LineHeight;
+                }
+            }
+        }
+
+
+        private void DrawCategoryRecursive(ref Rect listRect, ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, int depth, List<CompStoreFuelThing> fuelBuildings, string searchFilter)
         {
             if (!categoryOpen.ContainsKey(category))
                 categoryOpen[category] = false;
 
-            float indent = depth * 6f;
-            Rect categoryRect = new(listRect.x + indent - 4f, listRect.y - 44f, listRect.width - 44f - indent, LineHeight);
-            Rect checkboxRect = new(categoryRect.xMax - 4f, categoryRect.y, 20f, 20f);
+            // Check if this category or any of its fuels match the search
+            bool hasMatchingFuels = categorizedFuels.ContainsKey(category) && categorizedFuels[category].Any(fuel => MatchesSearch(fuel, searchFilter));
+            bool hasMatchingSubcategories = categorizedFuels.Keys.Any(sub => sub.parent == category && MatchesSearch(sub, searchFilter));
 
-            MultiCheckboxState categoryState = CategoryStateOf(category, categorizedFuels, fuelBuildings);
+            // If the category and its children do not match, skip rendering
+            if (searchFilter != null && !hasMatchingFuels && !hasMatchingSubcategories)
+                return;
+
+            float indent = depth * 6f;
+            Rect categoryRect = new(listRect.x + indent, listRect.y, listRect.width - 44f - indent, LineHeight);
+            Rect checkboxRect = new(categoryRect.xMax + 2f, categoryRect.y, 20f, 20f);
+
+            MultiCheckboxState categoryState = categorizedFuels.ContainsKey(category)
+                ? CategoryStateOf(category, categorizedFuels, fuelBuildings)
+                : MultiCheckboxState.Off;
+
             MultiCheckboxState newCategoryState = Widgets.CheckboxMulti(checkboxRect, categoryState, true);
 
             if (categoryState != newCategoryState && newCategoryState != MultiCheckboxState.Partial)
@@ -143,20 +181,9 @@ namespace MedievalOverhaul
                         }
                     }
                 }
-
-                foreach (var subcategory in categorizedFuels.Keys.Where(c => c.parent == category))
-                {
-                    foreach (ThingDef fuelDef in categorizedFuels[subcategory])
-                    {
-                        foreach (CompStoreFuelThing comp in fuelBuildings)
-                        {
-                            comp.AllowedFuelFilter.SetAllow(fuelDef, newCategoryState == MultiCheckboxState.On);
-                        }
-                    }
-                }
             }
 
-            Widgets.Label(categoryRect, (categoryOpen[category] ? "▼ " : "◢ ") + category.LabelCap);
+            Widgets.Label(categoryRect, (categoryOpen[category] ? "▼ " : "▶ ") + category.LabelCap);
             if (Mouse.IsOver(categoryRect) && Event.current.type == EventType.MouseDown && Event.current.button == 0)
             {
                 categoryOpen[category] = !categoryOpen[category];
@@ -164,25 +191,36 @@ namespace MedievalOverhaul
                 Event.current.Use();
             }
 
-            // **Ensure listRect is updated immediately after drawing the category**
+            // **Ensure listRect is updated after drawing a category**
             listRect.y += LineHeight;
 
             if (categoryOpen[category])
             {
                 foreach (var subcategory in categorizedFuels.Keys.Where(c => c.parent == category))
                 {
-                    DrawCategoryRecursive(ref listRect, subcategory, categorizedFuels, depth + 1, fuelBuildings);
+                    DrawCategoryRecursive(ref listRect, subcategory, categorizedFuels, depth + 1, fuelBuildings, searchFilter);
                 }
 
                 if (categorizedFuels.ContainsKey(category))
                 {
-                    foreach (ThingDef fuelDef in categorizedFuels[category])
+                    foreach (ThingDef fuelDef in categorizedFuels[category].Where(f => MatchesSearch(f, searchFilter)))
                     {
                         DoFuelList(ref listRect, fuelDef, fuelBuildings, depth + 1);
                     }
                 }
             }
         }
+
+        private bool MatchesSearch(ThingDef fuelDef, string searchFilter)
+        {
+            return searchFilter == null || fuelDef.label.ToLower().Contains(searchFilter);
+        }
+
+        private bool MatchesSearch(ThingCategoryDef category, string searchFilter)
+        {
+            return searchFilter == null || category.label.ToLower().Contains(searchFilter);
+        }
+
 
 
         private Dictionary<ThingCategoryDef, List<ThingDef>> GroupByHierarchy(List<ThingDef> fuelDefs, ThingCategoryDef commonCategory)
@@ -290,15 +328,18 @@ namespace MedievalOverhaul
         }
         private void DoFuelList(ref Rect listRect, ThingDef fuelDef, List<CompStoreFuelThing> fuelBuildings, int depth)
         {
-            float indent = depth * 6f;
-            Rect headerRect = listRect.TopPartPixels(24);
-            headerRect.y -= 44f;
-            Rect checkboxRect = new(headerRect.xMax - 48f, headerRect.y, 20, 20);
-            Rect iconRect = new(headerRect.x - 4f + indent, headerRect.y, 24f, 24f);
-            Rect labelRect = new(headerRect.x + 28f - 4f + indent, headerRect.y, headerRect.width - 28f, 24f);
+            float indent = depth * 6f; // Proper indentation for nested fuels
+
+            Rect headerRect = new(listRect.x, listRect.y, listRect.width, LineHeight);
+            Rect iconRect = new(headerRect.x + indent, headerRect.y, 24f, 24f);
+            Rect labelRect = new(headerRect.x + indent + 28f, headerRect.y, headerRect.width - 28f - indent, 24f);
+            Rect checkboxRect = new(headerRect.xMax - 48f, headerRect.y, 20f, 20f);
 
             Widgets.DefIcon(iconRect, fuelDef);
+
+            Text.Font = GameFont.Small;
             Widgets.Label(labelRect, fuelDef.LabelCap);
+            Text.Font = GameFont.Small; // Reset font size after drawing
 
             MultiCheckboxState fuelState = FuelStateOf(fuelDef, fuelBuildings);
             MultiCheckboxState newFuelState = Widgets.CheckboxMulti(checkboxRect, fuelState, true);
@@ -311,7 +352,7 @@ namespace MedievalOverhaul
                 }
             }
 
-            listRect.y += LineHeight;
+            listRect.y += LineHeight; // Move to the next line to avoid overlap
         }
 
         private MultiCheckboxState FuelStateOf(ThingDef fuelDef, List<CompStoreFuelThing> fuelBuildings)
