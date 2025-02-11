@@ -275,7 +275,7 @@
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>DankPyon_Coal</defName>
-		<label>Coal Chunks</label>
+		<label>coal chunks</label>
 		<description>Coal is a black combustible chunk of rock formed by mostly carbon. A good source of fuel for stoves and furnaces.</description>
 		<graphicData>
 			<texPath>Resources/Coal</texPath>
