@@ -10,13 +10,22 @@ namespace MedievalOverhaul
 {
     public class ITab_Fuel : ITab
     {
-        private static readonly Vector2 WinSize = new Vector2(300f, 480f);
-        private ThingFilterUI.UIState fuelFilterState = new();
-        private Dictionary<ThingCategoryDef, bool> categoryOpen = new();
-        private const int LineHeight = 22;
-        private List<CompStoreFuelThing> cachedFuelBuildings = new();
-        private IList<object> lastSelectedObjects;
+        // UI State
+        private static readonly Vector2 WinSize = new(300f, 480f);
+        private readonly ThingFilterUI.UIState _fuelFilterState = new();
 
+        // Cached Data
+        private List<CompStoreFuelThing> _cachedFuelBuildings = new();
+        private List<ThingDef> _cachedFuelDefs = new();
+        private Dictionary<ThingCategoryDef, List<ThingDef>> _cachedCategorizedFuels = new();
+        private Dictionary<ThingCategoryDef, MultiCheckboxState> _cachedCategoryStates = new();
+        private Dictionary<ThingDef, MultiCheckboxState> _cachedFuelStates = new();
+        private float _cachedContentHeight = 0f;
+        private IList<object> _lastSelectedObjects;
+
+        // UI Settings
+        private Dictionary<ThingCategoryDef, bool> _categoryOpen = new();
+        private const int LineHeight = 22;
 
         protected Building SelBuilding => (Building)this.SelThing;
 
@@ -60,12 +69,10 @@ namespace MedievalOverhaul
         public override void OnOpen()
         {
             base.OnOpen();
-            this.fuelFilterState.quickSearch.Reset();
+            this._fuelFilterState.quickSearch.Reset();
         }
 
-        private List<ThingDef> cachedFuelDefs = new();
-        private Dictionary<ThingCategoryDef, List<ThingDef>> cachedCategorizedFuels = new();
-        private float cachedContentHeight = 0f;
+        
 
         public override void FillTab()
         {
@@ -74,7 +81,7 @@ namespace MedievalOverhaul
             // If selection hasn't changed, skip updating.
             if (HasSelectionChanged(selectedObjects))
             {
-                cachedFuelBuildings.Clear();
+                _cachedFuelBuildings.Clear();
                 for (int i = 0; i < selectedObjects.Count; i++)
                 {
                     if (selectedObjects[i] is ThingWithComps thingWithComps)
@@ -82,40 +89,40 @@ namespace MedievalOverhaul
                         var comp = thingWithComps.TryGetComp<CompStoreFuelThing>();
                         if (comp != null)
                         {
-                            cachedFuelBuildings.Add(comp);
+                            _cachedFuelBuildings.Add(comp);
                         }
                     }
                 }
-                lastSelectedObjects = new List<object>(selectedObjects); // Store new selection.
+                _lastSelectedObjects = new List<object>(selectedObjects); // Store new selection.
 
                 // Update cached fuelDefs
                 UpdateCachedFuelDefs();
             }
 
-            if (!cachedFuelBuildings.Any()) return;
-            if (!cachedFuelDefs.Any()) return;
+            if (!_cachedFuelBuildings.Any()) return;
+            if (!_cachedFuelDefs.Any()) return;
 
             List<ThingCategoryDef> keys = new List<ThingCategoryDef>();
-            if (cachedCategorizedFuels.Count == 0)
+            if (_cachedCategorizedFuels.Count == 0)
             {
                 HashSet<ThingCategoryDef> fuelCategories = new();
-                for (int i = 0; i < cachedFuelDefs.Count; i++)
+                for (int i = 0; i < _cachedFuelDefs.Count; i++)
                 {
-                    if (cachedFuelDefs[i].thingCategories != null)
-                        fuelCategories.UnionWith(cachedFuelDefs[i].thingCategories);
+                    if (_cachedFuelDefs[i].thingCategories != null)
+                        fuelCategories.UnionWith(_cachedFuelDefs[i].thingCategories);
                 }
 
                 ThingCategoryDef commonCategory = FindCommonAncestorCategory(fuelCategories);
-                cachedCategorizedFuels = GroupByHierarchy(cachedFuelDefs, commonCategory);
+                _cachedCategorizedFuels = GroupByHierarchy(_cachedFuelDefs, commonCategory);
 
-                cachedContentHeight = 0f;
-                keys = cachedCategorizedFuels.Keys.ToList();
+                _cachedContentHeight = 0f;
+                keys = _cachedCategorizedFuels.Keys.ToList();
                 for (int i = 0; i < keys.Count; i++)
                 {
                     var key = keys[i];
-                    if (key.parent == null || !cachedCategorizedFuels.ContainsKey(key.parent))
+                    if (key.parent == null || !_cachedCategorizedFuels.ContainsKey(key.parent))
                     {
-                        CalculateFilteredCategoryHeight(key, cachedCategorizedFuels, cachedFuelBuildings, null, 0, ref cachedContentHeight);
+                        CalculateFilteredCategoryHeight(key, _cachedCategorizedFuels, _cachedFuelBuildings, null, 0, ref _cachedContentHeight);
                     }
                 }
             }
@@ -132,62 +139,62 @@ namespace MedievalOverhaul
 
             if (Widgets.ButtonText(clearAllButton, "ClearAll".Translate(), true, true, true))
             {
-                for (int i = 0; i < cachedFuelBuildings.Count; i++)
+                for (int i = 0; i < _cachedFuelBuildings.Count; i++)
                 {
-                    cachedFuelBuildings[i].AllowedFuelFilter.SetDisallowAll(null, null);
+                    _cachedFuelBuildings[i].AllowedFuelFilter.SetDisallowAll(null, null);
                 }
 
                 ClearFuelStateCache();
-                PrecomputeFuelStates(cachedFuelDefs, cachedFuelBuildings);
+                PrecomputeFuelStates(_cachedFuelDefs, _cachedFuelBuildings);
                 RecalculateCategoryStates();
                 SoundDefOf.Checkbox_TurnedOff.PlayOneShotOnCamera(null);
             }
 
             if (Widgets.ButtonText(allowAllButton, "AllowAll".Translate(), true, true, true, null))
             {
-                for (int i = 0; i < cachedFuelBuildings.Count; i++)
+                for (int i = 0; i < _cachedFuelBuildings.Count; i++)
                 {
-                    var comp = cachedFuelBuildings[i];
+                    var comp = _cachedFuelBuildings[i];
                     comp.AllowedFuelFilter.SetAllowAll(comp.parent.GetComp<CompRefuelable>().Props.fuelFilter, false);
                 }
                 ClearFuelStateCache();
-                PrecomputeFuelStates(cachedFuelDefs, cachedFuelBuildings);
+                PrecomputeFuelStates(_cachedFuelDefs, _cachedFuelBuildings);
                 RecalculateCategoryStates();
                 SoundDefOf.Checkbox_TurnedOn.PlayOneShotOnCamera(null);
             }
 
             Rect searchBarRect = new Rect(bottomSection.x + 3f, clearAllButton.y + 3f + 24f, bottomSection.width - 16f - 6f, 24f);
-            fuelFilterState.quickSearch.OnGUI(searchBarRect, null, null);
-            string searchFilter = fuelFilterState.quickSearch.filter.Active ? fuelFilterState.quickSearch.filter.Text?.ToLower() : null;
+            _fuelFilterState.quickSearch.OnGUI(searchBarRect, null, null);
+            string searchFilter = _fuelFilterState.quickSearch.filter.Active ? _fuelFilterState.quickSearch.filter.Text?.ToLower() : null;
 
             // Scroll View
             float buttonHeight = 60f;
             float padding = 5f;
             Rect listRect = new(bottomSection.x, bottomSection.y + buttonHeight + padding, bottomSection.width - 2f, bottomSection.height - buttonHeight - padding);
-            Rect viewRect = new(0f, 0f, bottomSection.width - 18f, Mathf.Max(cachedContentHeight, listRect.y - bottomSection.y) + 10f);
+            Rect viewRect = new(0f, 0f, bottomSection.width - 18f, Mathf.Max(_cachedContentHeight, listRect.y - bottomSection.y) + 10f);
 
 
-            cachedContentHeight = 0f;
+            _cachedContentHeight = 0f;
 
             keys.Clear();
-            keys = cachedCategorizedFuels.Keys.ToList();
+            keys = _cachedCategorizedFuels.Keys.ToList();
             for (int i = 0; i < keys.Count; i++)
             {
                 var key = keys[i];
-                if (key.parent == null || !cachedCategorizedFuels.ContainsKey(key.parent))
+                if (key.parent == null || !_cachedCategorizedFuels.ContainsKey(key.parent))
                 {
-                    CalculateFilteredCategoryHeight(key, cachedCategorizedFuels, cachedFuelBuildings, null, 0, ref cachedContentHeight);
+                    CalculateFilteredCategoryHeight(key, _cachedCategorizedFuels, _cachedFuelBuildings, null, 0, ref _cachedContentHeight);
                 }
             }
 
-            Widgets.BeginScrollView(listRect, ref fuelFilterState.scrollPosition, viewRect);
+            Widgets.BeginScrollView(listRect, ref _fuelFilterState.scrollPosition, viewRect);
 
             for (int i = 0; i < keys.Count; i++)
             {
                 var key = keys[i];
-                if (key.parent == null || !cachedCategorizedFuels.ContainsKey(key.parent))
+                if (key.parent == null || !_cachedCategorizedFuels.ContainsKey(key.parent))
                 {
-                    DrawCategoryRecursive(ref listRect, key, cachedCategorizedFuels, 0, cachedFuelBuildings, searchFilter);
+                    DrawCategoryRecursive(ref listRect, key, _cachedCategorizedFuels, 0, _cachedFuelBuildings, searchFilter);
                 }
             }
 
@@ -210,8 +217,8 @@ namespace MedievalOverhaul
 
         private void DrawCategoryRecursive(ref Rect listRect, ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, int depth, List<CompStoreFuelThing> fuelBuildings, string searchFilter)
         {
-            if (!categoryOpen.ContainsKey(category))
-                categoryOpen[category] = false;
+            if (!_categoryOpen.ContainsKey(category))
+                _categoryOpen[category] = false;
 
             bool hasMatchingFuels = categorizedFuels.ContainsKey(category) && categorizedFuels[category].Any(fuel => MatchesSearch(fuel, searchFilter));
             bool hasMatchingSubcategories = false;
@@ -245,17 +252,17 @@ namespace MedievalOverhaul
                 RecalculateCategoryStates(); // ✅ Ensure all categories refresh properly
             }
 
-            Widgets.Label(categoryRect, (categoryOpen[category] ? "▼ " : "◢ ") + category.LabelCap);
+            Widgets.Label(categoryRect, (_categoryOpen[category] ? "▼ " : "◢ ") + category.LabelCap);
             if (Mouse.IsOver(categoryRect) && Event.current.type == EventType.MouseDown && Event.current.button == 0)
             {
-                categoryOpen[category] = !categoryOpen[category];
+                _categoryOpen[category] = !_categoryOpen[category];
                 SoundDefOf.TabOpen.PlayOneShotOnCamera();
                 Event.current.Use();
             }
 
             listRect.y += LineHeight;
 
-            if (categoryOpen[category])
+            if (_categoryOpen[category])
             {
                 for (int i = 0; i < keys.Count; i++)
                 {
@@ -324,11 +331,11 @@ namespace MedievalOverhaul
         {
             cachedCategoryStates.Clear();
 
-            var keys = cachedCategorizedFuels.Keys.ToList();
+            var keys = _cachedCategorizedFuels.Keys.ToList();
             for (int i = 0; i < keys.Count; i++)
             {
                 var category = keys[i];
-                cachedCategoryStates[category] = CategoryStateOf(category, cachedCategorizedFuels, cachedFuelBuildings);
+                cachedCategoryStates[category] = CategoryStateOf(category, _cachedCategorizedFuels, _cachedFuelBuildings);
             }
 
         }
@@ -337,23 +344,23 @@ namespace MedievalOverhaul
         private void ClearFuelStateCache()
         {
             cachedFuelStates.Clear();
-            cachedCategorizedFuels.Clear();
-            cachedContentHeight = 0f;
+            _cachedCategorizedFuels.Clear();
+            _cachedContentHeight = 0f;
         }
 
 
         private bool HasSelectionChanged(IList<object> selectedObjects)
         {
-            if (ReferenceEquals(lastSelectedObjects, selectedObjects))
+            if (ReferenceEquals(_lastSelectedObjects, selectedObjects))
                 return false;
 
-            if (lastSelectedObjects == null || lastSelectedObjects.Count != selectedObjects.Count)
+            if (_lastSelectedObjects == null || _lastSelectedObjects.Count != selectedObjects.Count)
                 return true;
 
             HashSet<object> currentSelection = new(selectedObjects);
-            for (int i = 0; i < lastSelectedObjects.Count; i++)
+            for (int i = 0; i < _lastSelectedObjects.Count; i++)
             {
-                if (!currentSelection.Contains(lastSelectedObjects[i]))
+                if (!currentSelection.Contains(_lastSelectedObjects[i]))
                     return true;
             }
             return false;
@@ -361,20 +368,19 @@ namespace MedievalOverhaul
 
         private void UpdateCachedFuelDefs()
         {
-            cachedFuelDefs.Clear();
+            _cachedFuelDefs.Clear();
 
-            CompRefuelable refuelable = cachedFuelBuildings.Count > 0 ? cachedFuelBuildings[0].parent.GetComp<CompRefuelable>() : null;
+            CompRefuelable refuelable = _cachedFuelBuildings.Count > 0 ? _cachedFuelBuildings[0].parent.GetComp<CompRefuelable>() : null;
             if (refuelable?.Props.fuelFilter == null) return;
 
             foreach (var thingDef in refuelable.Props.fuelFilter.AllowedThingDefs)
             {
-                cachedFuelDefs.Add(thingDef);
+                _cachedFuelDefs.Add(thingDef);
             }
 
-            cachedCategorizedFuels.Clear();
-            cachedContentHeight = 0f;
+            _cachedCategorizedFuels.Clear();
+            _cachedContentHeight = 0f;
         }
-
 
         private void CalculateFilteredCategoryHeight(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, List<CompStoreFuelThing> fuelBuildings, string searchFilter, int depth, ref float contentHeight)
         {
@@ -397,7 +403,7 @@ namespace MedievalOverhaul
 
             contentHeight += LineHeight;
 
-            if (categoryOpen.ContainsKey(category) && categoryOpen[category])
+            if (_categoryOpen.ContainsKey(category) && _categoryOpen[category])
             {
                 for (int i = 0; i < keys.Count; i++)
                 {
@@ -681,7 +687,7 @@ namespace MedievalOverhaul
         {
             contentHeight += LineHeight;
 
-            if (categoryOpen.ContainsKey(category) && categoryOpen[category])
+            if (_categoryOpen.ContainsKey(category) && _categoryOpen[category])
             {
                 var keys = categorizedFuels.Keys.ToList();
                 for (int i = 0; i < keys.Count; i++)
