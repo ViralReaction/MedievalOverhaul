@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using Verse.Noise;
 
 namespace MedievalOverhaul
 {
@@ -13,6 +14,7 @@ namespace MedievalOverhaul
     {
         public ThingDef fuelUsed;
         private ThingFilter allowedFuelFilter;
+        public ThingFilter filter;
 
         public CompRefuelable compRefuelable;
 
@@ -45,5 +47,6 @@ namespace MedievalOverhaul
         }
 
         public override string CompInspectStringExtra() => Utility.LWMFuelFilterIsEnabled || compRefuelable == null ? (string)null : (string)(!compRefuelable.HasFuel || this.fuelUsed == null ? (TaggedString)(string)null : "ESCP_Tools_FuelExtension_CurrentFuel".Translate((NamedArgument)this.fuelUsed.label));
+
     }
 }
