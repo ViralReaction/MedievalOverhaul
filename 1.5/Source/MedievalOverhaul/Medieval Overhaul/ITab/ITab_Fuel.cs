@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
+using static RimWorld.CompCableConnection;
 
 namespace MedievalOverhaul
 {
@@ -12,6 +13,9 @@ namespace MedievalOverhaul
         private ThingFilterUI.UIState fuelFilterState = new();
         private Dictionary<ThingCategoryDef, bool> categoryOpen = new();
         private const int LineHeight = 22;
+        private List<CompStoreFuelThing> cachedFuelBuildings = new();
+        private IList<object> lastSelectedObjects;
+
 
         protected Building SelBuilding => (Building)this.SelThing;
 
@@ -58,48 +62,61 @@ namespace MedievalOverhaul
             this.fuelFilterState.quickSearch.Reset();
         }
 
+        private List<ThingDef> cachedFuelDefs = new();
+        private Dictionary<ThingCategoryDef, List<ThingDef>> cachedCategorizedFuels = new();
+        private float cachedContentHeight = 0f;
+
         public override void FillTab()
         {
-            List<CompStoreFuelThing> fuelBuildings = new List<CompStoreFuelThing>();
-            foreach (var obj in Find.Selector.SelectedObjects)
+            var selectedObjects = Find.Selector.SelectedObjects;
+
+            // If selection hasn't changed, skip updating.
+            if (HasSelectionChanged(selectedObjects))
             {
-                ThingWithComps thingWithComps = obj as ThingWithComps;
-                if (thingWithComps != null)
+                cachedFuelBuildings.Clear();
+                foreach (var obj in selectedObjects)
                 {
-                    CompStoreFuelThing comp = thingWithComps.TryGetComp<CompStoreFuelThing>();
-                    if (comp != null)
+                    if (obj is ThingWithComps thingWithComps)
                     {
-                        fuelBuildings.Add(comp);
+                        var comp = thingWithComps.TryGetComp<CompStoreFuelThing>();
+                        if (comp != null)
+                        {
+                            cachedFuelBuildings.Add(comp);
+                        }
+                    }
+                }
+                lastSelectedObjects = new List<object>(selectedObjects); // Store new selection.
+
+                // Update cached fuelDefs
+                UpdateCachedFuelDefs();
+            }
+
+            if (!cachedFuelBuildings.Any()) return;
+            if (!cachedFuelDefs.Any()) return;
+
+            if (cachedCategorizedFuels.Count == 0)
+            {
+                HashSet<ThingCategoryDef> fuelCategories = new();
+                foreach (var fuel in cachedFuelDefs)
+                {
+                    if (fuel.thingCategories != null)
+                        fuelCategories.UnionWith(fuel.thingCategories);
+                }
+
+                ThingCategoryDef commonCategory = FindCommonAncestorCategory(fuelCategories);
+                cachedCategorizedFuels = GroupByHierarchy(cachedFuelDefs, commonCategory);
+
+                cachedContentHeight = 0f;
+                foreach (var key in cachedCategorizedFuels.Keys)
+                {
+                    if (key.parent == null || !cachedCategorizedFuels.ContainsKey(key.parent))
+                    {
+                        CalculateFilteredCategoryHeight(key, cachedCategorizedFuels, cachedFuelBuildings, null, 0, ref cachedContentHeight);
                     }
                 }
             }
-            if (!fuelBuildings.Any()) return;
 
-            CompRefuelable refuelable = null;
-            if (fuelBuildings.Count > 0)
-            {
-                refuelable = fuelBuildings[0].parent.GetComp<CompRefuelable>();
-            }
-            if (refuelable?.Props.fuelFilter == null) return;
-
-            List<ThingDef> fuelDefs = new List<ThingDef>();
-            if (refuelable != null && refuelable.Props.fuelFilter != null)
-            {
-                foreach (var thingDef in refuelable.Props.fuelFilter.AllowedThingDefs)
-                {
-                    fuelDefs.Add(thingDef);
-                }
-            }
-            HashSet<ThingCategoryDef> fuelCategories = new();
-            foreach (var fuel in fuelDefs)
-            {
-                if (fuel.thingCategories != null)
-                    fuelCategories.UnionWith(fuel.thingCategories);
-            }
-
-            ThingCategoryDef commonCategory = FindCommonAncestorCategory(fuelCategories);
-            Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels = GroupByHierarchy(fuelDefs, commonCategory);
-
+            // UI Drawing
             Rect outerRect = new(0f, 0f, WinSize.x, WinSize.y);
             Rect innerRect = outerRect.ContractedBy(10f);
             innerRect.SplitHorizontally(18f, out Rect _, out Rect bottomSection);
@@ -107,23 +124,31 @@ namespace MedievalOverhaul
             Widgets.DrawMenuSection(bottomSection);
             float buttonWidth = ((bottomSection.width - 2f) / 2f) - 4.5f;
             Rect clearAllButton = new Rect(bottomSection.x + 3f, bottomSection.y + 3f, buttonWidth, 24f);
-            Rect allowAllButton = new Rect(clearAllButton.xMax + 3f, clearAllButton.y, buttonWidth, 24f);
+            Rect allowAllButton = new Rect(clearAllButton.xMax + 3f, bottomSection.y + 3f, buttonWidth, 24f);
 
             if (Widgets.ButtonText(clearAllButton, "ClearAll".Translate(), true, true, true))
             {
-                foreach (var comp in fuelBuildings)
+                foreach (var comp in cachedFuelBuildings)
                 {
                     comp.AllowedFuelFilter.SetDisallowAll(null, null);
                 }
+
+                ClearFuelStateCache();
+                PrecomputeFuelStates(cachedFuelDefs, cachedFuelBuildings);
+                RecalculateCategoryStates();
                 SoundDefOf.Checkbox_TurnedOff.PlayOneShotOnCamera(null);
             }
 
             if (Widgets.ButtonText(allowAllButton, "AllowAll".Translate(), true, true, true, null))
             {
-                foreach (var comp in fuelBuildings)
+                foreach (var comp in cachedFuelBuildings)
                 {
-                    comp.AllowedFuelFilter.SetAllowAll(refuelable.Props.fuelFilter, false);
+                    comp.AllowedFuelFilter.SetAllowAll(comp.parent.GetComp<CompRefuelable>().Props.fuelFilter, false);
                 }
+                ClearFuelStateCache();
+                PrecomputeFuelStates(cachedFuelDefs, cachedFuelBuildings);
+               // SetCategoryStateRecursive(category, categorizedFuels, fuelBuildings, enable); // ✅ Apply to all nested items
+                RecalculateCategoryStates(); // ✅ Ensure all categories refresh properly
                 SoundDefOf.Checkbox_TurnedOn.PlayOneShotOnCamera(null);
             }
 
@@ -131,84 +156,53 @@ namespace MedievalOverhaul
             fuelFilterState.quickSearch.OnGUI(searchBarRect, null, null);
             string searchFilter = fuelFilterState.quickSearch.filter.Active ? fuelFilterState.quickSearch.filter.Text?.ToLower() : null;
 
-            bottomSection.yMin = allowAllButton.yMax - 24f;
-            bottomSection.xMax -= 4f;
-            bottomSection.yMax -= 6f;
+            // Scroll View
+            float buttonHeight = 60f;
+            float padding = 5f;
+            Rect listRect = new(bottomSection.x, bottomSection.y + buttonHeight + padding, bottomSection.width - 2f, bottomSection.height - buttonHeight - padding);
+            Rect viewRect = new(0f, 0f, bottomSection.width - 18f, Mathf.Max(cachedContentHeight, listRect.y - bottomSection.y) + 10f);
 
-            // Adjust listRect to account for scrollbar width
 
-            float contentHeight = 0f;
+            cachedContentHeight = 0f;
 
-            foreach (var key in categorizedFuels.Keys)
+            foreach (var key in cachedCategorizedFuels.Keys)
             {
-                bool isRootCategory = (key.parent == null || !categorizedFuels.ContainsKey(key.parent));
-                if (isRootCategory)
+                if (key.parent == null || !cachedCategorizedFuels.ContainsKey(key.parent))
                 {
-                    CalculateFilteredCategoryHeight(key, categorizedFuels, fuelBuildings, searchFilter, 0, ref contentHeight);
+                    CalculateFilteredCategoryHeight(key, cachedCategorizedFuels, cachedFuelBuildings, null, 0, ref cachedContentHeight);
                 }
             }
 
-            // Offset height to move the scroll area below the buttons
-            float buttonHeight = 60f; // Height of the buttons
-            float padding = 5f;       // Extra spacing
-            Rect listRect = new(bottomSection.x, bottomSection.y + buttonHeight + padding, bottomSection.width - 2f, bottomSection.height - buttonHeight - padding);
-            Rect viewRect = new(0f, 0f, bottomSection.width - 18f, contentHeight + 10f);
-
-
             Widgets.BeginScrollView(listRect, ref fuelFilterState.scrollPosition, viewRect);
 
-            foreach (var key in categorizedFuels.Keys)
+            foreach (var key in cachedCategorizedFuels.Keys)
             {
-                if (key.parent == null || !categorizedFuels.ContainsKey(key.parent))
+                if (key.parent == null || !cachedCategorizedFuels.ContainsKey(key.parent))
                 {
-                    DrawCategoryRecursive(ref listRect, key, categorizedFuels, 0, fuelBuildings, searchFilter);
+                    DrawCategoryRecursive(ref listRect, key, cachedCategorizedFuels, 0, cachedFuelBuildings, searchFilter);
                 }
             }
 
             Widgets.EndScrollView();
         }
 
-        private void CalculateFilteredCategoryHeight(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, List<CompStoreFuelThing> fuelBuildings, string searchFilter, int depth, ref float contentHeight)
+        private void PrecomputeFuelStates(List<ThingDef> fuelDefs, List<CompStoreFuelThing> fuelBuildings)
         {
-            bool hasMatchingFuels = categorizedFuels.ContainsKey(category) && categorizedFuels[category].Any(fuel => MatchesSearch(fuel, searchFilter));
-            bool hasMatchingSubcategories = false;
-            foreach (var sub in categorizedFuels.Keys)
+            cachedFuelStates.Clear();
+
+            foreach (var fuelDef in fuelDefs)
             {
-                if (sub.parent == category && MatchesSearch(sub, searchFilter))
-                {
-                    hasMatchingSubcategories = true;
-                    break;
-                }
+                cachedFuelStates[fuelDef] = FuelStateOf(fuelDef, fuelBuildings);
             }
 
-            if (searchFilter != null && !hasMatchingFuels && !hasMatchingSubcategories)
-                return; // Skip categories that don't match search
-
-            contentHeight += LineHeight; // Account for category height
-
-            if (categoryOpen.ContainsKey(category) && categoryOpen[category])
-            {
-                foreach (var subcategory in categorizedFuels.Keys)
-                {
-                    if (subcategory.parent == category)
-                    {
-                        CalculateFilteredCategoryHeight(subcategory, categorizedFuels, fuelBuildings, searchFilter, depth + 1, ref contentHeight);
-                    }
-                }
-
-                if (categorizedFuels.ContainsKey(category))
-                {
-                    contentHeight += categorizedFuels[category].Count(f => MatchesSearch(f, searchFilter)) * LineHeight;
-                }
-            }
         }
+
 
         private void DrawCategoryRecursive(ref Rect listRect, ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, int depth, List<CompStoreFuelThing> fuelBuildings, string searchFilter)
         {
             if (!categoryOpen.ContainsKey(category))
                 categoryOpen[category] = false;
 
-            // Check if this category or any of its fuels match the search
             bool hasMatchingFuels = categorizedFuels.ContainsKey(category) && categorizedFuels[category].Any(fuel => MatchesSearch(fuel, searchFilter));
             bool hasMatchingSubcategories = false;
             foreach (var sub in categorizedFuels.Keys)
@@ -220,7 +214,6 @@ namespace MedievalOverhaul
                 }
             }
 
-            // Skip categories that don't match the search
             if (searchFilter != null && !hasMatchingFuels && !hasMatchingSubcategories)
                 return;
 
@@ -231,10 +224,13 @@ namespace MedievalOverhaul
             MultiCheckboxState categoryState = CategoryStateOf(category, categorizedFuels, fuelBuildings);
             MultiCheckboxState newCategoryState = Widgets.CheckboxMulti(checkboxRect, categoryState, true);
 
-            // **Apply state change to all children when toggling**
             if (categoryState != newCategoryState && newCategoryState != MultiCheckboxState.Partial)
             {
-                SetCategoryStateRecursive(category, categorizedFuels, fuelBuildings, newCategoryState == MultiCheckboxState.On);
+                ClearCategoryStateCache(); // ✅ Clear old cache before applying changes
+                bool enable = (newCategoryState == MultiCheckboxState.On);
+
+                SetCategoryStateRecursive(category, categorizedFuels, fuelBuildings, enable); // ✅ Apply to all nested items
+                RecalculateCategoryStates(); // ✅ Ensure all categories refresh properly
             }
 
             Widgets.Label(categoryRect, (categoryOpen[category] ? "▼ " : "◢ ") + category.LabelCap);
@@ -270,71 +266,231 @@ namespace MedievalOverhaul
             }
         }
 
-        private void SetCategoryStateRecursive(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, List<CompStoreFuelThing> fuelBuildings, bool allow)
+
+        private void ClearCategoryStateCache()
         {
-            // Enable/Disable all fuels in this category
-            if (categorizedFuels.ContainsKey(category))
-            {
-                foreach (ThingDef fuelDef in categorizedFuels[category])
-                {
-                    foreach (CompStoreFuelThing comp in fuelBuildings)
-                    {
-                        comp.AllowedFuelFilter.SetAllow(fuelDef, allow);
-                    }
-                }
-            }
-
-            // Recursively apply state to subcategories
-            foreach (var subcategory in categorizedFuels.Keys)
-            {
-                if (subcategory.parent == category)
-                {
-                    SetCategoryStateRecursive(subcategory, categorizedFuels, fuelBuildings, allow);
-                }
-            }
-
-            // **Fully Recalculate Parent States**
-            ThingCategoryDef parent = category.parent;
-            while (parent != null)
-            {
-                MultiCheckboxState newState = CategoryStateOf(parent, categorizedFuels, fuelBuildings);
-
-                // Ensure parent updates correctly based on all child categories
-                if (newState == MultiCheckboxState.Partial)
-                    break; // Stop updating if already Partial (no need to go higher)
-
-                parent = parent.parent;
-            }
+            cachedCategoryStates.Clear();
         }
+
+        private Dictionary<ThingDef, MultiCheckboxState> cachedFuelStates = new();
 
         private void DoFuelList(ref Rect listRect, ThingDef fuelDef, List<CompStoreFuelThing> fuelBuildings, int depth)
         {
-            float indent = depth * 6f; // Proper indentation for nested fuels
+            float indent = depth * 6f;
 
             Rect headerRect = new(listRect.x, listRect.y - 95f, listRect.width, LineHeight);
             Rect iconRect = new(headerRect.x + indent, headerRect.y, 24f, 24f);
             Rect labelRect = new(headerRect.x + indent + 28f, headerRect.y, headerRect.width - 28f - indent, 24f);
             Rect checkboxRect = new(headerRect.xMax - 48f, headerRect.y, 20f, 20f);
-
-            Widgets.DefIcon(iconRect, fuelDef);
-
-            Text.Font = GameFont.Small;
-            Widgets.Label(labelRect, fuelDef.LabelCap);
-            Text.Font = GameFont.Small; // Reset font size after drawing
-
-            MultiCheckboxState fuelState = FuelStateOf(fuelDef, fuelBuildings);
+            if (!cachedFuelStates.TryGetValue(fuelDef, out MultiCheckboxState fuelState))
+            {
+                fuelState = FuelStateOf(fuelDef, fuelBuildings);
+                cachedFuelStates[fuelDef] = fuelState;
+            }
             MultiCheckboxState newFuelState = Widgets.CheckboxMulti(checkboxRect, fuelState, true);
-
             if (fuelState != newFuelState && newFuelState != MultiCheckboxState.Partial)
             {
                 foreach (var comp in fuelBuildings)
                 {
                     comp.AllowedFuelFilter.SetAllow(fuelDef, newFuelState == MultiCheckboxState.On);
                 }
+                cachedFuelStates[fuelDef] = newFuelState;
+                ClearCategoryStateCache();
+                RecalculateCategoryStates();
             }
 
-            listRect.y += LineHeight; // Move to the next line to avoid overlap
+            Widgets.DefIcon(iconRect, fuelDef);
+            Widgets.Label(labelRect, fuelDef.LabelCap);
+
+            listRect.y += LineHeight;
         }
+        private void RecalculateCategoryStates()
+        {
+            cachedCategoryStates.Clear();
+
+            foreach (var category in cachedCategorizedFuels.Keys)
+            {
+                cachedCategoryStates[category] = CategoryStateOf(category, cachedCategorizedFuels, cachedFuelBuildings);
+            }
+        }
+
+
+        private void ClearFuelStateCache()
+        {
+            cachedFuelStates.Clear();
+            cachedCategorizedFuels.Clear();
+            cachedContentHeight = 0f;
+        }
+
+
+        private bool HasSelectionChanged(IList<object> selectedObjects)
+        {
+            if (ReferenceEquals(lastSelectedObjects, selectedObjects))
+                return false;
+
+            if (lastSelectedObjects == null || lastSelectedObjects.Count != selectedObjects.Count)
+                return true;
+
+            HashSet<object> currentSelection = new(selectedObjects);
+            foreach (var obj in lastSelectedObjects)
+            {
+                if (!currentSelection.Contains(obj))
+                    return true;
+            }
+
+            return false;
+        }
+
+        private void UpdateCachedFuelDefs()
+        {
+            cachedFuelDefs.Clear();
+
+            CompRefuelable refuelable = cachedFuelBuildings.Count > 0 ? cachedFuelBuildings[0].parent.GetComp<CompRefuelable>() : null;
+            if (refuelable?.Props.fuelFilter == null) return;
+
+            foreach (var thingDef in refuelable.Props.fuelFilter.AllowedThingDefs)
+            {
+                cachedFuelDefs.Add(thingDef);
+            }
+
+            cachedCategorizedFuels.Clear();
+            cachedContentHeight = 0f;
+        }
+
+
+        private void CalculateFilteredCategoryHeight(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, List<CompStoreFuelThing> fuelBuildings, string searchFilter, int depth, ref float contentHeight)
+        {
+            bool hasMatchingFuels = categorizedFuels.ContainsKey(category) && categorizedFuels[category].Any(fuel => MatchesSearch(fuel, searchFilter));
+            bool hasMatchingSubcategories = false;
+            foreach (var sub in categorizedFuels.Keys)
+            {
+                if (sub.parent == category && MatchesSearch(sub, searchFilter))
+                {
+                    hasMatchingSubcategories = true;
+                    break;
+                }
+            }
+
+            if (searchFilter != null && !hasMatchingFuels && !hasMatchingSubcategories)
+                return;
+
+            contentHeight += LineHeight;
+
+            if (categoryOpen.ContainsKey(category) && categoryOpen[category])
+            {
+                foreach (var subcategory in categorizedFuels.Keys)
+                {
+                    if (subcategory.parent == category)
+                    {
+                        CalculateFilteredCategoryHeight(subcategory, categorizedFuels, fuelBuildings, searchFilter, depth + 1, ref contentHeight);
+                    }
+                }
+
+                if (categorizedFuels.ContainsKey(category))
+                {
+                    contentHeight += categorizedFuels[category].Count(f => MatchesSearch(f, searchFilter)) * LineHeight;
+                }
+            }
+        }
+
+
+
+        //private void SetCategoryStateRecursive(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, List<CompStoreFuelThing> fuelBuildings, bool enable)
+        //{
+
+        //    cachedCategoryStates.Remove(category);
+
+        //    bool allEnabled = enable;
+        //    bool anyEnabled = false;
+
+        //    foreach (var subcategory in categorizedFuels.Keys)
+        //    {
+        //        if (subcategory.parent == category)
+        //        {
+        //            SetCategoryStateRecursive(subcategory, categorizedFuels, fuelBuildings, enable);
+
+        //            if (cachedCategoryStates.TryGetValue(subcategory, out MultiCheckboxState subState))
+        //            {
+        //                if (subState == MultiCheckboxState.On)
+        //                    anyEnabled = true;
+        //                else if (subState == MultiCheckboxState.Partial)
+        //                {
+        //                    anyEnabled = true;
+        //                    allEnabled = false;
+        //                }
+        //                else
+        //                    allEnabled = false;
+        //            }
+        //        }
+        //    }
+
+        //    if (categorizedFuels.TryGetValue(category, out var fuelList))
+        //    {
+        //        foreach (ThingDef fuelDef in fuelList)
+        //        {
+        //            foreach (var comp in fuelBuildings)
+        //            {
+        //                comp.AllowedFuelFilter.SetAllow(fuelDef, enable);
+        //            }
+
+        //            anyEnabled |= enable;
+        //        }
+        //    }
+        //    MultiCheckboxState newState = allEnabled ? MultiCheckboxState.On
+        //                                  : (anyEnabled ? MultiCheckboxState.Partial
+        //                                  : MultiCheckboxState.Off);
+        //    cachedCategoryStates[category] = newState;
+        //}
+        private void SetCategoryStateRecursive(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, List<CompStoreFuelThing> fuelBuildings, bool enable)
+        {
+            cachedCategoryStates.Remove(category); // ✅ Clear category cache to force recalculation
+
+            bool allEnabled = enable;
+            bool anyEnabled = false;
+
+            // ✅ Apply the state to all subcategories first
+            foreach (var subcategory in categorizedFuels.Keys)
+            {
+                if (subcategory.parent == category)
+                {
+                    SetCategoryStateRecursive(subcategory, categorizedFuels, fuelBuildings, enable);
+
+                    if (cachedCategoryStates.TryGetValue(subcategory, out MultiCheckboxState subState))
+                    {
+                        if (subState == MultiCheckboxState.On)
+                            anyEnabled = true;
+                        else if (subState == MultiCheckboxState.Partial)
+                        {
+                            anyEnabled = true;
+                            allEnabled = false;
+                        }
+                        else
+                            allEnabled = false;
+                    }
+                }
+            }
+
+            // ✅ Apply the state to all fuel items in this category
+            if (categorizedFuels.TryGetValue(category, out var fuelList))
+            {
+                foreach (ThingDef fuelDef in fuelList)
+                {
+                    foreach (var comp in fuelBuildings)
+                    {
+                        comp.AllowedFuelFilter.SetAllow(fuelDef, enable);
+                    }
+
+                    anyEnabled |= enable;
+                }
+            }
+
+            // ✅ Update category state in cache
+            MultiCheckboxState newState = allEnabled ? MultiCheckboxState.On
+                                          : (anyEnabled ? MultiCheckboxState.Partial
+                                          : MultiCheckboxState.Off);
+            cachedCategoryStates[category] = newState;
+        }
+
 
         private bool MatchesSearch(ThingDef fuelDef, string searchFilter) => searchFilter == null || fuelDef.label.ToLower().Contains(searchFilter);
 
@@ -400,7 +556,6 @@ namespace MedievalOverhaul
             {
                 return null;
             }
-            // Step 1: Get the full ancestor chains for each category
             List<List<ThingCategoryDef>> ancestorChains = new List<List<ThingCategoryDef>>();
 
             foreach (var category in categories)
@@ -408,7 +563,6 @@ namespace MedievalOverhaul
                 ancestorChains.Add(GetFullCategoryChain(category));
             }
 
-            // Step 2: Find the deepest common ancestor
             ThingCategoryDef commonAncestor = FindDeepestCommonAncestor(ancestorChains);
             return commonAncestor;
         }
@@ -422,7 +576,7 @@ namespace MedievalOverhaul
                 category = category.parent;
             }
 
-            chain.Reverse(); // Root first, child last
+            chain.Reverse();
             return chain;
         }
         private ThingCategoryDef FindDeepestCommonAncestor(List<List<ThingCategoryDef>> ancestorChains)
@@ -484,45 +638,40 @@ namespace MedievalOverhaul
 
         private MultiCheckboxState CategoryStateOf(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, List<CompStoreFuelThing> fuelBuildings)
         {
+            if (cachedCategoryStates.TryGetValue(category, out MultiCheckboxState cachedState))
+                return cachedState;
+
             bool hasEnabled = false;
             bool hasDisabled = false;
             bool hasPartial = false;
 
-            // Check direct fuels in this category
-            if (categorizedFuels.ContainsKey(category))
+            if (categorizedFuels.TryGetValue(category, out List<ThingDef> fuelList))
             {
-                foreach (ThingDef fuel in categorizedFuels[category])
+                foreach (ThingDef fuel in fuelList)
                 {
                     bool allEnabled = true;
-                    foreach (var comp in fuelBuildings)
-                    {
-                        if (!comp.AllowedFuelFilter.Allows(fuel))
-                        {
-                            allEnabled = false;
-                            break;
-                        }
-                    }
                     bool noneEnabled = true;
+
                     foreach (var comp in fuelBuildings)
                     {
-                        if (comp.AllowedFuelFilter.Allows(fuel))
-                        {
+                        bool allows = comp.AllowedFuelFilter.Allows(fuel);
+                        if (!allows)
+                            allEnabled = false;
+                        if (allows)
                             noneEnabled = false;
+                        if (!allEnabled && !noneEnabled)
                             break;
-                        }
                     }
-
 
                     if (allEnabled)
                         hasEnabled = true;
                     else if (noneEnabled)
                         hasDisabled = true;
                     else
-                        hasPartial = true; // Some fuels are mixed, so category should be Partial
+                        hasPartial = true;
                 }
             }
 
-            // Recursively check subcategories
             foreach (var subcategory in categorizedFuels.Keys)
             {
                 if (subcategory.parent == category)
@@ -530,7 +679,7 @@ namespace MedievalOverhaul
                     MultiCheckboxState subState = CategoryStateOf(subcategory, categorizedFuels, fuelBuildings);
 
                     if (subState == MultiCheckboxState.Partial)
-                        hasPartial = true; // If any child is Partial, parent should be Partial
+                        hasPartial = true;
                     if (subState == MultiCheckboxState.On)
                         hasEnabled = true;
                     if (subState == MultiCheckboxState.Off)
@@ -538,17 +687,21 @@ namespace MedievalOverhaul
                 }
             }
 
-            // Determine final state
-            if (hasPartial || (hasEnabled && hasDisabled))
-                return MultiCheckboxState.Partial; // If any mix exists, return Partial
-            if (hasEnabled)
-                return MultiCheckboxState.On;
-            return MultiCheckboxState.Off;
+            MultiCheckboxState finalState = hasPartial || (hasEnabled && hasDisabled) ? MultiCheckboxState.Partial
+                                         : hasEnabled ? MultiCheckboxState.On
+                                         : MultiCheckboxState.Off;
+
+            cachedCategoryStates[category] = finalState;
+            return finalState;
         }
+
+        private Dictionary<ThingCategoryDef, MultiCheckboxState> cachedCategoryStates = new();
+
+
 
         private void CalculateCategoryHeight(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, int depth, ref float contentHeight)
         {
-            contentHeight += LineHeight; // Always account for the category itself
+            contentHeight += LineHeight;
 
             if (categoryOpen.ContainsKey(category) && categoryOpen[category])
             {
