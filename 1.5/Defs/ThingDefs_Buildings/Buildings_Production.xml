@@ -198,7 +198,7 @@
 
 	<ThingDef ParentName="BenchBase">
 		<defName>DankPyon_StonecuttingSpot</defName>
-		<label>stonecutter's spot</label>
+		<label>stonecutter's block</label>
 		<description>A place for bashing stones to each other. Production here is slow because of the lack of tools.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
