@@ -43,11 +43,13 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerPlantWater_RebuildCache.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CalcSpeedFactor.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CurrentWindFactor.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\MainTabWindow_Inspect_CurTabs.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\PlaceWorker_WatermillGenerator_DrawGhost.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_ClearSnow_MakeNewToils.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ResearchProjectDef_CanResearchNow.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_Nightmare.cs" />
     <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_DeepDrillInfestation.cs" />
+    <Compile Include="Medieval Overhaul\ITab\ITab_Fuel.cs" />
     <Compile Include="Medieval Overhaul\ITab\ITab_FuelCustom.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelAtomicCustom.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelCustom.cs" />
@@ -93,7 +95,6 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_RandomGeneralGoods_Generate.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_RandomOption_Generate.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_MarketValue_Generate.cs" />
-    <Compile Include="Medieval Overhaul\ITab\ITab_Fuel.cs" />
     <Compile Include="Medieval Overhaul\Recipes\RecipeWorker_GrindWheat.cs" />
     <Compile Include="Medieval Overhaul\Recipes\RecipeWorker_MakeSkillBook.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_ResourcePod_Generate.cs" />
