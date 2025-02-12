@@ -1,10 +1,8 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
-using static RimWorld.CompCableConnection;
 
 namespace MedievalOverhaul
 {
@@ -15,16 +13,16 @@ namespace MedievalOverhaul
         private readonly ThingFilterUI.UIState _fuelFilterState = new();
 
         // Cached Data
-        private List<CompStoreFuelThing> _cachedFuelBuildings = new();
-        private List<ThingDef> _cachedFuelDefs = new();
-        private Dictionary<ThingCategoryDef, List<ThingDef>> _cachedCategorizedFuels = new();
-        private Dictionary<ThingCategoryDef, MultiCheckboxState> _cachedCategoryStates = new();
-        private Dictionary<ThingDef, MultiCheckboxState> _cachedFuelStates = new();
+        private List<CompStoreFuelThing> _cachedFuelBuildings = [];
+        private List<ThingDef> _cachedFuelDefs = [];
+        private Dictionary<ThingCategoryDef, List<ThingDef>> _cachedCategorizedFuels = [];
+        private Dictionary<ThingCategoryDef, MultiCheckboxState> _cachedCategoryStates = [];
+        private Dictionary<ThingDef, MultiCheckboxState> _cachedFuelStates = [];
         private float _cachedContentHeight = 0f;
         private IList<object> _lastSelectedObjects;
 
         // UI Settings
-        private Dictionary<ThingCategoryDef, bool> _categoryOpen = new();
+        private Dictionary<ThingCategoryDef, bool> _categoryOpen = [];
         private const int LineHeight = 22;
 
         protected Building SelBuilding => (Building)this.SelThing;
@@ -72,8 +70,6 @@ namespace MedievalOverhaul
             this._fuelFilterState.quickSearch.Reset();
         }
 
-        
-
         public override void FillTab()
         {
             var selectedObjects = Find.Selector.SelectedObjects;
@@ -116,7 +112,11 @@ namespace MedievalOverhaul
                 _cachedCategorizedFuels = GroupByHierarchy(_cachedFuelDefs, commonCategory);
 
                 _cachedContentHeight = 0f;
-                keys = _cachedCategorizedFuels.Keys.ToList();
+                keys.Clear();
+                foreach (var key in _cachedCategorizedFuels.Keys)
+                {
+                    keys.Add(key);
+                }
                 for (int i = 0; i < keys.Count; i++)
                 {
                     var key = keys[i];
@@ -177,7 +177,10 @@ namespace MedievalOverhaul
             _cachedContentHeight = 0f;
 
             keys.Clear();
-            keys = _cachedCategorizedFuels.Keys.ToList();
+            foreach (var key in _cachedCategorizedFuels.Keys)
+            {
+                keys.Add(key);
+            }
             for (int i = 0; i < keys.Count; i++)
             {
                 var key = keys[i];
@@ -203,17 +206,14 @@ namespace MedievalOverhaul
 
         private void PrecomputeFuelStates(List<ThingDef> fuelDefs, List<CompStoreFuelThing> fuelBuildings)
         {
-            cachedFuelStates.Clear();
+            _cachedFuelStates.Clear();
 
             for (int i = 0; i < fuelDefs.Count; i++)
             {
                 var fuelDef = fuelDefs[i];
-                cachedFuelStates[fuelDef] = FuelStateOf(fuelDef, fuelBuildings);
+                _cachedFuelStates[fuelDef] = FuelStateOf(fuelDef, fuelBuildings);
             }
-
-
         }
-
 
         private void DrawCategoryRecursive(ref Rect listRect, ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, int depth, List<CompStoreFuelThing> fuelBuildings, string searchFilter)
         {
@@ -222,7 +222,11 @@ namespace MedievalOverhaul
 
             bool hasMatchingFuels = categorizedFuels.ContainsKey(category) && categorizedFuels[category].Any(fuel => MatchesSearch(fuel, searchFilter));
             bool hasMatchingSubcategories = false;
-            var keys = categorizedFuels.Keys.ToList();
+            List<ThingCategoryDef> keys = new List<ThingCategoryDef>(categorizedFuels.Count);
+            foreach (var key in categorizedFuels.Keys)
+            {
+                keys.Add(key);
+            }
             for (int i = 0; i < keys.Count; i++)
             {
                 var sub = keys[i];
@@ -245,11 +249,11 @@ namespace MedievalOverhaul
 
             if (categoryState != newCategoryState && newCategoryState != MultiCheckboxState.Partial)
             {
-                ClearCategoryStateCache(); // ✅ Clear old cache before applying changes
+                ClearCategoryStateCache();
                 bool enable = (newCategoryState == MultiCheckboxState.On);
 
-                SetCategoryStateRecursive(category, categorizedFuels, fuelBuildings, enable); // ✅ Apply to all nested items
-                RecalculateCategoryStates(); // ✅ Ensure all categories refresh properly
+                SetCategoryStateRecursive(category, categorizedFuels, fuelBuildings, enable);
+                RecalculateCategoryStates();
             }
 
             Widgets.Label(categoryRect, (_categoryOpen[category] ? "▼ " : "◢ ") + category.LabelCap);
@@ -289,13 +293,10 @@ namespace MedievalOverhaul
 
         }
 
-
         private void ClearCategoryStateCache()
         {
-            cachedCategoryStates.Clear();
+            _cachedCategoryStates.Clear();
         }
-
-        private Dictionary<ThingDef, MultiCheckboxState> cachedFuelStates = new();
 
         private void DoFuelList(ref Rect listRect, ThingDef fuelDef, List<CompStoreFuelThing> fuelBuildings, int depth)
         {
@@ -305,10 +306,10 @@ namespace MedievalOverhaul
             Rect iconRect = new(headerRect.x + indent, headerRect.y, 24f, 24f);
             Rect labelRect = new(headerRect.x + indent + 28f, headerRect.y, headerRect.width - 28f - indent, 24f);
             Rect checkboxRect = new(headerRect.xMax - 48f, headerRect.y, 20f, 20f);
-            if (!cachedFuelStates.TryGetValue(fuelDef, out MultiCheckboxState fuelState))
+            if (!_cachedFuelStates.TryGetValue(fuelDef, out MultiCheckboxState fuelState))
             {
                 fuelState = FuelStateOf(fuelDef, fuelBuildings);
-                cachedFuelStates[fuelDef] = fuelState;
+                _cachedFuelStates[fuelDef] = fuelState;
             }
             MultiCheckboxState newFuelState = Widgets.CheckboxMulti(checkboxRect, fuelState, true);
             if (fuelState != newFuelState && newFuelState != MultiCheckboxState.Partial)
@@ -317,7 +318,7 @@ namespace MedievalOverhaul
                 {
                     fuelBuildings[i].AllowedFuelFilter.SetAllow(fuelDef, newFuelState == MultiCheckboxState.On);
                 }
-                cachedFuelStates[fuelDef] = newFuelState;
+                _cachedFuelStates[fuelDef] = newFuelState;
                 ClearCategoryStateCache();
                 RecalculateCategoryStates();
             }
@@ -329,25 +330,27 @@ namespace MedievalOverhaul
         }
         private void RecalculateCategoryStates()
         {
-            cachedCategoryStates.Clear();
+            _cachedCategoryStates.Clear();
 
-            var keys = _cachedCategorizedFuels.Keys.ToList();
+            List<ThingCategoryDef> keys = new List<ThingCategoryDef>(_cachedCategorizedFuels.Count);
+            foreach (var key in _cachedCategorizedFuels.Keys)
+            {
+                keys.Add(key);
+            }
             for (int i = 0; i < keys.Count; i++)
             {
                 var category = keys[i];
-                cachedCategoryStates[category] = CategoryStateOf(category, _cachedCategorizedFuels, _cachedFuelBuildings);
+                _cachedCategoryStates[category] = CategoryStateOf(category, _cachedCategorizedFuels, _cachedFuelBuildings);
             }
 
         }
 
-
         private void ClearFuelStateCache()
         {
-            cachedFuelStates.Clear();
+            _cachedFuelStates.Clear();
             _cachedCategorizedFuels.Clear();
             _cachedContentHeight = 0f;
         }
-
 
         private bool HasSelectionChanged(IList<object> selectedObjects)
         {
@@ -386,7 +389,11 @@ namespace MedievalOverhaul
         {
             bool hasMatchingFuels = categorizedFuels.ContainsKey(category) && categorizedFuels[category].Any(fuel => MatchesSearch(fuel, searchFilter));
             bool hasMatchingSubcategories = false;
-            var keys = categorizedFuels.Keys.ToList();
+            List<ThingCategoryDef> keys = new List<ThingCategoryDef>(categorizedFuels.Count);
+            foreach (var key in categorizedFuels.Keys)
+            {
+                keys.Add(key);
+            }
             for (int i = 0; i < keys.Count; i++)
             {
                 var sub = keys[i];
@@ -396,7 +403,6 @@ namespace MedievalOverhaul
                     break;
                 }
             }
-
 
             if (searchFilter != null && !hasMatchingFuels && !hasMatchingSubcategories)
                 return;
@@ -422,10 +428,14 @@ namespace MedievalOverhaul
         }
         private void SetCategoryStateRecursive(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, List<CompStoreFuelThing> fuelBuildings, bool enable)
         {
-            cachedCategoryStates.Remove(category);
+            _cachedCategoryStates.Remove(category);
             bool allEnabled = enable;
             bool anyEnabled = false;
-            var keys = categorizedFuels.Keys.ToList();
+            List<ThingCategoryDef> keys = new List<ThingCategoryDef>(categorizedFuels.Count);
+            foreach (var key in categorizedFuels.Keys)
+            {
+                keys.Add(key);
+            }
             for (int i = 0; i < keys.Count; i++)
             {
                 var subcategory = keys[i];
@@ -433,7 +443,7 @@ namespace MedievalOverhaul
                 {
                     SetCategoryStateRecursive(subcategory, categorizedFuels, fuelBuildings, enable);
 
-                    if (cachedCategoryStates.TryGetValue(subcategory, out MultiCheckboxState subState))
+                    if (_cachedCategoryStates.TryGetValue(subcategory, out MultiCheckboxState subState))
                     {
                         if (subState == MultiCheckboxState.On)
                         {
@@ -470,7 +480,7 @@ namespace MedievalOverhaul
             MultiCheckboxState newState = allEnabled ? MultiCheckboxState.On
                                           : (anyEnabled ? MultiCheckboxState.Partial
                                           : MultiCheckboxState.Off);
-            cachedCategoryStates[category] = newState;
+            _cachedCategoryStates[category] = newState;
         }
 
 
@@ -618,7 +628,7 @@ namespace MedievalOverhaul
 
         private MultiCheckboxState CategoryStateOf(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, List<CompStoreFuelThing> fuelBuildings)
         {
-            if (cachedCategoryStates.TryGetValue(category, out MultiCheckboxState cachedState))
+            if (_cachedCategoryStates.TryGetValue(category, out MultiCheckboxState cachedState))
                 return cachedState;
 
             bool hasEnabled = false;
@@ -654,7 +664,11 @@ namespace MedievalOverhaul
                 }
             }
 
-            var keys = categorizedFuels.Keys.ToList();
+            List<ThingCategoryDef> keys = new List<ThingCategoryDef>(categorizedFuels.Count);
+            foreach (var key in categorizedFuels.Keys)
+            {
+                keys.Add(key);
+            }
             for (int i = 0; i < keys.Count; i++)
             {
                 var subcategory = keys[i];
@@ -675,13 +689,9 @@ namespace MedievalOverhaul
                                          : hasEnabled ? MultiCheckboxState.On
                                          : MultiCheckboxState.Off;
 
-            cachedCategoryStates[category] = finalState;
+            _cachedCategoryStates[category] = finalState;
             return finalState;
         }
-
-        private Dictionary<ThingCategoryDef, MultiCheckboxState> cachedCategoryStates = new();
-
-
 
         private void CalculateCategoryHeight(ThingCategoryDef category, Dictionary<ThingCategoryDef, List<ThingDef>> categorizedFuels, int depth, ref float contentHeight)
         {
@@ -689,7 +699,11 @@ namespace MedievalOverhaul
 
             if (_categoryOpen.ContainsKey(category) && _categoryOpen[category])
             {
-                var keys = categorizedFuels.Keys.ToList();
+                List<ThingCategoryDef> keys = new List<ThingCategoryDef>(categorizedFuels.Count);
+                foreach (var key in categorizedFuels.Keys)
+                {
+                    keys.Add(key);
+                }
                 for (int i = 0; i < keys.Count; i++)
                 {
                     var subcategory = keys[i];
