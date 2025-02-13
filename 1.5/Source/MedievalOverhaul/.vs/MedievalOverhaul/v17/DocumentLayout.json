@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\storyteller\\storytellercomp_mineshaftinfestation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\storyteller\\storytellercomp_mineshaftinfestation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\storyteller\\storytellercomp\\storytellercompproperties_mineshaftinfestation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\storyteller\\storytellercomp\\storytellercompproperties_mineshaftinfestation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\utilities\\mayrequireceattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\utilities\\mayrequireceattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\transparentthings\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:transparentthings\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\thingcomps\\compprops\\comppropertiesuseeffect_learnskillimproved.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\thingcomps\\compprops\\comppropertiesuseeffect_learnskillimproved.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -118,11 +134,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StorytellerComp_MineshaftInfestation.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Storyteller\\StorytellerComp_MineshaftInfestation.cs",
+              "RelativeDocumentMoniker": "Medieval Overhaul\\Storyteller\\StorytellerComp_MineshaftInfestation.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Storyteller\\StorytellerComp_MineshaftInfestation.cs",
+              "RelativeToolTip": "Medieval Overhaul\\Storyteller\\StorytellerComp_MineshaftInfestation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAD/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T05:15:50.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "StorytellerCompProperties_MineshaftInfestation.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Storyteller\\StorytellerComp\\StorytellerCompProperties_MineshaftInfestation.cs",
+              "RelativeDocumentMoniker": "Medieval Overhaul\\Storyteller\\StorytellerComp\\StorytellerCompProperties_MineshaftInfestation.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Storyteller\\StorytellerComp\\StorytellerCompProperties_MineshaftInfestation.cs",
+              "RelativeToolTip": "Medieval Overhaul\\Storyteller\\StorytellerComp\\StorytellerCompProperties_MineshaftInfestation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T05:15:49.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MayRequireCEAttribute.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Utilities\\MayRequireCEAttribute.cs",
+              "RelativeDocumentMoniker": "Medieval Overhaul\\Utilities\\MayRequireCEAttribute.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Utilities\\MayRequireCEAttribute.cs",
+              "RelativeToolTip": "Medieval Overhaul\\Utilities\\MayRequireCEAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T05:15:37.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Core.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\TransparentThings\\Core.cs",
+              "RelativeDocumentMoniker": "TransparentThings\\Core.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\TransparentThings\\Core.cs",
+              "RelativeToolTip": "TransparentThings\\Core.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T05:14:29.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CompUseEffect_LearnSkillImproved.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingComps\\CompUseEffect_LearnSkillImproved.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\ThingComps\\CompUseEffect_LearnSkillImproved.cs",
@@ -135,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "CompPropertiesUseEffect_LearnSkillImproved.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingComps\\CompProps\\CompPropertiesUseEffect_LearnSkillImproved.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\ThingComps\\CompProps\\CompPropertiesUseEffect_LearnSkillImproved.cs",
@@ -148,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ThingSetMaker_ResourcePod_Generate.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\ThingSetMaker_ResourcePod_Generate.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\ThingSetMaker_ResourcePod_Generate.cs",
@@ -161,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "ThingSetMaker_RandomOption_Generate.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\ThingSetMaker_RandomOption_Generate.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\ThingSetMaker_RandomOption_Generate.cs",
@@ -174,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "ThingSetMaker_RandomGeneralGoods_Generate.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\ThingSetMaker_RandomGeneralGoods_Generate.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\ThingSetMaker_RandomGeneralGoods_Generate.cs",
@@ -187,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "ThingSetMaker_MarketValue_Generate.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\ThingSetMaker_MarketValue_Generate.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\ThingSetMaker_MarketValue_Generate.cs",
@@ -200,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "ThingListGroupHelper_Includes.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\ThingListGroupHelper_Includes.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\ThingListGroupHelper_Includes.cs",
@@ -213,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "StockGenerator_Category_GenerateThings.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\StockGenerator_Category_GenerateThings.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\StockGenerator_Category_GenerateThings.cs",
@@ -226,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "StaggerHandler_StaggerFor.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\StaggerHandler_StaggerFor.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\StaggerHandler_StaggerFor.cs",
@@ -239,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "RoomRoleWorker_Workshop_GetScore_Patch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\RoomRoleWorker_Workshop_GetScore_Patch.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\RoomRoleWorker_Workshop_GetScore_Patch.cs",
@@ -252,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "ResearchProjectDef_CanResearchNow.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\ResearchProjectDef_CanResearchNow.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\ResearchProjectDef_CanResearchNow.cs",
@@ -265,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "ResearchProjectDef_CanBeResearchedAt.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\ResearchProjectDef_CanBeResearchedAt.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\ResearchProjectDef_CanBeResearchedAt.cs",
@@ -278,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "RefuelWorkGiverUtility_FindBestFuel.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\RefuelWorkGiverUtility_FindBestFuel.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\RefuelWorkGiverUtility_FindBestFuel.cs",
@@ -291,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Quest_End.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\Quest_End.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\Quest_End.cs",
@@ -304,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "QualityUtility_GenerateQualityCreatedByPawn.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\QualityUtility_GenerateQualityCreatedByPawn.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\QualityUtility_GenerateQualityCreatedByPawn.cs",
@@ -317,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "PlaceWorker_WatermillGenerator_DrawGhost.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\PlaceWorker_WatermillGenerator_DrawGhost.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\PlaceWorker_WatermillGenerator_DrawGhost.cs",
@@ -330,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "JobDriver_Refuel_MakeNewToils.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\JobDriver_Refuel_MakeNewToils.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\JobDriver_Refuel_MakeNewToils.cs",
@@ -343,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "MainTabWindow_Research_DrawUnlockableHyperlinks_Patch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\MainTabWindow_Research_DrawUnlockableHyperlinks_Patch.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\MainTabWindow_Research_DrawUnlockableHyperlinks_Patch.cs",
@@ -356,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "MainTabWindow_Inspect_CurTabs.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\MainTabWindow_Inspect_CurTabs.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\MainTabWindow_Inspect_CurTabs.cs",
@@ -369,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "JobDriver_ManTurret_FindAmmoForTurret.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\JobDriver_ManTurret_FindAmmoForTurret.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\JobDriver_ManTurret_FindAmmoForTurret.cs",
@@ -382,7 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "Pawn_ButcherProducts.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\Pawn_ButcherProducts.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\Pawn_ButcherProducts.cs",
@@ -395,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "Pawn_JobTracker_EndCurrentJob_Patch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\Pawn_JobTracker_EndCurrentJob_Patch.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\Pawn_JobTracker_EndCurrentJob_Patch.cs",
@@ -408,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "JobDriver_ClearSnow_MakeNewToils.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\JobDriver_ClearSnow_MakeNewToils.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\JobDriver_ClearSnow_MakeNewToils.cs",
@@ -421,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "JobDriver_Reading_ReadBook.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\JobDriver_Reading_ReadBook.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\JobDriver_Reading_ReadBook.cs",
@@ -434,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "HarmonyInstance.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\HarmonyInstance.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\HarmonyInstance.cs",
@@ -447,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "GenRecipe_MakeRecipeProducts.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\GenRecipe_MakeRecipeProducts.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\GenRecipe_MakeRecipeProducts.cs",
@@ -460,7 +528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "JobDriver_Ingest_GetReport.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\JobDriver_Ingest_GetReport.cs",
               "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\JobDriver_Ingest_GetReport.cs",

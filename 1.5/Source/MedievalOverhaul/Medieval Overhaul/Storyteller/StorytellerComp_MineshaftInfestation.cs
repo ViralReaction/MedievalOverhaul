@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MedievalOverhaul;
 using RimWorld;
 using Verse;
 
@@ -10,7 +9,13 @@ namespace MedievalOverhaul
         private static List<Thing> tmpDrills = new List<Thing>();
 
         protected StorytellerCompProperties_MineshaftInfestation Props => (StorytellerCompProperties_MineshaftInfestation)props;
-
+        public override void Initialize()
+        {
+            if (MedievalOverhaulDefOf.DankPyon_MineShaft == null)
+            {
+                Log.Error("Error: DankPyon_MineShaft is missing from Medieval Overhaul. Another mod may have removed it while leaving StorytellerComp_MineshaftInfestation intact, which could cause issues. This component requires the missing definition.");
+            }
+        }
         private float DeepDrillInfestationMTBDaysPerDrill
         {
             get
