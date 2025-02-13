@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using HarmonyLib;
 using RimWorld;
 using Verse;
@@ -27,7 +26,7 @@ namespace MedievalOverhaul.Patches
                     GenPlace.TryPlaceThing(iceBlock, cell, map, ThingPlaceMode.Near);
                 }
             });
-            __result = toils.AsEnumerable(); // Convert list back to IEnumerable<Toil>
+            __result = (IEnumerable<Toil>)toils; // Convert list back to IEnumerable<Toil>
         }
     }
 }
