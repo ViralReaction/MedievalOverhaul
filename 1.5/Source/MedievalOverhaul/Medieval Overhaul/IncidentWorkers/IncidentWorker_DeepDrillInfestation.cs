@@ -27,6 +27,10 @@ namespace MedievalOverhaul
             {
                 return false;
             }
+            if (MedievalOverhaulDefOf.DankPyon_MineShaft == null)
+            {
+                return false;
+            }
             Map map = (Map)parms.target;
             tmpDrills.Clear();
             Utility.GetUsableDeepDrills(map, tmpDrills);
