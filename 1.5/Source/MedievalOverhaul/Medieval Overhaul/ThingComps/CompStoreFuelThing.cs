@@ -10,7 +10,7 @@ using Verse.Noise;
 
 namespace MedievalOverhaul
 {
-    public class CompStoreFuelThing : ThingComp
+    public class CompStoreFuelThing : ThingComp, ICompFuelHandler
     {
         public ThingDef fuelUsed;
         private ThingFilter allowedFuelFilter;

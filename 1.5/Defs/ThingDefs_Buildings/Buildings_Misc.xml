@@ -975,7 +975,7 @@
 			</li>
 		</comps>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_FuelCustom</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Misc</designationCategory>

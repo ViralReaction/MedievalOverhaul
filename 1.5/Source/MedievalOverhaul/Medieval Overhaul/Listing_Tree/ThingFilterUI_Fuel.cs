@@ -9,7 +9,7 @@ namespace MedievalOverhaul
 {
     public static class ThingFilterUI_Fuel
     {
-        public static void DoThingFilterConfigWindow(Rect rect, ThingFilterUI_Fuel.UIState state, ThingFilter filter, List<CompStoreFuelThing> _cachedFuelBuildings, ThingFilter parentFilter = null, int openMask = 1, IEnumerable<ThingDef> forceHiddenDefs = null, IEnumerable<SpecialThingFilterDef> forceHiddenFilters = null, bool forceHideHitPointsConfig = false, bool forceHideQualityConfig = false, bool showMentalBreakChanceRange = false, List<ThingDef> suppressSmallVolumeTags = null, Map map = null)
+        public static void DoThingFilterConfigWindow(Rect rect, ThingFilterUI_Fuel.UIState state, ThingFilter filter, List<ICompFuelHandler> _cachedFuelBuildings, ThingFilter parentFilter = null, int openMask = 1, IEnumerable<ThingDef> forceHiddenDefs = null, IEnumerable<SpecialThingFilterDef> forceHiddenFilters = null, bool forceHideHitPointsConfig = false, bool forceHideQualityConfig = false, bool showMentalBreakChanceRange = false, List<ThingDef> suppressSmallVolumeTags = null, Map map = null)
         {
             Widgets.DrawMenuSection(rect);
             float num = rect.width - 2f;
@@ -66,7 +66,7 @@ namespace MedievalOverhaul
             state.quickSearch.noResultsMatched = (listing_TreeThingFilter.matchCount == 0);
             if (Event.current.type == EventType.Layout)
             {
-                ThingFilterUI.viewHeight = num3 + listing_TreeThingFilter.CurHeight + 90f;
+                ThingFilterUI.viewHeight = num3 + listing_TreeThingFilter.CurHeight + ExtraViewHeight;
             }
             Widgets.EndScrollView();
         }

@@ -8,7 +8,7 @@ using System;
 namespace MedievalOverhaul
 {
     [StaticConstructorOnStartup]
-    public class CompRefuelableCustom : ThingComp, IThingGlower
+    public class CompRefuelableCustom : ThingComp, IThingGlower, ICompFuelHandler
     {
         public static int HashInterval = 60;
 

@@ -49,11 +49,9 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\ResearchProjectDef_CanResearchNow.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_Nightmare.cs" />
     <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_DeepDrillInfestation.cs" />
+    <Compile Include="Medieval Overhaul\Interface\ICompFuelHandler.cs" />
     <Compile Include="Medieval Overhaul\ITab\ITab_Fuel.cs" />
-    <Compile Include="Medieval Overhaul\Listing_Tree\Listing_TreeThingFilter_FuelCustom.cs" />
     <Compile Include="Medieval Overhaul\Listing_Tree\Listing_TreeThingFilter_Fuel.cs" />
-    <Compile Include="Medieval Overhaul\ITab\ITab_FuelCustom.cs" />
-    <Compile Include="Medieval Overhaul\Listing_Tree\ThingFilterUI_Fuel - Copy.cs" />
     <Compile Include="Medieval Overhaul\Listing_Tree\ThingFilterUI_Fuel.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelAtomicCustom.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelCustom.cs" />

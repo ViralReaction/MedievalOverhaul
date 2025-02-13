@@ -18,14 +18,15 @@ namespace MedievalOverhaul
         private List<ThingDef> forceHiddenDefs;
         private List<SpecialThingFilterDef> tempForceHiddenSpecialFilters;
         private List<ThingDef> suppressSmallVolumeTags;
-        private List<CompStoreFuelThing> _cachedFuelBuildings;
+        //private List<CompStoreFuelThing> _cachedFuelBuildings;
+        private List<ICompFuelHandler> _cachedFuelBuildings;
         protected QuickSearchFilter searchFilter;
         public int matchCount;
         private Rect visibleRect;
 
         public Listing_TreeThingFilter_Fuel(ThingFilter filter, ThingFilter parentFilter,
             IEnumerable<ThingDef> forceHiddenDefs, IEnumerable<SpecialThingFilterDef> forceHiddenFilters,
-            List<ThingDef> suppressSmallVolumeTags, QuickSearchFilter searchFilter, List<CompStoreFuelThing> cachedFuelBuildings)
+            List<ThingDef> suppressSmallVolumeTags, QuickSearchFilter searchFilter, List<ICompFuelHandler> cachedFuelBuildings)
         {
             this.filter = filter;
             this.parentFilter = parentFilter;
@@ -155,57 +156,16 @@ namespace MedievalOverhaul
             }
         }
 
-        //private void DoThingDef(ThingDef tDef, int nestLevel, Map map)
-        //{
-        //    Color? color = searchFilter.Matches(tDef) ? null : NoMatchColor;
-
-        //    if (CurrentRowVisibleOnScreen())
-        //    {
-        //        LabelLeft(tDef.LabelCap, tDef.DescriptionDetailed, nestLevel, textColor: color);
-        //        bool isAllowed = filter.Allows(tDef);
-        //        Widgets.Checkbox(new Vector2(LabelWidth, curY), ref isAllowed, lineHeight);
-        //        if (isAllowed != filter.Allows(tDef))
-        //        {
-        //            filter.SetAllow(tDef, isAllowed);
-        //        }
-        //    }
-
-        //    EndLine();
-        //}
-
-        //private void DoThingDef(ThingDef tDef, int nestLevel, Map map)
-        //{
-        //    Color? color = searchFilter.Matches(tDef) ? null : NoMatchColor;
-
-        //    if (CurrentRowVisibleOnScreen())
-        //    {
-        //        LabelLeft(tDef.LabelCap, tDef.DescriptionDetailed, nestLevel, textColor: color);
-        //        bool isAllowed = filter.Allows(tDef);
-        //        bool previousState = isAllowed;
-
-        //        Widgets.Checkbox(new Vector2(LabelWidth, curY), ref isAllowed, lineHeight);
-
-        //        if (isAllowed != previousState)
-        //        {
-        //            filter.SetAllow(tDef, isAllowed);
-
-        //            // Apply changes to all cached fuel storage buildings
-        //            foreach (var fuelBuilding in _cachedFuelBuildings)
-        //            {
-        //               fuelBuilding.AllowedFuelFilter.SetAllow(tDef, isAllowed);
-        //            }
-        //        }
-        //    }
-        //    EndLine();
-        //}
-
-        private static int debugLogCount = 0;
-        private const int debugLogLimit = 10; // Set limit to avoid log spam
-
         private void DoThingDef(ThingDef tDef, int nestLevel, Map map)
         {
             Color? color = searchFilter.Matches(tDef) ? null : NoMatchColor;
 
+
+            if (tDef.uiIcon != null && tDef.uiIcon != BaseContent.BadTex)
+            {
+                nestLevel++;
+                Widgets.DefIcon(new Rect(base.XAtIndentLevel(nestLevel) - 6f, this.curY, 20f, 20f), tDef, null, 1f, null, true, color, null, null);
+            }
             if (CurrentRowVisibleOnScreen())
             {
                 LabelLeft(tDef.LabelCap, tDef.DescriptionDetailed, nestLevel, textColor: color);
@@ -232,9 +192,6 @@ namespace MedievalOverhaul
             }
             EndLine();
         }
-
-
-
 
         private bool HideCategoryDueToSearch(TreeNode_ThingCategory subCat, bool subtreeMatchedSearch)
         {
@@ -266,10 +223,7 @@ namespace MedievalOverhaul
         {
             if (parentFilter != null && !parentFilter.Allows(f)) return false;
 
-            if (hiddenSpecialFilters == null)
-            {
-                hiddenSpecialFilters = GetCachedHiddenSpecialFilters(node, parentFilter);
-            }
+            hiddenSpecialFilters ??= GetCachedHiddenSpecialFilters(node, parentFilter);
 
             return !hiddenSpecialFilters.Contains(f);
         }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Verse;
+using static Unity.Burst.Intrinsics.X86.Avx;
 
 namespace MedievalOverhaul
 {
@@ -9,7 +10,7 @@ namespace MedievalOverhaul
     {
         private static readonly Vector2 WinSize = new (300f, 480f);
         private readonly ThingFilterUI_Fuel.UIState fuelFilterState = new ();
-        private List<CompStoreFuelThing> _cachedFuelBuildings = [];
+        private List<ICompFuelHandler> _cachedFuelBuildings = new();
         private IList<object> _lastSelectedObjects;
 
         protected Building SelBuilding => (Building)this.SelThing;
@@ -28,8 +29,6 @@ namespace MedievalOverhaul
 
         public override void FillTab()
         {
-            //CompRefuelable comp = this.SelBuilding.GetComp<CompRefuelable>();
-
             var selectedObjects = Find.Selector.SelectedObjects;
 
             // If selection hasn't changed, skip updating.
@@ -40,22 +39,34 @@ namespace MedievalOverhaul
                 {
                     if (selectedObjects[i] is ThingWithComps thingWithComps)
                     {
-                        var comp = thingWithComps.TryGetComp<CompStoreFuelThing>();
-                        if (comp != null)
+                        foreach (var comp in thingWithComps.AllComps)
                         {
-                            _cachedFuelBuildings.Add(comp);
+                            if (comp is ICompFuelHandler fuelHandler)
+                            {
+                                _cachedFuelBuildings.Add(fuelHandler);
+                            }
                         }
                     }
                 }
-                _lastSelectedObjects = new List<object>(selectedObjects); // Store new selection.
+                _lastSelectedObjects = new List<object>(selectedObjects);
             }
             if (!_cachedFuelBuildings.Any()) return;
 
-            var comp1 = _cachedFuelBuildings[0];
-            var comp2 = _cachedFuelBuildings[0].parent.TryGetComp<CompRefuelable>();
-
+            var firstComp = _cachedFuelBuildings[0];
+            var firstBuilding = (firstComp as ThingComp)?.parent;
+            if (firstBuilding == null)
+                return;
             new Rect(0.0f, 0.0f, ITab_Fuel.WinSize.x, ITab_Fuel.WinSize.y).ContractedBy(10f).SplitHorizontally(18f, out Rect _, out Rect bottom);
-            ThingFilterUI_Fuel.DoThingFilterConfigWindow(bottom, this.fuelFilterState, comp1.AllowedFuelFilter, _cachedFuelBuildings, comp2.Props.fuelFilter, 1, (IEnumerable<ThingDef>)null, (IEnumerable<SpecialThingFilterDef>)null, true, true, false, (List<ThingDef>)null, (Map)null);
+            var refuelComp = firstBuilding.TryGetComp<CompRefuelable>();
+            if (refuelComp == null)
+            {
+                var refuelCompCustom = firstBuilding.TryGetComp<CompRefuelableCustom>();
+                if (refuelCompCustom == null) return;
+                ThingFilterUI_Fuel.DoThingFilterConfigWindow(bottom, this.fuelFilterState, refuelCompCustom.AllowedFuelFilter, _cachedFuelBuildings, refuelCompCustom.Props.fuelFilter, 1, (IEnumerable<ThingDef>)null, (IEnumerable<SpecialThingFilterDef>)null, true, true, false, (List<ThingDef>)null, (Map)null);
+                return;
+
+            }
+            ThingFilterUI_Fuel.DoThingFilterConfigWindow(bottom, this.fuelFilterState, firstComp.AllowedFuelFilter, _cachedFuelBuildings, refuelComp.Props.fuelFilter, 1, (IEnumerable<ThingDef>)null, (IEnumerable<SpecialThingFilterDef>)null, true, true, false, (List<ThingDef>)null, (Map)null);
         }
         private bool HasSelectionChanged(IList<object> selectedObjects)
         {
