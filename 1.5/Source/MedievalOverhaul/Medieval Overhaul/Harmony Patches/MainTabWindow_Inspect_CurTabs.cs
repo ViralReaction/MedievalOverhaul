@@ -53,10 +53,11 @@ namespace MedievalOverhaul.Patches
                     return;
                 }
             }
-            if (firstThing.AllComps.Count == 0) return;
-            for (int i = 0; i < firstThing.AllComps.Count; i++)
+            var thingCompList = firstThing.AllComps;
+            if (thingCompList.Count == 0) return;
+            for (int i = 0; i < thingCompList.Count; i++)
             {
-                if (firstThing.AllComps[i] is ICompFuelHandler)
+                if (thingCompList[i] is ICompFuelHandler)
                 {
                     _cachedResult = firstThing.GetInspectTabs();
                     __result = _cachedResult;
