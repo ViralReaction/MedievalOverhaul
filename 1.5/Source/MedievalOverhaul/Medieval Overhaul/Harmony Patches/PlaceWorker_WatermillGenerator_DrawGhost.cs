@@ -5,7 +5,7 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(PlaceWorker_WatermillGenerator), "DrawGhost")]
     public static class Patch_PlaceWorker_WatermillGenerator_DrawGhost

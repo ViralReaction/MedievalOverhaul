@@ -1,5 +1,4 @@
 ﻿using HarmonyLib;
-using MedievalOverhaul.Patches;
 using Verse;
 
 namespace MedievalOverhaul.Patches

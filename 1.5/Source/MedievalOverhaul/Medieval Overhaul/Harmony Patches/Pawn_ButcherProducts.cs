@@ -2,10 +2,8 @@
 using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
 using VanillaGenesExpanded;
 using Verse;
-using VFECore;
 
 namespace MedievalOverhaul.Patches
 {

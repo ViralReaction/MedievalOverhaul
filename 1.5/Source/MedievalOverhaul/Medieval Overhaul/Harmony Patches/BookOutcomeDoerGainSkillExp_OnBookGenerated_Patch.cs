@@ -1,10 +1,9 @@
 ﻿using HarmonyLib;
-using MedievalOverhaul.Patches;
 using RimWorld;
 using System.Collections.Generic;
 using Verse;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(BookOutcomeDoerGainSkillExp), "OnBookGenerated")]
     public static class BookOutcomeDoerGainSkillExp_OnBookGenerated_Patch

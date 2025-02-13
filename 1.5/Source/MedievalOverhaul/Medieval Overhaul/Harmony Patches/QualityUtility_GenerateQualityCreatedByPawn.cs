@@ -1,6 +1,5 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System;
 using System.Collections.Generic;
 using Verse;
 
@@ -9,7 +8,7 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch(typeof(QualityUtility))]
     [HarmonyPatch("GenerateQualityCreatedByPawn")]
     [HarmonyPatch([typeof(Pawn), typeof(SkillDef)], [0,0])]
-    public static class QualityUtility_GenerateQualityCreatedByPawn_Patch
+    public static class QualityUtility_GenerateQualityCreatedByPawn
     {
         public static List<(int, QualityCategory)> minQualities =
         [

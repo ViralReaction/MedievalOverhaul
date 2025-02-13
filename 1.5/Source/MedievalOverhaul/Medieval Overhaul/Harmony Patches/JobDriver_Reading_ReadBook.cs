@@ -3,10 +3,10 @@ using RimWorld;
 using Verse;
 using Verse.AI;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(JobDriver_Reading), "ReadBook")]
-    public static class JobDriver_Reading_ReadBook_Patch
+    public static class JobDriver_Reading_ReadBook
     {
         public static void Postfix(Toil __result, JobDriver_Reading __instance)
         {
