@@ -68,7 +68,10 @@
 					<max>60</max>
 				</countRange>
 			</li>
-
+			
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyExpensiveSimple"/>
+			<li Class="StockGenerator_BuyTradeTag"><tag>DankPyon_Loot</tag></li>
 		</stockGenerators>
 	</TraderKindDef>
 
@@ -115,6 +118,11 @@
 				<tradeTag>Art</tradeTag>
 				<countRange>5~10</countRange>
 			</li>
+			
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>DankPyon_Loot</tag></li>
+			<li Class="StockGenerator_BuyExpensiveSimple"/>
 		</stockGenerators>
 	</TraderKindDef>
 
@@ -260,6 +268,10 @@
 				<thingDefCountRange>1~3</thingDefCountRange>
 				<countRange>1~1</countRange>
 			</li>
+			<!-- Buying -->
+			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>DankPyon_Loot</tag></li>
+			<li Class="StockGenerator_BuyExpensiveSimple"/>
 		</stockGenerators>
 	</TraderKindDef>
 
