@@ -186,9 +186,8 @@
     <Compile Include="Medieval Overhaul\ThingComps\Comp_ThingProducer.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\Comp_BedCureHediff.cs" />
     <Compile Include="Medieval Overhaul\Utilities\Item.cs" />
-    <Compile Include="ImprovedNeutrotrainer\CompPropertiesUseEffect_LearnSkillImproved.cs" />
-    <Compile Include="ImprovedNeutrotrainer\CompUseEffect_LearnSkillImproved.cs" />
-    <Compile Include="ImprovedNeutrotrainer\Main.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompPropertiesUseEffect_LearnSkillImproved.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompUseEffect_LearnSkillImproved.cs" />
     <Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_DarkSchratSplit.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\SecondaryPlantDropExtension.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\IncidentProperties.cs" />

@@ -1,7 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace ImprovedNeurotrainers
+namespace MedievalOverhaul
 {
     internal class CompUseEffect_LearnSkillImproved : CompUseEffect
     {

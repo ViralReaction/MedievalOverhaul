@@ -1,6 +1,6 @@
 ﻿using RimWorld;
 
-namespace ImprovedNeurotrainers
+namespace MedievalOverhaul
 {
     internal class CompPropertiesUseEffect_LearnSkillImproved : CompProperties_UseEffect
     {
