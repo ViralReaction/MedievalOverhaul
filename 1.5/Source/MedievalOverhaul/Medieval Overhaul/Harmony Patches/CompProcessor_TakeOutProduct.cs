@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Verse;
+﻿using Verse;
 using HarmonyLib;
 using ProcessorFramework;
 
@@ -37,9 +36,10 @@ namespace MedievalOverhaul.Patches
                                     __result = TakeOutButcherProduct(__instance, thing, thingDefCount, activeProcess);
                                     return false;
                                 }
-                                else if (thing.def.butcherProducts?.Any() ?? false)
+                                else if (thing.def.butcherProducts != null && thing.def.butcherProducts.Count > 0)
                                 {
-                                    var thingDefCount = thing.def.butcherProducts.FirstOrDefault();
+                                    ThingDefCountClass thingDefCount = thing.def.butcherProducts[0]; // Direct index access
+
                                     __result = TakeOutButcherProduct(__instance, thing, thingDefCount, activeProcess);
                                     return false;
                                 }
