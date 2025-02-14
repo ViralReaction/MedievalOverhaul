@@ -243,6 +243,12 @@
     <Compile Include="StandaloneSettlementPreference\SettlementPreference.cs" />
     <Compile Include="StandaloneSettlementPreference\SettlementPreferenceUtility.cs" />
     <Compile Include="TransparentThings\Core.cs" />
+    <Compile Include="TransparentThings\TreeSpatialGrid.cs" />
+    <Compile Include="TransparentThings\Harmony Patches\Plant_SpawnSetup.cs" />
+    <Compile Include="TransparentThings\Harmony Patches\SavedGameLoaderNow_LoadGameFromSaveFileNow.cs" />
+    <Compile Include="TransparentThings\Harmony Patches\PlaySettings_DoPlaySettingsGlobalControls_Patch.cs" />
+    <Compile Include="TransparentThings\Harmony Patches\Patch_Graphic_Postfix.cs" />
+    <Compile Include="TransparentThings\Harmony Patches\Thing_Position_Patch.cs" />
     <Compile Include="TransparentThings\RoofSetter.cs" />
     <Compile Include="TransparentThings\ThingExtension.cs" />
     <Compile Include="TransparentThings\ThingWithExtension.cs" />
