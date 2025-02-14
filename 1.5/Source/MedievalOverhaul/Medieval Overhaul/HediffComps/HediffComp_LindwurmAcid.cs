@@ -6,6 +6,8 @@ namespace MedievalOverhaul
 {
     public class HediffComp_LindwurmAcid : HediffComp
     {
+        private List<Apparel> apparelList;
+        private int apparelDamageAmount;
         public HediffCompProperties_LindwurmAcid Props
         {
             get
@@ -25,6 +27,12 @@ namespace MedievalOverhaul
                 return false;
             }
         }
+
+        public override void CompPostMake()
+        {
+            apparelDamageAmount = Props.apparelDamagePerInterval;
+        }
+
         public override void CompPostTick(ref float severityAdjustment)
         {
            
@@ -34,19 +42,21 @@ namespace MedievalOverhaul
                 Pawn pawn = this.Pawn;
                 if (!pawn.health.hediffSet.HasHediff(MedievalOverhaulDefOf.DankPyon_LindwurmAcidImmune))
                 {
-                    List<Apparel> apparelList = pawn.apparel.WornApparel;
-                    for (int i = 0; i < apparelList.Count; i++)
+                    apparelList = pawn?.apparel?.WornApparel;
+                    if (apparelList == null || apparelList.Count == 0) return;
+                    int apparelListCount = apparelList.Count;
+                    for (int i = 0; i < apparelListCount; i++)
                     {
                         Thing apparel = apparelList[i];
                         if (apparel != null)
                         {
-                            if (apparel.HitPoints <= Props.apparelDamagePerInterval)
+                            if (apparel.HitPoints <= apparelDamageAmount)
                             {
                                 apparel.HitPoints = 0;
                                 apparel.Destroy(DestroyMode.Vanish);
                             }
                             else
-                                apparel.HitPoints -= Props.apparelDamagePerInterval;
+                                apparel.HitPoints -= apparelDamageAmount;
                         }
 
                     }
