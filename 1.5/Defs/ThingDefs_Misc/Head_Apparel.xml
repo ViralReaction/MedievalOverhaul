@@ -1924,6 +1924,73 @@ X
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_Lindwurm</defName>
+		<label>lindwurm scale helmet</label>
+		<description>A scaly helmet from a lindwurm's scales. Wearing the helmet displays owner's strength, as it is proof that they have slain a dangerous lindwurm to don the trophy. \n\nGrants immunity to lindwurm acid.</description>
+		<graphicData>
+			<texPath>Apparel/SpecialArmor/LindwurmHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<DankPyon_LindwurmScales>2</DankPyon_LindwurmScales>
+			<DankPyon_LindwurmBones>1</DankPyon_LindwurmBones>
+			<DankPyon_Leather_Lindwurm>60</DankPyon_Leather_Lindwurm>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>3.50</Mass>
+			<DeteriorationRate>0.2</DeteriorationRate>
+			<StuffEffectMultiplierArmor>0.40</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.20</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<PainShockThreshold>0.15</PainShockThreshold>
+			<SocialImpact>0.35</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/SpecialArmor/LindwurmHelmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>DankPyon_LindwurmHelmet</li>
+			</tags>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>DankPyon_LindwurmAcidImmune</hediff>
+				<part>Body</part>
+			</li>
+		</comps>
+	</ThingDef>
   
 
 </Defs>

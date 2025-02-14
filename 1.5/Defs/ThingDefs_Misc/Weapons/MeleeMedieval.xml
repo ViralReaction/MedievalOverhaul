@@ -1421,7 +1421,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<defName>DankPyon_MeleeWeapon_Pickaxe</defName>
 		<label>pickaxe</label>
-		<description>A mining tool used to batter stones and ingots; although primarily used to gather economic resources, the mine features deadly picks at both ends, capable of decimating armor as effectively as it mines ore.</description>
+		<description>A mining tool used to batter stones and ores; although primarily used to gather economic resources, the mine features deadly picks at both ends, capable of decimating armor as effectively as it mines ore.</description>
 		<graphicData>
 			<texPath>WeaponMelee/Hammers/Pickaxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

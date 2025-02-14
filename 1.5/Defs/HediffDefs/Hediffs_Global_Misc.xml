@@ -823,7 +823,7 @@
 		</comps>
 		<stages>
 			<li>
-				<becomeVisible>false</becomeVisible>
+				<becomeVisible>true</becomeVisible>
 			</li>
 		</stages>
 	</HediffDef>
@@ -840,7 +840,7 @@
 		</comps>
 		<stages>
 			<li>
-				<becomeVisible>false</becomeVisible>
+				<becomeVisible>true</becomeVisible>
 			</li>
 		</stages>
 	</HediffDef>
@@ -857,7 +857,7 @@
 		</comps>
 		<stages>
 			<li>
-				<becomeVisible>false</becomeVisible>
+				<becomeVisible>true</becomeVisible>
 			</li>
 		</stages>
 	</HediffDef>
@@ -874,7 +874,7 @@
 		</comps>
 		<stages>
 			<li>
-				<becomeVisible>false</becomeVisible>
+				<becomeVisible>true</becomeVisible>
 			</li>
 		</stages>
 	</HediffDef>

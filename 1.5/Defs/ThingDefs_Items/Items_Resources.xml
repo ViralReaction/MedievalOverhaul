@@ -5,7 +5,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>DankPyon_Clay</defName>
 		<label>clay</label>
-		<description>A versatile and abundant material found in riverbeds, hillsides, and quarries alike. Soft and yielding, yet robust and enduring, it has long been the foundation of craftsmanship in our realm. From the humble hearth pot to the towering fortress walls, clay bears witness to the labor and artistry of our forebears, shaping our villages and fortifications with its humble yet noble presence.</description>
+		<description>A chunk of clay. Can be cut into blocks and than fired in a kiln for useable material.</description>
 		<graphicData>
 			<texPath>Resources/Clay</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
