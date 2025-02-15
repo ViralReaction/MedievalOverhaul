@@ -63,6 +63,9 @@ namespace MedievalOverhaul
         public static JobDef DankPyon_OperateQuest;
         public static JobDef DankPyon_RefuelCustom;
         public static JobDef DankPyon_RefuelAtomicCustom;
+        public static JobDef DankPyon_DispenseSlop;
+        public static JobDef DankPyon_EmptyPot;
+        public static JobDef DankPyon_IceMold_Empty;
 
         public static BodyDef Bird;
 

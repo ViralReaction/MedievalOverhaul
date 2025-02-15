@@ -38,6 +38,7 @@
   <ItemGroup>
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_AlpSleep.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetFuelLevelCustom.cs" />
+    <Compile Include="Medieval Overhaul\Gizmo\Command_ToggleJob.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableStatusCustom.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerPlantWater_ForceOthersToRebuildCache.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerPlantWater_RebuildCache.cs" />
@@ -51,6 +52,9 @@
     <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_DeepDrillInfestation.cs" />
     <Compile Include="Medieval Overhaul\Interface\ICompFuelHandler.cs" />
     <Compile Include="Medieval Overhaul\ITab\ITab_Fuel.cs" />
+    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_EmptyIceMold.cs" />
+    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_EmptySlopPot.cs" />
+    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DispenseSlop.cs" />
     <Compile Include="Medieval Overhaul\Listing_Tree\Listing_TreeThingFilter_Fuel.cs" />
     <Compile Include="Medieval Overhaul\Listing_Tree\ThingFilterUI_Fuel.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelAtomicCustom.cs" />
@@ -74,7 +78,7 @@
     <Compile Include="Medieval Overhaul\ThingComps\CompRefuelableCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompPotionUseable.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompPowerWaterWheel.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\FileName.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\CompIceBoxFill.cs" />
     <Compile Include="Medieval Overhaul\Utilities\CachingUtility.cs" />
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetNutritionLevel.cs" />

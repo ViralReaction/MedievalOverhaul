@@ -1404,7 +1404,7 @@
 	<!--Candles-->
 	<ThingDef ParentName="DankPyon_BuildingBase" Name="DankPyon_SingleCandleBase">
 		<defName>DankPyon_Candle</defName>
-		<label>candle (tallow)</label>
+		<label>candle</label>
 		<description>A candle to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with animal tallow.</description>
 		<graphicData>
 			<texPath>Furniture/RusticCandle</texPath>
@@ -1463,6 +1463,7 @@
 				<fuelFilter>
 					<thingDefs>
 						<li>DankPyon_Tallow</li>
+						<li>DankPyon_Wax</li>
 					</thingDefs>
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
@@ -1523,11 +1524,14 @@
 		<modExtensions>
 			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
 		</modExtensions>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SingleCandleBase">
 		<defName>DankPyon_Candle_Beeswax</defName>
-		<label>candle (wax)</label>
+		<label>candle</label>
 		<description>A candle to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with bee wax.</description>
 		<costList Inherit="False">
 			<DankPyon_Wax>10</DankPyon_Wax>
@@ -1540,6 +1544,7 @@
 				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
 				<fuelFilter>
 					<thingDefs>
+						<li>DankPyon_Tallow</li>
 						<li>DankPyon_Wax</li>
 					</thingDefs>
 				</fuelFilter>
@@ -1588,7 +1593,7 @@
 
 	<ThingDef ParentName="DankPyon_BuildingBase" Name="DankPyon_CandleBase">
 		<defName>DankPyon_Candles</defName>
-		<label>candles (tallow)</label>
+		<label>candles</label>
 		<description>Candles to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with animal tallow.</description>
 		<graphicData>
 			<texPath>Furniture/RusticCandles</texPath>
@@ -1647,6 +1652,7 @@
 				<fuelFilter>
 					<thingDefs>
 						<li>DankPyon_Tallow</li>
+						<li>DankPyon_Wax</li>
 					</thingDefs>
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
@@ -1707,11 +1713,14 @@
 		<modExtensions>
 			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
 		</modExtensions>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_CandleBase">
 		<defName>DankPyon_Candles_Beeswax</defName>
-		<label>candles (wax)</label>
+		<label>candles</label>
 		<description>A candle to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with bee wax.</description>
 		<costList Inherit="False">
 			<DankPyon_Wax>15</DankPyon_Wax>
@@ -1724,6 +1733,7 @@
 				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
 				<fuelFilter>
 					<thingDefs>
+						<li>DankPyon_Tallow</li>
 						<li>DankPyon_Wax</li>
 					</thingDefs>
 				</fuelFilter>
@@ -1893,6 +1903,9 @@
 		<modExtensions>
 			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
 		</modExtensions>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BuildingBase">
@@ -1957,6 +1970,7 @@
 				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
 				<fuelFilter>
 					<thingDefs>
+						<li>DankPyon_Tallow</li>
 						<li>DankPyon_Wax</li>
 					</thingDefs>
 				</fuelFilter>
@@ -2019,6 +2033,9 @@
 		<modExtensions>
 			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
 		</modExtensions>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BuildingBase">

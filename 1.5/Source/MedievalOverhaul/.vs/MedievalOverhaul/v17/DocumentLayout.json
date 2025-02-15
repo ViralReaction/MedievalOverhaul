@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\thingcomps\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\thingcomps\\filename.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\jobdrivers\\jobdriver_emptyicemold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\jobdrivers\\jobdriver_emptyicemold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\thingcomps\\compcreatesinfestations_mine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\thingcomps\\compcreatesinfestations_mine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\jobdrivers\\jobdriver_dispenseslop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\jobdrivers\\jobdriver_dispenseslop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\thingcomps\\compuseeffect_learnskillimproved.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\thingcomps\\compuseeffect_learnskillimproved.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\thingcomps\\compiceboxfill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\thingcomps\\compiceboxfill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\medieval overhaul\\thingclasses\\plant_secondarydrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\thingclasses\\plant_secondarydrop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\jobdrivers\\jobdriver_emptysloppot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\jobdrivers\\jobdriver_emptysloppot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\defofs\\medievaloverhauldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\defofs\\medievaloverhauldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CompCreatesInfestations_Mine.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingComps\\CompCreatesInfestations_Mine.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\ThingComps\\CompCreatesInfestations_Mine.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingComps\\CompCreatesInfestations_Mine.cs",
-              "RelativeToolTip": "Medieval Overhaul\\ThingComps\\CompCreatesInfestations_Mine.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAcwE8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "MedievalOverhaulDefOf.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\DefOfs\\MedievalOverhaulDefOf.cs",
+              "RelativeDocumentMoniker": "Medieval Overhaul\\DefOfs\\MedievalOverhaulDefOf.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\DefOfs\\MedievalOverhaulDefOf.cs",
+              "RelativeToolTip": "Medieval Overhaul\\DefOfs\\MedievalOverhaulDefOf.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAwEMAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T23:28:21.844Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CompUseEffect_LearnSkillImproved.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingComps\\CompUseEffect_LearnSkillImproved.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\ThingComps\\CompUseEffect_LearnSkillImproved.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingComps\\CompUseEffect_LearnSkillImproved.cs",
-              "RelativeToolTip": "Medieval Overhaul\\ThingComps\\CompUseEffect_LearnSkillImproved.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T23:28:17.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FileName.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingComps\\FileName.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\ThingComps\\FileName.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingComps\\FileName.cs",
-              "RelativeToolTip": "Medieval Overhaul\\ThingComps\\FileName.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAkwA8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T23:28:10.53Z",
+              "WhenOpened": "2025-02-15T04:19:35.942Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Plant_SecondaryDrop.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingClasses\\Plant_SecondaryDrop.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\ThingClasses\\Plant_SecondaryDrop.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingClasses\\Plant_SecondaryDrop.cs",
-              "RelativeToolTip": "Medieval Overhaul\\ThingClasses\\Plant_SecondaryDrop.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Title": "JobDriver_EmptySlopPot.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\JobDrivers\\JobDriver_EmptySlopPot.cs",
+              "RelativeDocumentMoniker": "Medieval Overhaul\\JobDrivers\\JobDriver_EmptySlopPot.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\JobDrivers\\JobDriver_EmptySlopPot.cs",
+              "RelativeToolTip": "Medieval Overhaul\\JobDrivers\\JobDriver_EmptySlopPot.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T22:41:09.618Z",
+              "WhenOpened": "2025-02-15T04:09:36.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JobDriver_DispenseSlop.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\JobDrivers\\JobDriver_DispenseSlop.cs",
+              "RelativeDocumentMoniker": "Medieval Overhaul\\JobDrivers\\JobDriver_DispenseSlop.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\JobDrivers\\JobDriver_DispenseSlop.cs",
+              "RelativeToolTip": "Medieval Overhaul\\JobDrivers\\JobDriver_DispenseSlop.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwEYAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T04:09:33.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JobDriver_EmptyIceMold.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\JobDrivers\\JobDriver_EmptyIceMold.cs",
+              "RelativeDocumentMoniker": "Medieval Overhaul\\JobDrivers\\JobDriver_EmptyIceMold.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\JobDrivers\\JobDriver_EmptyIceMold.cs",
+              "RelativeToolTip": "Medieval Overhaul\\JobDrivers\\JobDriver_EmptyIceMold.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAGAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T04:09:31.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CompIceBoxFill.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingComps\\CompIceBoxFill.cs",
+              "RelativeDocumentMoniker": "Medieval Overhaul\\ThingComps\\CompIceBoxFill.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingComps\\CompIceBoxFill.cs",
+              "RelativeToolTip": "Medieval Overhaul\\ThingComps\\CompIceBoxFill.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAYwGYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T04:03:24.473Z",
               "EditorCaption": ""
             }
           ]

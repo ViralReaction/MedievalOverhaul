@@ -1,8 +1,11 @@
-﻿using RimWorld;
-using System.Collections.Generic;
-using Verse;
+﻿using Verse;
 using ProcessorFramework;
+using System.Collections.Generic;
 using System.Linq;
+using RimWorld;
+using Verse.AI;
+using Verse.Sound;
+using UnityEngine;
 
 namespace MedievalOverhaul
 {
@@ -14,6 +17,9 @@ namespace MedievalOverhaul
         private float _rainAccumulated = 0f;
         private const float RAINTHRESHOLD = 5f;
         private const float SNOWMULTIPLIER = 1f;
+        public Job activeJob = null;
+        public Pawn jobPawn = null;
+        public bool jobStarted = false; // Track if a job is currently active
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
 
@@ -22,11 +28,9 @@ namespace MedievalOverhaul
             _compProcessor = _parent.TryGetComp<CompProcessor>();
             if (_compProcessor == null)
             {
-                Log.Error( "Medieval Overhaul: " + _parent.def + " " + "is missing CompProcessor and will be despawned.");
+                Log.Error("Medieval Overhaul: " + _parent.def + " " + "is missing CompProcessor and will be despawned.");
                 _parent.Destroy();
-            }    
-
-
+            }
         }
         public override void CompTickRare()
         {
@@ -64,6 +68,52 @@ namespace MedievalOverhaul
                 break;
             }
         }
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        {
+            yield return new Command_Action()
+            {
+                defaultLabel = jobStarted ? "Cancel Retrieve Job" : "Retrieve Water",
+                action = delegate ()
+                {
+                    if (jobStarted)
+                    {
 
+                        if (activeJob != null && jobPawn != null)
+                        {
+                            if (jobPawn.jobs.curJob == activeJob)
+                            {
+                                jobPawn.jobs.EndCurrentJob(JobCondition.InterruptForced);
+                            }
+                        }
+                        jobStarted = false;
+                        activeJob = null;
+                        jobPawn = null;
+                        return;
+                    }
+                    SoundDefOf.Tick_High.PlayOneShotOnCamera();
+                    Job haulJob = JobMaker.MakeJob(MedievalOverhaulDefOf.DankPyon_IceMold_Empty, this.parent);
+
+                    Pawn hauler = FindBestHauler(this.parent);
+                    if (hauler != null)
+                    {
+                        jobStarted = true;
+                        activeJob = haulJob;
+                        jobPawn = hauler;
+                        hauler.jobs.StartJob(haulJob, JobCondition.InterruptForced);
+                    }
+                },
+                icon = ContentFinder<Texture2D>.Get("UI/GatherWater")
+            };
+        }
+        public Pawn FindBestHauler(Thing thing)
+        {
+            return thing.Map.mapPawns.FreeColonistsSpawned
+                .Where(pawn => pawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation) &&
+                               !pawn.Downed &&
+                               pawn.CanReserve(thing) &&
+                               pawn.workSettings.WorkIsActive(WorkTypeDefOf.Hauling))
+                .OrderBy(pawn => pawn.Position.DistanceTo(thing.Position))
+                .FirstOrDefault();
+        }
     }
 }
