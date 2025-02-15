@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]/li</xpath>
+		<xpath>Defs/ThingDef[not (defName="PassiveCooler")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]/li</xpath>
 		<value>
 			<li>DankPyon_Coal</li>
 			<li>DankPyon_Tar</li>

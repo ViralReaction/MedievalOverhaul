@@ -391,6 +391,11 @@
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
+		<modExtensions>
+			<li Class="MedievalOverhaul.FuelValueProperty">
+				<fuelValue>25</fuelValue>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<!--============================== Beekeeping ==============================-->
