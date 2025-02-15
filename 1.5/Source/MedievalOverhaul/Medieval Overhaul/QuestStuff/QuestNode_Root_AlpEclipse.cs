@@ -5,7 +5,6 @@ using UnityEngine;
 using Verse;
 using RimWorld;
 using RimWorld.QuestGen;
-using static HarmonyLib.Code;
 
 namespace MedievalOverhaul
 {
@@ -46,7 +45,10 @@ namespace MedievalOverhaul
             Faction faction = FactionUtility.DefaultFactionFrom(MedievalOverhaulDefOf.DankPyon_Forest_Faction) != null ? FactionUtility.DefaultFactionFrom(MedievalOverhaulDefOf.DankPyon_Forest_Faction) : null;
             quest.SignalPass(delegate
             {
-                quest.Raid(map, points, faction, null, raidArrivalMode: PawnsArrivalModeDefOf.EdgeWalkInGroups, raidStrategy: RaidStrategyDefOf.ImmediateAttack, pawnGroupKind: MedievalOverhaulDefOf.DankPyon_AlpGroup, customLetterLabel: "DankPyon_AlpAttackLetterLabel".Translate(), customLetterText: "DankPyon_AlpAttackLetterText".Translate(), customLetterLabelRules: null, customLetterTextRules: null, walkInSpot: null, tag: null, inSignal: null, rootSymbol: "root", silent: false, canTimeoutOrFlee: false, canSteal: false, canKidnap: false);
+                int raidPoints = Rand.RangeInclusive((int)(points * 0.4f), (int)(points * 0.6f));
+                raidPoints = Math.Min(raidPoints, (int)points);
+                points -= raidPoints;
+                quest.Raid(map, raidPoints, faction, null, raidArrivalMode: PawnsArrivalModeDefOf.EdgeWalkInGroups, raidStrategy: RaidStrategyDefOf.ImmediateAttack, pawnGroupKind: MedievalOverhaulDefOf.DankPyon_AlpGroup, customLetterLabel: "DankPyon_AlpAttackLetterLabel".Translate(), customLetterText: "DankPyon_AlpAttackLetterText".Translate(), customLetterLabelRules: null, customLetterTextRules: null, walkInSpot: null, tag: null, inSignal: null, rootSymbol: "root", silent: false, canTimeoutOrFlee: false, canSteal: false, canKidnap: false);
             }, text);
             quest.Delay(delayTicks, delegate
             {
