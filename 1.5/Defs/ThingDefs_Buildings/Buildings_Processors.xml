@@ -1191,6 +1191,9 @@
 					<li>DankPyon_IceBlockProcess</li>
 				</processes>
 			</li>
+			<li>
+				<compClass>MedievalOverhaul.CompIceBoxFill</compClass>
+			</li>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
 		<tickerType>Rare</tickerType>

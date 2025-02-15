@@ -74,6 +74,7 @@
     <Compile Include="Medieval Overhaul\ThingComps\CompRefuelableCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompPotionUseable.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompPowerWaterWheel.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\FileName.cs" />
     <Compile Include="Medieval Overhaul\Utilities\CachingUtility.cs" />
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetNutritionLevel.cs" />
