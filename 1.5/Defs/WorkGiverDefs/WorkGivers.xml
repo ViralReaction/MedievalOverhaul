@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsScribeTable</defName>
 		<label>write manuscript</label>
@@ -16,7 +17,7 @@
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
-	
+
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsWell</defName>
 		<label>gather water</label>
@@ -74,7 +75,6 @@
 		<priorityInType>110</priorityInType>
 		<fixedBillGiverDefs>
 			<li>DankPyon_RusticCookingTable</li>
-			<li>FueledStove</li>
 		</fixedBillGiverDefs>
 		<verb>cook</verb>
 		<gerund>cooking at</gerund>
@@ -131,7 +131,7 @@
 
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsStoneOven</defName>
-		<label>bake goods</label>
+		<label>bake goods at oven</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
 		<workType>Cooking</workType>
 		<priorityInType>110</priorityInType>
@@ -200,19 +200,6 @@
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
-	<!--WorkGiverDef>
-		<defName>TakeAleOutOfFermentingBarrel</defName>
-		<label>take Ale out of fermenting barrels</label>
-		<giverClass>WorkGiver_TakeAleOutOfFermentingBarrel</giverClass>
-		<workType>Hauling</workType>
-		<verb>take Ale</verb>
-		<gerund>taking Ale from</gerund>
-		<priorityInType>20</priorityInType>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-	</WorkGiverDef-->
-
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsMineshaft</defName>
 		<label>mine stones</label>
@@ -247,40 +234,6 @@
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 
-	<!--WorkGiverDef>
-		<defName>DankPyon_DoBillsDishwasher</defName>
-		<label>wash items</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
-		<priorityInType>80</priorityInType>
-			<fixedBillGiverDefs>
-				<li>DankPyon_Dishwasher</li>
-			</fixedBillGiverDefs>
-		<verb>wash</verb>
-		<gerund>washing at</gerund>
-		<requiredCapacities>
-				<li>Manipulation</li>
-		</requiredCapacities>
-			<prioritizeSustains>true</prioritizeSustains>
-	</WorkGiverDef-->
-
-	<WorkGiverDef>
-		<defName>DankPyon_DoBillsFurnace</defName>
-		<label>smelt items</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
-		<priorityInType>80</priorityInType>
-		<fixedBillGiverDefs>
-			<li>DankPyon_Furnace</li>
-		</fixedBillGiverDefs>
-		<verb>refine</verb>
-		<gerund>refining at</gerund>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-		<prioritizeSustains>true</prioritizeSustains>
-	</WorkGiverDef>
-
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsTanningRack</defName>
 		<label>treat hide</label>
@@ -292,23 +245,6 @@
 		</fixedBillGiverDefs>
 		<verb>treat hide</verb>
 		<gerund>treating hide at</gerund>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-		<prioritizeSustains>true</prioritizeSustains>
-	</WorkGiverDef>
-
-	<WorkGiverDef>
-		<defName>DankPyon_DoBillsButcherFlesh</defName>
-		<label>butcher creatures</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Cooking</workType>
-		<priorityInType>90</priorityInType>
-		<fixedBillGiverDefs>
-			<li>DankPyon_ButchersBlock</li>
-		</fixedBillGiverDefs>
-		<verb>butcher</verb>
-		<gerund>butchering at</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
@@ -360,41 +296,6 @@
 		</fixedBillGiverDefs>
 		<verb>mine</verb>
 		<gerund>mining at</gerund>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-		<prioritizeSustains>true</prioritizeSustains>
-	</WorkGiverDef>
-
-	<WorkGiverDef>
-		<defName>DankPyon_DoBillsStonecut</defName>
-		<label>make stone blocks</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
-		<priorityInType>90</priorityInType>
-		<fixedBillGiverDefs>
-			<li>DankPyon_StonecuttingSpot</li>
-		</fixedBillGiverDefs>
-		<verb>stonecut</verb>
-		<gerund>cutting stone blocks at</gerund>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-		<prioritizeSustains>true</prioritizeSustains>
-	</WorkGiverDef>
-
-	<WorkGiverDef>
-		<defName>DankPyon_DoBillsMakeWeapons</defName>
-		<label>make weapons</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Smithing</workType>
-		<priorityInType>115</priorityInType>
-		<fixedBillGiverDefs>
-			<li>DankPyon_Anvil</li>
-			<li>FueledSmithy</li>
-		</fixedBillGiverDefs>
-		<verb>smith</verb>
-		<gerund>smithing at</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
@@ -468,7 +369,7 @@
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
-	
+
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsCookHearth</defName>
 		<label>cook meals at hearth</label>
@@ -477,7 +378,6 @@
 		<priorityInType>97</priorityInType>
 		<fixedBillGiverDefs>
 			<li>DankPyon_RusticHearth</li>
-			<li>Campfire</li>
 		</fixedBillGiverDefs>
 		<verb>cook</verb>
 		<gerund>cooking at</gerund>
@@ -486,7 +386,7 @@
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
-	
+
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillsHaulHearth</defName>
 		<label>do bills at hearth</label>
@@ -495,7 +395,6 @@
 		<priorityInType>30</priorityInType>
 		<fixedBillGiverDefs>
 			<li>DankPyon_RusticHearth</li>
-			<li>Campfire</li>
 		</fixedBillGiverDefs>
 		<verb>work at</verb>
 		<gerund>working at</gerund>
@@ -504,7 +403,7 @@
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
-	
+
 	<WorkGiverDef>
 		<defName>DoBillMakesMending</defName>
 		<label>repair items</label>
@@ -521,25 +420,5 @@
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
-	
-	<WorkGiverDef>
-		<defName>DankPyon_DoBillsCremate</defName>
-		<label>do cremation bills</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Hauling</workType>
-		<priorityInType>40</priorityInType>
-		<fixedBillGiverDefs>
-			<li>DankPyon_Pyre</li>
-			<li>DankPyon_PyreRound</li>
-		</fixedBillGiverDefs>
-		<verb>cremate</verb>
-		<gerund>cremating at</gerund>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-		<prioritizeSustains>true</prioritizeSustains>
-		<canBeDoneByMutants>false</canBeDoneByMutants>
-	</WorkGiverDef>
-
 
 </Defs>

@@ -2,10 +2,39 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-	<xpath>/Defs/WorkGiverDef[defName="DoBillsUseCraftingSpot"]/fixedBillGiverDefs</xpath>
-	<value>
-		<li>DankPyon_Workbench</li>
-	</value>
+		<xpath>/Defs/WorkGiverDef[defName="DoBillsButcherFlesh"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>DankPyon_ButchersBlock</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorkGiverDef[defName="DoBillsStonecut"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>DankPyon_StonecuttingSpot</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorkGiverDef[defName="DoBillsCremate"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>DankPyon_Pyre</li>
+			<li>DankPyon_PyreRound</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorkGiverDef[defName="DoBillsSmelter"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>DankPyon_Furnace</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorkGiverDef[defName="DoBillsMakeWeapons"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>DankPyon_Anvil</li>
+		</value>
 	</Operation>
 
 </Patch>
