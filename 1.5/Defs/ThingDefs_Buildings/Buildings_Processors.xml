@@ -352,6 +352,9 @@
 		<defName>DankPyon_TanningRack</defName>
 		<label>tanning rack</label>
 		<description>A standing rack for treating raw hides to become soft and beautiful leathers.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DankPyon_TanningLiquor</ThingDef>
+		</descriptionHyperlinks>
 		<thingClass>Building_WorkTable</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
@@ -507,6 +510,10 @@
 		<defName>DankPyon_Press_Paper</defName>
 		<label>paper press</label>
 		<description>A sturdy wooden device used to remove liquid and flatten sheets of paper. It uses a heavy screw mechanism to ensure each sheet is smooth and ready for writing or drawing. This essential tool helps turn pulp into usable parchment.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DankPyon_Paper</ThingDef>
+			<ThingDef>DankPyon_Mixture_Paper</ThingDef>
+		</descriptionHyperlinks>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<drawSize>(4,4)</drawSize>
@@ -519,7 +526,6 @@
 		</graphicData>
 		<uiIconScale>0.8</uiIconScale>
 		<defaultPlacingRot>South</defaultPlacingRot>
-		
 		<neverMultiSelect>true</neverMultiSelect>
 		<fillPercent>0.5</fillPercent>
 		<pathCost>60</pathCost>
@@ -707,7 +713,6 @@
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
-
 		<tickerType>Rare</tickerType>
 		<!--constructEffect>ConstructWood</constructEffect-->
 		<building>

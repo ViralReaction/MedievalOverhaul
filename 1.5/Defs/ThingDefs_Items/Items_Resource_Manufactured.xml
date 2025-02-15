@@ -58,6 +58,10 @@
 		<defName>DankPyon_Paper</defName>
 		<label>paper</label>
 		<description>An empty sheet of paper. Useful for scribbling or writing notes.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DankPyon_Press_Paper</ThingDef>
+			<ThingDef>DankPyon_Mixture_Paper</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Resources/Paper</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -105,6 +109,10 @@
 		<defName>DankPyon_Mixture_Paper</defName>
 		<label>paper mixture</label>
 		<description>A thick, fibrous pulp created from finely ground fibrous materials, soaked and blended into a smooth consistency. This mixture is the essential raw material for crafting paper, ready to be spread, pressed, and dried into sturdy sheets for writing and drawing.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DankPyon_Press_Paper</ThingDef>
+			<ThingDef>DankPyon_Paper</ThingDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Resources/PaperMixture</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
