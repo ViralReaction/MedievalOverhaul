@@ -76,6 +76,7 @@ namespace MedievalOverhaul
         public static HediffDef DankPyon_LindwurmAcidImmune;
         public static HediffDef DankPyon_StunImmune;
         public static HediffDef DankPyon_DazeImmune;
+        public static HediffDef DankPyon_High_VigorPill;
 
         public static TerrainDef Ice;
         public static ThingDef DankPyon_IceCellar;
@@ -93,6 +94,7 @@ namespace MedievalOverhaul
         public static TaleDef DankPyon_AlpEclipseTale;
         public static WeatherDef DankPyon_AlpEclipse_Weather;
         public static ThoughtDef DankPyon_AlpRaidFinished;
+        public static StatDef RestFallRateFactor;
 
         [MayRequireCE]
         public static StatDef Bulk;

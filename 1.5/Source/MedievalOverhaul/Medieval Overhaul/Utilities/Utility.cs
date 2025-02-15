@@ -14,6 +14,7 @@ namespace MedievalOverhaul
         public static SeperateHideList WhiteList = DefDatabase<SeperateHideList>.GetNamed("WhiteList");
         public static SeperateWoodList LogList = DefDatabase<SeperateWoodList>.GetNamed("LogList");
         public static HideGraphicList HideGraphicList = DefDatabase<HideGraphicList>.GetNamed("HideGraphicList");
+        public static StimulantDrugList StimulantDrugList = DefDatabase<StimulantDrugList>.GetNamed("StimulantDrugList");
         public static ModContentPack myContentPack = LoadedModManager.GetMod<MedievalOverhaulSettings>().Content;
         public static bool CEIsEnabled = LoadedModManager.RunningModsListForReading.Any<ModContentPack>((Predicate<ModContentPack>)(x => x.PackageId == "ceteam.combatextended"));
         public static bool VBEIsEnabled = ModsConfig.IsActive("VanillaExpanded.VBooksE");

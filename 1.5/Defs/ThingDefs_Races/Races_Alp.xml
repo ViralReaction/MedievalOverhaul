@@ -107,7 +107,7 @@
 						<comps>
 							<li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
 								<compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
-								<cooldownTime>30</cooldownTime>
+								<cooldownTime>10</cooldownTime>
 							</li>
 						</comps>
 					</li>
@@ -173,7 +173,7 @@
 		<label>Alp</label>
 		<labelPlural>Ghouls</labelPlural>
 		<race>DankPyon_Alp</race>
-		<combatPower>60</combatPower>
+		<combatPower>120</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<wildGroupSize>5~8</wildGroupSize>
 		<defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>

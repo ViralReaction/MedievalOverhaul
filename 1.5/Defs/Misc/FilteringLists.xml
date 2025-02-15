@@ -85,5 +85,19 @@
 			<!-- <li MayRequire="ludeon.rimworld.biotech">SanguphageMeetingTorch</li> -->
 		<!-- </blackListRefuelable> -->
 	<!-- </MedievalOverhaul.FuelPatchList> -->
+	
+	<MedievalOverhaul.StimulantDrugList>
+		<defName>StimulantDrugList</defName>
+		<label>Stimulant Drug List</label>
+		<stimulant>
+			<li>YayoHigh</li>
+			<li>WakeUpHigh</li>
+			<li>GoJuiceHigh</li>
+			<li>FlakeHigh</li>
+			<li>DankPyon_High_VigorPill</li>
+			<li>DankPyon_High_BattleElixir</li>
+		</stimulant>
+	</MedievalOverhaul.StimulantDrugList>
+
 
 </Defs>

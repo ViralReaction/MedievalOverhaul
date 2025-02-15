@@ -204,7 +204,7 @@
 		<workerClass>MedievalOverhaul.DamageWorker_AlpSleep</workerClass>
 		<canInterruptJobs>false</canInterruptJobs>
 		<makesBlood>false</makesBlood>
-		<defaultDamage>40</defaultDamage>
+		<defaultDamage>10</defaultDamage>
 		<hediff>DankPyon_AlpSleep</hediff>
 		<explosionCellFleck>BlastDry</explosionCellFleck>
 		<soundExplosion>Explosion_Stun</soundExplosion>
