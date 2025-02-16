@@ -629,7 +629,7 @@
 			</li>
 	 		<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
-				<heatPerSecond>9</heatPerSecond>
+				<heatPerSecond>3</heatPerSecond>
 			</li>
 			<li Class="ProcessorFramework.CompProperties_Processor">
 				<capacity>100</capacity>
