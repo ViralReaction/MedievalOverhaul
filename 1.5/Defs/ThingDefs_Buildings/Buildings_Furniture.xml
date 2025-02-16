@@ -97,31 +97,6 @@
 		</statBases>
 	</ThingDef>
 
-	<!-- New Bed Base-->
-	<ThingDef Abstract="True" ParentName="SansComfortBedBase" Name="DankPyon_BasicBedBase">
-		<researchPrerequisites>
-			<li>DankPyon_RusticFurniture</li>
-		</researchPrerequisites>
-		<designationCategory>DankPyon_RusticFurniture</designationCategory>
-
-		<statBases>
-			<Comfort>0.75</Comfort>
-			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
-		</statBases>
-
-		<comps>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>DankPyon_RusticEndTable</li>
-					<li>DankPyon_RusticDresser</li>
-					<li>DankPyon_RusticCloset</li>
-					<li>DankPyon_RusticCloset1x2c</li>
-					<li>DankPyon_RusticChest</li>
-				</linkableFacilities>
-			</li>
-		</comps>
-	</ThingDef>
-
 	<!--======================= ======================== ==============================-->
 	<!--=========================== Actual Furniture  =================================-->
 	<ThingDef ParentName="TorchLamp">
@@ -2717,6 +2692,29 @@
 		Fur Bed		 - Vanilla Bed
 		Straw Bed	 -
 		Wicker Bed	 - -->
+	<!-- New Bed Base-->
+	<ThingDef Abstract="True" ParentName="SansComfortBedBase" Name="DankPyon_BasicBedBase">
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+		<statBases>
+			<Comfort>0.75</Comfort>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>DankPyon_RusticEndTable</li>
+					<li>DankPyon_RusticDresser</li>
+					<li>DankPyon_RusticCloset</li>
+					<li>DankPyon_RusticCloset1x2c</li>
+					<li>DankPyon_RusticChest</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<researchPrerequisites Inherit="False">
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+	</ThingDef>
+
 	<ThingDef ParentName="DankPyon_BasicBedBase">
 		<defName>DankPyon_BedLog</defName>
 		<label>log bed</label>
@@ -2731,7 +2729,6 @@
 			</damageData>
 		</graphicData>
 		<size>(1,2)</size>
-
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Beauty>1</Beauty>
@@ -2740,18 +2737,15 @@
 			<BedRestEffectiveness>0.90</BedRestEffectiveness>
 			<Comfort>0.55</Comfort>
 		</statBases>
-		
 		<stuffCategories Inherit="false">
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>45</costStuffCount>
-
 		<uiOrder>2010</uiOrder>
 		<building>
 			<paintable>true</paintable>
 			<bed_showSleeperBody>true</bed_showSleeperBody>
 		</building>
-
 		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
@@ -2769,7 +2763,6 @@
 			</damageData>
 		</graphicData>
 		<size>(2,2)</size>
-
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
 			<WorkToBuild>1350</WorkToBuild>
@@ -2778,18 +2771,17 @@
 			<BedRestEffectiveness>0.90</BedRestEffectiveness>
 			<Comfort>0.55</Comfort>
 		</statBases>
-		
 		<stuffCategories Inherit="false">
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>85</costStuffCount>
-
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
 		<building>
 			<paintable>true</paintable>
 			<bed_showSleeperBody>true</bed_showSleeperBody>
 		</building>
+		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BasicBedBase">
@@ -2806,7 +2798,6 @@
 			</damageData>
 		</graphicData>
 		<size>(1,2)</size>
-
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Beauty>1</Beauty>
@@ -2815,19 +2806,18 @@
 			<BedRestEffectiveness>0.95</BedRestEffectiveness>
 			<Comfort>0.65</Comfort>
 		</statBases>
-		
-		<stuffCategories>
-			<li>Metallic</li>
+		<stuffCategories Inherit="False">
 			<li>Woody</li>
-			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>45</costStuffCount>
-
 		<uiOrder>2010</uiOrder>
 		<building>
 			<paintable>true</paintable>
 			<bed_showSleeperBody>true</bed_showSleeperBody>
 		</building>
+		<researchPrerequisites Inherit="False">
+			<li>DankPyon_Lumber</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BasicBedBase">
@@ -2844,7 +2834,6 @@
 			</damageData>
 		</graphicData>
 		<size>(2,2)</size>
-
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
 			<WorkToBuild>1350</WorkToBuild>
@@ -2853,15 +2842,19 @@
 			<BedRestEffectiveness>0.95</BedRestEffectiveness>
 			<Comfort>0.65</Comfort>
 		</statBases>
-		
+		<stuffCategories Inherit="False">
+			<li>Woody</li>
+		</stuffCategories>
 		<costStuffCount>85</costStuffCount>
-
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
 		<building>
 			<paintable>true</paintable>
 			<bed_showSleeperBody>true</bed_showSleeperBody>
 		</building>
+		<researchPrerequisites Inherit="False">
+			<li>DankPyon_Lumber</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BasicBedBase">
@@ -2878,7 +2871,6 @@
 			</damageData>
 		</graphicData>
 		<size>(1,2)</size>
-
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Beauty>1</Beauty>
@@ -2887,7 +2879,6 @@
 			<BedRestEffectiveness>0.95</BedRestEffectiveness>
 			<Comfort>0.7</Comfort>
 		</statBases>
-		
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -2897,12 +2888,14 @@
 		<costList>
 			<DankPyon_Straw>15</DankPyon_Straw>
 		</costList>
-
 		<uiOrder>2010</uiOrder>
 		<building>
 			<paintable>true</paintable>
 			<bed_showSleeperBody>true</bed_showSleeperBody>
 		</building>
+		<researchPrerequisites Inherit="False">
+			<li>DankPyon_Lumber</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BasicBedBase">
@@ -2919,7 +2912,6 @@
 			</damageData>
 		</graphicData>
 		<size>(2,2)</size>
-
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
 			<WorkToBuild>1350</WorkToBuild>
@@ -2928,18 +2920,19 @@
 			<BedRestEffectiveness>0.95</BedRestEffectiveness>
 			<Comfort>0.7</Comfort>
 		</statBases>
-		
 		<costStuffCount>85</costStuffCount>
 		<costList>
 			<DankPyon_Straw>30</DankPyon_Straw>
 		</costList>
-
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
 		<building>
 			<paintable>true</paintable>
 			<bed_showSleeperBody>true</bed_showSleeperBody>
 		</building>
+		<researchPrerequisites Inherit="False">
+			<li>DankPyon_Lumber</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="DankPyon_BasicBedBase">
@@ -3008,17 +3001,14 @@
 			<Beauty>2</Beauty>
 			<BedRestEffectiveness>1</BedRestEffectiveness>
 		</statBases>
-		
 		<costList>
 			<WoodLog>85</WoodLog>
 		</costList>
-
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
 		<building>
 			<paintable>true</paintable>
 		</building>
-
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_BedCureHediff">
 				<cureHediff>Hypothermia</cureHediff>
@@ -3042,11 +3032,9 @@
 			</damageData>
 		</graphicData>
 		<size>(1,2)</size>
-
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
-
 		<statBases>
 			<MaxHitPoints>140</MaxHitPoints>
 			<Beauty>35</Beauty>
@@ -3055,19 +3043,16 @@
 			<BedRestEffectiveness>1.05</BedRestEffectiveness>
 			<Comfort>0.85</Comfort>
 		</statBases>
-		
 		<costStuffCount>50</costStuffCount>
 		<costList>
 			<DankPyon_Silk>25</DankPyon_Silk>
 			<DankPyon_Linen>10</DankPyon_Linen>
 		</costList>
-
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<uiOrder>2010</uiOrder>
 		<building>
 			<paintable>true</paintable>
 		</building>
-
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_BedCureHediff">
 				<cureHediff>Hypothermia</cureHediff>
@@ -3075,6 +3060,9 @@
 				<cureSeverity>0.02</cureSeverity>
 			</li>
 		</comps>
+		<researchPrerequisites Inherit="False">
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_RusticBedBase">
@@ -3114,19 +3102,16 @@
 			<BedRestEffectiveness>1.05</BedRestEffectiveness>
 		</statBases>
 		<size>(2,2)</size>
-
 		<costStuffCount>100</costStuffCount>
 		<costList>
 			<DankPyon_Silk>50</DankPyon_Silk>
 			<DankPyon_Linen>20</DankPyon_Linen>
 		</costList>
-
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
 		<building>
 			<paintable>true</paintable>
 		</building>
-		
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_BedCureHediff">
 				<cureHediff>Hypothermia</cureHediff>
@@ -3134,6 +3119,9 @@
 				<cureSeverity>0.02</cureSeverity>
 			</li>
 		</comps>
+		<researchPrerequisites Inherit="False">
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_RusticDoubleBed_Base">
