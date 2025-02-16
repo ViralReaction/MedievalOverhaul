@@ -12,7 +12,6 @@ namespace MedievalOverhaul
             var hediffSet = pawn.health.hediffSet;
             foreach (var hediffDef in Utility.StimulantDrugList.stimulant)
             {
-                Log.Message(hediffDef);
 
                 if (hediffSet.HasHediff(hediffDef))
                 {
