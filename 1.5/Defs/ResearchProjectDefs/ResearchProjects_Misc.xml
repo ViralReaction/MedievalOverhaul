@@ -677,9 +677,6 @@
 		<prerequisites>
 			<li>Greatbow</li>
 		</prerequisites>
-		<requiredResearchFacilities>
-			<li>DankPyon_Schematic_WarBow</li>
-		</requiredResearchFacilities>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->war bows</li>
