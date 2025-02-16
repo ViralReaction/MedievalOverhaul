@@ -4,7 +4,7 @@
 
 	<!--======================= Basic domestic furniture ==============================-->
 	<ThingDef Abstract="True" ParentName="BuildingBase" Name="DankPyon_BuildingBase">
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -18,7 +18,7 @@
 
 
 	<ThingDef Abstract="True" ParentName="TableGatherSpotBase" Name="DankPyon_TableGatherSpotBase">
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -28,7 +28,7 @@
 	</ThingDef>
 
 	<ThingDef Abstract="True" ParentName="TableBase" Name="DankPyon_TableBase">
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -41,7 +41,7 @@
 	</ThingDef>
 
 	<ThingDef Abstract="True" ParentName="FurnitureWithQualityBase" Name="DankPyon_FurnitureWithQualityBase">
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -54,7 +54,7 @@
 	</ThingDef>
 
 	<ThingDef Abstract="True" ParentName="ShelfBase" Name="DankPyon_VanillaShelfBase">
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -65,7 +65,7 @@
 	
 
 	<ThingDef Abstract="True" ParentName="ArtableFurnitureBase" Name="DankPyon_ArtableFurnitureBase">
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -78,7 +78,7 @@
 	</ThingDef>
 
 	<ThingDef Abstract="True" ParentName="ArtableBedBase" Name="DankPyon_ArtableBedBase">
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -88,7 +88,7 @@
 	</ThingDef>
 
 	<ThingDef Abstract="True" ParentName="BedWithQualityBase" Name="DankPyon_BedWithQualityBase"><!-- Needs to re-reference parent -->
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -2170,6 +2170,9 @@
 				<maxDistance>6</maxDistance>
 			</li>
 		</comps>
+		<researchPrerequisites Inherit="False">
+			<li>Smithing</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_VanillaShelfBase">
@@ -2207,6 +2210,10 @@
 				<maxDistance>6</maxDistance>
 			</li>
 		</comps>
+		<researchPrerequisites Inherit="False">
+			<li>Smithing</li>
+			<li>DankPyon_RoyalRusticFurniture</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 
