@@ -179,7 +179,7 @@
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
 		<defName>DankPyon_Schematic_NoblePolearms</defName>
-		<label>ancient miltary polearm schematic</label>
+		<label>ancient noble polearm schematic</label>
 		<comps>
 			<li Class="CompProperties_Book">
 				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
