@@ -3100,6 +3100,7 @@
 			<Mass>50</Mass>
 			<Beauty>35</Beauty>
 			<BedRestEffectiveness>1.05</BedRestEffectiveness>
+			<Comfort>0.85</Comfort>
 		</statBases>
 		<size>(2,2)</size>
 		<costStuffCount>100</costStuffCount>
