@@ -13,6 +13,10 @@
 				</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_ComponentBasic</thingDef>
+				<countRange>2~5</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
 				<thingDef>Pemmican</thingDef>
 				<countRange>
 					<min>60</min>

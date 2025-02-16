@@ -15,6 +15,10 @@
 				<countRange>750~1200</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_ComponentBasic</thingDef>
+				<countRange>20~40</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
 				<thingDef>DankPyon_Straw</thingDef>
 				<countRange>350~1000</countRange>
 			</li>
@@ -288,6 +292,11 @@
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Silver</thingDef>
 				<countRange>750~1200</countRange>
+			</li>
+			
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_ComponentBasic</thingDef>
+				<countRange>2~3</countRange>
 			</li>
 
 			<li Class="StockGenerator_SingleDef">
