@@ -460,6 +460,7 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>4</heatPerSecond>
 			</li>
 			<li Class="CompProperties_AffectedByFacilities">
@@ -665,6 +666,7 @@
 				<offset>(0,0,0.2)</offset>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPushMaxTemperature>36</heatPushMaxTemperature>
 				<heatPerSecond>6</heatPerSecond>
 			</li>
@@ -1424,6 +1426,7 @@
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>9</heatPerSecond>
 			</li>
 			<li Class="CompProperties_AffectedByFacilities">
@@ -1793,6 +1796,7 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>4</heatPerSecond>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">
@@ -1924,6 +1928,7 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>4</heatPerSecond>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">
@@ -2050,6 +2055,7 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>4</heatPerSecond>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">

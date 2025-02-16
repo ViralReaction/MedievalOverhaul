@@ -45,6 +45,7 @@
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>-11</heatPerSecond>
 				<heatPushMinTemperature>-10</heatPushMinTemperature>
 			</li>
@@ -141,6 +142,7 @@
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>80</heatPerSecond>
 				<heatPushMaxTemperature>38</heatPushMaxTemperature>
 			</li>

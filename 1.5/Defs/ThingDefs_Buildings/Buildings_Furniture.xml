@@ -149,6 +149,7 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
@@ -284,6 +285,7 @@
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
@@ -409,6 +411,7 @@
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
@@ -492,6 +495,7 @@
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
@@ -1445,6 +1449,7 @@
 				<fuelIconPath>UI/IconTallow</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>13</heatPushMaxTemperature>
 			</li>
@@ -1528,6 +1533,7 @@
 				<fuelIconPath>UI/IconWax</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>13</heatPushMaxTemperature>
 			</li>
@@ -1634,6 +1640,7 @@
 				<fuelIconPath>UI/IconTallow</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
@@ -1717,6 +1724,7 @@
 				<fuelIconPath>UI/IconWax</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
@@ -1825,6 +1833,7 @@
 				<fuelIconPath>UI/IconTallow</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
@@ -1954,6 +1963,7 @@
 				<fuelIconPath>UI/IconWax</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
@@ -2085,6 +2095,7 @@
 				<fuelIconPath>UI/IconTar</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
@@ -3215,6 +3226,7 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>11</heatPerSecond>
 				<heatPushMaxTemperature>24</heatPushMaxTemperature>
 			</li>
@@ -3305,6 +3317,7 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>32</heatPerSecond>
 				<heatPushMaxTemperature>21</heatPushMaxTemperature>
 			</li>
