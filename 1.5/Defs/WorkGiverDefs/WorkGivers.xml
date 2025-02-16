@@ -22,7 +22,7 @@
 		<defName>DankPyon_DoBillsWell</defName>
 		<label>gather water</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>Hauling</workType>
 		<priorityInType>110</priorityInType>
 		<fixedBillGiverDefs>
 			<li>DankPyon_Well</li>
