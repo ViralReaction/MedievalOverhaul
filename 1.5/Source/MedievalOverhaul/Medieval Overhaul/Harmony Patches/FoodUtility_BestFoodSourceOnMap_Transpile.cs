@@ -12,10 +12,6 @@ namespace MedievalOverhaul
     [HarmonyPatch(typeof(FoodUtility), nameof(FoodUtility.BestFoodSourceOnMap))]
     public static class FoodUtility_BestFoodSourceOnMap_HelperFind
     {
-        public static bool Prepare()
-        {
-            return MedievalOverhaulSettings.settings.slopDispenser;
-        }
         public static MethodInfo AnonymousMethod;
         
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
@@ -38,10 +34,6 @@ namespace MedievalOverhaul
     [HarmonyPatch]
     public static class FoodUtility_BestFoodSourceOnMap_Transpile
     {
-        public static bool Prepare()
-        {
-            return MedievalOverhaulSettings.settings.slopDispenser;
-        }
         static MethodBase TargetMethod()
         {
             if (FoodUtility_BestFoodSourceOnMap_HelperFind.AnonymousMethod != null)

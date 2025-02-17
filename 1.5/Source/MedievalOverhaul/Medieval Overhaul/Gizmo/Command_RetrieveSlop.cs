@@ -3,16 +3,17 @@ using UnityEngine;
 using Verse.AI;
 using Verse;
 using Verse.Sound;
-using System.Collections.Generic;
 
 namespace MedievalOverhaul
 {
     [StaticConstructorOnStartup]
     public class Command_RetrieveSlop : Command_Action
     {
+        #pragma warning disable
         private bool jobStarted;
         private Job activeJob;
         private Pawn jobPawn;
+        #pragma warning restore
         private Building_SlopPot parentBuilding;
         private ThingDef mealDef;
         private int dispenseSize;

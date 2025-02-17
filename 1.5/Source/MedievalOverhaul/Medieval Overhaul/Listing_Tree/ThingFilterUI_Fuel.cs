@@ -103,7 +103,6 @@ namespace MedievalOverhaul
             Text.Font = GameFont.Small;
         }
 
-        private static float viewHeight;
 
         private const float ExtraViewHeight = 90f;
 
