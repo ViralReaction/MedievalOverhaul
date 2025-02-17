@@ -123,5 +123,32 @@ namespace MedievalOverhaul
                 }
             }
         }
+        public static Pawn FindBestHauler(Thing thing)
+        {
+            Map map = thing.Map;
+            List<Pawn> pawns = map.mapPawns.FreeColonistsSpawned;
+
+            Pawn bestHauler = null;
+            float bestDistance = float.MaxValue;
+
+            foreach (Pawn pawn in pawns)
+            {
+                if (!pawn.Drafted &&
+                    pawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation) &&
+                    !pawn.Downed &&
+                    pawn.CanReserve(thing) &&
+                    pawn.workSettings.WorkIsActive(WorkTypeDefOf.Hauling))
+                {
+                    float distance = pawn.Position.DistanceTo(thing.Position);
+                    if (distance < bestDistance)
+                    {
+                        bestDistance = distance;
+                        bestHauler = pawn;
+                    }
+                }
+            }
+
+            return bestHauler;
+        }
     }
 }

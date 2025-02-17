@@ -3,7 +3,7 @@ using UnityEngine;
 using Verse.AI;
 using Verse;
 using Verse.Sound;
-using System.Linq;
+using System.Collections.Generic;
 
 namespace MedievalOverhaul
 {
@@ -45,7 +45,7 @@ namespace MedievalOverhaul
             Job haulJob = JobMaker.MakeJob(MedievalOverhaulDefOf.DankPyon_DispenseSlop, parentBuilding);
             haulJob.count = dispenseSize;
 
-            Pawn hauler = FindBestHauler(parentBuilding);
+            Pawn hauler = Utility.FindBestHauler(parentBuilding);
             if (hauler != null)
             {
                 parentBuilding.jobStarted = true;
@@ -68,16 +68,7 @@ namespace MedievalOverhaul
                 return (Texture2D)mealDef.graphic.MatSingle.mainTexture;
             }
         }
-        public Pawn FindBestHauler(Thing thing)
-        {
-            return thing.Map.mapPawns.FreeColonistsSpawned
-                .Where(pawn => pawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation) &&
-                               !pawn.Downed &&
-                               pawn.CanReserve(thing) &&
-                               pawn.workSettings.WorkIsActive(WorkTypeDefOf.Hauling))
-                .OrderBy(pawn => pawn.Position.DistanceTo(thing.Position))
-                .FirstOrDefault();
-        }
+       
         public new static readonly Texture2D BGTex = ContentFinder<Texture2D>.Get("UI/Widgets/DesButBG", true);
         private static readonly Texture2D BGTexActive = ContentFinder<Texture2D>.Get("UI/Widgets/DesButBG", true);
     }
