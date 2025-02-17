@@ -12,7 +12,7 @@
 		<stages>
 			<li>
 				<label>griffon berry</label>
-				<description>A berry for griffins! Such profound sweetness!</description>
+				<description>A berry for griffons! Such profound sweetness!</description>
 				<baseMoodEffect>6</baseMoodEffect>
 			</li>
 		</stages>
@@ -108,7 +108,7 @@
 		<stages>
 			<li>
 				<label>ate griffon berry pie</label>
-				<description>A pie baked for griffins! Such profound aroma inexorably satisfies one's tongue!</description>
+				<description>A pie baked for griffons! Such profound aroma inexorably satisfies one's tongue!</description>
 				<baseMoodEffect>15</baseMoodEffect>
 			</li>
 		</stages>

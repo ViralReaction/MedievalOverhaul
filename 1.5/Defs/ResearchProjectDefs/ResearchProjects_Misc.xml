@@ -940,7 +940,7 @@
 	<ResearchProjectDef>
 		<defName>DankPyon_TreeGriffonBerry</defName>
 		<label>griffon berry</label>
-		<description>A rare luscious fruit that grows on small tree. As per it's given name, the red fruit is a delicacy to griffins and are typically guarded by them.</description>
+		<description>A rare luscious fruit that grows on small tree. As per it's given name, the red fruit is a delicacy to griffons and are typically guarded by them.</description>
 		<baseCost>900</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
