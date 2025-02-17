@@ -44,6 +44,7 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerPlantWater_RebuildCache.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CalcSpeedFactor.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CurrentWindFactor.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\Plant_PlantCollected.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\FoodUtility_BestFoodSourceOnMap_Transpile.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\MainTabWindow_Inspect_CurTabs.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\PlaceWorker_WatermillGenerator_DrawGhost.cs" />
@@ -60,7 +61,9 @@
     <Compile Include="Medieval Overhaul\Listing_Tree\ThingFilterUI_Fuel.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelAtomicCustom.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelCustom.cs" />
+    <Compile Include="Medieval Overhaul\MapComponent\FileName.cs" />
     <Compile Include="Medieval Overhaul\MapComponent\RefuelableMapComponent.cs" />
+    <Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_PlowSoil.cs" />
     <Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_WindMill.cs" />
     <Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_WaterWheel.cs" />
     <Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_WaterGather.cs" />

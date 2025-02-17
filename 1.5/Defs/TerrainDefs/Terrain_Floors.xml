@@ -13,7 +13,7 @@
 		<filthAcceptanceMask>
 			<li>Unnatural</li>
 		</filthAcceptanceMask>
-		<designationCategory>Floors</designationCategory>
+		<designationCategory>Orders</designationCategory>
 		<constructEffect>ConstructDirt</constructEffect>
 		<statBases>
 			<Beauty>-1</Beauty>
@@ -42,6 +42,19 @@
 		<researchPrerequisites>
 			<li>DankPyon_BasicAgriculture</li>
 		</researchPrerequisites>
+		<placeWorkers>
+			<li>MedievalOverhaul.PlaceWorker_PlowSoil</li>
+		</placeWorkers>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<constructionSkillRequirement>
+					<workType>Growing</workType>
+					<skill>Plants</skill>
+					<level>1</level>
+					<reportStringOverride>plowing soil.</reportStringOverride>
+				</constructionSkillRequirement>
+			</li>
+		</modExtensions>
 	</TerrainDef>
 
 	<!--==================== Ice ====================-->
@@ -95,44 +108,44 @@
     <extinguishesFire>true</extinguishesFire>
   </TerrainDef-->
 
-  <TerrainDef ParentName="TileMetalBase">
-    <defName>IronTile</defName>
-    <label>iron tile</label>
-    <renderPrecedence>240</renderPrecedence>
-    <description>Iron tiles, for that rugged look. They are quick to clean and get a small bonus to cleanliness for use in medical settings.</description>
-    <color>(0.3, 0.3, 0.3)</color>
-    <statBases>
-      <WorkToBuild>800</WorkToBuild>
-      <Beauty>0</Beauty>
-      <Cleanliness>0.1</Cleanliness>
-      <CleaningTimeFactor>0.65</CleaningTimeFactor>
-    </statBases>
-    <costList>
-      <DankPyon_IronIngot>7</DankPyon_IronIngot>
-    </costList>
-  </TerrainDef>
+	<TerrainDef ParentName="TileMetalBase">
+		<defName>IronTile</defName>
+		<label>iron tile</label>
+		<renderPrecedence>240</renderPrecedence>
+		<description>Iron tiles, for that rugged look. They are quick to clean and get a small bonus to cleanliness for use in medical settings.</description>
+		<color>(0.3, 0.3, 0.3)</color>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<Beauty>0</Beauty>
+			<Cleanliness>0.1</Cleanliness>
+			<CleaningTimeFactor>0.65</CleaningTimeFactor>
+		</statBases>
+		<costList>
+			<DankPyon_IronIngot>7</DankPyon_IronIngot>
+		</costList>
+	</TerrainDef>
   
-  <TerrainDef  ParentName="FloorBase">
-    <defName>DankPyon_DarkWoodPlankFloor</defName>
-    <label>dark wood floor</label>
-    <renderPrecedence>250</renderPrecedence>
-    <description>Dark wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
-    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
-    <burnedDef>BurnedWoodPlankFloor</burnedDef>
-	<color>(112,91,76)</color>
-    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-    <isPaintable>true</isPaintable>
-    <statBases>
-      <WorkToBuild>85</WorkToBuild>
-      <Flammability>0.22</Flammability>
-    </statBases>
-    <costList>
-      <DankPyon_DarkWood>3</DankPyon_DarkWood>
-    </costList>
-    <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc9</designationHotKey>
-    <uiOrder>2000</uiOrder>
-  </TerrainDef>
+	<TerrainDef ParentName="FloorBase">
+		<defName>DankPyon_DarkWoodPlankFloor</defName>
+		<label>dark wood floor</label>
+		<renderPrecedence>250</renderPrecedence>
+		<description>Dark wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+		<texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+		<burnedDef>BurnedWoodPlankFloor</burnedDef>
+		<color>(112,91,76)</color>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>85</WorkToBuild>
+			<Flammability>0.22</Flammability>
+		</statBases>
+		<costList>
+			<DankPyon_DarkWood>3</DankPyon_DarkWood>
+		</costList>
+		<constructEffect>ConstructWood</constructEffect>
+		<designationHotKey>Misc9</designationHotKey>
+		<uiOrder>2000</uiOrder>
+	</TerrainDef>
 
 </Defs>

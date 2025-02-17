@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<WorkGiverDef>
+		<defName>DankPyon_PlowSoil_DeliverResourcesToBluePrints</defName>
+		<label>plow soil</label>		
+		<giverClass>VFECore.WorkGiver_ConstructionSkill_DeliverResourcesToBlueprints</giverClass>
+		<workType>Growing</workType>
+		<verb>plow</verb>
+		<gerund>plowing</gerund>
+		<priorityInType>80</priorityInType>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>DankPyon_PlowSoil_FinishFrames</defName>
+		<label>plow soil</label>		
+		<giverClass>VFECore.WorkGiver_ConstructionSkill_FinishFrames</giverClass>
+		<workType>Growing</workType>
+		<verb>plow</verb>
+		<gerund>plowing</gerund>
+		<priorityInType>70</priorityInType>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
+		<defName>DankPyon_PlowSoil_DeliverResourcesToFrames</defName>
+		<label>plow soil</label>		
+		<giverClass>VFECore.WorkGiver_ConstructionSkill_DeliverResourcesToFrames</giverClass>
+		<workType>Growing</workType>
+		<verb>plow</verb>
+		<gerund>plowing</gerund>
+		<priorityInType>60</priorityInType>
+	</WorkGiverDef>
+
+</Defs>

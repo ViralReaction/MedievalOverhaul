@@ -95,6 +95,7 @@ namespace MedievalOverhaul
         public static WeatherDef DankPyon_AlpEclipse_Weather;
         public static ThoughtDef DankPyon_AlpRaidFinished;
         public static StatDef RestFallRateFactor;
+        public static TerrainAffordanceDef GrowSoil;
 
         [MayRequireCE]
         public static StatDef Bulk;
