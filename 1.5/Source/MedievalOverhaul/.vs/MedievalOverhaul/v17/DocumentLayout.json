@@ -3,78 +3,20 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\hediffcomps\\hediffcomp_nightmare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\hediffcomps\\hediffcomp_nightmare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\recipes\\recipeworkercounter_watergather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\recipes\\recipeworkercounter_watergather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\production chains\\timber generation\\timberutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\production chains\\timber generation\\timberutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\genrecipe_makerecipeproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\harmony patches\\genrecipe_makerecipeproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\production chains\\timber generation\\thingdefgenerator_timber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\production chains\\timber generation\\thingdefgenerator_timber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\thingclasses\\defmodextensions\\recipeextension_mine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\thingclasses\\defmodextensions\\recipeextension_mine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\defgenerator_generateimplieddefs_preresolve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\harmony patches\\defgenerator_generateimplieddefs_preresolve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\production chains\\hide generation\\thingdefgenerator_hide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\production chains\\hide generation\\thingdefgenerator_hide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\production chains\\hide generation\\hideutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\production chains\\hide generation\\hideutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\defofs\\medievaloverhauldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\defofs\\medievaloverhauldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\pawn_butcherproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\harmony patches\\pawn_butcherproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\jobdriver_refuel_makenewtoils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\harmony patches\\jobdriver_refuel_makenewtoils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\jobdriver_ingest_getreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\harmony patches\\jobdriver_ingest_getreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\jobdriver_manturret_findammoforturret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\harmony patches\\jobdriver_manturret_findammoforturret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\jobdriver_clearsnow_makenewtoils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\harmony patches\\jobdriver_clearsnow_makenewtoils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\harmonyinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\harmony patches\\harmonyinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\2479389928\\Source\\Soyuz\\Core\\Patches\\HediffComp_Patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\2479389928\\Source\\Soyuz\\Core\\Patches\\JobDriver_Patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\harmony patches\\pawn_jobtracker_endcurrentjob_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\harmony patches\\pawn_jobtracker_endcurrentjob_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\utilities\\seperatehidelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\utilities\\seperatehidelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\damageworkers\\damageworker_alpsleep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\damageworkers\\damageworker_alpsleep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\utilities\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\utilities\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\medievaloverhaul-master\\1.5\\source\\medievaloverhaul\\medieval overhaul\\thingclasses\\defmodextensions\\recipeextension_watergather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}|MedievalOverhaul.csproj|solutionrelative:medieval overhaul\\thingclasses\\defmodextensions\\recipeextension_watergather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -84,253 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ThingDefGenerator_Timber.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Production Chains\\Timber Generation\\ThingDefGenerator_Timber.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\Production Chains\\Timber Generation\\ThingDefGenerator_Timber.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Production Chains\\Timber Generation\\ThingDefGenerator_Timber.cs",
-              "RelativeToolTip": "Medieval Overhaul\\Production Chains\\Timber Generation\\ThingDefGenerator_Timber.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAQwAwAAAA5AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "RecipeWorkerCounter_WaterGather.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Recipes\\RecipeWorkerCounter_WaterGather.cs",
+              "RelativeDocumentMoniker": "Medieval Overhaul\\Recipes\\RecipeWorkerCounter_WaterGather.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Recipes\\RecipeWorkerCounter_WaterGather.cs",
+              "RelativeToolTip": "Medieval Overhaul\\Recipes\\RecipeWorkerCounter_WaterGather.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T23:42:59.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DefGenerator_GenerateImpliedDefs_PreResolve.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\DefGenerator_GenerateImpliedDefs_PreResolve.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\DefGenerator_GenerateImpliedDefs_PreResolve.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\DefGenerator_GenerateImpliedDefs_PreResolve.cs",
-              "RelativeToolTip": "Medieval Overhaul\\Harmony Patches\\DefGenerator_GenerateImpliedDefs_PreResolve.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T23:41:53.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ThingDefGenerator_Hide.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Production Chains\\Hide Generation\\ThingDefGenerator_Hide.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\Production Chains\\Hide Generation\\ThingDefGenerator_Hide.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Production Chains\\Hide Generation\\ThingDefGenerator_Hide.cs",
-              "RelativeToolTip": "Medieval Overhaul\\Production Chains\\Hide Generation\\ThingDefGenerator_Hide.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T23:41:31.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HideUtility.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Production Chains\\Hide Generation\\HideUtility.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\Production Chains\\Hide Generation\\HideUtility.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Production Chains\\Hide Generation\\HideUtility.cs",
-              "RelativeToolTip": "Medieval Overhaul\\Production Chains\\Hide Generation\\HideUtility.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwBcAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T23:41:28.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "JobDriver_Refuel_MakeNewToils.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\JobDriver_Refuel_MakeNewToils.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\JobDriver_Refuel_MakeNewToils.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\JobDriver_Refuel_MakeNewToils.cs",
-              "RelativeToolTip": "Medieval Overhaul\\Harmony Patches\\JobDriver_Refuel_MakeNewToils.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:09:22.063Z",
+              "WhenOpened": "2025-02-16T22:17:55.295Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TimberUtility.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Production Chains\\Timber Generation\\TimberUtility.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\Production Chains\\Timber Generation\\TimberUtility.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Production Chains\\Timber Generation\\TimberUtility.cs",
-              "RelativeToolTip": "Medieval Overhaul\\Production Chains\\Timber Generation\\TimberUtility.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
+              "Title": "GenRecipe_MakeRecipeProducts.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\GenRecipe_MakeRecipeProducts.cs",
+              "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\GenRecipe_MakeRecipeProducts.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\GenRecipe_MakeRecipeProducts.cs",
+              "RelativeToolTip": "Medieval Overhaul\\Harmony Patches\\GenRecipe_MakeRecipeProducts.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAADwvywAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T19:04:56.085Z",
+              "WhenOpened": "2025-02-16T21:32:16.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HediffComp_Nightmare.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\HediffComps\\HediffComp_Nightmare.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\HediffComps\\HediffComp_Nightmare.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\HediffComps\\HediffComp_Nightmare.cs",
-              "RelativeToolTip": "Medieval Overhaul\\HediffComps\\HediffComp_Nightmare.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "RecipeExtension_Mine.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingClasses\\DefModExtensions\\RecipeExtension_Mine.cs",
+              "RelativeDocumentMoniker": "Medieval Overhaul\\ThingClasses\\DefModExtensions\\RecipeExtension_Mine.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingClasses\\DefModExtensions\\RecipeExtension_Mine.cs",
+              "RelativeToolTip": "Medieval Overhaul\\ThingClasses\\DefModExtensions\\RecipeExtension_Mine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T18:35:58.004Z",
+              "WhenOpened": "2025-02-16T21:44:16.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "JobDriver_Ingest_GetReport.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\JobDriver_Ingest_GetReport.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\JobDriver_Ingest_GetReport.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\JobDriver_Ingest_GetReport.cs",
-              "RelativeToolTip": "Medieval Overhaul\\Harmony Patches\\JobDriver_Ingest_GetReport.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "RecipeExtension_WaterGather.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingClasses\\DefModExtensions\\RecipeExtension_WaterGather.cs",
+              "RelativeDocumentMoniker": "Medieval Overhaul\\ThingClasses\\DefModExtensions\\RecipeExtension_WaterGather.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\ThingClasses\\DefModExtensions\\RecipeExtension_WaterGather.cs",
+              "RelativeToolTip": "Medieval Overhaul\\ThingClasses\\DefModExtensions\\RecipeExtension_WaterGather.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:09:12.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "JobDriver_ManTurret_FindAmmoForTurret.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\JobDriver_ManTurret_FindAmmoForTurret.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\JobDriver_ManTurret_FindAmmoForTurret.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\JobDriver_ManTurret_FindAmmoForTurret.cs",
-              "RelativeToolTip": "Medieval Overhaul\\Harmony Patches\\JobDriver_ManTurret_FindAmmoForTurret.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:09:15.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Pawn_ButcherProducts.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\Pawn_ButcherProducts.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\Pawn_ButcherProducts.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\Pawn_ButcherProducts.cs",
-              "RelativeToolTip": "Medieval Overhaul\\Harmony Patches\\Pawn_ButcherProducts.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAQwBEAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T19:23:21.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MedievalOverhaulDefOf.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\DefOfs\\MedievalOverhaulDefOf.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\DefOfs\\MedievalOverhaulDefOf.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\DefOfs\\MedievalOverhaulDefOf.cs",
-              "RelativeToolTip": "Medieval Overhaul\\DefOfs\\MedievalOverhaulDefOf.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAAwGAAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T18:57:25.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "JobDriver_ClearSnow_MakeNewToils.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\JobDriver_ClearSnow_MakeNewToils.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\JobDriver_ClearSnow_MakeNewToils.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\JobDriver_ClearSnow_MakeNewToils.cs",
-              "RelativeToolTip": "Medieval Overhaul\\Harmony Patches\\JobDriver_ClearSnow_MakeNewToils.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:09:02.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "HarmonyInstance.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\HarmonyInstance.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\HarmonyInstance.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\HarmonyInstance.cs",
-              "RelativeToolTip": "Medieval Overhaul\\Harmony Patches\\HarmonyInstance.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:08:56.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "HediffComp_Patch.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\2479389928\\Source\\Soyuz\\Core\\Patches\\HediffComp_Patch.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\2479389928\\Source\\Soyuz\\Core\\Patches\\HediffComp_Patch.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\2479389928\\Source\\Soyuz\\Core\\Patches\\HediffComp_Patch.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\2479389928\\Source\\Soyuz\\Core\\Patches\\HediffComp_Patch.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:06:11.844Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "JobDriver_Patch.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\2479389928\\Source\\Soyuz\\Core\\Patches\\JobDriver_Patch.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\2479389928\\Source\\Soyuz\\Core\\Patches\\JobDriver_Patch.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\2479389928\\Source\\Soyuz\\Core\\Patches\\JobDriver_Patch.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\2479389928\\Source\\Soyuz\\Core\\Patches\\JobDriver_Patch.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T20:05:57.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Pawn_JobTracker_EndCurrentJob_Patch.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\Pawn_JobTracker_EndCurrentJob_Patch.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\Harmony Patches\\Pawn_JobTracker_EndCurrentJob_Patch.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Harmony Patches\\Pawn_JobTracker_EndCurrentJob_Patch.cs",
-              "RelativeToolTip": "Medieval Overhaul\\Harmony Patches\\Pawn_JobTracker_EndCurrentJob_Patch.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T19:54:05.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SeperateHideList.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Utilities\\SeperateHideList.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\Utilities\\SeperateHideList.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Utilities\\SeperateHideList.cs",
-              "RelativeToolTip": "Medieval Overhaul\\Utilities\\SeperateHideList.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T18:21:03.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Utility.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Utilities\\Utility.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\Utilities\\Utility.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\Utilities\\Utility.cs",
-              "RelativeToolTip": "Medieval Overhaul\\Utilities\\Utility.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T18:07:16.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DamageWorker_AlpSleep.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\DamageWorkers\\DamageWorker_AlpSleep.cs",
-              "RelativeDocumentMoniker": "Medieval Overhaul\\DamageWorkers\\DamageWorker_AlpSleep.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\MedievalOverhaul-master\\1.5\\Source\\MedievalOverhaul\\Medieval Overhaul\\DamageWorkers\\DamageWorker_AlpSleep.cs",
-              "RelativeToolTip": "Medieval Overhaul\\DamageWorkers\\DamageWorker_AlpSleep.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T18:02:36.604Z",
+              "WhenOpened": "2025-02-16T21:44:31.601Z",
               "EditorCaption": ""
             }
           ]

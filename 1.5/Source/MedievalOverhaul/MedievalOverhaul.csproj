@@ -38,7 +38,7 @@
   <ItemGroup>
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_AlpSleep.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetFuelLevelCustom.cs" />
-    <Compile Include="Medieval Overhaul\Gizmo\Command_ToggleJob.cs" />
+    <Compile Include="Medieval Overhaul\Gizmo\Command_RetrieveSlop.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableStatusCustom.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerPlantWater_ForceOthersToRebuildCache.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerPlantWater_RebuildCache.cs" />
@@ -67,11 +67,14 @@
     <Compile Include="Medieval Overhaul\QuestStuff\GameCondition_AlpEclipse.cs" />
     <Compile Include="Medieval Overhaul\QuestStuff\QuestNode_Root_AlpEclipse.cs" />
     <Compile Include="Medieval Overhaul\QuestStuff\QuestPart_AlpDarkness.cs" />
+    <Compile Include="Medieval Overhaul\Recipes\RecipeWorkerCounter_WaterGather.cs" />
     <Compile Include="Medieval Overhaul\StatWorkers\StatPart_Mass_Hide.cs" />
     <Compile Include="Medieval Overhaul\StatWorkers\StatPart_MarketValue.cs" />
     <Compile Include="Medieval Overhaul\Storyteller\StorytellerComp\StorytellerCompProperties_MineshaftInfestation.cs" />
     <Compile Include="Medieval Overhaul\Storyteller\StorytellerComp_MineshaftInfestation.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_WaterGather.cs" />
     <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ItemLootExtension.cs" />
+    <Compile Include="Medieval Overhaul\ThingClasses\Building_Art_Ice.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompCreatesInfestations_Mine.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_CreatesInfestations_Mine.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_RefuelableCustom.cs" />
@@ -79,6 +82,7 @@
     <Compile Include="Medieval Overhaul\ThingComps\CompPotionUseable.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompPowerWaterWheel.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompIceBoxFill.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\MinifiedIceThing.cs" />
     <Compile Include="Medieval Overhaul\Utilities\CachingUtility.cs" />
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetNutritionLevel.cs" />

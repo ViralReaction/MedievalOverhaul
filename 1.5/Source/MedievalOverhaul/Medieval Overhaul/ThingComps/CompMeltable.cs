@@ -4,6 +4,7 @@ using UnityEngine;
 using Verse;
 using RimWorld;
 using System.Security.Cryptography;
+using System.Collections.Generic;
 
 namespace MedievalOverhaul
 {
@@ -139,6 +140,42 @@ namespace MedievalOverhaul
             return stringBuilder.ToString();
         }
 
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        {
+            foreach (Gizmo gizmo in base.CompGetGizmosExtra())
+            {
+                yield return gizmo;
+            }
+            if (DebugSettings.ShowDevGizmos)
+            {
+                yield return new Command_Action
+                {
+                    defaultLabel = "DEV: Fully Melt",
+                    action = delegate ()
+                    {
+                        MeltProgress += MeltProgress;
+                    }
+                };
+                yield return new Command_Action
+                {
+                    defaultLabel = "DEV: Melt 10%",
+                    action = delegate ()
+                    {
+                        MeltProgress += PropsRot.TicksToMeltStart * 0.10f;
+                    }
+                };
+                yield return new Command_Action
+                {
+                    defaultLabel = "DEV: Melt 50%",
+                    action = delegate ()
+                    {
+                        MeltProgress += PropsRot.TicksToMeltStart * 0.50f;
+                    }
+                };
+            }
+            yield break;
+        }
+
         public static float MeltRateAtTemperature(float temperature)
         {
             if (temperature < 0f)
@@ -181,7 +218,7 @@ namespace MedievalOverhaul
             }
         }
 
-        private float meltProgressInt;
+        public float meltProgressInt;
 
         public bool disabled;
     }

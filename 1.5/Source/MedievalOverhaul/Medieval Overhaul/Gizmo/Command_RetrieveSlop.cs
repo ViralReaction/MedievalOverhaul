@@ -7,6 +7,7 @@ using System.Linq;
 
 namespace MedievalOverhaul
 {
+    [StaticConstructorOnStartup]
     public class Command_RetrieveSlop : Command_Action
     {
         private bool jobStarted;

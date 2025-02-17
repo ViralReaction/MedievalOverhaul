@@ -17,14 +17,21 @@
 	<!-- Water -->
 	<RecipeDef ParentName="DankPyon_WaterGatherSpotBase">
 		<defName>DankPyon_Gather_Water</defName>
-		<workAmount>1200</workAmount>
-		<label>gather water</label>
+		<workerCounterClass>MedievalOverhaul.RecipeWorkerCounter_GatherWater</workerCounterClass>
+		<workAmount>70</workAmount>
+		<label>gather material</label>
 		<jobString>Gathering 1 waterskin.</jobString>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<targetCountAdjustment>1</targetCountAdjustment>
 		<products>
 			<DankPyon_Waterskin>1</DankPyon_Waterskin>
 		</products>
+		<modExtensions>
+			<li Class="MedievalOverhaul.RecipeExtension_WaterGather">
+				<thingDef>DankPyon_IceBlock</thingDef>
+				<productCount>1</productCount>
+			</li>
+		</modExtensions>
 	</RecipeDef>
 
 	<RecipeDef>
@@ -37,7 +44,7 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<workSkillLearnFactor>0</workSkillLearnFactor>
-		<workAmount>600</workAmount>
+		<workAmount>35</workAmount>
 		<recipeUsers>
 			<li>DankPyon_Well</li>
 			<li MayRequire="dubwise.dubsbadhygiene">EGG_AdvancedWell</li>
@@ -57,7 +64,7 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_Brewing</soundWorking>
 		<workSkillLearnFactor>0</workSkillLearnFactor>
-		<workAmount>3000</workAmount>
+		<workAmount>175</workAmount>
 		<recipeUsers>
 			<li>DankPyon_Well</li>
 			<li MayRequire="dubwise.dubsbadhygiene">EGG_AdvancedWell</li>
