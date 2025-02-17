@@ -187,6 +187,119 @@ namespace MedievalOverhaul
 			};
 		}
 
+        private static List<Pawn> canReach = [];
+        private static List<Pawn> canUse = [];
+        private static List<Pawn> allowedPawn = [];
+
+        public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn selPawn)
+        {
+            if (this.comps != null && this.comps.Count > 0)
+            {
+                for (int i = 0; i < this.comps.Count; i++)
+                {
+                    foreach (FloatMenuOption floatMenuOption2 in this.comps[i].CompFloatMenuOptions(selPawn))
+                    {
+                        yield return floatMenuOption2;
+                    }
+                }
+            }
+            if (!CanDispenseNow)
+            {
+                yield return new FloatMenuOption("DankPyon_NoFood".Translate(this), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
+                yield break;
+            }
+            if (!selPawn.CanReach(this, PathEndMode.InteractionCell, Danger.Deadly, false, false, TraverseMode.ByPawn))
+            {
+                yield return new FloatMenuOption("DankPyon_CannotUse".Translate(this) + ": " + "NoPath".Translate().CapitalizeFirst(), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
+                yield break;
+            }
+            if (!this.IsCapableOfUsing(selPawn))
+            {
+                yield return new FloatMenuOption("DankPyon_CannotUse".Translate(this.Label) + ": " + "Incapable".Translate(), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
+                yield break;
+            }
+            yield return new FloatMenuOption("DankPyon_GetSlop".Translate(slopComp.mealdef), delegate ()
+            {
+                // Create a job for the first pawn to get food from THIS dispenser
+                Job job = JobMaker.MakeJob(JobDefOf.Ingest, this); // 'this' refers to the dispenser
+                job.count = 1; // Ensure only one meal is taken
+                selPawn.jobs.TryTakeOrderedJob(job, new JobTag?(JobTag.SatisfyingNeeds), false);
+            },
+                MenuOptionPriority.Default,
+                null, null, 0f, null, null, true, 0);
+            yield break;
+        }
+
+
+        public override IEnumerable<FloatMenuOption> GetMultiSelectFloatMenuOptions(List<Pawn> selPawns)
+        {
+            foreach (FloatMenuOption floatMenuOption in base.GetMultiSelectFloatMenuOptions(selPawns))
+            {
+                yield return floatMenuOption;
+            }
+
+            if (!CanDispenseNow)
+            {
+                yield return new FloatMenuOption("DankPyon_NoFood".Translate(this), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
+                yield break;
+            }
+            canReach.Clear();
+            canUse.Clear();
+            for (int i = 0; i < selPawns.Count; i++)
+            {
+                if (selPawns[i].RaceProps.Humanlike)
+                {
+                    if (selPawns[i].CanReach(this, PathEndMode.InteractionCell, Danger.Deadly, false, false, TraverseMode.ByPawn))
+                    {
+                        canReach.Add(selPawns[i]);
+                    }
+                    if (this.IsCapableOfUsing(selPawns[i]))
+                    {
+                        canUse.Add(selPawns[i]);
+                    }
+                }
+            }
+            if (canReach.Count == 0)
+            {
+                yield return new FloatMenuOption("DankPyon_CannotUse".Translate(this) + ": " + "NoPath".Translate().CapitalizeFirst(), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
+                yield break;
+            }
+            if (canUse.Count == 0)
+            {
+                yield return new FloatMenuOption("DankPyon_CannotUse".Translate(this.Label) + ": " + "Incapable".Translate(), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
+                yield break;
+            }
+            allowedPawn.Clear();
+            for (int i = 0; i < canReach.Count; i++)
+            {
+                if (canUse.Contains(canReach[i]))
+                {
+                    allowedPawn.Add(canUse[i]);
+                }
+            }
+            if (allowedPawn.Count > 0)
+            {
+                yield return new FloatMenuOption("DankPyon_GetSlop".Translate(slopComp.mealdef), delegate ()
+                {
+                    for (int i = 1; i < allowedPawn.Count; i++)
+                    {
+                        Job job = JobMaker.MakeJob(JobDefOf.Ingest, this); // 'this' refers to the dispenser
+                        job.count = 1; // Ensure only one meal is taken
+                        allowedPawn[i].jobs.TryTakeOrderedJob(job, new JobTag?(JobTag.SatisfyingNeeds), false);
+                    }
+                },
+                MenuOptionPriority.Default,
+                null, null, 0f, null, null, true, 0);
+            }
+            yield break;
+
+        }
+
+        private bool IsCapableOfUsing(Pawn pawn)
+        {
+            return !pawn.IsMutant && pawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation);
+        }
+
         private Texture2D GetMealTexture(ThingDef mealDef, int stackSize = 1)
         {
             if (mealDef == null || mealDef.graphic == null)
