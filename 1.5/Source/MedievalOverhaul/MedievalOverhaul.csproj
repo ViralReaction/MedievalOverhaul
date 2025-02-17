@@ -227,13 +227,7 @@
     <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_OperateQuest.cs" />
     <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_Miner_Golem.cs" />
     <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_RefuelCustom.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Medieval Overhaul\Utilities\DebugTools.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
     <Compile Include="Medieval Overhaul\ThingClasses\Building_SlopPot.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_RefuelableStat.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_Slop.cs" />
@@ -262,6 +256,7 @@
   <ItemGroup>
     <Folder Include="Medieval Overhaul\DeathActionWorker\DeathActionProperties\" />
     <Folder Include="Medieval Overhaul\IncidentWorkers\ThingSetMaker\" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">
@@ -277,12 +272,6 @@
       <Version>2.*</Version>
     </PackageReference>
     <Publicize Include="Assembly-CSharp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ProcessorFramework">
