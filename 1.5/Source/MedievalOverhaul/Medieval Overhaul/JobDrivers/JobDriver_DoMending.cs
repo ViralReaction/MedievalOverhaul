@@ -4,9 +4,6 @@ using Verse.AI;
 using Verse;
 using System;
 using UnityEngine;
-using System.Linq;
-using System.Diagnostics.Eventing.Reader;
-using UnityEngine.UIElements;
 
 namespace MedievalOverhaul
 {
@@ -522,7 +519,15 @@ namespace MedievalOverhaul
         {
             if (job.GetTarget(TargetIndex.B).Thing is UnfinishedThing uft && uft.def.MadeFromStuff)
             {
-                return uft.ingredients.First((Thing ing) => ing.def == uft.Stuff);
+                foreach (Thing thing in uft.ingredients)
+                {
+                    if (thing.def == uft.Stuff)
+                    {
+                        return thing;
+                    }
+                }
+                return null;
+
             }
             if (ingredients.NullOrEmpty<Thing>())
             {
@@ -535,9 +540,40 @@ namespace MedievalOverhaul
             }
             if (recipeDef.products.Any((ThingDefCountClass x) => x.thingDef.MadeFromStuff) || (recipeDef.unfinishedThingDef != null && recipeDef.unfinishedThingDef.MadeFromStuff))
             {
-                return (from x in ingredients
-                        where x.def.IsStuff
-                        select x).RandomElementByWeight((Thing x) => (float)x.stackCount);
+                List<Thing> validIngredients = new List<Thing>();
+                float totalWeight = 0f;
+
+                // Collect valid ingredients and calculate total weight
+                foreach (Thing x in ingredients)
+                {
+                    if (x.def.IsStuff)
+                    {
+                        validIngredients.Add(x);
+                        totalWeight += x.stackCount;
+                    }
+                }
+
+                if (validIngredients.Count == 0)
+                {
+                    return null; // Or handle the case where no valid ingredient is found
+                }
+
+                // Select a random element weighted by stackCount
+                float randomWeight = Rand.Range(0f, totalWeight);
+                float cumulativeWeight = 0f;
+
+                foreach (Thing x in validIngredients)
+                {
+                    cumulativeWeight += x.stackCount;
+                    if (randomWeight <= cumulativeWeight)
+                    {
+                        return x;
+                    }
+                }
+
+                // Fallback, should never reach here
+                return validIngredients[validIngredients.Count - 1];
+
             }
             return ingredients.RandomElementByWeight((Thing x) => (float)x.stackCount);
         }

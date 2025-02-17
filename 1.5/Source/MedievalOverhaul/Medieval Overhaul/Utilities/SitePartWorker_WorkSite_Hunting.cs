@@ -1,9 +1,5 @@
 ﻿using RimWorld;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 
 namespace MedievalOverhaul
@@ -14,9 +10,14 @@ namespace MedievalOverhaul
         {
             get
             {
-                return from p in DefDatabase<PreceptDef>.AllDefs
-                       where p.disallowHuntingCamps
-                       select p;
+                foreach (PreceptDef p in DefDatabase<PreceptDef>.AllDefs)
+                {
+                    if (p.disallowHuntingCamps)
+                    {
+                        yield return p;
+                    }
+                }
+
             }
         }
 
@@ -35,10 +36,21 @@ namespace MedievalOverhaul
 
         public override IEnumerable<SitePartWorker_WorkSite.CampLootThingStruct> LootThings(int tile)
         {
-            IEnumerable<ThingDef> enumerable = from a in Find.WorldGrid[tile].biome.AllWildAnimals
-                                               where a?.RaceProps?.leatherDef is not null
-                                               select a.RaceProps.leatherDef;
-            float leatherWeight = 1f / (float)enumerable.Count<ThingDef>();
+            List<ThingDef> enumerable = new List<ThingDef>();
+
+            foreach (PawnKindDef pawnKindDef in Find.WorldGrid[tile].biome.AllWildAnimals)
+            {
+                if (pawnKindDef?.RaceProps?.leatherDef is not null)
+                {
+                    enumerable.Add(pawnKindDef.RaceProps.leatherDef);
+                }
+            }
+            int count = 0;
+            foreach (ThingDef _ in enumerable)
+            {
+                count++;
+            }
+            float leatherWeight = 1f / (float)count;
             foreach (ThingDef thing in enumerable)
             {
                 if (thing is not null)

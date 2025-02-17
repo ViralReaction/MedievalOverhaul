@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Verse;
-using static Unity.Burst.Intrinsics.X86.Avx;
 
 namespace MedievalOverhaul
 {

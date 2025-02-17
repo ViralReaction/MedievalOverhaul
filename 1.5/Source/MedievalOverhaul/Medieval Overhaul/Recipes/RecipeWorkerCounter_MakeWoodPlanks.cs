@@ -1,11 +1,6 @@
-﻿using MedievalOverhaul;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using RimWorld;
 using Verse;
-using UnityEngine;
-using System.Diagnostics;
-using System.Linq;
-using System;
 
 namespace MedievalOverhaul
 {
@@ -19,7 +14,6 @@ namespace MedievalOverhaul
 		public override int CountProducts(Bill_Production bill)
 		{
 			int countProductNum = 0;
-			//List<ThingDef> childThingDefs = MedievalOverhaulDefOf.DankPyon_Wood.childThingDefs;
 			List<ThingDef> childThingDefs = new List<ThingDef>();
 			var allowedThingDefs = bill.ingredientFilter.AllowedThingDefs;
 			foreach (ThingDef allowedThing in allowedThingDefs)

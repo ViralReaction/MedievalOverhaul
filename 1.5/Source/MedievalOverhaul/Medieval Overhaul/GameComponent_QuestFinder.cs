@@ -1,9 +1,6 @@
 ﻿using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 
 namespace MedievalOverhaul
@@ -48,7 +45,12 @@ namespace MedievalOverhaul
             base.ExposeData();
             Scribe_Collections.Look<QuestScriptDef>(ref this.completed, "completed", LookMode.Def);
             Scribe_Collections.Look<Quest>(ref this.givenByFinder, "givenByFinder", LookMode.Reference);
-            List<ThingWithComps> list = this.finders.Select<CompQuestFinder, ThingWithComps>((Func<CompQuestFinder, ThingWithComps>)(f => f.parent)).ToList<ThingWithComps>();
+            List<ThingWithComps> list = new List<ThingWithComps>();
+
+            foreach (CompQuestFinder comp in this.finders)
+            {
+                list.Add(comp.parent);
+            }
             Scribe_Collections.Look<ThingWithComps>(ref list, "finders", LookMode.Reference);
             if (this.completed == null)
                 this.completed = new HashSet<QuestScriptDef>();
@@ -58,7 +60,17 @@ namespace MedievalOverhaul
                 this.finders = new List<CompQuestFinder>();
             if (Scribe.mode != LoadSaveMode.PostLoadInit)
                 return;
-            this.finders = list.Select<ThingWithComps, CompQuestFinder>((Func<ThingWithComps, CompQuestFinder>)(t => t.TryGetComp<CompQuestFinder>())).ToList<CompQuestFinder>();
+            this.finders = new List<CompQuestFinder>();
+
+            foreach (ThingWithComps t in list)
+            {
+                CompQuestFinder comp = t.TryGetComp<CompQuestFinder>();
+                if (comp != null)
+                {
+                    this.finders.Add(comp);
+                }
+            }
+
         }
     }
 }

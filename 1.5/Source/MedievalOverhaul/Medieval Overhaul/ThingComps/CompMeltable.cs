@@ -1,9 +1,7 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using UnityEngine;
 using Verse;
 using RimWorld;
-using System.Security.Cryptography;
 using System.Collections.Generic;
 
 namespace MedievalOverhaul

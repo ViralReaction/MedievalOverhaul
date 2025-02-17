@@ -2,14 +2,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse.AI.Group;
 using Verse.Sound;
 using Verse;
-using UnityEngine;
-using static System.Collections.Specialized.BitVector32;
 
 namespace MedievalOverhaul
 {
@@ -18,7 +13,6 @@ namespace MedievalOverhaul
         public int nextPawnSpawnTick = -1;
         public bool aggressive = true;
         public bool canSpawnPawns = true;
-        //private CompCanBeDormant dormancyCompCached;
 
         private CompProperties_HornetNestSpawner Props => (CompProperties_HornetNestSpawner)this.props;
 
@@ -45,11 +39,16 @@ namespace MedievalOverhaul
         private bool TrySpawnPawn(out Pawn pawn)
         {
             int num = 0;
-            foreach (string defName in this.Props.spawnablePawnKinds.Distinct<string>())
+            HashSet<string> uniqueDefNames = new HashSet<string>();
+
+            foreach (string defName in this.Props.spawnablePawnKinds)
             {
-                var thing = defName;
-                num += this.parent.Map.listerThings.ThingsOfDef(ThingDef.Named(defName)).Count;
+                if (uniqueDefNames.Add(defName))
+                {
+                    num += this.parent.Map.listerThings.ThingsOfDef(ThingDef.Named(defName)).Count;
+                }
             }
+
             if (num < Props.maxPawnCount)
             {
                 PawnKindDef named = DefDatabase<PawnKindDef>.GetNamed(this.Props.spawnablePawnKinds.RandomElement<string>(), false);

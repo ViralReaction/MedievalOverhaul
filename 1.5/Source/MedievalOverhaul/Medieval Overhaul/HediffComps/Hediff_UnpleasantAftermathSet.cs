@@ -1,6 +1,4 @@
-﻿using System;
-using System.Linq;
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 
 namespace MedievalOverhaul
@@ -26,9 +24,5 @@ namespace MedievalOverhaul
 			}
 		}
 
-		//private bool HangoverSusceptible(Pawn pawn)
-		//{
-		//	return true;
-		//}
 	}
 }

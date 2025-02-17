@@ -1,7 +1,6 @@
 ﻿using Verse;
 using ProcessorFramework;
 using System.Collections.Generic;
-using System.Linq;
 using RimWorld;
 using Verse.AI;
 using Verse.Sound;
@@ -93,7 +92,7 @@ namespace MedievalOverhaul
                     SoundDefOf.Tick_High.PlayOneShotOnCamera();
                     Job haulJob = JobMaker.MakeJob(MedievalOverhaulDefOf.DankPyon_IceMold_Empty, this.parent);
 
-                    Pawn hauler = FindBestHauler(this.parent);
+                    Pawn hauler = Utility.FindBestHauler(this.parent);
                     if (hauler != null)
                     {
                         jobStarted = true;
@@ -104,16 +103,6 @@ namespace MedievalOverhaul
                 },
                 icon = ContentFinder<Texture2D>.Get("UI/GatherWater")
             };
-        }
-        public Pawn FindBestHauler(Thing thing)
-        {
-            return thing.Map.mapPawns.FreeColonistsSpawned
-                .Where(pawn => pawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation) &&
-                               !pawn.Downed &&
-                               pawn.CanReserve(thing) &&
-                               pawn.workSettings.WorkIsActive(WorkTypeDefOf.Hauling))
-                .OrderBy(pawn => pawn.Position.DistanceTo(thing.Position))
-                .FirstOrDefault();
         }
     }
 }

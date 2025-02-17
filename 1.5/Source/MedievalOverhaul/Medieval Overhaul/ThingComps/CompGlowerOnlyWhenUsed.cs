@@ -1,6 +1,4 @@
-﻿using System.Linq;
-using HarmonyLib;
-using ProcessorFramework;
+﻿using ProcessorFramework;
 using RimWorld;
 using Verse;
 
@@ -25,15 +23,20 @@ namespace MedievalOverhaul
 				{
                     if (parent is Building_WorkTable workTable)
                     {
-                        foreach (var pawn in this.parent.Map.reservationManager.ReservationsReadOnly.Where(x => x.Target.Thing == this.parent).Select(x => x.Claimant))
-						{
-							if (pawn.pather.MovingNow is false && pawn.Position == workTable.InteractionCell)
-							{
-								return true;
-							}
-						}
+                        foreach (var reservation in this.parent.Map.reservationManager.ReservationsReadOnly)
+                        {
+                            if (reservation.Target.Thing == this.parent)
+                            {
+                                var pawn = reservation.Claimant;
+                                if (!pawn.pather.MovingNow && pawn.Position == workTable.InteractionCell)
+                                {
+                                    return true;
+                                }
+                            }
+                        }
+
                     }
-					if (comp != null && comp.activeProcesses.Any() && comp.activeProcesses.Any(x => x.Complete is false))
+                    if (comp != null && comp.activeProcesses.Any() && comp.activeProcesses.Any(x => x.Complete is false))
 					{
                         return true;
                     }

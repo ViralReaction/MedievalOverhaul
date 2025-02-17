@@ -2,7 +2,6 @@
 using RimWorld.QuestGen;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using Verse;
 
@@ -16,7 +15,20 @@ namespace MedievalOverhaul
         private ThingDef targetMineable;
         private bool requiredBuilding = false;
 
-        protected IEnumerable<QuestScriptDef> AvailableForFind => QuestFinderUtility.PossibleQuests.Where<QuestScriptDef>(new Func<QuestScriptDef, bool>(this.CanFind));
+        protected IEnumerable<QuestScriptDef> AvailableForFind
+        {
+            get
+            {
+                foreach (QuestScriptDef quest in QuestFinderUtility.PossibleQuests)
+                {
+                    if (this.CanFind(quest))
+                    {
+                        yield return quest;
+                    }
+                }
+            }
+        }
+
 
         protected virtual bool CanFind(QuestScriptDef quest)
         {
@@ -122,8 +134,19 @@ namespace MedievalOverhaul
                 element.defaultLabel = this.currentQuest.LabelCap();
                 element.defaultDesc = (string)"EEG.SelectQuest".Translate((NamedArgument)this.currentQuest.LabelCap());
                 element.icon = (Texture)TexButton.Search;
-                element.action = (Action)(() => Find.WindowStack.Add((Window)new FloatMenu(this.AvailableForFind.Select<QuestScriptDef, FloatMenuOption>((Func<QuestScriptDef, FloatMenuOption>)(quest => new FloatMenuOption(quest.LabelCap(), (Action)(() => this.currentQuest = quest)))).ToList<FloatMenuOption>())));
-               
+                element.action = (Action)(() =>
+                {
+                    List<FloatMenuOption> menuOptions = new List<FloatMenuOption>();
+
+                    foreach (QuestScriptDef quest in this.AvailableForFind)
+                    {
+                        menuOptions.Add(new FloatMenuOption(quest.LabelCap(), (Action)(() => this.currentQuest = quest)));
+                    }
+
+                    Find.WindowStack.Add((Window)new FloatMenu(menuOptions));
+                });
+
+
                 yield return element;
             }
 

@@ -1,7 +1,6 @@
 ﻿using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using Verse;
 using Verse.AI;
 
@@ -75,10 +74,18 @@ namespace MedievalOverhaul
             {
                 return new FloatMenuOption("CannotUseReason".Translate("IncapableOfCapacity".Translate(PawnCapacityDefOf.Talking.label, myPawn.Named("PAWN"))), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
             }
-            if (!this.GetCommTargets(myPawn).Any<ICommunicable>())
+            bool hasCommTarget = false;
+            foreach (ICommunicable target in this.GetCommTargets(myPawn))
+            {
+                hasCommTarget = true;
+                break; // Exit early if at least one target exists
+            }
+
+            if (!hasCommTarget)
             {
                 return new FloatMenuOption("CannotUseReason".Translate("NoCommsTarget".Translate()), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
             }
+
             if (!this.CanUseCommsNow)
             {
                 Log.Error(myPawn + " could not use comm console for unknown reason.");
@@ -88,19 +95,38 @@ namespace MedievalOverhaul
         }
         private new void AnnounceTradeShips()
         {
-            foreach (TradeShip tradeShip in from s in base.Map.passingShipManager.passingShips.OfType<TradeShip>()
-                                            where !s.WasAnnounced
-                                            select s)
+            foreach (TradeShip tradeShip in base.Map.passingShipManager.passingShips)
             {
-                TaggedString baseLetterText = "TraderArrival".Translate(tradeShip.name, tradeShip.def.label, (tradeShip.Faction == null) ? "TraderArrivalNoFaction".Translate() : "TraderArrivalFromFaction".Translate(tradeShip.Faction.Named("FACTION")));
-                IncidentParms incidentParms = new()
+                if (!tradeShip.WasAnnounced && tradeShip is TradeShip)
                 {
-                    target = base.Map,
-                    traderKind = tradeShip.TraderKind
-                };
-                IncidentWorker.SendIncidentLetter(tradeShip.def.LabelCap, baseLetterText, LetterDefOf.PositiveEvent, incidentParms, LookTargets.Invalid, null, []);
-                tradeShip.WasAnnounced = true;
+                    TaggedString baseLetterText = "TraderArrival".Translate(
+                        tradeShip.name,
+                        tradeShip.def.label,
+                        (tradeShip.Faction == null)
+                            ? "TraderArrivalNoFaction".Translate()
+                            : "TraderArrivalFromFaction".Translate(tradeShip.Faction.Named("FACTION"))
+                    );
+
+                    IncidentParms incidentParms = new()
+                    {
+                        target = base.Map,
+                        traderKind = tradeShip.TraderKind
+                    };
+
+                    IncidentWorker.SendIncidentLetter(
+                        tradeShip.def.LabelCap,
+                        baseLetterText,
+                        LetterDefOf.PositiveEvent,
+                        incidentParms,
+                        LookTargets.Invalid,
+                        null,
+                        []
+                    );
+
+                    tradeShip.WasAnnounced = true;
+                }
             }
+
         }
     }
 }

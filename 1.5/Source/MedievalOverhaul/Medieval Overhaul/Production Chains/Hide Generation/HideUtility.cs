@@ -1,13 +1,7 @@
 ﻿using HarmonyLib;
-using MedievalOverhaul;
-using MedievalOverhaul.Patches;
 using RimWorld;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+//using System.Linq;
 using Verse;
 using VanillaGenesExpanded;
 
@@ -25,16 +19,20 @@ namespace MedievalOverhaul
         {
             if (MedievalOverhaulSettings.settings.leatherChain)
             {
-                foreach (ThingDef animal in DefDatabase<ThingDef>.AllDefs.Where(x => x.category == ThingCategory.Pawn).ToList())
+                foreach (ThingDef animal in DefDatabase<ThingDef>.AllDefs)
                 {
-                    if (animal.race.leatherDef != null && animal.race.IsFlesh && !animal.race.Insect)
+                    if (animal.category == ThingCategory.Pawn &&
+                        animal.race.leatherDef != null &&
+                        animal.race.IsFlesh &&
+                        !animal.race.Insect)
                     {
                         AllLeatherAnimals.Add(animal);
                     }
                 }
+
                 if (ModLister.BiotechInstalled && ModLister.CheckBiotech("MechLink"))
                 {
-                    foreach (GeneDef gene in DefDatabase<GeneDef>.AllDefs.ToList())
+                    foreach (GeneDef gene in DefDatabase<GeneDef>.AllDefs)
                     {
                         var geneMod = gene.GetModExtension<GeneExtension>();
                         if (geneMod != null && geneMod.customLeatherThingDef != null)
@@ -42,6 +40,7 @@ namespace MedievalOverhaul
                             AllGeneDefs.Add(gene);
                         }
                     }
+
                 }
             }
         }

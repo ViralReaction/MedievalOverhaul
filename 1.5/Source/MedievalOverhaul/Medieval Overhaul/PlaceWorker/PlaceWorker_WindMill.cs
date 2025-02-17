@@ -1,4 +1,4 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 
@@ -8,7 +8,16 @@ namespace MedievalOverhaul
     {
         public override void DrawGhost(ThingDef def, IntVec3 center, Rot4 rot, Color ghostCol, Thing thing = null)
         {
-            GenDraw.DrawFieldEdges(WindMillUtility.CalculateWindCells(center, rot, def.size).ToList<IntVec3>());
+            IEnumerable<IntVec3> windCellsEnumerable = WindMillUtility.CalculateWindCells(center, rot, def.size);
+            List<IntVec3> windCells = [];
+
+            foreach (IntVec3 cell in windCellsEnumerable)
+            {
+                windCells.Add(cell);
+            }
+
+            GenDraw.DrawFieldEdges(windCells);
+
         }
     }
 }

@@ -1,9 +1,7 @@
 ﻿using RimWorld;
 using Verse;
-using System.Linq;
 using UnityEngine;
 using System.Collections.Generic;
-using System;
 
 namespace MedievalOverhaul
 {
@@ -209,15 +207,30 @@ namespace MedievalOverhaul
             }
             if (mode != DestroyMode.Vanish && previousMap != null && this.Props.fuelFilter.AllowedDefCount == 1 && this.Props.initialFuelPercent == 0f)
             {
-                ThingDef thingDef = this.Props.fuelFilter.AllowedThingDefs.First<ThingDef>();
+                // Get the first allowed ThingDef (avoiding LINQ)
+                // Get the first allowed ThingDef without LINQ
+                ThingDef thingDef = null;
+                foreach (ThingDef def in this.Props.fuelFilter.AllowedThingDefs)
+                {
+                    thingDef = def;
+                    break; // Exit loop after finding the first valid ThingDef
+                }
+
+                if (thingDef == null)
+                {
+                    return; // Exit early if no valid ThingDef is found
+                }
                 int i = GenMath.RoundRandom(1f * this.fuel);
                 while (i > 0)
                 {
                     Thing thing = ThingMaker.MakeThing(thingDef, null);
                     thing.stackCount = Mathf.Min(i, thingDef.stackLimit);
                     i -= thing.stackCount;
-                    GenPlace.TryPlaceThing(thing, this.parent.Position, previousMap, ThingPlaceMode.Near, null, null, default);
+
+                    GenPlace.TryPlaceThing(thing, this.parent.Position, previousMap, ThingPlaceMode.Near);
                 }
+
+
             }
         }
         public override string CompInspectStringExtra()
@@ -300,11 +313,18 @@ namespace MedievalOverhaul
         {
             if (this.Props.atomicFueling)
             {
-                if (fuelThings.Sum((Thing t) => t.stackCount) < this.GetFuelCountToFullyRefuel())
+                int totalFuelCount = 0;
+                foreach (Thing t in fuelThings)
+                {
+                    totalFuelCount += t.stackCount;
+                }
+
+                if (totalFuelCount < this.GetFuelCountToFullyRefuel())
                 {
                     Log.ErrorOnce("Error refueling; not enough fuel available for proper atomic refuel", 19586442);
                     return;
                 }
+
             }
             int fullFuelCount = this.GetFuelCountToFullyRefuel(fuelThings[0]);
             while (fullFuelCount > 0 && fuelThings.Count > 0)

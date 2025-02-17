@@ -4,7 +4,6 @@ using Verse.AI;
 using Verse;
 using RimWorld;
 using UnityEngine;
-using System.Linq;
 
 namespace MedievalOverhaul
 {

@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
+
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -24,18 +24,37 @@ namespace MedievalOverhaul
         public int matchCount;
         private Rect visibleRect;
 
-        public Listing_TreeThingFilter_Fuel(ThingFilter filter, ThingFilter parentFilter,
-            IEnumerable<ThingDef> forceHiddenDefs, IEnumerable<SpecialThingFilterDef> forceHiddenFilters,
-            List<ThingDef> suppressSmallVolumeTags, QuickSearchFilter searchFilter, List<ICompFuelHandler> cachedFuelBuildings)
+        public Listing_TreeThingFilter_Fuel(
+            ThingFilter filter, ThingFilter parentFilter,IEnumerable<ThingDef> forceHiddenDefs, 
+            IEnumerable<SpecialThingFilterDef> forceHiddenFilters, List<ThingDef> suppressSmallVolumeTags,
+            QuickSearchFilter searchFilter, List<ICompFuelHandler> cachedFuelBuildings)
         {
             this.filter = filter;
             this.parentFilter = parentFilter;
-            this.forceHiddenDefs = forceHiddenDefs?.ToList();
-            this.tempForceHiddenSpecialFilters = forceHiddenFilters?.ToList();
+
+            if (forceHiddenDefs != null)
+            {
+                this.forceHiddenDefs = new List<ThingDef>();
+                foreach (var def in forceHiddenDefs)
+                {
+                    this.forceHiddenDefs.Add(def);
+                }
+            }
+
+            if (forceHiddenFilters != null)
+            {
+                this.tempForceHiddenSpecialFilters = new List<SpecialThingFilterDef>();
+                foreach (var filterDef in forceHiddenFilters)
+                {
+                    this.tempForceHiddenSpecialFilters.Add(filterDef);
+                }
+            }
+
             this.suppressSmallVolumeTags = suppressSmallVolumeTags;
             this.searchFilter = searchFilter;
             this._cachedFuelBuildings = cachedFuelBuildings;
         }
+
 
         public void ListCategoryChildren(TreeNode_ThingCategory node, int openMask, Map map, Rect visibleRect)
         {
@@ -211,7 +230,14 @@ namespace MedievalOverhaul
 
         private bool Visible(TreeNode_ThingCategory node)
         {
-            return node.catDef.DescendantThingDefs.Any(Visible);
+            foreach (var thingDef in node.catDef.DescendantThingDefs)
+            {
+                if (Visible(thingDef))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         private bool Visible(ThingDef td)

@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -193,11 +192,18 @@ namespace MedievalOverhaul
         {
             if (this.Props.atomicFueling)
             {
-                if (fuelThings.Sum((Thing t) => t.stackCount) < this.GetFuelCountToFullyRefuel())
+                int totalFuelCount = 0;
+                foreach (Thing thing in fuelThings)
+                {
+                    totalFuelCount += thing.stackCount;
+                }
+
+                if (totalFuelCount < this.GetFuelCountToFullyRefuel())
                 {
                     Log.ErrorOnce("Error refueling; not enough fuel available for proper atomic refuel", 19586442);
                     return;
                 }
+
             }
             int num = this.GetFuelCountToFullyRefuel(fuelThings[0]);
             while (num > 0 && fuelThings.Count > 0)
