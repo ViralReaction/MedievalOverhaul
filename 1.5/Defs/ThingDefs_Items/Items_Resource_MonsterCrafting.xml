@@ -255,7 +255,7 @@
 
 	<ThingDef ParentName="DankPyon_AlchemyIngredientsBase">
 		<defName>DankPyon_LindwurmScales</defName>
-		<label>lindwurm scales</label>
+		<label>lindwurm broad scales</label>
 		<description>Tough, durable scales shed from a Lindwurm, prized for their exceptional strength and resilience. Ideal for crafting high-quality armor and protective gear.</description>
 		<graphicData>
 			<texPath>Special/LindwurmScales</texPath>
