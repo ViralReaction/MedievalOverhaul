@@ -27,10 +27,10 @@ namespace MedievalOverhaul.Compat
 
             public static MethodBase TargetMethod()
             {
-                return AccessTools.Method("VOEAdditionalOutposts.Outpost_Ranch:ResultOptions");
+                return AccessTools.Method(VOEAdditionalOutposts_Patches, "get_ResultOptions");
             }
 
-            public static List<ResultOption> Postfix(List<ResultOption> __result)
+            public static void Postfix(List<ResultOption> __result)
             {
                 if (__result != null && __result.Count > 0)
                 {
@@ -44,7 +44,6 @@ namespace MedievalOverhaul.Compat
                         }
                     }
                 }
-                return __result;
             }
         }
 
