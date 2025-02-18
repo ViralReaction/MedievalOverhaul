@@ -35,7 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Harmony\FileName.cs" />
+    <Compile Include="Harmony\Harmony_VOEAdditionalOutpost.cs" />
+    <Compile Include="Harmony\Outpost_Hunting_ResultOptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -46,12 +47,15 @@
   <ItemGroup />
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">
-      <Version>2.2.1</Version>
+      <Version>2.3.0</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.5.4063</Version>
+      <Version>1.5.4297</Version>
+    </PackageReference>
+    <PackageReference Include="Lib.Harmony">
+      <Version>2.3.5</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -61,17 +65,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
-    </Reference>
     <Reference Include="MedievalOverhaul">
       <HintPath>..\..\..\Assemblies\MedievalOverhaul.dll</HintPath>
+	  <ExcludeAssets>runtime</ExcludeAssets>
     </Reference>
     <Reference Include="Outposts">
       <HintPath>..\..\..\..\..\2023507013\1.5\Assemblies\Outposts.dll</HintPath>
+	  <ExcludeAssets>runtime</ExcludeAssets>
     </Reference>
     <Reference Include="VOE">
       <HintPath>..\..\..\..\..\2688941031\1.5\Assemblies\VOE.dll</HintPath>
+	  <ExcludeAssets>runtime</ExcludeAssets>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
