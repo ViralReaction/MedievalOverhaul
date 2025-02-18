@@ -53,12 +53,17 @@ namespace MedievalOverhaul
             float tabWidth = rect.width / TabNames.Length;
             for (int i = 0; i < TabNames.Length; i++)
             {
+                TextAnchor originalAnchor = Text.Anchor;
+
+                // Center the text
+                Text.Anchor = TextAnchor.MiddleCenter;
                 Rect tabRect = new Rect(rect.x + (i * tabWidth), rect.y, tabWidth, rect.height);
-                if (Widgets.ButtonTextSubtle(tabRect, TabNames[i]))
+                if (Widgets.ButtonText(tabRect, TabNames[i], true, true, new Color(0.8f, 0.85f, 1f), true, null))
                 {
                     selectedTab = i;
                     settings.lastSelectedTab = i;
                 }
+                Text.Anchor = originalAnchor;
             }
         }
         private void DrawGeneralSettings(Rect rect)
