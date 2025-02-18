@@ -17,7 +17,7 @@
 				</li>
 
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/RecipeDef/li/filter/thingDefs/li[.="Chemfuel"]</xpath>
+					<xpath>Defs/RecipeDef/li/filter/thingDefs/li[.="ComponentIndustrial"]</xpath>
 					<match Class="PatchOperationReplace">
 						<value>
 							<li>DankPyon_ComponentBasic</li>

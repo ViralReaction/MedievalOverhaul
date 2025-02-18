@@ -19,6 +19,11 @@ namespace MedievalOverhaul
         public bool woodChain = true;
         public bool clothChain = true;
 
+        //Agriculture
+        public bool soilWear = true;
+        public bool autoPlow = true;
+        public float soilWearChance = 0.5f;
+
         // Map Generation Stuff
         public bool industrialJunk = false;
         public bool exostriderRemains = false;
@@ -52,6 +57,10 @@ namespace MedievalOverhaul
             Scribe_Values.Look(ref leatherChain, "leatherChain", true);
             Scribe_Values.Look(ref woodChain, "woodChain", true);
             Scribe_Values.Look(ref clothChain, "clothChain", true);
+            //Agriculture
+            Scribe_Values.Look(ref autoPlow, "autoPlow", true);
+            Scribe_Values.Look(ref soilWear, "soilWear", true);
+
             Scribe_Values.Look(ref industrialJunk, "industrialJunk", false);
             Scribe_Values.Look(ref exostriderRemains, "exostriderRemains", false);
             Scribe_Values.Look(ref hornetNest, "hornetNest", false);
@@ -97,22 +106,31 @@ namespace MedievalOverhaul
             float scrollHeight = 500f;
             Rect viewRect = new Rect(rect.x, rect.y, rect.width - 16f, scrollHeight);
             Widgets.BeginScrollView(rect, ref scrollPosition, viewRect);
-            Listing_Standard listingStandard = new Listing_Standard();
-            listingStandard.Begin(rect);
-            listingStandard.Gap();
-            listingStandard.Gap();
-            listingStandard.Label((string)"DankPyon_Settings_ProductionChain".Translate());
-            listingStandard.CheckboxLabeled((string)"DankPyon_Settings_LeatherChain".Translate(), ref this.leatherChain, "DankPyon_Settings_LeatherChain_Tooltip".Translate());
-            listingStandard.CheckboxLabeled((string)"DankPyon_Settings_WoodChain".Translate(), ref this.woodChain, "DankPyon_Settings_WoodChain_Tooltip".Translate());
-            listingStandard.CheckboxLabeled((string)"DankPyon_Settings_ClothChain".Translate(), ref this.clothChain, "DankPyon_Settings_ClothChain_Tooltip".Translate());
-            listingStandard.Gap();
-            listingStandard.GapLine();
-            listingStandard.Gap();
-            if (listingStandard.ButtonText("Reset to Defaults"))
+            Listing_Custom options = new Listing_Custom();
+            options.Begin(rect);
+            options.Gap();
+            options .Gap();
+            options.Label((string)"DankPyon_Settings_ProductionChain".Translate());
+            options.CheckboxLabeled((string)"DankPyon_Settings_LeatherChain".Translate(), ref this.leatherChain, "DankPyon_Settings_LeatherChain_Tooltip".Translate());
+            options.CheckboxLabeled((string)"DankPyon_Settings_WoodChain".Translate(), ref this.woodChain, "DankPyon_Settings_WoodChain_Tooltip".Translate());
+            options.CheckboxLabeled((string)"DankPyon_Settings_ClothChain".Translate(), ref this.clothChain, "DankPyon_Settings_ClothChain_Tooltip".Translate());
+            options.Gap();
+            options.GapLine();
+            options.Gap();
+            options.CheckboxLabeled((string)"DankPyon_Settings_SoilWear".Translate(), ref this.soilWear, "DankPyon_Settings_SoilWear_Tooltip".Translate());
+            if (soilWear)
+            {
+                options.CheckboxLabeled((string)"DankPyon_Settings_AutoPlow".Translate(), ref this.autoPlow, "DankPyon_Settings_AutoPlow_Tooltip".Translate());
+                soilWearChance = options.CustomSliderLabel("DankPyon_Settings_SoilWearChance".Translate(), soilWearChance, 0f, 1f, 0.5f, "DankPyon_Settings_SoilWearChance_Tooltip".Translate(), (soilWearChance * 100).ToString("F2") + "%", 1f.ToString(), 0f.ToString(), 0.01f);
+            }
+            options.Gap();
+            options.GapLine();
+            options.Gap();
+            if (options.ButtonText("Reset to Defaults"))
             {
                 ResetSettingsToDefault();
             }
-            listingStandard.End();
+            options.End();
             Widgets.EndScrollView();
         }
 
@@ -215,9 +233,16 @@ namespace MedievalOverhaul
 
         public void ResetSettingsToDefault()
         {
+            //Production Chains
             leatherChain = true;
             woodChain = true;
             clothChain = true;
+
+
+            //Agriculture
+            soilWear = true;
+            autoPlow = true;
+            soilWearChance = 0.5f;
         }
 
         public void ResetSettingsToDefault_Misc()
