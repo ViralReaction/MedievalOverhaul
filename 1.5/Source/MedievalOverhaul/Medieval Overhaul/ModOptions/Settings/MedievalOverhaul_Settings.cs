@@ -31,12 +31,18 @@ namespace MedievalOverhaul
         public bool mealRetexture = true;
         public bool biotechSchematic = false;
         public bool slopDispenser = true;
+        public bool componentRepair = true;
 
         //Settlement Generation
         public bool StandaloneSettlementPreference_EnableSettlementPreference = true;
         public bool StandaloneSettlementPreference_Logging = false;
         public bool StandaloneSettlementPreference_LoggingExtended = false;
         public int StandaloneSettlementPreference_Iterations = 50;
+
+        // Experimental Toggles
+        public bool experimental_patches = false;
+        public bool chemfuel_replace = false;
+        public bool component_replace = false;
 
 
         public int lastSelectedTab = 0;
@@ -50,11 +56,7 @@ namespace MedievalOverhaul
             Scribe_Values.Look(ref exostriderRemains, "exostriderRemains", false);
             Scribe_Values.Look(ref hornetNest, "hornetNest", false);
             Scribe_Values.Look(ref vanillaMine, "vanillaMine", false);
-            Scribe_Values.Look(ref refuelableTorch, "refuelableTorch", false);
-            Scribe_Values.Look(ref boomalopeTar, "boomalopeTar", false);
-            Scribe_Values.Look(ref mealRetexture, "mealRetexture", true);
-            Scribe_Values.Look(ref biotechSchematic, "biotechSchematic", false);
-            Scribe_Values.Look(ref slopDispenser, "slopDispenser", true);
+            
             Scribe_Values.Look(ref debugMode, "debugMode", false);
             Scribe_Collections.Look(ref settingMode, "settingMode", LookMode.Value, LookMode.Value);
             Scribe_Values.Look(ref lastSelectedTab, "lastSelectedTab", 0);
@@ -62,6 +64,18 @@ namespace MedievalOverhaul
             Scribe_Values.Look(ref this.StandaloneSettlementPreference_Logging, "StandaloneSettlementPreference_Logging");
             Scribe_Values.Look(ref this.StandaloneSettlementPreference_LoggingExtended, "StandaloneSettlementPreference_LoggingExtended");
             Scribe_Values.Look(ref this.StandaloneSettlementPreference_Iterations, "StandaloneSettlementPreference_Iterations", 50);
+
+            // Misc Patches
+            Scribe_Values.Look(ref refuelableTorch, "refuelableTorch", false);
+            Scribe_Values.Look(ref boomalopeTar, "boomalopeTar", false);
+            Scribe_Values.Look(ref mealRetexture, "mealRetexture", true);
+            Scribe_Values.Look(ref biotechSchematic, "biotechSchematic", false);
+            Scribe_Values.Look(ref slopDispenser, "slopDispenser", true);
+            Scribe_Values.Look(ref componentRepair, "componentRepair", true);
+            //Experimental Patches
+            Scribe_Values.Look(ref experimental_patches, "experimental_patches", false);
+            Scribe_Values.Look(ref chemfuel_replace, "chemfuel_replace", false);
+            Scribe_Values.Look(ref component_replace, "component_replace", false);
 
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
@@ -94,17 +108,6 @@ namespace MedievalOverhaul
             listingStandard.Gap();
             listingStandard.GapLine();
             listingStandard.Gap();
-            listingStandard.Label((string)"DankPyon_Settings_MiscOption".Translate());
-            listingStandard.CheckboxLabeled((string)"DankPyon_Settings_SlopDispenser".Translate(), ref this.slopDispenser, "DankPyon_Settings_SlopDispenser_Tooltip".Translate());
-            listingStandard.CheckboxLabeled((string)"DankPyon_Settings_RefuelableTorch".Translate(), ref this.refuelableTorch, "DankPyon_Settings_RefuelableTorch_Tooltip".Translate());
-            listingStandard.CheckboxLabeled((string)"DankPyon_Settings_BoomalopeTar".Translate(), ref this.boomalopeTar, "DankPyon_Settings_BoomalopeTar_Tooltip".Translate());
-            listingStandard.CheckboxLabeled((string)"DankPyon_Settings_MealRetexture".Translate(), ref this.mealRetexture, "DankPyon_Settings_MealRetexture_Tooltip".Translate());
-            if (ModsConfig.BiotechActive)
-            {
-                listingStandard.CheckboxLabeled((string)"DankPyon_Settings_SchematicRework".Translate(), ref this.biotechSchematic, "DankPyon_Settings_SchematicRework_Tooltip".Translate());
-            }
-            listingStandard.GapLine();
-            listingStandard.Gap();
             if (listingStandard.ButtonText("Reset to Defaults"))
             {
                 ResetSettingsToDefault();
@@ -119,7 +122,6 @@ namespace MedievalOverhaul
             Rect viewRect = new Rect(inRect.x, inRect.y, inRect.width - 16f, scrollHeight);
             Widgets.BeginScrollView(inRect, ref scrollPosition, viewRect);
             Listing_Standard listingStandard = new Listing_Standard();
-
             listingStandard.Begin(inRect);
             listingStandard.Gap();
             listingStandard.Gap();
@@ -156,6 +158,48 @@ namespace MedievalOverhaul
             Widgets.EndScrollView();
         }
 
+        public void DoSettingsWindowContents_Misc(Rect inRect)
+        {
+            float scrollHeight = 500f;
+            Rect viewRect = new Rect(inRect.x, inRect.y, inRect.width - 16f, scrollHeight);
+            Widgets.BeginScrollView(inRect, ref scrollPosition, viewRect);
+            Listing_Custom options = new Listing_Custom();
+            options.Begin(inRect);
+            options.Gap();
+            options.Gap();
+            options.CheckboxLabeled((string)"DankPyon_Settings_SlopDispenser".Translate(), ref this.slopDispenser, "DankPyon_Settings_SlopDispenser_Tooltip".Translate());
+            options.CheckboxLabeled((string)"DankPyon_Settings_RefuelableTorch".Translate(), ref this.refuelableTorch, "DankPyon_Settings_RefuelableTorch_Tooltip".Translate());
+            options.CheckboxLabeled((string)"DankPyon_Settings_BoomalopeTar".Translate(), ref this.boomalopeTar, "DankPyon_Settings_BoomalopeTar_Tooltip".Translate());
+            options.CheckboxLabeled((string)"DankPyon_Settings_MealRetexture".Translate(), ref this.mealRetexture, "DankPyon_Settings_MealRetexture_Tooltip".Translate());
+            options.CheckboxLabeled((string)"DankPyon_Settings_ComponentRepair".Translate(), ref this.componentRepair, "DankPyon_Settings_ComponentRepair_Tooltip".Translate());
+            if (ModsConfig.BiotechActive)
+            {
+                options.CheckboxLabeled((string)"DankPyon_Settings_SchematicRework".Translate(), ref this.biotechSchematic, "DankPyon_Settings_SchematicRework_Tooltip".Translate());
+            }
+            options.Gap();
+            options.GapLine();
+            options.Gap();
+            Text.Font = GameFont.Medium;
+            options.CheckboxLabeled("DankPyon_Settings_Experimental".Translate(), ref this.experimental_patches, "DankPyon_Settings_Experimental_Desc".Translate());
+            Text.Font = GameFont.Small;
+            options.Gap();
+            if (experimental_patches)
+            {
+                options.CheckboxLabeled("DankPyon_Settings_Chemfuel_Replace_Title".Translate(), ref this.chemfuel_replace, "DankPyon_Settings_Chemfuel_Replace_Desc".Translate());
+                options.CheckboxLabeled("DankPyon_Settings_Component_Replace_Title".Translate(), ref this.component_replace, "DankPyon_Settings_Component_Replace_Desc".Translate());
+            }
+            options.GapLine();
+            options.Gap();
+            Rect rect = options.GetRect(30f);
+            TooltipHandler.TipRegion(rect, (TipSignal)"StandaloneSettlementPreference_ResetSettings".Translate());
+            if (Widgets.ButtonText(rect, (string)"StandaloneSettlementPreference_ResetSettings".Translate()))
+            {
+                ResetSettingsToDefault_Misc();
+            }
+            options.End();
+            Widgets.EndScrollView();
+        }
+
 
         public void ResetSettings()
         {
@@ -174,11 +218,20 @@ namespace MedievalOverhaul
             leatherChain = true;
             woodChain = true;
             clothChain = true;
+        }
+
+        public void ResetSettingsToDefault_Misc()
+        {
             slopDispenser = true;
             refuelableTorch = false;
             boomalopeTar = false;
             mealRetexture = true;
             biotechSchematic = false;
+
+            //Experimental Patches
+            experimental_patches = false;
+            chemfuel_replace = false;
+            component_replace = false;
 
         }
     }

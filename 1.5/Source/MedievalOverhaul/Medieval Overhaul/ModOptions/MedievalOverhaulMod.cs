@@ -12,7 +12,7 @@ namespace MedievalOverhaul
         private int selectedTab = 0;
        
 
-        private static readonly string[] TabNames = { "General", "Map Generation"};
+        private static readonly string[] TabNames = { "General", "Map Generation", "Misc"};
         public MedievalOverhaulSettings(ModContentPack content) : base(content)
         {
             settings = GetSettings<MedievalOverhaul_Settings>();
@@ -39,6 +39,9 @@ namespace MedievalOverhaul
                     break;
                 case 1:
                     DrawMapGenerationSettings(contentRect);
+                    break;
+                case 2:
+                    DrawMiscSettings(contentRect);
                     break;
                 
             }
@@ -73,6 +76,11 @@ namespace MedievalOverhaul
         private void DrawMapGenerationSettings(Rect rect)
         {
             settings.DoSettingsWindowContents_Settlement(rect);
+        }
+
+        private void DrawMiscSettings(Rect rect)
+        {
+            settings.DoSettingsWindowContents_Misc(rect);
         }
 
     }

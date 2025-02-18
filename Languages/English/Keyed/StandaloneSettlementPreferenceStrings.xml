@@ -15,5 +15,7 @@
 	<StandaloneSettlementPreference_EnableSettlementPreferenceTooltip>If enabled, factions that have the settlement preference mod extension will be more likely to settle in specific locations.\n\nThis can be toggled at any time, but will obviously require a new world to take effect.\n\nThis affects:</StandaloneSettlementPreference_EnableSettlementPreferenceTooltip>
 	<StandaloneSettlementPreference_Iterations>Maximum number of iterations for settlement preference</StandaloneSettlementPreference_Iterations>
 	<StandaloneSettlementPreference_IterationsTooltip>If settlement preference is unable to find a desirable tile within this number of iterations, it will revert control to RimWorld.\n\nDecreasing this may improve world generation times, while increasing it may allow for more desirable settlement locations.</StandaloneSettlementPreference_IterationsTooltip>
+	
+	<DankPyon_Settings_SettlementGeneration>Faction Settlement Generation</DankPyon_Settings_SettlementGeneration>
 
 </LanguageData>

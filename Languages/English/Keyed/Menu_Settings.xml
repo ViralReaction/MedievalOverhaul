@@ -49,5 +49,17 @@
 
 	<DankPyon_Settings_SlopDispenser>Medieval Nutrient Paste Dispenser:</DankPyon_Settings_SlopDispenser>
 	<DankPyon_Settings_SlopDispenser_Tooltip>Recommend turning off for industrial playthroughs.</DankPyon_Settings_SlopDispenser_Tooltip>
+	
+	<DankPyon_Settings_ComponentRepair>Medieval Component Repair:</DankPyon_Settings_ComponentRepair>
+	<DankPyon_Settings_ComponentRepair_Tooltip>Will repair medieval techlevel buildigns with basic components.</DankPyon_Settings_ComponentRepair_Tooltip>
+	
+	<!-- Experimental Patches -->
+	<DankPyon_Settings_Experimental>Experimental Patches</DankPyon_Settings_Experimental>
+	<DankPyon_Settings_Experimental_Desc>The below patches are completely experimental and dangerous. No support will be given for issues relating to them.</DankPyon_Settings_Experimental_Desc>
+	
+	<DankPyon_Settings_Chemfuel_Replace_Title>Chemfuel Replace:</DankPyon_Settings_Chemfuel_Replace_Title>
+	<DankPyon_Settings_Chemfuel_Replace_Desc>Replaces all chemfuel in recipes and cost lists with tar.</DankPyon_Settings_Chemfuel_Replace_Desc>
+	<DankPyon_Settings_Component_Replace_Title>Component Replace:</DankPyon_Settings_Component_Replace_Title>
+	<DankPyon_Settings_Component_Replace_Desc>Replaces all component in recipes and cost lists with MO's component. This does not change what is used to repair them.</DankPyon_Settings_Component_Replace_Desc>
 
 </LanguageData>
