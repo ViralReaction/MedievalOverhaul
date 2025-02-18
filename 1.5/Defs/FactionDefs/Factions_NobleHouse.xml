@@ -138,7 +138,7 @@
 		<settlementTexturePath>WorldObjects/MedievalSettlement</settlementTexturePath>
 
 		<modExtensions>
-			<li Class="StandaloneSettlementPreference.SettlementPreference">
+			<li Class="MedievalOverhaul.SettlementPreference">
 				<chance>0.8</chance>
 				<onlyRoad>true</onlyRoad>
 				<useTemperatureRange>true</useTemperatureRange>

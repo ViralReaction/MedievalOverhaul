@@ -4,10 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Verse;
 
-namespace StandaloneSettlementPreference
+namespace MedievalOverhaul
 {
     internal class SettlementPreferenceUtility
     {
@@ -16,9 +15,9 @@ namespace StandaloneSettlementPreference
             tileID = 0;
             bool defaultToVanilla = false;
             SettlementPreference modExt = SettlementPreference.Get((Def)faction.def);
-            int countMaxIterations = SettlementPreference_ModSettings.Count_MaxIterations;
-            bool flag = SettlementPreference_ModSettings.Enable_Logging;
-            bool flagExtra = SettlementPreference_ModSettings.Enable_LoggingExtra;
+            int countMaxIterations = MedievalOverhaulSettings.settings.StandaloneSettlementPreference_Iterations;
+            bool flag = MedievalOverhaulSettings.settings.StandaloneSettlementPreference_Logging;
+            bool flagExtra = MedievalOverhaulSettings.settings.StandaloneSettlementPreference_LoggingExtended;
             for (int index = 0; index < countMaxIterations; ++index)
             {
                 int result;

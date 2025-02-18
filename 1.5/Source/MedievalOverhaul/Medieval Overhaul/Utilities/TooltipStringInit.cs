@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace StandaloneSettlementPreference
+namespace MedievalOverhaul
 {
     [StaticConstructorOnStartup]
     public static class TooltipStringInit
