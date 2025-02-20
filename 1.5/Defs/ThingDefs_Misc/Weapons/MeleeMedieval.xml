@@ -975,8 +975,8 @@
 		</statBases>
 
 		<equippedStatOffsets>
-			<PlantHarvestYield>0.155</PlantHarvestYield>
-			<PlantWorkSpeed>0.155</PlantWorkSpeed>
+			<PlantHarvestYield>0.15</PlantHarvestYield>
+			<PlantWorkSpeed>0.15</PlantWorkSpeed>
 		</equippedStatOffsets>
 
 		<costStuffCount>20</costStuffCount>
@@ -1332,7 +1332,6 @@
 
 		<weaponTags>
 			<li>DankPyon_Swordlance</li>
-
 			<li>MedievalMeleeDecent</li>
 		</weaponTags>
 
@@ -1435,7 +1434,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.15</uiIconScale>
-		<equippedAngleOffset>-65</equippedAngleOffset>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
 
 		<statBases>
 			<WorkToMake>6000</WorkToMake>
@@ -1497,7 +1496,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.15</uiIconScale>
-		<equippedAngleOffset>-65</equippedAngleOffset>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
 
 		<statBases>
 			<WorkToMake>6000</WorkToMake>
@@ -1560,7 +1559,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.15</uiIconScale>
-		<equippedAngleOffset>-65</equippedAngleOffset>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
 
 		<statBases>
 			<WorkToMake>7000</WorkToMake>
@@ -1622,7 +1621,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<uiIconScale>1.15</uiIconScale>
-		<equippedAngleOffset>-65</equippedAngleOffset>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
 
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
@@ -1689,9 +1688,9 @@
 			<Mass>3</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<ConstructionSpeed>0.150</ConstructionSpeed>
-			<ConstructSuccessChance>0.155</ConstructSuccessChance>
-			<GeneralLaborSpeed>0.150</GeneralLaborSpeed>
+			<ConstructionSpeed>0.10</ConstructionSpeed>
+			<ConstructSuccessChance>0.15</ConstructSuccessChance>
+			<GeneralLaborSpeed>0.10</GeneralLaborSpeed>
 		</equippedStatOffsets>
 
 		<costStuffCount>100</costStuffCount>
@@ -1891,7 +1890,7 @@
 			<Mass>1.5</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<ButcheryFleshEfficiency>0.150</ButcheryFleshEfficiency>
+			<ButcheryFleshEfficiency>0.10</ButcheryFleshEfficiency>
 			<ButcheryFleshSpeed>0.25</ButcheryFleshSpeed>
 		</equippedStatOffsets>
 
@@ -2018,7 +2017,7 @@
 			<Mass>1.75</Mass>
 		</statBases>
 		<equippedStatOffsets>
-			<PlantHarvestYield>0.155</PlantHarvestYield>
+			<PlantHarvestYield>0.15</PlantHarvestYield>
 			<PlantWorkSpeed>0.25</PlantWorkSpeed>
 		</equippedStatOffsets>
 
@@ -2842,7 +2841,7 @@
 
 		<statBases>
 			<MaxHitPoints>280</MaxHitPoints>
-			<MarketValue>5810</MarketValue>
+			<MarketValue>6810</MarketValue>
 			<WorkToMake>48000</WorkToMake>
 			<Mass>3</Mass>
 		</statBases>
@@ -3000,7 +2999,6 @@
 						<angleOffset>45</angleOffset>
 					</west>
 				</weaponDraftedDrawOffsets>
-				<meleeRangeOverride>2.84</meleeRangeOverride>
 			</li>
 		</modExtensions>
 		<!-- <equippedAngleOffset>-45</equippedAngleOffset> -->
@@ -3211,6 +3209,5 @@
 			<drawSize>1.5</drawSize>
 		</graphicData>
 	</ThingDef>
-
 
 </Defs>
