@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<!-- ==================== Blunt Base ==================== -->
+
+	<ThingDef Name="DankPyon_Base_Blunt_NormalSize" Abstract="True" ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(-0.15,0.0,0.10)</drawOffset> <!--0.30,0,0.40-->
+						<angleOffset>100</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.10,0.00,0.10)</drawOffset> <!--0.30,0.2,0.40-->
+						<angleOffset>-15</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0.15,0.00,0.10)</drawOffset>
+						<angleOffset>-15</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.10,0.0,0.10)</drawOffset>
+						<angleOffset>15</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<uiIconScale>1.2</uiIconScale>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<!-- ==================== Two-Handed Blunt Base ==================== -->
+
+	<ThingDef Name="DankPyon_Base_Blunt_Oversize" Abstract="True" ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0.25,0,0.25)</drawOffset>
+						<angleOffset>190</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(-0.05,0,0.25)</drawOffset>
+						<angleOffset>-120</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.25,0,0.25)</drawOffset>
+						<angleOffset>-120</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(0.05,0,0.25)</drawOffset>
+						<angleOffset>120</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
+		<!-- <equippedAngleOffset>45</equippedAngleOffset> -->
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<!-- ==================== Sharp Spear Base ==================== -->
+
+	<ThingDef Name="DankPyon_Base_SharpSpear_NormalSize" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0.34,0,0.30)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.10,0,0.30)</drawOffset>
+						<angleOffset>-122</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.34,0,0.30)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.10,0,0.30)</drawOffset>
+						<angleOffset>122</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<!-- ==================== Two-Handed Sharp Spear Base ==================== -->
+
+	<ThingDef Name="DankPyon_Base_SharpSpear_Oversize" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0.34,0,0.60)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.15,0,0.60)</drawOffset>
+						<angleOffset>-122</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.34,0,0.60)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.15,0,0.60)</drawOffset>
+						<angleOffset>122</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+				<meleeRangeOverride>2.84</meleeRangeOverride>
+			</li>
+		</modExtensions>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<!-- ==================== Sharp Axe Base ==================== -->
+
+	<ThingDef Name="DankPyon_Base_SharpAxe_NormalSize" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(-0.15,0.0,0.10)</drawOffset> <!--0.30,0,0.40-->
+						<angleOffset>100</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.10,0.00,0.10)</drawOffset> <!--0.30,0.2,0.40-->
+						<angleOffset>-15</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0.15,0.00,0.10)</drawOffset>
+						<angleOffset>-15</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.10,0.0,0.10)</drawOffset>
+						<angleOffset>15</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<!-- ==================== Two-Handed Sharp Axe Base ==================== -->
+
+	<ThingDef Name="DankPyon_Base_SharpAxe_Oversize" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(-0.20,0.0,0.20)</drawOffset> <!--0.30,0,0.40-->
+						<angleOffset>115</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.30,0.00,0.20)</drawOffset> <!--0.30,0.2,0.40-->
+						<angleOffset>-45</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0.30,0.00,0.20)</drawOffset>
+						<angleOffset>-45</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.30,0.0,0.20)</drawOffset>
+						<angleOffset>45</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
+		<!-- <equippedAngleOffset>-45</equippedAngleOffset> -->
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<!-- ==================== Sharp Sword Base ==================== -->
+
+	<ThingDef Name="DankPyon_Base_SharpSword_NormalSize" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(-0.15,0.0,0.10)</drawOffset> <!--0.30,0,0.40-->
+						<angleOffset>100</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.10,0.00,0.10)</drawOffset> <!--0.30,0.2,0.40-->
+						<angleOffset>-15</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0.15,0.00,0.10)</drawOffset>
+						<angleOffset>-15</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.10,0.0,0.10)</drawOffset>
+						<angleOffset>15</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+				<usableWithShields>true</usableWithShields>
+			</li>
+		</modExtensions>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<!-- ==================== Two-Handed Sharp Sword Base ==================== -->
+
+	<ThingDef Name="DankPyon_Base_SharpSword_Oversize" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(-0.20,0.0,0.20)</drawOffset> <!--0.30,0,0.40-->
+						<angleOffset>115</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.30,0.00,0.20)</drawOffset> <!--0.30,0.2,0.40-->
+						<angleOffset>-45</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0.30,0.00,0.20)</drawOffset>
+						<angleOffset>-45</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.30,0.0,0.20)</drawOffset>
+						<angleOffset>45</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
+		<!--equippedAngleOffset>-45</equippedAngleOffset-->
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<!-- ==================== Swords ==================== -->
+
+	<ThingDef ParentName="DankPyon_Base_SharpSword_NormalSize">
+		<defName>DankPyon_MeleeWeapon_Falchion</defName>
+		<label>falchion</label>
+		<description>A stout, broad-bladed falchion, often found in the hands of militiamen and peasantry due to the ease of its manufacture and use. Best used for slashing, but can still thrust in a pinch.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Swords/Falchion</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>13000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+
+		<costStuffCount>55</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+
+		<weaponTags>
+			<li>DankPyon_Falchion</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.1</cooldownTime>
+				<armorPenetration>0.2</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_BasicBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_SharpSword_NormalSize">
+		<defName>DankPyon_MeleeWeapon_ArmingSword</defName>
+		<label>arming sword</label>
+		<description>Many warriors see their weapons as tools, and so the most common swords are those most practical. Arming swords, praised for their light weight, fullered blade, and efficient craftsmanship, prove useful for both novices and veterans alike. Swords can bring warriors wealth, so when choosing the tool for warfare, one would be lucky to wield an arming sword.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Swords/Armingsword1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>14500</WorkToMake>
+			<Mass>1.25</Mass>
+		</statBases>
+
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+
+		<weaponTags>
+			<li>DankPyon_ArmingSword</li>
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>19.25</power>
+				<cooldownTime>2.15</cooldownTime>
+				<armorPenetration>0.2</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_MilitaryBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_SharpSword_NormalSize">
+		<defName>DankPyon_MeleeWeapon_FencingSword</defName>
+		<label>fencing sword</label>
+		<description>An elegant weapon both light and deadly, the fencing sword requires great skill to use effectively. However, mastery of such a weapon can lead duelists to many victories even against mails, as precise strikes can pierce weak points.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Swords/FencingSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>0.85</Mass>
+		</statBases>
+
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+
+		<weaponTags>
+			<li>DankPyon_FencingSword</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>18.25</power>
+				<cooldownTime>2.05</cooldownTime>
+				<armorPenetration>0.2</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_SharpSword_NormalSize">
+		<defName>DankPyon_MeleeWeapon_NobleSword</defName>
+		<label>noble sword</label>
+		<description>A well forged and masterfully balanced arming sword, ornately decorated and finely finished. Both a fine weapon and a work of art.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Swords/NobleSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+
+		<weaponTags>
+			<li>DankPyon_NobleSword</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>21.15</power>
+				<cooldownTime>2.21</cooldownTime>
+				<armorPenetration>0.2</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	
+	<!-- ==================== Two-Handed Swords ==================== -->
+
+	<ThingDef ParentName="DankPyon_Base_SharpSword_Oversize">
+		<defName>DankPyon_MeleeWeapon_Longsword</defName>
+		<label>longsword</label>
+		<description>Where shorter and lighter blades are most useful in shield walls, the longsword shines in skirmishes and duels. By increasing the length, and consequently ditching a shield, a warrior can increase reach to inflict high damage through swings and even thrusts. Do not assume that the increased size brings increased weight, as a swift strike from a longsword has caught many enemies off-guard.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Swords/Longsword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.25,1.25)</drawSize>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+
+		<weaponTags>
+			<li>DankPyon_Longsword</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>26</power>
+				<cooldownTime>2.79</cooldownTime>
+				<armorPenetration>0.25</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_MilitaryBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_SharpSword_Oversize">
+		<defName>DankPyon_MeleeWeapon_Greatsword</defName>
+		<label>Greatsword</label>
+		<description>A humongous, two-handed sword with a long blade, capable of cleaving enemies with fierce swings and chops. Decent at long thrusts as well.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Swords/Greatsword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.25,1.25)</drawSize>
+		</graphicData>
+		<modExtensions Inherit="False">
+			<li Class="VFECore.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(-0.20,0.0,0.20)</drawOffset> <!--0.30,0,0.40-->
+						<angleOffset>115</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.30,0.00,0.20)</drawOffset> <!--0.30,0.2,0.40-->
+						<angleOffset>-45</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0.30,0.00,0.20)</drawOffset>
+						<angleOffset>-45</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.30,0.0,0.20)</drawOffset>
+						<angleOffset>45</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+				<meleeRangeOverride>2.84</meleeRangeOverride>
+			</li>
+		</modExtensions>
+
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+
+		<costStuffCount>150</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+
+		<weaponTags>
+			<li>DankPyon_Greatsword</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>31.25</power>
+				<cooldownTime>3.15</cooldownTime>
+				<armorPenetration>0.25</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>
