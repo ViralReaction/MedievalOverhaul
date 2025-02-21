@@ -9,7 +9,7 @@ namespace MedievalOverhaul
     {
         private static readonly Vector2 WinSize = new (300f, 480f);
         private readonly ThingFilterUI_Fuel.UIState fuelFilterState = new ();
-        private List<ICompFuelHandler> _cachedFuelBuildings = new();
+        private List<ICompFuelHandler> _cachedFuelBuildings = [];
         private IList<object> _lastSelectedObjects;
 
         protected Building SelBuilding => (Building)this.SelThing;
@@ -75,10 +75,9 @@ namespace MedievalOverhaul
             if (_lastSelectedObjects == null || _lastSelectedObjects.Count != selectedObjects.Count)
                 return true;
 
-            HashSet<object> currentSelection = new(selectedObjects);
             for (int i = 0; i < _lastSelectedObjects.Count; i++)
             {
-                if (!currentSelection.Contains(_lastSelectedObjects[i]))
+                if (!selectedObjects.Contains(_lastSelectedObjects[i]))
                     return true;
             }
             return false;
