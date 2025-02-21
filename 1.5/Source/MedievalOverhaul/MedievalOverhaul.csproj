@@ -154,6 +154,7 @@
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DoMending.cs" />
     <Compile Include="Medieval Overhaul\Utilities\CustomWidget.cs" />
     <Compile Include="Medieval Overhaul\Utilities\Listing_Custom.cs" />
+    <Compile Include="Medieval Overhaul\Utilities\Setting_Utility.cs" />
     <Compile Include="Medieval Overhaul\Utilities\WindMillUtility.cs" />
     <Compile Include="Medieval Overhaul\Utilities\SitePartWorker_WorkSite_Hunting.cs" />
     <Compile Include="Medieval Overhaul\Utilities\MayRequireCEAttribute.cs" />

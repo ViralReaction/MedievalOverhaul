@@ -47,9 +47,12 @@ namespace MedievalOverhaul
             }
 
         }
+
         public override void WriteSettings()
         {
             base.WriteSettings();
+
+            Setting_Utility.UpdateSettings();
         }
         private void DrawTabs(Rect rect)
         {

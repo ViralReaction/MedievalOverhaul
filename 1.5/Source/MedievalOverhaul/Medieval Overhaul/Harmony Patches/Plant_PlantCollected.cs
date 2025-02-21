@@ -1,14 +1,14 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using UnityEngine.UIElements;
 using Verse;
-using Verse.Noise;
+
 
 namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(Plant), nameof(Plant.PlantCollected))]
     public static class Plant_PlantCollected
     {
+        public static float TerrainFertilityMax => MedievalOverhaulDefOf.DankPyon_PlowedSoil.fertility;
         public static bool Prepare()
         {
             return MedievalOverhaulSettings.settings.soilWear;
@@ -20,15 +20,16 @@ namespace MedievalOverhaul.Patches
         public static void Postfix(Plant __instance, Map __state)
         {
             var terrainGrid = __state.terrainGrid;
-            if (terrainGrid.TerrainAt(__instance.Position).defName == "DankPyon_PlowedSoil")
+            var position = __instance.Position;
+            if (terrainGrid.TerrainAt(position).defName == "DankPyon_PlowedSoil")
             {
 
                 if (Rand.Chance(MedievalOverhaulSettings.settings.soilWearChance))
                 {
-                    terrainGrid.RemoveTopLayer(__instance.Position);
-                    if (MedievalOverhaulSettings.settings.autoPlow)
+                    terrainGrid.RemoveTopLayer(position);
+                    if (MedievalOverhaulSettings.settings.autoPlow && TerrainFertilityMax >= terrainGrid.TerrainAt(position).fertility)
                     {
-                        GenConstruct.PlaceBlueprintForBuild(MedievalOverhaulDefOf.DankPyon_PlowedSoil, __instance.Position, __state, Rot4.North, Faction.OfPlayer, (ThingDef)null);
+                        GenConstruct.PlaceBlueprintForBuild(MedievalOverhaulDefOf.DankPyon_PlowedSoil, position, __state, Rot4.North, Faction.OfPlayer, (ThingDef)null);
                     }
                 }
             }

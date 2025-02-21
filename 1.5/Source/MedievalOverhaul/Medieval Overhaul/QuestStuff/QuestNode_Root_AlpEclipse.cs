@@ -73,7 +73,7 @@ namespace MedievalOverhaul
 
         private static readonly FloatRange InitialPhaseDurationDaysRange = new FloatRange(0.25f, 0.50f);
 
-        private static readonly FloatRange MainPhaseDurationDaysRange = new FloatRange(2f, 3f);
+        private static readonly FloatRange MainPhaseDurationDaysRange = new FloatRange(0.75f, 1.25f);
 
     }
 }

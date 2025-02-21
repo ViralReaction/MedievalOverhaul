@@ -26,6 +26,9 @@
 	<DankPyon_Settings_SoilWearChance>Wear Out Chance:</DankPyon_Settings_SoilWearChance>
 	<DankPyon_Settings_SoilWearChance_Tooltip>Chance that the soil be worn out after harvesting plant.</DankPyon_Settings_SoilWearChance_Tooltip>
 	
+	<DankPyon_Settings_SoilFertility>Plowed Soil Fertility:</DankPyon_Settings_SoilFertility>
+	<DankPyon_Settings_SoilFertility_Tooltip>Changes the fertility rate of plowed soil.</DankPyon_Settings_SoilFertility_Tooltip>
+	
 	
 
 	<!-- Map Generation Stuff -->

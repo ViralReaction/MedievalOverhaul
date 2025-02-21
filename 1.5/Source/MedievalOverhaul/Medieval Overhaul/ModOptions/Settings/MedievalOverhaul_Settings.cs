@@ -23,6 +23,7 @@ namespace MedievalOverhaul
         public bool soilWear = true;
         public bool autoPlow = true;
         public float soilWearChance = 0.5f;
+        public float plowedFertility = 1.25f;
 
         // Map Generation Stuff
         public bool industrialJunk = false;
@@ -60,6 +61,8 @@ namespace MedievalOverhaul
             //Agriculture
             Scribe_Values.Look(ref autoPlow, "autoPlow", true);
             Scribe_Values.Look(ref soilWear, "soilWear", true);
+            Scribe_Values.Look(ref soilWearChance, "soilWearChance", 0.5f);
+            Scribe_Values.Look(ref plowedFertility, "plowedFertility", 1.25f);
 
             Scribe_Values.Look(ref industrialJunk, "industrialJunk", false);
             Scribe_Values.Look(ref exostriderRemains, "exostriderRemains", false);
@@ -123,6 +126,8 @@ namespace MedievalOverhaul
                 options.CheckboxLabeled((string)"DankPyon_Settings_AutoPlow".Translate(), ref this.autoPlow, "DankPyon_Settings_AutoPlow_Tooltip".Translate());
                 soilWearChance = options.CustomSliderLabel("DankPyon_Settings_SoilWearChance".Translate(), soilWearChance, 0f, 1f, 0.5f, "DankPyon_Settings_SoilWearChance_Tooltip".Translate(), (soilWearChance * 100).ToString("F2") + "%", 1f.ToString(), 0f.ToString(), 0.01f);
             }
+            options.Gap();
+            plowedFertility = options.CustomSliderLabel("DankPyon_Settings_SoilFertility".Translate(), plowedFertility, 1f, 1.4f, 0.5f, "DankPyon_Settings_SoilFertility_Tooltip".Translate(), (plowedFertility * 100).ToString("F2") + "%", 1.4f.ToString(), 1f.ToString(), 0.01f);
             options.Gap();
             options.GapLine();
             options.Gap();
@@ -243,6 +248,7 @@ namespace MedievalOverhaul
             soilWear = true;
             autoPlow = true;
             soilWearChance = 0.5f;
+            plowedFertility = 1.25f;
         }
 
         public void ResetSettingsToDefault_Misc()

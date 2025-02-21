@@ -6,6 +6,7 @@
 		<label>plowed soil</label>
 		<description>Plow the soil to increase its fertility.</description>
 		<texturePath>Terrain/PlowedSoil</texturePath>
+		<uiIconPath>UI/Plow_Icon</uiIconPath>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>350</renderPrecedence>
 		<layerable>true</layerable>
