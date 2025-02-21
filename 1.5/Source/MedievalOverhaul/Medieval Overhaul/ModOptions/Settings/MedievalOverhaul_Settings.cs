@@ -120,6 +120,7 @@ namespace MedievalOverhaul
             options.Gap();
             options.GapLine();
             options.Gap();
+            options.Label((string)"DankPyon_Settings_ProductionChain".Translate());
             options.CheckboxLabeled((string)"DankPyon_Settings_SoilWear".Translate(), ref this.soilWear, "DankPyon_Settings_SoilWear_Tooltip".Translate());
             if (soilWear)
             {
