@@ -17,7 +17,7 @@ namespace MedievalOverhaul
         public static ModContentPack myContentPack = LoadedModManager.GetMod<MedievalOverhaulSettings>().Content;
         public static bool CEIsEnabled = LoadedModManager.RunningModsListForReading.Any<ModContentPack>((Predicate<ModContentPack>)(x => x.PackageId == "ceteam.combatextended"));
         public static bool VBEIsEnabled = ModsConfig.IsActive("VanillaExpanded.VBooksE");
-        public static bool LWMFuelFilterIsEnabled = ModsConfig.IsActive("lwm.fuelfilter");
+        public static bool LWMFuelFilterIsEnabled = ModsConfig.IsActive("zal.lwmfuelfilter");
         public static RoomRoleDef DankPyon_Library;
         public static ThoughtDef DankPyon_ReadInLibrary;
        

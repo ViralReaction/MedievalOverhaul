@@ -81,7 +81,7 @@ namespace MedievalOverhaul
                 if (compRefuelableCustomRef != null && !compRefuelableCustomRef.HasFuel)
                 {
                     ++num;
-                    this.pausedReason = (string)"ESCP_Tools_ThingProducer_Reason_nutrition".Translate();
+                    this.pausedReason = (string)"ESCP_Tools_ThingProducer_Reason_fuel".Translate();
                 }
             }
             if (this.Props.requirePower)

@@ -42,8 +42,21 @@
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>LWM's Fuel Filter</li>
+			<li>LWM's Fuel Filter (Continued)</li>
 		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[not (defName="DankPyon_Apiary")][not (defName="DankPyon_BirdPost")]/inspectorTabs/li[.="MedievalOverhaul.ITab_Fuel"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef/comps/li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"]</xpath>
+				</li>
+				
+			</operations>
+		</match>
 		<nomatch Class="PatchOperationSequence">
 			<operations>
 
