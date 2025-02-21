@@ -1722,7 +1722,7 @@
 		<designationCategory>Production</designationCategory>
 		<techLevel>Medieval</techLevel>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_StewPot</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 	</ThingDef>
 
