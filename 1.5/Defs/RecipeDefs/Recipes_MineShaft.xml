@@ -185,7 +185,7 @@
 		<defName>DankPyon_MakeOre_IronOre</defName>
 		<description>Mine deep down underground to obtain iron ore</description>
 		<workAmount>900</workAmount>
-		<label>mine an iron ore</label>
+		<label>mine iron ore</label>
 		<jobString>Mining 1 iron ore.</jobString>
 		<products>
 			<DankPyon_IronOre>1</DankPyon_IronOre>
@@ -207,7 +207,7 @@
 		<defName>DankPyon_MakeOre_SilverOre</defName>
 		<description>Mine deep down underground to obtain silver ore</description>
 		<workAmount>600</workAmount>
-		<label>mine a silver ore</label>
+		<label>mine silver ore</label>
 		<jobString>Mining 1 silver ore.</jobString>
 		<products>
 			<DankPyon_SilverOre>1</DankPyon_SilverOre>

@@ -18,6 +18,7 @@ namespace MedievalOverhaul
         public bool leatherChain = true;
         public bool woodChain = true;
         public bool clothChain = true;
+        public bool metalChain = true;
 
         //Agriculture
         public bool soilWear = true;
@@ -58,6 +59,7 @@ namespace MedievalOverhaul
             Scribe_Values.Look(ref leatherChain, "leatherChain", true);
             Scribe_Values.Look(ref woodChain, "woodChain", true);
             Scribe_Values.Look(ref clothChain, "clothChain", true);
+            Scribe_Values.Look(ref metalChain, "metalChain", true);
             //Agriculture
             Scribe_Values.Look(ref autoPlow, "autoPlow", true);
             Scribe_Values.Look(ref soilWear, "soilWear", true);
@@ -117,10 +119,11 @@ namespace MedievalOverhaul
             options.CheckboxLabeled((string)"DankPyon_Settings_LeatherChain".Translate(), ref this.leatherChain, "DankPyon_Settings_LeatherChain_Tooltip".Translate());
             options.CheckboxLabeled((string)"DankPyon_Settings_WoodChain".Translate(), ref this.woodChain, "DankPyon_Settings_WoodChain_Tooltip".Translate());
             options.CheckboxLabeled((string)"DankPyon_Settings_ClothChain".Translate(), ref this.clothChain, "DankPyon_Settings_ClothChain_Tooltip".Translate());
+            options.CheckboxLabeled((string)"DankPyon_Settings_MetalChain".Translate(), ref this.metalChain, "DankPyon_Settings_MetalChain_Tooltip".Translate());
             options.Gap();
             options.GapLine();
             options.Gap();
-            options.Label((string)"DankPyon_Settings_ProductionChain".Translate());
+            options.Label((string)"DankPyon_Settings_Agriculture".Translate());
             options.CheckboxLabeled((string)"DankPyon_Settings_SoilWear".Translate(), ref this.soilWear, "DankPyon_Settings_SoilWear_Tooltip".Translate());
             if (soilWear)
             {
@@ -154,6 +157,10 @@ namespace MedievalOverhaul
             listingStandard.CheckboxLabeled((string)"DankPyon_Settings_ExostriderRemains".Translate(), ref this.exostriderRemains, "DankPyon_Settings_ExostriderRemains_Tooltip".Translate());
             listingStandard.CheckboxLabeled((string)"DankPyon_Settings_HornetNest".Translate(), ref this.hornetNest, "DankPyon_Settings_HornetNest_Tooltip".Translate());
             listingStandard.CheckboxLabeled((string)"DankPyon_Settings_VanillaMine".Translate(), ref this.vanillaMine, "DankPyon_Settings_VanillaMine_Tooltip".Translate());
+            if (metalChain == false)
+            {
+                vanillaMine = true;
+            }
             listingStandard.Gap();
             listingStandard.GapLine();
             listingStandard.Gap();
@@ -243,6 +250,7 @@ namespace MedievalOverhaul
             leatherChain = true;
             woodChain = true;
             clothChain = true;
+            metalChain = true;
 
 
             //Agriculture

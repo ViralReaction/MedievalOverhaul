@@ -14,7 +14,10 @@
 	<DankPyon_Settings_WoodChain_Tooltip>Enables timber production chain, where trees give logs that have to be cut into planks for more use.</DankPyon_Settings_WoodChain_Tooltip>
 	
 	<DankPyon_Settings_ClothChain>Cloth Production Chain:</DankPyon_Settings_ClothChain>
-	<DankPyon_Settings_ClothChain_Tooltip>Enables the cloth production chain, where raw materials from plans have to be spun into cloth.</DankPyon_Settings_ClothChain_Tooltip>
+	<DankPyon_Settings_ClothChain_Tooltip>Enables the cloth production chain, where raw materials from plants have to be spun into cloth.</DankPyon_Settings_ClothChain_Tooltip>
+	
+	<DankPyon_Settings_MetalChain>Metal Production Chain:</DankPyon_Settings_MetalChain>
+	<DankPyon_Settings_MetalChain_Tooltip>Enables the metal production chain, where raw ores must be smelted into ingots before use. Vanilla mineables will be forced on if this is inactive.</DankPyon_Settings_MetalChain_Tooltip>
 	
 	<!-- Agriculture Options -->
 	<DankPyon_Settings_Agriculture>Agriculture Options</DankPyon_Settings_Agriculture>
