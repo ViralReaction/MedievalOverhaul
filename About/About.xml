@@ -8,7 +8,7 @@
 		<li>1.5</li>
     </supportedVersions>
 	<packageId>DankPyon.Medieval.Overhaul</packageId>
-	<modVersion IgnoreIfNoMatchingField="True">1.5.12</modVersion>
+	<modVersion IgnoreIfNoMatchingField="True">1.5.13</modVersion>
 	<loadAfter>
 		<li>brrainz.harmony</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
@@ -25,7 +25,6 @@
 		<li>aoba.fortress.medieval.material</li>
 		<li>farxmai2.dbh.expanded</li>
 		<li>vanillaexpanded.vfearchitect</li>
-		<li>aelanna.betterpyromania</li>
 		<li>MrHydralisk.VOEAdditionalOutposts</li>
 	</loadAfter>
 	<forceLoadAfter>
