@@ -8,7 +8,7 @@
 		<workType>Growing</workType>
 		<verb>plow</verb>
 		<gerund>plowing</gerund>
-		<priorityInType>80</priorityInType>
+		<priorityInType>30</priorityInType>
 	</WorkGiverDef>
 	
 	<WorkGiverDef>
@@ -18,17 +18,7 @@
 		<workType>Growing</workType>
 		<verb>plow</verb>
 		<gerund>plowing</gerund>
-		<priorityInType>70</priorityInType>
-	</WorkGiverDef>
-	
-	<WorkGiverDef>
-		<defName>DankPyon_PlowSoil_DeliverResourcesToFrames</defName>
-		<label>plow soil</label>		
-		<giverClass>VFECore.WorkGiver_ConstructionSkill_DeliverResourcesToFrames</giverClass>
-		<workType>Growing</workType>
-		<verb>plow</verb>
-		<gerund>plowing</gerund>
-		<priorityInType>60</priorityInType>
+		<priorityInType>45</priorityInType>
 	</WorkGiverDef>
 
 </Defs>
