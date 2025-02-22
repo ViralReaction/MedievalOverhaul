@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<!-- ==================== Cleavers ==================== -->
+
+	<ThingDef ParentName="DankPyon_Base_SharpAxe_NormalSize">
+		<defName>DankPyon_MeleeWeapon_ButcherCleaver</defName>
+		<label>butcher's cleaver</label>
+		<description>A heavy blade used for chopping meat and bone, the cleaver excels for preparing food and dismembering animals. However, its sharp edge also makes it effective as a deadly weapon.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Cleavers/ButchersCleaver</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
+
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<ButcheryFleshEfficiency>0.10</ButcheryFleshEfficiency>
+			<ButcheryFleshSpeed>0.25</ButcheryFleshSpeed>
+		</equippedStatOffsets>
+
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>20</WoodLog>
+		</costList>
+
+		<weaponTags>
+			<li>DankPyon_Hatchet</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>16.75</power>
+				<cooldownTime>2.16</cooldownTime>
+				<armorPenetration>0.3</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_BasicBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- ==================== Axes ==================== -->
+	
+	<ThingDef ParentName="DankPyon_Base_SharpAxe_NormalSize">
+		<defName>DankPyon_MeleeWeapon_Hatchet</defName>
+		<label>hatchet</label>
+		<description>A primitive tool used by apprentice lumberjacks, the hatchet is useful for both woodworking and chopping attacks. A great and accessible alternative to swords should the enemy hide behind a shield wall.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Axes/Hatchet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
+
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<PlantHarvestYield>0.155</PlantHarvestYield>
+			<PlantWorkSpeed>0.155</PlantWorkSpeed>
+		</equippedStatOffsets>
+
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>20</WoodLog>
+		</costList>
+
+		<weaponTags>
+			<li>DankPyon_Hatchet</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>16.75</power>
+				<cooldownTime>2.16</cooldownTime>
+				<armorPenetration>0.3</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_BasicBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_SharpAxe_NormalSize">
+		<defName>DankPyon_MeleeWeapon_Handaxe</defName>
+		<label>handaxe</label>
+		<description>A longer version of the hatchet, the handaxe’s long shaft allows for stronger swings at a distance. Due to its easy use and practicality, this axe is a favorite against shielded enemies.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Axes/Handaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
+
+		<statBases>
+			<WorkToMake>7500</WorkToMake>
+			<Mass>1.75</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<PlantHarvestYield>0.15</PlantHarvestYield>
+			<PlantWorkSpeed>0.25</PlantWorkSpeed>
+		</equippedStatOffsets>
+
+		<costStuffCount>35</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>25</WoodLog>
+		</costList>
+
+		<weaponTags>
+			<li>DankPyon_Handaxe</li>
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>18.25</power>
+				<cooldownTime>2.2</cooldownTime>
+				<armorPenetration>0.3</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_MilitaryBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_SharpAxe_NormalSize">
+		<defName>DankPyon_MeleeWeapon_FightingAxe</defName>
+		<label>fighting axe</label>
+		<description>A variation of the axe forged for the sole purpose of warfare, with a sturdy metal head for splitting shields and sharp points for puncturing mail. Strong damage, but short range.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Axes/FightingAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
+
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>2.25</Mass>
+		</statBases>
+
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+
+		<weaponTags>
+			<li>DankPyon_FightingAxe</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.35</cooldownTime>
+				<armorPenetration>0.3</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- ==================== Two-Handed Axes ==================== -->
+
+	<ThingDef ParentName="DankPyon_Base_SharpAxe_Oversize">
+		<defName>DankPyon_MeleeWeapon_WoodcuttersAxe</defName>
+		<label>woodcutter's axe</label>
+		<description>A long axe used by experienced lumberjacks and brigands alike due to its long shaft and heavy sharp head. The design makes the two-handed axe great for chopping down trees as well as chopping down an enemy.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Axes/WoodcuttersAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
+
+		<statBases>
+			<WorkToMake>7500</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<PlantHarvestYield>0.20</PlantHarvestYield>
+			<PlantWorkSpeed>0.30</PlantWorkSpeed>
+		</equippedStatOffsets>
+
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>60</WoodLog>
+		</costList>
+
+		<weaponTags>
+			<li>DankPyon_WoodcuttersAxe</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>23.5</power>
+				<cooldownTime>2.9</cooldownTime>
+				<armorPenetration>0.4</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_BasicBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_SharpAxe_Oversize">
+		<defName>DankPyon_MeleeWeapon_Bardiche</defName>
+		<label>bardiche</label>
+		<description>An axe inspired by pikes, the bardiche features an axe head extended like a pike’s head. The design makes this two-handed weapon adaptable to many situations, as it can split unarmored enemies just as easily as it can split a shield.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Axes/Bardiche</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
+
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>2.75</Mass>
+		</statBases>
+
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>70</WoodLog>
+		</costList>
+
+		<weaponTags>
+			<li>DankPyon_Bardiche</li>
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>3.1</cooldownTime>
+				<armorPenetration>0.4</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_MilitaryBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_SharpAxe_Oversize">
+		<defName>DankPyon_MeleeWeapon_Greataxe</defName>
+		<label>greataxe</label>
+		<description>A heavier version of the two-handed axe, the greataxe’s weight allows for high raw damage as well as solid durability. A great option for splitting shields or unarmored enemies. Requires great strength to wield effectively.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Axes/Greataxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
+
+		<statBases>
+			<WorkToMake>17500</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>80</WoodLog>
+		</costList>
+
+		<weaponTags>
+			<li>DankPyon_Greataxe</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>31</power>
+				<cooldownTime>3.2</cooldownTime>
+				<armorPenetration>0.4</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>LongBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_SharpAxe_Oversize">
+		<defName>DankPyon_MeleeWeapon_Longaxe</defName>
+		<label>longaxe</label>
+		<description>A widespread two-handed weapon often utilized by raiders due to its easy use and high damage. High damage, but the long shaft requires a warrior to forgo a shield, so the longaxe should be used by confident combatants.\nThe reach of the longaxe allows it to strike enemies much further away.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Axes/Longaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<modExtensions Inherit="False">
+			<li Class="VFECore.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(-0.20,0.0,0.20)</drawOffset> <!--0.30,0,0.40-->
+						<angleOffset>115</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.30,0.00,0.20)</drawOffset> <!--0.30,0.2,0.40-->
+						<angleOffset>-45</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0.30,0.00,0.20)</drawOffset>
+						<angleOffset>-45</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.30,0.0,0.20)</drawOffset>
+						<angleOffset>45</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+				<meleeRangeOverride>2.84</meleeRangeOverride>
+			</li>
+		</modExtensions>
+		<!-- <equippedAngleOffset>-60</equippedAngleOffset> -->
+
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>2.75</Mass>
+		</statBases>
+
+		<costStuffCount>70</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>80</WoodLog>
+		</costList>
+
+		<weaponTags>
+			<li>DankPyon_Longaxe</li>
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>27.5</power>
+				<cooldownTime>2.96</cooldownTime>
+				<armorPenetration>0.4</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_MilitaryBlades</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>
