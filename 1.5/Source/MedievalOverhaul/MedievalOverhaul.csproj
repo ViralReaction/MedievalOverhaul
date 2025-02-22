@@ -46,6 +46,7 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerPlantWater_RebuildCache.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CalcSpeedFactor.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CurrentWindFactor.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\ThingListGroupHelper_Includes.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Room_Notify_RoomShapeChanged.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Plant_PlantCollected.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\FoodUtility_BestFoodSourceOnMap_Transpile.cs" />
@@ -125,7 +126,6 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\StaggerHandler_StaggerFor.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_Meteorite_Reset.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Ingest_GetReport.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\ThingListGroupHelper_Includes.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\CompProperties\HediffCompProperties_LindwurmAcid.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_Daze.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_LindwurmAcid.cs" />
