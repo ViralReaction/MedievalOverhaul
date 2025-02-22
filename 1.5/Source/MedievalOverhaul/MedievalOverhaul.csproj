@@ -58,7 +58,9 @@
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_EmptyIceMold.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_EmptySlopPot.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DispenseSlop.cs" />
+    <Compile Include="Medieval Overhaul\Listing_Tree\Listing_TreeThingFilter_Nutrition.cs" />
     <Compile Include="Medieval Overhaul\Listing_Tree\Listing_TreeThingFilter_Fuel.cs" />
+    <Compile Include="Medieval Overhaul\Listing_Tree\ThingFilterUI_Nutrition.cs" />
     <Compile Include="Medieval Overhaul\Listing_Tree\ThingFilterUI_Fuel.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelAtomicCustom.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelCustom.cs" />

@@ -8,8 +8,8 @@ namespace MedievalOverhaul
     public class ITab_StewPot : ITab
     {
         private static readonly Vector2 WinSize = new (300f, 480f);
-        private readonly ThingFilterUI_Fuel.UIState fuelFilterState = new ();
-        private List<ICompFuelHandler> _cachedFuelBuildings = new();
+        private readonly ThingFilterUI_Nutrition.UIState nutritionFilterState = new ();
+        private List<CompRefuelableStat> _cachedFuelBuildings = new();
         private IList<object> _lastSelectedObjects;
 
         protected Building SelBuilding => (Building)this.SelThing;
@@ -29,7 +29,7 @@ namespace MedievalOverhaul
         public override void OnOpen()
         {
             base.OnOpen();
-            this.fuelFilterState.quickSearch.Reset();
+            this.nutritionFilterState.quickSearch.Reset();
         }
 
         //public override void FillTab()
@@ -52,9 +52,9 @@ namespace MedievalOverhaul
                     {
                         foreach (var comp in thingWithComps.AllComps)
                         {
-                            if (comp is ICompFuelHandler fuelHandler)
+                            if (comp is CompRefuelableStat nutritioncomp)
                             {
-                                _cachedFuelBuildings.Add(fuelHandler);
+                                _cachedFuelBuildings.Add(nutritioncomp);
                             }
                         }
                     }
@@ -69,7 +69,7 @@ namespace MedievalOverhaul
                 return;
             new Rect(0.0f, 0.0f, ITab_StewPot.WinSize.x, ITab_StewPot.WinSize.y).ContractedBy(10f).SplitHorizontally(18f, out Rect _, out Rect bottom);
             var refuelComp = firstBuilding.TryGetComp<CompRefuelableStat>();
-            ThingFilterUI_Fuel.DoThingFilterConfigWindow(bottom, this.fuelFilterState, firstComp.AllowedFuelFilter, _cachedFuelBuildings, refuelComp.Props.fuelFilter, 1, (IEnumerable<ThingDef>)null, (IEnumerable<SpecialThingFilterDef>)null, true, true, false, (List<ThingDef>)null, (Map)null);
+            ThingFilterUI_Nutrition.DoThingFilterConfigWindow(bottom, nutritionFilterState, refuelComp.AllowedFuelFilter, _cachedFuelBuildings, refuelComp.Props.fuelFilter, 1, (IEnumerable<ThingDef>)null, (IEnumerable<SpecialThingFilterDef>)null, true, true, false, (List<ThingDef>)null, (Map)null);
         }
         private bool HasSelectionChanged(IList<object> selectedObjects)
         {

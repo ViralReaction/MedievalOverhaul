@@ -6,7 +6,7 @@ using Verse;
 namespace MedievalOverhaul
 {
     [StaticConstructorOnStartup]
-    public class CompRefuelableStat : ThingComp, IThingGlower, ICompFuelHandler
+    public class CompRefuelableStat : ThingComp, IThingGlower
     {
         public CompProperties_RefuelableStat Props => props as CompProperties_RefuelableStat;
         public CompSlop stewComp;

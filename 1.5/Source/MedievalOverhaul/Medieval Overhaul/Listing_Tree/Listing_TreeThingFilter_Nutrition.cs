@@ -6,7 +6,7 @@ using Verse;
 
 namespace MedievalOverhaul
 {
-    public class Listing_TreeThingFilter_Fuel : Listing_Tree
+    public class Listing_TreeThingFilter_Nutrition : Listing_Tree
     {
         private static readonly Color NoMatchColor = Color.grey;
         private static readonly LRUCache<(TreeNode_ThingCategory, ThingFilter), List<SpecialThingFilterDef>> cachedHiddenSpecialFilters =
@@ -19,15 +19,15 @@ namespace MedievalOverhaul
         private List<SpecialThingFilterDef> tempForceHiddenSpecialFilters;
         private List<ThingDef> suppressSmallVolumeTags;
         //private List<CompStoreFuelThing> _cachedFuelBuildings;
-        private List<ICompFuelHandler> _cachedFuelBuildings;
+        private List<CompRefuelableStat> _cachedFuelBuildings;
         protected QuickSearchFilter searchFilter;
         public int matchCount;
         private Rect visibleRect;
 
-        public Listing_TreeThingFilter_Fuel(
+        public Listing_TreeThingFilter_Nutrition(
             ThingFilter filter, ThingFilter parentFilter,IEnumerable<ThingDef> forceHiddenDefs, 
             IEnumerable<SpecialThingFilterDef> forceHiddenFilters, List<ThingDef> suppressSmallVolumeTags,
-            QuickSearchFilter searchFilter, List<ICompFuelHandler> cachedFuelBuildings)
+            QuickSearchFilter searchFilter, List<CompRefuelableStat> cachedFuelBuildings)
         {
             this.filter = filter;
             this.parentFilter = parentFilter;
