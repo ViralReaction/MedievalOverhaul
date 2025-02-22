@@ -19,21 +19,25 @@ namespace MedievalOverhaul.Patches
         }
         public static void Postfix(Plant __instance, Map __state)
         {
-            var terrainGrid = __state.terrainGrid;
-            var position = __instance.Position;
-            if (terrainGrid.TerrainAt(position).defName == "DankPyon_PlowedSoil")
+            if (__instance.HarvestableNow)
             {
-
-                if (Rand.Chance(MedievalOverhaulSettings.settings.soilWearChance))
+                var terrainGrid = __state.terrainGrid;
+                var position = __instance.Position;
+                if (terrainGrid.TerrainAt(position).defName == "DankPyon_PlowedSoil")
                 {
-                    terrainGrid.RemoveTopLayer(position);
-                    if (MedievalOverhaulSettings.settings.autoPlow && TerrainFertilityMax >= terrainGrid.TerrainAt(position).fertility)
+
+                    if (Rand.Chance(MedievalOverhaulSettings.settings.soilWearChance))
                     {
-                        GenConstruct.PlaceBlueprintForBuild(MedievalOverhaulDefOf.DankPyon_PlowedSoil, position, __state, Rot4.North, Faction.OfPlayer, (ThingDef)null);
+                        terrainGrid.RemoveTopLayer(position);
+                        if (MedievalOverhaulSettings.settings.autoPlow && TerrainFertilityMax >= terrainGrid.TerrainAt(position).fertility)
+                        {
+                            GenConstruct.PlaceBlueprintForBuild(MedievalOverhaulDefOf.DankPyon_PlowedSoil, position, __state, Rot4.North, Faction.OfPlayer, (ThingDef)null);
+                        }
                     }
                 }
+
             }
-            
         }
     }
+
 }
