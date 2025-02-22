@@ -50,7 +50,6 @@ namespace MedievalOverhaul
             }
             foreach (var c in code)
             {
-                //Log.Message(c.ToString());
                 yield return c;
             }
         }

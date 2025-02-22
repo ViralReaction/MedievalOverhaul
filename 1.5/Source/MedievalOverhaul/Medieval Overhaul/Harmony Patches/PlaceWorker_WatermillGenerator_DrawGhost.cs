@@ -37,7 +37,6 @@ namespace MedievalOverhaul.Patches
             var waterMillsField = AccessTools.Field(typeof(PlaceWorker_WaterWheel), "waterMills");
             if (waterMillsField == null)
             {
-                Log.Message("waterfield null");
                 return;
             }
 

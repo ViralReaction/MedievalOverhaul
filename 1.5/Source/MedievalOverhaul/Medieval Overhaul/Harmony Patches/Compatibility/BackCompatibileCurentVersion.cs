@@ -15,7 +15,6 @@ namespace MedievalOverhaul.Patches
             if (node["stuff"] != null && node["stuff"].InnerText.ToString() == "DankPyon_Log_RawDarkWood")
             {
                 node["stuff"].InnerText = "DankPyon_RawDarkWood";
-                Log.Message(node["stuff"].InnerText.ToString());
             }
             if (providedClassName == "MedievalOverhaul.Building_WorkTable_HeatPushCustom")
             {

@@ -15,7 +15,6 @@ namespace MedievalOverhaul.Patches
                 var hashSet = __instance.Map.GetComponent<RefuelableMapComponent>().refuelableStatThing;
                 foreach (var thing in hashSet)
                 {
-                    Log.Message(thing);
                     thing.Notify_ColorChanged();
                 }
             }

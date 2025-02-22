@@ -87,7 +87,6 @@ namespace MedievalOverhaul.Patches
             {
                 __instance.emptyNow = false;
             }
-            Log.Message(thing.stackCount);
             return thing;
         }
     }
