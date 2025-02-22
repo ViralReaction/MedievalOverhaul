@@ -26,7 +26,7 @@ namespace MedievalOverhaul
         public bool jobStarted = false; // Track if a job is currently active
 
 
-        public new bool CanDispenseNow
+        public bool CanActuallyDispenseNow
 		{
 			get
 			{
@@ -34,9 +34,6 @@ namespace MedievalOverhaul
 			}
 		}
 		public override ThingDef DispensableDef => slopComp.Props.mealDef;
-
-		public override Color DrawColor =>
-			!this.IsSociallyProper(null, false) ? Building_Bed.SheetColorForPrisoner : base.DrawColor;
 
 		public override bool HasEnoughFeedstockInHoppers()
 		{
@@ -78,7 +75,7 @@ namespace MedievalOverhaul
 
 		public override Thing TryDispenseFood()
 		{
-			if (!CanDispenseNow)
+			if (!CanActuallyDispenseNow)
 				return null;
 			nutritionComp.ConsumeFuel(def.building.nutritionCostPerDispense);
 			Thing meal = ThingMaker.MakeThing(slopComp.Props.mealDef);
@@ -115,8 +112,7 @@ namespace MedievalOverhaul
 				stringBuilder.AppendLine("Ingredients".Translate() + ": ");
 				stringBuilder.Append(this.slopComp.GetIngredientsString(false, out var _));
 			}
-
-			return stringBuilder.ToString().Trim();
+            return stringBuilder.ToString().Trim();
 		}
 
 		public virtual int MaxMeals()
@@ -203,7 +199,7 @@ namespace MedievalOverhaul
                     }
                 }
             }
-            if (!CanDispenseNow)
+            if (!CanActuallyDispenseNow)
             {
                 yield return new FloatMenuOption("DankPyon_NoFood".Translate(this), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
                 yield break;
@@ -238,7 +234,7 @@ namespace MedievalOverhaul
                 yield return floatMenuOption;
             }
 
-            if (!CanDispenseNow)
+            if (!CanActuallyDispenseNow)
             {
                 yield return new FloatMenuOption("DankPyon_NoFood".Translate(this), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
                 yield break;

@@ -33,7 +33,7 @@ namespace MedievalOverhaul
         public override IEnumerable<Toil> MakeNewToils()
         {
             var things = Dispenser as Building_SlopPot;
-            this.FailOn(() => (Dispenser is not Building_SlopPot thing) || (!thing.CanDispenseNow));
+            this.FailOn(() => (Dispenser is not Building_SlopPot thing) || (!thing.CanActuallyDispenseNow));
             this.FailOnDestroyedNullOrForbidden(SlopTarget);
             yield return Toils_Reserve.Reserve(SlopTarget);
             yield return Toils_Goto.GotoThing(SlopTarget, PathEndMode.InteractionCell);
