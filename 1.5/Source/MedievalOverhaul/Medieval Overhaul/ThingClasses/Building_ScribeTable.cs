@@ -1,6 +1,7 @@
 ﻿using RimWorld;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Verse;
 using Verse.AI;
 
@@ -29,13 +30,13 @@ namespace MedievalOverhaul
         }
         public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn myPawn)
         {
-            FloatMenuOption failureReason = this.GetFailureReason(myPawn);
+            FloatMenuOption failureReason = this.GetActualFailureReason(myPawn);
             if (failureReason != null)
             {
                 yield return failureReason;
                 yield break;
             }
-            foreach (ICommunicable communicable in this.GetCommTargets(myPawn))
+            foreach (ICommunicable communicable in this.GetCommTargets_Messenger(myPawn))
             {
                 FloatMenuOption floatMenuOption = communicable.CommFloatMenuOption(this, myPawn);
                 if (floatMenuOption != null)
@@ -43,13 +44,29 @@ namespace MedievalOverhaul
                     yield return floatMenuOption;
                 }
             }
-            foreach (FloatMenuOption floatMenuOption2 in base.GetFloatMenuOptions(myPawn))
-            {
-                yield return floatMenuOption2;
-            }
             yield break;
         }
-        private new FloatMenuOption GetFailureReason(Pawn myPawn)
+
+        public IEnumerable<ICommunicable> GetCommTargets_Messenger(Pawn myPawn)
+        {
+            List<ICommunicable> targets = new List<ICommunicable>();
+            // Add valid factions
+            if (Find.FactionManager != null)
+            {
+                // Iterate directly over IEnumerable instead of converting to List
+                foreach (Faction f in Find.FactionManager.AllFactionsVisibleInViewOrder)
+                {
+                    if (!f.temporary && !f.IsPlayer)
+                    {
+                        targets.Add(f);
+                    }
+                }
+            }
+
+            return targets;
+        }
+
+        public FloatMenuOption GetActualFailureReason(Pawn myPawn)
         {
             if (this.facilities.LinkedFacilitiesListForReading.Count < extension.linkablesNeeded)
             {
@@ -75,7 +92,7 @@ namespace MedievalOverhaul
                 return new FloatMenuOption("CannotUseReason".Translate("IncapableOfCapacity".Translate(PawnCapacityDefOf.Talking.label, myPawn.Named("PAWN"))), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
             }
             bool hasCommTarget = false;
-            foreach (ICommunicable target in this.GetCommTargets(myPawn))
+            foreach (ICommunicable target in this.GetCommTargets_Messenger(myPawn))
             {
                 hasCommTarget = true;
                 break; // Exit early if at least one target exists
@@ -86,47 +103,20 @@ namespace MedievalOverhaul
                 return new FloatMenuOption("CannotUseReason".Translate("NoCommsTarget".Translate()), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
             }
 
-            if (!this.CanUseCommsNow)
+            if (!this.CanActuallyUseCommsNow)
             {
                 Log.Error(myPawn + " could not use comm console for unknown reason.");
                 return new FloatMenuOption("Cannot use now", null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
             }
             return null;
         }
-        private new void AnnounceTradeShips()
+        public bool CanActuallyUseCommsNow
         {
-            foreach (TradeShip tradeShip in base.Map.passingShipManager.passingShips)
+            get
             {
-                if (!tradeShip.WasAnnounced && tradeShip is TradeShip)
-                {
-                    TaggedString baseLetterText = "TraderArrival".Translate(
-                        tradeShip.name,
-                        tradeShip.def.label,
-                        (tradeShip.Faction == null)
-                            ? "TraderArrivalNoFaction".Translate()
-                            : "TraderArrivalFromFaction".Translate(tradeShip.Faction.Named("FACTION"))
-                    );
-
-                    IncidentParms incidentParms = new()
-                    {
-                        target = base.Map,
-                        traderKind = tradeShip.TraderKind
-                    };
-
-                    IncidentWorker.SendIncidentLetter(
-                        tradeShip.def.LabelCap,
-                        baseLetterText,
-                        LetterDefOf.PositiveEvent,
-                        incidentParms,
-                        LookTargets.Invalid,
-                        null,
-                        []
-                    );
-
-                    tradeShip.WasAnnounced = true;
-                }
+                return base.Spawned && (this.powerComp == null || this.powerComp.PowerOn);
             }
-
         }
+
     }
 }

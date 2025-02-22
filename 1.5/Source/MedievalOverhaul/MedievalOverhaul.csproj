@@ -40,6 +40,8 @@
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetFuelLevelCustom.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_RetrieveSlop.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableStatusCustom.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\Building_CommsConsole_CanUseCommsNow.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\Building_CommsConsole_AnnounceTradeShips.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerPlantWater_ForceOthersToRebuildCache.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerPlantWater_RebuildCache.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CalcSpeedFactor.cs" />
