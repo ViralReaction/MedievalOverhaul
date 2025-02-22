@@ -280,7 +280,7 @@
 	<ThingDef ParentName="DankPyon_Base_SharpSword_Oversize">
 		<defName>DankPyon_MeleeWeapon_Greatsword</defName>
 		<label>Greatsword</label>
-		<description>A humongous, two-handed sword with a long blade, capable of cleaving enemies with fierce swings and chops. Decent at long thrusts as well.</description>
+		<description>A humongous, two-handed sword with a long blade, capable of cleaving enemies with fierce swings and chops. Decent at long thrusts as well.\nThe reach of the greatsword allows it to strike enemies much further away.</description>
 		<graphicData>
 			<texPath>WeaponMelee/Swords/Greatsword</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

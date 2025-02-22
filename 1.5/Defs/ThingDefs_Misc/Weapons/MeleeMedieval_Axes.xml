@@ -433,7 +433,7 @@
 	<ThingDef ParentName="DankPyon_Base_SharpAxe_Oversize">
 		<defName>DankPyon_MeleeWeapon_Longaxe</defName>
 		<label>longaxe</label>
-		<description>A widespread two-handed weapon often utilized by raiders due to its easy use and high damage. High damage, but the long shaft requires a warrior to forgo a shield, so the longaxe should be used by confident combatants.</description>
+		<description>A widespread two-handed weapon often utilized by raiders due to its easy use and high damage. High damage, but the long shaft requires a warrior to forgo a shield, so the longaxe should be used by confident combatants.\nThe reach of the longaxe allows it to strike enemies much further away.</description>
 		<graphicData>
 			<texPath>WeaponMelee/Axes/Longaxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

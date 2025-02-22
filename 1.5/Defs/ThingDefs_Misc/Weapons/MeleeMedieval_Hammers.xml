@@ -372,7 +372,7 @@
 	<ThingDef ParentName="DankPyon_Base_Blunt_Oversize">
 		<defName>DankPyon_MeleeWeapon_Polehammer</defName>
 		<label>polehammer</label>
-		<description>A variation of the two-handed hammer that features two points at the head. This design offers additional ways to penetrate armored foes, as well as puncture less armored enemies with ease.</description>
+		<description>A variation of the two-handed hammer that features two points at the head. This design offers additional ways to penetrate armored foes, as well as puncture less armored enemies with ease.\nThe reach of the polehammer allows it to strike enemies much further away.</description>
 		<graphicData>
 			<texPath>WeaponMelee/Hammers/Polehammer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

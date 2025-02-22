@@ -76,7 +76,7 @@
 	<ThingDef ParentName="DankPyon_NamedWeaponSharp" Name="DankPyon_NamedGreatsword">
 		<defName>DankPyon_MeleeWeapon_NamedGreatsword</defName>
 		<label>named greatsword</label>
-		<description>A humongous, two-handed sword with a long blade, capable of cleaving enemies with fierce swings and chops. Decent at long thrusts as well. \n\nAn ancient relic of the long forgotten under-empires. A masterfully crafted blade able to carve through plates of steel with its edge unwavering.</description>
+		<description>A humongous, two-handed sword with a long blade, capable of cleaving enemies with fierce swings and chops. Decent at long thrusts as well. \n\nAn ancient relic of the long forgotten under-empires. A masterfully crafted blade able to carve through plates of steel with its edge unwavering.\nThe reach of the greatsword allows it to strike enemies much further away.</description>
 		<graphicData>
 			<texPath>WeaponMelee/Swords/NamedGreatsword/NamedGreatsword1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -396,7 +396,7 @@
 	<ThingDef ParentName="DankPyon_NamedWeaponSharp" Name="DankPyon_NamedHalberd">
 		<defName>DankPyon_MeleeWeapon_NamedHalberd</defName>
 		<label>named halberd</label>
-		<description>A versatile pike with three deadly ends—a blade for strikes, a hook for grappling, and a spear-like point for puncturing chainmail and metal plates.</description>
+		<description>A versatile pike with three deadly ends—a blade for strikes, a hook for grappling, and a spear-like point for puncturing chainmail and metal plates.\nThe reach of the halberd allows it to strike enemies much further away.</description>
 		<graphicData>
 			<texPath>WeaponMelee/Polearms/NamedHalberd/NamedHalberd1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
