@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Menu Title -->
+	<DankPyon_RefillOil>{PAWN} will reapply oil to their weapon.</DankPyon_RefillOil>
+	<DankPyon_AutoOil>Determines if {PAWN} will automatically attempt to reapply oil when low.</DankPyon_AutoOil>
+	<DankPyon_ApplyPoisonOil>Apply weapon oil to {0}</DankPyon_ApplyPoisonOil>
+	<DankPyon_CannotApplyPoisonOil>Cannot apply oil</DankPyon_CannotApplyPoisonOil>
+
+</LanguageData>

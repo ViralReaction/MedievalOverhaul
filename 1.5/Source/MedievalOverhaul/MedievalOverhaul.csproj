@@ -40,7 +40,7 @@
     <Compile Include="Medieval Overhaul\GameComponent\OiledWeaponsManager.cs" />
     <Compile Include="Medieval Overhaul\GameComponent\OilTrackerComponent.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetFuelLevelCustom.cs" />
-    <Compile Include="Medieval Overhaul\Gizmo\Gizmo_OilPoisonBar.cs" />
+    <Compile Include="Medieval Overhaul\Gizmo\Gizmo_OilChargesBar.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableStatusCustom.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_ClearSnow_MakeNewToils.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ResearchProjectDef_CanResearchNow.cs" />
@@ -67,8 +67,8 @@
     <Compile Include="Medieval Overhaul\ThingComps\CompUsablePoisonOil.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompRefuelableCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompPotionUseable.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompWeaponOil.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompUseEffect_AddOil.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\NewFolder1\CompWeaponOil.cs" />
+    <Compile Include="Medieval Overhaul\ThingComps\NewFolder1\CompUseEffect_AddOil.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_UseEffectAddOil.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\NewFolder1\CompWeaponOilData.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\NewFolder1\Pawn_GetGizmos.cs" />

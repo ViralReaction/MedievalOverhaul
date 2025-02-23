@@ -7,8 +7,10 @@
 		<description>A vial of potent poison that can be applied to melee weapons, causing them to inflict poison damage.</description>
 		<thingClass>ThingWithComps</thingClass>
 		<graphicData>
-			<texPath>Special/PoisonedOil</texPath>
+			<texPath>Special/WeaponOil</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(80,75,72)</color>
 		</graphicData>
 		<stackLimit>10</stackLimit>
 		<possessionCount>5</possessionCount>

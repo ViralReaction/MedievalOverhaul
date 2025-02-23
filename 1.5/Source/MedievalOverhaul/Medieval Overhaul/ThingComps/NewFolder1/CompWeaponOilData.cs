@@ -11,10 +11,8 @@ namespace MedievalOverhaul
         public string oilType;
         public bool autoRefuel;
 
-        // ✅ Explicit public parameterless constructor (needed for Scribe to deserialize)
         public CompWeaponOilData() { }
 
-        // ✅ Constructor that updates data from an existing CompWeaponOil
         public CompWeaponOilData(CompWeaponOil comp)
         {
             UpdateFromComp(comp);

@@ -6,6 +6,7 @@ namespace MedievalOverhaul
     public class CompUseEffect_AddOil : CompUseEffect
     {
         public ThingWithComps pawnWeapon;
+
         
         public new CompProperties_UseEffectAddOil Props
         {

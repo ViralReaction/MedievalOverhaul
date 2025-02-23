@@ -52,7 +52,6 @@ namespace MedievalOverhaul
 
                     Log.Message($"[LoadedGame] Manually adding CompWeaponOil to {weapon.LabelCap}");
 
-                    // ✅ Restore previously saved data
                     var savedData = GetSavedCompData(weapon);
                     if (savedData != null)
                     {

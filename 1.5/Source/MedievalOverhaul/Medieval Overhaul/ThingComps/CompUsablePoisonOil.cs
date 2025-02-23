@@ -13,9 +13,9 @@ namespace MedievalOverhaul
         {
             if (pawn?.equipment?.Primary is ThingWithComps weapon && weapon.def.IsMeleeWeapon)
             {
-                return "ApplyPoisonOil".Translate(weapon.LabelShort);
+                return "DankPyon_ApplyPoisonOil".Translate(weapon.LabelShort);
             }
-            return "CannotApplyPoisonOil".Translate();
+            return "DankPyon_CannotApplyPoisonOil".Translate();
         }
 
         public override void TryStartUseJob(Pawn pawn, LocalTargetInfo extraTarget, bool forced = false)

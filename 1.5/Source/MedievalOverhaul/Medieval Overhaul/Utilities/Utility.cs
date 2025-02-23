@@ -122,5 +122,17 @@ namespace MedievalOverhaul
                 }
             }
         }
+
+        public static IEnumerable<Thing> GetOils(Pawn_InventoryTracker inventory)
+        {
+            foreach (Thing thing in inventory.innerContainer)
+            {
+                if (thing.TryGetComp<CompUseEffect_AddOil>() != null)
+                {
+                    yield return thing;
+                }
+            }
+            yield break;
+        }
     }
 }
