@@ -403,7 +403,7 @@
 			<li>DankPyon_Workbench</li>
 		</recipeUsers>
 		<researchPrerequisites>
-			<li>DankPyon_Engineering</li>
+			<li>Smithing</li>
 		</researchPrerequisites>
 		<ingredients>
 			<li>
@@ -466,7 +466,7 @@
 			<li>DankPyon_Workbench</li>
 		</recipeUsers>
 		<researchPrerequisites>
-			<li>DankPyon_Engineering</li>
+			<li>Smithing</li>
 		</researchPrerequisites>
 		<ingredients>
 			<li>
