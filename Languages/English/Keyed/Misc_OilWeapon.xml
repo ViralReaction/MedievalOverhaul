@@ -4,6 +4,7 @@
 	<!-- Menu Title -->
 	<DankPyon_RefillOil>{PAWN} will reapply oil to their weapon.</DankPyon_RefillOil>
 	<DankPyon_AutoOil>Determines if {PAWN} will automatically attempt to reapply oil when low.</DankPyon_AutoOil>
+	<DankPyon_AutoOilSelection>Sets what oil {PAWN} will attempt to apply to the weapon.</DankPyon_AutoOilSelection>
 	<DankPyon_ApplyPoisonOil>Apply weapon oil to {0}</DankPyon_ApplyPoisonOil>
 	<DankPyon_CannotApplyPoisonOil>Cannot apply oil</DankPyon_CannotApplyPoisonOil>
 

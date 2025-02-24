@@ -9,6 +9,7 @@ namespace MedievalOverhaul
         public int maxCharges = 20;
         public HediffDef hediffDef;
         public ThingDef oilRefillDef;
+        public ThingDef targetOilRefillDef;
         public string oilType;
         public bool autoRefuel = false; // New setting
         public override void PostExposeData()
@@ -23,6 +24,7 @@ namespace MedievalOverhaul
                 Scribe_Values.Look(ref maxCharges, "maxCharges", 0);
                 Scribe_Defs.Look(ref hediffDef, "hediffDef");
                 Scribe_Defs.Look(ref oilRefillDef, "oilRefillDef");
+                Scribe_Defs.Look(ref targetOilRefillDef, "targetOilRefillDef");
                 Scribe_Values.Look(ref oilType, "oilType");
                 Scribe_Values.Look(ref autoRefuel, "autoRefuel", false, false);
             }
@@ -40,21 +42,10 @@ namespace MedievalOverhaul
             oilType = oilName;
             hediffDef = oilHediff;
             oilRefillDef = refillDef;
+            targetOilRefillDef = oilRefillDef;
             oilCharges = charges; // Reset duration
+            maxCharges = charges;
         }
-
-        //public override void PostSpawnSetup(bool respawningAfterLoad)
-        //{
-        //    OilWeaponTrackerComponent comp = OiledWeaponsManager.GetComp();
-        //    comp.RegisterOilWeapon(this.parent);
-        //}
-
-        //public override void PostDeSpawn(Map map)
-        //{
-        //    base.PostDeSpawn(map);
-        //    OilWeaponTrackerComponent comp = OiledWeaponsManager.GetComp();
-        //    comp.DeregisterOilWeapon(this.parent);
-        //}
 
         public void UseCharge()
         {

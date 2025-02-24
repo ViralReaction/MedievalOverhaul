@@ -8,6 +8,7 @@ namespace MedievalOverhaul
         public int maxCharges;
         public HediffDef hediffDef;
         public ThingDef oilRefillDef;
+        public ThingDef targetOilRefillDef;
         public string oilType;
         public bool autoRefuel;
 
@@ -24,6 +25,7 @@ namespace MedievalOverhaul
             maxCharges = comp.maxCharges;
             hediffDef = comp.hediffDef;
             oilRefillDef = comp.oilRefillDef;
+            targetOilRefillDef = comp.targetOilRefillDef;
             oilType = comp.oilType;
             autoRefuel = comp.autoRefuel;
         }
@@ -34,8 +36,10 @@ namespace MedievalOverhaul
             comp.maxCharges = maxCharges;
             comp.hediffDef = hediffDef;
             comp.oilRefillDef = oilRefillDef;
+            comp.targetOilRefillDef = targetOilRefillDef;
             comp.oilType = oilType;
             comp.autoRefuel = autoRefuel;
+
         }
 
         public void ExposeData()
@@ -44,6 +48,7 @@ namespace MedievalOverhaul
             Scribe_Values.Look(ref maxCharges, "maxCharges", 0);
             Scribe_Defs.Look(ref hediffDef, "hediffDef");
             Scribe_Defs.Look(ref oilRefillDef, "oilRefillDef");
+            Scribe_Defs.Look(ref targetOilRefillDef, "targetOilRefillDef");
             Scribe_Values.Look(ref oilType, "oilType");
             Scribe_Values.Look(ref autoRefuel, "autoRefuel", false, false);
         }

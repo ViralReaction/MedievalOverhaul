@@ -38,7 +38,7 @@ namespace MedievalOverhaul.Patches
                         {
                             defaultLabel = "Apply Oil",
                             defaultDesc = thing.LabelCapNoCount + ": " + thing.def.description.CapitalizeFirst(),
-                            icon = OilGizmoIcon,
+                            icon = Gizmo_OilChargesBar.OilGizmoIcon,
                             iconAngle = thing.def.uiIconAngle,
                             iconOffset = thing.def.uiIconOffset,
                             action = () =>
@@ -78,9 +78,6 @@ namespace MedievalOverhaul.Patches
             }
 
         }
-
-        private static readonly Texture2D OilGizmoIcon = ContentFinder<Texture2D>.Get("UI/Icons/WeaponOil", true);
-
         
     }
 }

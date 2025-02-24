@@ -10,7 +10,7 @@
 			<texPath>Special/WeaponOil</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<color>(80,75,72)</color>
+			<color>(33,221,104)</color>
 		</graphicData>
 		<stackLimit>10</stackLimit>
 		<possessionCount>5</possessionCount>
@@ -40,7 +40,7 @@
 			<li Class="MedievalOverhaul.CompProperties_UseEffectAddOil">
 				<hediffDef>DankPyon_Neurotoxin</hediffDef>
 				<oilType>Poison</oilType>
-				<maxCharges>20</maxCharges>
+				<maxCharges>5</maxCharges>
 				<oilRefillDef>DankPyon_PoisonOil</oilRefillDef>
 			</li>
 			<li Class="CompProperties_UseEffectDestroySelf"/>
