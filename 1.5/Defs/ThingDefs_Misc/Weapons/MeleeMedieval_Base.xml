@@ -95,6 +95,9 @@
 	<!-- ==================== Two-Handed Sharp Spear Base ==================== -->
 
 	<ThingDef Name="DankPyon_Base_SharpSpear_Oversize" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<statBases>
+			<VEF_MeleeWeaponRange>2.84</VEF_MeleeWeaponRange>
+		</statBases>
 		<modExtensions>
 			<li Class="VFECore.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
@@ -115,7 +118,6 @@
 						<angleOffset>122</angleOffset>
 					</west>
 				</weaponDraftedDrawOffsets>
-				<meleeRangeOverride>2.84</meleeRangeOverride>
 			</li>
 		</modExtensions>
 		<equippedAngleOffset>45</equippedAngleOffset>

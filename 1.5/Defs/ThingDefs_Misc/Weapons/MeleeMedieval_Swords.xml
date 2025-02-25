@@ -307,13 +307,13 @@
 						<angleOffset>45</angleOffset>
 					</west>
 				</weaponDraftedDrawOffsets>
-				<meleeRangeOverride>2.84</meleeRangeOverride>
 			</li>
 		</modExtensions>
 
 		<statBases>
 			<WorkToMake>24000</WorkToMake>
 			<Mass>3</Mass>
+			<VEF_MeleeWeaponRange>2.84</VEF_MeleeWeaponRange>
 		</statBases>
 
 		<costStuffCount>150</costStuffCount>
