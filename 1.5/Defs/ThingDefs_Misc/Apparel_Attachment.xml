@@ -112,6 +112,10 @@
 
 	<!-- Armor Attachment Base-->
 	<ThingDef ParentName="ArmorSmithableBase" Name="DankPyon_ArmorAttachmentBase" Abstract="True">
+		<statBases>
+			<ArmorRating_Sharp>0.0001</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.0001</ArmorRating_Blunt>
+		</statBases>
 		<apparel>
 			<drawData>
 				<dataNorth>

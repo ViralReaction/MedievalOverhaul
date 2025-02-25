@@ -58,7 +58,7 @@ X
 			<WorkToMake>1200</WorkToMake>
 			<Mass>0.05</Mass>
 			<ArmorRating_Sharp>0.0432</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Blunt>0.0001</ArmorRating_Blunt>
 			<Insulation_Cold>0.9</Insulation_Cold>
 			<Insulation_Heat>1.8</Insulation_Heat>
 			<EquipDelay>0.4</EquipDelay>
