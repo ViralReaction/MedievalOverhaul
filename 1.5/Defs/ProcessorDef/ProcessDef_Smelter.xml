@@ -47,7 +47,7 @@
 				<li>DankPyon_IronIngot</li>
 			</thingDefs>
 		</ingredientFilter>
-		<efficiency>0.5</efficiency>
+		<efficiency>1</efficiency>
 	</ProcessorFramework.ProcessDef>
 
 	<ProcessorFramework.ProcessDef ParentName="DankPyon_SmeltingOre_Base">

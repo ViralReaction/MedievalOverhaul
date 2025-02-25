@@ -426,7 +426,7 @@
 						<li>DankPyon_IronIngot</li>
 					</thingDefs>
 				</filter>
-				<count>2</count>
+				<count>1</count>
 			</li>
 			<li>
 				<filter>
@@ -463,7 +463,7 @@
 						<li>DankPyon_IronIngot</li>
 					</thingDefs>
 				</filter>
-				<count>60</count>
+				<count>30</count>
 			</li>
 			<li>
 				<filter>
@@ -500,7 +500,7 @@
 						<li>DankPyon_IronIngot</li>
 					</thingDefs>
 				</filter>
-				<count>120</count>
+				<count>60</count>
 			</li>
 			<li>
 				<filter>
