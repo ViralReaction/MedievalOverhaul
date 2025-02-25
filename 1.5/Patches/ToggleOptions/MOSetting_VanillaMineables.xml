@@ -101,10 +101,6 @@
 				</li>
 
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables/li[text()="MineableUranium"]</xpath>
-				</li>
-
-				<li Class="PatchOperationRemove">
 					<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables/li[text()="MineableComponentsIndustrial"]</xpath>
 				</li>
 
