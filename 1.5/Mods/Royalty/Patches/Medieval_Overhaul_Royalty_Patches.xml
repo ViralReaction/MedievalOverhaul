@@ -58,7 +58,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/RoyalTitleDef[defName="Yeoman" or defName="Knight" or defName="Praetor"]/throneRoomRequirements/li[@Class="RoomRequirement_HasAssignedThroneAnyOf"]/things</xpath>
+		<xpath>Defs/RoyalTitleDef[defName="Yeoman" or defName="Acolyte" or defName="Knight" or defName="Praetor"]/throneRoomRequirements/li[@Class="RoomRequirement_HasAssignedThroneAnyOf"]/things</xpath>
 		<value>
 			<li>DankPyon_RoyalThrone</li>
 		</value>
