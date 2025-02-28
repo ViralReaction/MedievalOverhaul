@@ -352,6 +352,9 @@
 		<defName>DankPyon_TanningRack</defName>
 		<label>tanning rack</label>
 		<description>A standing rack for treating raw hides to become soft and beautiful leathers.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DankPyon_TanningLiquor</ThingDef>
+		</descriptionHyperlinks>
 		<thingClass>Building_WorkTable</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
@@ -408,6 +411,7 @@
 					<li>DankPyon_RoxRugProcess</li>
 					<li>DankPyon_ThrumboRugProcess</li>
 					<li>DankPyon_DaerRugProcess</li>
+					<li>DankPyon_HumanRugProcess</li>
 				</processes>
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
@@ -506,6 +510,10 @@
 		<defName>DankPyon_Press_Paper</defName>
 		<label>paper press</label>
 		<description>A sturdy wooden device used to remove liquid and flatten sheets of paper. It uses a heavy screw mechanism to ensure each sheet is smooth and ready for writing or drawing. This essential tool helps turn pulp into usable parchment.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DankPyon_Paper</ThingDef>
+			<ThingDef>DankPyon_Mixture_Paper</ThingDef>
+		</descriptionHyperlinks>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
 			<drawSize>(4,4)</drawSize>
@@ -518,7 +526,6 @@
 		</graphicData>
 		<uiIconScale>0.8</uiIconScale>
 		<defaultPlacingRot>South</defaultPlacingRot>
-		
 		<neverMultiSelect>true</neverMultiSelect>
 		<fillPercent>0.5</fillPercent>
 		<pathCost>60</pathCost>
@@ -622,7 +629,7 @@
 			</li>
 	 		<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
-				<heatPerSecond>9</heatPerSecond>
+				<heatPerSecond>3</heatPerSecond>
 			</li>
 			<li Class="ProcessorFramework.CompProperties_Processor">
 				<capacity>100</capacity>
@@ -706,7 +713,6 @@
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
-
 		<tickerType>Rare</tickerType>
 		<!--constructEffect>ConstructWood</constructEffect-->
 		<building>
@@ -747,7 +753,7 @@
 		<costList>
 			<Steel>80</Steel>
 		</costList>
-		<altitudeLayer>Building</altitudeLayer>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -838,7 +844,7 @@
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>120</costStuffCount>
-		<altitudeLayer>Building</altitudeLayer>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
@@ -978,7 +984,7 @@
 		<thingClass>Building</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<label>windmill</label>
-		<description>A wind-powered mill to automate grinding of produce. Requires a large clear space in front and behind for optimal air flow.</description>
+		<description>A wind-powered mill to automate grinding and sawing produce. Requires a large clear space in front and behind for optimal air flow.</description>
 		<graphicData>
 			<texPath>Buildings/Windmill/WindmillBody</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -1028,6 +1034,7 @@
 				<colorCoded>false</colorCoded>
 				<processes>
 					<li>DankPyon_MillProcess</li>
+					<li>DankPyon_LumberMillProcess</li>
 				</processes>
 			</li>
 
@@ -1035,19 +1042,111 @@
 			<li>
 				<compClass>MedievalOverhaul.Comp_WindMill</compClass>
 			</li>
+			<li>
+				<compClass>CompAutoCutWindTurbine</compClass>
+			</li>
 		</comps>
 		<rotatable>true</rotatable>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Production</designationCategory>
 		<placeWorkers>
-			<li>PlaceWorker_WindTurbine</li>
+			<li>MedievalOverhaul.PlaceWorker_WindMill</li>
 		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
 			<destroySound>BuildingDestroyed_Wood_Big</destroySound>
 		</building>
 		<constructEffect>ConstructWood</constructEffect>
 		<researchPrerequisites><li>DankPyon_Windmill</li></researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<techLevel>Medieval</techLevel>
+		<inspectorTabs>
+			<li>ITab_WindTurbineAutoCut</li>
+		</inspectorTabs>
+	</ThingDef>
+
+	<!-- Watermill -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_WaterMill</defName>
+		<thingClass>Building</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<label>watermill</label>
+		<description>A water-powered mill to automate grinding and sawing produce. Must be placed with its wheel in moving water. If watermills are placed too close together, the turbulence they generate will interfere.</description>
+		<graphicData>
+			<texPath>Buildings/Windmill/WindmillBody</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,6)</drawSize>
+			<shadowData>
+				<volume>(2.6,1,2.16)</volume>
+				<offset>(-0.20,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<rectN>(0.1,1.2,4.75,3.25)</rectN>
+				<rectE>(1.25,0.2,3.5,4.7)</rectE>
+				<rectS>(0.2,1.2,4.7,3.25)</rectS>
+				<rectW>(1.25,0.2,3.5,4.7)</rectW>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>4000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(5,6)</size>
+		<costList>
+			<WoodLog>280</WoodLog>
+			<DankPyon_IronIngot>80</DankPyon_IronIngot>
+			<DankPyon_ComponentBasic>3</DankPyon_ComponentBasic>
+		</costList>
+		<comps>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>200</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(2.0, 2.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_WaterMillProcess</li>
+					<li>DankPyon_WaterLumberMillProcess</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Power">
+				<compClass>MedievalOverhaul.CompPowerWaterWheel</compClass>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>false</transmitsPower>
+				<soundAmbientProducingPower>WaterMill_Ambience</soundAmbientProducingPower>
+			</li>
+		</comps>
+		<rotatable>true</rotatable>
+		<terrainAffordanceNeeded />
+		<designationCategory>Production</designationCategory>
+		<placeWorkers>
+			<li>MedievalOverhaul.PlaceWorker_WaterWheel</li>
+		</placeWorkers>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<destroySound>BuildingDestroyed_Wood_Big</destroySound>
+		</building>
+		<constructEffect>ConstructWood</constructEffect>
+		<researchPrerequisites>
+			<li>DankPyon_Watermill</li>
+		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<techLevel>Medieval</techLevel>
 	</ThingDef>
@@ -1096,6 +1195,9 @@
 				<processes>
 					<li>DankPyon_IceBlockProcess</li>
 				</processes>
+			</li>
+			<li>
+				<compClass>MedievalOverhaul.CompIceBoxFill</compClass>
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>

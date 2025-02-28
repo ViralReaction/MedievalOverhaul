@@ -4,7 +4,6 @@ using Verse.AI;
 using Verse;
 using RimWorld;
 using UnityEngine;
-using System.Linq;
 
 namespace MedievalOverhaul
 {
@@ -14,10 +13,11 @@ namespace MedievalOverhaul
         public static SeperateHideList WhiteList = DefDatabase<SeperateHideList>.GetNamed("WhiteList");
         public static SeperateWoodList LogList = DefDatabase<SeperateWoodList>.GetNamed("LogList");
         public static HideGraphicList HideGraphicList = DefDatabase<HideGraphicList>.GetNamed("HideGraphicList");
+        public static StimulantDrugList StimulantDrugList = DefDatabase<StimulantDrugList>.GetNamed("StimulantDrugList");
         public static ModContentPack myContentPack = LoadedModManager.GetMod<MedievalOverhaulSettings>().Content;
         public static bool CEIsEnabled = LoadedModManager.RunningModsListForReading.Any<ModContentPack>((Predicate<ModContentPack>)(x => x.PackageId == "ceteam.combatextended"));
         public static bool VBEIsEnabled = ModsConfig.IsActive("VanillaExpanded.VBooksE");
-        public static bool LWMFuelFilterIsEnabled = ModsConfig.IsActive("lwm.fuelfilter");
+        public static bool LWMFuelFilterIsEnabled = ModsConfig.IsActive("zal.lwmfuelfilter");
         public static RoomRoleDef DankPyon_Library;
         public static ThoughtDef DankPyon_ReadInLibrary;
        
@@ -123,6 +123,7 @@ namespace MedievalOverhaul
             }
         }
 
+
         public static IEnumerable<Thing> GetOils(Pawn_InventoryTracker inventory)
         {
             foreach (Thing thing in inventory.innerContainer)
@@ -133,6 +134,34 @@ namespace MedievalOverhaul
                 }
             }
             yield break;
+
+        public static Pawn FindBestHauler(Thing thing)
+        {
+            Map map = thing.Map;
+            List<Pawn> pawns = map.mapPawns.FreeColonistsSpawned;
+
+            Pawn bestHauler = null;
+            float bestDistance = float.MaxValue;
+
+            foreach (Pawn pawn in pawns)
+            {
+                if (!pawn.Drafted &&
+                    pawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation) &&
+                    !pawn.Downed &&
+                    pawn.CanReserve(thing) &&
+                    pawn.workSettings.WorkIsActive(WorkTypeDefOf.Hauling))
+                {
+                    float distance = pawn.Position.DistanceTo(thing.Position);
+                    if (distance < bestDistance)
+                    {
+                        bestDistance = distance;
+                        bestHauler = pawn;
+                    }
+                }
+            }
+
+            return bestHauler;
+
         }
     }
 }

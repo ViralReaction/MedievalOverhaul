@@ -1,9 +1,4 @@
-﻿using JetBrains.Annotations;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Verse;
 
 namespace MedievalOverhaul
@@ -31,9 +26,9 @@ namespace MedievalOverhaul
         public Dictionary<ThingDef, ThingDef> plankDict;
     }
 
-    //public class FuelPatchList : Def
-    //{
-    //    public List<ThingDef> blackListRefuelable;
+    public class StimulantDrugList : Def
+    {
+        public List<HediffDef> stimulant;
 
-    //}
+    }
 }

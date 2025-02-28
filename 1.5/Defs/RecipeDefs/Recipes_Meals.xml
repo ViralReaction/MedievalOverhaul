@@ -4797,7 +4797,7 @@
 
 	<RecipeDef ParentName="CookMealBase">
 		<defName>DankPyon_CookMealRationsVegan</defName>
-		<label>cook vegetarian packaged rations</label>
+		<label>bake vegetarian packaged rations</label>
 		<description>Prepare a vegetarian packaged ration from a combination of meat and plant ingredients. Much of the ingredients are wasted in the preservation process.</description>
 		<jobString>Cooking ration.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
@@ -4829,12 +4829,13 @@
 		<researchPrerequisite>Pemmican</researchPrerequisite>
 		<recipeUsers>
 			<li>DankPyon_StoneOven</li>
+			<li>DankPyon_StoneOvenLarge</li>
 		</recipeUsers>
 	</RecipeDef>
 
 	<RecipeDef ParentName="CookMealBase">
 		<defName>DankPyon_CookMealRationsVeganBulk</defName>
-		<label>cook vegetarian packaged rations</label>
+		<label>bake vegetarian packaged rations x5</label>
 		<description>Prepare a vegetarian packaged ration from a combination of meat and plant ingredients. Much of the ingredients are wasted in the preservation process.</description>
 		<jobString>Cooking ration.</jobString>
 		<workSpeedStat>CookSpeed</workSpeedStat>
@@ -4866,6 +4867,44 @@
 		<researchPrerequisite>Pemmican</researchPrerequisite>
 		<recipeUsers>
 			<li>DankPyon_StoneOven</li>
+			<li>DankPyon_StoneOvenLarge</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CookMealBase">
+		<defName>DankPyon_CookMealRationsVeganBulkier</defName>
+		<label>bake vegetarian packaged rations x15</label>
+		<description>Prepare a vegetarian packaged ration from a combination of meat and plant ingredients. Much of the ingredients are wasted in the preservation process.</description>
+		<jobString>Cooking ration.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DankPyon_RawMacci</li>
+					</thingDefs>
+				</filter>
+				<count>12.75</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<disallowedCategories>
+				<li>MeatRaw</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_MealRationsVegetarian>15</DankPyon_MealRationsVegetarian>
+		</products>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>Pemmican</researchPrerequisite>
+		<recipeUsers>
+			<li>DankPyon_StoneOvenLarge</li>
 		</recipeUsers>
 	</RecipeDef>
 

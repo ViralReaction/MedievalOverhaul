@@ -531,7 +531,7 @@
         </graphicData>
 
         <comps>
-            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+            <li Class="MedievalOverhaul.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Shooting</skillDefName>
                 <xpAmount>15000</xpAmount>
             </li>
@@ -547,7 +547,7 @@
         </graphicData>
 
         <comps>
-            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+            <li Class="MedievalOverhaul.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Melee</skillDefName>
                 <xpAmount>15000</xpAmount>
             </li>
@@ -563,7 +563,7 @@
         </graphicData>
 
         <comps>
-            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+            <li Class="MedievalOverhaul.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Construction</skillDefName>
                 <xpAmount>15000</xpAmount>
             </li>
@@ -579,7 +579,7 @@
         </graphicData>
 
         <comps>
-            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+            <li Class="MedievalOverhaul.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Mining</skillDefName>
                 <xpAmount>15000</xpAmount>
             </li>
@@ -595,7 +595,7 @@
         </graphicData>
 
         <comps>
-            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+            <li Class="MedievalOverhaul.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Cooking</skillDefName>
                 <xpAmount>15000</xpAmount>
             </li>
@@ -611,7 +611,7 @@
         </graphicData>
 
         <comps>
-            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+            <li Class="MedievalOverhaul.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Plants</skillDefName>
                 <xpAmount>15000</xpAmount>
             </li>
@@ -627,7 +627,7 @@
         </graphicData>
 
         <comps>
-            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+            <li Class="MedievalOverhaul.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Animals</skillDefName>
                 <xpAmount>15000</xpAmount>
             </li>
@@ -643,7 +643,7 @@
         </graphicData>
 
         <comps>
-            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+            <li Class="MedievalOverhaul.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Crafting</skillDefName>
                 <xpAmount>15000</xpAmount>
             </li>
@@ -659,7 +659,7 @@
         </graphicData>
 
         <comps>
-            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+            <li Class="MedievalOverhaul.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Artistic</skillDefName>
                 <xpAmount>15000</xpAmount>
             </li>
@@ -675,7 +675,7 @@
         </graphicData>
 
         <comps>
-            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+            <li Class="MedievalOverhaul.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Medicine</skillDefName>
                 <xpAmount>15000</xpAmount>
             </li>
@@ -691,7 +691,7 @@
         </graphicData>
 
         <comps>
-            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+            <li Class="MedievalOverhaul.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Social</skillDefName>
                 <xpAmount>15000</xpAmount>
             </li>
@@ -707,7 +707,7 @@
         </graphicData>
 
         <comps>
-            <li Class="ImprovedNeurotrainers.CompPropertiesUseEffect_LearnSkillImproved">
+            <li Class="MedievalOverhaul.CompPropertiesUseEffect_LearnSkillImproved">
                 <skillDefName>Intellectual</skillDefName>
                 <xpAmount>15000</xpAmount>
             </li>

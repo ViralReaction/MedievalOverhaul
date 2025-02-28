@@ -660,6 +660,74 @@
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
 	</ThingDef>
-
+	
+	<ThingDef ParentName="ArmorSmithableBase">
+		<defName>DankPyon_Apparel_Lindwurm</defName>
+		<label>lindwurm scale armor</label>
+		<description>A scaly armor sewn from a lindwurm's scales. Wearing the armor displays owner's strength, as it is proof that they have slain a dangerous lindwurm to don the trophy. \n\nGrants immunity to lindwurm acid.</description>
+		<graphicData>
+			<texPath>Apparel/SpecialArmor/LindwurmArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>16</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<DankPyon_LindwurmScales>2</DankPyon_LindwurmScales>
+			<DankPyon_LindwurmBlood>1</DankPyon_LindwurmBlood>
+			<DankPyon_Leather_Lindwurm>100</DankPyon_Leather_Lindwurm>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<WorkToMake>38000</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>10</Mass>
+			<StuffEffectMultiplierArmor>0.40</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.20</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+			<EquipDelay>15</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.80</MoveSpeed>
+			<SocialImpact>0.30</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/SpecialArmor/LindwurmArmor</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>DankPyon_LindwurmArmor</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>DankPyon_LindwurmAcidImmune</hediff>
+				<part>Body</part>
+			</li>
+		</comps>
+	</ThingDef>
 
 </Defs>

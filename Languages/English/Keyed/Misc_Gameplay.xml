@@ -134,6 +134,13 @@
 	<DankPyon_StewPot_NutritionStored>Nutrition Stored</DankPyon_StewPot_NutritionStored>
 	<DankPyon_SlopRotting>Starting to go bad due to lack of fuel.</DankPyon_SlopRotting>
 	<DankPyon_SlopFuel>Requires fueled pot.</DankPyon_SlopFuel>
+	<DankPyon_EmptyPot>Empty Stew Pot</DankPyon_EmptyPot>
+	<DankPyon_EmptyPot_Cancel>Cancel Job</DankPyon_EmptyPot_Cancel>
+	<DankPyon_RetrieveSlopMeals>Retrieve {0} Meals</DankPyon_RetrieveSlopMeals>
+	<DankPyon_RetrieveSlopMeals_Cancel>Cancel Job</DankPyon_RetrieveSlopMeals_Cancel>
+	<DankPyon_NoFood>No food available.</DankPyon_NoFood>
+    <DankPyon_CannotUse>Cannot use {0}</DankPyon_CannotUse>
+    <DankPyon_GetSlop>Consume {0} meal.</DankPyon_GetSlop>
 	
 	<!-- Ice Stuff -->
 	<DankPyon_Melted>Fully melted in</DankPyon_Melted>

@@ -12,6 +12,10 @@ namespace MedievalOverhaul.Patches
 
     public static class FixBrokenDownBuilding_JobOnThing
     {
+        public static bool Prepare()
+        {
+            return MedievalOverhaulSettings.settings.componentRepair;
+        }
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
             List<CodeInstruction> code = instructions.ToList();

@@ -178,6 +178,7 @@
 				</thingDefs>
 			</li>
 			<li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>DankPyon_Loot</tag></li>
 			<li Class="StockGenerator_BuyExpensiveSimple"/>
 		</stockGenerators>
 	</TraderKindDef>

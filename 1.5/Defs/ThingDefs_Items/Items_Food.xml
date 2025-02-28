@@ -5,14 +5,7 @@
 
 	<!--============== Preserved Food ===============-->
 	<!-- Rations -->
-	<ThingDef ParentName="MealBase" Name="DankPyon_RationsBase">
-		<defName>DankPyon_MealRations</defName>
-		<label>packaged rations</label>
-		<description>A hearty and nutritious packaged meal, packed for use in survival situations. It takes a long time to rot but it can still deteriorate if left outside. Great for adventuring.</description>
-		<graphicData>
-			<texPath>Meal/Rations</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
+	<ThingDef ParentName="MealBaseIngredientless" Name="DankPyon_RationsBase" Abstract="True">
 		<statBases>
 			<DeteriorationRate>0.25</DeteriorationRate>
 			<MarketValue>24</MarketValue>
@@ -27,10 +20,24 @@
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
 		</ingestible>
+		<rotatable>false</rotatable>
+	</ThingDef>
+	
+	<ThingDef ParentName="DankPyon_RationsBase">
+		<defName>DankPyon_MealRations</defName>
+		<label>packaged rations</label>
+		<description>A hearty and nutritious packaged meal, packed for use in survival situations. It takes a long time to rot but it can still deteriorate if left outside. Great for adventuring.</description>
+		<graphicData>
+			<texPath>Meal/Rations</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>120</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients">
+				<splitTransferableFoodKind>true</splitTransferableFoodKind>
 			</li>
 		</comps>
 		<rotatable>false</rotatable>
@@ -46,11 +53,8 @@
 		</graphicData>
 		<comps>
 			<li Class="CompProperties_Ingredients">
+				<splitTransferableFoodKind>true</splitTransferableFoodKind>
 				<noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
-			</li>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>120</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
 		<rotatable>false</rotatable>

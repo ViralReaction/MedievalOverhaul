@@ -1,5 +1,5 @@
-﻿using System.Linq;
-using RimWorld;
+﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace MedievalOverhaul
@@ -33,17 +33,29 @@ namespace MedievalOverhaul
 
 		private void TryHealRandomPermanentWound()
 		{
-			if (base.Pawn.health.hediffSet.hediffs.Where((Hediff hd) => hd.IsPermanent()).TryRandomElement(out var result))
-			{
-				HealthUtility.Cure(result);
-				if (PawnUtility.ShouldSendNotificationAbout(base.Pawn))
-				{
-					Messages.Message("MessagePermanentWoundHealed".Translate(parent.LabelCap, base.Pawn.LabelShort, result.Label, base.Pawn.Named("PAWN")), base.Pawn, MessageTypeDefOf.PositiveEvent);
-				}
-			}
-		}
+            List<Hediff> permanentHediffs = new List<Hediff>();
 
-		public override void CompExposeData()
+            foreach (Hediff hediff in base.Pawn.health.hediffSet.hediffs)
+            {
+                if (hediff.IsPermanent())
+                {
+                    permanentHediffs.Add(hediff);
+                }
+            }
+            if (permanentHediffs.Count > 0)
+            {
+                Hediff result = permanentHediffs.RandomElement();
+                HealthUtility.Cure(result);
+
+                if (PawnUtility.ShouldSendNotificationAbout(base.Pawn))
+                {
+                    Messages.Message("MessagePermanentWoundHealed".Translate(parent.LabelCap, base.Pawn.LabelShort, result.Label, base.Pawn.Named("PAWN")), base.Pawn, MessageTypeDefOf.PositiveEvent);
+                }
+            }
+
+        }
+
+        public override void CompExposeData()
 		{
 			Scribe_Values.Look(ref ticksToHeal, "ticksToHeal", 0);
 		}

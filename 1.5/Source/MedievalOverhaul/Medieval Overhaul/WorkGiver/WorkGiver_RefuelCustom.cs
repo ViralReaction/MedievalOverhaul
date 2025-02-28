@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using ProcessorFramework;
 using RimWorld;
 using Verse;
 using Verse.AI;
@@ -106,10 +104,13 @@ namespace MedievalOverhaul
 
 			var allFuel = FindAllFuel(pawn, t);
 			Job job = JobMaker.MakeJob(customAtomicRefuelJob, (LocalTargetInfo)t);
-			job.targetQueueB = allFuel
-				.Select(f => new LocalTargetInfo(f))
-				.ToList();
-			return job;
+            job.targetQueueB = new List<LocalTargetInfo>();
+            foreach (Thing thing in allFuel)
+            {
+                job.targetQueueB.Add(new LocalTargetInfo(thing));
+            }
+
+            return job;
 		}
 
         private static Thing FindBestFuel(Pawn pawn, Thing refuelable)

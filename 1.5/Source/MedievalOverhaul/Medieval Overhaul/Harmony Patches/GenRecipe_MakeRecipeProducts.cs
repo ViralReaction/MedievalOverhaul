@@ -18,12 +18,29 @@ namespace MedievalOverhaul.Patches
                 curWorker = worker;
                 curRecipe = recipeDef;
             }
+
         }
         [HarmonyPriority(int.MinValue)]
-        public static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result, RecipeDef recipeDef, List<Thing> ingredients)
+        public static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result, RecipeDef recipeDef, Pawn worker, List<Thing> ingredients)
         {
             if (__result != null)
             {
+                var waterExtension = recipeDef.GetModExtension<RecipeExtension_WaterGather>();
+                if (waterExtension != null)
+                {
+
+                    if (worker.Map.terrainGrid.TerrainAt(worker.CurJob.targetA.Thing.Position).defName == "Ice")
+                    {
+                        var thingDef = waterExtension.thingDef;
+                        if (thingDef != null)
+                        {
+                            Thing waterThing = ThingMaker.MakeThing(thingDef, null);
+                            waterThing.stackCount = waterExtension.productCount;
+                            yield return waterThing;
+                        }
+                        yield break;
+                    }
+                }
                 foreach (var thing in __result)
                 {
                     yield return thing;
@@ -36,7 +53,7 @@ namespace MedievalOverhaul.Patches
                         thing = ingredients[i];
                         if (thing?.def?.butcherProducts?.Count <= 0)
                         {
-                            Log.Error("Attempting to butcher object without butcherProducts. Please report this to the authers of " + ingredients[i].ContentSource.Name + ". " + "RecipeDef: " + recipeDef + " " +  " Ingredient: " + ingredients[i].def);
+                            Log.Error("Attempting to butcher object without butcherProducts. Please report this to the authers of " + ingredients[i].ContentSource.Name + ". " + "RecipeDef: " + recipeDef + " " + " Ingredient: " + ingredients[i].def);
                             break;
                         }
                         for (int j = 0; j < thing.def.butcherProducts.Count; j++)
@@ -75,7 +92,6 @@ namespace MedievalOverhaul.Patches
                         }
                         yield break;
                     }
-                    
                 }
             }
 

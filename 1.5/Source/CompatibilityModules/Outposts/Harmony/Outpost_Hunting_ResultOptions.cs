@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
 using HarmonyLib;
-using RimWorld;
 using VOE;
 using Outposts;
+using Verse;
 
 namespace MedievalOverhaul.Compat
 {
@@ -24,6 +19,10 @@ namespace MedievalOverhaul.Compat
     [HarmonyPatch(typeof(Outpost_Hunting), nameof(Outpost_Hunting.ResultOptions), MethodType.Getter)]
     public class Outpost_Hunting_ResultOptions
     {
+        public static bool Prepare()
+        {
+            return MedievalOverhaulSettings.settings.leatherChain;
+        }
         public static List<ResultOption> Postfix(List<ResultOption> __result)
         {
             if (__result != null && __result.Count > 0)

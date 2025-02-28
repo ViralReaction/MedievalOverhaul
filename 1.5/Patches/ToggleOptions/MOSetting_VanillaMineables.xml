@@ -101,10 +101,6 @@
 				</li>
 
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables/li[text()="MineableUranium"]</xpath>
-				</li>
-
-				<li Class="PatchOperationRemove">
 					<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables/li[text()="MineableComponentsIndustrial"]</xpath>
 				</li>
 
@@ -113,7 +109,6 @@
 					<value>
 						<li>DankPyon_MineableCoal</li>
 						<li>DankPyon_MineableSalt</li>
-						<li>DankPyon_MineableGold</li>
 						<li>DankPyon_MineableIron</li>
 						<li>DankPyon_MineableCitrine</li>
 						<li>DankPyon_MineableAmber</li>
@@ -144,7 +139,6 @@
 					<value>
 						<li>DankPyon_MineableCoal</li>
 						<li>DankPyon_MineableSalt</li>
-						<li>DankPyon_MineableGold</li>
 						<li>DankPyon_MineableIron</li>
 						<li>DankPyon_MineableCitrine</li>
 						<li>DankPyon_MineableAmber</li>

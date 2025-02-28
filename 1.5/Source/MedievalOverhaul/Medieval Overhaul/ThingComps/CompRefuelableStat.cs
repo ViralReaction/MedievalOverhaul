@@ -1,6 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -13,6 +11,7 @@ namespace MedievalOverhaul
         public CompProperties_RefuelableStat Props => props as CompProperties_RefuelableStat;
         public CompSlop stewComp;
         private ThingFilter allowedFuelFilter;
+        private ThingWithComps parentThing;
 
         private RefuelableMapComponent _MapComponent
         {
@@ -108,7 +107,9 @@ namespace MedievalOverhaul
             base.PostSpawnSetup(respawningAfterLoad);
             if (this.allowedFuelFilter != null)
                 return;
-            _MapComponent.RegisterRefuelStat(this.parent);
+            this.parentThing = this.parent;
+            this.mapComponent = parentThing.Map.GetComponent<RefuelableMapComponent>();
+            mapComponent.RegisterRefuelStat(this.parent);
             this.allowedFuelFilter = new ThingFilter();
             var parentComp = this.parent.GetComp<CompRefuelableStat>().Props;
             this.allowedFuelFilter.CopyAllowancesFrom(this.parent.GetComp<CompRefuelableStat>().Props.fuelFilter);
@@ -137,7 +138,7 @@ namespace MedievalOverhaul
         public override void PostDeSpawn(Map map)
         {
             base.PostDeSpawn(map);
-            _MapComponent.DeregisterRefuelStat(this.parent);
+            map.GetComponent<RefuelableMapComponent>().DeregisterRefuelStat(parentThing);
         }
 
         public override void Initialize(CompProperties props)
@@ -194,11 +195,18 @@ namespace MedievalOverhaul
         {
             if (this.Props.atomicFueling)
             {
-                if (fuelThings.Sum((Thing t) => t.stackCount) < this.GetFuelCountToFullyRefuel())
+                int totalFuelCount = 0;
+                foreach (Thing thing in fuelThings)
+                {
+                    totalFuelCount += thing.stackCount;
+                }
+
+                if (totalFuelCount < this.GetFuelCountToFullyRefuel())
                 {
                     Log.ErrorOnce("Error refueling; not enough fuel available for proper atomic refuel", 19586442);
                     return;
                 }
+
             }
             int num = this.GetFuelCountToFullyRefuel(fuelThings[0]);
             while (num > 0 && fuelThings.Count > 0)

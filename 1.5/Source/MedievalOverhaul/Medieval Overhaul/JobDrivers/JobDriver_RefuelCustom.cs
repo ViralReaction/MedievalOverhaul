@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using Verse;
 using Verse.AI;
 
@@ -51,22 +50,33 @@ namespace MedievalOverhaul
 
 		public static Toil FinalizeRefueling(TargetIndex refuelableInd, TargetIndex fuelInd)
 		{
-			Toil toil = ToilMaker.MakeToil();
-			toil.initAction = () =>
-			{
-				Job curJob = toil.actor.CurJob;
-				Thing thing = curJob.GetTarget(refuelableInd).Thing;
-				if (toil.actor.CurJob.placedThings.NullOrEmpty())
-					thing.TryGetComp<CompRefuelableCustom>().Refuel(new List<Thing>
-					{
-					curJob.GetTarget(fuelInd).Thing
-					});
-				else
-					thing.TryGetComp<CompRefuelableCustom>().Refuel(toil.actor.CurJob.placedThings
-						.Select(p => p.thing).ToList());
-			};
-			toil.defaultCompleteMode = ToilCompleteMode.Instant;
-			return toil;
-		}
+            Toil toil = ToilMaker.MakeToil();
+            toil.initAction = () =>
+            {
+                Job curJob = toil.actor.CurJob;
+                Thing thing = curJob.GetTarget(refuelableInd).Thing;
+                CompRefuelableCustom refuelableComp = thing.TryGetComp<CompRefuelableCustom>();
+
+                if (refuelableComp == null)
+                    return;
+
+                if (toil.actor.CurJob.placedThings.NullOrEmpty())
+                {
+                    refuelableComp.Refuel(new List<Thing> { curJob.GetTarget(fuelInd).Thing });
+                }
+                else
+                {
+                    List<Thing> refuelThings = new List<Thing>();
+                    foreach (var placedThing in toil.actor.CurJob.placedThings)
+                    {
+                        refuelThings.Add(placedThing.thing);
+                    }
+                    refuelableComp.Refuel(refuelThings);
+                }
+            };
+
+            toil.defaultCompleteMode = ToilCompleteMode.Instant;
+            return toil;
+        }
 	}
 }

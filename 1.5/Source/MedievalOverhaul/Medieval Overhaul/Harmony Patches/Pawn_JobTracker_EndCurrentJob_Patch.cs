@@ -1,9 +1,8 @@
 ﻿using HarmonyLib;
-using RimWorld;
 using Verse;
 using Verse.AI;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(Pawn_JobTracker), "EndCurrentJob")]
     public static class Pawn_JobTracker_EndCurrentJob_Patch

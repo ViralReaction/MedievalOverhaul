@@ -198,7 +198,7 @@
 
 	<ThingDef ParentName="BenchBase">
 		<defName>DankPyon_StonecuttingSpot</defName>
-		<label>stonecutter's spot</label>
+		<label>stonecutter's block</label>
 		<description>A place for bashing stones to each other. Production here is slow because of the lack of tools.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
@@ -460,6 +460,7 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>4</heatPerSecond>
 			</li>
 			<li Class="CompProperties_AffectedByFacilities">
@@ -665,7 +666,7 @@
 				<offset>(0,0,0.2)</offset>
 			</li>
 			<li Class="CompProperties_HeatPusher">
-				<heatPushMaxTemperature>36</heatPushMaxTemperature>
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>6</heatPerSecond>
 			</li>
 			<li Class="CompProperties_Glower">
@@ -1424,6 +1425,7 @@
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>9</heatPerSecond>
 			</li>
 			<li Class="CompProperties_AffectedByFacilities">
@@ -1720,7 +1722,7 @@
 		<designationCategory>Production</designationCategory>
 		<techLevel>Medieval</techLevel>
 		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_StewPot</li>
+			<li>MedievalOverhaul.ITab_Fuel</li>
 		</inspectorTabs>
 	</ThingDef>
 
@@ -1774,6 +1776,8 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>MedievalOverhaul.CompUnpowered</compClass>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10.0</fuelConsumptionRate>
@@ -1793,6 +1797,7 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>4</heatPerSecond>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">
@@ -1840,7 +1845,7 @@
 		</placeWorkers>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<interactionCellOffset>(0,0,2)</interactionCellOffset>
-		<hasInteractionCell>true</hasInteractionCell>
+		<hasInteractionCell>false</hasInteractionCell>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<uiOrder>2130</uiOrder>
 		<designationHotKey>Misc6</designationHotKey>
@@ -1905,6 +1910,8 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>MedievalOverhaul.CompUnpowered</compClass>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10.0</fuelConsumptionRate>
@@ -1924,6 +1931,7 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>4</heatPerSecond>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">
@@ -2031,6 +2039,8 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>MedievalOverhaul.CompUnpowered</compClass>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10.0</fuelConsumptionRate>
@@ -2050,6 +2060,7 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>4</heatPerSecond>
 			</li>
 			<li Class="MedievalOverhaul.CompProperties_RefuelableStat">

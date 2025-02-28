@@ -19,6 +19,7 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+
 # Mono auto generated files
 mono_crash.*
 
@@ -403,3 +404,7 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 /1.5/Source/MedievalOverhaul/obj/Debug
+1.5/Source/MedievalOverhaul/obj/Debug/MedievalOverhaul.dll
+/1.5/Source/MedievalOverhaul/.vs
+/1.5/Source/MedievalOverhaul/.vs
+*.dds

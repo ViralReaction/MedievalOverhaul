@@ -16,9 +16,12 @@ namespace MedievalOverhaul.Patches
         [HarmonyPrefix]
 		public static bool Prefix(ref bool __result, Building_NutrientPasteDispenser __instance)
 		{
-			if (__instance.TryGetComp<CompUnpowered>() is null) return true;
-			__result = __instance.HasEnoughFeedstockInHoppers() && (__instance.TryGetComp<CompRefuelable>()?.HasFuel ?? true);
-			return false;
+			if (__instance is Building_SlopPot slopPot)
+			{
+				__result = slopPot.CanActuallyDispenseNow;
+				return false;
+			}
+			return true;
 		}
 	}
 

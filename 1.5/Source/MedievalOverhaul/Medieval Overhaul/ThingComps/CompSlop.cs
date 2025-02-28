@@ -1,4 +1,3 @@
-using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,6 +8,7 @@ namespace MedievalOverhaul
 	public class CompSlop : ThingComp
 	{
         public List<ThingDef> ingredients = new List<ThingDef>();
+        public ThingDef mealdef => Props.mealDef;
         public CompProperties_Slop Props => (CompProperties_Slop)props;
         public override void PostExposeData()
         {

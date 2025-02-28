@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Verse;
+﻿using Verse;
 using HarmonyLib;
 using ProcessorFramework;
 
@@ -34,13 +33,14 @@ namespace MedievalOverhaul.Patches
                                         count = amountLeather,
                                         thingDef = comp.Props.leatherType
                                     };
-                                    __result = TakeOutButcherProduct(__instance, thingDefCount, activeProcess);
+                                    __result = TakeOutButcherProduct(__instance, thing, thingDefCount, activeProcess);
                                     return false;
                                 }
-                                else if (thing.def.butcherProducts?.Any() ?? false)
+                                else if (thing.def.butcherProducts != null && thing.def.butcherProducts.Count > 0)
                                 {
-                                    var thingDefCount = thing.def.butcherProducts.FirstOrDefault();
-                                    __result = TakeOutButcherProduct(__instance, thingDefCount, activeProcess);
+                                    ThingDefCountClass thingDefCount = thing.def.butcherProducts[0]; // Direct index access
+
+                                    __result = TakeOutButcherProduct(__instance, thing, thingDefCount, activeProcess);
                                     return false;
                                 }
                             }
@@ -65,13 +65,13 @@ namespace MedievalOverhaul.Patches
             }
         }
 
-        public static Thing TakeOutButcherProduct(CompProcessor __instance, ThingDefCountClass thingDefCount, ActiveProcess activeProcess)
+        public static Thing TakeOutButcherProduct(CompProcessor __instance, Thing ingredientThing, ThingDefCountClass thingDefCount, ActiveProcess activeProcess)
         {
             Thing thing = null;
             if (!activeProcess.Ruined)
             {
                 thing = ThingMaker.MakeThing(thingDefCount.thingDef);
-                thing.stackCount = thingDefCount.count;
+                thing.stackCount = thingDefCount.count * activeProcess.ingredientCount;
             }
             foreach (Thing ingredientThing2 in activeProcess.ingredientThings)
             {

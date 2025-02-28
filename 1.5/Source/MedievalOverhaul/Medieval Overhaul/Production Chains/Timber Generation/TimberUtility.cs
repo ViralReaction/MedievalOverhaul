@@ -1,14 +1,6 @@
 ﻿using HarmonyLib;
-using MedievalOverhaul;
 using RimWorld;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
 using Verse;
 
 namespace MedievalOverhaul
@@ -25,29 +17,42 @@ namespace MedievalOverhaul
         {
             if (MedievalOverhaulSettings.settings.woodChain)
             {
-                foreach (ThingDef tree in DefDatabase<ThingDef>.AllDefs.Where(x => x.category == ThingCategory.Plant).ToList())
+                foreach (ThingDef tree in DefDatabase<ThingDef>.AllDefs)
                 {
-                    if (tree.plant?.harvestTag == "Wood" && (tree.plant?.harvestedThingDef?.stuffProps?.categories?.Contains(StuffCategoryDefOf.Woody) ?? false))
+                    if (tree.category == ThingCategory.Plant &&
+                        tree.plant?.harvestTag == "Wood" &&
+                        tree.plant?.harvestedThingDef?.stuffProps?.categories?.Contains(StuffCategoryDefOf.Woody) == true)
                     {
                         AllTreesForGenerator.Add(tree);
                     }
                 }
-                foreach (ThingDef animal in DefDatabase<ThingDef>.AllDefs.Where(x => x.category == ThingCategory.Pawn).ToList())
-                {
-                    if (animal.butcherProducts != null)
-                    {
-                        AllButchered.Add(animal);
-                    }
-                    if (animal.race?.leatherDef != null)
-                    {
-                        AllLeatheredAnimals.Add(animal);
-                    }
 
-                    if (animal.comps?.Any(x => x.compClass == typeof(CompSpawner)) ?? false)
+                foreach (ThingDef animal in DefDatabase<ThingDef>.AllDefs)
+                {
+                    if (animal.category == ThingCategory.Pawn)
                     {
-                        AllProductSpawner.Add(animal);
+                        if (animal.butcherProducts != null)
+                        {
+                            AllButchered.Add(animal);
+                        }
+                        if (animal.race?.leatherDef != null)
+                        {
+                            AllLeatheredAnimals.Add(animal);
+                        }
+                        if (animal.comps != null)
+                        {
+                            foreach (var comp in animal.comps)
+                            {
+                                if (comp.compClass == typeof(CompSpawner))
+                                {
+                                    AllProductSpawner.Add(animal);
+                                    break; // No need to keep checking once found
+                                }
+                            }
+                        }
                     }
                 }
+
             }
         }
         public static void TryAddEntry(ThingDef tree, ThingDef wood, ThingDef log)

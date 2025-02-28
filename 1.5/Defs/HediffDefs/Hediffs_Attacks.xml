@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>DankPyon_LindwurmAcid</defName>
+		<label>lindwurm acid</label>
+		<description>Powerful acid from the blood of a lindwurm. Corrodes the durability of armor.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<makesSickThought>true</makesSickThought>
+		<taleOnVisible>ToxicityRevealed</taleOnVisible>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>900</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="MedievalOverhaul.HediffCompProperties_LindwurmAcid">
+				<tickInterval>180</tickInterval>
+				<apparelDamagePerInterval>10</apparelDamagePerInterval>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<!-- Daze -->
+	<HediffDef>
+		<defName>DankPyon_Daze</defName>
+		<label>dazed</label>
+		<makesSickThought>true</makesSickThought>
+		<description>A temporary state of mind that hinders combat effectiveness.</description>
+		<tendable>false</tendable>
+		<isBad>true</isBad>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>1200</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties">
+				<compClass>MedievalOverhaul.HediffComp_Daze</compClass>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<MeleeDamageFactor>0.75</MeleeDamageFactor>
+					<MeleeCooldownFactor>1.25</MeleeCooldownFactor>
+					<MoveSpeed>0.75</MoveSpeed>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>DankPyon_AlpSleep</defName>
+		<label>magical sleep</label>
+		<makesSickThought>true</makesSickThought>
+		<description>A temporary state of mind that hinders combat effectiveness.</description>
+		<tendable>false</tendable>
+		<isBad>true</isBad>
+		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>1200</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties">
+				<compClass>MedievalOverhaul.HediffComp_Nightmare</compClass>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.10</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="InjuryBase">
+		<defName>DankPyon_NightmareDamage</defName>
+		<label>mental trauma</label>
+		<labelNoun>mental trauma</labelNoun>
+		<description>mental trauma</description>
+		<comps>
+		  <li Class="HediffCompProperties_TendDuration">
+			<labelTendedWell>set</labelTendedWell>
+			<labelTendedWellInner>set</labelTendedWellInner>
+			<labelSolidTendedWell>set</labelSolidTendedWell>
+		  </li>
+		</comps>
+		<injuryProps>
+		  <painPerSeverity>0.01</painPerSeverity>
+		  <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+		</injuryProps>
+	  </HediffDef>
+
+	<!-- Apparel Added Hediffs -->
+	<HediffDef>
+		<defName>DankPyon_LindwurmAcidImmune</defName>
+		<label>lindwurm acid immunity</label>
+		<description>Immune to lindwurm acid</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<makesSickThought>false</makesSickThought>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>true</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>DankPyon_StunImmune</defName>
+		<label>stun immunity</label>
+		<description>Immune to being stunned</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<makesSickThought>false</makesSickThought>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>true</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>DankPyon_DazeImmune</defName>
+		<label>daze immunity</label>
+		<description>Immune to being dazed</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<makesSickThought>false</makesSickThought>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>true</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>DankPyon_SigilMood</defName>
+		<label>rune sigil</label>
+		<description>Increased mood from sigil</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<makesSickThought>false</makesSickThought>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+		</comps>
+		<stages>
+			<li>
+				<becomeVisible>true</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

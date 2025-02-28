@@ -1,6 +1,5 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System.Linq;
 using System.Reflection;
 using Verse;
 
@@ -48,11 +47,17 @@ namespace MedievalOverhaul.Patches
             Room room = bench.GetRoom();
             foreach (var thing in room.uniqueContainedThings)
             {
-                if (thing is Building_Bookcase bookCase && bookCase.HeldBooks.Any(x => x.def == extension.schematicDef))
+                if (thing is Building_Bookcase bookCase)
                 {
-                    cachedSchematicCheck = true;
-                    cacheStaleAfterTicks = currentTick;
-                    return true;
+                    foreach (var book in bookCase.HeldBooks)
+                    {
+                        if (book.def == extension.schematicDef)
+                        {
+                            cachedSchematicCheck = true;
+                            cacheStaleAfterTicks = currentTick;
+                            return true;
+                        }
+                    }
                 }
             }
             cachedSchematicCheck = false;

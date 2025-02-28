@@ -291,7 +291,7 @@
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>12</researchViewX>
-		<researchViewY>3.6</researchViewY>
+		<researchViewY>3.0</researchViewY>
 		<prerequisites>
 			<li>DankPyon_Engineering</li>
 		</prerequisites>
@@ -306,7 +306,7 @@
 	<ResearchProjectDef>
 		<defName>DankPyon_Windmill</defName>
 		<label>windmill</label>
-		<description>Harness the power of the wind to automate grinding of wheatlike prodducts.</description>
+		<description>Harness the power of the wind to automate grinding wheatlike and sawing lumberlike products.</description>
 		<baseCost>400</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
@@ -319,6 +319,26 @@
 		<generalRules>
 			<rulesStrings>
 				<li>subject->windmill construction</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>DankPyon_Watermill</defName>
+		<label>watermill</label>
+		<description>Harness the power of the water to automate grinding wheatlike and sawing lumberlike products.</description>
+		<baseCost>400</baseCost>
+		<tab>DankPyon_MedievalResearchTab</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>12</researchViewX>
+		<researchViewY>3.6</researchViewY>
+		<prerequisites>
+			<li>DankPyon_Engineering</li>
+		</prerequisites>
+		<requiredResearchBuilding>DankPyon_AdvancedResearchBench</requiredResearchBuilding>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->watermill construction</li>
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>
@@ -400,7 +420,7 @@
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>12</researchViewX>
-		<researchViewY>3</researchViewY>
+		<researchViewY>2.4</researchViewY>
 		<prerequisites>
 			<li>DankPyon_Engineering</li>
 		</prerequisites>
@@ -657,9 +677,6 @@
 		<prerequisites>
 			<li>Greatbow</li>
 		</prerequisites>
-		<requiredResearchFacilities>
-			<li>DankPyon_Schematic_WarBow</li>
-		</requiredResearchFacilities>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->war bows</li>
@@ -923,7 +940,7 @@
 	<ResearchProjectDef>
 		<defName>DankPyon_TreeGriffonBerry</defName>
 		<label>griffon berry</label>
-		<description>A rare luscious fruit that grows on small tree. As per it's given name, the red fruit is a delicacy to griffins and are typically guarded by them.</description>
+		<description>A rare luscious fruit that grows on small tree. As per it's given name, the red fruit is a delicacy to griffons and are typically guarded by them.</description>
 		<baseCost>900</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>

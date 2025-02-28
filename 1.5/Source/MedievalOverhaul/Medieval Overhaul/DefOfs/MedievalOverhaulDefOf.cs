@@ -63,7 +63,12 @@ namespace MedievalOverhaul
         public static JobDef DankPyon_OperateQuest;
         public static JobDef DankPyon_RefuelCustom;
         public static JobDef DankPyon_RefuelAtomicCustom;
+
         public static JobDef DankPyon_UseOil;
+
+        public static JobDef DankPyon_DispenseSlop;
+        public static JobDef DankPyon_EmptyPot;
+        public static JobDef DankPyon_IceMold_Empty;
 
         public static BodyDef Bird;
 
@@ -74,6 +79,7 @@ namespace MedievalOverhaul
         public static HediffDef DankPyon_LindwurmAcidImmune;
         public static HediffDef DankPyon_StunImmune;
         public static HediffDef DankPyon_DazeImmune;
+        public static HediffDef DankPyon_High_VigorPill;
 
         public static TerrainDef Ice;
         public static ThingDef DankPyon_IceCellar;
@@ -83,6 +89,7 @@ namespace MedievalOverhaul
         public static ThingDef DankPyon_Flour;
         public static ThingDef DankPyon_Coal;
         public static ThingDef DankPyon_Tar;
+        public static ThingDef DankPyon_WaterMill;
 
         public static DamageDef DankPyon_AlpNightmare;
         public static GameConditionDef DankPyon_AlpEclipse;
@@ -90,6 +97,8 @@ namespace MedievalOverhaul
         public static TaleDef DankPyon_AlpEclipseTale;
         public static WeatherDef DankPyon_AlpEclipse_Weather;
         public static ThoughtDef DankPyon_AlpRaidFinished;
+        public static StatDef RestFallRateFactor;
+        public static TerrainAffordanceDef GrowSoil;
 
         [MayRequireCE]
         public static StatDef Bulk;

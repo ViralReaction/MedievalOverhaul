@@ -1,9 +1,5 @@
 ﻿using RimWorld;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
@@ -12,7 +8,9 @@ namespace MedievalOverhaul
     public class ITab_StewPot : ITab
     {
         private static readonly Vector2 WinSize = new (300f, 480f);
-        private readonly ThingFilterUI.UIState fuelFilterState = new ();
+        private readonly ThingFilterUI_Nutrition.UIState nutritionFilterState = new ();
+        private List<CompRefuelableStat> _cachedFuelBuildings = new();
+        private IList<object> _lastSelectedObjects;
 
         protected Building SelBuilding => (Building)this.SelThing;
 
@@ -31,14 +29,63 @@ namespace MedievalOverhaul
         public override void OnOpen()
         {
             base.OnOpen();
-            this.fuelFilterState.quickSearch.Reset();
+            this.nutritionFilterState.quickSearch.Reset();
         }
 
+        //public override void FillTab()
+        //{
+        //    CompRefuelableStat comp1 = this.SelBuilding.GetComp<CompRefuelableStat>();
+        //    new Rect(0.0f, 0.0f, ITab_StewPot.WinSize.x, ITab_StewPot.WinSize.y).ContractedBy(10f).SplitHorizontally(18f, out Rect _, out Rect bottom);
+        //    ThingFilterUI.DoThingFilterConfigWindow(bottom, this.fuelFilterState, comp1.AllowedFuelFilter, comp1.Props.fuelFilter, 1, (IEnumerable<ThingDef>)null, (IEnumerable<SpecialThingFilterDef>)null, true, true, false, (List<ThingDef>)null, (Map)null);
+        //}
         public override void FillTab()
         {
-            CompRefuelableStat comp1 = this.SelBuilding.GetComp<CompRefuelableStat>();
+            var selectedObjects = Find.Selector.SelectedObjects;
+
+            // If selection hasn't changed, skip updating.
+            if (HasSelectionChanged(selectedObjects))
+            {
+                _cachedFuelBuildings.Clear();
+                for (int i = 0; i < selectedObjects.Count; i++)
+                {
+                    if (selectedObjects[i] is ThingWithComps thingWithComps)
+                    {
+                        foreach (var comp in thingWithComps.AllComps)
+                        {
+                            if (comp is CompRefuelableStat nutritioncomp)
+                            {
+                                _cachedFuelBuildings.Add(nutritioncomp);
+                            }
+                        }
+                    }
+                }
+                _lastSelectedObjects = new List<object>(selectedObjects);
+            }
+            if (!_cachedFuelBuildings.Any()) return;
+
+            var firstComp = _cachedFuelBuildings[0];
+            var firstBuilding = (firstComp as ThingComp)?.parent;
+            if (firstBuilding == null)
+                return;
             new Rect(0.0f, 0.0f, ITab_StewPot.WinSize.x, ITab_StewPot.WinSize.y).ContractedBy(10f).SplitHorizontally(18f, out Rect _, out Rect bottom);
-            ThingFilterUI.DoThingFilterConfigWindow(bottom, this.fuelFilterState, comp1.AllowedFuelFilter, comp1.Props.fuelFilter, 1, (IEnumerable<ThingDef>)null, (IEnumerable<SpecialThingFilterDef>)null, true, true, false, (List<ThingDef>)null, (Map)null);
+            var refuelComp = firstBuilding.TryGetComp<CompRefuelableStat>();
+            ThingFilterUI_Nutrition.DoThingFilterConfigWindow(bottom, nutritionFilterState, refuelComp.AllowedFuelFilter, _cachedFuelBuildings, refuelComp.Props.fuelFilter, 1, (IEnumerable<ThingDef>)null, (IEnumerable<SpecialThingFilterDef>)null, true, true, false, (List<ThingDef>)null, (Map)null);
+        }
+        private bool HasSelectionChanged(IList<object> selectedObjects)
+        {
+            if (ReferenceEquals(_lastSelectedObjects, selectedObjects))
+                return false;
+
+            if (_lastSelectedObjects == null || _lastSelectedObjects.Count != selectedObjects.Count)
+                return true;
+
+            HashSet<object> currentSelection = new(selectedObjects);
+            for (int i = 0; i < _lastSelectedObjects.Count; i++)
+            {
+                if (!currentSelection.Contains(_lastSelectedObjects[i]))
+                    return true;
+            }
+            return false;
         }
     }
 }

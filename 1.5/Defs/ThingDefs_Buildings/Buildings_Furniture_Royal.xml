@@ -55,6 +55,9 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<researchPrerequisites Inherit="False">
+			<li>DankPyon_RoyalRusticFurniture</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<!--Bookshelf -->
@@ -112,6 +115,9 @@
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<researchPrerequisites Inherit="False">
+			<li>DankPyon_RoyalRusticFurniture</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 
@@ -161,7 +167,7 @@
 			<isSittable>true</isSittable>
 			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
 		</building>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RoyalRusticFurniture</li>
 		</researchPrerequisites>
 	</ThingDef>
@@ -184,7 +190,6 @@
 		</graphicData>
 		<uiIconScale>0.75</uiIconScale>
 		<altitudeLayer>Building</altitudeLayer>
-
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToBuild>22000</WorkToBuild>
@@ -194,31 +199,26 @@
 			<Comfort>0.95</Comfort>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-		
 		<stuffCategories>
 			<li>Woody</li>
 			<li>Stony</li>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>125</costStuffCount>
-
 		<pathCost>30</pathCost>
 		<fillPercent>0.40</fillPercent>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-
 		<building>
 			<isSittable>true</isSittable>
 			<paintable>true</paintable>
 			<destroySound>BuildingDestroyed_Soft_Small</destroySound>
 		</building>
 		<socialPropernessMatters>true</socialPropernessMatters>
-
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
-		
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RoyalRusticFurniture</li>
 		</researchPrerequisites>
 	</ThingDef>
@@ -255,7 +255,7 @@
 		</costList>
 		<costStuffCount>50</costStuffCount>
 		<rotatable>false</rotatable>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RoyalRusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -293,7 +293,7 @@
 		<building>
 			<buildingSizeCategory>Medium</buildingSizeCategory>
 		</building>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RoyalRusticFurniture</li>
 		</researchPrerequisites>
 	</ThingDef>
@@ -340,7 +340,7 @@
 		</comps>
 		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<castEdgeShadows>false</castEdgeShadows>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RoyalRusticFurniture</li>
 		</researchPrerequisites>
 	</ThingDef>
@@ -402,7 +402,7 @@
 				<maxDistance>6</maxDistance>
 			</li>
 		</comps>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RoyalRusticFurniture</li>
 		</researchPrerequisites>
 	</ThingDef>
@@ -474,7 +474,7 @@
 		<techLevel>Medieval</techLevel>
 		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
 		<uiIconScale>0.75</uiIconScale>
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RoyalRusticFurniture</li>
 		</researchPrerequisites>
 	</ThingDef>

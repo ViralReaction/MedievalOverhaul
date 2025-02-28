@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RimWorld;
+﻿using System.Collections.Generic;
 using Verse;
 
 namespace MedievalOverhaul
@@ -23,11 +18,15 @@ namespace MedievalOverhaul
 
         public static void CacheFuelValue()
         {
-            foreach (ThingDef fuelThing in DefDatabase<ThingDef>.AllDefs.Where(x => x?.GetModExtension<FuelValueProperty>()?.fuelValue != null).ToList())
+            foreach (ThingDef fuelThing in DefDatabase<ThingDef>.AllDefs)
             {
-                float fuelValue = fuelThing.GetModExtension<FuelValueProperty>().fuelValue;
-                FuelValueDict.Add(fuelThing, fuelValue);
+                var modExtension = fuelThing?.GetModExtension<FuelValueProperty>();
+                if (modExtension != null)
+                {
+                    FuelValueDict.Add(fuelThing, modExtension.fuelValue);
+                }
             }
+
         }
 
     }

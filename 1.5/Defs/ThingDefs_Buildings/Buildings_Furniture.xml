@@ -4,7 +4,7 @@
 
 	<!--======================= Basic domestic furniture ==============================-->
 	<ThingDef Abstract="True" ParentName="BuildingBase" Name="DankPyon_BuildingBase">
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -18,7 +18,7 @@
 
 
 	<ThingDef Abstract="True" ParentName="TableGatherSpotBase" Name="DankPyon_TableGatherSpotBase">
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -28,7 +28,7 @@
 	</ThingDef>
 
 	<ThingDef Abstract="True" ParentName="TableBase" Name="DankPyon_TableBase">
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -41,7 +41,7 @@
 	</ThingDef>
 
 	<ThingDef Abstract="True" ParentName="FurnitureWithQualityBase" Name="DankPyon_FurnitureWithQualityBase">
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -54,7 +54,7 @@
 	</ThingDef>
 
 	<ThingDef Abstract="True" ParentName="ShelfBase" Name="DankPyon_VanillaShelfBase">
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -65,7 +65,7 @@
 	
 
 	<ThingDef Abstract="True" ParentName="ArtableFurnitureBase" Name="DankPyon_ArtableFurnitureBase">
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -78,7 +78,7 @@
 	</ThingDef>
 
 	<ThingDef Abstract="True" ParentName="ArtableBedBase" Name="DankPyon_ArtableBedBase">
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -88,38 +88,13 @@
 	</ThingDef>
 
 	<ThingDef Abstract="True" ParentName="BedWithQualityBase" Name="DankPyon_BedWithQualityBase"><!-- Needs to re-reference parent -->
-		<researchPrerequisites>
+		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 		<statBases>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-	</ThingDef>
-
-	<!-- New Bed Base-->
-	<ThingDef Abstract="True" ParentName="SansComfortBedBase" Name="DankPyon_BasicBedBase">
-		<researchPrerequisites>
-			<li>DankPyon_RusticFurniture</li>
-		</researchPrerequisites>
-		<designationCategory>DankPyon_RusticFurniture</designationCategory>
-
-		<statBases>
-			<Comfort>0.75</Comfort>
-			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
-		</statBases>
-
-		<comps>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>DankPyon_RusticEndTable</li>
-					<li>DankPyon_RusticDresser</li>
-					<li>DankPyon_RusticCloset</li>
-					<li>DankPyon_RusticCloset1x2c</li>
-					<li>DankPyon_RusticChest</li>
-				</linkableFacilities>
-			</li>
-		</comps>
 	</ThingDef>
 
 	<!--======================= ======================== ==============================-->
@@ -174,6 +149,7 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
@@ -309,6 +285,7 @@
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
@@ -434,6 +411,7 @@
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
@@ -517,6 +495,7 @@
 				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
@@ -1404,7 +1383,7 @@
 	<!--Candles-->
 	<ThingDef ParentName="DankPyon_BuildingBase" Name="DankPyon_SingleCandleBase">
 		<defName>DankPyon_Candle</defName>
-		<label>candle (tallow)</label>
+		<label>candle</label>
 		<description>A candle to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with animal tallow.</description>
 		<graphicData>
 			<texPath>Furniture/RusticCandle</texPath>
@@ -1463,12 +1442,14 @@
 				<fuelFilter>
 					<thingDefs>
 						<li>DankPyon_Tallow</li>
+						<li>DankPyon_Wax</li>
 					</thingDefs>
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				<fuelIconPath>UI/IconTallow</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>13</heatPushMaxTemperature>
 			</li>
@@ -1530,7 +1511,7 @@
 
 	<ThingDef ParentName="DankPyon_SingleCandleBase">
 		<defName>DankPyon_Candle_Beeswax</defName>
-		<label>candle (wax)</label>
+		<label>candle</label>
 		<description>A candle to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with bee wax.</description>
 		<costList Inherit="False">
 			<DankPyon_Wax>10</DankPyon_Wax>
@@ -1543,6 +1524,7 @@
 				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
 				<fuelFilter>
 					<thingDefs>
+						<li>DankPyon_Tallow</li>
 						<li>DankPyon_Wax</li>
 					</thingDefs>
 				</fuelFilter>
@@ -1551,6 +1533,7 @@
 				<fuelIconPath>UI/IconWax</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>13</heatPushMaxTemperature>
 			</li>
@@ -1587,14 +1570,11 @@
 				</offsets>
 			</li>
 		</comps>
-		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
-		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BuildingBase" Name="DankPyon_CandleBase">
 		<defName>DankPyon_Candles</defName>
-		<label>candles (tallow)</label>
+		<label>candles</label>
 		<description>Candles to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with animal tallow.</description>
 		<graphicData>
 			<texPath>Furniture/RusticCandles</texPath>
@@ -1653,12 +1633,14 @@
 				<fuelFilter>
 					<thingDefs>
 						<li>DankPyon_Tallow</li>
+						<li>DankPyon_Wax</li>
 					</thingDefs>
 				</fuelFilter>
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 				<fuelIconPath>UI/IconTallow</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
@@ -1720,7 +1702,7 @@
 
 	<ThingDef ParentName="DankPyon_CandleBase">
 		<defName>DankPyon_Candles_Beeswax</defName>
-		<label>candles (wax)</label>
+		<label>candles</label>
 		<description>A candle to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with bee wax.</description>
 		<costList Inherit="False">
 			<DankPyon_Wax>15</DankPyon_Wax>
@@ -1733,6 +1715,7 @@
 				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
 				<fuelFilter>
 					<thingDefs>
+						<li>DankPyon_Tallow</li>
 						<li>DankPyon_Wax</li>
 					</thingDefs>
 				</fuelFilter>
@@ -1741,6 +1724,7 @@
 				<fuelIconPath>UI/IconWax</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
@@ -1777,9 +1761,6 @@
 				</offsets>
 			</li>
 		</comps>
-		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
-		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BuildingBase">
@@ -1830,9 +1811,6 @@
 		<building>
 			<isEdifice>false</isEdifice>
 		</building>
-		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
-		</inspectorTabs>
 		<placeWorkers>
 			<li>PlaceWorker_GlowRadius</li>
 			<li>PlaceWorker_Heater</li>
@@ -1855,6 +1833,7 @@
 				<fuelIconPath>UI/IconTallow</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
@@ -1908,6 +1887,9 @@
 		<modExtensions>
 			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
 		</modExtensions>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BuildingBase">
@@ -1964,9 +1946,6 @@
 			<li>PlaceWorker_Heater</li>
 			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
 		</placeWorkers>
-		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
-		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.0</fuelConsumptionRate>
@@ -1975,6 +1954,7 @@
 				<fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
 				<fuelFilter>
 					<thingDefs>
+						<li>DankPyon_Tallow</li>
 						<li>DankPyon_Wax</li>
 					</thingDefs>
 				</fuelFilter>
@@ -1983,6 +1963,7 @@
 				<fuelIconPath>UI/IconWax</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>1</heatPerSecond>
 				<heatPushMaxTemperature>16</heatPushMaxTemperature>
 			</li>
@@ -2037,6 +2018,9 @@
 		<modExtensions>
 			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
 		</modExtensions>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BuildingBase">
@@ -2111,6 +2095,7 @@
 				<fuelIconPath>UI/IconTar</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>3.5</heatPerSecond>
 				<heatPushMaxTemperature>23</heatPushMaxTemperature>
 			</li>
@@ -2196,6 +2181,9 @@
 				<maxDistance>6</maxDistance>
 			</li>
 		</comps>
+		<researchPrerequisites Inherit="False">
+			<li>Smithing</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_VanillaShelfBase">
@@ -2233,6 +2221,10 @@
 				<maxDistance>6</maxDistance>
 			</li>
 		</comps>
+		<researchPrerequisites Inherit="False">
+			<li>Smithing</li>
+			<li>DankPyon_RoyalRusticFurniture</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 
@@ -2718,6 +2710,29 @@
 		Fur Bed		 - Vanilla Bed
 		Straw Bed	 -
 		Wicker Bed	 - -->
+	<!-- New Bed Base-->
+	<ThingDef Abstract="True" ParentName="SansComfortBedBase" Name="DankPyon_BasicBedBase">
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+		<statBases>
+			<Comfort>0.75</Comfort>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>DankPyon_RusticEndTable</li>
+					<li>DankPyon_RusticDresser</li>
+					<li>DankPyon_RusticCloset</li>
+					<li>DankPyon_RusticCloset1x2c</li>
+					<li>DankPyon_RusticChest</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<researchPrerequisites Inherit="False">
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+	</ThingDef>
+
 	<ThingDef ParentName="DankPyon_BasicBedBase">
 		<defName>DankPyon_BedLog</defName>
 		<label>log bed</label>
@@ -2732,7 +2747,6 @@
 			</damageData>
 		</graphicData>
 		<size>(1,2)</size>
-
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Beauty>1</Beauty>
@@ -2741,18 +2755,15 @@
 			<BedRestEffectiveness>0.90</BedRestEffectiveness>
 			<Comfort>0.55</Comfort>
 		</statBases>
-		
 		<stuffCategories Inherit="false">
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>45</costStuffCount>
-
 		<uiOrder>2010</uiOrder>
 		<building>
 			<paintable>true</paintable>
 			<bed_showSleeperBody>true</bed_showSleeperBody>
 		</building>
-
 		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
@@ -2770,7 +2781,6 @@
 			</damageData>
 		</graphicData>
 		<size>(2,2)</size>
-
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
 			<WorkToBuild>1350</WorkToBuild>
@@ -2779,18 +2789,17 @@
 			<BedRestEffectiveness>0.90</BedRestEffectiveness>
 			<Comfort>0.55</Comfort>
 		</statBases>
-		
 		<stuffCategories Inherit="false">
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>85</costStuffCount>
-
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
 		<building>
 			<paintable>true</paintable>
 			<bed_showSleeperBody>true</bed_showSleeperBody>
 		</building>
+		<researchPrerequisites Inherit="false"/>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BasicBedBase">
@@ -2807,7 +2816,6 @@
 			</damageData>
 		</graphicData>
 		<size>(1,2)</size>
-
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Beauty>1</Beauty>
@@ -2816,19 +2824,18 @@
 			<BedRestEffectiveness>0.95</BedRestEffectiveness>
 			<Comfort>0.65</Comfort>
 		</statBases>
-		
-		<stuffCategories>
-			<li>Metallic</li>
+		<stuffCategories Inherit="False">
 			<li>Woody</li>
-			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>45</costStuffCount>
-
 		<uiOrder>2010</uiOrder>
 		<building>
 			<paintable>true</paintable>
 			<bed_showSleeperBody>true</bed_showSleeperBody>
 		</building>
+		<researchPrerequisites Inherit="False">
+			<li>DankPyon_Lumber</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BasicBedBase">
@@ -2845,7 +2852,6 @@
 			</damageData>
 		</graphicData>
 		<size>(2,2)</size>
-
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
 			<WorkToBuild>1350</WorkToBuild>
@@ -2854,15 +2860,19 @@
 			<BedRestEffectiveness>0.95</BedRestEffectiveness>
 			<Comfort>0.65</Comfort>
 		</statBases>
-		
+		<stuffCategories Inherit="False">
+			<li>Woody</li>
+		</stuffCategories>
 		<costStuffCount>85</costStuffCount>
-
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
 		<building>
 			<paintable>true</paintable>
 			<bed_showSleeperBody>true</bed_showSleeperBody>
 		</building>
+		<researchPrerequisites Inherit="False">
+			<li>DankPyon_Lumber</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BasicBedBase">
@@ -2879,7 +2889,6 @@
 			</damageData>
 		</graphicData>
 		<size>(1,2)</size>
-
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Beauty>1</Beauty>
@@ -2888,7 +2897,6 @@
 			<BedRestEffectiveness>0.95</BedRestEffectiveness>
 			<Comfort>0.7</Comfort>
 		</statBases>
-		
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
@@ -2898,12 +2906,14 @@
 		<costList>
 			<DankPyon_Straw>15</DankPyon_Straw>
 		</costList>
-
 		<uiOrder>2010</uiOrder>
 		<building>
 			<paintable>true</paintable>
 			<bed_showSleeperBody>true</bed_showSleeperBody>
 		</building>
+		<researchPrerequisites Inherit="False">
+			<li>DankPyon_Lumber</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BasicBedBase">
@@ -2920,7 +2930,6 @@
 			</damageData>
 		</graphicData>
 		<size>(2,2)</size>
-
 		<statBases>
 			<MaxHitPoints>180</MaxHitPoints>
 			<WorkToBuild>1350</WorkToBuild>
@@ -2929,18 +2938,19 @@
 			<BedRestEffectiveness>0.95</BedRestEffectiveness>
 			<Comfort>0.7</Comfort>
 		</statBases>
-		
 		<costStuffCount>85</costStuffCount>
 		<costList>
 			<DankPyon_Straw>30</DankPyon_Straw>
 		</costList>
-
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
 		<building>
 			<paintable>true</paintable>
 			<bed_showSleeperBody>true</bed_showSleeperBody>
 		</building>
+		<researchPrerequisites Inherit="False">
+			<li>DankPyon_Lumber</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 	<ThingDef ParentName="DankPyon_BasicBedBase">
@@ -3009,17 +3019,14 @@
 			<Beauty>2</Beauty>
 			<BedRestEffectiveness>1</BedRestEffectiveness>
 		</statBases>
-		
 		<costList>
 			<WoodLog>85</WoodLog>
 		</costList>
-
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
 		<building>
 			<paintable>true</paintable>
 		</building>
-
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_BedCureHediff">
 				<cureHediff>Hypothermia</cureHediff>
@@ -3043,11 +3050,9 @@
 			</damageData>
 		</graphicData>
 		<size>(1,2)</size>
-
 		<thingSetMakerTags>
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
-
 		<statBases>
 			<MaxHitPoints>140</MaxHitPoints>
 			<Beauty>35</Beauty>
@@ -3056,19 +3061,16 @@
 			<BedRestEffectiveness>1.05</BedRestEffectiveness>
 			<Comfort>0.85</Comfort>
 		</statBases>
-		
 		<costStuffCount>50</costStuffCount>
 		<costList>
 			<DankPyon_Silk>25</DankPyon_Silk>
 			<DankPyon_Linen>10</DankPyon_Linen>
 		</costList>
-
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<uiOrder>2010</uiOrder>
 		<building>
 			<paintable>true</paintable>
 		</building>
-
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_BedCureHediff">
 				<cureHediff>Hypothermia</cureHediff>
@@ -3076,6 +3078,9 @@
 				<cureSeverity>0.02</cureSeverity>
 			</li>
 		</comps>
+		<researchPrerequisites Inherit="False">
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_RusticBedBase">
@@ -3113,21 +3118,19 @@
 			<Mass>50</Mass>
 			<Beauty>35</Beauty>
 			<BedRestEffectiveness>1.05</BedRestEffectiveness>
+			<Comfort>0.85</Comfort>
 		</statBases>
 		<size>(2,2)</size>
-
 		<costStuffCount>100</costStuffCount>
 		<costList>
 			<DankPyon_Silk>50</DankPyon_Silk>
 			<DankPyon_Linen>20</DankPyon_Linen>
 		</costList>
-
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
 		<building>
 			<paintable>true</paintable>
 		</building>
-		
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_BedCureHediff">
 				<cureHediff>Hypothermia</cureHediff>
@@ -3135,6 +3138,9 @@
 				<cureSeverity>0.02</cureSeverity>
 			</li>
 		</comps>
+		<researchPrerequisites Inherit="False">
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_RusticDoubleBed_Base">
@@ -3220,6 +3226,7 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>11</heatPerSecond>
 				<heatPushMaxTemperature>24</heatPushMaxTemperature>
 			</li>
@@ -3310,6 +3317,7 @@
 				<fuelIconPath>UI/IconRawWood</fuelIconPath>
 			</li>
 			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>32</heatPerSecond>
 				<heatPushMaxTemperature>21</heatPushMaxTemperature>
 			</li>

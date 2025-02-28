@@ -1,8 +1,7 @@
 ﻿using HarmonyLib;
-using MedievalOverhaul.Patches;
 using Verse;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
 
     [HarmonyPatch(typeof(Book), "GenerateBook")]

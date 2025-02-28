@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>
+			<li>component_replace</li>
+		</settings>
+		<active Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef/costList/ComponentIndustrial</xpath>
+					<match Class="PatchOperationSetName">
+						<xpath>Defs/ThingDef/costList/ComponentIndustrial</xpath>
+						<name>DankPyon_ComponentBasic</name>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef/li/filter/thingDefs/li[.="ComponentIndustrial"]</xpath>
+					<match Class="PatchOperationReplace">
+						<value>
+							<li>DankPyon_ComponentBasic</li>
+						</value>
+					</match>
+				</li>
+
+			</operations>
+		</active>
+	</Operation>
+
+</Patch>

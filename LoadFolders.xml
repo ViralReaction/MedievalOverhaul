@@ -34,13 +34,15 @@
 		<li IfModActive="swablu.ambience">1.5/Mods/AmbientRim</li>
 		<li IfModActive="seohyeon.optimizationmeats">1.5/Mods/OptimizationMeats</li>
 		<li IfModActive="wexman.mines">1.5/Mods/Mines</li>
-		<li IfModActive="vanillaexpanded.vfesecurity">1.5/Mods/VFE_Security</li>
 		<li IfModActive="owlchemist.giddyup">1.5/Mods/GiddyUp2</li>
+		<li IfModActive="ReBuild.COTR.DoorsAndCorners">1.5/Mods/ReBuildDoorsAndCorners</li>
 		<li IfModActive="rimedieval.ice.revamped">1.5/Mods/Rimedieval_Ice</li>
 		<li IfModActive="vanillaexpanded.outposts">1.5/Mods/VanillaExpandedOutposts</li>
 		<li IfModActive="vanillaexpanded.vfearchitect">1.5/Mods/VanillaFurnitureExpanded_Architect</li>
 		<li IfModActive="aelanna.betterpyromania">1.5/Mods/BetterPyro</li>
 		<li IfModActive="ceteam.combatextended">1.5/Mods/CombatExtended</li>
+		<li IfModActive="Owlchemist.SimpleFX.Smoke2">1.5/Mods/SimpleFXSmoke</li>
+		<li IfModActive="orion.hospitality">1.5/Mods/Hospitality</li>
 		<!-- <li IfModActive="dankpyon.medieval.overhaul.house.roxmont">1.5/Mods/Roxmont</li> -->
 	</v1.5>
 

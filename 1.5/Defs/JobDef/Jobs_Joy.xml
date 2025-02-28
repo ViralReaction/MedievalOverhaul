@@ -99,4 +99,25 @@
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 
+	<JobDef>
+		<defName>DankPyon_DispenseSlop</defName>
+		<driverClass>MedievalOverhaul.JobDriver_DispenseSlop</driverClass>
+		<reportString>retrieve food at TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>DankPyon_EmptyPot</defName>
+		<driverClass>MedievalOverhaul.JobDriver_EmptySlopPot</driverClass>
+		<reportString>empty food at TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>DankPyon_IceMold_Empty</defName>
+		<driverClass>MedievalOverhaul.JobDriver_EmptyIceMold</driverClass>
+		<reportString>empty food at TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
 </Defs>

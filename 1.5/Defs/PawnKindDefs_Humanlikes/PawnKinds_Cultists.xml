@@ -28,10 +28,7 @@
 		</requiredWorkTags>
 		<weaponMoney>500</weaponMoney>
 		<itemQuality>Normal</itemQuality>
-		<gearHealthRange>
-			<min>0.2</min>
-			<max>1.1</max>
-		</gearHealthRange>
+		<gearHealthRange>0.2~1.1</gearHealthRange>
 
 		<apparelRequired>
 			<li>DankPyon_Headgear_CultistHood</li>	

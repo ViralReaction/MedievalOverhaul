@@ -14,7 +14,27 @@
 	<DankPyon_Settings_WoodChain_Tooltip>Enables timber production chain, where trees give logs that have to be cut into planks for more use.</DankPyon_Settings_WoodChain_Tooltip>
 	
 	<DankPyon_Settings_ClothChain>Cloth Production Chain:</DankPyon_Settings_ClothChain>
-	<DankPyon_Settings_ClothChain_Tooltip>Enables the cloth production chain, where raw materials from plans have to be spun into cloth.</DankPyon_Settings_ClothChain_Tooltip>
+	<DankPyon_Settings_ClothChain_Tooltip>Enables the cloth production chain, where raw materials from plants have to be spun into cloth.</DankPyon_Settings_ClothChain_Tooltip>
+	
+	<DankPyon_Settings_MetalChain>Metal Production Chain:</DankPyon_Settings_MetalChain>
+	<DankPyon_Settings_MetalChain_Tooltip>Enables the metal production chain, where raw ores must be smelted into ingots before use. Vanilla mineables will be forced on if this is inactive.</DankPyon_Settings_MetalChain_Tooltip>
+	
+	<!-- Agriculture Options -->
+	<DankPyon_Settings_Agriculture>Agriculture Options</DankPyon_Settings_Agriculture>
+	
+	<DankPyon_Settings_SoilWear>Plowed Soil Wear:</DankPyon_Settings_SoilWear>
+	<DankPyon_Settings_SoilWear_Tooltip>Enables plowed soil wearing out and additional options to customize.</DankPyon_Settings_SoilWear_Tooltip>
+	
+	<DankPyon_Settings_AutoPlow>Auto-Plow Soil:</DankPyon_Settings_AutoPlow>
+	<DankPyon_Settings_AutoPlow_Tooltip>Enables automatically setting up blueprints for plowing soil after worn out.</DankPyon_Settings_AutoPlow_Tooltip>
+	
+	<DankPyon_Settings_SoilWearChance>Wear Out Chance:</DankPyon_Settings_SoilWearChance>
+	<DankPyon_Settings_SoilWearChance_Tooltip>Chance that the soil be worn out after harvesting plant.</DankPyon_Settings_SoilWearChance_Tooltip>
+	
+	<DankPyon_Settings_SoilFertility>Plowed Soil Fertility:</DankPyon_Settings_SoilFertility>
+	<DankPyon_Settings_SoilFertility_Tooltip>Changes the fertility of plowed soil.</DankPyon_Settings_SoilFertility_Tooltip>
+	
+	
 
 	<!-- Map Generation Stuff -->
 	<DankPyon_Settings_MapGen>Map Generation Options</DankPyon_Settings_MapGen>
@@ -49,5 +69,17 @@
 
 	<DankPyon_Settings_SlopDispenser>Medieval Nutrient Paste Dispenser:</DankPyon_Settings_SlopDispenser>
 	<DankPyon_Settings_SlopDispenser_Tooltip>Recommend turning off for industrial playthroughs.</DankPyon_Settings_SlopDispenser_Tooltip>
+	
+	<DankPyon_Settings_ComponentRepair>Medieval Component Repair:</DankPyon_Settings_ComponentRepair>
+	<DankPyon_Settings_ComponentRepair_Tooltip>Will repair medieval techlevel buildigns with basic components.</DankPyon_Settings_ComponentRepair_Tooltip>
+	
+	<!-- Experimental Patches -->
+	<DankPyon_Settings_Experimental>Experimental Patches</DankPyon_Settings_Experimental>
+	<DankPyon_Settings_Experimental_Desc>The below patches are completely experimental and dangerous. No support will be given for issues relating to them.</DankPyon_Settings_Experimental_Desc>
+	
+	<DankPyon_Settings_Chemfuel_Replace_Title>Chemfuel Replace:</DankPyon_Settings_Chemfuel_Replace_Title>
+	<DankPyon_Settings_Chemfuel_Replace_Desc>Replaces all chemfuel in recipes and cost lists with tar.</DankPyon_Settings_Chemfuel_Replace_Desc>
+	<DankPyon_Settings_Component_Replace_Title>Component Replace:</DankPyon_Settings_Component_Replace_Title>
+	<DankPyon_Settings_Component_Replace_Desc>Replaces all component in recipes and cost lists with MO's component. This does not change what is used to repair them.</DankPyon_Settings_Component_Replace_Desc>
 
 </LanguageData>

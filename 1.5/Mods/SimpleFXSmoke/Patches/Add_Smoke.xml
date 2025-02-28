@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_Pyre"]/comps</xpath>
+		<value>
+			<li Class="Flecker.CompProperties_Smoker">
+				<particleSize>2</particleSize>
+				<indoorAlt>Owl_SmokeIndoors</indoorAlt>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_RusticTorchLamp"]/comps</xpath>
+		<value>
+			<li Class="Flecker.CompProperties_Smoker">
+				<fleckDef>Owl_Vapor</fleckDef>
+				<particleSize>0.4</particleSize>
+			</li>
+		</value>
+	</Operation>
+			
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_WallTorch"]/comps</xpath>
+		<value>
+			<li Class="Flecker.CompProperties_Smoker">
+				<fleckDef>Owl_Vapor</fleckDef>
+				<particleSize>0.4</particleSize>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_StoneOvenLarge"]/comps</xpath>
+		<value>
+			<li Class="Flecker.CompProperties_Smoker">
+				<particleSize>2</particleSize>
+				<billsOnly>true</billsOnly>
+				<particleOffset>(0.5,0,2)</particleOffset>
+				<indoorAlt>Owl_SmokeIndoors</indoorAlt>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_Grill"]/comps</xpath>
+		<value>
+			<li Class="Flecker.CompProperties_Smoker">
+				<fleckDef>Owl_Vapor</fleckDef>
+				<billsOnly>true</billsOnly>
+				<particleSize>0.66</particleSize>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_StewPot"]/comps</xpath>
+		<value>
+			<li Class="Flecker.CompProperties_Smoker">
+				<fleckDef>Owl_Vapor</fleckDef>
+				<billsOnly>true</billsOnly>
+				<particleSize>0.66</particleSize>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_Brazier1x1c"]/comps</xpath>
+		<value>
+			<li Class="Flecker.CompProperties_Smoker">
+				<particleSize>1.5</particleSize>
+				<particleOffset>(0,0,0.5)</particleOffset>
+				<indoorAlt>Owl_SmokeIndoors</indoorAlt>
+			</li>
+		</value>
+	</Operation>
+				
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_Brazier2x2c"]/comps</xpath>
+		<value>
+			<li Class="Flecker.CompProperties_Smoker">
+				<particleSize>1.5</particleSize>
+				<particleOffset>(0,0,2)</particleOffset>
+				<indoorAlt>Owl_SmokeIndoors</indoorAlt>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>
