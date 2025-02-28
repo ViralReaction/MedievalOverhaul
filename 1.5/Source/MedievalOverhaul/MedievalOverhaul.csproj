@@ -40,11 +40,9 @@
     <Compile Include="Medieval Overhaul\GameComponent\OiledWeaponsManager.cs" />
     <Compile Include="Medieval Overhaul\GameComponent\OilTrackerComponent.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetFuelLevelCustom.cs" />
-
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_OilChargesBar.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableStatusCustom.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Compatibility\Harmony_CombatExtended.cs" />
-
     <Compile Include="Medieval Overhaul\Gizmo\Command_RetrieveSlop.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableStatusCustom.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Building_CommsConsole_CanUseCommsNow.cs" />
@@ -60,15 +58,11 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\FoodUtility_BestFoodSourceOnMap_Transpile.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\MainTabWindow_Inspect_CurTabs.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\PlaceWorker_WatermillGenerator_DrawGhost.cs" />
-
     <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_ClearSnow_MakeNewToils.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ResearchProjectDef_CanResearchNow.cs" />
     <Compile Include="Medieval Overhaul\HediffComps\HediffComp_Nightmare.cs" />
     <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_DeepDrillInfestation.cs" />
-
-    <Compile Include="Medieval Overhaul\ITab\ITab_FuelCustom.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobGiver_ApplyOilWeapon.cs" />
-
     <Compile Include="Medieval Overhaul\Interface\ICompFuelHandler.cs" />
     <Compile Include="Medieval Overhaul\ITab\ITab_Fuel.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_EmptyIceMold.cs" />
@@ -78,7 +72,6 @@
     <Compile Include="Medieval Overhaul\Listing_Tree\Listing_TreeThingFilter_Fuel.cs" />
     <Compile Include="Medieval Overhaul\Listing_Tree\ThingFilterUI_Nutrition.cs" />
     <Compile Include="Medieval Overhaul\Listing_Tree\ThingFilterUI_Fuel.cs" />
-
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelAtomicCustom.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelCustom.cs" />
     <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_UseOil.cs" />
@@ -105,7 +98,6 @@
     <Compile Include="Medieval Overhaul\ThingComps\CompUsablePoisonOil.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompRefuelableCustom.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompPotionUseable.cs" />
-
     <Compile Include="Medieval Overhaul\ThingComps\NewFolder1\CompWeaponOil.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\NewFolder1\CompUseEffect_AddOil.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_UseEffectAddOil.cs" />
@@ -113,11 +105,9 @@
     <Compile Include="Medieval Overhaul\ThingComps\NewFolder1\Pawn_GetGizmos.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\NewFolder1\Pawn_InventoryTracker_GetGizmos.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\NewFolder1\VerbMeleeAttack_TryCastShot.cs" />
-
     <Compile Include="Medieval Overhaul\ThingComps\CompPowerWaterWheel.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\CompIceBoxFill.cs" />
     <Compile Include="Medieval Overhaul\ThingComps\MinifiedIceThing.cs" />
-
     <Compile Include="Medieval Overhaul\Utilities\CachingUtility.cs" />
     <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />
     <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetNutritionLevel.cs" />

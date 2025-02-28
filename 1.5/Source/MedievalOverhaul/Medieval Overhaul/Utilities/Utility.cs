@@ -20,9 +20,9 @@ namespace MedievalOverhaul
         public static bool LWMFuelFilterIsEnabled = ModsConfig.IsActive("zal.lwmfuelfilter");
         public static RoomRoleDef DankPyon_Library;
         public static ThoughtDef DankPyon_ReadInLibrary;
-       
 
-        
+
+
         static Utility()
         {
             if (VBEIsEnabled is false)
@@ -134,6 +134,7 @@ namespace MedievalOverhaul
                 }
             }
             yield break;
+        }
 
         public static Pawn FindBestHauler(Thing thing)
         {
