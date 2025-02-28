@@ -19,6 +19,7 @@ namespace MedievalOverhaul
 		public CompRefuelableStat nutritionComp;
 		public CompSlop slopComp;
 		public float nutritionAmount;
+        private ThingDef _cachedDispensedDef;
 
 
         public Job activeJob = null;
@@ -33,9 +34,25 @@ namespace MedievalOverhaul
 				return this.HasEnoughFeedstockInHoppers();
 			}
 		}
-		public override ThingDef DispensableDef => slopComp.Props.mealDef;
 
-		public override bool HasEnoughFeedstockInHoppers()
+
+        public override ThingDef DispensableDef
+        {
+            get
+            {
+                if (_cachedDispensedDef == null)
+                {
+                    slopComp ??= GetComp<CompSlop>(); // Ensure slopComp is assigned before using it
+                    _cachedDispensedDef = slopComp?.mealdef ?? ThingDefOf.MealNutrientPaste;
+                }
+                return _cachedDispensedDef;
+            }
+        }
+
+
+
+
+        public override bool HasEnoughFeedstockInHoppers()
 		{
 			return nutritionComp.Fuel >= def.building.nutritionCostPerDispense;
 		}
