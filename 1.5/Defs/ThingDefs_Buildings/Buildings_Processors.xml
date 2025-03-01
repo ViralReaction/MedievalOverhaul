@@ -956,6 +956,7 @@
 				<barScale>(1.0, 1.0)</barScale>
 				<colorCoded>false</colorCoded>
 				<processes>
+					<li>Beer</li>
 					<li>DankPyon_WortIntoAle</li>
 					<li>DankPyon_MustIntoWine</li>
 					<li>DankPyon_HoneyIntoMead</li>
