@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VFEM2_LeatherBoilpot"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VFEM2_LeatherBoilpot"]/researchPrerequisites</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>DankPyon_LeatherTanning</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>
