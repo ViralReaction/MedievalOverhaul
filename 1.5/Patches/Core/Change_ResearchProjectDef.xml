@@ -586,7 +586,7 @@
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ResearchProjectDef[defName="RecurveBow"]/researchViewY</xpath>
 			<value>
-				<researchViewY>4.8</researchViewY>
+				<researchViewY>5.3</researchViewY>
 			</value>
 		</match>
 	</Operation>
@@ -663,7 +663,7 @@
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ResearchProjectDef[defName="Greatbow"]/researchViewY</xpath>
 			<value>
-				<researchViewY>4.8</researchViewY>
+				<researchViewY>5.30</researchViewY>
 			</value>
 		</match>
 	</Operation>

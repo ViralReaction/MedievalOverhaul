@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="DankPyon_Mead"]/ingestible/outcomeDoers/li[@Class="IngestionOutcomeDoer_GiveHediff"][contains(.,'AlcoholHigh')]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DankPyon_Mead"]/ingestible/outcomeDoers/li[@Class="IngestionOutcomeDoer_GiveHediff"][contains(.,'AlcoholHigh')]</xpath>
+			<value>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VFEM2_MeadAlcoholHigh</hediffDef>
+					<severity>0.15</severity>
+					<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

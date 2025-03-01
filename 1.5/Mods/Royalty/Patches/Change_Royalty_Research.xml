@@ -33,7 +33,7 @@
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ResearchProjectDef[defName="NobleApparel"]/researchViewX</xpath>
 			<value>
-				<researchViewX>6.0</researchViewX>
+				<researchViewX>8.00</researchViewX>
 			</value>
 		</match>
 	</Operation>
@@ -43,7 +43,7 @@
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ResearchProjectDef[defName="NobleApparel"]/researchViewY</xpath>
 			<value>
-				<researchViewY>3.6</researchViewY>
+				<researchViewY>0.70</researchViewY>
 			</value>
 		</match>
 	</Operation>
@@ -82,7 +82,7 @@
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ResearchProjectDef[defName="RoyalApparel"]/researchViewX</xpath>
 			<value>
-				<researchViewX>7.0</researchViewX>
+				<researchViewX>9.0</researchViewX>
 			</value>
 		</match>
 	</Operation>
@@ -92,7 +92,7 @@
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ResearchProjectDef[defName="RoyalApparel"]/researchViewY</xpath>
 			<value>
-				<researchViewY>3.6</researchViewY>
+				<researchViewY>0.70</researchViewY>
 			</value>
 		</match>
 	</Operation>
