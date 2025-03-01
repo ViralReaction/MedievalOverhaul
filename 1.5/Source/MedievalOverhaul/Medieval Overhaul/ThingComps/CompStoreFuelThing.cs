@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace MedievalOverhaul
@@ -13,6 +14,8 @@ namespace MedievalOverhaul
 
         public ThingFilter AllowedFuelFilter => this.allowedFuelFilter;
 
+        private static HashSet<string> loggedDefs = new();
+
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             if (Utility.LWMFuelFilterIsEnabled)
@@ -23,7 +26,12 @@ namespace MedievalOverhaul
             compRefuelable = this.parent.GetComp<CompRefuelable>();
             if (compRefuelable == null)
             {
-                Log.Error($"Medieval Overhaul: {this.parent} is missing CompRefuelable");
+                string defName = this.parent.def.defName;
+                if (!loggedDefs.Contains(defName))
+                {
+                    Log.Error($"Medieval Overhaul: {defName} is missing CompRefuelable");
+                    loggedDefs.Add(defName);
+                }
                 return;
             }
             this.allowedFuelFilter = new ThingFilter();
