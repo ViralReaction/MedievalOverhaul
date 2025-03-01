@@ -60,13 +60,6 @@
 		<nomatch Class="PatchOperationSequence">
 			<operations>
 
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../..</xpath>
-					<value>
-						<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
-					</value>
-				</li>
-
 				<!-- Add CompProperties_StoreFuelThing to every thingdef that has a refuelable comp and coal in their fuel filter-->
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]/../../../li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"]</xpath>
