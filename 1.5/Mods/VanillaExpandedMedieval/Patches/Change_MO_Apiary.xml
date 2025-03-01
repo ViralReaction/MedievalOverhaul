@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="DankPyon_Apiary"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DankPyon_Apiary"]/researchPrerequisites</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>VFEM2_Beekeeping</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="DankPyon_Apiary"]/label</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DankPyon_Apiary"]/label</xpath>
+			<value>
+				<label>hornet beeyard</label>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

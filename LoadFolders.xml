@@ -43,6 +43,7 @@
 		<li IfModActive="ceteam.combatextended">1.5/Mods/CombatExtended</li>
 		<li IfModActive="Owlchemist.SimpleFX.Smoke2">1.5/Mods/SimpleFXSmoke</li>
 		<li IfModActive="orion.hospitality">1.5/Mods/Hospitality</li>
+		<li IfModActive="OskarPotocki.VFE.Medieval2">1.5/Mods/VanillaExpandedMedieval</li>
 		<!-- <li IfModActive="dankpyon.medieval.overhaul.house.roxmont">1.5/Mods/Roxmont</li> -->
 	</v1.5>
 

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VFEM2_Beekeeping"]/tab</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VFEM2_Beekeeping"]/tab</xpath>
+			<value>
+				<tab>DankPyon_MedievalResearchTab</tab>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VFEM2_Beekeeping"]/researchViewX</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VFEM2_Beekeeping"]/researchViewX</xpath>
+			<value>
+				<researchViewX>2.0</researchViewX>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VFEM2_Beekeeping"]/researchViewY</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VFEM2_Beekeeping"]/researchViewY</xpath>
+			<value>
+				<researchViewY>1.40</researchViewY>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>
