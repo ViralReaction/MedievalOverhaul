@@ -379,21 +379,6 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
-
-		<costList>
-			<MedicineHerbal>3</MedicineHerbal>
-		</costList>
-
-		<recipeMaker>
-			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<recipeUsers>
-				<li>DankPyon_AlchemyBench</li>
-			</recipeUsers>
-			<researchPrerequisite>DankPyon_Alchemy</researchPrerequisite>
-			<bulkRecipeCount>4</bulkRecipeCount>
-			<displayPriority>2000</displayPriority>
-		</recipeMaker>
 		<allowedArchonexusCount>10</allowedArchonexusCount>
 	</ThingDef>
 

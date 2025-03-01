@@ -95,12 +95,19 @@
 		<parent>FoodMeals</parent>
 		<iconPath>Meal/Cheese/Cheese_a</iconPath>
 	</ThingCategoryDef>
-	
+
 	<ThingCategoryDef>
 		<defName>DankPyon_Flour</defName>
 		<label>flour</label>
 		<parent>FoodRaw</parent>
 		<iconPath>Resources/Flour/Flour_b</iconPath>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>DankPyon_Honey</defName>
+		<label>honey</label>
+		<parent>AnimalProductRaw</parent>
+		<iconPath>Resources/HoneyLiquid/HoneyLiquid_a</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>

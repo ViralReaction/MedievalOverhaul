@@ -49,9 +49,9 @@
 		<defName>DankPyon_HoneyIntoMead</defName>
 		<thingDef>DankPyon_Mead</thingDef>
 		<ingredientFilter>
-			<thingDefs>
+			<categories>
 				<li>DankPyon_Honey</li>
-			</thingDefs>
+			</categories>
 		</ingredientFilter>
 		<processDays>6</processDays><!-- in days, a day is 60,000 ticks -->
 		<capacityFactor>1.0</capacityFactor><!-- do not use too many decimals e.g 0.333 is fine for 1/3 -->

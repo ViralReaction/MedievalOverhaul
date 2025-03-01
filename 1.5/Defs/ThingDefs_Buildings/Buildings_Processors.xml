@@ -966,6 +966,7 @@
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
 		<tickerType>Rare</tickerType>
+		<designationCategory>Production</designationCategory>
 		<!--constructEffect>ConstructWood</constructEffect-->
 		<building>
 			<buildingTags>

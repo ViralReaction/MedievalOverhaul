@@ -24,11 +24,9 @@
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<rotatable>false</rotatable>
-
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
-
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
 			<WorkToBuild>1500</WorkToBuild>
@@ -43,7 +41,6 @@
 		<costList>
 			<WoodLog>40</WoodLog>
 		</costList>
-
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
@@ -53,7 +50,6 @@
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
 		</comps>
-
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
@@ -61,7 +57,7 @@
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 		<designationCategory>Misc</designationCategory>
 		<researchPrerequisites>
-			<li>DankPyon_Alchemy</li>
+			<li>Smithing</li>
 		</researchPrerequisites>
 	</ThingDef>
 

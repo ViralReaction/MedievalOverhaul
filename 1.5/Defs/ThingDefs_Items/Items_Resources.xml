@@ -473,7 +473,7 @@
 			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
 		</ingestible>
 		<thingCategories>
-			<li>AnimalProductRaw</li>
+			<li>DankPyon_Honey</li>
 		</thingCategories>
 	</ThingDef>
 

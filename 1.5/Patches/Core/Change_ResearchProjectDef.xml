@@ -810,14 +810,14 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ResearchProjectDef[defName="PsychoidBrewing"]/researchViewX</xpath>
 		<value>
-			<researchViewX>0.00</researchViewX>
+			<researchViewX>1.00</researchViewX>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>/Defs/ResearchProjectDef[defName="PsychoidBrewing"]/researchViewY</xpath>
 		<value>
-			<researchViewY>1.40</researchViewY>
+			<researchViewY>2.10</researchViewY>
 		</value>
 	</Operation>
 
