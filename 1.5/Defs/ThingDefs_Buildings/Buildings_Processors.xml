@@ -913,72 +913,71 @@
 	</ThingDef>
 
   
-	<ThingDef ParentName="BuildingBase">
-		<defName>DankPyon_RusticFermentingBarrel</defName>
-		<label>rustic fermenting barrel</label>
-		<description>A barrel for fermenting all sorts of fresh mixtures into various alcoholics. Its wooden properties help with producing rustic elements to the taste.</description>
-		<thingClass>Building_WorkTable</thingClass>
-		<drawerType>MapMeshAndRealTime</drawerType>
-		<graphicData>
-			<texPath>Production/RusticFermentingBarrel</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>2,2</drawSize>
-			<damageData>
-				<rect>(0.05,0.1,0.9,0.9)</rect>
-			</damageData>
-			<shadowData>
-				<volume>(0.75, 0.35, 0.33)</volume>
-			</shadowData>
-		</graphicData>
-		<fillPercent>0.45</fillPercent>
-		<pathCost>42</pathCost>
-		<statBases>
-			<WorkToBuild>600</WorkToBuild>
-			<Mass>10</Mass>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<costList>
-			<DankPyon_IronIngot>10</DankPyon_IronIngot>
-		</costList>
-		<stuffCategories>
-			<li>Woody</li>
-		</stuffCategories>
-		<costStuffCount>30</costStuffCount>
-		<comps>
-			<li Class="ProcessorFramework.CompProperties_Processor">
-				<capacity>25</capacity>
-				<independentProcesses>false</independentProcesses>
-				<parallelProcesses>false</parallelProcesses>
-				<dropIngredients>true</dropIngredients>
-				<showProductIcon>true</showProductIcon>
-				<barOffset>(0.0, 0.25)</barOffset>
-				<barScale>(1.0, 1.0)</barScale>
-				<colorCoded>false</colorCoded>
-				<processes>
-					<li>Beer</li>
-					<li>DankPyon_WortIntoAle</li>
-					<li>DankPyon_MustIntoWine</li>
-					<li>DankPyon_HoneyIntoMead</li>
-					<li>DankPyon_MustIntoMulberryWine</li>
-					<li>DankPyon_MustIntoGriffonBerry</li>
-				</processes>
-			</li>
-			<li Class="CompProperties_Forbiddable"/>
-		</comps>
-		<tickerType>Rare</tickerType>
-		<designationCategory>Production</designationCategory>
-		<!--constructEffect>ConstructWood</constructEffect-->
-		<building>
-			<buildingTags>
-				<li>Production</li>
-			</buildingTags>
-			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
-		</building>
-		<researchPrerequisites>
-			<li>Brewing</li>
-		</researchPrerequisites>
-	</ThingDef>
+	<!-- <ThingDef ParentName="BuildingBase"> -->
+		<!-- <defName>DankPyon_RusticFermentingBarrel</defName> -->
+		<!-- <label>rustic fermenting barrel</label> -->
+		<!-- <description>A barrel for fermenting all sorts of fresh mixtures into various alcoholics. Its wooden properties help with producing rustic elements to the taste.</description> -->
+		<!-- <thingClass>Building_WorkTable</thingClass> -->
+		<!-- <drawerType>MapMeshAndRealTime</drawerType> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Production/RusticFermentingBarrel</texPath> -->
+			<!-- <graphicClass>Graphic_Multi</graphicClass> -->
+			<!-- <drawSize>2,2</drawSize> -->
+			<!-- <damageData> -->
+				<!-- <rect>(0.05,0.1,0.9,0.9)</rect> -->
+			<!-- </damageData> -->
+			<!-- <shadowData> -->
+				<!-- <volume>(0.75, 0.35, 0.33)</volume> -->
+			<!-- </shadowData> -->
+		<!-- </graphicData> -->
+		<!-- <fillPercent>0.45</fillPercent> -->
+		<!-- <pathCost>42</pathCost> -->
+		<!-- <statBases> -->
+			<!-- <WorkToBuild>600</WorkToBuild> -->
+			<!-- <Mass>10</Mass> -->
+			<!-- <MaxHitPoints>100</MaxHitPoints> -->
+			<!-- <Flammability>1.0</Flammability> -->
+		<!-- </statBases> -->
+		<!-- <costList> -->
+			<!-- <DankPyon_IronIngot>10</DankPyon_IronIngot> -->
+		<!-- </costList> -->
+		<!-- <stuffCategories> -->
+			<!-- <li>Woody</li> -->
+		<!-- </stuffCategories> -->
+		<!-- <costStuffCount>30</costStuffCount> -->
+		<!-- <comps> -->
+			<!-- <li Class="ProcessorFramework.CompProperties_Processor"> -->
+				<!-- <capacity>25</capacity> -->
+				<!-- <independentProcesses>false</independentProcesses> -->
+				<!-- <parallelProcesses>false</parallelProcesses> -->
+				<!-- <dropIngredients>true</dropIngredients> -->
+				<!-- <showProductIcon>true</showProductIcon> -->
+				<!-- <barOffset>(0.0, 0.25)</barOffset> -->
+				<!-- <barScale>(1.0, 1.0)</barScale> -->
+				<!-- <colorCoded>false</colorCoded> -->
+				<!-- <processes> -->
+					<!-- <li>Beer</li> -->
+					<!-- <li>DankPyon_WortIntoAle</li> -->
+					<!-- <li>DankPyon_MustIntoWine</li> -->
+					<!-- <li>DankPyon_HoneyIntoMead</li> -->
+					<!-- <li>DankPyon_MustIntoMulberryWine</li> -->
+					<!-- <li>DankPyon_MustIntoGriffonBerry</li> -->
+				<!-- </processes> -->
+			<!-- </li> -->
+			<!-- <li Class="CompProperties_Forbiddable"/> -->
+		<!-- </comps> -->
+		<!-- <tickerType>Rare</tickerType> -->
+		<!-- <designationCategory>Production</designationCategory> -->
+		<!-- <building> -->
+			<!-- <buildingTags> -->
+				<!-- <li>Production</li> -->
+			<!-- </buildingTags> -->
+			<!-- <destroySound>BuildingDestroyed_Wood_Small</destroySound> -->
+		<!-- </building> -->
+		<!-- <researchPrerequisites> -->
+			<!-- <li>Brewing</li> -->
+		<!-- </researchPrerequisites> -->
+	<!-- </ThingDef> -->
 
 	<!-- Windmill -->
 	<ThingDef ParentName="BuildingBase">
