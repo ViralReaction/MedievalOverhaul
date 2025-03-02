@@ -1777,7 +1777,6 @@
 			<li Class="CompProperties_Power">
 				<compClass>MedievalOverhaul.CompUnpowered</compClass>
 				<basePowerConsumption>-1</basePowerConsumption>
-				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10.0</fuelConsumptionRate>
@@ -1910,8 +1909,6 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>MedievalOverhaul.CompUnpowered</compClass>
-				<basePowerConsumption>-1</basePowerConsumption>
-				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10.0</fuelConsumptionRate>
@@ -2039,8 +2036,6 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>MedievalOverhaul.CompUnpowered</compClass>
-				<basePowerConsumption>-1</basePowerConsumption>
-				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10.0</fuelConsumptionRate>
