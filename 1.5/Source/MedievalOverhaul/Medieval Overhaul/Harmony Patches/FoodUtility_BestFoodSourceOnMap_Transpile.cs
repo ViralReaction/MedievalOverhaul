@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Reflection.Emit;
 using Verse;
 
-namespace MedievalOverhaul
+namespace MedievalOverhaul.Patches
 {
     [HarmonyPatch(typeof(FoodUtility), nameof(FoodUtility.BestFoodSourceOnMap))]
     public static class FoodUtility_BestFoodSourceOnMap_HelperFind
@@ -46,6 +46,7 @@ namespace MedievalOverhaul
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
             List<CodeInstruction> codes = instructions.ToList();
+            bool foundGetPowerOn = false;
             int injectionCount = 0;
 
             for (int i = 0; i < codes.Count - 1; i++)
@@ -62,6 +63,14 @@ namespace MedievalOverhaul
 
                     injectionCount++;
                 }
+
+                if (codes[i].opcode == OpCodes.Callvirt && codes[i].operand is MethodInfo { Name: "get_PowerOn" })
+                {
+                    codes[i].opcode = OpCodes.Call;
+                    codes[i].operand = AccessTools.Method(typeof(FoodUtility_BestFoodSourceOnMap_Transpile), nameof(GetPowerOn_Replacement));
+
+                    foundGetPowerOn = true;
+                }
             }
 
             if (injectionCount == 0)
@@ -75,7 +84,17 @@ namespace MedievalOverhaul
             }
             #endif
 
+            if (!foundGetPowerOn)
+            {
+                Log.Error("[Harmony] MO.FoodUtility.BestFoodSourceOnMap: Could not find any occurrence of get_PowerOn!");
+            }
+
             return codes;
+        }
+
+        private static bool GetPowerOn_Replacement(CompPowerTrader comp)
+        {
+            return CompPowerTrader_PowerOn.Postfix(comp.powerOnInt, comp);
         }
     }
 
