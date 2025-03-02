@@ -127,6 +127,15 @@
 				</offHandHoldOffset>
 			</li>
 		</comps>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_Lumber</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_BaseShield">
