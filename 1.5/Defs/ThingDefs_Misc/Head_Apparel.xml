@@ -1903,6 +1903,7 @@ X
 			<Gold>2</Gold>
 			<Plasteel>80</Plasteel>
 		</costList>
+		<stuffCategories Inherit="False"/>
 		<apparel>
 			<bodyPartGroups>
 				<li>FullHead</li>
