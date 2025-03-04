@@ -83,7 +83,7 @@
 
 	<ThingDef ParentName="DankPyon_Bale1x2Base">
 		<defName>DankPyon_StrawBale1x2c</defName>
-		<label>straw bale</label>
+		<label>straw bale (1x2)</label>
 		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
 		<graphicData>
 			<texPath>Storage/Bale1x2</texPath>
@@ -98,7 +98,7 @@
 
 	<ThingDef ParentName="DankPyon_Bale1x2Base">
 		<defName>DankPyon_FlaxBale1x2c</defName>
-		<label>flax bale</label>
+		<label>flax bale (1x2)</label>
 		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
 		<graphicData>
 			<texPath>Storage/Bale1x2</texPath>
@@ -113,7 +113,7 @@
 
 	<ThingDef ParentName="DankPyon_Bale1x2Base" Name="DankPyon_Bale2x2Base">
 		<defName>DankPyon_HayBale2x2c</defName>
-		<label>hay bale(2x2)</label>
+		<label>hay bale (2x2)</label>
 		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
 		<graphicData>
 			<texPath>Storage/Bale2x2</texPath>
@@ -136,7 +136,7 @@
 
 	<ThingDef ParentName="DankPyon_Bale2x2Base">
 		<defName>DankPyon_StrawBale2x2c</defName>
-		<label>straw bale(2x2)</label>
+		<label>straw bale (2x2)</label>
 		<graphicData>
 			<texPath>Storage/Bale2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -150,7 +150,7 @@
 
 	<ThingDef ParentName="DankPyon_Bale2x2Base">
 		<defName>DankPyon_FlaxBale2x2c</defName>
-		<label>flax bale(2x2)</label>
+		<label>flax bale (2x2)</label>
 		<graphicData>
 			<texPath>Storage/Bale2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
