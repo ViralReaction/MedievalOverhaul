@@ -38,7 +38,7 @@
 	<!-- ==================== Hay Pile ==================== -->
 	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_Bale1x2Base">
 		<defName>DankPyon_Bale1x2c</defName>
-		<label>hay bale</label>
+		<label>hay bale (1x2)</label>
 		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
 		<graphicData>
 			<texPath>Storage/Bale1x2</texPath>
@@ -499,7 +499,7 @@
 	<!--== Bricks ==-->
 	<ThingDef ParentName="DankPyon_BrickStorageBase">
 		<defName>DankPyon_Bricks1x1c</defName>
-		<label>bricks(1x1)</label>
+		<label>bricks (1x1)</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
 			<texPath>Storage/Bricks1x1</texPath>
@@ -543,7 +543,7 @@
 	<!--== Bricks 1x2 ==-->
 	<ThingDef ParentName="DankPyon_BrickStorageBase">
 		<defName>DankPyon_Bricks1x2c</defName>
-		<label>bricks(1x2)</label>
+		<label>bricks (1x2)</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
 			<texPath>Storage/Bricks1x2</texPath>
@@ -585,7 +585,7 @@
 	<!--== Bricks 2x2 ==-->
 	<ThingDef ParentName="DankPyon_BrickStorageBase">
 		<defName>DankPyon_Bricks2x2c</defName>
-		<label>bricks</label>
+		<label>bricks (2x2)</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
 			<texPath>Storage/Bricks2x2</texPath>
