@@ -241,7 +241,7 @@
 	<!-- ==================== Wood Logs ==================== -->
 	<ThingDef ParentName="DankPyon_LumberStorageBase">
 		<defName>DankPyon_WoodLogs1x1c</defName>
-		<label>raw wood pile</label>
+		<label>raw wood pile (1x1)</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
 			<texPath>Storage/RawWood1x1</texPath>
@@ -2028,7 +2028,7 @@
 	<!--======================= Bundled Sack ==============================-->
 	<ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_BundledSack1x1c</defName>
-		<label>bundled sack</label>
+		<label>bundled sack (1x1)</label>
 		<description>A robust fabric bag designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BundledSack1x1</texPath>
@@ -2074,7 +2074,7 @@
 	<!--======================= Crate ==============================-->
 	<ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_Crate1x1c</defName>
-		<label>crate</label>
+		<label>crate (1x1)</label>
 		<description>A wooden box made up of planks designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/Crate1x1</texPath>
