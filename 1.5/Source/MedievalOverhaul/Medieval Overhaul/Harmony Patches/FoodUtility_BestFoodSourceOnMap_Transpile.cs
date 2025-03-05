@@ -12,8 +12,9 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch(typeof(FoodUtility), nameof(FoodUtility.BestFoodSourceOnMap))]
     public static class FoodUtility_BestFoodSourceOnMap_HelperFind
     {
-        public static MethodInfo AnonymousMethod;
         
+        public static MethodInfo AnonymousMethod;
+
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
             List<CodeInstruction> codes = new(instructions);
@@ -34,6 +35,21 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch]
     public static class FoodUtility_BestFoodSourceOnMap_Transpile
     {
+        private static Type DiningSpot_DispensedDef_Patch
+        {
+            get
+            {
+                return AccessTools.TypeByName("Gastronomy.Dining.DiningSpot");
+            }
+        }
+        public static bool Prepare()
+        {
+            if (DiningSpot_DispensedDef_Patch != null)
+            {
+                Log.Warning("Medieval Overhaul: Detected Gastronomy - Disabling Food Preference Patch For Compatibility");
+            }
+            return DiningSpot_DispensedDef_Patch == null;
+        }
         static MethodBase TargetMethod()
         {
             if (FoodUtility_BestFoodSourceOnMap_HelperFind.AnonymousMethod != null)
@@ -42,6 +58,7 @@ namespace MedievalOverhaul.Patches
             }
             throw new Exception("MO.FoodUtility.BestFoodSourceOnMap:  Could not find the anonymous function!");
         }
+
 
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
