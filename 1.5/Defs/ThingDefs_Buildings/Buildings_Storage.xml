@@ -38,7 +38,7 @@
 	<!-- ==================== Hay Pile ==================== -->
 	<ThingDef ParentName="DankPyon_StorageBase" Name="DankPyon_Bale1x2Base">
 		<defName>DankPyon_Bale1x2c</defName>
-		<label>hay bale</label>
+		<label>hay bale (1x2)</label>
 		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
 		<graphicData>
 			<texPath>Storage/Bale1x2</texPath>
@@ -83,7 +83,7 @@
 
 	<ThingDef ParentName="DankPyon_Bale1x2Base">
 		<defName>DankPyon_StrawBale1x2c</defName>
-		<label>straw bale</label>
+		<label>straw bale (1x2)</label>
 		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
 		<graphicData>
 			<texPath>Storage/Bale1x2</texPath>
@@ -98,7 +98,7 @@
 
 	<ThingDef ParentName="DankPyon_Bale1x2Base">
 		<defName>DankPyon_FlaxBale1x2c</defName>
-		<label>flax bale</label>
+		<label>flax bale (1x2)</label>
 		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
 		<graphicData>
 			<texPath>Storage/Bale1x2</texPath>
@@ -113,7 +113,7 @@
 
 	<ThingDef ParentName="DankPyon_Bale1x2Base" Name="DankPyon_Bale2x2Base">
 		<defName>DankPyon_HayBale2x2c</defName>
-		<label>hay bale(2x2)</label>
+		<label>hay bale (2x2)</label>
 		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
 		<graphicData>
 			<texPath>Storage/Bale2x2</texPath>
@@ -136,7 +136,7 @@
 
 	<ThingDef ParentName="DankPyon_Bale2x2Base">
 		<defName>DankPyon_StrawBale2x2c</defName>
-		<label>straw bale(2x2)</label>
+		<label>straw bale (2x2)</label>
 		<graphicData>
 			<texPath>Storage/Bale2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -150,7 +150,7 @@
 
 	<ThingDef ParentName="DankPyon_Bale2x2Base">
 		<defName>DankPyon_FlaxBale2x2c</defName>
-		<label>flax bale(2x2)</label>
+		<label>flax bale (2x2)</label>
 		<graphicData>
 			<texPath>Storage/Bale2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -241,7 +241,7 @@
 	<!-- ==================== Wood Logs ==================== -->
 	<ThingDef ParentName="DankPyon_LumberStorageBase">
 		<defName>DankPyon_WoodLogs1x1c</defName>
-		<label>raw wood pile</label>
+		<label>raw wood pile (1x1)</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
 			<texPath>Storage/RawWood1x1</texPath>
@@ -499,7 +499,7 @@
 	<!--== Bricks ==-->
 	<ThingDef ParentName="DankPyon_BrickStorageBase">
 		<defName>DankPyon_Bricks1x1c</defName>
-		<label>bricks(1x1)</label>
+		<label>bricks (1x1)</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
 			<texPath>Storage/Bricks1x1</texPath>
@@ -543,7 +543,7 @@
 	<!--== Bricks 1x2 ==-->
 	<ThingDef ParentName="DankPyon_BrickStorageBase">
 		<defName>DankPyon_Bricks1x2c</defName>
-		<label>bricks(1x2)</label>
+		<label>bricks (1x2)</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
 			<texPath>Storage/Bricks1x2</texPath>
@@ -585,7 +585,7 @@
 	<!--== Bricks 2x2 ==-->
 	<ThingDef ParentName="DankPyon_BrickStorageBase">
 		<defName>DankPyon_Bricks2x2c</defName>
-		<label>bricks</label>
+		<label>bricks (2x2)</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
 			<texPath>Storage/Bricks2x2</texPath>
@@ -2028,7 +2028,7 @@
 	<!--======================= Bundled Sack ==============================-->
 	<ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_BundledSack1x1c</defName>
-		<label>bundled sack</label>
+		<label>bundled sack (1x1)</label>
 		<description>A robust fabric bag designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/BundledSack1x1</texPath>
@@ -2074,7 +2074,7 @@
 	<!--======================= Crate ==============================-->
 	<ThingDef ParentName="DankPyon_StorageBase">
 		<defName>DankPyon_Crate1x1c</defName>
-		<label>crate</label>
+		<label>crate (1x1)</label>
 		<description>A wooden box made up of planks designed to store resources in an efficient manner. Items stored inside will not affect room beauty and will never deteriorate, even if outside.</description>
 		<graphicData>
 			<texPath>Storage/Crate1x1</texPath>
