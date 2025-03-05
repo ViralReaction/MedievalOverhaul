@@ -59,6 +59,13 @@
 		</match>
 		<nomatch Class="PatchOperationSequence">
 			<operations>
+			
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef/comps[li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="DankPyon_Coal"]][not(comps/li[@Class="StoreFuelThing"])]</xpath>
+					<value>
+						<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
+					</value>
+				</li>
 
 				<!-- Add CompProperties_StoreFuelThing to every thingdef that has a refuelable comp and coal in their fuel filter-->
 				<li Class="PatchOperationConditional">
@@ -94,15 +101,15 @@
 					</match>
 				</li>
 
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[defName="PassiveCooler"]/comps</xpath>
-					<match Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName="PassiveCooler"]/comps</xpath>
-						<value>
-							<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
-						</value>
-					</match>
-				</li>
+				<!-- <li Class="PatchOperationConditional"> -->
+					<!-- <xpath>Defs/ThingDef[defName="PassiveCooler"]/comps</xpath> -->
+					<!-- <match Class="PatchOperationAdd"> -->
+						<!-- <xpath>Defs/ThingDef[defName="PassiveCooler"]/comps</xpath> -->
+						<!-- <value> -->
+							<!-- <li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/> -->
+						<!-- </value> -->
+					<!-- </match> -->
+				<!-- </li> -->
 
 				<!-- <li Class="PatchOperationConditional"> -->
 					<!-- <xpath>Defs/ThingDef[defName="PassiveCooler"]/inspectorTabs</xpath> -->
