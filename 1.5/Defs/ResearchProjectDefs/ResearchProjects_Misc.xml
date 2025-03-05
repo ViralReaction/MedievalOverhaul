@@ -23,7 +23,7 @@
 		<description>This research project focuses on improving basic woodworking techniques to produce advanced wooden objects. Upon completion of the project, pawns will be able to produce more complex furniture, bows and wooden blanks, expanding their woodworking repertoire.</description>
 		<baseCost>200</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Neolithic</techLevel>
 		<tags>
 			<li>DankPyon_MedievalStart</li>
 		</tags>
