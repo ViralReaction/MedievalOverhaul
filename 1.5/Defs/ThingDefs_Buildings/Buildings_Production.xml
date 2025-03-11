@@ -1776,7 +1776,6 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>MedievalOverhaul.CompUnpowered</compClass>
-				<basePowerConsumption>-1</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>10.0</fuelConsumptionRate>
@@ -1844,7 +1843,7 @@
 		</placeWorkers>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<interactionCellOffset>(0,0,2)</interactionCellOffset>
-		<hasInteractionCell>false</hasInteractionCell>
+		<hasInteractionCell>true</hasInteractionCell>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<uiOrder>2130</uiOrder>
 		<designationHotKey>Misc6</designationHotKey>
