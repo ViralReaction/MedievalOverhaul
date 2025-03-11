@@ -63,7 +63,7 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_ToolRack</defName>
-		<label>Tool Rack</label>
+		<label>tool rack</label>
 		<description>A collection of smithing tools. Increases workspeed when placed near medieval workbenches.</description>
 		<graphicData>
 			<texPath>Misc/ToolRack</texPath>
@@ -125,7 +125,7 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_QuenchingBucket</defName>
-		<label>Quenching Bucket</label>
+		<label>quenching bucket</label>
 		<description>A bucket full of oil used in quenching smoldering metals. Increases workspeed when placed near medieval workbenches.</description>
 		<graphicData>
 			<texPath>Misc/QuenchingBucket</texPath>
@@ -186,7 +186,7 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_Grinder</defName>
-		<label>Grinding Wheel</label>
+		<label>grinding wheel</label>
 		<description>Used for sharpening weapons. Increases workspeed when placed near medieval workbenches.</description>
 		<graphicData>
 			<texPath>Misc/GrindingWheel</texPath>
@@ -244,7 +244,7 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_Bellows</defName>
-		<label>Bellows</label>
+		<label>bellows</label>
 		<description>Used to furnish a strong blast of air. Increases workspeed when placed near medieval workbenches.</description>
 		<graphicData>
 			<texPath>Misc/Bellows</texPath>
@@ -778,7 +778,7 @@
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>DankPyon_RusticCookingTools</defName>
-		<label>Cooking Tools</label>
+		<label>cooking tools</label>
 		<description>A table full of useful cooking equipment. Increases work speed when placed near a rustic cooking table.</description>
 		<graphicData>
 			<texPath>Misc/RusticCookingTools</texPath>
