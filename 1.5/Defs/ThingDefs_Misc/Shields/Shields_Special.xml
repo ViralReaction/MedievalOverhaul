@@ -63,7 +63,6 @@
 				</offHandHoldOffset>
 			</li>
 		</comps>
-
 		<recipeMaker>
 			<recipeUsers Inherit="False">
 				<li>DankPyon_AlchemyBench</li>
@@ -104,7 +103,6 @@
 				<hediff>DankPyon_LindwurmAcidImmune</hediff>
 				<part>Body</part>
 			</li>
-			
 			<!--li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/-->
 			<li Class="VFECore.CompProperties_Shield">
 				<shieldTags>
@@ -140,7 +138,6 @@
 				</offHandHoldOffset>
 			</li>
 		</comps>
-
 		<recipeMaker>
 			<recipeUsers Inherit="False">
 				<li>DankPyon_AlchemyBench</li>

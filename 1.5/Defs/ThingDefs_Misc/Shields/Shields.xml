@@ -215,14 +215,14 @@
 			<li>Woody</li>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>60</costStuffCount>
+		<costStuffCount>70</costStuffCount>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Flammability>1</Flammability>
-			<StuffEffectMultiplierArmor>0.44</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.40</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-			<WorkToMake>4000</WorkToMake>
-			<Mass>4</Mass>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>3</Mass>
 		</statBases>
 		<comps>
 			<!--li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/-->
@@ -271,14 +271,14 @@
 			<li>Woody</li>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>60</costStuffCount>
+		<costStuffCount>70</costStuffCount>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<Flammability>1</Flammability>
-			<StuffEffectMultiplierArmor>0.44</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.40</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
 			<WorkToMake>4000</WorkToMake>
-			<Mass>4</Mass>
+			<Mass>3</Mass>
 		</statBases>
 		<recipeMaker>
 			<recipeUsers Inherit="False"/>
