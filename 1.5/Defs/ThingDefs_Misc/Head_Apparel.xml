@@ -1231,7 +1231,7 @@ X
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_KlappvisierBase">
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
 		<defName>DankPyon_Headgear_Bascinet_KlappvisierHelmetClosed</defName>
 		<label>klappviser bascinet</label>
 		<description>A simple plate bascinet helmet with an affixed flip-up visor. Offers good protection of the head and face, but it hinders one's eyesight while wearing it.</description>
@@ -1275,7 +1275,7 @@ X
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_KlappvisierBase">
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
 		<defName>DankPyon_Headgear_KlappvisorBascinet</defName>
 		<label>klappviser barbute</label>
 		<description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
@@ -1283,6 +1283,40 @@ X
 			<texPath>Headgear/KlappvisorBascinet/KlappvisorBascinet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<PainShockThreshold>0.10</PainShockThreshold>
+			<SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
+		<costStuffCount>80</costStuffCount>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/KlappvisierHelmet/KlappvisierHelmet</wornGraphicPath>
+			<tags>
+				<li>DankPyon_KnightHelmet</li>
+				<li>DankPyon_HedgeKnightHelmet</li>
+			</tags>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+		</apparel>
 	</ThingDef>
 
 	<!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
@@ -1344,7 +1378,7 @@ X
       </defaultOutfitTags>
     </apparel>
   </ThingDef-->
-  
+
 	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_SalletBase">
 		<defName>DankPyon_Headgear_SalletHelmet</defName>
 		<label>visored sallet</label>
