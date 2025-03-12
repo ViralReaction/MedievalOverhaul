@@ -102,6 +102,9 @@ X
 		</statBases>
 		<apparel>
 			<wornGraphicPath>Headgear/Hood/Hood</wornGraphicPath>
+			<layers Inherit="False">
+				<li>DankPyon_Hood</li>
+			</layers>
 			<tags>
 				<li>DankPyon_BrigandThug</li>
 				<li>DankPyon_PeasantHelmet</li>
@@ -110,6 +113,11 @@ X
 			<defaultOutfitTags>
 				<li>Worker</li>
 			</defaultOutfitTags>
+			<drawData>
+				<dataNorth>
+					<layer>96</layer>
+				</dataNorth>
+			</drawData>
 		</apparel>
 	</ThingDef>
 
@@ -139,6 +147,9 @@ X
 		</statBases>
 		<apparel>
 			<wornGraphicPath>Headgear/Coif/Coif</wornGraphicPath>
+			<layers Inherit="False">
+				<li>DankPyon_InnerHelmet</li>
+			</layers>
 			<tags>
 				<li>DankPyon_BrigandThug</li>
 				<li>DankPyon_PeasantHelmet</li>
@@ -147,6 +158,11 @@ X
 			<defaultOutfitTags>
 				<li>Worker</li>
 			</defaultOutfitTags>
+			<drawData>
+				<dataNorth>
+					<layer>94</layer>
+				</dataNorth>
+			</drawData>
 		</apparel>
 	</ThingDef>
 	
@@ -176,6 +192,9 @@ X
 		</statBases>
 		<apparel>
 			<wornGraphicPath>Headgear/ArmingCap/ArmingCap</wornGraphicPath>
+			<layers Inherit="False">
+				<li>DankPyon_InnerHelmet</li>
+			</layers>
 			<tags>
 				<li>DankPyon_PeasantHelmet</li>
 				<li>DankPyon_BrigandThug</li>
@@ -185,6 +204,11 @@ X
 				<li>Worker</li>
 				<li>Soldier</li>
 			</defaultOutfitTags>
+			<drawData>
+				<dataNorth>
+					<layer>94</layer>
+				</dataNorth>
+			</drawData>
 		</apparel>
 	</ThingDef>
 
@@ -215,6 +239,9 @@ X
 		</statBases>
 		<apparel>
 			<wornGraphicPath>Headgear/ArmingCapFull/ArmingCapFull</wornGraphicPath>
+			<layers Inherit="False">
+				<li>DankPyon_InnerHelmet</li>
+			</layers>
 			<tags>
 				<li>DankPyon_PeasantHelmet</li>
 				<li>DankPyon_BrigandThug</li>
@@ -224,10 +251,14 @@ X
 				<li>Worker</li>
 				<li>Soldier</li>
 			</defaultOutfitTags>
+			<drawData>
+				<dataNorth>
+					<layer>94</layer>
+				</dataNorth>
+			</drawData>
 		</apparel>
 	</ThingDef>
 
-	
 	<ThingDef ParentName="DankPyon_HatMakeableBase">
 		<defName>DankPyon_Headgear_CultistHood</defName>
 		<label>Cultist Hood</label>

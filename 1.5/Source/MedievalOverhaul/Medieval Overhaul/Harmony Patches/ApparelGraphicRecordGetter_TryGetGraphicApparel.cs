@@ -39,6 +39,13 @@ namespace MedievalOverhaul.Patches
             new CodeInstruction(OpCodes.Ldfld, AccessTools.Field(typeof(ThingDef), "apparel")),
             new CodeInstruction(OpCodes.Callvirt, AccessTools.Method(typeof(ApparelProperties), "get_LastLayer")),
             new CodeInstruction(OpCodes.Ldsfld, AccessTools.Field(typeof(MedievalOverhaul.MedievalOverhaulDefOf), "DankPyon_Hood")),
+            new CodeInstruction(OpCodes.Beq_S, jumpLabel),
+
+            new CodeInstruction(OpCodes.Ldarg_0),
+            new CodeInstruction(OpCodes.Ldfld, AccessTools.Field(typeof(Thing), "def")),
+            new CodeInstruction(OpCodes.Ldfld, AccessTools.Field(typeof(ThingDef), "apparel")),
+            new CodeInstruction(OpCodes.Callvirt, AccessTools.Method(typeof(ApparelProperties), "get_LastLayer")),
+            new CodeInstruction(OpCodes.Ldsfld, AccessTools.Field(typeof(MedievalOverhaul.MedievalOverhaulDefOf), "DankPyon_InnerHelmet")),
             new CodeInstruction(OpCodes.Beq_S, jumpLabel)
         };
 

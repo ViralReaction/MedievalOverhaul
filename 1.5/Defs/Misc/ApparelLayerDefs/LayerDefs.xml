@@ -24,6 +24,12 @@
 		<label>attachment</label>
 		<drawOrder>10</drawOrder>
 	</ApparelLayerDef>
+	
+	<ApparelLayerDef>
+		<defName>DankPyon_InnerHelmet</defName>
+		<label>inner helmet</label>
+		<drawOrder>399</drawOrder>
+	</ApparelLayerDef>
 
 	<ApparelLayerDef>
 		<defName>DankPyon_Hood</defName>

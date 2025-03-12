@@ -98,6 +98,7 @@ namespace MedievalOverhaul
         public static TerrainAffordanceDef GrowSoil;
 
         public static ApparelLayerDef DankPyon_Hood;
+        public static ApparelLayerDef DankPyon_InnerHelmet;
 
         [MayRequireCE]
         public static StatDef Bulk;
