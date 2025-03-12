@@ -1233,7 +1233,7 @@ X
 
 	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_KlappvisierBase">
 		<defName>DankPyon_Headgear_Bascinet_KlappvisierHelmetClosed</defName>
-		<label>klappvisier bascinet</label>
+		<label>klappviser bascinet</label>
 		<description>A simple plate bascinet helmet with an affixed flip-up visor. Offers good protection of the head and face, but it hinders one's eyesight while wearing it.</description>
 		<graphicData>
 			<texPath>Headgear/KlappvisierHelmet/KlappvisierHelmet</texPath>
@@ -1277,7 +1277,7 @@ X
 
 	<ThingDef ParentName="DankPyon_KlappvisierBase">
 		<defName>DankPyon_Headgear_KlappvisorBascinet</defName>
-		<label>klappviser bascinet</label>
+		<label>klappviser barbute</label>
 		<description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
 		<graphicData>
 			<texPath>Headgear/KlappvisorBascinet/KlappvisorBascinet</texPath>
