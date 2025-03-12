@@ -297,6 +297,7 @@
 	<!-- Floofy Version -->
 	<ThingDef ParentName="DankPyon_ZweihanderCuirassBase">
 		<defName>DankPyon_Apparel_Zweihanders_CuirassFloof</defName>
+		<label>zweihander's cuirass (puffy)</label>
 		<graphicData>
 			<texPath>Apparel/HeavyArmor/ZweihanderCuirassFloof</texPath>
 		</graphicData>
