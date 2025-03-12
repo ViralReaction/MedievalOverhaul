@@ -48,6 +48,11 @@
 				<li>Worker</li>
 				<li>Soldier</li>
 			</defaultOutfitTags>
+			<drawData>
+				<dataNorth>
+					<layer>96</layer>
+				</dataNorth>
+			</drawData>
 		</apparel>
 	</ThingDef>
 
@@ -96,6 +101,11 @@
 				<li>Worker</li>
 				<li>Soldier</li>
 			</defaultOutfitTags>
+			<drawData>
+				<dataNorth>
+					<layer>96</layer>
+				</dataNorth>
+			</drawData>
 		</apparel>
 	</ThingDef>
 
