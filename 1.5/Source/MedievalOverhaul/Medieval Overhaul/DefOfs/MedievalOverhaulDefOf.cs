@@ -97,6 +97,8 @@ namespace MedievalOverhaul
         public static StatDef RestFallRateFactor;
         public static TerrainAffordanceDef GrowSoil;
 
+        public static ApparelLayerDef DankPyon_Hood;
+
         [MayRequireCE]
         public static StatDef Bulk;
 

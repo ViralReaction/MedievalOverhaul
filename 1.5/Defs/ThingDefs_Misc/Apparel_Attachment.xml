@@ -41,7 +41,7 @@
 				<li>UpperHead</li>
 			</bodyPartGroups>
 			<layers>
-				<li>Overhead</li>
+				<li>DankPyon_Hood</li>
 			</layers>
 			<wornGraphicPath>Headgear/HelmetWolf/HelmetWolf</wornGraphicPath>
 			<defaultOutfitTags>
@@ -89,7 +89,7 @@
 				<li>UpperHead</li>
 			</bodyPartGroups>
 			<layers>
-				<li>Overhead</li>
+				<li>DankPyon_Hood</li>
 			</layers>
 			<wornGraphicPath>Headgear/HelmetBear/HelmetBear</wornGraphicPath>
 			<defaultOutfitTags>
