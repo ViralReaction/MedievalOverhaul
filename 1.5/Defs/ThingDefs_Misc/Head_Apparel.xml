@@ -316,7 +316,7 @@ X
 		</recipeMaker>
 		<stuffCategories>
 			<li>Metallic</li>
-		</stuffCategories>		
+		</stuffCategories>
 		<apparel>
 			<drawData>
 				<dataNorth>
@@ -530,6 +530,11 @@ X
 				<li>Overhead</li>
 			</layers>
 		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel">
+				<SwitchTo>DankPyon_Headgear_ChainCoifClosed</SwitchTo>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
@@ -540,11 +545,7 @@ X
 			<texPath>Headgear/ChainCoifClosed/ChainCoifClosed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>5</Crafting>
-			</skillRequirements>
-			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+		<recipeMaker Inherit="False">
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>8000</WorkToMake>
@@ -571,6 +572,11 @@ X
 				<li>Overhead</li>
 			</layers>
 		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel">
+				<SwitchTo>DankPyon_Headgear_ChainCoif</SwitchTo>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
@@ -658,7 +664,7 @@ X
 			</layers>
 		</apparel>
 	</ThingDef>
-  
+
 	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
 		<defName>DankPyon_Headgear_ChainNasalRedHelmet</defName>
 		<label>chain nasal helm (bandana)</label>
@@ -790,6 +796,11 @@ X
 				<li>Overhead</li>
 			</layers>
 		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel">
+				<SwitchTo>DankPyon_Headgear_ClosedChain_FlatTopHelmet</SwitchTo>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
@@ -800,12 +811,7 @@ X
 			<texPath>Headgear/ClosedChainFlatTop/ClosedChainFlatTop</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>6</Crafting>
-			</skillRequirements>
-			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
-		</recipeMaker>
+		<recipeMaker Inherit="False"/>
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -833,11 +839,16 @@ X
 				<li>Overhead</li>
 			</layers>
 		</apparel>
+		<comps>
+			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel">
+				<SwitchTo>DankPyon_Headgear_Chain_FlatTopHelmet</SwitchTo>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
 		<defName>DankPyon_Headgear_ChainClosedFlatTopHelmet</defName>
-		<label>chain closed flat-top</label>
+		<label>chainveil helmet</label>
 		<description>An early design of the full-faced helmet, consisting of a reinforced flat-top helmet with an additional face-plate and a mail coif. Offers great protection of the entire head, but hinders eyesight and breathing.</description>
 		<graphicData>
 			<texPath>Headgear/ChainClosedFlatTop/ChainClosedFlatTop</texPath>
@@ -923,8 +934,8 @@ X
 
 	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_T3HelmetBase">
 		<defName>DankPyon_Headgear_OpenBascinet</defName>
-		<label>open bascinet</label>
-		<description>The open bascinet helmet features a conical shape with a retractable visor, allowing for versatility in protection and visibility. It offers defense to the head while granting improved breathability and vision compared to fully enclosed helmets. Though it sacrifices some protection, its open design ensures greater comfort and ease of movement for wearers in combat scenarios.</description>
+		<label>visored-less bascinet</label>
+		<description>The visored-less bascinet helmet features a conical shape with a retractable visor, allowing for versatility in protection and visibility. It offers defense to the head while granting improved breathability and vision compared to fully enclosed helmets. Though it sacrifices some protection, its open design ensures greater comfort and ease of movement for wearers in combat scenarios.</description>
 		<graphicData>
 			<texPath>Headgear/OpenBascinet/OpenBascinet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -1018,9 +1029,7 @@ X
 			<texPath>Headgear/ZweihanderHelmAmboise/ZweihanderHelmAmboise</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker>
-			<recipeUsers Inherit="False"/>
-		</recipeMaker>
+		<recipeMaker Inherit="False"/>
 		<apparel>
 			<wornGraphicPath>Headgear/ZweihanderHelmAmboise/ZweihanderHelmAmboise</wornGraphicPath>
 			<tags>
@@ -1036,9 +1045,7 @@ X
 			<texPath>Headgear/ZweihanderHelmSoren/ZweihanderHelmSoren</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker>
-			<recipeUsers Inherit="False"/>
-		</recipeMaker>
+		<recipeMaker Inherit="False"/>
 		<apparel>
 			<wornGraphicPath>Headgear/ZweihanderHelmSoren/ZweihanderHelmSoren</wornGraphicPath>
 			<tags>
@@ -1054,9 +1061,7 @@ X
 			<texPath>Headgear/ZweihanderHelmOswin/ZweihanderHelmOswin</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker>
-			<recipeUsers Inherit="False"/>
-		</recipeMaker>
+		<recipeMaker Inherit="False"/>
 		<apparel>
 			<wornGraphicPath>Headgear/ZweihanderHelmOswin/ZweihanderHelmOswin</wornGraphicPath>
 			<tags>
@@ -1072,9 +1077,7 @@ X
 			<texPath>Headgear/ZweihanderHelmHesse/ZweihanderHelmHesse</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<recipeMaker>
-			<recipeUsers Inherit="False"/>
-		</recipeMaker>
+		<recipeMaker Inherit="False"/>
 		<apparel>
 			<wornGraphicPath>Headgear/ZweihanderHelmHesse/ZweihanderHelmHesse</wornGraphicPath>
 			<tags>
@@ -1142,7 +1145,7 @@ X
   
 	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
 		<defName>DankPyon_Headgear_ClosedBascinetHelmet</defName>
-		<label>closed bascinet helmet</label>
+		<label>bascinet helmet</label>
 		<description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
 		<graphicData>
 			<texPath>Headgear/BascinetHelmet/BascinetHelmet</texPath>
@@ -1228,12 +1231,12 @@ X
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-		<defName>DankPyon_Headgear_KlappvisorBascinet</defName>
-		<label>klappviser bascinet</label>
-		<description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_KlappvisierBase">
+		<defName>DankPyon_Headgear_Bascinet_KlappvisierHelmetClosed</defName>
+		<label>klappvisier bascinet</label>
+		<description>A simple plate bascinet helmet with an affixed flip-up visor. Offers good protection of the head and face, but it hinders one's eyesight while wearing it.</description>
 		<graphicData>
-			<texPath>Headgear/KlappvisorBascinet/KlappvisorBascinet</texPath>
+			<texPath>Headgear/KlappvisierHelmet/KlappvisierHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
@@ -1261,7 +1264,7 @@ X
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Headgear/KlappvisorBascinet/KlappvisorBascinet</wornGraphicPath>
+			<wornGraphicPath>Headgear/KlappvisierHelmet/KlappvisierHelmet</wornGraphicPath>
 			<tags>
 				<li>DankPyon_KnightHelmet</li>
 				<li>DankPyon_HedgeKnightHelmet</li>
@@ -1271,7 +1274,17 @@ X
 			</layers>
 		</apparel>
 	</ThingDef>
-  
+
+	<ThingDef ParentName="DankPyon_KlappvisierBase">
+		<defName>DankPyon_Headgear_KlappvisorBascinet</defName>
+		<label>klappviser bascinet</label>
+		<description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
+		<graphicData>
+			<texPath>Headgear/KlappvisorBascinet/KlappvisorBascinet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
 	<!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPyon_Headgear_HounskullHelmet</defName>
     <label>hounskull helmet</label>
@@ -1378,7 +1391,7 @@ X
 
 	<ThingDef ParentName="DankPyon_SalletBase">
 		<defName>DankPyon_Headgear_SalletBellowFace</defName>
-		<label>bellow face sallet</label>
+		<label>sallet (bellow face)</label>
 		<description>A sleek three-part helmet consisting of a top, visor, and bevor to protect the head, face, respectively. Lightweight, and very protective, though it hinders eyesight significantly.</description>
 		<graphicData>
 			<texPath>Headgear/SalletBellowFace/SalletBellowFace</texPath>
@@ -1391,7 +1404,7 @@ X
 
 	<ThingDef ParentName="DankPyon_SalletBase">
 		<defName>DankPyon_Headgear_SalletGryphon</defName>
-		<label>gryphon sallet</label>
+		<label>sallet (gryphon)</label>
 		<description>A sleek three-part helmet consisting of a top, visor, and bevor to protect the head, face, respectively. Lightweight, and very protective, though it hinders eyesight significantly.</description>
 		<graphicData>
 			<texPath>Headgear/SalletGryphon/SalletGryphon</texPath>
@@ -1401,51 +1414,7 @@ X
 			<wornGraphicPath>Headgear/SalletGryphon/SalletGryphon</wornGraphicPath>
 		</apparel>
 	</ThingDef>
-  
-	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-		<defName>DankPyon_Headgear_Bascinet_KlappvisierHelmetClosed</defName>
-		<label>closed klappvisier helmet</label>
-		<description>A simple plate bascinet helmet with an affixed flip-up visor. Offers good protection of the head and face, but it hinders one's eyesight while wearing it.</description>
-		<graphicData>
-			<texPath>Headgear/KlappvisierHelmet/KlappvisierHelmet</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-			<researchPrerequisite>PlateArmor</researchPrerequisite>
-		</recipeMaker>
-		<statBases>
-			<WorkToMake>20000</WorkToMake>
-			<MaxHitPoints>250</MaxHitPoints>
-			<Mass>3.5</Mass>
-			<StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>10</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
-			<PainShockThreshold>0.10</PainShockThreshold>
-			<SocialImpact>0.15</SocialImpact>
-		</equippedStatOffsets>
-		<costStuffCount>80</costStuffCount>
-		<apparel>
-			<bodyPartGroups>
-				<li>FullHead</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Headgear/KlappvisierHelmet/KlappvisierHelmet</wornGraphicPath>
-			<tags>
-				<li>DankPyon_KnightHelmet</li>
-				<li>DankPyon_HedgeKnightHelmet</li>
-			</tags>
-			<layers>
-				<li>Overhead</li>
-			</layers>
-		</apparel>
-	</ThingDef>
-  
+   
 	<!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
     <defName>DankPoyn_Headgear_KlappvisierHelmetOpen</defName>
     <label>open klappvisier helmet</label>
@@ -1671,7 +1640,7 @@ X
       </defaultOutfitTags>
     </apparel>
   </ThingDef-->
-  
+
 	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_HeraldicGreatHelm">
 		<defName>DankPyon_Headgear_HeraldicGreatHelm1c</defName>
 		<label>heraldic great helm (Amboise)</label>
@@ -1681,13 +1650,7 @@ X
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker>
-			<recipeUsers Inherit="False"/>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-			</skillRequirements>
-			<researchPrerequisite>PlateArmor</researchPrerequisite>
-		</recipeMaker>
+		<recipeMaker Inherit="False"/>
 		<statBases>
 			<WorkToMake>20000</WorkToMake>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -1993,5 +1956,4 @@ X
 		</comps>
 	</ThingDef>
   
-
 </Defs>

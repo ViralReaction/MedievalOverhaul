@@ -21,12 +21,10 @@
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
 		</recipeMaker>
-       
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
-
 		<statBases>
 			<WorkToMake>27000</WorkToMake>
 			<MaxHitPoints>230</MaxHitPoints>
@@ -59,7 +57,6 @@
 				<li>DankPyon_Billman</li>
 				<li>DankPyon_Knight</li>
 				<li>DankPyon_HedgeKnight</li>
-
 				<li>MedievalMilitaryDecent</li>
 				<li>MedievalMilitaryBasic</li>
 			</tags>
@@ -92,12 +89,10 @@
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
 		</recipeMaker>
-        
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>100</costStuffCount>
-
 		<statBases>
 			<WorkToMake>28000</WorkToMake>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -129,7 +124,6 @@
 				<li>DankPyon_Archer</li>
 				<li>DankPyon_Footman</li>
 				<li>DankPyon_Billman</li>
-
 				<li>MedievalMilitaryDecent</li>
 				<li>MedievalMilitaryBasic</li>
 			</tags>
@@ -151,21 +145,11 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<recipeMaker>
-			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-			<skillRequirements>
-				<Crafting>6</Crafting>
-			</skillRequirements>
-			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
-			<recipeUsers Inherit="False">
-			</recipeUsers>
-		</recipeMaker>
-        
+		<recipeMaker Inherit="False"/>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>100</costStuffCount>
-
 		<statBases>
 			<WorkToMake>28000</WorkToMake>
 			<MaxHitPoints>250</MaxHitPoints>
@@ -211,7 +195,6 @@
 		<graphicData>
 			<texPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic2</texPath>
 		</graphicData>
-
 		<apparel>
 			<wornGraphicPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic2</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -228,7 +211,6 @@
 		<graphicData>
 			<texPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic3</texPath>
 		</graphicData>
-
 		<apparel>
 			<wornGraphicPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic3</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -245,7 +227,6 @@
 		<graphicData>
 			<texPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic4</texPath>
 		</graphicData>
-
 		<apparel>
 			<wornGraphicPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic4</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
