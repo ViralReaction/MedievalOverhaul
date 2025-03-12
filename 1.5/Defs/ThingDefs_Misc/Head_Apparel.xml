@@ -635,7 +635,6 @@ X
 			</skillRequirements>
 			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<statBases>
 			<WorkToMake>16000</WorkToMake>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -1085,64 +1084,8 @@ X
 			</tags>
 		</apparel>
 	</ThingDef>
+
 	<!-- ==================== Plate Helmets ==================== -->
-	<!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_VisoredKettleHelmet</defName>
-    <label>visored kettle helmet</label>
-    <description>A broadly-rimmed nasal helmet that extends down past the eyes, with slits that allow the wearer to see. Provides great protection of the head and face, but leaves the neck exposed and hinders ones eyesight.</description>
-    <graphicData>
-      <texPath>Headgear/KettleHelmet/KettleHelmet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>8</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>PlateArmor</researchPrerequisite>
-    </recipeMaker>
-
-    <statBases>
-      <WorkToMake>15000</WorkToMake>
-      <MaxHitPoints>200</MaxHitPoints>
-      <Mass>2.75</Mass>
-      <StuffEffectMultiplierArmor>0.98</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>5</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-4</ShootingAccuracyPawn>
-    </equippedStatOffsets>
-
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-	  <costStuffCount>65</costStuffCount> 
-
-    <apparel>
-       <bodyPartGroups>
-        <li>UpperHead</li>
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/KettleHelmet/KettleHelmet</wornGraphicPath>
-      <tags>
-        <li>DankPyon_KnightHelmet</li>
-        <li>DankPyon_MercenaryHeavy</li>
-			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef-->
-  
 	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
 		<defName>DankPyon_Headgear_ClosedBascinetHelmet</defName>
 		<label>bascinet helmet</label>
@@ -1319,69 +1262,65 @@ X
 		</apparel>
 	</ThingDef>
 
-	<!--ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
-    <defName>DankPyon_Headgear_HounskullHelmet</defName>
-    <label>hounskull helmet</label>
-    <description>A thick plate bascinet helmet coupled with an extended pig-faced visor, which allows for easier breathing. Still quite hindering to see out of, however.</description>
-    <graphicData>
-      <texPath>Headgear/HounskullHelmet/HounskullHelmet</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <techLevel>Medieval</techLevel>
-    <recipeMaker>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-        <li>DankPyon_Anvil</li>
-      </recipeUsers>
-      <skillRequirements>
-        <Crafting>8</Crafting>
-      </skillRequirements>
-      <researchPrerequisite>PlateArmor</researchPrerequisite>
-    </recipeMaker>
-
-    <statBases>
-      <WorkToMake>20000</WorkToMake>
-      <MaxHitPoints>250</MaxHitPoints>
-      <Mass>3.5</Mass>
-      <StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>10</EquipDelay>
-    </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
-      <PainShockThreshold>0.10</PainShockThreshold>
-      <SocialImpact>0.15</SocialImpact>
-    </equippedStatOffsets>
-
+	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase">
+		<defName>DankPyon_Headgear_HounskullHelmet</defName>
+		<label>hounskull helmet</label>
+		<description>A thick plate bascinet helmet coupled with an extended pig-faced visor, which allows for easier breathing. Still quite hindering to see out of, however.</description>
+		<graphicData>
+			<texPath>Headgear/HounskullHelmet/HounskullHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+				<li>DankPyon_Anvil</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>1.02</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+			<PainShockThreshold>0.10</PainShockThreshold>
+			<SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-	  <costStuffCount>80</costStuffCount> 
-
-    <apparel>
-       <bodyPartGroups>
-        <li>FullHead</li>
-        
-      </bodyPartGroups>
-      <wornGraphicPath>Headgear/HounskullHelmet/HounskullHelmet</wornGraphicPath>
-      <tags>
-        <li>DankPyon_KnightHelmet</li>
-        <li>DankPyon_HedgeKnightHelmet</li>
+		<costStuffCount>80</costStuffCount>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Headgear/HounskullHelmet/HounskullHelmet</wornGraphicPath>
+			<tags>
+				<li>DankPyon_KnightHelmet</li>
+				<li>DankPyon_HedgeKnightHelmet</li>
 			</tags>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-  </ThingDef-->
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_ArmorHelmetMakeableBase" Name="DankPyon_SalletBase">
 		<defName>DankPyon_Headgear_SalletHelmet</defName>
-		<label>visored sallet</label>
+		<label>sallet (visored)</label>
 		<description>A sleek three-part helmet consisting of a top, visor, and bevor to protect the head, face, respectively. Lightweight, and very protective, though it hinders eyesight significantly.</description>
 		<graphicData>
 			<texPath>Headgear/SalletVisored/SalletVisored</texPath>
