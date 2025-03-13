@@ -26,7 +26,13 @@ namespace MedievalOverhaul
                         animal.race.IsFlesh &&
                         !animal.race.Insect)
                     {
-                        AllLeatherAnimals.Add(animal);
+                        var leatherDef = animal.race.leatherDef;
+                        if (leatherDef.thingCategories.Contains(ThingCategoryDefOf.Leathers))
+                        {
+                            AllLeatherAnimals.Add(animal);
+                        }
+
+
                     }
                 }
 
@@ -37,7 +43,11 @@ namespace MedievalOverhaul
                         var geneMod = gene.GetModExtension<GeneExtension>();
                         if (geneMod != null && geneMod.customLeatherThingDef != null)
                         {
-                            AllGeneDefs.Add(gene);
+                            var leatherDef = geneMod.customLeatherThingDef;
+                            if (leatherDef.thingCategories.Contains(ThingCategoryDefOf.Leathers))
+                            {
+                                AllGeneDefs.Add(gene);
+                            }
                         }
                     }
 

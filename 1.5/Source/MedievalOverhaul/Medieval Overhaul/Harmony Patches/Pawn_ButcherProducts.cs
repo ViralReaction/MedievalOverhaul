@@ -11,7 +11,6 @@ namespace MedievalOverhaul.Patches
     [HarmonyPatch(typeof(Pawn), nameof(Pawn.ButcherProducts))]
     public static class Pawn_ButcherProducts
     {
-        
         private static IEnumerable<Thing> Postfix(IEnumerable<Thing> __result, Pawn __instance, float efficiency)
         {
             List<Thing> productList = [];
@@ -24,14 +23,21 @@ namespace MedievalOverhaul.Patches
                     if (HideUtility.IsHide(product.def))
                     {
                         Thing productThing;
-                        if (StaticCollectionsClass.leather_gene_pawns.ContainsKey(pawn))
+                        if (StaticCollectionsClass.leather_gene_pawns.TryGetValue(pawn, out var leatherDef))
                         {
-                            productThing = ThingMaker.MakeThing(StaticCollectionsClass.leather_gene_pawns[pawn]);
+                            
+                            if (!HideUtility.IsHide(leatherDef) && product.def == leatherDef)
+                            {
+                                productList.Add(product);
+                                continue;
+                            }
+                            productThing = ThingMaker.MakeThing(leatherDef);
+                            
                         }
                         else productThing = product;
                         productThing.stackCount = product.stackCount;
                         var comp = productThing.TryGetComp<CompGenericHide>();
-                        if (productThing != null)
+                        if (comp != null)
                         {
                             comp.leatherAmount = product.stackCount;
                             var leatherCost = comp.Props.leatherType.GetStatValueAbstract(StatDefOf.MarketValue);
