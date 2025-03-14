@@ -262,7 +262,7 @@ X
 	<ThingDef ParentName="DankPyon_HatMakeableBase">
 		<defName>DankPyon_Headgear_CultistHood</defName>
 		<label>Cultist Hood</label>
-		<description>A thickly padded cap most often worn beneath heavier helmets for an additional layer of protection. Quite insulating and offers a bit of blunt protection on its own.</description>
+		<description>A thick, padded hood favored by cultists, offering insulation and minor blunt protection. Its sturdy design provides decent head protection on its own.</description>
 		<graphicData>
 			<texPath>Headgear/CultistHood/CultistHood</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -289,6 +289,9 @@ X
 				<li>Worker</li>
 				<li>Soldier</li>
 			</defaultOutfitTags>
+			<layers>
+				<li>DankPyon_Hood</li>
+			</layers>
 		</apparel>
 	</ThingDef>
 
@@ -325,6 +328,9 @@ X
 			<tags>
 				<li>DankPyon_Zweihander</li>
 			</tags>
+			<layers>
+				<li>DankPyon_Hood</li>
+			</layers>
 			<defaultOutfitTags>
 				<li>Worker</li>
 				<li>Soldier</li>
@@ -1048,6 +1054,7 @@ X
 			</tags>
 			<layers>
 				<li>Overhead</li>
+				<li>DankPyon_Hood</li>
 			</layers>
 		</apparel>
 	</ThingDef>
@@ -1519,6 +1526,7 @@ X
 			</tags>
 			<layers>
 				<li>Overhead</li>
+				<li>DankPyon_Hood</li>
 			</layers>
 		</apparel>
 	</ThingDef>
@@ -1681,6 +1689,7 @@ X
 			</tags>
 			<layers>
 				<li>Overhead</li>
+				<li>DankPyon_Hood</li>
 			</layers>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
