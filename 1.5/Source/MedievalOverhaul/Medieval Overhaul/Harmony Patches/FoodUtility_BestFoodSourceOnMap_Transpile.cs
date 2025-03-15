@@ -14,6 +14,21 @@ namespace MedievalOverhaul.Patches
     {
         
         public static MethodInfo AnonymousMethod;
+        private static Type DiningSpot_DispensedDef_Patch
+        {
+            get
+            {
+                return AccessTools.TypeByName("Gastronomy.Dining.DiningSpot");
+            }
+        }
+        public static bool Prepare()
+        {
+            if (DiningSpot_DispensedDef_Patch != null)
+            {
+                Log.Warning("Medieval Overhaul: Detected Gastronomy - Disabling Food Preference Patch For Compatibility");
+            }
+            return DiningSpot_DispensedDef_Patch == null;
+        }
 
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
