@@ -6,9 +6,9 @@
 		<defName>DankPyon_WaterMillProcess</defName>
 		<thingDef>DankPyon_Flour</thingDef>
 		<ingredientFilter>
-			<thingDefs>
-				<li>DankPyon_RawWheat</li>
-			</thingDefs>
+			<categories>
+				<li>DankPyon_Cereal</li>
+			</categories>
 		</ingredientFilter>
 		<bonusOutputs>
 			<Hay>(1,200)</Hay>

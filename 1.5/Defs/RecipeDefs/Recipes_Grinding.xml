@@ -16,17 +16,17 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>DankPyon_RawWheat</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Cereal</li>
+					</categories>
 				</filter>
 				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<thingDefs>
-				<li>DankPyon_RawWheat</li>
-			</thingDefs>
+			<categories>
+				<li>DankPyon_Cereal</li>
+			</categories>
 			<specialFiltersToDisallow>
 				<li>AllowRotten</li>
 			</specialFiltersToDisallow>
@@ -55,17 +55,17 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>DankPyon_RawWheat</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Cereal</li>
+					</categories>
 				</filter>
 				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<thingDefs>
-				<li>DankPyon_RawWheat</li>
-			</thingDefs>
+			<categories>
+				<li>DankPyon_Cereal</li>
+			</categories>
 			<specialFiltersToDisallow>
 				<li>AllowRotten</li>
 			</specialFiltersToDisallow>
@@ -94,17 +94,17 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>DankPyon_RawWheat</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Cereal</li>
+					</categories>
 				</filter>
 				<count>10</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<thingDefs>
-				<li>DankPyon_RawWheat</li>
-			</thingDefs>
+			<categories>
+				<li>DankPyon_Cereal</li>
+			</categories>
 			<specialFiltersToDisallow>
 				<li>AllowRotten</li>
 			</specialFiltersToDisallow>

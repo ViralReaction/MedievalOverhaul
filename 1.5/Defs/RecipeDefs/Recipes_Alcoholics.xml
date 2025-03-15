@@ -91,22 +91,22 @@
 		<ingredients>
 			<li>
 				<filter>
-					<thingDefs>
-						<li>DankPyon_RawWheat</li>
-					</thingDefs>
+					<categories>
+						<li>DankPyon_Cereal</li>
+					</categories>
 				</filter>
 				<count>25</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-			<thingDefs>
-				<li>DankPyon_RawWheat</li>
-			</thingDefs>
+			<categories>
+				<li>DankPyon_Cereal</li>
+			</categories>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
-			<thingDefs>
-				<li>DankPyon_RawWheat</li>
-			</thingDefs>
+			<categories>
+				<li>DankPyon_Cereal</li>
+			</categories>
 		</defaultIngredientFilter>
 		<products>
 			<DankPyon_WortAle>5</DankPyon_WortAle>

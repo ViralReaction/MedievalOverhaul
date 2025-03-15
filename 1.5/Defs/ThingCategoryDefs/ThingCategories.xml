@@ -186,4 +186,11 @@
         <parent>BuildingsMisc</parent>
     </ThingCategoryDef>
 
+	<ThingCategoryDef>
+		<defName>DankPyon_Cereal</defName>
+		<label>grains</label>
+		<parent>Foods</parent>
+		<iconPath>UI/Icons/ThingCategories/PlantFoodRaw</iconPath>
+	</ThingCategoryDef>
+
 </Defs>
