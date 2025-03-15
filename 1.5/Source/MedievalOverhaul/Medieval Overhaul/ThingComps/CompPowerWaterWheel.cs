@@ -66,7 +66,18 @@ namespace MedievalOverhaul
                 }
             }
             this.waterDoubleUsed = false;
-            List<Building> waterGenerator = this.parent.Map.listerBuildings.AllBuildingsColonistOfDef(ThingDefOf.WatermillGenerator);
+            List<Building> waterGenerator = [];
+
+            if (this.parent.Map.listerThings.listsByDef.TryGetValue(ThingDefOf.WatermillGenerator, out List<Thing> generatorThings))
+            {
+                foreach (Thing thing in generatorThings)
+                {
+                    if (thing is Building building)
+                    {
+                        waterGenerator.Add(building);
+                    }
+                }
+            }
             foreach (IntVec3 c2 in this.WaterUseCells())
             {
                 if (c2.InBounds(this.parent.Map))
@@ -81,7 +92,18 @@ namespace MedievalOverhaul
                     }
                 }
             }
-            List<Building> waterWheel = this.parent.Map.listerBuildings.AllBuildingsColonistOfDef(MedievalOverhaulDefOf.DankPyon_WaterMill);
+            List<Building> waterWheel = [];
+
+            if (this.parent.Map.listerThings.listsByDef.TryGetValue(MedievalOverhaulDefOf.DankPyon_WaterMill, out List<Thing> wheelThings))
+            {
+                foreach (Thing thing in wheelThings)
+                {
+                    if (thing is Building building)
+                    {
+                        waterWheel.Add(building);
+                    }
+                }
+            }
             foreach (IntVec3 c2 in this.WaterUseCells())
             {
                 if (c2.InBounds(this.parent.Map))

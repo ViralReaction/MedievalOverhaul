@@ -14,7 +14,18 @@ namespace MedievalOverhaul.Patches
 
         public static void Postfix(CompPowerPlantWater __instance)
         {
-            List<Building> waterWheel = __instance.parent.Map.listerBuildings.AllBuildingsColonistOfDef(MedievalOverhaulDefOf.DankPyon_WaterMill);
+            List<Building> waterWheel = [];
+
+            if (__instance.parent.Map.listerThings.listsByDef.TryGetValue(MedievalOverhaulDefOf.DankPyon_WaterMill, out List<Thing> things))
+            {
+                foreach (Thing thing in things)
+                {
+                    if (thing is Building building)
+                    {
+                        waterWheel.Add(building);
+                    }
+                }
+            }
             foreach (IntVec3 waterCell in __instance.WaterUseCells())
             {
                 if (waterCell.InBounds(__instance.parent.Map))
