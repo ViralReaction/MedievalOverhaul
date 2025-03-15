@@ -145,18 +145,18 @@
 		</skills>
 		<disallowedTraits>
 			<li>Brawler</li>
-		</disallowedTraits>   
+		</disallowedTraits>
 	</PawnKindDef>  
 
 	<PawnKindDef ParentName="DankPyon_CultistAcolyteBase">
-		<defName>DanyPyon_Cultist_Acolyte_Melee</defName>		
+		<defName>DankPyon_Cultist_Acolyte_Melee</defName>		
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
 		</weaponTags>
 	</PawnKindDef>  
 
 	<PawnKindDef ParentName="DankPyon_CultistAcolyteBase">
-		<defName>DanyPyon_Cultist_Acolyte_Ranged</defName>	
+		<defName>DankPyon_Cultist_Acolyte_Ranged</defName>	
 		<weaponTags Inherit="False">
 			<li>DankPyon_HuntingBow</li>
 		</weaponTags>
@@ -204,14 +204,14 @@
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="DankPyon_CultistAdeptBase">
-		<defName>DanyPyon_Cultist_Adept_Melee</defName>
+		<defName>DankPyon_Cultist_Adept_Melee</defName>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
 		</weaponTags>
 	</PawnKindDef>    
 
 	<PawnKindDef ParentName="DankPyon_CultistAdeptBase">
-		<defName>DanyPyon_Cultist_Adept_Ranged</defName>
+		<defName>DankPyon_Cultist_Adept_Ranged</defName>
 		<weaponTags>
 			<li>DankPyon_Crossbow</li>
 		</weaponTags>
@@ -258,14 +258,14 @@
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="DankPyon_Cultist_HighPristBase">
-		<defName>DanyPyon_Cultist_HighPriest_Melee</defName>
+		<defName>DankPyon_Cultist_HighPriest_Melee</defName>
 		<weaponTags>
 			<li>MedievalMeleeAdvanced</li>
 		</weaponTags>
 	</PawnKindDef>    
 	
 	<PawnKindDef ParentName="DankPyon_Cultist_HighPristBase">
-		<defName>DanyPyon_Cultist_HighPriest_Ranged</defName>
+		<defName>DankPyon_Cultist_HighPriest_Ranged</defName>
 		<weaponTags>
 			<li>DankPyon_Arbelest</li>
 		</weaponTags>
