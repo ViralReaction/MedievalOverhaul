@@ -7,15 +7,19 @@
 		</settings>
 		<active Class="PatchOperationSequence">
 			<operations>
-		
-				<li Class="PatchOperationReplace">
+
+				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Milkable"]/milkDef[.="Chemfuel"]</xpath>
-					<value>
-						<milkDef>DankPyon_Tar</milkDef>
-					</value>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Milkable"]/milkDef[.="Chemfuel"]</xpath>
+						<value>
+							<milkDef>DankPyon_Tar</milkDef>
+						</value>
+					</match>
 				</li>
-			
+
 			</operations>
 		</active>
 	</Operation>
+
 </Patch>
