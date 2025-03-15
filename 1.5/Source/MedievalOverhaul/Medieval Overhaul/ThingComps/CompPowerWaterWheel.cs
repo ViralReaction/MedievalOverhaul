@@ -44,14 +44,25 @@ namespace MedievalOverhaul
         }
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
-            base.PostSpawnSetup(respawningAfterLoad);
+            if (PowerOn)
+            {
+                LongEventHandler.ExecuteWhenFinished(delegate
+                {
+                    StartSustainerPoweredIfInactive();
+                });
+            }
+            UpdateOverlays();
+            breakdownableComp = parent.GetComp<CompBreakdownable>();
+            if (base.Props.PowerConsumption < 0f && !parent.IsBrokenDown() && FlickUtility.WantsToBeOn(parent))
+            {
+                base.PowerOn = true;
+            }
             this.spinPosition = Rand.Range(0f, 15f);
             this.RebuildThingCache();
             this.RebuildMapCache(this.parent.Map);
         }
         public override void PostDeSpawn(Map map)
         {
-            base.PostDeSpawn(map);
             this.RebuildMapCache(map);
         }
         private void RebuildThingCache()
@@ -139,19 +150,21 @@ namespace MedievalOverhaul
 
         public void RebuildMapCache(Map map)
         {
-            var list = map.listerBuildings.allBuildingsColonist;
-            for (int i = 0; i < list.Count; i++)
+            var listThing = map.listerThings.AllThings;
+            for (int i = 0; i < listThing.Count; i++)
             {
-                var building = list[i] as Building;
-                var buildingDef = building.def;
-                if (buildingDef == ThingDefOf.WatermillGenerator)
+                if (listThing[i] is Building building)
                 {
-                    building.TryGetComp<CompPowerPlantWater>().ClearCache();
+                    var buildingDef = building.def;
+                    if (buildingDef == ThingDefOf.WatermillGenerator)
+                    {
+                        building.TryGetComp<CompPowerPlantWater>().ClearCache();
+                    }
+                    if (buildingDef == MedievalOverhaulDefOf.DankPyon_WaterMill)
+                    {
+                        building.TryGetComp<CompPowerWaterWheel>().ClearCache();
+                    }
                 }
-                if (buildingDef == MedievalOverhaulDefOf.DankPyon_WaterMill)
-                {
-                    building.TryGetComp<CompPowerWaterWheel>().ClearCache();
-                }    
             }
         }
         public override string CompInspectStringExtra()
