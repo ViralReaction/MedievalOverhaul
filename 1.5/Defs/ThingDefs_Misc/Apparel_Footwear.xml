@@ -13,12 +13,10 @@
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
 		<generateCommonality>0.1</generateCommonality>
-
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
-
+		<costStuffCount>25</costStuffCount>
 		<statBases>
 			<MaxHitPoints>115</MaxHitPoints>
 			<WorkToMake>1000</WorkToMake>
@@ -28,11 +26,9 @@
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
-
 		<equippedStatOffsets>
 			<MoveSpeed>0.05</MoveSpeed>
 		</equippedStatOffsets>
-
 		<thingCategories Inherit="False">
 			<li>DankPyon_Footwear</li>
 		</thingCategories>
@@ -47,13 +43,11 @@
 				<li>DankPyon_BrigandThug</li>
 				<li>DankPyon_BrigandRaider</li>
 				<li>DankPyon_BrigandMarksman</li>
-
 				<li>DankPyon_Mercenary</li>
 				<li>DankPyon_MercenaryHeavy</li>
 				<li>DankPyon_Archer</li>
 				<li>DankPyon_Footman</li>
 				<li>DankPyon_Billman</li>
-
 				<li>MedievalBasic</li>
 				<li>MedievalAdvanced</li>
 				<li>MedievalMilitaryBasic</li>
@@ -87,12 +81,10 @@
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
 		<generateCommonality>0.1</generateCommonality>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
-
+		<costStuffCount>35</costStuffCount>
 		<statBases>
 			<MaxHitPoints>115</MaxHitPoints>
 			<WorkToMake>4000</WorkToMake>
@@ -102,11 +94,9 @@
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>2.5</EquipDelay>
 		</statBases>
-
 		<equippedStatOffsets>
 			<MoveSpeed>-0.05</MoveSpeed>
 		</equippedStatOffsets>
-
 		<thingCategories Inherit="False">
 			<li>DankPyon_Footwear</li>
 		</thingCategories>
@@ -158,12 +148,10 @@
 		<techLevel>Medieval</techLevel>
 		<tradeability>Sellable</tradeability>
 		<generateCommonality>0.1</generateCommonality>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>60</costStuffCount>
-
+		<costStuffCount>45</costStuffCount>
 		<statBases>
 			<MaxHitPoints>140</MaxHitPoints>
 			<WorkToMake>6000</WorkToMake>
@@ -173,7 +161,6 @@
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>2.5</EquipDelay>
 		</statBases>
-
 		<equippedStatOffsets>
 			<MoveSpeed>-0.1</MoveSpeed>
 		</equippedStatOffsets>
@@ -190,7 +177,6 @@
 			<tags>
 				<li>DankPyon_Knight</li>
 				<li>DankPyon_HedgeKnight</li>
-
 				<li>MedievalMilitaryAdvanced</li>
 				<li>MedievalPrestigeCombatGear</li>
 			</tags>

@@ -89,13 +89,12 @@
 		<thingCategories>
 			<li>DankPyon_Legwear</li>
 		</thingCategories>
-
 		<apparel>
 			<bodyPartGroups>
 				<li>Legs</li>
 			</bodyPartGroups>
 			<layers>
-				<li>DankPyon_LegShell</li>
+				<li>Middle</li>
 			</layers>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -122,12 +121,11 @@
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToMake>8000</WorkToMake>
 			<Mass>4</Mass>
-			<StuffEffectMultiplierArmor>0.24</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.30</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>3</EquipDelay>
 		</statBases>
-
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
 			<skillRequirements>
@@ -137,7 +135,6 @@
 				<li>DankPyon_TailorsBench</li>
 			</recipeUsers>
 		</recipeMaker>
-
 		<apparel>
 			<tags>
 				<li>DankPyon_Peasant</li>
@@ -148,7 +145,6 @@
 				<li>DankPyon_Archer</li>
 				<li>DankPyon_Footman</li>
 				<li>DankPyon_Billman</li>
-
 				<li>MedievalMilitaryBasic</li>
 			</tags>
 		</apparel>
@@ -162,12 +158,10 @@
 			<texPath>Apparel/Legwear/ChaussesSplinted</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-
 		<costStuffCount>70</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-        
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToMake>19000</WorkToMake>
@@ -177,7 +171,6 @@
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>3</EquipDelay>
 		</statBases>
-
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
 			<skillRequirements>
@@ -189,7 +182,6 @@
 				<li>DankPyon_Anvil</li>
 			</recipeUsers>
 		</recipeMaker>
-
 		<apparel>
 			<tags>
 				<li>DankPyon_BrigandRaider</li>
@@ -197,7 +189,6 @@
 				<li>DankPyon_MercenaryHeavy</li>
 				<li>DankPyon_Footman</li>
 				<li>DankPyon_Billman</li>
-
 				<li>MedievalMilitaryBasic</li>
 			</tags>
 		</apparel>
@@ -211,12 +202,10 @@
 			<texPath>Apparel/Legwear/ChaussesPlate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-
 		<costStuffCount>80</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-        
 		<statBases>
 			<MaxHitPoints>140</MaxHitPoints>
 			<WorkToMake>35000</WorkToMake>
@@ -226,7 +215,6 @@
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>3</EquipDelay>
 		</statBases>
-
 		<recipeMaker>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 			<skillRequirements>
@@ -238,12 +226,10 @@
 				<li>DankPyon_Anvil</li>
 			</recipeUsers>
 		</recipeMaker>
-
 		<apparel>
 			<tags>
 				<li>DankPyon_Knight</li>
 				<li>DankPyon_HedgeKnight</li>
-
 				<li>MedievalMilitaryAdvanced</li>
 				<li>MedievalPrestigeCombatGear</li>
 			</tags>

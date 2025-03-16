@@ -103,7 +103,7 @@
 			<EquipDelay>15</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.5</MoveSpeed>
+			<MoveSpeed>-0.8</MoveSpeed>
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>Apparel</li>
@@ -160,7 +160,7 @@
 			<EquipDelay>15</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.5</MoveSpeed>
+			<MoveSpeed>-0.8</MoveSpeed>
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>Apparel</li>
@@ -235,6 +235,5 @@
 			</tags>
 		</apparel>
 	</ThingDef>
-
 
 </Defs>

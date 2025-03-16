@@ -19,18 +19,18 @@
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>170</costStuffCount>
+		<costStuffCount>100</costStuffCount>
 		<statBases>
-			<WorkToMake>38000</WorkToMake>
+			<WorkToMake>32000</WorkToMake>
 			<MaxHitPoints>290</MaxHitPoints>
 			<Mass>15</Mass>
-			<StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>15</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.8</MoveSpeed>
+			<MoveSpeed>-0.60</MoveSpeed>
 		</equippedStatOffsets>
 		<thingCategories>
 			<li>Apparel</li>
@@ -175,12 +175,12 @@
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>150</costStuffCount>
+		<costStuffCount>120</costStuffCount>
 		<statBases>
-			<WorkToMake>39000</WorkToMake>
+			<WorkToMake>28000</WorkToMake>
 			<MaxHitPoints>300</MaxHitPoints>
 			<Mass>8</Mass>
-			<StuffEffectMultiplierArmor>0.90</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>5</EquipDelay>
@@ -251,16 +251,15 @@
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>150</costStuffCount>
+		<costStuffCount>120</costStuffCount>
 		<costList>
 			<DankPyon_Linen>30</DankPyon_Linen>
 		</costList>
-
 		<statBases>
-			<WorkToMake>39000</WorkToMake>
+			<WorkToMake>32000</WorkToMake>
 			<MaxHitPoints>300</MaxHitPoints>
 			<Mass>8</Mass>
-			<StuffEffectMultiplierArmor>0.90</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>5</EquipDelay>
@@ -321,25 +320,22 @@
 			</skillRequirements>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>200</costStuffCount>
-
+		<costStuffCount>150</costStuffCount>
 		<statBases>
-			<WorkToMake>45000</WorkToMake>
-			<MaxHitPoints>310</MaxHitPoints>
-			<Mass>17</Mass>
-			<StuffEffectMultiplierArmor>0.92</StuffEffectMultiplierArmor>
+			<WorkToMake>38000</WorkToMake>
+			<MaxHitPoints>290</MaxHitPoints>
+			<Mass>15</Mass>
+			<StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>20</EquipDelay>
+			<EquipDelay>15</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-1.2</MoveSpeed>
+			<MoveSpeed>-0.80</MoveSpeed>
 		</equippedStatOffsets>
-
 		<thingCategories>
 			<li>Apparel</li>
 		</thingCategories>
@@ -519,31 +515,27 @@
 			</skillRequirements>
 			<researchPrerequisite>PlateArmor</researchPrerequisite>
 		</recipeMaker>
-
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>200</costStuffCount>
+		<costStuffCount>150</costStuffCount>
 		<costList>
 			<Gold>5</Gold>
 		</costList>
-
 		<statBases>
-			<WorkToMake>70000</WorkToMake>
+			<WorkToMake>50000</WorkToMake>
 			<MaxHitPoints>310</MaxHitPoints>
 			<Mass>17</Mass>
-			<StuffEffectMultiplierArmor>0.92</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>20</EquipDelay>
 		</statBases>
-
 		<equippedStatOffsets>
-			<MoveSpeed>-1.2</MoveSpeed>
+			<MoveSpeed>-0.80</MoveSpeed>
 			<SocialImpact>0.30</SocialImpact>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
 		</equippedStatOffsets>
-
 		<thingCategories>
 			<li>Apparel</li>
 		</thingCategories>
@@ -562,7 +554,6 @@
 			</layers>
 			<tags>
 				<li>DankPyon_Knight</li>
-
 				<li>MedievalMilitary</li>
 				<li>MedievalMilitaryAdvanced</li>
 				<li>MedievalPrestigeCombatGear</li>
@@ -598,7 +589,6 @@
 			<texPath>Apparel/HeavyArmor/Named_Plate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-
 		<recipeMaker>
 			<recipeUsers Inherit="False"/>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
@@ -607,31 +597,27 @@
 			</skillRequirements>
 			<researchPrerequisite Inherit="False"/>
 		</recipeMaker>
-        
 		<costList>
 			<Gold>5</Gold>
 			<Plasteel>200</Plasteel>
 		</costList>
-
 		<statBases>
 			<MarketValue>5405</MarketValue>
 			<WorkToMake>70000</WorkToMake>
 			<MaxHitPoints>870</MaxHitPoints>
 			<DeteriorationRate>0.2</DeteriorationRate>
-			<Mass>17</Mass>
-			<ArmorRating_Sharp>1.888</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.911</ArmorRating_Blunt>
+			<Mass>15</Mass>
+			<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.50</ArmorRating_Heat>
 			<Insulation_Cold>5</Insulation_Cold>
-			<ArmorRating_Heat>1.07</ArmorRating_Heat>
-			<EquipDelay>20</EquipDelay>
+			<EquipDelay>15</EquipDelay>
 		</statBases>
-
 		<equippedStatOffsets>
-			<MoveSpeed>-1.2</MoveSpeed>
+			<MoveSpeed>-0.70</MoveSpeed>
 			<SocialImpact>0.30</SocialImpact>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
 		</equippedStatOffsets>
-
 		<thingCategories>
 			<li>Apparel</li>
 		</thingCategories>
@@ -649,13 +635,11 @@
 			</layers>
 			<tags>
 				<li>DankPyon_NamedPlate</li>
-
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-
 		<comps Inherit="False">
 			<li Class="CompProperties_Styleable"/>
 			<li Class="CompProperties_Forbiddable"/>
@@ -691,7 +675,7 @@
 			<WorkToMake>38000</WorkToMake>
 			<MaxHitPoints>300</MaxHitPoints>
 			<Mass>10</Mass>
-			<StuffEffectMultiplierArmor>0.40</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
 			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.20</ArmorRating_Heat>
@@ -700,7 +684,7 @@
 			<EquipDelay>15</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.80</MoveSpeed>
+			<MoveSpeed>-0.60</MoveSpeed>
 			<SocialImpact>0.30</SocialImpact>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
 		</equippedStatOffsets>
