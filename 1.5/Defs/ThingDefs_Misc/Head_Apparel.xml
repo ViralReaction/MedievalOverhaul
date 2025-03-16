@@ -328,7 +328,7 @@ X
 			<tags>
 				<li>DankPyon_Zweihander</li>
 			</tags>
-			<layers>
+			<layers Inherit="False">
 				<li>DankPyon_Hood</li>
 			</layers>
 			<defaultOutfitTags>
@@ -415,6 +415,7 @@ X
 			</tags>
 			<layers>
 				<li>Overhead</li>
+				<li>DankPyon_InnerHelmet</li>
 			</layers>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
@@ -468,6 +469,7 @@ X
 			</tags>
 			<layers>
 				<li>Overhead</li>
+				<li>DankPyon_InnerHelmet</li>
 			</layers>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
@@ -522,6 +524,7 @@ X
 			</tags>
 			<layers>
 				<li>Overhead</li>
+				<li>DankPyon_InnerHelmet</li>
 			</layers>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
