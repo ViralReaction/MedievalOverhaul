@@ -15,12 +15,11 @@ namespace MedievalOverhaul.Patches
         }
         public static List <Thing> Postfix(List<Thing> __result)
         {
-            for (int i = 0; i < __result.Count; i++)
+            for (int i = __result.Count - 1; i >= 0; i--)
             {
                 if (__result[i] is Building_SlopPot)
                 {
                     __result.RemoveAt(i);
-                    i--;
                 }
             }
             return __result;
