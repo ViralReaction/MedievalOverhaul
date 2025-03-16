@@ -24,7 +24,7 @@
 			<WorkToMake>1000</WorkToMake>
 			<Mass>0.25</Mass>
 			<StuffEffectMultiplierArmor>0.18</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>0.40</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>1</EquipDelay>
 		</statBases>
