@@ -8,7 +8,7 @@
 		<li>1.5</li>
     </supportedVersions>
 	<packageId>DankPyon.Medieval.Overhaul</packageId>
-	<modVersion IgnoreIfNoMatchingField="True">1.5.19</modVersion>
+	<modVersion IgnoreIfNoMatchingField="True">1.5.20</modVersion>
 	<loadAfter>
 		<li>brrainz.harmony</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
