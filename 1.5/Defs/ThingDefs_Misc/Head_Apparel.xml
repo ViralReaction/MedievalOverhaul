@@ -160,7 +160,7 @@ X
 			</defaultOutfitTags>
 			<drawData>
 				<dataNorth>
-					<layer>94</layer>
+					<layer>60</layer>
 				</dataNorth>
 			</drawData>
 		</apparel>
@@ -206,7 +206,7 @@ X
 			</defaultOutfitTags>
 			<drawData>
 				<dataNorth>
-					<layer>94</layer>
+					<layer>60</layer>
 				</dataNorth>
 			</drawData>
 		</apparel>
@@ -253,7 +253,7 @@ X
 			</defaultOutfitTags>
 			<drawData>
 				<dataNorth>
-					<layer>94</layer>
+					<layer>60</layer>
 				</dataNorth>
 			</drawData>
 		</apparel>
