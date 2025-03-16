@@ -38,14 +38,14 @@
 			<WorkToMake>30000</WorkToMake>
 			<MaxHitPoints>270</MaxHitPoints>
 			<Mass>12</Mass>
-			<StuffEffectMultiplierArmor>0.64</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
 			<Insulation_Cold>15</Insulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>15</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.5</MoveSpeed>
+			<MoveSpeed>-0.8</MoveSpeed>
 		</equippedStatOffsets>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -87,7 +87,7 @@
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>170</costStuffCount>
+		<costStuffCount>120</costStuffCount>
 		<costList>
 			<DankPyon_Linen>70</DankPyon_Linen>
 		</costList>
@@ -95,7 +95,7 @@
 			<WorkToMake>38000</WorkToMake>
 			<MaxHitPoints>290</MaxHitPoints>
 			<Mass>15</Mass>
-			<StuffEffectMultiplierArmor>0.76</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.60</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
 			<Insulation_Cold>15</Insulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
@@ -153,7 +153,7 @@
 			<WorkToMake>45000</WorkToMake>
 			<MaxHitPoints>310</MaxHitPoints>
 			<Mass>17</Mass>
-			<StuffEffectMultiplierArmor>0.95</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
 			<Insulation_Cold>15</Insulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
@@ -281,7 +281,7 @@
 			<WorkToMake>21000</WorkToMake>
 			<MaxHitPoints>180</MaxHitPoints>
 			<Mass>3.5</Mass>
-			<StuffEffectMultiplierArmor>0.95</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.50</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.65</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.65</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>8</EquipDelay>
@@ -343,7 +343,7 @@
 			<WorkToMake>24000</WorkToMake>
 			<MaxHitPoints>290</MaxHitPoints>
 			<Mass>3.5</Mass>
-			<StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>65</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.8</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>10</EquipDelay>
@@ -356,7 +356,7 @@
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>90</costStuffCount>
+		<costStuffCount>80</costStuffCount>
 		<costList>
 			<DankPyon_Linen>30</DankPyon_Linen>
 		</costList>
