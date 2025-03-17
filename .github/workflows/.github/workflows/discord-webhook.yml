@@ -1,0 +1,20 @@
+name: Discord Webhook for Dev Branch
+
+on:
+  push:
+    branches:
+      - master  # Only triggers on dev branch
+
+jobs:
+  notify_discord:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Webhook to Discord
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          curl -X POST -H "Content-Type: application/json" \
+          -d '{
+                "content": "🚀 **Push to Dev Branch!**\n📂 **Repo:** ${{ github.repository }}\n👤 **Pusher:** ${{ github.actor }}\n🔗 [View Commit](https://github.com/${{ github.repository }}/commit/${{ github.sha }})"
+              }' \
+          $DISCORD_WEBHOOK_URL
