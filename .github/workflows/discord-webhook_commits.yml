@@ -4,9 +4,7 @@ on:
   push:
     branches:
       - master  # Only triggers on master branch
-  release:
-    types:
-      - published  # Triggers when a new release is published
+
 jobs:
   notify_discord:
     runs-on: ubuntu-latest
@@ -22,13 +20,4 @@ jobs:
         run: |
           curl -X POST -H "Content-Type: application/json" \
           -d "{\"content\": \"🚀 **Push to Master Branch!**\n📂 **Repo:** <https://github.com/${{ github.repository }}>\n👤 **Pusher:** <https://github.com/${{ github.actor }}>\n🔗 **Commit:** [${SHORT_SHA}](https://github.com/${{ github.repository }}/commit/${{ github.sha }})\"}" \
-          $DISCORD_WEBHOOK_URL
-
-      - name: Send Webhook for Release (Embed Release Info)
-        if: github.event_name == 'release'
-        env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
-        run: |
-          curl -X POST -H "Content-Type: application/json" \
-          -d "{\"content\": \"🎉 **New Release Published!**\n📂 **Repo:** <https://github.com/${{ github.repository }}>\n🏷 **Release:** [${{ github.event.release.tag_name }}](https://github.com/${{ github.repository }}/releases/tag/${{ github.event.release.tag_name }})\n📝 **Notes:** ${{ github.event.release.name }}\"}" \
           $DISCORD_WEBHOOK_URL
