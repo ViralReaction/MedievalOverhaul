@@ -17,5 +17,5 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
         run: |
           curl -X POST -H "Content-Type: application/json" \
-          -d "{\"content\": \"🚀 **Push to Dev Branch!**\n📂 **Repo:** <https://github.com/${{ github.repository }}>\n👤 **Pusher:** <https://github.com/${{ github.actor }}>\n🔗 [Commit: $SHORT_SHA](https://github.com/${{ github.repository }}/commit/${{ github.sha }})\"}" \
+          -d "{\"content\": \"🚀 **Push to Dev Branch!**\n📂 **Repo:** <https://github.com/${{ github.repository }}>\n👤 **Pusher:** <https://github.com/${{ github.actor }}>\n🔗 Commit [${SHORT_SHA}](https://github.com/${{ github.repository }}/commit/${{ github.sha }})\"}" \
           $DISCORD_WEBHOOK_URL
