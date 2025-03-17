@@ -9,7 +9,10 @@ jobs:
   notify_discord:
     runs-on: ubuntu-latest
     steps:
-      - name: Send Webhook to Discord
+      - name: Extract Short Commit SHA
+        run: echo "SHORT_SHA=${GITHUB_SHA::7}" >> $GITHUB_ENV
+
+      - name: Send Webhook to Discord (Embed Only for Commit)
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
         run: |
