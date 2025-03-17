@@ -1,4 +1,4 @@
-name: Discord Webhook for Dev Branch
+name: Discord Webhook for Dev Branch Release
 
 on:
   release:
