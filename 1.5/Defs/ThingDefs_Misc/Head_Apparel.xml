@@ -1864,10 +1864,10 @@ X
 			<MaxHitPoints>755</MaxHitPoints>
 			<DeteriorationRate>0.2</DeteriorationRate>
 			<Mass>3.5</Mass>
-			<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.819</ArmorRating_Heat>
 			<Insulation_Cold>2</Insulation_Cold>
-			<ArmorRating_Heat>0</ArmorRating_Heat>
 			<EquipDelay>10</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>

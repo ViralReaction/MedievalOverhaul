@@ -607,9 +607,9 @@
 			<MaxHitPoints>870</MaxHitPoints>
 			<DeteriorationRate>0.2</DeteriorationRate>
 			<Mass>15</Mass>
-			<ArmorRating_Sharp>0.95</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.50</ArmorRating_Heat>
+			<ArmorRating_Sharp>1.55</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.854</ArmorRating_Heat>
 			<Insulation_Cold>5</Insulation_Cold>
 			<EquipDelay>15</EquipDelay>
 		</statBases>
