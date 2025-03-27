@@ -312,6 +312,26 @@
 						<xpath>/Defs/ThingDef[defName="DankPyon_RawhideRack"]</xpath>
 					</match>
 				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_TanningDrum"]/designationCategory</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_TanningDrum"]/designationCategory</xpath>
+						<value>
+							<designationCategory Inherit="False"/>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_TanningDrum"]/researchPrerequisites</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_TanningDrum"]/researchPrerequisites</xpath>
+						<value>
+							<researchPrerequisites Inherit="False"/>
+						</value>
+					</match>
+				</li>
 
 			</operations>
 		</inactive>

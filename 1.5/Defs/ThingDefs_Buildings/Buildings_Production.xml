@@ -872,6 +872,61 @@
 			<li>DankPyon_Lumber</li>
 		</researchPrerequisites>
 	</ThingDef>
+	
+	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
+		<defName>DankPyon_SawTable</defName>
+		<label>table saw</label>
+		<description>A table saw for turning logs into planks.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Production/SawTable/SawTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3.5,1.5)</drawSize>
+			<shadowData>
+				<volume>(2.8, 0.35, 0.59)</volume>
+				<offset>(0, 0, 0.08)</offset>
+			</shadowData>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<WorkTableWorkSpeedFactor>2</WorkTableWorkSpeedFactor>
+		</statBases>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>250</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_ReportWorkSpeed">
+				<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
+			</li>
+		</comps>
+		<techLevel Inherit="False">Industrial</techLevel>
+		<researchPrerequisites>
+			<li>DankPyon_Lumber</li>
+			<li>Electricity</li>
+		</researchPrerequisites>
+	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
 		<defName>DankPyon_Workbench</defName>

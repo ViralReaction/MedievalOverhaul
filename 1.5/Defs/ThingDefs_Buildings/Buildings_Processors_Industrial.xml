@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Tanning Drum -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_TanningDrum</defName>
+		<label>tanning drum</label>
+		<description>A mechanical drum for treating raw hides to become soft and beautiful leathers.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DankPyon_TanningLiquor</ThingDef>
+		</descriptionHyperlinks>
+		<thingClass>Building_WorkTable</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/TanningDrum/TanningDrum</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<costList>
+			<Steel>75</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>1</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>4500</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Beauty>-10</Beauty>
+		</statBases>
+		<size>(2,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<comps Inherit="false">
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>5</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_HidesProcess_Industrial</li>
+					<li>DankPyon_HyenaRugProcess_Industrial</li>
+					<li>DankPyon_WolfTimberRugProcess_Industrial</li>
+					<li>DankPyon_WolfArcticRugProcess_Industrial</li>
+					<li>DankPyon_CougarRugProcess_Industrial</li>
+					<li>DankPyon_PantherRugProcess_Industrial</li>
+					<li>DankPyon_BearGrizzlyRugProcess_Industrial</li>
+					<li>DankPyon_BearPolarRugProcess_Industrial</li>
+					<li>DankPyon_RoxRugProcess_Industrial</li>
+					<li>DankPyon_ThrumboRugProcess_Industrial</li>
+					<li>DankPyon_DaerRugProcess_Industrial</li>
+					<li>DankPyon_HumanRugProcess_Industrial</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>250</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<techLevel>Industrial</techLevel>
+		<researchPrerequisites>
+			<li>DankPyon_LeatherTanning</li>
+			<li>Electricity</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+	<!-- Metal Working -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_BlastFurnace</defName>
+		<label>blast furnace</label>
+		<description>A large blast furnace used to refine scrap and raw resources. Generates strong heat.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/BlastFurnace/BlastFurnace</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Production/BlastFurnace/BlastFurnace</uiIconPath>
+		<costList>
+			<Steel>200</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<fillPercent>1.0</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>6000</WorkToBuild>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Cleanliness>-30</Cleanliness>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<size>(2,2)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<comps Inherit="false">
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>500</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_SmeltingOre_Iron</li>
+					<li>DankPyon_SmeltingOre_Steel</li>
+					<li>DankPyon_SmeltingOre_Silver</li>
+					<li>DankPyon_SmeltingOre_Gold</li>
+					<li>DankPyon_SmeltingOre_Plasteel</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="MedievalOverhaul.CompProperties_GlowerOnlyWhenUsed">
+				<glowRadius>6</glowRadius>
+				<glowColor>(247,172,65,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>20</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>500</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<techLevel>Industrial</techLevel>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- Metal Working -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_ClothSpinner</defName>
+		<label>cloth spinner</label>
+		<description>An automatic device to spin cloth from thread.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/ClothSpinner/ClothSpinner</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<costList>
+			<Steel>75</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<fillPercent>1.0</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>4500</WorkToBuild>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Beauty>-10</Beauty>
+		</statBases>
+		<size>(2,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<comps Inherit="false">
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>200</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_SpinCloth</li>
+					<li>DankPyon_SpinFlax</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>250</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<techLevel>Industrial</techLevel>
+		<researchPrerequisites>
+			<li>DankPyon_Tailoring</li>
+			<li>Electricity</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

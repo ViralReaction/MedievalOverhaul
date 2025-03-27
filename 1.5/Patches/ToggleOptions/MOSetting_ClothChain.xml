@@ -79,6 +79,26 @@
 					</match>
 				</li>
 
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_ClothSpinner"]/designationCategory</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_ClothSpinner"]/designationCategory</xpath>
+						<value>
+							<designationCategory Inherit="False"/>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_ClothSpinner"]/researchPrerequisites</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_ClothSpinner"]/researchPrerequisites</xpath>
+						<value>
+							<researchPrerequisites Inherit="False"/>
+						</value>
+					</match>
+				</li>
+
 			</operations>
 		</inactive>
 	</Operation>

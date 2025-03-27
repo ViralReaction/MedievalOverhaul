@@ -301,11 +301,18 @@
 						<xpath>Defs/RecipeDef[recipeUsers[li="DankPyon_Trestle"]]/recipeUsers/li[.="DankPyon_Trestle"]</xpath>
 					</match>
 				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef[recipeUsers[li="DankPyon_SawTable"]]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/RecipeDef[recipeUsers[li="DankPyon_SawTable"]]/recipeUsers/li[.="DankPyon_SawTable"]</xpath>
+					</match>
+				</li>
 
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[defName="DankPyon_Trestle"]</xpath>
+					<xpath>Defs/ThingDef[defName="DankPyon_Trestle" or defName="DankPyon_SawTable"]</xpath>
 					<match Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName="DankPyon_Trestle"]</xpath>
+						<xpath>Defs/ThingDef[defName="DankPyon_Trestle" or defName="DankPyon_SawTable"]</xpath>
 						<value>
 							<designationCategory Inherit="False"/>
 						</value>

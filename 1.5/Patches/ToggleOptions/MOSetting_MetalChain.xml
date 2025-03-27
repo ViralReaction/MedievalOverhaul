@@ -225,6 +225,26 @@
 					</match>
 				</li>
 
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_BlastFurnace"]/designationCategory</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_BlastFurnace"]/designationCategory</xpath>
+						<value>
+							<designationCategory Inherit="False"/>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_BlastFurnace"]/researchPrerequisites</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_BlastFurnace"]/researchPrerequisites</xpath>
+						<value>
+							<researchPrerequisites Inherit="False"/>
+						</value>
+					</match>
+				</li>
+
 			</operations>
 		</inactive>
 	</Operation>

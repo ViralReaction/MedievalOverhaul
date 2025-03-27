@@ -10,43 +10,17 @@ namespace MedievalOverhaul.Patches
         public static bool Prefix(CompProcessor __instance, ref Thing __result, ActiveProcess activeProcess)
         {
             var extension = activeProcess.processDef.GetModExtension<ProcessorExtension>();
-            if (extension != null)
+            if (extension?.outputOnlyButcherProduct == true && activeProcess.ingredientThings != null)
             {
-                if (extension.outputOnlyButcherProduct)
+                foreach (var thing in activeProcess.ingredientThings)
                 {
-                    if (activeProcess.ingredientThings != null)
+                    if (thing != null && TryGetButcherProduct(thing, out var thingDefCount))
                     {
-                        foreach (var thing in activeProcess.ingredientThings)
-                        {
-                            if (thing != null)
-                            {
-                                var comp = thing.TryGetComp<CompGenericHide>();
-                                if (comp != null)
-                                {
-                                    int amountLeather = comp.Props.leatherAmount;
-                                    if (comp.leatherAmount > comp.Props.leatherAmount)
-                                    {
-                                        amountLeather = comp.leatherAmount;
-                                    }
-                                    var thingDefCount = new ThingDefCountClass
-                                    {
-                                        count = amountLeather,
-                                        thingDef = comp.Props.leatherType
-                                    };
-                                    __result = TakeOutButcherProduct(__instance, thing, thingDefCount, activeProcess);
-                                    return false;
-                                }
-                                else if (thing.def.butcherProducts != null && thing.def.butcherProducts.Count > 0)
-                                {
-                                    ThingDefCountClass thingDefCount = thing.def.butcherProducts[0]; // Direct index access
-
-                                    __result = TakeOutButcherProduct(__instance, thing, thingDefCount, activeProcess);
-                                    return false;
-                                }
-                            }
-                        }
+                        __result = TakeOutButcherProduct(__instance, thing, thingDefCount, activeProcess);
+                        break;
                     }
                 }
+                return false;
             }
             return true;
         }
@@ -65,29 +39,59 @@ namespace MedievalOverhaul.Patches
             }
         }
 
+        private static bool TryGetButcherProduct(Thing thing, out ThingDefCountClass result)
+        {
+            result = null;
+            var comp = thing.TryGetComp<CompGenericHide>();
+            if (comp != null)
+            {
+                int count = comp.leatherAmount;
+                result = new ThingDefCountClass(comp.Props.leatherType, count);
+                return true;
+            }
+
+            if (thing.def.butcherProducts?.Count > 0)
+            {
+                result = thing.def.butcherProducts[0];
+                return true;
+            }
+            return false;
+        }
+
         public static Thing TakeOutButcherProduct(CompProcessor __instance, Thing ingredientThing, ThingDefCountClass thingDefCount, ActiveProcess activeProcess)
         {
-            Thing thing = null;
-            if (!activeProcess.Ruined)
-            {
-                thing = ThingMaker.MakeThing(thingDefCount.thingDef);
-                thing.stackCount = thingDefCount.count * activeProcess.ingredientCount;
-            }
-            foreach (Thing ingredientThing2 in activeProcess.ingredientThings)
-            {
-                __instance.innerContainer.Remove(ingredientThing2);
-                ingredientThing2.Destroy();
-            }
-            __instance.activeProcesses.Remove(activeProcess);
-            if (__instance.Empty)
-            {
-                __instance.GraphicChange(toEmpty: true);
-            }
-            if (!__instance.activeProcesses.Any((ActiveProcess x) => x.processDef.usesQuality))
-            {
-                __instance.emptyNow = false;
-            }
+            Thing product = MakeProductFromDefCount(thingDefCount, activeProcess.ingredientCount);
+
+            RemoveAndDestroyIngredient(__instance, ingredientThing, activeProcess);
+            FinishProcessIfNoIngredients(__instance, activeProcess);
+
+            return product;
+        }
+
+        private static Thing MakeProductFromDefCount(ThingDefCountClass thingDefCount, int ingredientCount)
+        {
+            var thing = ThingMaker.MakeThing(thingDefCount.thingDef);
+            thing.stackCount = thingDefCount.count * ingredientCount;
             return thing;
+        }
+
+        private static void RemoveAndDestroyIngredient(CompProcessor __instance, Thing ingredientThing, ActiveProcess activeProcess)
+        {
+            __instance.innerContainer.Remove(ingredientThing);
+            ingredientThing.Destroy();
+            activeProcess.ingredientThings.Remove(ingredientThing);
+        }
+
+        private static void FinishProcessIfNoIngredients(CompProcessor __instance, ActiveProcess activeProcess)
+        {
+            if (!activeProcess.ingredientThings.Any())
+            {
+                __instance.activeProcesses.Remove(activeProcess);
+                if (__instance.Empty)
+                    __instance.GraphicChange(true);
+                if (!__instance.activeProcesses.Any(x => x.processDef.usesQuality))
+                    __instance.emptyNow = false;
+            }
         }
     }
 }
