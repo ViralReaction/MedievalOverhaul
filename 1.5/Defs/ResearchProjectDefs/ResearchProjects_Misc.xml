@@ -228,10 +228,10 @@
 	<ResearchProjectDef>
 		<defName>DankPyon_CandleMaking</defName>
 		<label>candle making</label>
-		<description>Make candles to lighten up your colony and build beautiful chandeliers</description>
+		<description>Make candles to lighten up your colony and build beautiful chandeliers.</description>
 		<baseCost>300</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Neolithic</techLevel>
 		<tags>
 			<li>DankPyon_MedievalStart</li>
 		</tags>
