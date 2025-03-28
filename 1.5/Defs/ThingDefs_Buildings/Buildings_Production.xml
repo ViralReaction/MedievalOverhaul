@@ -1256,7 +1256,7 @@
 	<!-- Gardening Box -->
 	<ThingDef ParentName="FurnitureWithQualityBase">
 		<defName>DankPyon_Post</defName>
-		<label>Post</label>
+		<label>post</label>
 		<description>A support post to let viny plants grow effectively.</description>
 		<thingClass>Building_PlantGrower</thingClass>
 		<graphicData>
@@ -1408,7 +1408,7 @@
 
 	<ThingDef ParentName="BenchBase">
 		<defName>DankPyon_Furnace</defName>
-		<label>Furnace</label>
+		<label>furnace</label>
 		<description>A large stone furnace used to smelt raw ores and refine resources.</description>
 		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<graphicData>
@@ -1510,7 +1510,7 @@
 
 	<ThingDef ParentName="BenchBase">
 		<defName>DankPyon_Anvil</defName>
-		<label>Anvil</label>
+		<label>anvil</label>
 		<description>A large metalworking tool with a flattened top surface to strike objects on such as weapons and armor.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
