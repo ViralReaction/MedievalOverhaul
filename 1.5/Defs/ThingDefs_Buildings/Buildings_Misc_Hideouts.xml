@@ -41,7 +41,6 @@
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
-
         <statBases>
             <MaxHitPoints>250</MaxHitPoints>
             <WorkToBuild>2800</WorkToBuild>
@@ -240,7 +239,7 @@ Requirements:
         <researchPrerequisites>
             <li>DankPyon_Exploration</li>
         </researchPrerequisites>
-		<designationCategory>Misc</designationCategory>
+		<designationCategory/>
 		<modExtensions>
 			<li Class="MedievalOverhaul.CannotBePlacedTogetherWithThisModExtension"/>
 		</modExtensions>

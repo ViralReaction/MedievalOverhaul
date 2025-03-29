@@ -100,6 +100,8 @@ namespace MedievalOverhaul
         public static ApparelLayerDef DankPyon_Hood;
         public static ApparelLayerDef DankPyon_InnerHelmet;
 
+        public static ThingDef DankPyon_CultBook;
+
         [MayRequireCE]
         public static StatDef Bulk;
 

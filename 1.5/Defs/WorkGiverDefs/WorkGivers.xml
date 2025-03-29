@@ -103,7 +103,7 @@
 
 	<WorkGiverDef>
 		<defName>DankPyon_DoBillStewDispenser</defName>
-		<label>slop pot</label>
+		<label>fill slop pot</label>
 		<giverClass>MedievalOverhaul.WorkGiver_RefuelStat</giverClass>
 		<workType>Hauling</workType>
 		<verb>deliver</verb>
@@ -117,7 +117,7 @@
 
 	<WorkGiverDef>
 		<defName>DankPyon_RefuelCustom</defName>
-		<label>refuel buildinh</label>
+		<label>refuel building</label>
 		<giverClass>MedievalOverhaul.WorkGiver_RefuelCustom</giverClass>
 		<workType>Hauling</workType>
 		<verb>deliver</verb>

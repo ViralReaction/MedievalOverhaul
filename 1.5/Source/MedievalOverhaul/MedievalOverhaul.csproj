@@ -47,6 +47,7 @@
     <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CalcSpeedFactor.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CurrentWindFactor.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ApparelGraphicRecordGetter_TryGetGraphicApparel.cs" />
+    <Compile Include="Medieval Overhaul\Harmony Patches\ThingDefGenerator_Buildings_ImpliedBlueprintAndFrameDefs.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\ThingListGroupHelper_Includes.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Room_Notify_RoomShapeChanged.cs" />
     <Compile Include="Medieval Overhaul\Harmony Patches\Plant_PlantCollected.cs" />

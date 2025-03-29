@@ -1,4 +1,6 @@
 ﻿using RimWorld;
+using System.Collections.Generic;
+using UnityEngine;
 using Verse;
 
 namespace MedievalOverhaul
@@ -32,6 +34,28 @@ namespace MedievalOverhaul
             {
                 this.refuelableComp.Notify_UsedThisTick();
             }
+        }
+
+        public override IEnumerable<Gizmo> GetGizmos()
+        {
+            foreach (Gizmo gizmo in base.GetGizmos())
+            {
+                yield return gizmo;
+            }
+            BuildableDef def = MedievalOverhaulDefOf.DankPyon_CultBook;
+            if (def != null)
+            {
+                yield return new Command_Action
+                {
+                    defaultLabel = "Tome of Knowledge",
+                    icon = def.uiIcon,
+                    action = () =>
+                    {
+                        Find.DesignatorManager.Select(new Designator_Build(def));
+                    }
+                };
+            }
+            yield break;
         }
     }
 }
