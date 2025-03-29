@@ -92,7 +92,7 @@
 				<!-- Game start dialog -->
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
-					<textKey>GameStartDialog</textKey>
+					<textKey>DankPyon_GameStart_MercenaryStart</textKey>
 					<closeSound>GameStartSting</closeSound>
 				</li>
         

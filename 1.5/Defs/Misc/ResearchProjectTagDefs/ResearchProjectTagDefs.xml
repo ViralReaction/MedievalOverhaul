@@ -8,5 +8,9 @@
 	<ResearchProjectTagDef>
 		<defName>DankPyon_HedgeKnightStart</defName>
 	</ResearchProjectTagDef>
+	
+	<ResearchProjectTagDef>
+		<defName>DankPyon_TavernOwner</defName>
+	</ResearchProjectTagDef>
   
 </Defs>

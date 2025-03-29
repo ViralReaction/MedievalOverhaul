@@ -28,6 +28,7 @@
 		<startingResearchTags>
 			<li>DankPyon_MedievalStart</li>
 			<li>TribalStart</li>
+			<li>DankPyon_TavernOwner</li>
 		</startingResearchTags>
 		<startingTechprintsResearchTags>
 			<li>DankPyon_MedievalStart</li>
@@ -68,9 +69,10 @@
 		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
 		<allowedCultures><li>DankPyon_OldWorlder</li></allowedCultures>
 		<forageabilityFactor>1.7</forageabilityFactor>
-		<!--startingResearchTags>
-        <li>DankPyon_HedgeKnightStart</li>
-      </startingResearchTags-->
+		<startingResearchTags>
+          <li>DankPyon_MedievalStart</li>
+		  <li>TribalStart</li>
+        </startingResearchTags>
 		<startingTechprintsResearchTags>
 			<li>TribalStart</li>
 			<li>TribalStartTechprints</li>
@@ -109,9 +111,10 @@
 		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
 		<allowedCultures><li>DankPyon_OldWorlder</li></allowedCultures>
 		<forageabilityFactor>1.7</forageabilityFactor>
-		<!--startingResearchTags>
-          <li>DankPyon_HedgeKnightStart</li>
-        </startingResearchTags-->
+		<startingResearchTags>
+          <li>DankPyon_MedievalStart</li>
+		  <li>TribalStart</li>
+        </startingResearchTags>
 		<startingTechprintsResearchTags>
 			<li>TribalStart</li>
 			<li>TribalStartTechprints</li>
