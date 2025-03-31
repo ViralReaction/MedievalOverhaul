@@ -20,7 +20,17 @@
 			</value>
 		</match>
 	</Operation>
-	
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef/recipeMaker/recipeUsers[contains(li,'VFEM2_AlchemicalWorkbench')]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/recipeMaker/recipeUsers[contains(li,'VFEM2_AlchemicalWorkbench')]</xpath>
+			<value>
+				<li>DankPyon_AlchemyBench</li>
+			</value>
+		</match>
+	</Operation>
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ResearchProjectDef[defName="VFEM2_Alchemy"]/tab</xpath>
 		<match Class="PatchOperationReplace">
