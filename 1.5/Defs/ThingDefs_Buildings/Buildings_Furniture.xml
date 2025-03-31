@@ -2413,17 +2413,17 @@
 	
 	<!--============================== Bookshelf ==============================-->
 	
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase" Name="DankPyon_RusticBookshelf">
+	<ThingDef ParentName="DankPyon_VanillaShelfBase" Name="DankPyon_RusticBookshelf">
 		<defName>DankPyon_RusticBookshelf</defName>
 		<label>small research shelf</label>
-		<description>Increases research speed when placed near research table. Each research bench can  use two small research shelves.</description>
+		<description>Increases research speed when placed near research table. Each research bench can use two small research shelves.</description>
 		<graphicData>
 			<texPath>Furniture/RusticBookshelf1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>3</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<thingClass>Building</thingClass>
+		<thingClass>Building_Storage</thingClass>
 		<uiIconScale>0.5</uiIconScale>
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(1,1)</size>
@@ -2461,6 +2461,9 @@
 				<maxDistance>5</maxDistance>
 				<maxSimultaneous>2</maxSimultaneous>
 			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -2478,7 +2481,27 @@
 					<disallowNotEverStorable>true</disallowNotEverStorable>
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
 					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+						<li>DankPyon_Schematic_MilitaryBlades</li>
+						<li>DankPyon_Schematic_NobleBlades</li>
+						<li>DankPyon_Schematic_MilitaryMaces</li>
+						<li>DankPyon_Schematic_NobleMaces</li>
+						<li>DankPyon_Schematic_MilitaryPolearms</li>
+						<li>DankPyon_Schematic_NoblePolearms</li>
+						<li>DankPyon_Schematic_Crossbow</li>
+						<li>DankPyon_Schematic_HeavyCrossbow</li>
+						<li>DankPyon_Schematic_Steel</li>
+						<li>DankPyon_Schematic_Gunpowder</li>
+						<li>DankPyon_Schematic_Tar</li>
+						<li>DankPyon_Schematic_GreatBow</li>
+						<li>DankPyon_Schematic_WarBow</li>
+						<li>DankPyon_Schematic_IntermediateCooking</li>
+						<li>DankPyon_Schematic_AdvancedCooking</li>
+						<li>DankPyon_Schematic_BallistaRepeater</li>
+					</thingDefs>
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings>
@@ -2486,14 +2509,34 @@
 				<filter>
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
 					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+						<li>DankPyon_Schematic_MilitaryBlades</li>
+						<li>DankPyon_Schematic_NobleBlades</li>
+						<li>DankPyon_Schematic_MilitaryMaces</li>
+						<li>DankPyon_Schematic_NobleMaces</li>
+						<li>DankPyon_Schematic_MilitaryPolearms</li>
+						<li>DankPyon_Schematic_NoblePolearms</li>
+						<li>DankPyon_Schematic_Crossbow</li>
+						<li>DankPyon_Schematic_HeavyCrossbow</li>
+						<li>DankPyon_Schematic_Steel</li>
+						<li>DankPyon_Schematic_Gunpowder</li>
+						<li>DankPyon_Schematic_Tar</li>
+						<li>DankPyon_Schematic_GreatBow</li>
+						<li>DankPyon_Schematic_WarBow</li>
+						<li>DankPyon_Schematic_IntermediateCooking</li>
+						<li>DankPyon_Schematic_AdvancedCooking</li>
+						<li>DankPyon_Schematic_BallistaRepeater</li>
+					</thingDefs>
 				</filter>
 			</defaultStorageSettings>
 			<paintable>true</paintable>
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
+	<ThingDef ParentName="DankPyon_VanillaShelfBase">
 		<defName>DankPyon_RusticBookshelf1x2c</defName>
 		<label>large research shelf</label>
 		<description>Increases research speed when placed near research table. Each research bench can use one large research shelf.</description>
@@ -2503,6 +2546,7 @@
 			<drawSize>(3.5,3)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		<thingClass>Building_Storage</thingClass>
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(2,1)</size>
 		<altitudeLayer>Building</altitudeLayer>
@@ -2539,6 +2583,9 @@
 				<maxDistance>5</maxDistance>
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -2556,7 +2603,27 @@
 					<disallowNotEverStorable>true</disallowNotEverStorable>
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
 					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+						<li>DankPyon_Schematic_MilitaryBlades</li>
+						<li>DankPyon_Schematic_NobleBlades</li>
+						<li>DankPyon_Schematic_MilitaryMaces</li>
+						<li>DankPyon_Schematic_NobleMaces</li>
+						<li>DankPyon_Schematic_MilitaryPolearms</li>
+						<li>DankPyon_Schematic_NoblePolearms</li>
+						<li>DankPyon_Schematic_Crossbow</li>
+						<li>DankPyon_Schematic_HeavyCrossbow</li>
+						<li>DankPyon_Schematic_Steel</li>
+						<li>DankPyon_Schematic_Gunpowder</li>
+						<li>DankPyon_Schematic_Tar</li>
+						<li>DankPyon_Schematic_GreatBow</li>
+						<li>DankPyon_Schematic_WarBow</li>
+						<li>DankPyon_Schematic_IntermediateCooking</li>
+						<li>DankPyon_Schematic_AdvancedCooking</li>
+						<li>DankPyon_Schematic_BallistaRepeater</li>
+					</thingDefs>
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings>
@@ -2564,7 +2631,27 @@
 				<filter>
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
 					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+						<li>DankPyon_Schematic_MilitaryBlades</li>
+						<li>DankPyon_Schematic_NobleBlades</li>
+						<li>DankPyon_Schematic_MilitaryMaces</li>
+						<li>DankPyon_Schematic_NobleMaces</li>
+						<li>DankPyon_Schematic_MilitaryPolearms</li>
+						<li>DankPyon_Schematic_NoblePolearms</li>
+						<li>DankPyon_Schematic_Crossbow</li>
+						<li>DankPyon_Schematic_HeavyCrossbow</li>
+						<li>DankPyon_Schematic_Steel</li>
+						<li>DankPyon_Schematic_Gunpowder</li>
+						<li>DankPyon_Schematic_Tar</li>
+						<li>DankPyon_Schematic_GreatBow</li>
+						<li>DankPyon_Schematic_WarBow</li>
+						<li>DankPyon_Schematic_IntermediateCooking</li>
+						<li>DankPyon_Schematic_AdvancedCooking</li>
+						<li>DankPyon_Schematic_BallistaRepeater</li>
+					</thingDefs>
 				</filter>
 			</defaultStorageSettings>
 			<paintable>true</paintable>
