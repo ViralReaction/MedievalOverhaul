@@ -102,9 +102,6 @@ X
 		</statBases>
 		<apparel>
 			<wornGraphicPath>Headgear/Hood/Hood</wornGraphicPath>
-			<layers Inherit="False">
-				<li>DankPyon_Hood</li>
-			</layers>
 			<tags>
 				<li>DankPyon_BrigandThug</li>
 				<li>DankPyon_PeasantHelmet</li>
@@ -113,11 +110,6 @@ X
 			<defaultOutfitTags>
 				<li>Worker</li>
 			</defaultOutfitTags>
-			<drawData>
-				<dataNorth>
-					<layer>96</layer>
-				</dataNorth>
-			</drawData>
 		</apparel>
 	</ThingDef>
 
