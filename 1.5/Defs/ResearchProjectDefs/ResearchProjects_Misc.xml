@@ -552,7 +552,7 @@
 	<ResearchProjectDef>
 		<defName>DankPyon_Gunpowder</defName>
 		<label>gunpowder</label>
-		<description>Discover the perfect formula in utilizing gunpowder for weapponry.</description>
+		<description>Discover the perfect formula in utilizing gunpowder for weaponry.</description>
 		<baseCost>1000</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
