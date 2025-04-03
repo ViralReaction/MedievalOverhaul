@@ -1037,6 +1037,7 @@ X
 		</statBases>
 		<equippedStatOffsets>
 			<ShootingAccuracyPawn>-2.5</ShootingAccuracyPawn>
+			<PainShockThreshold>0.10</PainShockThreshold>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
 		<costStuffCount>40</costStuffCount>
