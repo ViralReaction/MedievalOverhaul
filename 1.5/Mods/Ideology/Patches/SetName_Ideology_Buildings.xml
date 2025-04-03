@@ -10,10 +10,18 @@
 			
 				<li Class="PatchOperationSetName">
 					<xpath>Defs/ThingDef[defName="ChristmasTree" or 
-							defName="SacrificialFlag" or 
-							defName="IncenseShrine" or
-							defName="Drum"]/costList/WoodLog</xpath>
+						defName="SacrificialFlag" or 
+						defName="IncenseShrine" or
+						defName="Drum"]/costList/WoodLog
+					</xpath>
 					<name>DankPyon_RawWood</name>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Spawner"]/thingToSpawn[.="WoodLog"]</xpath>
+					<value>
+						<thingToSpawn>DankPyon_RawWood</thingToSpawn>
+					</value>
 				</li>
 
 			</operations>
