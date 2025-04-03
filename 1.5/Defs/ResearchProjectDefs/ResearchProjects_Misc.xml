@@ -209,7 +209,7 @@
 	<ResearchProjectDef>
 		<defName>DankPyon_Silk</defName>
 		<label>silk</label>
-		<description>Harvest fine stringy material from silkworms</description>
+		<description>Harvest fine, stringy material from silkworms.</description>
 		<baseCost>600</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
@@ -228,10 +228,10 @@
 	<ResearchProjectDef>
 		<defName>DankPyon_CandleMaking</defName>
 		<label>candle making</label>
-		<description>Make candles to lighten up your colony and build beautiful chandeliers</description>
+		<description>Make candles to lighten up your colony and build beautiful chandeliers.</description>
 		<baseCost>300</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Neolithic</techLevel>
 		<tags>
 			<li>DankPyon_MedievalStart</li>
 		</tags>
@@ -346,7 +346,7 @@
 	<ResearchProjectDef>
 		<defName>DankPyon_Crossbow</defName>
 		<label>crossbow</label>
-		<description>craft a mechanically compact bow. Requires less skill to wield but is long to reload.</description>
+		<description>Craft a mechanically compact bow. Requires less skill to wield, but is long to reload.</description>
 		<baseCost>400</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
@@ -552,7 +552,7 @@
 	<ResearchProjectDef>
 		<defName>DankPyon_Gunpowder</defName>
 		<label>gunpowder</label>
-		<description>Discover the perfect formula in utilizing gunpowder for weapponry</description>
+		<description>Discover the perfect formula in utilizing gunpowder for weaponry.</description>
 		<baseCost>1000</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
@@ -668,7 +668,7 @@
 	<ResearchProjectDef>
 		<defName>DankPyon_WarBow</defName>
 		<label>war bow</label>
-		<description>Craft the ultimate longbow, dangerous especially at long range</description>
+		<description>Craft the ultimate longbow, dangerous especially at long range.</description>
 		<baseCost>700</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
@@ -761,7 +761,7 @@
 	<ResearchProjectDef>
 		<defName>DankPyon_BasicMaces</defName>
 		<label>basic maces</label>
-		<description>Learn how to craft basic maces</description>
+		<description>Learn how to craft basic maces.</description>
 		<baseCost>300</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<prerequisites>
@@ -780,7 +780,7 @@
 	<ResearchProjectDef>
 		<defName>DankPyon_MilitaryMaces</defName>
 		<label>military maces</label>
-		<description>Learn how to craft maces designed for combat</description>
+		<description>Learn how to craft maces designed for combat.</description>
 		<baseCost>600</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<prerequisites>
@@ -828,7 +828,7 @@
 	<ResearchProjectDef>
 		<defName>DankPyon_BasicBlades</defName>
 		<label>basic blades</label>
-		<description>Learn how to craft basic swords</description>
+		<description>Learn how to craft basic swords.</description>
 		<baseCost>300</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<prerequisites>
@@ -847,7 +847,7 @@
 	<ResearchProjectDef>
 		<defName>DankPyon_MilitaryBlades</defName>
 		<label>military blades</label>
-		<description>Learn how to craft swords designed for combat</description>
+		<description>Learn how to craft swords designed for combat.</description>
 		<baseCost>600</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<prerequisites>
@@ -886,7 +886,7 @@
 	<ResearchProjectDef>
 		<defName>DankPyon_BasicAgriculture</defName>
 		<label>basic agriculture</label>
-		<description>Research how to sow basic plants</description>
+		<description>Research how to sow basic plants.</description>
 		<baseCost>300</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Neolithic</techLevel>
@@ -1095,7 +1095,7 @@
 	<ResearchProjectDef>
 		<defName>DankPyon_StewPot</defName>
 		<label>stews</label>
-		<description>Learn how to make hearty and nutritious stews such as pumpkin and lentil soups</description>
+		<description>Learn how to make hearty and nutritious stews, such as pumpkin and lentil soups.</description>
 		<baseCost>300</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
