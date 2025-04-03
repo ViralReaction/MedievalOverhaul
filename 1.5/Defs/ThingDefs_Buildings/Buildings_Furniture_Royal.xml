@@ -133,25 +133,14 @@
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
 						<li>Books</li>
+						<li>DankPyon_Treatise</li>
 					</categories>
 					<thingDefs>
 						<li>DankPyon_Book</li>
-						<li>DankPyon_Schematic_MilitaryBlades</li>
-						<li>DankPyon_Schematic_NobleBlades</li>
-						<li>DankPyon_Schematic_MilitaryMaces</li>
-						<li>DankPyon_Schematic_NobleMaces</li>
-						<li>DankPyon_Schematic_MilitaryPolearms</li>
-						<li>DankPyon_Schematic_NoblePolearms</li>
-						<li>DankPyon_Schematic_Crossbow</li>
-						<li>DankPyon_Schematic_HeavyCrossbow</li>
-						<li>DankPyon_Schematic_Steel</li>
-						<li>DankPyon_Schematic_Gunpowder</li>
-						<li>DankPyon_Schematic_Tar</li>
-						<li>DankPyon_Schematic_GreatBow</li>
-						<li>DankPyon_Schematic_WarBow</li>
-						<li>DankPyon_Schematic_IntermediateCooking</li>
-						<li>DankPyon_Schematic_AdvancedCooking</li>
-						<li>DankPyon_Schematic_BallistaRepeater</li>
+						<li>DankPyon_Tale</li>
+						<li>DankPyon_Treatise</li>
+						<li>DankPyon_BookUnique_OrnateTome</li>
+						<li>DankPyon_BookUnique_OnEnglish</li>
 					</thingDefs>
 				</filter>
 			</fixedStorageSettings>
@@ -161,32 +150,20 @@
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
 						<li>Books</li>
+						<li>DankPyon_Treatise</li>
 					</categories>
 					<thingDefs>
 						<li>DankPyon_Book</li>
-						<li>DankPyon_Schematic_MilitaryBlades</li>
-						<li>DankPyon_Schematic_NobleBlades</li>
-						<li>DankPyon_Schematic_MilitaryMaces</li>
-						<li>DankPyon_Schematic_NobleMaces</li>
-						<li>DankPyon_Schematic_MilitaryPolearms</li>
-						<li>DankPyon_Schematic_NoblePolearms</li>
-						<li>DankPyon_Schematic_Crossbow</li>
-						<li>DankPyon_Schematic_HeavyCrossbow</li>
-						<li>DankPyon_Schematic_Steel</li>
-						<li>DankPyon_Schematic_Gunpowder</li>
-						<li>DankPyon_Schematic_Tar</li>
-						<li>DankPyon_Schematic_GreatBow</li>
-						<li>DankPyon_Schematic_WarBow</li>
-						<li>DankPyon_Schematic_IntermediateCooking</li>
-						<li>DankPyon_Schematic_AdvancedCooking</li>
-						<li>DankPyon_Schematic_BallistaRepeater</li>
+						<li>DankPyon_Tale</li>
+						<li>DankPyon_Treatise</li>
+						<li>DankPyon_BookUnique_OrnateTome</li>
+						<li>DankPyon_BookUnique_OnEnglish</li>
 					</thingDefs>
 				</filter>
 			</defaultStorageSettings>
 			<paintable>true</paintable>
 		</building>
 	</ThingDef>
-
 
 	<!-- Royal Chair -->
 	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
