@@ -50,6 +50,7 @@
 	  </li>
 	</modDependencies>
 	<incompatibleWith>
+		<li>avilmask.AnimalControls</li>
 	</incompatibleWith>
 	<description>Pretty dank mod</description>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/PrettiestBarrel</modIconPath>
