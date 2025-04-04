@@ -243,7 +243,6 @@
 		<size>(2, 1)</size>
 		<rotatable>true</rotatable>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-
 		<costStuffCount>75</costStuffCount>
 		<stuffCategories Inherit="False">
 			<li>Metallic</li>
@@ -299,7 +298,6 @@
 		<size>(2, 1)</size>
 		<rotatable>true</rotatable>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-
 		<costStuffCount>75</costStuffCount>
 		<stuffCategories Inherit="False">
 			<li>Stony</li>
@@ -427,7 +425,6 @@
 			</damageData>
 		</graphicData>
 		<uiIconPath>Buildings/Linked/HideTent_MenuIcon</uiIconPath>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>50</WorkToBuild>
@@ -458,6 +455,7 @@
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
 		<fertility>0</fertility>
+		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
 		<building>
 			<isInert>true</isInert>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
@@ -517,19 +515,16 @@
 			</damageData>
 		</graphicData>
 		<uiIconPath>Buildings/Linked/Tent_MenuIcon</uiIconPath>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>135</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
-
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
 		<costStuffCount>5</costStuffCount>
-
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
@@ -550,6 +545,7 @@
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
 		<fertility>0</fertility>
+		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
 		<building>
 			<isInert>true</isInert>
 			<isPlaceOverableWall>true</isPlaceOverableWall>
