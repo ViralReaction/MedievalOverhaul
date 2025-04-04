@@ -26,7 +26,7 @@
 
 	<RecipeDef ParentName="DankPyon_MakeTanningLiquorBase">
 		<defName>MakeTanningLiquorFromWood</defName>
-		<label>make tanning liquor from wood</label>
+		<label>make tanning liquor from wood x6</label>
 		<description>Make a batch of tanning liquor using the bark and wood contents from logs.</description>
 		<ingredients>
 			<li>
@@ -49,7 +49,7 @@
 
 	<RecipeDef ParentName="DankPyon_MakeTanningLiquorBase">
 		<defName>DankPyon_MakeTanningLiquorFromFood</defName>
-		<label>make tanning liquor from plants</label>
+		<label>make tanning liquor from food x6</label>
 		<description>Make a batch of tanning liquor using any organic ingredients known to harbor tannins.</description>
 		<jobString>Boiling plants into 6 tanning liquor.</jobString>
 		<ingredients>
@@ -60,7 +60,13 @@
 						<li>RawAgave</li>
 						<li>RawBerries</li>
 						<li>RawCorn</li>
+						<li>DankPyon_Bone</li>
 					</thingDefs>
+					<categories>
+						<li>MeatRaw</li>
+						<li>EggsUnfertilized</li>
+						<li>EggsFertilized</li>
+					</categories>
 				</filter>
 				<count>28</count>
 			</li>
@@ -71,34 +77,30 @@
 				<li>RawAgave</li>
 				<li>RawBerries</li>
 				<li>RawCorn</li>
+				<li>DankPyon_Bone</li>
 			</thingDefs>
-		</fixedIngredientFilter>
-	</RecipeDef>
-
-	<RecipeDef ParentName="DankPyon_MakeTanningLiquorBase">
-		<defName>DankPyon_MakeTanningLiquorFromMeat</defName>
-		<label>make tanning liquor from meat</label>
-		<description>Make a batch of tanning liquor using any organic ingredients known to harbor tannins.</description>
-		<jobString>Boiling meat into 6 tanning liquor.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>MeatRaw</li>
-					</categories>
-				</filter>
-				<count>28</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
 			<categories>
 				<li>MeatRaw</li>
+				<li>EggsUnfertilized</li>
+				<li>EggsFertilized</li>
 			</categories>
 		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>RawHops</li>
+				<li>RawAgave</li>
+				<li>RawBerries</li>
+				<li>RawCorn</li>
+				<li>DankPyon_Bone</li>
+			</thingDefs>
+			<categories>
+				<li>MeatRaw</li>
+				<li>EggsUnfertilized</li>
+			</categories>
+		</defaultIngredientFilter>
 	</RecipeDef>
 
 	<!-- 10X -->
-	
 	<RecipeDef Abstract="True" Name="DankPyon_MakeTanningLiquorBase10X">
 		<jobString>Boiling wood into 60 tanning liquor.</jobString>
 		<effectWorking>Cook</effectWorking>
@@ -125,7 +127,7 @@
 
 	<RecipeDef ParentName="DankPyon_MakeTanningLiquorBase10X">
 		<defName>MakeTanningLiquorFromWood10X</defName>
-		<label>make tanning liquor from wood (10X)</label>
+		<label>make tanning liquor from wood x60</label>
 		<description>Make a batch of tanning liquor using the bark and wood contents from logs.</description>
 		<ingredients>
 			<li>
@@ -148,7 +150,7 @@
 
 	<RecipeDef ParentName="DankPyon_MakeTanningLiquorBase10X">
 		<defName>DankPyon_MakeTanningLiquorFromFood10X</defName>
-		<label>make tanning liquor from plants (10X)</label>
+		<label>make tanning liquor from food x60</label>
 		<description>Make a batch of tanning liquor using any organic ingredients known to harbor tannins.</description>
 		<jobString>Boiling plants into 60 tanning liquor.</jobString>
 		<ingredients>
@@ -159,7 +161,13 @@
 						<li>RawAgave</li>
 						<li>RawBerries</li>
 						<li>RawCorn</li>
+						<li>DankPyon_Bone</li>
 					</thingDefs>
+					<categories>
+						<li>MeatRaw</li>
+						<li>EggsUnfertilized</li>
+						<li>EggsFertilized</li>
+					</categories>
 				</filter>
 				<count>280</count>
 			</li>
@@ -170,30 +178,27 @@
 				<li>RawAgave</li>
 				<li>RawBerries</li>
 				<li>RawCorn</li>
+				<li>DankPyon_Bone</li>
 			</thingDefs>
-		</fixedIngredientFilter>
-	</RecipeDef>
-
-	<RecipeDef ParentName="DankPyon_MakeTanningLiquorBase10X">
-		<defName>DankPyon_MakeTanningLiquorFromMeat10X</defName>
-		<label>make tanning liquor from meat (10X)</label>
-		<description>Make a batch of tanning liquor using any organic ingredients known to harbor tannins.</description>
-		<jobString>Boiling meat into 60 tanning liquor.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>MeatRaw</li>
-					</categories>
-				</filter>
-				<count>280</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
 			<categories>
 				<li>MeatRaw</li>
+				<li>EggsUnfertilized</li>
+				<li>EggsFertilized</li>
 			</categories>
 		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>RawHops</li>
+				<li>RawAgave</li>
+				<li>RawBerries</li>
+				<li>RawCorn</li>
+				<li>DankPyon_Bone</li>
+			</thingDefs>
+			<categories>
+				<li>MeatRaw</li>
+				<li>EggsUnfertilized</li>
+			</categories>
+		</defaultIngredientFilter>
 	</RecipeDef>
 
 	<!--RecipeDef Abstract="True" Name="DankPyon_PrepareHideBase">
