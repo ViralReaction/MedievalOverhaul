@@ -61,17 +61,17 @@
 	</ThingDef>
 
 	<!--Bookshelf -->
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
+	<ThingDef ParentName="DankPyon_VanillaShelfBase">
 		<defName>DankPyon_RoyalBookshelf</defName>
 		<label>royal bookshelf</label>
-		<description>Increases research speed when placed near research table. Each research bench can  use two bookshelf.</description>
+		<description>Increases research speed when placed near research table. Each research bench can use two bookshelf.</description>
 		<graphicData>
 			<texPath>Furniture/RoyalBookshelf</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>3</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<thingClass>Building</thingClass>
+		<thingClass>Building_Storage</thingClass>
 		<uiIconScale>0.65</uiIconScale>
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(1,1)</size>
@@ -110,6 +110,9 @@
 				<maxDistance>5</maxDistance>
 				<maxSimultaneous>2</maxSimultaneous>
 			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -118,8 +121,42 @@
 		<researchPrerequisites Inherit="False">
 			<li>DankPyon_RoyalRusticFurniture</li>
 		</researchPrerequisites>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<maxItemsInCell>3</maxItemsInCell>
+			<storageGroupTag>Shelf</storageGroupTag>
+			<blueprintClass>Blueprint_Storage</blueprintClass>
+			<fixedStorageSettings>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<categories>
+						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
+					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+					</thingDefs>
+					<tradeTagsToDisallow>
+						<li>DankPyon_Schematic</li>
+					</tradeTagsToDisallow>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Preferred</priority>
+				<filter>
+					<categories>
+						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
+					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+					</thingDefs>
+				</filter>
+			</defaultStorageSettings>
+			<paintable>true</paintable>
+		</building>
 	</ThingDef>
-
 
 	<!-- Royal Chair -->
 	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
