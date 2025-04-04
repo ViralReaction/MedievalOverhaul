@@ -2582,15 +2582,13 @@
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
 						<li>Books</li>
-						<li>DankPyon_Treatise</li>
 					</categories>
 					<thingDefs>
 						<li>DankPyon_Book</li>
-						<li>DankPyon_Tale</li>
-						<li>DankPyon_Treatise</li>
-						<li>DankPyon_BookUnique_OrnateTome</li>
-						<li>DankPyon_BookUnique_OnEnglish</li>
 					</thingDefs>
+					<tradeTagsToDisallow>
+						<li>DankPyon_Schematic</li>
+					</tradeTagsToDisallow>
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings>
@@ -2599,22 +2597,20 @@
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
 						<li>Books</li>
-						<li>DankPyon_Treatise</li>
 					</categories>
 					<thingDefs>
 						<li>DankPyon_Book</li>
-						<li>DankPyon_Tale</li>
-						<li>DankPyon_Treatise</li>
-						<li>DankPyon_BookUnique_OrnateTome</li>
-						<li>DankPyon_BookUnique_OnEnglish</li>
 					</thingDefs>
+					<tradeTagsToDisallow>
+						<li>DankPyon_Schematic</li>
+					</tradeTagsToDisallow>
 				</filter>
 			</defaultStorageSettings>
 			<paintable>true</paintable>
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
+	<ThingDef ParentName="DankPyon_VanillaShelfBase">
 		<defName>DankPyon_RusticEmptyShelf</defName>
 		<label>empty shelf</label>
 		<description>An empty shelf.</description>
@@ -2623,7 +2619,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
-		<thingClass>Building</thingClass>
+		<thingClass>Building_Storage</thingClass>
 		<uiIconScale>0.5</uiIconScale>
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(1,1)</size>
@@ -2651,6 +2647,9 @@
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
 		</comps>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -2665,7 +2664,14 @@
 					<disallowNotEverStorable>true</disallowNotEverStorable>
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
 					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+					</thingDefs>
+					<tradeTagsToDisallow>
+						<li>DankPyon_Schematic</li>
+					</tradeTagsToDisallow>
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings>
@@ -2673,7 +2679,14 @@
 				<filter>
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
 					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+					</thingDefs>
+					<tradeTagsToDisallow>
+						<li>DankPyon_Schematic</li>
+					</tradeTagsToDisallow>
 				</filter>
 			</defaultStorageSettings>
 			<paintable>true</paintable>
@@ -2689,7 +2702,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.5,3)</drawSize>
 		</graphicData>
-		<thingClass>Building</thingClass>
+		<thingClass>Building_Storage</thingClass>
 		
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(2,1)</size>
@@ -2717,6 +2730,9 @@
 		</stuffCategories>
 		<costStuffCount>75</costStuffCount>
 		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
 		</comps>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -2731,7 +2747,14 @@
 					<disallowNotEverStorable>true</disallowNotEverStorable>
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
 					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+					</thingDefs>
+					<tradeTagsToDisallow>
+						<li>DankPyon_Schematic</li>
+					</tradeTagsToDisallow>
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings>
@@ -2739,7 +2762,14 @@
 				<filter>
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
 					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+					</thingDefs>
+					<tradeTagsToDisallow>
+						<li>DankPyon_Schematic</li>
+					</tradeTagsToDisallow>
 				</filter>
 			</defaultStorageSettings>
 			<paintable>true</paintable>
