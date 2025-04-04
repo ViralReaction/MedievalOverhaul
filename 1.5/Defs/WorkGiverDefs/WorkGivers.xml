@@ -344,6 +344,7 @@
 		<priorityInType>115</priorityInType>
 		<fixedBillGiverDefs>
 			<li>DankPyon_Trestle</li>
+			<li>DankPyon_SawTable</li>
 		</fixedBillGiverDefs>
 		<verb>craft</verb>
 		<gerund>crafting at</gerund>
