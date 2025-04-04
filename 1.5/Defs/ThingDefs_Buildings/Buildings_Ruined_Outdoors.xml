@@ -108,6 +108,10 @@
 			<deconstructible>true</deconstructible>
 			<alwaysDeconstructible>true</alwaysDeconstructible>
 		</building>
+		<costList>
+			<DankPyon_Bone>5</DankPyon_Bone>
+			<DankPyon_Linen>5</DankPyon_Linen>
+		</costList>
 		<killedLeavings>
 			<DankPyon_Bone>5</DankPyon_Bone>
 			<DankPyon_Linen>5</DankPyon_Linen>
