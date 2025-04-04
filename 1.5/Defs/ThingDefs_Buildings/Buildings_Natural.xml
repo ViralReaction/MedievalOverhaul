@@ -288,7 +288,7 @@
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>DankPyon_BeeHive</defName>
 		<label>bee hive</label>
-		<description>A bee hive. \n\nDestroy to obtain a queen bee.</description>
+		<description>A bee hive. \n\Deconstruct to obtain a queen bee.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Natural/BeeHive</texPath>
@@ -303,16 +303,22 @@
 		<statBases>
 			<MaxHitPoints>130</MaxHitPoints>
 			<Flammability>1.0</Flammability>
+			<WorkToBuild>2500</WorkToBuild>
 		</statBases>
 		<pathCost>42</pathCost>
+		<costList>
+			<DankPyon_Honeycomb>20</DankPyon_Honeycomb>
+			<DankPyon_QueenBee>1</DankPyon_QueenBee>
+		</costList>
 		<killedLeavings>
 			<DankPyon_Honeycomb>20</DankPyon_Honeycomb>
 			<DankPyon_QueenBee>1</DankPyon_QueenBee>
 		</killedLeavings>
+		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
 		<building>
 			<isEdifice>false</isEdifice>
 			<claimable>false</claimable>
-			<deconstructible>false</deconstructible>
+			<deconstructible>true</deconstructible>
 		</building>
 	</ThingDef>
 
