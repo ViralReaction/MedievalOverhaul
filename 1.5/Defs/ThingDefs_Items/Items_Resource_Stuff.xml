@@ -28,6 +28,7 @@
 			<SharpDamageMultiplier>0.8</SharpDamageMultiplier>
 			<BluntDamageMultiplier>0.3</BluntDamageMultiplier>
 			<DeteriorationRate>1</DeteriorationRate>
+			<Nutrition>0.01</Nutrition>
 		</statBases>
 		<stuffProps>
 			<stuffAdjective>bone</stuffAdjective>
@@ -52,6 +53,16 @@
 				<MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+			<showIngestFloatOption>false</showIngestFloatOption>
+			<optimalityOffsetHumanlikes>-20</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+		</ingestible>
 		<thingCategories>
 			<li>ResourcesRaw</li>
 		</thingCategories>
