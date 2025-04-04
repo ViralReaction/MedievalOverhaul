@@ -327,6 +327,11 @@ X
 				<li>Worker</li>
 				<li>Soldier</li>
 			</defaultOutfitTags>
+			<drawData>
+				<dataNorth>
+					<layer>96</layer>
+				</dataNorth>
+			</drawData>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
 	</ThingDef>
