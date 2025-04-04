@@ -39,6 +39,7 @@
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
+		<defaultPlacingRot>South</defaultPlacingRot>
 		<costList>
 			<Gold>30</Gold>
 		</costList>
@@ -102,6 +103,7 @@
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>80</costStuffCount>
+		<defaultPlacingRot>South</defaultPlacingRot>
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
