@@ -2586,9 +2586,6 @@
 					<thingDefs>
 						<li>DankPyon_Book</li>
 					</thingDefs>
-					<tradeTagsToDisallow>
-						<li>DankPyon_Schematic</li>
-					</tradeTagsToDisallow>
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings>
@@ -2601,9 +2598,6 @@
 					<thingDefs>
 						<li>DankPyon_Book</li>
 					</thingDefs>
-					<tradeTagsToDisallow>
-						<li>DankPyon_Schematic</li>
-					</tradeTagsToDisallow>
 				</filter>
 			</defaultStorageSettings>
 			<paintable>true</paintable>
@@ -2669,9 +2663,6 @@
 					<thingDefs>
 						<li>DankPyon_Book</li>
 					</thingDefs>
-					<tradeTagsToDisallow>
-						<li>DankPyon_Schematic</li>
-					</tradeTagsToDisallow>
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings>
@@ -2684,9 +2675,6 @@
 					<thingDefs>
 						<li>DankPyon_Book</li>
 					</thingDefs>
-					<tradeTagsToDisallow>
-						<li>DankPyon_Schematic</li>
-					</tradeTagsToDisallow>
 				</filter>
 			</defaultStorageSettings>
 			<paintable>true</paintable>
@@ -2752,9 +2740,6 @@
 					<thingDefs>
 						<li>DankPyon_Book</li>
 					</thingDefs>
-					<tradeTagsToDisallow>
-						<li>DankPyon_Schematic</li>
-					</tradeTagsToDisallow>
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings>
@@ -2767,9 +2752,6 @@
 					<thingDefs>
 						<li>DankPyon_Book</li>
 					</thingDefs>
-					<tradeTagsToDisallow>
-						<li>DankPyon_Schematic</li>
-					</tradeTagsToDisallow>
 				</filter>
 			</defaultStorageSettings>
 			<paintable>true</paintable>

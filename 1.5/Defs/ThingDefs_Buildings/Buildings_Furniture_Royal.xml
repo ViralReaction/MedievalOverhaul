@@ -152,9 +152,6 @@
 					<thingDefs>
 						<li>DankPyon_Book</li>
 					</thingDefs>
-					<tradeTagsToDisallow>
-						<li>DankPyon_Schematic</li>
-					</tradeTagsToDisallow>
 				</filter>
 			</defaultStorageSettings>
 			<paintable>true</paintable>
