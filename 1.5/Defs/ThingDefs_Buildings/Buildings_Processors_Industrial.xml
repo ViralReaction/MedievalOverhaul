@@ -40,7 +40,8 @@
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		<defaultPlacingRot>South</defaultPlacingRot>
 		<surfaceType>Item</surfaceType>
 		<comps Inherit="false">
 			<li Class="ProcessorFramework.CompProperties_Processor">
@@ -97,7 +98,7 @@
 			<texPath>Production/BlastFurnace/BlastFurnace</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(4,4)</drawSize>
+			<drawSize>(5,4)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -119,12 +120,13 @@
 			<Cleanliness>-30</Cleanliness>
 			<Beauty>-20</Beauty>
 		</statBases>
-		<size>(2,2)</size>
+		<size>(3,2)</size>
 		<designationCategory>Production</designationCategory>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		<interactionCellOffset>(0,0,2)</interactionCellOffset>
+		<defaultPlacingRot>South</defaultPlacingRot>
 		<surfaceType>Item</surfaceType>
 		<comps Inherit="false">
 			<li Class="ProcessorFramework.CompProperties_Processor">
@@ -137,11 +139,12 @@
 				<barScale>(1.0, 1.0)</barScale>
 				<colorCoded>false</colorCoded>
 				<processes>
-					<li>DankPyon_SmeltingOre_Iron</li>
-					<li>DankPyon_SmeltingOre_Steel</li>
-					<li>DankPyon_SmeltingOre_Silver</li>
-					<li>DankPyon_SmeltingOre_Gold</li>
-					<li>DankPyon_SmeltingOre_Plasteel</li>
+					<li>DankPyon_SmeltingOre_Iron_Industrial</li>
+					<li>DankPyon_SmeltingOre_Steel_Industrial</li>
+					<li>DankPyon_SmeltingOre_Silver_Industrial</li>
+					<li>DankPyon_SmeltingOre_Gold_Industrial</li>
+					<li>DankPyon_SmeltingOre_Plasteel_Industrial</li>
+					<li>DankPyon_SmeltingOre_Scrap_Industrial</li>
 				</processes>
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
@@ -206,7 +209,7 @@
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<interactionCellOffset>(1,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<comps Inherit="false">
 			<li Class="ProcessorFramework.CompProperties_Processor">
