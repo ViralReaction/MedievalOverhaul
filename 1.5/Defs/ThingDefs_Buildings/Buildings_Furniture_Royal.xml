@@ -281,7 +281,7 @@
 			<WorkToBuild>30000</WorkToBuild>
 			<Mass>20</Mass>
 			<Flammability>1.0</Flammability>
-			<Beauty>2</Beauty>
+			<Beauty>50</Beauty>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">30</StyleDominance>
 		</statBases>
 		<size>(2,4)</size>
