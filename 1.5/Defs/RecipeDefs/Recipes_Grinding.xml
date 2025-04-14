@@ -7,8 +7,6 @@
 		<label>grind wheat into flour</label>
 		<description>Grind wheat into flour.</description>
 		<jobString>Grinding wheat into flour.</jobString>
-		<workSpeedStat>CookSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
 		<workAmount>300</workAmount>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
