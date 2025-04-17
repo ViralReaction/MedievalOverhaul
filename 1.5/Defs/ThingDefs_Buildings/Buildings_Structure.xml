@@ -909,7 +909,7 @@
 	<ThingDef ParentName="BuildingBase" Name="DankPyon_CastleWallBase">
 		<defName>DankPyon_CastleWall</defName>
 		<label>castle wall</label>
-		<description>An impassable high wall. Sturdy and capable of holding up a roof, but beware that due to its height  it is weak under the explosion</description>
+		<description>An impassable high wall. Sturdy and capable of holding up a roof, but beware that due to its height it is weak to explosions.</description>
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<graphicData>
