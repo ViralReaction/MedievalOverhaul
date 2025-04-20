@@ -10,47 +10,6 @@
 
 				<li Class="PatchOperationConditional">
 					<xpath>Defs/ThingDef[
-					defName="DankPyon_Book_MilitaryBlades" or 
-					defName="DankPyon_Book_NobleBlades" or
-					defName="DankPyon_Book_MilitaryMaces" or
-					defName="DankPyon_Book_NobleMaces" or
-					defName="DankPyon_Book_MilitaryPolearms" or
-					defName="DankPyon_Book_NoblePolearms" or
-					defName="DankPyon_Book_Crossbow" or
-					defName="DankPyon_Book_HeavyCrossbow" or
-					defName="DankPyon_Book_Steel" or
-					defName="DankPyon_Book_Gunpowder" or
-					defName="DankPyon_Book_Tar" or
-					defName="DankPyon_Book_GreatBow" or
-					defName="DankPyon_Book_WarBow" or
-					defName="DankPyon_Book_IntermediateCooking" or
-					defName="DankPyon_Book_AdvancedCooking" or
-					defName="DankPyon_Book_BallistaRepeater"]
-					</xpath>
-					<match Class="PatchOperationRemove">
-						<xpath>Defs/ThingDef[
-					defName="DankPyon_Book_MilitaryBlades" or 
-					defName="DankPyon_Book_NobleBlades" or
-					defName="DankPyon_Book_MilitaryMaces" or
-					defName="DankPyon_Book_NobleMaces" or
-					defName="DankPyon_Book_MilitaryPolearms" or
-					defName="DankPyon_Book_NoblePolearms" or
-					defName="DankPyon_Book_Crossbow" or
-					defName="DankPyon_Book_HeavyCrossbow" or
-					defName="DankPyon_Book_Steel" or
-					defName="DankPyon_Book_Gunpowder" or
-					defName="DankPyon_Book_Tar" or
-					defName="DankPyon_Book_GreatBow" or
-					defName="DankPyon_Book_WarBow" or
-					defName="DankPyon_Book_IntermediateCooking" or
-					defName="DankPyon_Book_AdvancedCooking" or
-					defName="DankPyon_Book_BallistaRepeater"]
-					</xpath>
-					</match>
-				</li>
-
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[
 					defName="DankPyon_Schematic_MilitaryBlades" or 
 					defName="DankPyon_Schematic_NobleBlades" or
 					defName="DankPyon_Schematic_MilitaryMaces" or
