@@ -318,6 +318,7 @@
 		<building>
 			<isEdifice>false</isEdifice>
 			<claimable>false</claimable>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
 			<deconstructible>true</deconstructible>
 		</building>
 	</ThingDef>
