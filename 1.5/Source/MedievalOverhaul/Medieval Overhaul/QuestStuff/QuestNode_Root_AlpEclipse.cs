@@ -26,6 +26,7 @@ namespace MedievalOverhaul
             Map map = QuestGen_Get.GetMap();
             slate.Set("map", map);
             float points = slate.Get("points", 0f);
+            Log.Message(points);
             List<Thing> list = new List<Thing>();
             string mainPhaseBeganSignal = QuestGen.GenerateNewSignal("DankPyon_Alp_MainPhaseBegan");
             string mainPhaseEndedSignal = QuestGen.GenerateNewSignal("DankPyon_Alp_MainPhaseEnded");
@@ -40,14 +41,11 @@ namespace MedievalOverhaul
             }).debugLabel = "Main phase delay";
             quest.AddPart(new QuestPart_AlpDarkness(mainPhaseBeganSignal, map.Parent));
             quest.Letter(LetterDefOf.ThreatBig, mainPhaseBeganSignal, null, null, null, useColonistsFromCaravanArg: false, QuestPart.SignalListenMode.OngoingOnly, null, filterDeadPawnsFromLookTargets: false, "[mainPhaseLetterText]", null, "[mainPhaseLetterLabel]");
-            quest.AddPart(new QuestPart_RandomWaves(mainPhaseBeganSignal, text, 24f, 12f, 36f));
+            quest.AddPart(new QuestPart_RandomWaves(mainPhaseBeganSignal, text, 2f, 36f, 36f));
             Faction faction = FactionUtility.DefaultFactionFrom(MedievalOverhaulDefOf.DankPyon_Forest_Faction) != null ? FactionUtility.DefaultFactionFrom(MedievalOverhaulDefOf.DankPyon_Forest_Faction) : null;
             quest.SignalPass(delegate
             {
-                int raidPoints = Rand.RangeInclusive((int)(points * 0.4f), (int)(points * 0.6f));
-                raidPoints = Math.Min(raidPoints, (int)points);
-                points -= raidPoints;
-                quest.Raid(map, raidPoints, faction, null, raidArrivalMode: PawnsArrivalModeDefOf.EdgeWalkInGroups, raidStrategy: RaidStrategyDefOf.ImmediateAttack, pawnGroupKind: MedievalOverhaulDefOf.DankPyon_AlpGroup, customLetterLabel: "DankPyon_AlpAttackLetterLabel".Translate(), customLetterText: "DankPyon_AlpAttackLetterText".Translate(), customLetterLabelRules: null, customLetterTextRules: null, walkInSpot: null, tag: null, inSignal: null, rootSymbol: "root", silent: false, canTimeoutOrFlee: false, canSteal: false, canKidnap: false);
+                quest.Raid(map, points, faction, null, raidArrivalMode: PawnsArrivalModeDefOf.EdgeWalkInGroups, raidStrategy: RaidStrategyDefOf.ImmediateAttack, pawnGroupKind: MedievalOverhaulDefOf.DankPyon_AlpGroup, customLetterLabel: "DankPyon_AlpAttackLetterLabel".Translate(), customLetterText: "DankPyon_AlpAttackLetterText".Translate(), customLetterLabelRules: null, customLetterTextRules: null, walkInSpot: null, tag: null, inSignal: null, rootSymbol: "root", silent: false, canTimeoutOrFlee: false, canSteal: false, canKidnap: false);
             }, text);
             quest.Delay(delayTicks, delegate
             {

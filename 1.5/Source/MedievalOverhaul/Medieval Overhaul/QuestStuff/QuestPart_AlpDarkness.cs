@@ -2,6 +2,7 @@
 using RimWorld.Planet;
 using Verse;
 using RimWorld;
+using static UnityEngine.GraphicsBuffer;
 
 namespace MedievalOverhaul
 {
@@ -17,7 +18,6 @@ namespace MedievalOverhaul
             this.inSignal = inSignal;
             this.mapParent = mapParent;
         }
-
         public override void Notify_QuestSignalReceived(Signal signal)
         {
             if (this.mapParent.Map == null)
@@ -26,7 +26,12 @@ namespace MedievalOverhaul
             }
             if (signal.tag == this.inSignal)
             {
-                this.mapParent.Map.gameConditionManager.SetTargetBrightness(0f, 5f);
+                var mapBrightnessTracker = this.mapParent.Map.gameConditionManager.mapBrightnessTracker;
+                mapBrightnessTracker.brightness = mapBrightnessTracker.CurBrightness;
+                mapBrightnessTracker.targetBrightness = 0f;
+                mapBrightnessTracker.lerp = 0f;
+                mapBrightnessTracker.lerpSeconds = 5f;
+                this.mapParent.Map.gameConditionManager.ownerMap?.mapDrawer.WholeMapChanged(MapMeshFlagDefOf.GroundGlow);
             }
         }
 
@@ -41,7 +46,12 @@ namespace MedievalOverhaul
                     activeCondition.Permanent = false;
                     activeCondition.TicksLeft = 301;
                 }
-                this.mapParent.Map.gameConditionManager.SetTargetBrightness(1f, 5f);
+                var mapBrightnessTracker = this.mapParent.Map.gameConditionManager.mapBrightnessTracker;
+                mapBrightnessTracker.brightness = mapBrightnessTracker.CurBrightness;
+                mapBrightnessTracker.targetBrightness = 1f;
+                mapBrightnessTracker.lerp = 0f;
+                mapBrightnessTracker.lerpSeconds = 5f;
+                this.mapParent.Map.gameConditionManager.ownerMap?.mapDrawer.WholeMapChanged(MapMeshFlagDefOf.GroundGlow);
             }
         }
 

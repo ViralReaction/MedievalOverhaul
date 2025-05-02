@@ -39,7 +39,7 @@
 				<kindDef>DankPyon_AlpGroup</kindDef>
 				<commonality>100</commonality>
 				<options>
-				  <DankPyon_Alp>1</DankPyon_Alp>
+				  <DankPyon_Alp>60</DankPyon_Alp>
 				</options>
 			  </li>
 		</pawnGroupMakers>

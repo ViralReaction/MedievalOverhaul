@@ -290,7 +290,7 @@
       <Private>false</Private>
     </Reference>
     <Reference Include="VFECore">
-      <HintPath>..\..\..\..\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
+      <HintPath>..\..\..\..\VanillaExpandedFramework\1.5\Assemblies\VFECore.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>
