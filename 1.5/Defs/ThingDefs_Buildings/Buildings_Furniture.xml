@@ -2413,17 +2413,17 @@
 	
 	<!--============================== Bookshelf ==============================-->
 	
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase" Name="DankPyon_RusticBookshelf">
+	<ThingDef ParentName="DankPyon_VanillaShelfBase" Name="DankPyon_RusticBookshelf">
 		<defName>DankPyon_RusticBookshelf</defName>
 		<label>small research shelf</label>
-		<description>Increases research speed when placed near research table. Each research bench can  use two small research shelves.</description>
+		<description>Increases research speed when placed near research table. Each research bench can use two small research shelves.</description>
 		<graphicData>
 			<texPath>Furniture/RusticBookshelf1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>3</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<thingClass>Building</thingClass>
+		<thingClass>Building_Storage</thingClass>
 		<uiIconScale>0.5</uiIconScale>
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(1,1)</size>
@@ -2461,6 +2461,9 @@
 				<maxDistance>5</maxDistance>
 				<maxSimultaneous>2</maxSimultaneous>
 			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -2478,7 +2481,14 @@
 					<disallowNotEverStorable>true</disallowNotEverStorable>
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
 					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+					</thingDefs>
+					<tradeTagsToDisallow>
+						<li>DankPyon_Schematic</li>
+					</tradeTagsToDisallow>
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings>
@@ -2486,14 +2496,18 @@
 				<filter>
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
 					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+					</thingDefs>
 				</filter>
 			</defaultStorageSettings>
 			<paintable>true</paintable>
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
+	<ThingDef ParentName="DankPyon_VanillaShelfBase">
 		<defName>DankPyon_RusticBookshelf1x2c</defName>
 		<label>large research shelf</label>
 		<description>Increases research speed when placed near research table. Each research bench can use one large research shelf.</description>
@@ -2503,6 +2517,7 @@
 			<drawSize>(3.5,3)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		<thingClass>Building_Storage</thingClass>
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(2,1)</size>
 		<altitudeLayer>Building</altitudeLayer>
@@ -2539,6 +2554,9 @@
 				<maxDistance>5</maxDistance>
 				<maxSimultaneous>1</maxSimultaneous>
 			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -2556,7 +2574,14 @@
 					<disallowNotEverStorable>true</disallowNotEverStorable>
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
 					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+					</thingDefs>
+					<tradeTagsToDisallow>
+						<li>DankPyon_Schematic</li>
+					</tradeTagsToDisallow>
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings>
@@ -2564,14 +2589,18 @@
 				<filter>
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
 					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+					</thingDefs>
 				</filter>
 			</defaultStorageSettings>
 			<paintable>true</paintable>
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_FurnitureWithQualityBase">
+	<ThingDef ParentName="DankPyon_VanillaShelfBase">
 		<defName>DankPyon_RusticEmptyShelf</defName>
 		<label>empty shelf</label>
 		<description>An empty shelf.</description>
@@ -2580,7 +2609,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
-		<thingClass>Building</thingClass>
+		<thingClass>Building_Storage</thingClass>
 		<uiIconScale>0.5</uiIconScale>
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(1,1)</size>
@@ -2608,6 +2637,9 @@
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
 		</comps>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -2622,7 +2654,14 @@
 					<disallowNotEverStorable>true</disallowNotEverStorable>
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
 					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+					</thingDefs>
+					<tradeTagsToDisallow>
+						<li>DankPyon_Schematic</li>
+					</tradeTagsToDisallow>
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings>
@@ -2630,7 +2669,11 @@
 				<filter>
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
 					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+					</thingDefs>
 				</filter>
 			</defaultStorageSettings>
 			<paintable>true</paintable>
@@ -2646,7 +2689,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.5,3)</drawSize>
 		</graphicData>
-		<thingClass>Building</thingClass>
+		<thingClass>Building_Storage</thingClass>
 		
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<size>(2,1)</size>
@@ -2674,6 +2717,9 @@
 		</stuffCategories>
 		<costStuffCount>75</costStuffCount>
 		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
 		</comps>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
@@ -2688,7 +2734,14 @@
 					<disallowNotEverStorable>true</disallowNotEverStorable>
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
 					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+					</thingDefs>
+					<tradeTagsToDisallow>
+						<li>DankPyon_Schematic</li>
+					</tradeTagsToDisallow>
 				</filter>
 			</fixedStorageSettings>
 			<defaultStorageSettings>
@@ -2696,7 +2749,11 @@
 				<filter>
 					<categories>
 						<li>DankPyon_BuildingsBook</li>
+						<li>Books</li>
 					</categories>
+					<thingDefs>
+						<li>DankPyon_Book</li>
+					</thingDefs>
 				</filter>
 			</defaultStorageSettings>
 			<paintable>true</paintable>
