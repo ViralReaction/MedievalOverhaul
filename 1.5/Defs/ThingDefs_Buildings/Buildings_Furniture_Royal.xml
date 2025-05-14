@@ -158,6 +158,9 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<costStuffCount>110</costStuffCount>
+		<costList>
+			<Gold>30</Gold>
+		</costList>
 		<pathCost>30</pathCost>
 		<fillPercent>0.40</fillPercent>
 		<designationHotKey>Misc8</designationHotKey>
