@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench"]/comps/linkableFacilities</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench"]/comps/linkableFacilities</xpath>
+			<value>
+				<li>DankPyon_HerbTable</li>
+				<li>DankPyon_VialsTable</li>
+				<li>DankPyon_Alembic</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

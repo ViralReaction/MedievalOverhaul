@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="RB_ClerestoryWall" or defName="RB_GlassWall"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Smithing</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>Defs/ThingDef[defName="DankPyon_Furnace"]/recipes/li[1]</xpath>
+		<value>
+			<li>RB_Make_GlassFromChunks</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="DankPyon_Kiln"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
+		<value>
+			<li>DankPyon_ChunksIntoGlass</li>
+		</value>
+	</Operation>
+
+</Patch>

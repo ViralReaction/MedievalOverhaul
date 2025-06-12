@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--================================ Lecturn ================================-->
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>DankPyon_Lecturn</defName>
+		<label>lecturn</label>
+		<description>A simple lecturn to place scriptures or books to be easily read.</description>
+		<graphicData>
+			<texPath>Furniture/Lecturn</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawRotated>false</drawRotated>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>450</WorkToBuild>
+			<Mass>3</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<Comfort>0.5</Comfort>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+
+		<pathCost>30</pathCost>
+		<fillPercent>0.20</fillPercent>
+		<building>
+			<paintable>true</paintable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Styleable"/>
+		</comps>
+
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+	</ThingDef>
+
+</Defs>

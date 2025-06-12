@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Charcoal Pile -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_CharcoalPile</defName>
+		<label>charcoal pile</label>
+		<description>A mound of wood covered with soil and left to smolder slowly, producing charcoal for fuel and metalworking.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/CharcoalPile/CharcoalPile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+		</graphicData>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<altitudeLayer>Building</altitudeLayer>
+		<canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.7</fillPercent>
+		<pathCost>70</pathCost>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<Mass>40</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<size>(3,3)</size>
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<comps>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>300</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_WoodIntoCoal</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<tickerType>Rare</tickerType>
+		<designationCategory>Production</designationCategory>
+		<researchPrerequisites>
+			<!-- <li>DankPyon_Charcoal</li> -->
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- Cauldron -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Cauldron</defName>
+		<label>cauldron</label>
+		<description>A sturdy vessel used to brew potions, combining ingredients over heat to create powerful elixirs and remedies.</description>
+		<thingClass>ProcessorFramework.Building_ColorCoded</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/Cauldron/Cauldron</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(1,1)</size>
+		<techLevel>Medieval</techLevel>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<designationCategory>Production</designationCategory>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<DankPyon_IronIngot>75</DankPyon_IronIngot>
+		</costList>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			<paintable>true</paintable>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>DankPyon_HerbTable</li>
+					<li>DankPyon_VialsTable</li>
+					<li>DankPyon_Alembic</li>
+				</linkableFacilities>
+			</li>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>5</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>false</showProductIcon>
+				<barOffset>(0.0, -0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>true</colorCoded>
+				<processes>
+					<li>DankPyon_Process_HappyPowder</li>
+					<li>DankPyon_Process_BattleElixir</li>
+					<li>DankPyon_Process_VigorPill</li>
+					<li>DankPyon_Process_Miracle</li>
+					<li>DankPyon_Process_Paregoric</li>
+					<li>DankPyon_Process_Luhix</li>
+					<li>DankPyon_Process_Knowledge</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>10</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>DankPyon_Coal</li>
+						<li>DankPyon_Tar</li>
+					</thingDefs>
+					<categories>
+						<li>DankPyon_RawWood</li>
+						<li>DankPyon_Wood</li>
+					</categories>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>DankPyon_Alchemy</li>
+		</researchPrerequisites>
+		<tickerType>Rare</tickerType>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
+	</ThingDef>
+
+	<!--Drying rack-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_DryingRack_Small</defName>
+		<label>drying rack (1x2)</label>
+		<description>A wooden rack to dry goods under the sun to dehydrate and preserve them for a longer shelf life.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/DryingRack1x2/DryingRack1x2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+		</graphicData>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<altitudeLayer>Building</altitudeLayer>
+		<canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<pathCost>70</pathCost>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>5</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<thingClass>Building_WorkTable</thingClass>
+		<comps>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>100</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_DriedMeatProcess</li>
+					<li>DankPyon_DriedMeatHumanProcess</li>
+					<li>DankPyon_DriedMeatInsectProcess</li>
+					<li MayRequire="vanillaexpanded.vcef">DankPyon_DriedFishProcess</li>
+					<li>DankPyon_StrawProcess</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<tickerType>Rare</tickerType>
+		<designationCategory>Production</designationCategory>
+		<researchPrerequisites>
+			<li>Pemmican</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- Drying Rack 2x2-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_DryingRack_Big</defName>
+		<label>drying rack (2x2)</label>
+		<description>A wooden rack to dry goods under the sun for preservation and long time use.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/DryingRack2x2/DryingRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+		</graphicData>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<altitudeLayer>Building</altitudeLayer>
+		<canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<pathCost>70</pathCost>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>10</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<comps>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>200</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_DriedMeatProcess</li>
+					<li>DankPyon_DriedMeatHumanProcess</li>
+					<li>DankPyon_DriedMeatInsectProcess</li>
+					<li MayRequire="vanillaexpanded.vcef">DankPyon_DriedFishProcess</li>
+					<li>DankPyon_StrawProcess</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<tickerType>Rare</tickerType>
+		<designationCategory>Production</designationCategory>
+		<researchPrerequisites>
+			<li>Pemmican</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- Rawhide Rack -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_RawhideRack</defName>
+		<label>rawhide rack</label>
+		<description>A standing rack for drying raw hides into stiff and untanned leathers.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/DryRack/DryingRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-30</Cleanliness>
+		</statBases>
+		<size>(2,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<comps Inherit="false">
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>1</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_RawHidesProcess</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<!-- Tanning Rack -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_TanningRack</defName>
+		<label>tanning rack</label>
+		<description>A standing rack for treating raw hides to become soft and beautiful leathers.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DankPyon_TanningLiquor</ThingDef>
+		</descriptionHyperlinks>
+		<thingClass>Building_WorkTable</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/TanningRack/TanningRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<stuffCategories>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-30</Cleanliness>
+		</statBases>
+		<size>(2,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<comps Inherit="false">
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>1</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_HidesProcess</li>
+					<li>DankPyon_HyenaRugProcess</li>
+					<li>DankPyon_WolfTimberRugProcess</li>
+					<li>DankPyon_WolfArcticRugProcess</li>
+					<li>DankPyon_CougarRugProcess</li>
+					<li>DankPyon_PantherRugProcess</li>
+					<li>DankPyon_BearGrizzlyRugProcess</li>
+					<li>DankPyon_BearPolarRugProcess</li>
+					<li>DankPyon_RoxRugProcess</li>
+					<li>DankPyon_ThrumboRugProcess</li>
+					<li>DankPyon_DaerRugProcess</li>
+					<li>DankPyon_HumanRugProcess</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>10.0</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>DankPyon_TanningLiquor</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<techLevel>Medieval</techLevel>
+		<researchPrerequisites>
+			<li>DankPyon_LeatherTanning</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- ===== Presser ===== -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Presser</defName>
+		<label>cheese press</label>
+		<description>A wooden contraption to press selected items. Either to bring the juice out or whey from curds.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<drawSize>(4,3)</drawSize>
+			<texPath>Production/Presser/Presser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(0.75, 0.35, 0.33)</volume>
+			</shadowData>
+		</graphicData>
+		<neverMultiSelect>true</neverMultiSelect>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>60</pathCost>
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<DankPyon_IronIngot>30</DankPyon_IronIngot>
+			<DankPyon_ComponentBasic>2</DankPyon_ComponentBasic>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<hasInteractionCell>False</hasInteractionCell>
+		<!-- <interactionCellOffset>(0,0,-1)</interactionCellOffset> -->
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<size>(2,1)</size>
+		<thingClass>Building_WorkTable</thingClass>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>100</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_PressCheeseProcess</li>
+					<li>DankPyon_PressGoatCheeseProcess</li>
+					<li>DankPyon_PressSheepCheeseProcess</li>
+					<li>DankPyon_PressAppleProcess</li>
+				</processes>
+			</li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<designationCategory>Production</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Presser</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- ===== Paper Press ===== -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Press_Paper</defName>
+		<label>paper press</label>
+		<description>A sturdy wooden device used to remove liquid and flatten sheets of paper. It uses a heavy screw mechanism to ensure each sheet is smooth and ready for writing or drawing. This essential tool helps turn pulp into usable parchment.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DankPyon_Paper</ThingDef>
+			<ThingDef>DankPyon_Mixture_Paper</ThingDef>
+		</descriptionHyperlinks>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<drawSize>(4,4)</drawSize>
+			<texPath>Production/PaperPress/PaperPress</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(0.75, 0.35, 0.33)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<neverMultiSelect>true</neverMultiSelect>
+		<fillPercent>0.5</fillPercent>
+		<pathCost>60</pathCost>
+		<statBases>
+			<WorkToBuild>2500</WorkToBuild>
+			<Mass>20</Mass>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<DankPyon_IronIngot>30</DankPyon_IronIngot>
+			<DankPyon_ComponentBasic>2</DankPyon_ComponentBasic>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<size>(2,2)</size>
+		<thingClass>Building_WorkTable</thingClass>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>25</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_Press_PaperProcess</li>
+				</processes>
+			</li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<designationCategory>Production</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Presser</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- ===== Smoker ===== -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Smoker</defName>
+		<label>Smoker</label>
+		<description>Smoke generated by the burnt wood stacked at the bottom of the smoker encompasses the meat, providing indirect heat and a rich smoke flavor. This also adds a protective layer and allows the smoked meat to last longer.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/Smoker/Smoker</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<passability>PassThroughOnly</passability>
+		<uiIconScale>0.8</uiIconScale>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Mass>10</Mass>
+		</statBases>
+		<size>(2,1)</size>
+		<castEdgeShadows>true</castEdgeShadows>
+		<costList>
+			<DankPyon_IronIngot>60</DankPyon_IronIngot>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<thingClass>Building_WorkTable</thingClass>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>10</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<categories>
+						<li>DankPyon_RawWood</li>
+						<li>DankPyon_Wood</li>
+					</categories>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<fuelIconPath>UI/IconRawWood</fuelIconPath>
+			</li>
+	 		<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>3</heatPerSecond>
+			</li>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>100</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_SmokedMeatProcess</li>
+					<li>DankPyon_SmokedMeatHumanProcess</li>
+					<li>DankPyon_SmokedMeatInsectProcess</li>
+					<li MayRequire="vanillaexpanded.vcef">DankPyon_SmokedFishProcess</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<designationCategory>Production</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Smoker</li>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_SilkBed</defName>
+		<label>silk bed</label>
+		<description>A wooden platform designed to hold silkworms during their cocoon life cycle and are harvested for silk once they have after fully spinning the cocoon.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/SilkBed/SilkBed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>2,2</drawSize>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.75, 0.35, 0.33)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>42</pathCost>
+		<rotatable>false</rotatable>
+
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+			<Mass>10</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<DankPyon_IronIngot>10</DankPyon_IronIngot>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<comps>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>25</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_SilkwormIntoSilk</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<!--constructEffect>ConstructWood</constructEffect-->
+		<building>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+			<destroySound>BuildingDestroyed_Wood_Small</destroySound>
+		</building>
+		<designationCategory>Production</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Silk</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Smelter</defName>
+		<label>smelter</label>
+		<description>A large steel smelter used to refine scrap and raw resources. Generates strong heat.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/Smelter/Smelter</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<costList>
+			<Steel>80</Steel>
+		</costList>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>3000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Cleanliness>-30</Cleanliness>
+		</statBases>
+		<size>(2,2)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<comps Inherit="false">
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>200</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_SmeltingOre_Iron</li>
+					<li>DankPyon_SmeltingOre_Steel</li>
+					<li>DankPyon_SmeltingOre_Silver</li>
+					<li>DankPyon_SmeltingOre_Gold</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>80.0</fuelConsumptionRate>
+				<fuelCapacity>80.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>DankPyon_Coal</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="MedievalOverhaul.CompProperties_GlowerOnlyWhenUsed">
+				<glowRadius>6</glowRadius>
+				<glowColor>(247,172,65,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>9</heatPerSecond>
+			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<techLevel>Medieval</techLevel>
+		<researchPrerequisites>
+			<li>DankPyon_Steel</li>
+		</researchPrerequisites>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Kiln</defName>
+		<label>kiln</label>
+		<description>A stone kiln used to cook raw clay into bricks.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/Kiln/Kiln</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-30</Cleanliness>
+		</statBases>
+		<size>(2,2)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,2)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<comps Inherit="false">
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>200</capacity>
+				<independentProcesses>true</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_ClayIntoBrick</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>50.0</fuelConsumptionRate>
+				<fuelCapacity>80.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>DankPyon_Coal</li>
+						<li>DankPyon_Tar</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>15</heatPerSecond>
+				<heatPushMaxTemperature>18</heatPushMaxTemperature>
+			</li>
+			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<techLevel>Medieval</techLevel>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
+	</ThingDef>
+
+  
+	<!-- <ThingDef ParentName="BuildingBase"> -->
+		<!-- <defName>DankPyon_RusticFermentingBarrel</defName> -->
+		<!-- <label>rustic fermenting barrel</label> -->
+		<!-- <description>A barrel for fermenting all sorts of fresh mixtures into various alcoholics. Its wooden properties help with producing rustic elements to the taste.</description> -->
+		<!-- <thingClass>Building_WorkTable</thingClass> -->
+		<!-- <drawerType>MapMeshAndRealTime</drawerType> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Production/RusticFermentingBarrel</texPath> -->
+			<!-- <graphicClass>Graphic_Multi</graphicClass> -->
+			<!-- <drawSize>2,2</drawSize> -->
+			<!-- <damageData> -->
+				<!-- <rect>(0.05,0.1,0.9,0.9)</rect> -->
+			<!-- </damageData> -->
+			<!-- <shadowData> -->
+				<!-- <volume>(0.75, 0.35, 0.33)</volume> -->
+			<!-- </shadowData> -->
+		<!-- </graphicData> -->
+		<!-- <fillPercent>0.45</fillPercent> -->
+		<!-- <pathCost>42</pathCost> -->
+		<!-- <statBases> -->
+			<!-- <WorkToBuild>600</WorkToBuild> -->
+			<!-- <Mass>10</Mass> -->
+			<!-- <MaxHitPoints>100</MaxHitPoints> -->
+			<!-- <Flammability>1.0</Flammability> -->
+		<!-- </statBases> -->
+		<!-- <costList> -->
+			<!-- <DankPyon_IronIngot>10</DankPyon_IronIngot> -->
+		<!-- </costList> -->
+		<!-- <stuffCategories> -->
+			<!-- <li>Woody</li> -->
+		<!-- </stuffCategories> -->
+		<!-- <costStuffCount>30</costStuffCount> -->
+		<!-- <comps> -->
+			<!-- <li Class="ProcessorFramework.CompProperties_Processor"> -->
+				<!-- <capacity>25</capacity> -->
+				<!-- <independentProcesses>false</independentProcesses> -->
+				<!-- <parallelProcesses>false</parallelProcesses> -->
+				<!-- <dropIngredients>true</dropIngredients> -->
+				<!-- <showProductIcon>true</showProductIcon> -->
+				<!-- <barOffset>(0.0, 0.25)</barOffset> -->
+				<!-- <barScale>(1.0, 1.0)</barScale> -->
+				<!-- <colorCoded>false</colorCoded> -->
+				<!-- <processes> -->
+					<!-- <li>Beer</li> -->
+					<!-- <li>DankPyon_WortIntoAle</li> -->
+					<!-- <li>DankPyon_MustIntoWine</li> -->
+					<!-- <li>DankPyon_HoneyIntoMead</li> -->
+					<!-- <li>DankPyon_MustIntoMulberryWine</li> -->
+					<!-- <li>DankPyon_MustIntoGriffonBerry</li> -->
+				<!-- </processes> -->
+			<!-- </li> -->
+			<!-- <li Class="CompProperties_Forbiddable"/> -->
+		<!-- </comps> -->
+		<!-- <tickerType>Rare</tickerType> -->
+		<!-- <designationCategory>Production</designationCategory> -->
+		<!-- <building> -->
+			<!-- <buildingTags> -->
+				<!-- <li>Production</li> -->
+			<!-- </buildingTags> -->
+			<!-- <destroySound>BuildingDestroyed_Wood_Small</destroySound> -->
+		<!-- </building> -->
+		<!-- <researchPrerequisites> -->
+			<!-- <li>Brewing</li> -->
+		<!-- </researchPrerequisites> -->
+	<!-- </ThingDef> -->
+
+	<!-- Windmill -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_WindMill</defName>
+		<thingClass>Building</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<label>windmill</label>
+		<description>A wind-powered mill to automate grinding and sawing produce. Requires a large clear space in front and behind for optimal air flow.</description>
+		<graphicData>
+			<texPath>Buildings/Windmill/WindmillBody</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,6)</drawSize>
+			<shadowData>
+				<volume>(2.6,1,2.16)</volume>
+				<offset>(-0.20,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<rectN>(0.1,1.2,4.75,3.25)</rectN>
+				<rectE>(1.25,0.2,3.5,4.7)</rectE>
+				<rectS>(0.2,1.2,4.7,3.25)</rectS>
+				<rectW>(1.25,0.2,3.5,4.7)</rectW>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>4000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(5,6)</size>
+		<costList>
+			<WoodLog>280</WoodLog>
+			<DankPyon_IronIngot>80</DankPyon_IronIngot>
+			<DankPyon_ComponentBasic>3</DankPyon_ComponentBasic>
+		</costList>
+		<comps>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>200</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(2.0, 2.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_MillProcess</li>
+					<li>DankPyon_LumberMillProcess</li>
+				</processes>
+			</li>
+
+			<li Class="CompProperties_Breakdownable"/>
+			<li>
+				<compClass>MedievalOverhaul.Comp_WindMill</compClass>
+			</li>
+			<li>
+				<compClass>CompAutoCutWindTurbine</compClass>
+			</li>
+		</comps>
+		<rotatable>true</rotatable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+		<placeWorkers>
+			<li>MedievalOverhaul.PlaceWorker_WindMill</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<destroySound>BuildingDestroyed_Wood_Big</destroySound>
+		</building>
+		<constructEffect>ConstructWood</constructEffect>
+		<researchPrerequisites><li>DankPyon_Windmill</li></researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<techLevel>Medieval</techLevel>
+		<inspectorTabs>
+			<li>ITab_WindTurbineAutoCut</li>
+		</inspectorTabs>
+	</ThingDef>
+
+	<!-- Watermill -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_WaterMill</defName>
+		<thingClass>Building</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<label>watermill</label>
+		<description>A water-powered mill to automate grinding and sawing produce. Must be placed with its wheel in moving water. If watermills are placed too close together, the turbulence they generate will interfere.</description>
+		<graphicData>
+			<texPath>Buildings/Windmill/WindmillBody</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,6)</drawSize>
+			<shadowData>
+				<volume>(2.6,1,2.16)</volume>
+				<offset>(-0.20,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<rectN>(0.1,1.2,4.75,3.25)</rectN>
+				<rectE>(1.25,0.2,3.5,4.7)</rectE>
+				<rectS>(0.2,1.2,4.7,3.25)</rectS>
+				<rectW>(1.25,0.2,3.5,4.7)</rectW>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>4000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(5,6)</size>
+		<costList>
+			<WoodLog>280</WoodLog>
+			<DankPyon_IronIngot>80</DankPyon_IronIngot>
+			<DankPyon_ComponentBasic>3</DankPyon_ComponentBasic>
+		</costList>
+		<comps>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>200</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>true</dropIngredients>
+				<showProductIcon>true</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(2.0, 2.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_WaterMillProcess</li>
+					<li>DankPyon_WaterLumberMillProcess</li>
+				</processes>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Power">
+				<compClass>MedievalOverhaul.CompPowerWaterWheel</compClass>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>false</transmitsPower>
+				<soundAmbientProducingPower>WaterMill_Ambience</soundAmbientProducingPower>
+			</li>
+		</comps>
+		<rotatable>true</rotatable>
+		<terrainAffordanceNeeded />
+		<designationCategory>Production</designationCategory>
+		<placeWorkers>
+			<li>MedievalOverhaul.PlaceWorker_WaterWheel</li>
+		</placeWorkers>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<destroySound>BuildingDestroyed_Wood_Big</destroySound>
+		</building>
+		<constructEffect>ConstructWood</constructEffect>
+		<researchPrerequisites>
+			<li>DankPyon_Watermill</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<!-- Ice Block Maker -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_IceBlock_Maker</defName>
+		<label>ice block mold</label>
+		<description>A wooden mold for freezing water into ice during times of cold.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Production/IceBlockMold/IceBlockMold</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<pathCost>70</pathCost>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>10</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<comps>
+			<li Class="ProcessorFramework.CompProperties_Processor">
+				<capacity>25</capacity>
+				<independentProcesses>false</independentProcesses>
+				<parallelProcesses>false</parallelProcesses>
+				<dropIngredients>false</dropIngredients>
+				<showProductIcon>false</showProductIcon>
+				<barOffset>(0.0, 0.25)</barOffset>
+				<barScale>(1.0, 1.0)</barScale>
+				<colorCoded>false</colorCoded>
+				<processes>
+					<li>DankPyon_IceBlockProcess</li>
+				</processes>
+			</li>
+			<li>
+				<compClass>MedievalOverhaul.CompIceBoxFill</compClass>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<designationCategory>Production</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

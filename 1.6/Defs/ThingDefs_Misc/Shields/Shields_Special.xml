@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="DankPyon_BaseShield">
+		<defName>DankPyon_ShieldLiving</defName>
+		<label>living tree shield</label>
+		<description>A shield carved out of the remains of a living tree, slowly regrows any sustained damage. \n\Regenerates durability over a period of time</description>
+		<graphicData>
+			<texPath>Apparel/Utility/HeaterSchrat/HeaterSchrat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<Flammability>0.3</Flammability>
+			<ArmorRating_Sharp>0.361</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.317</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.286</ArmorRating_Heat>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>4</Mass>
+		</statBases>
+		<costList>
+			<DankPyon_AncientWood>1</DankPyon_AncientWood>
+			<DankPyon_GlowingResin>1</DankPyon_GlowingResin>
+		</costList>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>2000</ticksPerHeal><!-- 30 hp per day, must be a multiple of 2000, since plants have Long ticker -->
+			</li>
+			<!--li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/-->
+			<li Class="VFECore.CompProperties_Shield">
+				<shieldTags>
+					<li>DankPyon_ShieldSchrat</li>
+				</shieldTags>
+				<useDeflectMetalEffect>true</useDeflectMetalEffect>
+				<coveredBodyPartGroups>
+					<li>Torso</li>
+					<li>Arms</li>
+					<li>Hands</li>
+				</coveredBodyPartGroups>
+				<offHandGraphicData>
+					<texPath>Apparel/Utility/HeaterSchrat/HeaterSchrat</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+				</offHandGraphicData>
+				<offHandHoldOffset>
+					<northDefault>
+						<offset>(-0.12, 0, 0.2)</offset>
+						<behind>true</behind>
+					</northDefault>
+					<east>
+						<offset>(-0.15, 0, 0.2)</offset>
+						<behind>false</behind>
+					</east>
+					<south>
+						<offset>(0.12, -0.047, 0.25)</offset>
+					</south>
+					<west>
+						<offset>(0.15, 0, 0.2)</offset>
+						<behind>false</behind>
+					</west>
+				</offHandHoldOffset>
+			</li>
+		</comps>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>DankPyon_AlchemyBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_Alchemy</researchPrerequisite>
+			<unfinishedThingDef>DankPyon_UnfinishedLivingShield</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BaseShield">
+		<defName>DankPyon_ShieldLindwurm</defName>
+		<label>lindwurm shield</label>
+		<description>This sturdy shield fashioned from the shimmering scales of a Lindwurm makes for protection nigh indestructible. \n\nGrants immunity to lindwurm acid</description>
+		<graphicData>
+			<texPath>Apparel/Utility/HeaterLindwurm/HeaterLindwurm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>0.661</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.417</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.286</ArmorRating_Heat>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>4</Mass>
+		</statBases>
+		<costList>
+			<DankPyon_LindwurmBones>1</DankPyon_LindwurmBones>
+			<DankPyon_LindwurmScales>1</DankPyon_LindwurmScales>
+		</costList>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>DankPyon_LindwurmAcidImmune</hediff>
+				<part>Body</part>
+			</li>
+			<!--li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/-->
+			<li Class="VFECore.CompProperties_Shield">
+				<shieldTags>
+					<li>DankPyon_ShieldSchrat</li>
+				</shieldTags>
+				<useDeflectMetalEffect>true</useDeflectMetalEffect>
+				<coveredBodyPartGroups>
+					<li>Torso</li>
+					<li>Arms</li>
+					<li>Hands</li>
+				</coveredBodyPartGroups>
+				<offHandGraphicData>
+					<texPath>Apparel/Utility/HeaterLindwurm/HeaterLindwurm</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+				</offHandGraphicData>
+				<offHandHoldOffset>
+					<northDefault>
+						<offset>(-0.12, 0, 0.2)</offset>
+						<behind>true</behind>
+					</northDefault>
+					<east>
+						<offset>(-0.15, 0, 0.2)</offset>
+						<behind>false</behind>
+					</east>
+					<south>
+						<offset>(0.12, -0.047, 0.25)</offset>
+					</south>
+					<west>
+						<offset>(0.15, 0, 0.2)</offset>
+						<behind>false</behind>
+					</west>
+				</offHandHoldOffset>
+			</li>
+		</comps>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>DankPyon_AlchemyBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>16</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>DankPyon_Alchemy</researchPrerequisite>
+			<unfinishedThingDef>DankPyon_UnfinishedLinduwrmShield</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+   
+</Defs>

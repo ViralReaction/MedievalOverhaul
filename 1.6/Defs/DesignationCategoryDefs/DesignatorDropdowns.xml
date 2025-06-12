@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_DropDownSilkRug3x3c</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_DropDownSilkRug4x4c</defName>
+	</DesignatorDropdownGroupDef>
+
+	<DesignationCategoryDef>
+		<defName>DankPyon_RusticFurniture</defName>
+		<label>Rustic Furn.</label>
+		<order>500</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>DankPyon_RusticStorage</defName>
+		<label>Rustic Storage</label>
+		<order>504</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>DankPyon_RusticDecoration</defName>
+		<label>Rustic Deco.</label>
+		<order>505</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+	<!--DesignationCategoryDef>
+		<defName>DankPyon_RuinFurniture</defName>
+		<label>Ruin Furn.</label>
+		<order>2</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef-->
+
+	<!--DesignationCategoryDef>
+		<defName>DankPyon_Hideoutfurniture</defName>
+		<label>Hideout.</label>
+		<order>1</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef-->
+
+	<!-- <DesignationCategoryDef>
+		<defName>DankPyon_RuinLootable</defName>
+		<label>Ruin Loot</label>
+		<order>502</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef> -->
+
+</Defs>

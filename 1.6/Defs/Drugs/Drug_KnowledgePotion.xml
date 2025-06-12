@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>DankPyon_KnowledgePotion</defName>
+		<label>potion of knowledge</label>
+		<description>A combination of the bestial components of monsters, that of the forest and of waking nightmares. A concoction that draws forth knowledge, either from deep within the mind or simply from the ether, to give its consumer greater ability at a skill.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<possessionCount>1</possessionCount>
+		<stackLimit>1</stackLimit>
+		<graphicData>
+			<texPath>Drug/KnowledgePotion</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<Flammability>0.1</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<comps>
+			<li Class="CompProperties_UseEffectDestroySelf" />
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Use {0_label}</useLabel>
+				<useDuration>600</useDuration>
+				<showUseGizmo>true</showUseGizmo>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>MedievalOverhaul.CompUseEffect_KnowledgePotion</compClass>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_Alchemy</researchPrerequisite>
+			<recipeUsers>
+				<li>DankPyon_Cauldron</li>
+			</recipeUsers>
+			<soundWorking>Recipe_Drug</soundWorking>
+			<displayPriority>1500</displayPriority>
+		</recipeMaker>
+		<costList>
+			<DankPyon_Mixture_Knowledge>1</DankPyon_Mixture_Knowledge>
+		</costList>
+	</ThingDef>
+  
+</Defs>

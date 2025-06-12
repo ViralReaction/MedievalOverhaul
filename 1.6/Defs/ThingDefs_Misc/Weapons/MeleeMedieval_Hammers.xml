@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<!-- ==================== Hammers ==================== -->
+
+	<ThingDef ParentName="DankPyon_Base_Blunt_NormalSize">
+		<defName>DankPyon_MeleeWeapon_BlacksmithHammer</defName>
+		<label>blacksmith's hammer</label>
+		<description>A quintessential tool of the forge, the blacksmith hammer is designed for shaping molten metal and forging formidable weapons and armor. Though its primary function lies in crafting, its heavy head and stout handle make it a formidable weapon in its own right, capable of battering through defenses with the same efficiency it shapes ingots.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Hammers/BlacksmithHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
+
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<GeneralLaborSpeed>0.25</GeneralLaborSpeed>
+		</equippedStatOffsets>
+
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>30</WoodLog>
+		</costList>
+
+		<weaponTags>
+			<li>DankPyon_BlacksmithHammer</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15.5</power>
+				<cooldownTime>2</cooldownTime>
+				<armorPenetration>0.25</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_MilitaryMaces</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_Blunt_NormalSize">
+		<defName>DankPyon_MeleeWeapon_Pickaxe</defName>
+		<label>pickaxe</label>
+		<description>A mining tool used to batter stones and ores; although primarily used to gather economic resources, the mine features deadly picks at both ends, capable of decimating armor as effectively as it mines ore.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Hammers/Pickaxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
+
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MiningSpeed>0.25</MiningSpeed>
+			<MiningYield>0.20</MiningYield>
+		</equippedStatOffsets>
+
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>30</WoodLog>
+		</costList>
+
+		<weaponTags>
+			<li>DankPyon_Pickaxe</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15.5</power>
+				<cooldownTime>2</cooldownTime>
+				<armorPenetration>0.25</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_MilitaryMaces</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_Blunt_NormalSize">
+		<defName>DankPyon_MeleeWeapon_MilitaryPick</defName>
+		<label>military pick</label>
+		<description>Inspired by the miner’s pickaxe, the military pick consists of a long shaft with a pointy spike designed to puncture armor more effectively than the tool that inspired its design.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Hammers/MilitaryPick</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
+
+		<statBases>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>2.1</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MiningSpeed>0.25</MiningSpeed>
+		</equippedStatOffsets>
+
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>30</WoodLog>
+		</costList>
+
+		<weaponTags>
+			<li>DankPyon_MilitaryPick</li>
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>16.9</power>
+				<cooldownTime>2.1</cooldownTime>
+				<armorPenetration>0.25</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_MilitaryMaces</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_Blunt_NormalSize">
+		<defName>DankPyon_MeleeWeapon_Warhammer</defName>
+		<label>warhammer</label>
+		<description>While metal plates prove difficult to puncture, many warriors instead opt to damage the armor with a warhammer. Short, and thus wieldable with a shield, the warhammer continues to be a solid choice for battling rich nobles and heavily armored knights.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Hammers/Warhammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.15</uiIconScale>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
+
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>2.2</Mass>
+		</statBases>
+
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>30</WoodLog>
+		</costList>
+
+		<weaponTags>
+			<li>DankPyon_Warhammer</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>17.9</power>
+				<cooldownTime>2.2</cooldownTime>
+				<armorPenetration>0.25</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_NobleMaces</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- ==================== Two-Handed Hammers ==================== -->
+
+	<ThingDef ParentName="DankPyon_Base_Blunt_Oversize">
+		<defName>DankPyon_MeleeWeapon_TwoHandedMallet</defName>
+		<label>two-handed mallet</label>
+		<description>A basic weapon composed of a single accessible material like wood, the two-handed mallet can disrupt enemy formations, whether the enemies are armored or not.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Hammers/TwoHandedMallet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
+
+		<statBases>
+			<WorkToMake>9500</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.10</ConstructionSpeed>
+			<ConstructSuccessChance>0.15</ConstructSuccessChance>
+			<GeneralLaborSpeed>0.10</GeneralLaborSpeed>
+		</equippedStatOffsets>
+
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+
+		<weaponTags>
+			<li>DankPyon_TwoHandedMallet</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>23</power>
+				<cooldownTime>2.87</cooldownTime>
+				<armorPenetration>0.25</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_BasicMaces</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_Blunt_Oversize">
+		<defName>DankPyon_MeleeWeapon_TwoHandedHammer</defName>
+		<label>two-handed hammer</label>
+		<description>An upgrade to the mallet, the two-handed hammer stacks a heavy metal head to multiply the force dealt to targets. The sheer force of hammer blows can crack solid plates and split strong shields.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Hammers/TwoHandedHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
+
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+
+		<costStuffCount>90</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+
+		<weaponTags>
+			<li>DankPyon_TwoHandedHammer</li>
+
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>26.75</power>
+				<cooldownTime>3.15</cooldownTime>
+				<armorPenetration>0.25</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_MilitaryMaces</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_Base_Blunt_Oversize">
+		<defName>DankPyon_MeleeWeapon_Polehammer</defName>
+		<label>polehammer</label>
+		<description>A variation of the two-handed hammer that features two points at the head. This design offers additional ways to penetrate armored foes, as well as puncture less armored enemies with ease.\nThe reach of the polehammer allows it to strike enemies much further away.</description>
+		<graphicData>
+			<texPath>WeaponMelee/Hammers/Polehammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<modExtensions Inherit="False">
+			<li Class="VFECore.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0.34,0,0.60)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.15,0,0.60)</drawOffset>
+						<angleOffset>-122</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.34,0,0.60)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.15,0,0.60)</drawOffset>
+						<angleOffset>122</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions>
+		<equippedAngleOffset>45</equippedAngleOffset>
+
+		<statBases>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>2.75</Mass>
+			<VEF_MeleeWeaponRange>2.84</VEF_MeleeWeaponRange>
+		</statBases>
+
+		<costStuffCount>70</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costList>
+			<WoodLog>60</WoodLog>
+		</costList>
+
+		<weaponTags>
+			<li>DankPyon_Polehammer</li>
+			<li>MedievalMeleeDecent</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>2.92</cooldownTime>
+				<armorPenetration>0.25</armorPenetration>
+			</li>
+		</tools>
+
+		<recipeMaker>
+			<researchPrerequisite>DankPyon_MilitaryMaces</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

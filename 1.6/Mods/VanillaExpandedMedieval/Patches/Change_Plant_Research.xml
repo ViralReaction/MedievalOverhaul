@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Plant_Rafflesia"]/plant/sowResearchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Plant_Rafflesia"]/plant/sowResearchPrerequisites</xpath>
+			<value>
+				<sowResearchPrerequisites Inherit="False">
+					<li>DankPyon_BasicAgriculture</li>
+				</sowResearchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Plant_Astragalus"]/plant/sowResearchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Plant_Astragalus"]/plant/sowResearchPrerequisites</xpath>
+			<value>
+				<sowResearchPrerequisites Inherit="False">
+					<li>DankPyon_BasicAgriculture</li>
+				</sowResearchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Plant_Clivia"]/plant/sowResearchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Plant_Clivia"]/plant/sowResearchPrerequisites</xpath>
+			<value>
+				<sowResearchPrerequisites Inherit="False">
+					<li>DankPyon_BasicAgriculture</li>
+				</sowResearchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Plant_Alocasia"]/plant/sowResearchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Plant_Alocasia"]/plant/sowResearchPrerequisites</xpath>
+			<value>
+				<sowResearchPrerequisites Inherit="False">
+					<li>DankPyon_BasicAgriculture</li>
+				</sowResearchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Glowstool"]/plant/sowResearchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Glowstool"]/plant/sowResearchPrerequisites</xpath>
+			<value>
+				<sowResearchPrerequisites Inherit="False">
+					<li>DankPyon_BasicAgriculture</li>
+				</sowResearchPrerequisites>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

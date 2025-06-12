@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--========== Flowers ==========-->
+	<ThingDef ParentName="HealrootBase" Name="DankPyon_MindwortBase">
+		<defName>DankPyon_Plant_Mindwort</defName>
+		<label>mindwort</label>
+		<graphicData>
+			<texPath>Plants/MindwortPlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<description>A small, delicate herb with pale green leaves and tiny, yellow flowers, often used in crafting strong elixirs due to its potent properties.</description>
+		<plant>
+			<immatureGraphicPath>Plants/MindwortPlant</immatureGraphicPath>
+			<growDays>7</growDays>
+			<sowWork>800</sowWork>
+			<sowMinSkill>8</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<harvestedThingDef>DankPyon_Mindwort</harvestedThingDef>
+			<purpose>Health</purpose>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="HealrootBase" Name="DankPyon_PoppyBase">
+		<defName>DankPyon_Plant_Poppy</defName>
+		<label>poppy</label>
+		<graphicData>
+			<texPath>Plants/PoppyPlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<description>A vibrant plant with striking red flowers, known for its use in various medicinal and alchemical preparations, often valued for its potent effects.</description>
+		<plant>
+			<immatureGraphicPath>Plants/PoppyPlant</immatureGraphicPath>
+			<growDays>7</growDays>
+			<sowWork>800</sowWork>
+			<sowMinSkill>8</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<harvestedThingDef>DankPyon_Poppy</harvestedThingDef>
+			<purpose>Health</purpose>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="HealrootBase" Name="DankPyon_FleawortBase">
+		<defName>DankPyon_Plant_Fleawort</defName>
+		<label>fleawort</label>
+		<graphicData>
+			<texPath>Plants/FleawortPlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<description>A hardy plant, traditionally used for its medicinal properties.</description>
+		<plant>
+			<immatureGraphicPath>Plants/FleawortPlant</immatureGraphicPath>
+			<growDays>7</growDays>
+			<sowWork>800</sowWork>
+			<sowMinSkill>8</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<harvestedThingDef>DankPyon_Fleawort</harvestedThingDef>
+			<purpose>Health</purpose>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="HealrootBase" Name="DankPyon_FlyAgaricBase">
+		<defName>DankPyon_Plant_FlyAgaric</defName>
+		<label>fly agaric</label>
+		<graphicData>
+			<texPath>Plants/FlyAgaricPlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<description>A striking mushroom with a bright red cap adorned with white spots, known for its toxic properties. Despite its danger, it has been used in small doses in traditional remedies and rituals, though caution is always advised.</description>
+		<plant>
+			<immatureGraphicPath>Plants/FlyAgaricPlant</immatureGraphicPath>
+			<growDays>7</growDays>
+			<sowWork>800</sowWork>
+			<sowMinSkill>8</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<harvestedThingDef>DankPyon_FlyAgaric</harvestedThingDef>
+			<purpose>Health</purpose>
+		</plant>
+	</ThingDef>
+
+</Defs>

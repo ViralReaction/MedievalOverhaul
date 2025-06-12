@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- <Operation Class="PatchOperationConditional"> -->
+		<!-- <xpath>Defs/ThingDef/researchPrerequisites/li[.="VFEM2_Alchemy"]</xpath> -->
+		<!-- <match Class="PatchOperationReplace"> -->
+			<!-- <xpath>Defs/ThingDef/researchPrerequisites/li[.="VFEM2_Alchemy"]</xpath> -->
+			<!-- <value> -->
+				<!-- <li>DankPyon_Alchemy</li> -->
+			<!-- </value> -->
+		<!-- </match> -->
+	<!-- </Operation> -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef/recipeUsers[contains(li,'VFEM2_AlchemicalWorkbench')]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/RecipeDef/recipeUsers[contains(li,'VFEM2_AlchemicalWorkbench')]</xpath>
+			<value>
+				<li>DankPyon_AlchemyBench</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef/recipeMaker/recipeUsers[contains(li,'VFEM2_AlchemicalWorkbench')]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef/recipeMaker/recipeUsers[contains(li,'VFEM2_AlchemicalWorkbench')]</xpath>
+			<value>
+				<li>DankPyon_AlchemyBench</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VFEM2_Alchemy"]/tab</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VFEM2_Alchemy"]/tab</xpath>
+			<value>
+				<tab>DankPyon_MedievalResearchTab</tab>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VFEM2_Alchemy"]/label</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VFEM2_Alchemy"]/label</xpath>
+			<value>
+				<label>draught brewing</label>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VFEM2_Alchemy"]/researchViewX</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VFEM2_Alchemy"]/researchViewX</xpath>
+			<value>
+				 <researchViewX>2.00</researchViewX>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VFEM2_Alchemy"]/researchViewY</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VFEM2_Alchemy"]/researchViewY</xpath>
+			<value>
+				  <researchViewY>2.10</researchViewY>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

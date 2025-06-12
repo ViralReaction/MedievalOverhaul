@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>
+			<li>metalChain</li>
+		</settings>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="DankPyon_Plasteel"]/tab</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ResearchProjectDef[defName="DankPyon_Plasteel"]/tab</xpath>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="DankPyon_Steel"]/tab</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ResearchProjectDef[defName="DankPyon_Steel"]/tab</xpath>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_Smelter"]/designationCategory</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="DankPyon_Smelter"]/designationCategory</xpath>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[@Name="DankPyon_SmelterBase"]/recipeUsers</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[@Name="DankPyon_SmelterBase"]/recipeUsers</xpath>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_MineableIron"]/building/mineableThing</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_MineableIron"]/building/mineableThing</xpath>
+						<value>
+							<mineableThing>DankPyon_IronIngot</mineableThing>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_MineableGold"]/building/mineableThing</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_MineableGold"]/building/mineableThing</xpath>
+						<value>
+							<mineableThing>Gold</mineableThing>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef[defName="DankPyon_MakeOre_IronOre"]/products</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RecipeDef[defName="DankPyon_MakeOre_IronOre"]/products</xpath>
+						<value>
+							<products>
+								<DankPyon_IronIngot>1</DankPyon_IronIngot>
+							</products>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef[defName="DankPyon_MakeOre_IronOreBulk"]/products</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RecipeDef[defName="DankPyon_MakeOre_IronOreBulk"]/products</xpath>
+						<value>
+							<products>
+								<DankPyon_IronIngot>5</DankPyon_IronIngot>
+							</products>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef[defName="DankPyon_MakeOre_SilverOre"]/products</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RecipeDef[defName="DankPyon_MakeOre_SilverOre"]/products</xpath>
+						<value>
+							<products>
+								<Silver>1</Silver>
+							</products>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef[defName="DankPyon_MakeOre_SilverOreBulk"]/products</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RecipeDef[defName="DankPyon_MakeOre_SilverOreBulk"]/products</xpath>
+						<value>
+							<products>
+								<Silver>5</Silver>
+							</products>
+						</value>
+					</match>
+				</li>
+
+				<!-- Change Golem Rocks to base metals -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_GolemRock_Iron_MapGen"]/building/mineableThing</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_GolemRock_Iron_MapGen"]/building/mineableThing</xpath>
+						<value>
+							<mineableThing>DankPyon_IronIngot</mineableThing>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_GolemRock_Iron_Incident"]/building/mineableThing</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_GolemRock_Iron_Incident"]/building/mineableThing</xpath>
+						<value>
+							<mineableThing>DankPyon_IronIngot</mineableThing>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_GolemRock_Silver_MapGen"]/building/mineableThing</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_GolemRock_Silver_MapGen"]/building/mineableThing</xpath>
+						<value>
+							<mineableThing>Silver</mineableThing>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_GolemRock_Silver_Incident"]/building/mineableThing</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_GolemRock_Silver_Incident"]/building/mineableThing</xpath>
+						<value>
+							<mineableThing>Silver</mineableThing>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_GolemRock_Gold_Incident"]/building/mineableThing</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_GolemRock_Gold_Incident"]/building/mineableThing</xpath>
+						<value>
+							<mineableThing>Gold</mineableThing>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_RustedHauberk"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_RustedHauberk"]/costList</xpath>
+						<value>
+							<costList>
+								<DankPyon_IronIngot>5</DankPyon_IronIngot>
+							</costList>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_RustedHelmet"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_RustedHelmet"]/costList</xpath>
+						<value>
+							<costList>
+								<DankPyon_IronIngot>3</DankPyon_IronIngot>
+							</costList>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_Golem_Iron"]/butcherProducts</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_Golem_Iron"]/butcherProducts</xpath>
+						<value>
+							<butcherProducts>
+								<DankPyon_IronIngot>110</DankPyon_IronIngot>
+							</butcherProducts>
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_Golem_Silver"]/butcherProducts</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_Golem_Silver"]/butcherProducts</xpath>
+						<value>
+							<butcherProducts>
+								<Silver>50</Silver>
+							</butcherProducts>
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_Golem_Gold"]/butcherProducts</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_Golem_Gold"]/butcherProducts</xpath>
+						<value>
+							<butcherProducts>
+								<Gold>50</Gold>
+							</butcherProducts>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_MineableIron"]/building/mineableThing</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_MineableIron"]/building/mineableThing</xpath>
+						<value>
+							<mineableThing>DankPyon_IronIngot</mineableThing>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_BlastFurnace"]/designationCategory</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_BlastFurnace"]/designationCategory</xpath>
+						<value>
+							<designationCategory Inherit="False"/>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_BlastFurnace"]/researchPrerequisites</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="DankPyon_BlastFurnace"]/researchPrerequisites</xpath>
+						<value>
+							<researchPrerequisites Inherit="False"/>
+						</value>
+					</match>
+				</li>
+
+			</operations>
+		</inactive>
+	</Operation>
+
+</Patch>

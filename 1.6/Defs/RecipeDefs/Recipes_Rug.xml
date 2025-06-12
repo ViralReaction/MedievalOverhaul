@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- 
+	<RecipeDef Abstract="True" Name="DankPyon_RugBase">
+		<description>Craft a patched rug from different types of leather.</description>
+		<jobString>Crafting a patched rug.</jobString>
+		<workAmount>5000</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<recipeUsers>
+			<li>DankPyon_TailorsBench</li>
+		</recipeUsers>
+		<researchPrerequisites>
+			<li>DankPyon_LeatherTanning</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_RugBase">
+		<defName>DankPyon_MakeRugPatched1x1c</defName>
+		<label>craft patched rug 1x1</label>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_RugPatched1x1c>1</DankPyon_RugPatched1x1c>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_RugBase">
+		<defName>DankPyon_MakeRugPatched2x2c</defName>
+		<label>craft patched rug 2x2</label>
+		<workAmount>7000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_RugPatched2x2c>1</DankPyon_RugPatched2x2c>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="DankPyon_RugBase">
+		<defName>DankPyon_MakeRugPatched3x3c</defName>
+		<label>craft patched rug 3x3</label>
+		<workAmount>12000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Leathers</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<DankPyon_RugPatched3x3c>1</DankPyon_RugPatched3x3c>
+		</products>
+	</RecipeDef> -->
+
+</Defs>

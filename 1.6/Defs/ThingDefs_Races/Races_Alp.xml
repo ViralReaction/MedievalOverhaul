@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>DankPyon_Alp</defName>
+		<label>Alp</label>
+		<description>A pale creature of the night, Alps invade the dreams of nearby creatures, trapping them in a nightmare and feeding on their negative emotions. Victims often report extreme signs of distress upon waking, and most travelers will not stay at a settlement without some kind of night watch due to the intense experiences often reported. Despite this, Alps tend to be easy prey with their frail bones, parchment-like skin, and decaying insides. Scholars remain unsure about the origins of these creatures, though some theorize an ancient curse may be responsible.</description>
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<MarketValue>360</MarketValue>
+			<ComfyTemperatureMin>-14</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<MeatAmount>0</MeatAmount>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>10.9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Hands</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>10.9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Hands</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>14.8</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.9</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>6</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>2</accuracyTouch>
+				<accuracyShort>2</accuracyShort>
+				<accuracyMedium>2</accuracyMedium>
+				<accuracyLong>2</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>DankPyon_AlpSleep</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>1</minRange>
+				<range>15</range>
+				<soundCast>ThrowMolotovCocktail</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<label>alp sleep</label>
+				<commonality>0.8</commonality>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="MVCF.Comps.CompProperties_VerbProps">
+				<compClass>MVCF.Comps.Comp_VerbProps</compClass>
+				<verbProps>
+					<li>
+						<label>alp sleep</label>
+						<description>Force target to hallucinate and experience nightmares</description>
+						<canBeToggled>true</canBeToggled>
+						<separateToggle>false</separateToggle>
+						<comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
+								<compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
+								<cooldownTime>10</cooldownTime>
+							</li>
+						</comps>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<race>
+			<body>Human</body>
+			<herdAnimal>false</herdAnimal>
+			<predator>true</predator>
+			<maxPreyBodySize>2</maxPreyBodySize>
+			<baseBodySize>1</baseBodySize>
+			<baseHungerRate>2</baseHungerRate>
+			<baseHealthScale>1.5</baseHealthScale>
+			<foodType>CarnivoreAnimalStrict, Corpse</foodType>
+			<leatherDef>Leather_Human</leatherDef>
+			<wildness>0.60</wildness>
+			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<gestationPeriodDays>26</gestationPeriodDays>
+			<lifeExpectancy>12</lifeExpectancy>
+			<trainability>Advanced</trainability>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Warg_Wounded</soundWounded>
+					<soundDeath>Pawn_Warg_Death</soundDeath>
+					<soundAngry>Pawn_Warg_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<needsRest>false</needsRest>
+			<alwaysViolent>true</alwaysViolent>
+		</race>
+		<modExtensions>
+			<li Class="MedievalOverhaul.AdditionalButcherProducts">
+				<butcherOptions>
+					<li>
+						<thingDef>DankPyon_ParchedSkin</thingDef>
+						<amount>1</amount>
+						<chance>0.5</chance>
+					</li>
+					<li>
+						<thingDef>DankPyon_PetrifiedScream</thingDef>
+						<amount>1</amount>
+						<chance>0.5</chance>
+					</li>
+					<li>
+						<thingDef>DankPyon_ThirdEye</thingDef>
+						<amount>1</amount>
+						<chance>0.5</chance>
+					</li>
+				</butcherOptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>DankPyon_Alp</defName>
+		<label>Alp</label>
+		<labelPlural>Ghouls</labelPlural>
+		<race>DankPyon_Alp</race>
+		<combatPower>120</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<wildGroupSize>5~8</wildGroupSize>
+		<defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
+		<alternateGraphicChance>0.33</alternateGraphicChance>
+		<alternateGraphics>
+			<li><texPath>Animal/Alp2</texPath></li>
+			<li><texPath>Animal/Alp3</texPath></li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/Alp1</texPath>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Male_east</texPath>
+					<drawSize>1.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

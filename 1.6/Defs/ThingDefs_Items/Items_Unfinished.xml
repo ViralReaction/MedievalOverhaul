@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>DankPyon_UnfinishedHide</defName>
+		<label>unfinished hide</label>
+		<description>An unfinished piece of an hide.</description>
+		<graphicData>
+			<texPath>Unfinished/UnfinishedHide</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>DankPyon_Hide</li>
+		</stuffCategories>
+		<comps>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>DankPyon_UnfinishedRug</defName>
+		<label>unfinished hide</label>
+		<description>An unfinished rug.</description>
+		<graphicData>
+			<texPath>Unfinished/UnfinishedRug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<comps>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>DankPyon_UnfinishedHideArmor</defName>
+		<label>unfinished hide armor</label>
+		<description>An unfinished piece of hide armor.</description>
+		<statBases>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Unfinished/UnfinishedHide</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>DankPyon_UnfinishedLivingShield</defName>
+		<label>unfinished living shield</label>
+		<description>An unfinished living shield.</description>
+		<statBases>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Unfinished/UnfinishedLivingShield</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>DankPyon_UnfinishedLinduwrmShield</defName>
+		<label>unfinished lindwurm shield</label>
+		<description>An unfinished lindwurm shield.</description>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Unfinished/UnfinishedLindwurmShield</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>DankPyon_UnfinishedBook</defName>
+		<label>unfinished book</label>
+		<description>An unfinished book.</description>
+		<statBases>
+			<Flammability>1</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Unfinished/UnfinishedBook</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+
+</Defs>

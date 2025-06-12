@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+		<value>
+			<li>DankPyon_LoneWolf</li>
+			<li>DankPyon_MercenaryCompany</li>
+			<li>DankPyon_PlayerKingdom</li>
+			<li MayRequire="DankPyon.Medieval.Overhaul.House.Roxmont">DankPyon_LoneRoxKnight</li>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<!--============================== Linkables ==============================-->
+	<!-- Mining Tools -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_MiningTools</defName>
+		<label>mining tools</label>
+		<description>A set of tools designed for mining resources deep in the earth. Increases mining speed when placed near mining spots.</description>
+		<graphicData>
+			<texPath>Misc/MiningTools</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>false</rotatable>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<costList>
+			<WoodLog>40</WoodLog>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.25</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_ToolRack</defName>
+		<label>tool rack</label>
+		<description>A collection of smithing tools. Increases workspeed when placed near medieval workbenches.</description>
+		<graphicData>
+			<texPath>Misc/ToolRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>4</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingClass>Building</thingClass>
+		<uiIconScale>1</uiIconScale>
+		<uiIconPath>Misc/ToolRack_MenuIcon</uiIconPath>
+		<uiIconOffset>(0, 0)</uiIconOffset>
+		<size>(2,1)</size>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Standable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<DankPyon_IronIngot>140</DankPyon_IronIngot>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.06</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>3</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<building>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<isEdifice>false</isEdifice>
+		</building>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_QuenchingBucket</defName>
+		<label>quenching bucket</label>
+		<description>A bucket full of oil used in quenching smoldering metals. Increases workspeed when placed near medieval workbenches.</description>
+		<graphicData>
+			<texPath>Misc/QuenchingBucket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(0.18, 0.23, 0.18)</volume>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<thingClass>Building</thingClass>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>1200</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<costList>
+			<DankPyon_IronIngot>15</DankPyon_IronIngot>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Grinder</defName>
+		<label>grinding wheel</label>
+		<description>Used for sharpening weapons. Increases workspeed when placed near medieval workbenches.</description>
+		<graphicData>
+			<texPath>Misc/GrindingWheel</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingClass>Building</thingClass>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<costList>
+			<WoodLog>50</WoodLog>
+		</costList>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>3</maxSimultaneous>
+			</li>
+		</comps>
+
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Bellows</defName>
+		<label>bellows</label>
+		<description>Used to furnish a strong blast of air. Increases workspeed when placed near medieval workbenches.</description>
+		<graphicData>
+			<texPath>Misc/Bellows</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingClass>Building</thingClass>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<costList>
+			<DankPyon_IronIngot>60</DankPyon_IronIngot>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>Smithing</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_VialsTable</defName>
+		<label>vials table</label>
+		<description>Used for organizing recipes and vials. Increases workspeed when placed near an alchemy bench or cauldron.</description>
+		<graphicData>
+			<texPath>Misc/VialsTable</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<uiIconScale>0.75</uiIconScale>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>false</rotatable>
+
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<costList>
+			<DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
+		</costList>
+
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Alchemy</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>DankPyon_HerbTable</defName>
+		<label>herb table</label>
+		<description>Used for grinding herbs and ingredients. Increases workspeed when placed near an alchemy bench or cauldron.</description>
+		<graphicData>
+			<texPath>Misc/HerbTable</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<thingClass>Building_WorkTable</thingClass>
+		<uiIconScale>0.75</uiIconScale>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>false</rotatable>
+
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<costList>
+			<MedicineHerbal>10</MedicineHerbal>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Alchemy</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Alembic</defName>
+		<label>alembic</label>
+		<description>Used for distilling mixtures. Increases workspeed when placed near an alchemy bench or cauldron.</description>
+		<graphicData>
+			<texPath>Misc/Alembic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>false</rotatable>
+
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<costList>
+			<DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
+		</costList>
+
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Alchemy</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!-- ==================== Scribe Table ==================== -->
+	<!-- Paper Hanging Rack-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_PaperHangingRack</defName>
+		<label>paper hanging rack</label>
+		<description>A handing rack for drying freshly written manuscripts. Increases workspeed when placed near a book scribe table.</description>
+		<graphicData>
+			<texPath>Misc/HangingPaperRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,3)</drawSize>
+		</graphicData>
+		<size>(2,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>true</rotatable>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<DankPyon_Paper>25</DankPyon_Paper>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Alchemy</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--  Quill and Inkwell  -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_QuillAndInkwell</defName>
+		<label>quill and inkwell table</label>
+		<description>Supply of quills and ink. Increases workspeed when placed near a book scribe table.</description>
+		<graphicData>
+			<texPath>Misc/QuillAndInkwell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>false</rotatable>
+		<uiIconScale>0.75</uiIconScale>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Alchemy</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Stack_Books</defName>
+		<label>stack of books</label>
+		<description>Stack of easily accessible books for reference. Increases workspeed when placed near a book scribe table.</description>
+		<graphicData>
+			<texPath>Misc/BookStack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>true</rotatable>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<DankPyon_Paper>50</DankPyon_Paper>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Alchemy</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Stack_Paper</defName>
+		<label>stack of papers</label>
+		<description>Stack of easily accessible papers for writing. Increases workspeed when placed near a book scribe table.</description>
+		<graphicData>
+			<texPath>Misc/PaperStack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<rotatable>true</rotatable>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<costList>
+			<DankPyon_Paper>50</DankPyon_Paper>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.04</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_Alchemy</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<!--ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_RusticCupboard</defName>
+		<label>tableware shelf</label>
+		<description>A shelf for Tableware. Increases Cook speed when placed near rustic cooking table.</description>
+		<graphicData>
+			<texPath>Misc/RusticCupboard</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>4</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<thingClass>Building</thingClass>
+		<uiIconScale>1</uiIconScale>
+		<uiIconPath>Misc/RusticCupboard_MenuIcon</uiIconPath>
+		<uiIconOffset>(0, 0)</uiIconOffset>
+		<size>(2,1)</size>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Standable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.1</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+
+		<costList>
+			<DankPyon_IronIngot>75</DankPyon_IronIngot>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.10</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>2</maxDistance>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<building>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<isEdifice>false</isEdifice>
+		</building>
+		<clearBuildingArea>false</clearBuildingArea>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<designationCategory>DankPyon_RusticFurniture</designationCategory>
+	</ThingDef-->
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_RusticCookingTools</defName>
+		<label>cooking tools</label>
+		<description>A table full of useful cooking equipment. Increases work speed when placed near a rustic cooking table.</description>
+		<graphicData>
+			<texPath>Misc/RusticCookingTools</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+
+		<size>(2,1)</size>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>42</pathCost>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+		<costList>
+			<DankPyon_IronIngot>50</DankPyon_IronIngot>
+		</costList>
+
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.06</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>2</maxSimultaneous>
+			</li>
+		</comps>
+
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
+	</ThingDef>
+
+	<!--Dough-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_TableBaking</defName>
+		<label>baking tools</label>
+		<description>A table full of useful cooking equipment. Increases work speed when placed near an oven.</description>
+		<graphicData>
+			<texPath>Misc/TableDough</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4,3)</drawSize>
+			<damageData>
+				<rect>(0,0.05,1,1.95)</rect>
+			</damageData>
+		</graphicData>
+
+		<size>(2,1)</size>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>42</pathCost>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>200</costStuffCount>
+
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<WorkTableWorkSpeedFactor>0.06</WorkTableWorkSpeedFactor>
+				</statOffsets>
+				<maxDistance>6</maxDistance>
+				<maxSimultaneous>2</maxSimultaneous>
+			</li>
+		</comps>
+
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>DankPyon_RusticFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
+	</ThingDef>
+
+	<!--============== Medieval Comms ===============-->
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_BirdPost</defName>
+		<label>bird post</label>
+		<description>Some birds, when taught by expert trainers, are capable of flying to a designated location before returning to their home roost. This allows for communication with neighboring factions, assuming one can afford the costly requirements of obtaining and training the bird, as well as feeding the animals with meat. Requires the scribe table for correspondence.</description>
+		<thingClass>Building</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Misc/BirdPost</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>30</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,1)</size>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<costList>
+			<DankPyon_ComponentBasic>1</DankPyon_ComponentBasic>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<comps>
+			<li Class="MedievalOverhaul.CompProperties_RefuelableCustom">
+				<fuelConsumptionRate>0.45</fuelConsumptionRate>
+				<fuelCapacity>2</fuelCapacity>
+				<fuelFilter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<thingDefs>
+						<li>Hay</li>
+						<li>Kibble</li>
+					</thingDefs>
+				</fuelFilter>
+				<defaultIngredientFilter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<thingDefs>
+						<li>Hay</li>
+						<li>Kibble</li>
+					</thingDefs>
+					<disallowedCategories>
+						<li>EggsFertilized</li>
+					</disallowedCategories>
+					<disallowedThingDefs>
+						<li>InsectJelly</li>
+					</disallowedThingDefs>
+				</defaultIngredientFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+				<fuelIconPath>UI/EmptyMeat_Icon</fuelIconPath>
+			</li>
+			<li Class="CompProperties_Facility">
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>MedievalOverhaul.ITab_Fuel</li>
+		</inspectorTabs>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Misc</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_CarrierBirds</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_ScribeTable</defName>
+		<label>messenger table</label>
+		<description>A table housing wax tablets, which contain records and receipts. Alongside the tablets lay parchments, a seal, quills, and ink to allow for correspondence. When used alongside the bird post, the written letters can reach far lands quicker than a messenger. One can invite allies for feasts, rivals for a challenge, or neutral factions for trade.</description>
+		<thingClass>MedievalOverhaul.Building_ScribeTable</thingClass>
+		<graphicData>
+			<texPath>Misc/TableScribe</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(5,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(3,2)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<blockWind>false</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>2800</WorkToBuild>
+			<Flammability>0.6</Flammability>
+			<Mass>15</Mass>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<DankPyon_IronIngot>20</DankPyon_IronIngot>
+			<DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
+		</costList>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Misc</designationCategory>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>DankPyon_BirdPost</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="MedievalOverhaul.RequireLinkables">
+				<linkablesNeeded>1</linkablesNeeded>
+				<requiredLinkable>DankPyon_BirdPost</requiredLinkable>
+			</li>
+		</modExtensions>
+		<designationHotKey>Misc3</designationHotKey>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>DankPyon_CarrierBirds</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>DankPyon_Cart</defName>
+		<label>loading cart</label>
+		<description>A trusty wagon to carry novelties, artifacts, and goods across the unforgiving lands of the rim. \n\nRequired for long distance trading, you can only sell goods to other factions if they're near a cart.</description>
+		<thingClass>Building_OrbitalTradeBeacon</thingClass>
+		<graphicData>
+			<texPath>Misc/Cart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<damageData>
+				<rect>(0.1,0.1,1.8,1.8)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(1.39,0.5,1.25)</volume>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>42</pathCost>
+		<blockWind>true</blockWind>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.50</fillPercent>
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<WorkToBuild>2000</WorkToBuild>
+		</statBases>
+		<costList>
+			<DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
+		</costList>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
+		<placeWorkers>
+			<li>PlaceWorker_ShowTradeBeaconRadius</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>DankPyon_CarrierBirds</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<building>
+			<claimable>false</claimable>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
+		</building>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<repairEffect>ConstructDirt</repairEffect>
+		<designationCategory>Misc</designationCategory>
+	</ThingDef>
+
+</Defs>

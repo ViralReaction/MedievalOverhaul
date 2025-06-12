@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <MedievalOverhaul.SeperateHideList>
+        <defName>WhiteList</defName>
+        <label>White List</label>
+        <whiteListRaces>
+			<li>Bear_Grizzly</li>
+			<li>Bear_Polar</li>
+			<li>Wolf_Timber</li>
+			<li>Wolf_Arctic</li>
+			<li>Thrumbo</li>
+			<li>Cougar</li>
+			<li>Panther</li>
+        </whiteListRaces>
+		<blackListRaces/>
+		<whiteListLeathers>
+			<li>Leather_Bear</li>
+			<li>Leather_Thrumbo</li>
+		</whiteListLeathers>
+		<blackListLeathers>
+			<li>WoodLog</li>
+			<li>Leather_Chitin</li>
+			<li>Neutroamine</li>
+		</blackListLeathers>
+    </MedievalOverhaul.SeperateHideList>
+
+	<MedievalOverhaul.SeperateWoodList>
+		<defName>LogList</defName>
+		<label>Log Plank List</label>
+		<blackListWood> <!-- This is for if you just want to blackList something so it doesn't get processed ever -->
+		</blackListWood>
+		<!-- This is for when you want to manually patch a log for the original wood -->
+		<!-- Needed so that the planks are properly counted -->
+		<plankDict> 
+			<li>
+				<key>WoodLog</key> <!-- Original Wood turned into plank-->
+				<value>DankPyon_RawWood</value> <!-- New XML log -->
+			</li>
+			<li>
+				<key>DankPyon_DarkWood</key> <!-- Original Wood turned into plank-->
+				<value>DankPyon_RawDarkWood</value> <!-- New XML log -->
+			</li>
+		</plankDict>
+	</MedievalOverhaul.SeperateWoodList>
+
+	<MedievalOverhaul.HideGraphicList>
+		<defName>HideGraphicList</defName>
+		<label>Hide Graphic List</label>
+		<scaleHidesBodyDef>
+			<li>Bird</li>
+			<li>DankPyon_LindwurmBody</li>
+			<li>Snake</li>
+		</scaleHidesBodyDef>
+		<scaleHidesRaceDef>
+			<li>Rhinoceros</li>
+		</scaleHidesRaceDef>
+		<furHidesBodyDef>
+		</furHidesBodyDef>
+		<furHidesRaceDef>
+			<li>Cougar</li>
+			<li>Panther</li>
+			<li>Lynx</li>
+			<li>Bear_Grizzly</li>
+			<li>Bear_Polar</li>
+			<li>GuineaPig</li>
+			<li>Husky</li>
+			<li>Hare</li>
+			<li>Snowhare</li>
+			<li>Wolf_Timber</li>
+			<li>Wolf_Arctic</li>
+			<li>Fox_Fennec</li>
+			<li>Fox_Red</li>
+			<li>Fox_Arctic</li>
+			<li>Squirrel</li>
+			<li>Raccoon</li>
+			<li>Megasloth</li>
+		</furHidesRaceDef>
+	</MedievalOverhaul.HideGraphicList>
+	
+	<!-- <MedievalOverhaul.FuelPatchList> -->
+		<!-- <defName>FuelPatchList</defName> -->
+		<!-- <label>Fuel Patch Blacklist</label> -->
+		<!-- <blackListRefuelable> -->
+			<!-- <li>PassiveCooler</li> -->
+			<!-- <li MayRequire="ludeon.rimworld.biotech">SanguphageMeetingTorch</li> -->
+		<!-- </blackListRefuelable> -->
+	<!-- </MedievalOverhaul.FuelPatchList> -->
+	
+	<MedievalOverhaul.StimulantDrugList>
+		<defName>StimulantDrugList</defName>
+		<label>Stimulant Drug List</label>
+		<stimulant>
+			<li>YayoHigh</li>
+			<li>WakeUpHigh</li>
+			<li>GoJuiceHigh</li>
+			<li>FlakeHigh</li>
+			<li>DankPyon_High_VigorPill</li>
+			<li>DankPyon_High_BattleElixir</li>
+		</stimulant>
+	</MedievalOverhaul.StimulantDrugList>
+
+
+</Defs>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/researchPrerequisite</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>DankPyon_Oven</researchPrerequisite>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/label</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/label</xpath>
+			<value>
+				<label>make sweetrolls x10</label>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/recipeUsers/li[.="DankPyon_StoneOven"]</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/recipeUsers</xpath>
+			<value>
+				<li>DankPyon_StoneOven</li>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/ingredients/li[contains(.,'VFEM2_Honey')]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/ingredients/li[contains(.,'VFEM2_Honey')]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/ingredients</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/ingredients</xpath>
+			<value>
+				<li>
+					<filter>
+						<categories>
+							<li>DankPyon_Honey</li>
+						</categories>
+					</filter>
+					<count>2</count>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/fixedIngredientFilter/thingDefs/li[contains(.,'VFEM2_Honey')]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/fixedIngredientFilter/thingDefs/li[contains(.,'VFEM2_Honey')]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/fixedIngredientFilter/categories</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/fixedIngredientFilter/categories</xpath>
+			<value>
+				<li>DankPyon_Honey</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

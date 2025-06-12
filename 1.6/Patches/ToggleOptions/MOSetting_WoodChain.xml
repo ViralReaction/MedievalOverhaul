@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>
+			<li>woodChain</li>
+		</settings>
+		<active Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Replace every WoodLog to be DankPyon_RawWood for every neolithic building-->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[techLevel="Neolithic"][costList/WoodLog][costList[not(DankPyon_RawWood)]]</xpath>
+					<match Class="PatchOperationSetName">
+						<xpath>Defs/ThingDef[techLevel="Neolithic"][costList/WoodLog][costList[not(DankPyon_RawWood)]]/costList/WoodLog</xpath>
+						<name>DankPyon_RawWood</name>
+					</match>
+				</li>
+
+				<!-- Add every WoodLog to have DankPyon_RawWood stuff category for every neolithic building that has woody stuff category-->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[techLevel="Neolithic"][stuffCategories[li="Woody"]]</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[techLevel="Neolithic"][stuffCategories[li="Woody"]]/stuffCategories</xpath>
+						<value>
+							<li>DankPyon_RawWood</li>
+						</value>
+					</match>
+				</li>
+
+				<!--Replace every vanilla woodlog to drop Medieval Overhaul raw wood-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef/plant/harvestedThingDef[text()="WoodLog"]</xpath>
+					<value>
+						<harvestedThingDef>DankPyon_RawWood</harvestedThingDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef/butcherProducts[text()="WoodLog"]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef/butcherProducts[text()="WoodLog"]</xpath>
+						<value>
+							<harvestedThingDef>DankPyon_RawWood</harvestedThingDef>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef/comps/li[.="WoodLog"]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef/comps/li[.="WoodLog"]</xpath>
+						<value>
+							<li>DankPyon_RawWood</li>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="WoodLog"]/label</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="WoodLog"]/label</xpath>
+						<value>
+							<label>wood plank</label>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="WoodLog"]/description</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="WoodLog"]/description</xpath>
+						<value>
+							<description>Planks are processed wood. It has been cut into more manageable sizes making it more manageable to build with.</description>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="WoodLog"]/graphicData</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="WoodLog"]/graphicData</xpath>
+						<value>
+							<graphicData>
+								<texPath>Resources/WoodPlank</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+								<color>(133,97,67)</color>
+							</graphicData>
+						</value>
+					</match>
+				</li>
+
+				<!-- Several neolith bits of furniture can be made of logs -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[
+						defName="Fence" or 
+						defName="HorseshoesPin" or
+						defName="HoopstoneRing" or 
+						defName="GameOfUrBoard" or   
+						defName="PenMarker" or 
+						defName="MeleeWeapon_Club" or 
+						defName="MeleeWeapon_Spear" or 
+						defName="Apparel_WarMask" or @Name="NatureShrineBase"][stuffCategories]/stuffCategories
+					</xpath>
+					<value>
+						<li>DankPyon_RawWood</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Architect</li>
+					</mods>
+					<match Class="PatchOperationSetName">
+						<xpath>Defs/ThingDef[
+							defName="VFEArch_LogWall" or 
+							defName="VFEArch_LowFence" or 
+							defName="VFEArch_HedgeWall"]/costList/WoodLog
+						</xpath>
+						<name>DankPyon_RawWood</name>
+					</match>
+				</li>
+
+				<!--Add raw wood to recipes-->
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Genetic Rim</li>
+					</mods>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/RecipeDef[defName="GR_PulpWoodExpensive" or defName="GR_PulpWoodBulk"]//thingDefs</xpath>
+						<value>
+							<li>DankPyon_RawWood</li>
+							<li>DankPyon_RawDarkWood</li>
+						</value>
+					</match>
+				</li>
+
+				<!-- Make Passive cooler use raw logs-->
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="PassiveCooler"]/costList</xpath>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="PassiveCooler"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>DankPyon_RawWood</li>
+							<li>Woody</li>
+						</stuffCategories>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="PassiveCooler"]</xpath>
+					<value>
+						<costStuffCount>100</costStuffCount>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="PassiveCooler"]/constructEffect</xpath>
+				</li>
+
+				<!-- Torches -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[@Name="TorchBase"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[@Name="TorchBase"]/costList</xpath>
+						<value>
+							<stuffCategories>
+								<li>DankPyon_RawWood</li>
+								<li>Woody</li>
+							</stuffCategories>
+							<costStuffCount>20</costStuffCount>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="TorchWallLamp"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="TorchWallLamp"]/costList</xpath>
+						<value>
+							<stuffCategories>
+								<li>DankPyon_RawWood</li>
+								<li>Woody</li>
+							</stuffCategories>
+							<costStuffCount>15</costStuffCount>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[@Name="TorchBase"]/constructEffect</xpath>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="TorchLamp"]/uiIconPath</xpath>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="TorchLamp"]/uiIconScale</xpath>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="TorchLamp"]/graphicData</xpath>
+					<value>
+						<shaderType>CutoutComplex</shaderType>
+					</value>
+				</li>
+
+				<!-- Caravans sell logs -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/TraderKindDef[
+						defName = "Caravan_Neolithic_BulkGoods" or 
+						defName = "Caravan_Outlander_BulkGoods" or 
+						defName = "Visitor_Neolithic_Standard" or 
+						defName = "Visitor_Outlander_Standard"]/stockGenerators
+					</xpath>
+					<value>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>DankPyon_RawWood</thingDef>
+							<countRange>250~400</countRange>
+						</li>
+					</value>
+				</li>
+
+				<!-- Campfire -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Campfire"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>DankPyon_RawWood</li>
+							<li>Woody</li>
+						</stuffCategories>
+						<costStuffCount>20</costStuffCount>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="Campfire"]/constructEffect</xpath>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="Campfire"]/costList</xpath>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="Campfire"]/uiIconPath</xpath>
+				</li>
+
+			</operations>
+		</active>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[stuffCategories[li="DankPyon_RawWood"]]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[stuffCategories[li="DankPyon_RawWood"]][stuffCategories[not(Woody)]]/stuffCategories/li[.="DankPyon_RawWood"]</xpath>
+						<value>
+							<li>Woody</li>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[not(stuffProps/categories/li[.="Woody"])]/stuffProps/categories/li[.="DankPyon_RawWood"]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[not(stuffProps/categories/li[.="Woody"])]/stuffProps/categories/li[.="DankPyon_RawWood"]</xpath>
+						<value>
+							<li>Woody</li>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef[defName="DankPyon_Make_TimberAny_Tribal"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/RecipeDef[defName="DankPyon_Make_TimberAny_Tribal"]</xpath>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef[defName="DankPyon_Make_Timber_Tribal"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/RecipeDef[defName="DankPyon_Make_Timber_Tribal"]</xpath>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef[defName="DankPyon_Make_TimberDark_Tribal"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/RecipeDef[defName="DankPyon_Make_TimberDark_Tribal"]</xpath>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef[recipeUsers[li="DankPyon_Trestle"]]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/RecipeDef[recipeUsers[li="DankPyon_Trestle"]]/recipeUsers/li[.="DankPyon_Trestle"]</xpath>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef[recipeUsers[li="DankPyon_SawTable"]]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/RecipeDef[recipeUsers[li="DankPyon_SawTable"]]/recipeUsers/li[.="DankPyon_SawTable"]</xpath>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="DankPyon_Trestle" or defName="DankPyon_SawTable"]</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="DankPyon_Trestle" or defName="DankPyon_SawTable"]</xpath>
+						<value>
+							<designationCategory Inherit="False"/>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ScenarioDef[defName="DankPyon_LoneWolfStart"]/scenario/parts/li/thingDef[.="DankPyon_RawWood"]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ScenarioDef[defName="DankPyon_LoneWolfStart"]/scenario/parts/li/thingDef[.="DankPyon_RawWood"]</xpath>
+						<value>
+							<thingDef>WoodLog</thingDef>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[killedLeavings/DankPyon_RawWood]/killedLeavings/DankPyon_RawWood</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[killedLeavings/DankPyon_RawWood]/killedLeavings/DankPyon_RawWood</xpath>
+					</match>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef/building/fixedStorageSettings/filter/categories/li[.="DankPyon_RawWood"]</xpath>
+					<value>
+						<li>DankPyon_Wood</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef/building/defaultStorageSettings/filter/categories/li[.="DankPyon_RawWood"]</xpath>
+					<value>
+						<li>DankPyon_Wood</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef/building/fixedStorageSettings/filter/thingDefs/li[.="DankPyon_RawWood"]</xpath>
+					<value>
+						<li>WoodLog</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef/building/defaultStorageSettings/filter/thingDefs/li[.="DankPyon_RawWood"]</xpath>
+					<value>
+						<li>WoodLog</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ProcessorFramework.ProcessDef/ingredientFilter/categories/li[.="DankPyon_RawWood"]</xpath>
+					<value>
+						<li>DankPyon_Wood</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationSetName">
+					<xpath>Defs/TerrainDef[defName="DankPyon_DarkWoodPlankFloor" or defName="DankPyon_Floor_RusticWoodFloor_DarkWood"]/costList/DankPyon_DarkWood</xpath>
+					<name>DankPyon_RawDarkWood</name>
+				</li>
+
+			</operations>
+		</inactive>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="WoodLog"]/thingCategories/li[.="ResourcesRaw"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="WoodLog"]/thingCategories/li[.="ResourcesRaw"]</xpath>
+			<value>
+				<li>DankPyon_Wood</li>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="WoodLog"]/thingCategories</xpath>
+			<value>
+				<li>DankPyon_Wood</li>
+			</value>
+		</nomatch>
+	</Operation>
+
+</Patch>

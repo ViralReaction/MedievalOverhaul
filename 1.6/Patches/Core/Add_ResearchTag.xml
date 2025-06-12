@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Brewing"]/tags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+			<value>
+				<tags/>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="Brewing"]/tags</xpath>
+		<value>
+			<li>DankPyon_TavernOwner</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]/tags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
+			<value>
+				<tags/>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]/tags</xpath>
+		<value>
+			<li>DankPyon_MedievalStart</li>
+		</value>
+	</Operation>
+
+</Patch>

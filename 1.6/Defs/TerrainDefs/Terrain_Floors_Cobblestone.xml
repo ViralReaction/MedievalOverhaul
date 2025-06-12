@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef Abstract="True" ParentName="FloorBase" Name="DankPyon_Floor_CobblestoneBase">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Rough cobblestone placed in fitted patterns. They are pretty to look at, but they take a long time to lay.</description>
+		<texturePath>Terrain/Cobblestone</texturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearBurn</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
+		<isPaintable>true</isPaintable>
+		<statBases>
+			<WorkToBuild>1100</WorkToBuild>
+			<Beauty>1</Beauty>
+			<CleaningTimeFactor>0.8</CleaningTimeFactor>
+		</statBases>
+		<designatorDropdown>DankPyon_Floor_Cobblestone</designatorDropdown>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+		<uiOrder>2060</uiOrder>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="DankPyon_Floor_CobblestoneBase">
+		<defName>DankPyon_Floor_Cobblestone_Sandstone</defName>
+		<label>sandstone cobblestone</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>4</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_CobblestoneBase">
+		<defName>DankPyon_Floor_Cobblestone_Granite</defName>
+		<label>granite cobblestone</label>
+		<color>(105,95,97)</color>
+		<costList>
+			<BlocksGranite>4</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_CobblestoneBase">
+		<defName>DankPyon_Floor_Cobblestone_Limestone</defName>
+		<label>limestone cobblestone</label>
+		<color>(158,153,135)</color>
+		<costList>
+			<BlocksLimestone>4</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_CobblestoneBase">
+		<defName>DankPyon_Floor_Cobblestone_Slate</defName>
+		<label>slate cobblestone</label>
+		<color>(100,100,100)</color>
+		<costList>
+			<BlocksSlate>4</BlocksSlate>
+	</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_CobblestoneBase">
+		<defName>DankPyon_Floor_Cobblestone_Marble</defName>
+		<label>marble cobblestone</label>
+		<color>(132,135,132)</color>
+		<costList>
+			<BlocksMarble>4</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="DankPyon_Floor_CobblestoneBase">
+		<defName>DankPyon_Floor_Cobblestone_Clay</defName>
+		<label>clay cobblestone</label>
+		<color>(132, 99, 81)</color>
+		<costList>
+			<DankPyon_BlocksClay>4</DankPyon_BlocksClay>
+		</costList>
+	</TerrainDef>
+</Defs>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>
+			<li>refuelableTorch</li>
+		</settings>
+		<active Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="CompProperties_HeatPusher"]
+					</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="CompProperties_HeatPusher"]
+						</xpath>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="CompProperties_Refuelable"]
+					</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="CompProperties_Refuelable"]
+						</xpath>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/inspectorTabs
+					</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/inspectorTabs
+						</xpath>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"]
+					</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"]
+						</xpath>
+					</match>
+				</li>
+
+			</operations>
+		</active>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath>
+					<value>
+						<li>DankPyon_Coal</li>
+						<li>DankPyon_Tar</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@Name="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+					<value>
+						<categories>
+							<li>DankPyon_RawWood</li>
+							<li>DankPyon_Wood</li>
+						</categories>
+					</value>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[@Name="Brazier"]/inspectorTabs</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[@Name="Brazier"]</xpath>
+						<value>
+							<inspectorTabs/>
+						</value>
+					</nomatch>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@Name="Brazier"]/inspectorTabs</xpath>
+					<value>
+						<li>MedievalOverhaul.ITab_Fuel</li>
+					</value>
+				</li>
+
+			</operations>
+		</inactive>
+	</Operation>
+</Patch>

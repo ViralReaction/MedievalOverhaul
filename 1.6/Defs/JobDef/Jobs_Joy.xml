@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JobDef>
+		<defName>DankPyon_OperateQuest</defName>
+		<driverClass>MedievalOverhaul.JobDriver_OperateQuest</driverClass>
+		<reportString>scanning at TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
+		<defName>DankPyon_Mine_Golem</defName>
+		<driverClass>MedievalOverhaul.JobDriver_Mine_Golem</driverClass>
+		<reportString>digging at TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
+		<defName>DankPyon_Slop_Refuel_StatAtomic</defName>
+		<driverClass>MedievalOverhaul.JobDriver_RefuelStatAtomic</driverClass>
+		<reportString>delivering TargetB to TargetA.</reportString>
+		<forceCompleteBeforeNextJob>true</forceCompleteBeforeNextJob>
+	</JobDef>
+
+	<JobDef>
+		<defName>DankPyon_Slop_Refuel_Stat</defName>
+		<driverClass>MedievalOverhaul.JobDriver_RefuelStat</driverClass>
+		<reportString>delivering TargetB to TargetA.</reportString>
+		<forceCompleteBeforeNextJob>true</forceCompleteBeforeNextJob>
+	</JobDef>
+
+	<JobDef>
+		<defName>DankPyon_RefuelCustom</defName>
+		<driverClass>MedievalOverhaul.JobDriver_RefuelCustom</driverClass>
+		<reportString>refueling TargetA.</reportString>
+		<suspendable>false</suspendable>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
+		<defName>DankPyon_RefuelAtomicCustom</defName>
+		<driverClass>MedievalOverhaul.JobDriver_RefuelAtomicCustom</driverClass>
+		<reportString>refueling TargetA.</reportString>
+		<suspendable>false</suspendable>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
+		<defName>DankPyon_Play_CupAndDice</defName>
+		<driverClass>JobDriver_SitFacingBuilding</driverClass>
+		<reportString>playing cup and dice.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>4</joyMaxParticipants>
+		<joySkill>Intellectual</joySkill>
+		<joyXpPerTick>0.0018</joyXpPerTick>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<taleOnCompletion>PlayedGame</taleOnCompletion>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
+		<defName>DankPyon_Play_Tarocco</defName>
+		<driverClass>JobDriver_SitFacingBuilding</driverClass>
+		<reportString>playing tarocco.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>4</joyMaxParticipants>
+		<joySkill>Intellectual</joySkill>
+		<joyXpPerTick>0.004</joyXpPerTick>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<taleOnCompletion>PlayedGame</taleOnCompletion>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
+		<defName>DankPyon_Play_RimWar</defName>
+		<driverClass>JobDriver_PlayBilliards</driverClass>
+		<reportString>playing rim of war.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>4</joyMaxParticipants>
+		<joySkill>Intellectual</joySkill>
+		<joyXpPerTick>0.008</joyXpPerTick>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<taleOnCompletion>PlayedGame</taleOnCompletion>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>DankPyon_DoBillMending</defName>
+		<driverClass>MedievalOverhaul.JobDriver_DoMending</driverClass>
+		<reportString>doing mending at TargetA.</reportString>
+		<suspendable>false</suspendable>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
+		<defName>DankPyon_DispenseSlop</defName>
+		<driverClass>MedievalOverhaul.JobDriver_DispenseSlop</driverClass>
+		<reportString>retrieve food at TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>DankPyon_EmptyPot</defName>
+		<driverClass>MedievalOverhaul.JobDriver_EmptySlopPot</driverClass>
+		<reportString>empty food at TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>DankPyon_IceMold_Empty</defName>
+		<driverClass>MedievalOverhaul.JobDriver_EmptyIceMold</driverClass>
+		<reportString>empty food at TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+</Defs>

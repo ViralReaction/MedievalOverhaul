@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Change Milk to MO Graphic -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Milk"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Item/Resource/Milk</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Milk"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+				<li>DankPyon_Milk</li>
+			</thingCategories>
+		</value>
+	</Operation>
+
+	<!-- Herbal Medicine -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MedicineHerbal"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Resources/Healroot</texPath>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MedicineHerbal"]/graphicData/drawSize</xpath>
+		<value>
+			<drawSize>1</drawSize>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="MedicineHerbal"]/label</xpath>
+		<value>
+			<label>healroot</label>
+		</value>
+	</Operation>
+
+	<!-- Luciferium -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Luciferium"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Drug/Luciferium</texPath>
+		</value>
+	</Operation>
+	
+	<!-- Changed Beer to Unused Graphic -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Beer"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Drug/DarkAle</texPath>
+		</value>
+	</Operation>
+
+	<!-- Wool -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[@ParentName="WoolBase" and graphicData/texPath]/graphicData[not(graphicClass)]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[@ParentName="WoolBase" and graphicData/texPath]/graphicData[not(graphicClass)]</xpath>
+			<value>
+				<graphicClass>Graphic_Single</graphicClass>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="WoolBase"]/graphicData</xpath>
+		<value>
+			<graphicData>
+				<texPath>Things/Item/Resource/Wool</texPath>
+				<graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+		</value>
+	</Operation>
+
+	<!-- Skull -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Skull"]/graphicData/drawSize</xpath>
+		<value>
+			<drawSize>(0.9,0.9)</drawSize>
+		</value>
+	</Operation>
+
+	<!-- Brewery Table -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Brewery"]/graphicData/texPath</xpath>
+		<value>
+			<texPath>Things/Building/Production/TableBreweryStuffed</texPath>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Brewery"]/graphicData</xpath>
+		<value>
+			<shaderType>CutoutComplex</shaderType>
+		</value>
+	</Operation>
+
+</Patch>	

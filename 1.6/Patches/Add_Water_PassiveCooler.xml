@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="PassiveCooler"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="PassiveCooler"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+			<value>
+				<li>DankPyon_Waterskin</li>
+			</value>
+		</match>
+	</Operation>
+
+	<!-- <Operation Class="PatchOperationConditional"> -->
+		<!-- <xpath>Defs/ThingDef[defName="PassiveCooler"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[.="WoodLog"]</xpath> -->
+		<!-- <match Class="PatchOperationRemove"> -->
+			<!-- <xpath>Defs/ThingDef[defName="PassiveCooler"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefsli[.="WoodLog"]</xpath> -->
+		<!-- </match> -->
+	<!-- </Operation> -->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="PassiveCooler"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/categories</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="PassiveCooler"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+			<value>
+				<categories/>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="PassiveCooler"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/categories</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="PassiveCooler"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/categories</xpath>
+			<value>
+				<li>DankPyon_RawWood</li>
+				<li>DankPyon_Wood</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

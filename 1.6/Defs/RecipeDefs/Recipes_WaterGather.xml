@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Stone Chunks Base Class -->
+	<RecipeDef Name="DankPyon_WaterGatherSpotBase" Abstract="True">
+		<description>Gather water.</description>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<recipeUsers>
+			<li>DankPyon_WaterSpot</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<!-- Water -->
+	<RecipeDef ParentName="DankPyon_WaterGatherSpotBase">
+		<defName>DankPyon_Gather_Water</defName>
+		<workerCounterClass>MedievalOverhaul.RecipeWorkerCounter_GatherWater</workerCounterClass>
+		<workAmount>70</workAmount>
+		<label>gather material</label>
+		<jobString>Gathering 1 waterskin.</jobString>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<products>
+			<DankPyon_Waterskin>1</DankPyon_Waterskin>
+		</products>
+		<modExtensions>
+			<li Class="MedievalOverhaul.RecipeExtension_WaterGather">
+				<thingDef>DankPyon_IceBlock</thingDef>
+				<productCount>1</productCount>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>DankPyon_Make_Water</defName>
+		<label>gather water</label>
+		<description>Gather water.</description>
+		<jobString>Gathering 1 waterskin.</jobString>
+		<workSkill>Crafting</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<workSkillLearnFactor>0</workSkillLearnFactor>
+		<workAmount>35</workAmount>
+		<recipeUsers>
+			<li>DankPyon_Well</li>
+			<li MayRequire="dubwise.dubsbadhygiene">EGG_AdvancedWell</li>
+		</recipeUsers>
+		<products>
+			<DankPyon_Waterskin>1</DankPyon_Waterskin>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>DankPyon_Make_WaterBulk</defName>
+		<label>gather water x5</label>
+		<description>Gather water x5.</description>
+		<jobString>Gathering 5 waterskins.</jobString>
+		<workSkill>Crafting</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<workSkillLearnFactor>0</workSkillLearnFactor>
+		<workAmount>175</workAmount>
+		<recipeUsers>
+			<li>DankPyon_Well</li>
+			<li MayRequire="dubwise.dubsbadhygiene">EGG_AdvancedWell</li>
+		</recipeUsers>
+		<products>
+			<DankPyon_Waterskin>5</DankPyon_Waterskin>
+		</products>
+	</RecipeDef>
+
+</Defs>

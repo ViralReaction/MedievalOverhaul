@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<GameConditionDef>
+		<defName>DankPyon_AlpEclipse</defName>
+		<conditionClass>MedievalOverhaul.GameCondition_AlpEclipse</conditionClass>
+		<label>darkening terror</label>
+		<description>An eclipse is shadowing the surface. It will be dark, even during the daytime.</description>
+		<endMessage>The eclipse is ending.</endMessage>
+		<letterText>One of the moons of this planet has orbited in front of the sun. An eclipse has begun.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<canBePermanent>false</canBePermanent>
+		<allowUnderground>false</allowUnderground>
+		<preventNeutralVisitors>true</preventNeutralVisitors>
+		<preventIncidents>true</preventIncidents>
+		<displayOnUI>false</displayOnUI> <!--  Displayed by weather instead -->
+		<natural>false</natural>
+		<silencedByConditions>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">UnnaturalDarkness</li>
+			<li>Eclipse</li>
+		</silencedByConditions>
+		<!-- <weatherDef>DankPyon_AlpEclipse_Weather</weatherDef> -->
+	</GameConditionDef>
+
+</Defs>

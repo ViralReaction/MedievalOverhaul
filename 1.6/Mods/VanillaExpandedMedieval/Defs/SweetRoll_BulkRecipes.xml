@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RecipeDef>
+		<defName>DankPyon_VFEV_Make_SweetrollBulk</defName>
+		<label>make sweetrolls x20</label>
+		<description>Make sweetrolls out of honey and eggs.</description>
+		<jobString>Making sweetrolls.</jobString>
+		<workAmount>900</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+			<li>DankPyon_StoneOvenLarge</li>
+		</recipeUsers>
+		<researchPrerequisites>
+			<li>DankPyon_Oven</li>
+		</researchPrerequisites>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>EggsUnfertilized</li>
+					</categories>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>DankPyon_Honey</li>
+					</categories>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+			<VFEM2_Sweetroll>20</VFEM2_Sweetroll>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>EggsUnfertilized</li>
+				<li>DankPyon_Honey</li>
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>Foods</li>
+			</categories>
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>DankPyon_VFEV_Make_SweetrollBulkier</defName>
+		<label>make sweetrolls x60</label>
+		<description>Make sweetrolls out of honey and eggs.</description>
+		<jobString>Making sweetrolls.</jobString>
+		<workAmount>2700</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+			<li>DankPyon_StoneOvenLarge</li>
+		</recipeUsers>
+		<researchPrerequisites>
+			<li>DankPyon_Oven</li>
+		</researchPrerequisites>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>EggsUnfertilized</li>
+					</categories>
+				</filter>
+				<count>24</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>DankPyon_Honey</li>
+					</categories>
+				</filter>
+				<count>24</count>
+			</li>
+		</ingredients>
+		<products>
+			<VFEM2_Sweetroll>60</VFEM2_Sweetroll>
+		</products>
+		<fixedIngredientFilter>
+			<categories>
+				<li>EggsUnfertilized</li>
+				<li>DankPyon_Honey</li>
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>Foods</li>
+			</categories>
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+ 
+</Defs>

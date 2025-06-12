@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef/recipes/li[.="DankPyon_MakeTanningLiquorFromMeat"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef/recipes/li[.="DankPyon_MakeTanningLiquorFromMeat"]</xpath>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef/recipes/li[.="DankPyon_MakeTanningLiquorFromMeat10X"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef/recipes/li[.="DankPyon_MakeTanningLiquorFromMeat10X"]</xpath>
+		</match>
+	</Operation>
+	
+</Patch>

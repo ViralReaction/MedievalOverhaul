@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--DesignatorDropdownGroupDef>
+    <defName>DankPyon_Barrels</defName>
+    <label>barrels</label>
+  </DesignatorDropdownGroupDef-->
+  
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Beverages</defName>
+		<label>beverages</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_ScribeTools</defName>
+		<label>scribe tools</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_ResearchTools</defName>
+		<label>research tools</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Sack</defName>
+		<label>sack</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Candles</defName>
+		<label>candles</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Candle</defName>
+		<label>candle</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_IngotStack1x1c</defName>
+		<label>ingot stack (1x1)</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_IngotStack1x2c</defName>
+		<label>ingot stack (1x2)</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_IngotStack2x2c</defName>
+		<label>ingot stack (2x2)</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Bale1x2c</defName>
+		<label>bale (1x2)</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Bale2x2c</defName>
+		<label>bale (2x2)</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Pile1x2c</defName>
+		<label>pile (1x2)</label>
+	</DesignatorDropdownGroupDef>
+
+
+	<!-- Floors -->
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Floor_RusticWoodFloor</defName>
+		<label>rustic wood floor</label>
+	</DesignatorDropdownGroupDef>
+
+	<!-- Stone Brick Floors -->
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Floor_Cobblestone</defName>
+		<label>cobblestone</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Floor_HerringboneTile</defName>
+		<label>DankPyon_Floor_HerringboneTile</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Floor_WindmillTile</defName>
+		<label>DankPyon_Floor_WindmillTile</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Floor_CobblestoneTile</defName>
+		<label>DankPyon_Floor_CobblestoneTile</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Floor_VersaillesTile</defName>
+		<label>DankPyon_Floor_VersaillesTile</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Floor_RuinedStoneTile</defName>
+		<label>ruined stone tile</label>
+	</DesignatorDropdownGroupDef>
+
+	<!-- Ceramic Floors -->
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Floor_Lys</defName>
+		<label>lys tiles</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Floor_DiamondLys</defName>
+		<label>diamond lys tiles</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Floor_CircleLys</defName>
+		<label>circle lys tiles</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>DankPyon_Floor_CheckeredLysStar</defName>
+		<label>checkered lys-star tiles</label>
+	</DesignatorDropdownGroupDef>
+</Defs>

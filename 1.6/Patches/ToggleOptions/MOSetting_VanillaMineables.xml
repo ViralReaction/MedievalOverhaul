@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>
+			<li>vanillaMine</li>
+		</settings>
+		<inactive Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "MineableComponentsIndustrial"  or defName = "MineableSteel"]/building/mineableScatterCommonality</xpath>
+					<value>
+						<mineableScatterCommonality>0</mineableScatterCommonality>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "Steel"]/label</xpath>
+					<value>
+						<label>steel ingot</label>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "Steel"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Resources/Steel</texPath>
+					</value>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Steel"]/stuffProps/stuffAdjective</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Steel"]/stuffProps/stuffAdjective</xpath>
+						<value>
+							<stuffAdjective>steel</stuffAdjective>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Steel"]/stuffProps</xpath>
+						<value>
+							<stuffAdjective>steel</stuffAdjective>
+						</value>
+					</nomatch>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "Silver"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Resources/Silver</texPath>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "MineableSilver"]/building/mineableThing</xpath>
+					<value>
+						<mineableThing>DankPyon_SilverOre</mineableThing>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "Gold"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Resources/Gold</texPath>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "MineableGold"]/building/mineableThing</xpath>
+					<value>
+						<mineableThing>DankPyon_GoldOre</mineableThing>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="MineablePlasteel"]/building/mineableThing</xpath>
+					<value>
+						<mineableThing>DankPyon_PlasteelOre</mineableThing>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Plasteel"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Resources/PlasteelIngot</texPath>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/QuestScriptDef[defName="LongRangeMineralScannerLump"]</xpath>
+					<value>
+						<li Class="MedievalOverhaul.QuestInformation">
+							<label>Minerals</label>
+							<WorkTillTrigger>380000</WorkTillTrigger>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables/li[text()="MineableSteel"]</xpath>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables/li[text()="MineableComponentsIndustrial"]</xpath>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables</xpath>
+					<value>
+						<li>DankPyon_MineableCoal</li>
+						<li>DankPyon_MineableSalt</li>
+						<li>DankPyon_MineableIron</li>
+						<li>DankPyon_MineableCitrine</li>
+						<li>DankPyon_MineableAmber</li>
+						<li>DankPyon_MineableOnyx</li>
+						<li>DankPyon_MineableEmerald</li>
+						<li>DankPyon_MineableSapphire</li>
+						<li>DankPyon_MineableRuby</li>
+					</value>
+				</li>
+
+			</operations>
+		</inactive>
+		<active Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/QuestScriptDef[defName="LongRangeMineralScannerLump"]</xpath>
+					<value>
+						<li Class="MedievalOverhaul.QuestInformation">
+							<label>Minerals</label>
+							<WorkTillTrigger>380000</WorkTillTrigger>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/GenStepDef[defName="PreciousLump"]/genStep/mineables</xpath>
+					<value>
+						<li>DankPyon_MineableCoal</li>
+						<li>DankPyon_MineableSalt</li>
+						<li>DankPyon_MineableIron</li>
+						<li>DankPyon_MineableCitrine</li>
+						<li>DankPyon_MineableAmber</li>
+						<li>DankPyon_MineableOnyx</li>
+						<li>DankPyon_MineableEmerald</li>
+						<li>DankPyon_MineableSapphire</li>
+						<li>DankPyon_MineableRuby</li>
+					</value>
+				</li>
+			</operations>
+		</active>
+	</Operation>
+</Patch>

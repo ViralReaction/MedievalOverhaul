@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Hood Base -->
+	<ThingDef Name="DankPyon_AnimalHoodBase" ParentName="HatMakeableBase" Abstract="True">
+		<recipeMaker>
+			<recipeUsers Inherit="False"/>
+			<unfinishedThingDef>DankPyon_UnfinishedHideArmor</unfinishedThingDef>
+		</recipeMaker>
+		<tradeTags Inherit="false">
+			<li>Taxidermy</li>
+		</tradeTags>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AnimalHoodBase" Name="DankPyon_WolfHoodBase">
+		<defName>DankPyon_Headgear_WolfTimber</defName>
+		<label>wolf hood (timber)</label>
+		<description>A warm robust coat sewn from a wolf's fur. Wearing the pelt displays owner's strength, as it is proof that they have slain a ferocious wolf to don the trophy.</description>
+		<graphicData>
+			<texPath>Headgear/HelmetWolf/HelmetWolf</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(107,103,99)</color>
+		</graphicData>
+		<costList>
+			<Leather_Wolf>30</Leather_Wolf> 
+		</costList>
+		<statBases>
+			<MarketValue>350</MarketValue>
+			<!-- <WorkToMake>14000</WorkToMake> -->
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>2</Mass>
+			<ArmorRating_Sharp>0.306</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+			<Insulation_Cold>12</Insulation_Cold>
+			<Insulation_Heat>6</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>DankPyon_Hood</li>
+			</layers>
+			<wornGraphicPath>Headgear/HelmetWolf/HelmetWolf</wornGraphicPath>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<drawData>
+				<dataNorth>
+					<layer>96</layer>
+				</dataNorth>
+			</drawData>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_WolfHoodBase">
+		<defName>DankPyon_Headgear_WolfArctic</defName>
+		<label>wolf hood (arctic)</label>
+		<graphicData>
+			<color>(249,243,222)</color>
+		</graphicData>
+		<costList Inherit="false">
+			<Leather_Wolf>30</Leather_Wolf> 
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_AnimalHoodBase" Name="DankPyon_BearHoodBase">
+		<defName>DankPyon_Headgear_BearGrizzly</defName>
+		<label>bear hood (grizzly)</label>
+		<description>A warm robust coat sewn from a bears's fur. Wearing the pelt displays owner's strength, as it is proof that they have slain a ferocious bear to don the trophy.</description>
+		<graphicData>
+			<texPath>Headgear/HelmetBear/HelmetBear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(112,82,65)</color>
+		</graphicData>
+		<costList>
+			<Leather_Bear>65</Leather_Bear>
+		</costList>
+		<statBases>
+			<MarketValue>550</MarketValue>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Mass>2</Mass>
+			<ArmorRating_Sharp>0.336</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+			<Insulation_Cold>22</Insulation_Cold>
+			<Insulation_Heat>9</Insulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>DankPyon_Hood</li>
+			</layers>
+			<wornGraphicPath>Headgear/HelmetBear/HelmetBear</wornGraphicPath>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<drawData>
+				<dataNorth>
+					<layer>96</layer>
+				</dataNorth>
+			</drawData>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_BearHoodBase">
+		<defName>DankPyon_Headgear_BearPolar</defName>
+		<label>bear hood (polar)</label>
+		<graphicData>
+			<color>(180,180,180)</color>
+		</graphicData>
+		<costList Inherit="false">
+			<Leather_Bear>65</Leather_Bear>
+		</costList>
+	</ThingDef>
+
+	<!-- Armor Attachment Base-->
+	<ThingDef ParentName="ArmorSmithableBase" Name="DankPyon_ArmorAttachmentBase" Abstract="True">
+		<statBases>
+			<ArmorRating_Sharp>0.0001</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.0001</ArmorRating_Blunt>
+		</statBases>
+		<apparel>
+			<drawData>
+				<dataNorth>
+					<layer>90</layer>
+				</dataNorth>
+				<dataEast>
+					<layer>70</layer>
+				</dataEast>
+				<dataSouth>
+					<layer>40</layer>
+				</dataSouth>
+				<dataWest>
+					<layer>70</layer>
+				</dataWest>
+			</drawData>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>DankPyon_ShellAttachment</li>
+			</layers>
+			<tags>
+				<li>DankPyon_Attachment</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers Inherit="False"/>
+		</recipeMaker>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<tradeTags Inherit="false">
+			<li>DankPyon_Taxidermy</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ArmorAttachmentBase">
+		<defName>DankPyon_Apparel_DirewolfPelt</defName>
+		<label>direwolf pelt</label>
+		<description>A warm robust coat sewn from a direwolf's fur. Wearing the pelt displays owner's strength, as it is proof that they have slain a ferocious wolf to don the trophy.</description>
+		<graphicData>
+			<texPath>Apparel/Attachments/DirewolfPelt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(85,79,74)</color>
+		</graphicData>
+		<costList>
+			<DankPyon_Leather_Direwolf>30</DankPyon_Leather_Direwolf>
+		</costList>
+		<statBases>
+			<MarketValue>450</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>4</Mass>
+			<EquipDelay>2</EquipDelay>
+			<Insulation_Cold>2</Insulation_Cold>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.10</PainShockThreshold>
+			<SocialImpact>0.10</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Apparel/Attachments/DirewolfPelt</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ArmorAttachmentBase">
+		<defName>DankPyon_Apparel_HyenaPelt</defName>
+		<label>hyena pelt</label>
+		<description>A warm robust coat sewn from a hyena's fur. Wearing the pelt displays owner's strength, as it is proof that they have slain a ferocious hyena to don the trophy. While intimidating the fearful, the pelt also grants strength and confidence in battle.</description>
+		<graphicData>
+			<texPath>Apparel/Attachments/HyenaPelt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<DankPyon_Leather_Hyena>30</DankPyon_Leather_Hyena>
+		</costList>
+		<statBases>
+			<MarketValue>450</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>4</Mass>
+			<EquipDelay>2</EquipDelay>
+			<Insulation_Cold>2</Insulation_Cold>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.10</PainShockThreshold>
+			<SocialImpact>0.10</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Apparel/Attachments/HyenaPelt</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="DankPyon_ArmorAttachmentBase">
+		<defName>DankPyon_Apparel_LindwurmCloak</defName>
+		<label>lindwurm scale cloak</label>
+		<description>A scaly robust cloak sewn from a lindwurm's scales. Wearing the cloak displays owner's strength, as it is proof that they have slain a dangerous lindwurm to don the trophy. \n\nGrants immunity to lindwurm acid.</description>
+		<graphicData>
+			<texPath>Apparel/Attachments/LindwurmScaleCloak</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<DankPyon_LindwurmScales>2</DankPyon_LindwurmScales>
+			<DankPyon_UnholdHide>1</DankPyon_UnholdHide>
+		</costList>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<Mass>4</Mass>
+			<EquipDelay>2</EquipDelay>
+			<WorkToMake>24000</WorkToMake>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.37</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.10</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Apparel/Attachments/LindwurmScaleCloak</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+		<comps>
+		  <li Class="CompProperties_CauseHediff_Apparel">
+			<hediff>DankPyon_LindwurmAcidImmune</hediff>
+			<part>Body</part>
+		  </li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ArmorAttachmentBase">
+		<defName>DankPyon_Apparel_FurCloak</defName>
+		<label>fur cloak</label>
+		<description>A warm robust coat sewn from a thick unhold fur. Wearing the pelt displays owner's strength, as it is proof that they have slain an unhold to don the trophy. While intimidating the fearful, the cloak also grants the ability to shrug staggering hits.</description>
+		<graphicData>
+			<texPath>Apparel/Attachments/FurCoat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<DankPyon_ThickUnholdFur>2</DankPyon_ThickUnholdFur>
+		</costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>19000</WorkToMake>
+			<Mass>4</Mass>
+			<EquipDelay>2</EquipDelay>
+			<Insulation_Cold>22</Insulation_Cold>
+			<Insulation_Heat>-4</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.20</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Apparel/Attachments/FurCoat</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+		<comps>
+		  <li Class="CompProperties_CauseHediff_Apparel">
+			<hediff>DankPyon_DazeImmune</hediff>
+			<part>Body</part>
+		  </li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ArmorAttachmentBase">
+		<defName>DankPyon_Apparel_BonePlating</defName>
+		<label>bone plating</label>
+		<description>Special plating that made from Unhold bones. WWhile intimidating the fearful, the cloak also grants the ability to shrug staggering hits</description>
+		<graphicData>
+			<texPath>Apparel/Attachments/BonePlate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<DankPyon_UnholdBones>3</DankPyon_UnholdBones>
+		</costList>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>4</Mass>
+			<EquipDelay>2</EquipDelay>
+			<WorkToMake>19000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Apparel/Attachments/BonePlate</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+		<comps>
+		  <li Class="CompProperties_CauseHediff_Apparel">
+			<hediff>DankPyon_DazeImmune</hediff>
+			<part>Body</part>
+		  </li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ArmorAttachmentBase">
+		<defName>DankPyon_Apparel_AdditionalFurPadding</defName>
+		<label>additional fur padding</label>
+		<description>Additional padding made from Unhold Fur and the hide of a Direwolf. Wearing the pelt displays owner's strength, as it is proof that they have slain an unhold to don the trophy. While intimidating the fearful, the additional padding cushions blows upon the wearer.</description>
+		<graphicData>
+			<texPath>Apparel/Attachments/FurPadding</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<DankPyon_ThickUnholdFur>1</DankPyon_ThickUnholdFur>
+			<DankPyon_Leather_Direwolf>65</DankPyon_Leather_Direwolf>
+		</costList>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>4</Mass>
+			<EquipDelay>2</EquipDelay>
+			<WorkToMake>19000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<IncomingDamageFactor>-0.25</IncomingDamageFactor>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Apparel/Attachments/FurPadding</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_ArmorAttachmentBase">
+		<defName>DankPyon_Apparel_RunesAndSigils</defName>
+		<label>runes and sigils</label>
+		<description>Enchanted clothing adorned with mystical runes and sigils, boosting the wearer's mental fortitude</description>
+		<graphicData>
+			<texPath>Apparel/Attachments/RunesAndSigils</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<DankPyon_ParchedSkin>2</DankPyon_ParchedSkin>
+		</costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>2</Mass>
+			<EquipDelay>1</EquipDelay>
+			<WorkToMake>16000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.20</PainShockThreshold>
+			<MentalBreakThreshold>-0.15</MentalBreakThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Apparel/Attachments/RunesAndSigils</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+		</apparel>
+		<comps>
+		  <li Class="CompProperties_CauseHediff_Apparel">
+			<hediff>DankPyon_SigilMood</hediff>
+			<part>Body</part>
+		  </li>
+		</comps>
+	</ThingDef>
+
+</Defs>

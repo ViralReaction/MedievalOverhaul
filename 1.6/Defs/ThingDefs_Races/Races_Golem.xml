@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BasePawn" Name="DankPyon_BaseGolem">
+		<defName>DankPyon_Golem_Iron</defName>
+		<label>Iron Golem</label>
+		<description>A golem made out of iron</description>
+		<statBases>
+			<MoveSpeed>3.2</MoveSpeed>
+			<ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+			<PsychicSensitivity>0.5</PsychicSensitivity>
+			<ToxicResistance>1</ToxicResistance>
+			<Flammability>0</Flammability>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ComfyTemperatureMax>250</ComfyTemperatureMax>
+			<MeatAmount>0</MeatAmount>
+		</statBases>
+		<tools>
+			<li>
+				<label>left hand</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>21</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>right hand</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>21</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<body>DankPyon_Golem</body>
+			<fleshType>Mechanoid</fleshType>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<baseBodySize>4</baseBodySize>
+			<baseHealthScale>6</baseHealthScale>
+			<needsRest>false</needsRest>
+			<hasGenders>false</hasGenders>
+			<foodType>None</foodType>
+			<lifeExpectancy>2500</lifeExpectancy>
+			<hediffGiverSets Inherit="False">
+				<li>DankPyon_NoPainHediffGiver</li>
+			</hediffGiverSets>
+			<bloodDef>Filth_RubbleBuilding</bloodDef>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>PickHit</soundWounded>
+					<soundDeath>Roof_Collapse</soundDeath>
+					<soundCall>Roof_Collapse</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitBuilding_Stone</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Stone</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_HitBuilding_Stone</soundMeleeMiss>
+		</race>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<butcherProducts>
+			<DankPyon_IronOre>110</DankPyon_IronOre>
+		</butcherProducts>
+		<receivesSignals>true</receivesSignals>
+		<comps>
+			<li Class="CompProperties_CanBeDormant" />
+			<li Class="CompProperties_WakeUpDormant">
+				<wakeUpOnDamage>true</wakeUpOnDamage>
+				<wakeUpCheckRadius>30</wakeUpCheckRadius>
+				<wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<PawnKindDef>
+		<defName>DankPyon_Golem_Iron</defName>
+		<label>Iron Golem</label>
+		<race>DankPyon_Golem_Iron</race>
+		<combatPower>500</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/GolemIron</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3.8</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
+		<aiAvoidCover>true</aiAvoidCover>
+		<destroyGearOnDrop>true</destroyGearOnDrop>
+	</PawnKindDef>
+
+	<!-- Gold Golem -->
+	<ThingDef ParentName="DankPyon_BaseGolem">
+		<defName>DankPyon_Golem_Gold</defName>
+		<label>Golden Golem</label>
+		<description>A golem made out of gold.</description>
+		<statBases>
+			<MoveSpeed>3.9</MoveSpeed>
+			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<PsychicSensitivity>0.75</PsychicSensitivity>
+		</statBases>
+		<tools>
+			<li>
+				<label>left hand</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>21</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>right hand</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>21</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitBuilding_Stone</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Stone</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_HitBuilding_Stone</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<DankPyon_GoldOre>50</DankPyon_GoldOre>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef>
+		<defName>DankPyon_Golem_Gold</defName>
+		<label>Golden Golem</label>
+		<race>DankPyon_Golem_Gold</race>
+		<combatPower>500</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/GolemGold</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3.8</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<!-- Steel Golem -->
+	<ThingDef ParentName="DankPyon_BaseGolem">
+		<defName>DankPyon_Golem_Steel</defName>
+		<label>Steel Golem</label>
+		<description>A golem made out of steel.</description>
+		<statBases>
+			<MoveSpeed>3.9</MoveSpeed>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+			<PsychicSensitivity>0.75</PsychicSensitivity>
+		</statBases>
+		<tools>
+			<li>
+				<label>left hand</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>21</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>right hand</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>21</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitBuilding_Stone</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Stone</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_HitBuilding_Stone</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef>
+		<defName>DankPyon_Golem_Steel</defName>
+		<label>Steel Golem</label>
+		<race>DankPyon_Golem_Steel</race>
+		<combatPower>500</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/GolemSteel</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3.8</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="DankPyon_BaseGolem">
+		<defName>DankPyon_Golem_Silver</defName>
+		<label>Silver Golem</label>
+		<description>A golem made out of silver</description>
+		<statBases>
+			<MoveSpeed>3.9</MoveSpeed>
+			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<PsychicSensitivity>0.75</PsychicSensitivity>
+		</statBases>
+		<tools>
+			<li>
+				<label>left hand</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>21</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>right hand</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>21</power>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitBuilding_Stone</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Stone</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_HitBuilding_Stone</soundMeleeMiss>
+		</race>
+		<butcherProducts>
+			<DankPyon_SilverOre>50</DankPyon_SilverOre>
+		</butcherProducts>
+	</ThingDef>
+
+	<PawnKindDef>
+		<defName>DankPyon_Golem_Silver</defName>
+		<label>Silver Golem</label>
+		<race>DankPyon_Golem_Silver</race>
+		<combatPower>500</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Animal/GolemSilver</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3.8</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

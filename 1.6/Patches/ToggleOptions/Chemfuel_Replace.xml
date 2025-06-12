@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>
+			<li>chemfuel_replace</li>
+		</settings>
+		<active Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef/costList/Chemfuel</xpath>
+					<match Class="PatchOperationSetName">
+						<xpath>Defs/ThingDef/costList/Chemfuel</xpath>
+						<name>DankPyon_Tar</name>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef/li/filter/thingDefs/li[.="Chemfuel"]</xpath>
+					<match Class="PatchOperationReplace">
+						<value>
+							<li>DankPyon_Tar</li>
+						</value>
+					</match>
+				</li>
+
+			</operations>
+		</active>
+	</Operation>
+
+</Patch>

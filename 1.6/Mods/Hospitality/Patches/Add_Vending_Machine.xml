@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="MedievalOverhaul.PatchOperation_ToggleSettings">
+		<settings>
+			<li>slopDispenser</li>
+		</settings>
+		<active Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Hospitality.HospitalityConfigDef[defName="MainConfig"]/vendingMachines</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/Hospitality.HospitalityConfigDef[defName="MainConfig"]/vendingMachines</xpath>
+						<value>
+							<li>DankPyon_SlopPot</li>
+							<li>DankPyon_SlopPot_Stew</li>
+							<li>DankPyon_SlopPot_Fondue</li>
+						</value>
+					</match>
+				</li>
+
+			</operations>
+		</active>
+	</Operation>
+
+</Patch>
