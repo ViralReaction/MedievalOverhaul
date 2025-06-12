@@ -89,11 +89,11 @@ namespace MedievalOverhaul
         public static ThingDef DankPyon_WaterMill;
 
         public static DamageDef DankPyon_AlpNightmare;
-        public static GameConditionDef DankPyon_AlpEclipse;
-        public static PawnGroupKindDef DankPyon_AlpGroup;
-        public static TaleDef DankPyon_AlpEclipseTale;
-        public static WeatherDef DankPyon_AlpEclipse_Weather;
-        public static ThoughtDef DankPyon_AlpRaidFinished;
+       // public static GameConditionDef DankPyon_AlpEclipse;
+       // public static PawnGroupKindDef DankPyon_AlpGroup;
+       // public static TaleDef DankPyon_AlpEclipseTale;
+       // public static WeatherDef DankPyon_AlpEclipse_Weather;
+       // public static ThoughtDef DankPyon_AlpRaidFinished;
         public static StatDef RestFallRateFactor;
         public static TerrainAffordanceDef GrowSoil;
 

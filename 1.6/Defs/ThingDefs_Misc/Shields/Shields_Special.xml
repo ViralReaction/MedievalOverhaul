@@ -29,7 +29,7 @@
 				<ticksPerHeal>2000</ticksPerHeal><!-- 30 hp per day, must be a multiple of 2000, since plants have Long ticker -->
 			</li>
 			<!--li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/-->
-			<li Class="VFECore.CompProperties_Shield">
+			<li Class="VEF.Apparels.CompProperties_Shield">
 				<shieldTags>
 					<li>DankPyon_ShieldSchrat</li>
 				</shieldTags>
@@ -104,7 +104,7 @@
 				<part>Body</part>
 			</li>
 			<!--li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/-->
-			<li Class="VFECore.CompProperties_Shield">
+			<li Class="VEF.Apparels.CompProperties_Shield">
 				<shieldTags>
 					<li>DankPyon_ShieldSchrat</li>
 				</shieldTags>

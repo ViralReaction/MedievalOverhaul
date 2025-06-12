@@ -172,7 +172,7 @@
 	<DamageDef>
 		<defName>DankPyon_Swallow</defName>
 		<label>swallow whole</label>
-		<workerClass>AnimalBehaviours.DamageWorker_SwallowWhole</workerClass>
+		<workerClass>VEF.AnimalBehaviours.DamageWorker_SwallowWhole</workerClass>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been bitten to death.</deathMessage>
 		<hediff>Stab</hediff>

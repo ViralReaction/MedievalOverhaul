@@ -14,6 +14,7 @@
 			<FilthRate>24</FilthRate>
 			<PsychicSensitivity>0</PsychicSensitivity>
 			<CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<uiIconScale>1.75</uiIconScale>
 		<comps>
@@ -23,7 +24,6 @@
 				<woolAmount>160</woolAmount>
 			</li>
 		</comps>
-
 		<tools>
 			<li>
 				<label>horn</label>
@@ -86,7 +86,6 @@
 			<baseHealthScale>4.0</baseHealthScale>
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
 			<leatherDef>DankPyon_Leather_Rox</leatherDef>
-			<wildness>0.75</wildness>
 			<trainability>Advanced</trainability>
 			<gestationPeriodDays>14</gestationPeriodDays>
 			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>

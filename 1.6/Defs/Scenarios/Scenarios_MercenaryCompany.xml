@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ScenarioDef>
+	<ScenarioDef ParentName="ScenarioBase">
 		<defName>DankPyon_MercenaryStart</defName>
 		<label>Battle Brothers</label>
 		<description>Your lord, to whom you and your comrades remained forever loyal as long as there is money, fell at a concise battle. Free of your oath, your band of mercenaries departed to neighboring towns and cities in search of opportunity for silver and reputation but were disappointed to find peace-laden settlements, full of bounties fit for a daytaler. Eager to begin anew, you and your comrades settle land in the wilderness in hopes to one day grow wealth and return to former glory.</description>
@@ -22,7 +22,7 @@
 				</li>
 
 				<!-- Player starting stuff spawn method-->
-				<li Class="VFECore.ScenPart_ArriveAtEdge">
+				<li Class="VEF.Planet.ScenPart_ArriveAtEdge">
 					<def>VFEC_PlayerPawnsArriveMethodEdge</def>
 					<location>(48, 0, 0)</location>
 				</li>

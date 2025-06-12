@@ -2,6 +2,18 @@
 <Defs>
 
 	<!-- Large Cobra -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>DankPyon_Cobra_EggUnfertilized</defName>
+		<label>giant cobra egg (unfert.)</label>
+		<description>An unfertilized cobra egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+	</ThingDef>
+
 	<ThingDef ParentName="EggFertBase">
 		<defName>DankPyon_EggLargeForestCobraFertilized</defName>
 		<label>large forest cobra egg (fert.)</label>
@@ -41,6 +53,18 @@
 	</ThingDef>
 
 	<!-- Giant Constrictor -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>DankPyon_Constrictor_EggUnfertilized</defName>
+		<label>giant constrictor egg (unfert.)</label>
+		<description>An unfertilized giant constrictor egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+	</ThingDef>
+
 	<ThingDef ParentName="EggFertBase">
 		<defName>DankPyon_EggConstrictorForestFertilized</defName>
 		<label>giant forest constrictor egg (fert.)</label>
@@ -80,6 +104,18 @@
 	</ThingDef>
 
 	<!-- Lindwurm -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>DankPyon_Lindwurm_EggUnfertilized</defName>
+		<label>giant lindwurm egg (unfert.)</label>
+		<description>An unfertilized lindwurm egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
 	<ThingDef ParentName="EggFertBase">
 		<defName>DankPyon_EggLindwurmForestFertilized</defName>
 		<label>giant forest lindwurm egg (fert.)</label>
@@ -119,6 +155,18 @@
 	</ThingDef>
 	
 	<!-- Webknecht -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>DankPyon_Webknecht_EggUnfertilized</defName>
+		<label>webknecht egg (unfert.)</label>
+		<description>An unfertilized webknecht egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+	</ThingDef>
+
 	<ThingDef ParentName="EggFertBase">
 		<defName>DankPyon_Webknecht_EggFertilized</defName>
 		<label>webknecht egg (fert.)</label>
@@ -138,6 +186,18 @@
 	</ThingDef>
 	
 	<!-- Griffon -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>DankPyon_Griffon_EggUnfertilized</defName>
+		<label>griffon egg (unfert.)</label>
+		<description>An unfertilized griffon egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(245,245,245)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+	</ThingDef>
+
 	<ThingDef ParentName="EggFertBase">
 		<defName>DankPyon_Griffon_EggFertilized</defName>
 		<label>griffon egg (fert.)</label>

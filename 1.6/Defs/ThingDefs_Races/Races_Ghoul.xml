@@ -11,6 +11,7 @@
 			<ComfyTemperatureMin>-14</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<MeatAmount>0</MeatAmount>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -95,7 +96,6 @@
 			<baseHealthScale>1.5</baseHealthScale>
 			<foodType>CarnivoreAnimalStrict, Corpse</foodType>
 			<leatherDef>Leather_Human</leatherDef>
-			<wildness>0.60</wildness>
 			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<gestationPeriodDays>26</gestationPeriodDays>
@@ -167,6 +167,7 @@
 			<ComfyTemperatureMin>-14</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<MeatAmount>0</MeatAmount>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -252,7 +253,6 @@
 			<foodType>CarnivoreAnimalStrict, Corpse</foodType>
 			<leatherDef>Leather_Human</leatherDef>
 			<useMeatFrom>DankPyon_Ghoul_Stage_One</useMeatFrom>
-			<wildness>0.60</wildness>
 			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<gestationPeriodDays>26</gestationPeriodDays>
@@ -324,6 +324,7 @@
 			<ComfyTemperatureMin>-14</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<MeatAmount>0</MeatAmount>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -399,7 +400,7 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_SwallowWhole">
+			<li Class="VEF.AnimalBehaviours.CompProperties_SwallowWhole">
 				<stomachCapacity>1</stomachCapacity>
 				<maximumBodysize>1.2</maximumBodysize>
 				<digestionPeriod>240</digestionPeriod>
@@ -422,7 +423,6 @@
 			<foodType>CarnivoreAnimalStrict, Corpse</foodType>
 			<leatherDef>Leather_Human</leatherDef>
 			<useMeatFrom>DankPyon_Ghoul_Stage_One</useMeatFrom>
-			<wildness>0.60</wildness>
 			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<gestationPeriodDays>26</gestationPeriodDays>

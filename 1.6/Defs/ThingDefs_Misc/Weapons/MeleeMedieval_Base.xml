@@ -6,7 +6,7 @@
 
 	<ThingDef Name="DankPyon_Base_Blunt_NormalSize" Abstract="True" ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(-0.15,0.0,0.10)</drawOffset> <!--0.30,0,0.40-->
@@ -37,7 +37,7 @@
 
 	<ThingDef Name="DankPyon_Base_Blunt_Oversize" Abstract="True" ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(0.25,0,0.25)</drawOffset>
@@ -66,7 +66,7 @@
 
 	<ThingDef Name="DankPyon_Base_SharpSpear_NormalSize" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(0.34,0,0.30)</drawOffset>
@@ -99,7 +99,7 @@
 			<VEF_MeleeWeaponRange>2.84</VEF_MeleeWeaponRange>
 		</statBases>
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(0.34,0,0.60)</drawOffset>
@@ -128,7 +128,7 @@
 
 	<ThingDef Name="DankPyon_Base_SharpAxe_NormalSize" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(-0.15,0.0,0.10)</drawOffset> <!--0.30,0,0.40-->
@@ -158,7 +158,7 @@
 
 	<ThingDef Name="DankPyon_Base_SharpAxe_Oversize" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(-0.20,0.0,0.20)</drawOffset> <!--0.30,0,0.40-->
@@ -187,7 +187,7 @@
 
 	<ThingDef Name="DankPyon_Base_SharpSword_NormalSize" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(-0.15,0.0,0.10)</drawOffset> <!--0.30,0,0.40-->
@@ -217,7 +217,7 @@
 
 	<ThingDef Name="DankPyon_Base_SharpSword_Oversize" Abstract="True" ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(-0.20,0.0,0.20)</drawOffset> <!--0.30,0,0.40-->

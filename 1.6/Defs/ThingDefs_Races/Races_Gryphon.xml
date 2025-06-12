@@ -16,6 +16,7 @@
 			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.30</ArmorRating_Heat>
+			<Wildness>0.90</Wildness>
 		</statBases>
 		<uiIconScale>1.1</uiIconScale>
 		<race>
@@ -28,7 +29,6 @@
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>DankPyon_Leather_Griffon</leatherDef>
 			<!-- <gestationPeriodDays>6.66</gestationPeriodDays> -->
-			<wildness>0.90</wildness>
 			<predator>true</predator>
 			<petness>0.6</petness>
 			<trainability>Advanced</trainability>
@@ -64,6 +64,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>DankPyon_Griffon_EggFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>DankPyon_Griffon_EggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>10.0</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>

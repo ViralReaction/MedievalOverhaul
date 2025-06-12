@@ -9,6 +9,7 @@
 			<MoveSpeed>5.2</MoveSpeed>
 			<ComfyTemperatureMin>10</ComfyTemperatureMin>
 			<MarketValue>475</MarketValue>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -81,6 +82,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>DankPyon_Webknecht_EggFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>DankPyon_Webknecht_EggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>20</eggLayIntervalDays>
 				<eggCountRange>
@@ -88,7 +90,7 @@
 					<max>8</max>
 				</eggCountRange>
 			</li>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+			<li Class="VEF.AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>DankPyon_Gossamer</resourceDef>
 				<gatheringIntervalDays>7</gatheringIntervalDays>
 				<resourceAmount>1</resourceAmount>
@@ -107,7 +109,6 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
             <useMeatFrom>Megaspider</useMeatFrom>
 			<foodType>CarnivoreAnimal, AnimalProduct</foodType>
-			<wildness>0.99</wildness>
 			<trainability>None</trainability>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>

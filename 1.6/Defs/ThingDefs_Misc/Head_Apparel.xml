@@ -565,7 +565,7 @@ X
 			</layers>
 		</apparel>
 		<comps>
-			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel">
+			<li Class="VEF.Apparels.CompProperties_SwitchApparel">
 				<SwitchTo>DankPyon_Headgear_ChainCoifClosed</SwitchTo>
 			</li>
 		</comps>
@@ -607,7 +607,7 @@ X
 			</layers>
 		</apparel>
 		<comps>
-			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel">
+			<li Class="VEF.Apparels.CompProperties_SwitchApparel">
 				<SwitchTo>DankPyon_Headgear_ChainCoif</SwitchTo>
 			</li>
 		</comps>
@@ -830,7 +830,7 @@ X
 			</layers>
 		</apparel>
 		<comps>
-			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel">
+			<li Class="VEF.Apparels.CompProperties_SwitchApparel">
 				<SwitchTo>DankPyon_Headgear_ClosedChain_FlatTopHelmet</SwitchTo>
 			</li>
 		</comps>
@@ -873,7 +873,7 @@ X
 			</layers>
 		</apparel>
 		<comps>
-			<li Class="VanillaApparelExpanded.CompProperties_SwitchApparel">
+			<li Class="VEF.Apparels.CompProperties_SwitchApparel">
 				<SwitchTo>DankPyon_Headgear_Chain_FlatTopHelmet</SwitchTo>
 			</li>
 		</comps>

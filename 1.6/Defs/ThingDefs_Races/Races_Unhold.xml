@@ -14,6 +14,7 @@
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
 			<ArmorRating_Blunt>0.48</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+			<Wildness>1</Wildness>
 		</statBases>
 		<uiIconScale>1.75</uiIconScale>
 		<race>
@@ -36,7 +37,6 @@
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>None</trainability>
-			<wildness>1</wildness>
 			<manhunterOnTameFailChance>1.0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
 			<litterSizeCurve>
@@ -205,13 +205,13 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_Regeneration">
+			<li Class="VEF.AnimalBehaviours.CompProperties_Regeneration">
 				<rateInTicks>60</rateInTicks>
 			</li>
-			<li Class="AnimalBehaviours.CompProperties_LastStand">
+			<li Class="VEF.AnimalBehaviours.CompProperties_LastStand">
 				<finalCoolDownMultiplier>3</finalCoolDownMultiplier>
 			</li>
-			<li Class="AnimalBehaviours.CompProperties_Untameable">
+			<li Class="VEF.AnimalBehaviours.CompProperties_Untameable">
 				<factionToReturnTo>DankPyon_Forest_Faction</factionToReturnTo>			
 			</li>
 		</comps>

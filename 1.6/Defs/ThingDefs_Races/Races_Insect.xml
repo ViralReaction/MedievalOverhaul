@@ -11,6 +11,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<MarketValue>150</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
+			<Wildness>0.2</Wildness>
 		</statBases>
 		<uiIconScale>2</uiIconScale>
 		<tools>
@@ -42,7 +43,6 @@
 			<baseHealthScale>0.6</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<lifeExpectancy>10</lifeExpectancy>
-			<wildness>0.2</wildness>
 			<trainability>Intermediate</trainability>
 			<lifeStageAges>
 				<li>
@@ -78,7 +78,7 @@
 			<li>AnimalInsect</li>
 		</tradeTags>
 		<!--comps>
-			<li Class="AnimalBehaviours.CompProperties_AutoNutrition">
+			<li Class="VEF.AnimalBehaviours.CompProperties_AutoNutrition">
 				<tickInterval>2000</tickInterval>
 				<consumingFoodReportString>Eating hornet honey</consumingFoodReportString>		
 			</li>

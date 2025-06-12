@@ -11,6 +11,7 @@
 			<MarketValue>350</MarketValue>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<uiIconScale>1.5</uiIconScale>
 		<tools>
@@ -46,6 +47,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>DankPyon_EggLargeForestCobraFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>DankPyon_Cobra_EggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>10</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -62,7 +64,6 @@
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>Leather_Rhinoceros</leatherDef><!-- Rhino is turned into heavy scale leather -->
 			<useMeatFrom>Cobra</useMeatFrom>
-			<wildness>0.75</wildness>
 			<petness>0.05</petness>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
@@ -150,6 +151,7 @@
 		<comps Inherit="False">
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>DankPyon_EggLargeCobraCaveFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>DankPyon_Cobra_EggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>10</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -217,6 +219,7 @@
 			<MarketValue>3000</MarketValue>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<Wildness>0.95</Wildness>
 		</statBases>
 		<uiIconScale>1.6</uiIconScale>
 		<tools>
@@ -243,6 +246,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>DankPyon_EggConstrictorForestFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>DankPyon_Constrictor_EggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>40</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -259,7 +263,6 @@
 			<baseHealthScale>6.5</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<meatLabel>constrictor meat</meatLabel>
-			<wildness>0.95</wildness>
 			<petness>0.05</petness>
 			<manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
@@ -340,6 +343,7 @@
 		<comps Inherit="False">
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>DankPyon_EggConstrictorCaveFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>DankPyon_Constrictor_EggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>40</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -413,6 +417,7 @@
 			<ArmorRating_Sharp>0.67</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.44</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.62</ArmorRating_Heat>
+			<Wildness>0.999</Wildness>
 		</statBases>
 		<uiIconScale>1.6</uiIconScale>
 		<tools>
@@ -499,6 +504,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>DankPyon_EggLindwurmForestFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>DankPyon_Lindwurm_EggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>60</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -515,7 +521,6 @@
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>DankPyon_Leather_Lindwurm</leatherDef>
 			<meatLabel>lindwurm meat</meatLabel>
-			<wildness>0.999</wildness>
 			<petness>0.005</petness>
 			<manhunterOnTameFailChance>0.80</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
@@ -633,6 +638,7 @@
 		<comps Inherit="False">
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>DankPyon_EggLindwurmCaveFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>DankPyon_Lindwurm_EggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>60</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>

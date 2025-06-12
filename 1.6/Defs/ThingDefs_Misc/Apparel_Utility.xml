@@ -88,7 +88,7 @@
 			</wornGraphicData>
 		</apparel>
 		<modExtensions>
-			<li Class="VFECore.Misc.EquipmentOffsetConditions">
+			<li Class="VEF.Planet.EquipmentOffsetConditions">
 				<techLevels>
 					<li>Neolithic</li>
 					<li>Medieval</li>
@@ -218,7 +218,7 @@
 			</tags>
 		</apparel>
 		<modExtensions>
-			<li Class="VFECore.Misc.EquipmentOffsetConditions">
+			<li Class="VEF.Planet.EquipmentOffsetConditions">
 				<techLevels>
 					<li>Neolithic</li>
 					<li>Medieval</li>
@@ -348,7 +348,7 @@
 			</tags>
 		</apparel>
 		<modExtensions>
-			<li Class="VFECore.Misc.EquipmentOffsetConditions">
+			<li Class="VEF.Planet.EquipmentOffsetConditions">
 				<techLevels>
 					<li>Neolithic</li>
 					<li>Medieval</li>
@@ -478,7 +478,7 @@
 			</tags>
 		</apparel>
 		<modExtensions>
-			<li Class="VFECore.Misc.EquipmentOffsetConditions">
+			<li Class="VEF.Planet.EquipmentOffsetConditions">
 				<techLevels>
 					<li>Neolithic</li>
 					<li>Medieval</li>
@@ -612,7 +612,7 @@
 			</tags>
 		</apparel>
 		<modExtensions>
-			<li Class="VFECore.Misc.EquipmentOffsetConditions">
+			<li Class="VEF.Planet.EquipmentOffsetConditions">
 				<techLevels>
 					<li>Neolithic</li>
 					<li>Medieval</li>

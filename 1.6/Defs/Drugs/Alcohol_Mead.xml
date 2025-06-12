@@ -62,10 +62,10 @@
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
-			<li Class="VFECore.CompProperties_IngestedThoughtFromQuality">
+			<li Class="VEF.Cooking.CompProperties_IngestedThoughtFromQuality">
 				<ingestedThought>DankPyon_DrankWine</ingestedThought>
 			</li>
-			<li MayRequire="vanillaexpanded.vcooke" Class="VanillaCookingExpanded.CompProperties_StackByQuality"/>
+			<li MayRequire="vanillaexpanded.vcooke" Class="VEF.Cooking.CompProperties_StackByQuality"/>
 		</comps>
 		<techLevel>Neolithic</techLevel>
 		<researchPrerequisites>

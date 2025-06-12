@@ -11,7 +11,7 @@
 			<!--MeleeHitChance>-2</MeleeHitChance-->
 			<MeleeDodgeChance>-5</MeleeDodgeChance>
 		</equippedStatOffsets>
-		<thingClass>VFECore.Apparel_Shield</thingClass>
+		<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
 		<apparel>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -57,7 +57,7 @@
 			<researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
 		</recipeMaker>
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<useFactionColourForPawnKinds>
 
 				</useFactionColourForPawnKinds>
@@ -91,7 +91,7 @@
 		</statBases>
 		<comps>
 			<!--li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/-->
-			<li Class="VFECore.CompProperties_Shield">
+			<li Class="VEF.Apparels.CompProperties_Shield">
 				<shieldTags>
 					<li>DankPyon_RoundShield</li>
 				</shieldTags>
@@ -163,7 +163,7 @@
 		</statBases>
 		<comps>
 			<!--li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/-->
-			<li Class="VFECore.CompProperties_Shield">
+			<li Class="VEF.Apparels.CompProperties_Shield">
 				<shieldTags>
 					<li>DankPyon_ShieldKite</li>
 				</shieldTags>
@@ -226,7 +226,7 @@
 		</statBases>
 		<comps>
 			<!--li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/-->
-			<li Class="VFECore.CompProperties_Shield">
+			<li Class="VEF.Apparels.CompProperties_Shield">
 				<shieldTags>
 					<li>DankPyon_ShieldHeater</li>
 				</shieldTags>
@@ -297,7 +297,7 @@
 		</graphicData>
 		<comps>
 			<!--li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/-->
-			<li Class="VFECore.CompProperties_Shield">
+			<li Class="VEF.Apparels.CompProperties_Shield">
 				<shieldTags Inherit="False">
 					<li>DankPyon_ShieldHeater_Amboise</li>
 				</shieldTags>
@@ -345,7 +345,7 @@
 		</graphicData>
 		<comps>
 			<!--li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/-->
-			<li Class="VFECore.CompProperties_Shield">
+			<li Class="VEF.Apparels.CompProperties_Shield">
 				<shieldTags Inherit="False">
 					<li>DankPyon_ShieldHeater_Soren</li>
 				</shieldTags>
@@ -393,7 +393,7 @@
 		</graphicData>
 		<comps>
 			<!--li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/-->
-			<li Class="VFECore.CompProperties_Shield">
+			<li Class="VEF.Apparels.CompProperties_Shield">
 				<shieldTags Inherit="False">
 					<li>DankPyon_ShieldHeater_Oswin</li>
 				</shieldTags>
@@ -441,7 +441,7 @@
 		</graphicData>
 		<comps>
 			<!--li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/-->
-			<li Class="VFECore.CompProperties_Shield">
+			<li Class="VEF.Apparels.CompProperties_Shield">
 				<shieldTags Inherit="False">
 					<li>DankPyon_ShieldHeater_Hesse</li>
 				</shieldTags>

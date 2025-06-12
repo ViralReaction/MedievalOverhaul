@@ -40,12 +40,9 @@
 		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<castEdgeShadows>false</castEdgeShadows>
 		<surfaceType>Item</surfaceType>
+		<building>
+			<alwaysDeconstructible>true</alwaysDeconstructible>
+		</building>
 	</ThingDef>
-
-	<building>
-		<alwaysDeconstructible>true</alwaysDeconstructible>
-	</building>
-
-  
 
 </Defs>

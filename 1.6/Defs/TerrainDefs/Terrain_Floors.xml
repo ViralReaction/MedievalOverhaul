@@ -47,7 +47,7 @@
 			<li>MedievalOverhaul.PlaceWorker_PlowSoil</li>
 		</placeWorkers>
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<constructionSkillRequirement>
 					<workType>Growing</workType>
 					<skill>Plants</skill>

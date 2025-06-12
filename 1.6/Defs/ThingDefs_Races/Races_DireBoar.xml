@@ -13,6 +13,7 @@
 			<FilthRate>24</FilthRate>
 			<PsychicSensitivity>0</PsychicSensitivity>
 			<CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
+			<Wildness>0.80</Wildness>
 		</statBases>
 		<uiIconScale>1.75</uiIconScale>
 		<tools>
@@ -86,7 +87,6 @@
 			<baseHealthScale>2.5</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>DankPyon_Leather_DireBoar</leatherDef>
-			<wildness>0.80</wildness>
 			<trainability>Advanced</trainability>
 			<useMeatFrom>Pig</useMeatFrom>
 			<gestationPeriodDays>10</gestationPeriodDays>

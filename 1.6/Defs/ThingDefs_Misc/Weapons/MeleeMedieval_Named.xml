@@ -83,7 +83,7 @@
 			<drawSize>(1.25,1.25)</drawSize>
 		</graphicData>
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(-0.20,0.0,0.20)</drawOffset> <!--0.30,0,0.40-->
@@ -174,7 +174,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(0.25,0,0.25)</drawOffset>
@@ -248,7 +248,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(-0.20,0.0,0.20)</drawOffset> <!--0.30,0,0.40-->
@@ -320,7 +320,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(0.25,0,0.25)</drawOffset>
@@ -403,7 +403,7 @@
 			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(0.34,0,0.60)</drawOffset>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ScenarioDef>
+	<ScenarioDef ParentName="ScenarioBase">
 		<defName>DankPyon_LoneWolfStart</defName>
 		<label>Lone Wolf</label>
 		<description>One year’s service—that was the deal.\nThe lord whom I followed attempted many times to keep my sword by his side, but a deal is a deal and after one year, I swore no further oaths.\nAs I traverse the wooded hills, I wonder to myself whether the decision was correct.\n\nI may have hoarded wealth, but bandits roam the countryside, and should my campfire not betray me, hungry beasts and monsters hidden in the dark eye me all the same.\nI often wonder if I should have allowed my lord to wield me as his sword again, but I also know that in doing so, I would forgo my freedom.\n\nSo, after retrieving my silver, I march with no end in sight.\nPerhaps I will be so lucky as to find a homestead, build a hall, and gather my own household warriors.\nBut the long-term goal seemed so far away, as I must focus on my foremost problems.\n\nFirst, I must survive.</description>

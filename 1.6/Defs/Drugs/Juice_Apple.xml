@@ -101,7 +101,7 @@
 			<li>
 				<compClass>CompEquippable</compClass>
 			</li>
-			<li Class="VanillaCookingExpanded.CompProperties_MaturingAlcohol">
+			<li Class="VEF.Cooking.CompProperties_MaturingAlcohol">
 				<daysToRotStart>5</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 				<maturingString>DankPyon_JuiceAppleMaturing</maturingString>

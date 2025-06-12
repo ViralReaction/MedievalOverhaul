@@ -17,6 +17,7 @@
 			<FilthRate>24</FilthRate>
 			<PsychicSensitivity>0</PsychicSensitivity>
 			<CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<uiIconScale>1.75</uiIconScale>
 		<tools>
@@ -93,7 +94,6 @@
 			<baseHealthScale>9.0</baseHealthScale>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>DankPyon_Leather_Daer</leatherDef>
-			<wildness>0.99</wildness>
 			<trainability>Advanced</trainability>
 			<gestationPeriodDays>15</gestationPeriodDays>
 			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>

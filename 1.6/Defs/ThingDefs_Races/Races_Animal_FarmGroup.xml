@@ -11,6 +11,7 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<MarketValue>250</MarketValue>
 			<FilthRate>16</FilthRate>
+			<Wildness>0</Wildness>
 		</statBases>
 		<race>
 			<body>QuadrupedAnimalWithHooves</body>
@@ -19,7 +20,6 @@
 			<baseHungerRate>0.50</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>Leather_Pig</leatherDef>
-			<wildness>0</wildness>
 			<roamMtbDays>3</roamMtbDays>
 			<trainability>None</trainability>
 			<useMeatFrom>Pig</useMeatFrom>
@@ -170,6 +170,7 @@
 			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
 			<MarketValue>250</MarketValue>
 			<FilthRate>16</FilthRate>
+						<Wildness>0</Wildness>
 		</statBases>
 		<race>
 			<body>QuadrupedAnimalWithHooves</body>
@@ -178,7 +179,6 @@
 			<baseHungerRate>0.40</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>Leather_Pig</leatherDef>
-			<wildness>0</wildness>
 			<roamMtbDays>3</roamMtbDays>
 			<trainability>None</trainability>
 			<useMeatFrom>Pig</useMeatFrom>
@@ -329,6 +329,7 @@
 			<MarketValue>300</MarketValue>
 			<ComfyTemperatureMin>-23</ComfyTemperatureMin>
 			<FilthRate>16</FilthRate>
+			<Wildness>0.50</Wildness>
 		</statBases>
 		<uiIconScale>2.25</uiIconScale>
 		<tools>
@@ -371,7 +372,6 @@
 			<baseHungerRate>0.30</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>Leather_Pig</leatherDef>
-			<wildness>0.50</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<trainability>None</trainability>
 			<useMeatFrom>Pig</useMeatFrom>
@@ -506,6 +506,7 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<MarketValue>350</MarketValue>
 			<FilthRate>16</FilthRate>
+			<Wildness>0</Wildness>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Milkable">
@@ -522,7 +523,6 @@
 			<baseHealthScale>1.5</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>Leather_Plain</leatherDef>
-			<wildness>0</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<trainability>None</trainability>
 			<useMeatFrom>Cow</useMeatFrom>
@@ -701,6 +701,7 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<MarketValue>400</MarketValue>
 			<FilthRate>16</FilthRate>
+			<Wildness>0</Wildness>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Milkable">
@@ -716,8 +717,7 @@
 			<baseHungerRate>0.535</baseHungerRate>
 			<baseHealthScale>1.5</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<leatherDef>Leather_Plain</leatherDef>
-			<wildness>0</wildness>
+			<leatherDef>Leather_Plain</leatherDef>	
 			<roamMtbDays>2</roamMtbDays>
 			<trainability>None</trainability>
 			<useMeatFrom>Cow</useMeatFrom>

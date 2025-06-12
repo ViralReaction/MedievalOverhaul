@@ -10,6 +10,7 @@
 			<MarketValue>360</MarketValue>
 			<ComfyTemperatureMin>-14</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<Wildness>0.60</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -85,7 +86,6 @@
 			<baseHealthScale>1.5</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>DankPyon_Leather_Hyena</leatherDef>
-			<wildness>0.60</wildness>
 			<manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
 			<gestationPeriodDays>26</gestationPeriodDays>

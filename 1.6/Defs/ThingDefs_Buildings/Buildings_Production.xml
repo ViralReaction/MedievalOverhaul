@@ -978,7 +978,7 @@
 		</researchPrerequisites>
 		
 		<modExtensions>
-			<li Class="RecipeInheritance.ThingDefExtension">
+			<li Class="VEF.Buildings.RecipeInheritanceExtension">
 				<inheritRecipesFrom>
 					<li>CraftingSpot</li>
 				</inheritRecipesFrom>

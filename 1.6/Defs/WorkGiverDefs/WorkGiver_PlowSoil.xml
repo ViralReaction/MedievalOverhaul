@@ -4,7 +4,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_PlowSoil_DeliverResourcesToBluePrints</defName>
 		<label>plow soil</label>		
-		<giverClass>VFECore.WorkGiver_ConstructionSkill_DeliverResourcesToBlueprints</giverClass>
+		<giverClass>VEF.Pawns.WorkGiver_ConstructionSkill_DeliverResourcesToBlueprints</giverClass>
 		<workType>Growing</workType>
 		<verb>plow</verb>
 		<gerund>plowing</gerund>
@@ -14,7 +14,7 @@
 	<WorkGiverDef>
 		<defName>DankPyon_PlowSoil_FinishFrames</defName>
 		<label>plow soil</label>		
-		<giverClass>VFECore.WorkGiver_ConstructionSkill_FinishFrames</giverClass>
+		<giverClass>VEF.Pawns.WorkGiver_ConstructionSkill_FinishFrames</giverClass>
 		<workType>Growing</workType>
 		<verb>plow</verb>
 		<gerund>plowing</gerund>

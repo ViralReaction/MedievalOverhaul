@@ -128,21 +128,21 @@
 	</IncidentDef>
 
 	<!-- Alp Darkness -->
-	<IncidentDef>
-		<defName>DankPyon_AlpEclipse</defName>
-		<label>unnatural eclipse</label>
-		<category>ThreatBig</category>
-		<targetTags>
-			<li>Map_PlayerHome</li>
-		</targetTags>
-		<workerClass>IncidentWorker_GiveQuest</workerClass>
-		<questScriptDef>DankPyon_AlpEclipse</questScriptDef>
-		<minRefireDays>60</minRefireDays>
-		<baseChance>1</baseChance>
-		<earliestDay>60</earliestDay>
-		<requireColonistsPresent>True</requireColonistsPresent>
-		<tale>DankPyon_AlpEclipseTale</tale>
-	</IncidentDef>
+	<!-- <IncidentDef> -->
+		<!-- <defName>DankPyon_AlpEclipse</defName> -->
+		<!-- <label>unnatural eclipse</label> -->
+		<!-- <category>ThreatBig</category> -->
+		<!-- <targetTags> -->
+			<!-- <li>Map_PlayerHome</li> -->
+		<!-- </targetTags> -->
+		<!-- <workerClass>IncidentWorker_GiveQuest</workerClass> -->
+		<!-- <questScriptDef>DankPyon_AlpEclipse</questScriptDef> -->
+		<!-- <minRefireDays>60</minRefireDays> -->
+		<!-- <baseChance>1</baseChance> -->
+		<!-- <earliestDay>60</earliestDay> -->
+		<!-- <requireColonistsPresent>True</requireColonistsPresent> -->
+		<!-- <tale>DankPyon_AlpEclipseTale</tale> -->
+	<!-- </IncidentDef> -->
 	
 	<IncidentDef>
 		<defName>DankPyon_Mineshaftfestation</defName>

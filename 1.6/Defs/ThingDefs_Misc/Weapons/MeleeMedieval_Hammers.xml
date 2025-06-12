@@ -380,7 +380,7 @@
 			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
 		<modExtensions Inherit="False">
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(0.34,0,0.60)</drawOffset>
