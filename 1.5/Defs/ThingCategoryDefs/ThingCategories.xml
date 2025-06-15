@@ -93,7 +93,7 @@
 		<defName>DankPyon_Cheese</defName>
 		<label>cheese</label>
 		<parent>FoodMeals</parent>
-		<iconPath>Meal/Cheese/Cheese_a</iconPath>
+		<iconPath>Things/Item/Meal/Cheese/Cheese_a</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>

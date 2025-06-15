@@ -7,7 +7,7 @@
 		<label>large forest cobra egg (fert.)</label>
 		<description>A large fertilized forest cobra egg. If all goes well, it should hatch into a baby cobra. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>AnimalProductRaw/LargeCobraEgg</texPath>
+			<texPath>Things/Item/Resource/AnimalProductRaw/LargeCobraEgg</texPath>
 			<color>(245,245,245)</color>
 		</graphicData>
 		<statBases>
@@ -26,7 +26,7 @@
 		<label>large cave cobra egg (fert.)</label>
 		<description>A large fertilized forest cobra egg. If all goes well, it should hatch into a baby cobra. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>AnimalProductRaw/LargeCaveCobraEgg</texPath>
+			<texPath>Things/Item/Resource/AnimalProductRaw/LargeCaveCobraEgg</texPath>
 			<color>(245,245,245)</color>
 		</graphicData>
 		<statBases>
@@ -46,7 +46,7 @@
 		<label>giant forest constrictor egg (fert.)</label>
 		<description>A large fertilized forest cobra egg. If all goes well, it should hatch into a baby cobra. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>AnimalProductRaw/GiantEgg</texPath>
+			<texPath>Things/Item/Resource/AnimalProductRaw/GiantEgg</texPath>
 			<color>(245,245,245)</color>
 		</graphicData>
 		<statBases>
@@ -65,7 +65,7 @@
 		<label>giant cave constrictor egg (fert.)</label>
 		<description>A large fertilized forest cobra egg. If all goes well, it should hatch into a baby cobra. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>AnimalProductRaw/GiantCaveEgg</texPath>
+			<texPath>Things/Item/Resource/AnimalProductRaw/GiantCaveEgg</texPath>
 			<color>(245,245,245)</color>
 		</graphicData>
 		<statBases>
@@ -85,7 +85,7 @@
 		<label>giant forest lindwurm egg (fert.)</label>
 		<description>A large fertilized forest lindwurm egg. If all goes well, it should hatch into a baby lindwurm. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>AnimalProductRaw/GiantEgg</texPath>
+			<texPath>Things/Item/Resource/AnimalProductRaw/GiantEgg</texPath>
 			<color>(245,245,245)</color>
 		</graphicData>
 		<statBases>
@@ -104,7 +104,7 @@
 		<label>giant cave lindwurm egg (fert.)</label>
 		<description>A large fertilized forest lindwurm egg. If all goes well, it should hatch into a baby lindwurm. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>AnimalProductRaw/GiantCaveEgg</texPath>
+			<texPath>Things/Item/Resource/AnimalProductRaw/GiantCaveEgg</texPath>
 			<color>(245,245,245)</color>
 		</graphicData>
 		<statBases>

@@ -28,7 +28,7 @@
 		<label>packaged rations</label>
 		<description>A hearty and nutritious packaged meal, packed for use in survival situations. It takes a long time to rot but it can still deteriorate if left outside. Great for adventuring.</description>
 		<graphicData>
-			<texPath>Meal/Rations</texPath>
+			<texPath>Things/Item/Meal/Rations</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<comps>
@@ -48,7 +48,7 @@
 		<label>packaged macci</label>
 		<description>A hearty and nutritious packaged bread, typically prepared by wood rangers. It takes a long time to rot but it can still deteriorate if left outside. Great for adventuring.</description>
 		<graphicData>
-			<texPath>Meal/Macci</texPath>
+			<texPath>Things/Item/Meal/Macci</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<comps>
@@ -66,7 +66,7 @@
 		<label>dried Meat</label>
 		<description>Dried meat to preserve and prolong shelf life for later use as an ingredient in meals.</description>
 		<graphicData>
-			<texPath>Meal/DriedMeat</texPath>
+			<texPath>Things/Item/Meal/DriedMeat</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -105,7 +105,7 @@
 		<label>dried Human Meat</label>
 		<description>>Dried meat to preserve and prolong shelf life for later use as an ingredient in meals. Does not rehydrate very well and only true cannibals can stomach it.</description>
 		<graphicData>
-			<texPath>Meal/DriedHumanMeat</texPath>
+			<texPath>Things/Item/Meal/DriedHumanMeat</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -143,7 +143,7 @@
 		<label>dried Insect Meat</label>
 		<description>Dried insect meat to preserve and prolong shelf life.Does not rehydrate very well and not many can stomach it</description>
 		<graphicData>
-			<texPath>Meal/DriedInsectMeat</texPath>
+			<texPath>Things/Item/Meal/DriedInsectMeat</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -183,7 +183,7 @@
 		<description>Dried meat to preserve and prolong shelf life.</description>
 		<possessionCount>2</possessionCount>
 		<graphicData>
-			<texPath>Meal/SmokedMeat</texPath>
+			<texPath>Things/Item/Meal/SmokedMeat</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -220,7 +220,7 @@
 		<description>Smoked human meat to preserve and prolong shelf life.</description>
 		<possessionCount>2</possessionCount>
 		<graphicData>
-		  <texPath>Meal/SmokedHumanMeat</texPath>
+		  <texPath>Things/Item/Meal/SmokedHumanMeat</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -257,7 +257,7 @@
 		<description>Smoked insect meat to preserve and prolong shelf life.</description>
 		<possessionCount>2</possessionCount>
 		<graphicData>
-		  <texPath>Meal/SmokedInsectMeat</texPath>
+		  <texPath>Things/Item/Meal/SmokedInsectMeat</texPath>
 		  <graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -374,7 +374,7 @@
 		<label>cheese</label>
 		<description>A sharp-tasting wheel of cheese, created by a special process of purposely curdling animal milk. It makes for both a tasty treat on its own, as well as a versatile ingredient in meals.</description>
 		<graphicData>
-			<texPath>Meal/Cheese</texPath>
+			<texPath>Things/Item/Meal/Cheese</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -385,7 +385,7 @@
 		<label>goat cheese</label>
 		<description>A sharp-tasting wheel of cheese, created by a special process of purposely curdling animal milk. It makes for both a tasty treat on its own, as well as a versatile ingredient in meals.</description>
 		<graphicData>
-			<texPath>Meal/GoatCheese</texPath>
+			<texPath>Things/Item/Meal/GoatCheese</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -396,7 +396,7 @@
 		<label>sheep cheese</label>
 		<description>A sharp-tasting wheel of cheese, created by a special process of purposely curdling animal milk. It makes for both a tasty treat on its own, as well as a versatile ingredient in meals.</description>
 		<graphicData>
-			<texPath>Meal/SheepCheese</texPath>
+			<texPath>Things/Item/Meal/SheepCheese</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -409,7 +409,7 @@
 		<label>rox steak</label>
 		<description>A thick slab of fatty rox meat, grilled to infuse smoky and savory flavors while seasoned with salt and stewed in ale. A luxurious feast that every king desires.</description>
 		<graphicData>
-			<texPath>Meal/RoxSteak</texPath>
+			<texPath>Things/Item/Meal/RoxSteak</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -438,7 +438,7 @@
 		<label>griffon berry pie</label>
 		<description>A delicious fruit-tart pie, consisting of a flakey sugar crust layer with a filling of pureed Griffon Berry, topped with a light lemon glaze.</description>
 		<graphicData>
-			<texPath>Meal/GriffonPie</texPath>
+			<texPath>Things/Item/Meal/GriffonPie</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -468,7 +468,7 @@
 		<label>steak with wine</label>
 		<description>A rich meal consisting of spiced steak with chopped onion, sauteed in a light wine broth. A delightfully rich and bold-tasting meal.</description>
 		<graphicData>
-			<texPath>Meal/SteakWithWine</texPath>
+			<texPath>Things/Item/Meal/SteakWithWine</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -497,7 +497,7 @@
 		<label>cheese soup</label>
 		<description>A delightfully gooey soup consisting of cuts of melted cheese curd housed in a rich broth of garlic-spiced ale. A hearty dish best served warm, soothing for both the body and soul.</description>
 		<graphicData>
-			<texPath>Meal/SoupCheese</texPath>
+			<texPath>Things/Item/Meal/SoupCheese</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -527,7 +527,7 @@
 		<label>bread soup</label>
 		<description>A thick, milky soup housed in a bowl made from a hollowed out chunk of sour bread. A hearty, filling meal.</description>
 		<graphicData>
-			<texPath>Meal/SoupBread</texPath>
+			<texPath>Things/Item/Meal/SoupBread</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -554,7 +554,7 @@
 		<label>Hearty Stew</label>
 		<description>A Hearty Stew, containing various ingredients, and cooked in a reasonable amount of time.</description>
 		<graphicData>
-			<texPath>Meal/HeartyStew</texPath>
+			<texPath>Things/Item/Meal/HeartyStew</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -583,7 +583,7 @@
 		<label>apple pie</label>
 		<description>A pie that uses sliced apples for its principal filling ingredient, mixed together with profound spices. Typically covered with a lattice patterned crust then sprinkled with sugar for its finish.</description>
 		<graphicData>
-			<texPath>Meal/ApplePie</texPath>
+			<texPath>Things/Item/Meal/ApplePie</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -612,7 +612,7 @@
 		<label>hunter's stew</label>
 		<description>A hearty stew consisting of boiled sausage sauteed in a vegetable broth with minced cabbage.</description>
 		<graphicData>
-			<texPath>Meal/HuntersStew</texPath>
+			<texPath>Things/Item/Meal/HuntersStew</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -641,7 +641,7 @@
 		<label>grilled cheese</label>
 		<description>A simple dish consisting of a rich cut of cheese grilled with smoky fire.</description>
 		<graphicData>
-			<texPath>Meal/GrilledCheese</texPath>
+			<texPath>Things/Item/Meal/GrilledCheese</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -670,7 +670,7 @@
 		<label>grilled Sausages</label>
 		<description>Seasoned meat with spices encased in a cylindrical manner. Grilled in an open flame to bring out smoky flavors.</description>
 		<graphicData>
-			<texPath>Meal/GrilledSausages</texPath>
+			<texPath>Things/Item/Meal/GrilledSausages</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -706,7 +706,7 @@
 		<label>quiche</label>
 		<description>A pie-adjacent breakfast food, consisting of layers of fluffy egg intermitted with delicious morsels of meat, baked into a hearty meal.</description>
 		<graphicData>
-			<texPath>Meal/Quiche</texPath>
+			<texPath>Things/Item/Meal/Quiche</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -735,7 +735,7 @@
 		<label>sweet pancakes</label>
 		<description>Stacks of fluffy pan-fried shortcakes with a drizzel of sweet syrup plastered atop. A delicious, if not particularly healthy start to a day.</description>
 		<graphicData>
-			<texPath>Meal/SweetPancakes</texPath>
+			<texPath>Things/Item/Meal/SweetPancakes</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -764,7 +764,7 @@
 		<label>pumpking pie</label>
 		<description>A dense, rich pie made from mashed pumpkin mixed with strong spices, layered atop a sweet, flakey crust. A fall-favorite desert.</description>
 		<graphicData>
-			<texPath>Meal/PumpkinPie</texPath>
+			<texPath>Things/Item/Meal/PumpkinPie</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -793,7 +793,7 @@
 		<label>pumpkin soup</label>
 		<description>A creamy soup made from finely pureed pumpkin and a light assortment of spices.</description>
 		<graphicData>
-			<texPath>Meal/PumpkinSoup</texPath>
+			<texPath>Things/Item/Meal/PumpkinSoup</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -822,7 +822,7 @@
 		<label>tomato omelette</label>
 		<description>A sheet of fried, folded egg housing a tasteful cumilation of runny yolk and sauteed tomato.</description>
 		<graphicData>
-			<texPath>Meal/TomatoOmelette</texPath>
+			<texPath>Things/Item/Meal/TomatoOmelette</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -852,7 +852,7 @@
 		<label>bone soup</label>
 		<description>A weak broth made from animal bones. Not so filling on its own.</description>
 		<graphicData>
-			<texPath>Meal/BoneSoup</texPath>
+			<texPath>Things/Item/Meal/BoneSoup</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -882,7 +882,7 @@
 		<label>bread</label>
 		<description>Made from flour and water. A classic staple to start a day.</description>
 		<graphicData>
-			<texPath>Meal/Bread</texPath>
+			<texPath>Things/Item/Meal/Bread</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<stackLimit>25</stackLimit>
@@ -914,7 +914,7 @@
 		<label>weak stew</label>
 		<description>A light stew, consisting primarily of bone broth with a few morsels of meat floating within. Not quite saturating, but a filling meal nonetheless.</description>
 		<graphicData>
-			<texPath>Meal/WeakStew</texPath>
+			<texPath>Things/Item/Meal/WeakStew</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -944,7 +944,7 @@
 		<label>fried Eggs</label>
 		<description>A simple meal, consisting of eggs quickly prepared and optionally served with a light sprinkling of salt and or pepper.</description>
 		<graphicData>
-			<texPath>Meal/FriedEggs</texPath>
+			<texPath>Things/Item/Meal/FriedEggs</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -973,7 +973,7 @@
 		<label>mashed potatoes</label>
 		<description>A simple dish made with boiled potatos then mashed into a soft mixture while supplmented with milk for a creamy base.</description>
 		<graphicData>
-			<texPath>Meal/MashedPotatoes</texPath>
+			<texPath>Things/Item/Meal/MashedPotatoes</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -1003,7 +1003,7 @@
 		<label>mushroom soup</label>
 		<description>A fragrant soup consisting of minced sauteed mushrooms in a rich milky broth, making for a bold-tasting, somewhat hearty meal.</description>
 		<graphicData>
-			<texPath>Meal/MushroomSoup</texPath>
+			<texPath>Things/Item/Meal/MushroomSoup</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -1033,7 +1033,7 @@
 		<label>vegetable pot</label>
 		<description>A rich stew of chopped vegetables, sauteed and boiled in a lightly seasoned broth. A hearty, yet healthy meal.</description>
 		<graphicData>
-			<texPath>Meal/VegetablePot</texPath>
+			<texPath>Things/Item/Meal/VegetablePot</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -1063,7 +1063,7 @@
 		<label>pumpkin fritters</label>
 		<description>A sweet, dense biscuit of pumpkin and flour with a caramelized confectionery glaze.</description>
 		<graphicData>
-			<texPath>Meal/PumpkinFritters</texPath>
+			<texPath>Things/Item/Meal/PumpkinFritters</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -1093,7 +1093,7 @@
 		<label>grilled skewers</label>
 		<description>Thick-cut chunks of seared meat arranged on a wooden stake, making for an easily-eaten, tasty meal.</description>
 		<graphicData>
-			<texPath>Meal/GrilledSkewers</texPath>
+			<texPath>Things/Item/Meal/GrilledSkewers</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -1123,7 +1123,7 @@
 		<label>boiled beans and onion</label>
 		<description>A simple, yet hearty meal consisting of beans and chopped onion boiled in a light lentil broth.</description>
 		<graphicData>
-			<texPath>Meal/BoiledBeansAndOnion</texPath>
+			<texPath>Things/Item/Meal/BoiledBeansAndOnion</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -1153,7 +1153,7 @@
 		<label>winter lentil soup</label>
 		<description>A light, homey soup primarily made up from lentils with a light sprinkling of herbs and seasonings. A perfect dish to sip on during a cold winter afternoon.</description>
 		<graphicData>
-			<texPath>Meal/WinterLentilSoup</texPath>
+			<texPath>Things/Item/Meal/WinterLentilSoup</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -1183,7 +1183,7 @@
 		<label>slop</label>
 		<description>A bowl of slop, where every spoonful is an adventure in texture and taste!</description>
 		<graphicData>
-			<texPath>Meal/SlopPots/Slop</texPath>
+			<texPath>Things/Item/Meal/SlopPots/Slop</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -1211,7 +1211,7 @@
 		<label>stew</label>
 		<description>Venture into the murky depths of battle-tested stew, where the origins of its ingredients are as mysterious as the foes you face on the battlefield.</description>
 		<graphicData>
-			<texPath>Meal/SlopPots/Stew</texPath>
+			<texPath>Things/Item/Meal/SlopPots/Stew</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -1237,7 +1237,7 @@
 		<label>cheese fondue</label>
 		<description>Delve into the bubbling cauldron of fondue, where the melted cheese conceals the secrets of its savory companions, inviting you on a journey of culinary exploration</description>
 		<graphicData>
-			<texPath>Meal/SlopPots/Fondue</texPath>
+			<texPath>Things/Item/Meal/SlopPots/Fondue</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -1265,7 +1265,7 @@
 		<label>carrot cake</label>
 		<description>A moist and flavorful cake crafted from freshly grated carrots, infused with warm spices, and enveloped in a luscious cream cheese frosting. A classic indulgence perfect for any occasion.</description>
 		<graphicData>
-			<texPath>Meal/CarrotCake</texPath>
+			<texPath>Things/Item/Meal/CarrotCake</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -1294,7 +1294,7 @@
 		<label>lemon cake</label>
 		<description>A zesty and moist cake infused with tangy lemon flavor, complemented by a light and fluffy texture. A refreshing dessert perfect for any occasion.</description>
 		<graphicData>
-			<texPath>Meal/LemonCake</texPath>
+			<texPath>Things/Item/Meal/LemonCake</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
