@@ -51,7 +51,7 @@
 		<label>table cover</label>
 		<description>A table cover. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/TableCloth_1x2</texPath>
+			<texPath>Things/Building/Furniture/Decoration/TableCloth_1x2</texPath>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<size>(2,1)</size>
@@ -73,7 +73,7 @@
 		<label>empty milk jar</label>
 		<description>An empty milk jar. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/Bottle_Milk</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/Bottle_Milk</texPath>
 		</graphicData>
 
 		<costList>
@@ -86,7 +86,7 @@
 		<label>empty ale mug</label>
 		<description>An empty ale mug. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/Bottle_Ale</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/Bottle_Ale</texPath>
 		</graphicData>
 
 		<costList Inherit="false">
@@ -99,7 +99,7 @@
 		<label>empty mead bottle</label>
 		<description>An empty mead bottle. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/Bottle_Mead</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/Bottle_Mead</texPath>
 		</graphicData>
 
 		<costList Inherit="false">
@@ -112,7 +112,7 @@
 		<label>empty wine bottle</label>
 		<description>An empty wine bottle. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/Bottle_Wine</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/Bottle_Wine</texPath>
 		</graphicData>
 		
 		<statBases>
@@ -130,7 +130,7 @@
 		<label>empty mulberry wine bottle</label>
 		<description>An empty mulberry wine bottle. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/Bottle_MulberryWine</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/Bottle_MulberryWine</texPath>
 		</graphicData>
 		
 		<statBases>
@@ -148,7 +148,7 @@
 		<label>empty ice wine bottle</label>
 		<description>An empty mulberry wine bottle. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/Bottle_IceWine</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/Bottle_IceWine</texPath>
 		</graphicData>
 		
 		<statBases>
@@ -166,7 +166,7 @@
 		<label>empty griffon wine bottle</label>
 		<description>An empty griffon wine bottle. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/Bottle_GriffonWine</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/Bottle_GriffonWine</texPath>
 		</graphicData>
 		
 		<statBases>
@@ -189,7 +189,7 @@
 		<label>ruined paper</label>
 		<description>Ruined stack of paper, wet, torn, and disheveled. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/StackPaper</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/StackPaper</texPath>
 		</graphicData>
 
 		<costList>
@@ -202,7 +202,7 @@
 		<label>ruined scroll and quill</label>
 		<description>Ruined torn scroll and dull-tipped quill. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/ScrollAndQuill</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/ScrollAndQuill</texPath>
 		</graphicData>
 
 		<costList>
@@ -215,7 +215,7 @@
 		<label>ruined book</label>
 		<description>Ruined book, wet, torn, and disheveled. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/Book</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/Book</texPath>
 		</graphicData>
 
 		<costList>
@@ -238,7 +238,7 @@
 		<label>empty bowl</label>
 		<description>An empty bowl. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/Bowl</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/Bowl</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -247,7 +247,7 @@
 		<label>empty plate</label>
 		<description>An empty plate. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/Plate</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/Plate</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -256,7 +256,7 @@
 		<label>empty cooking pot</label>
 		<description>An empty cooking pot. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/CookingPot</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/CookingPot</texPath>
 		</graphicData>
 		<costStuffCount>20</costStuffCount>
 	</ThingDef>
@@ -266,7 +266,7 @@
 		<label>empty cup</label>
 		<description>An empty cup. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/Cup</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/Cup</texPath>
 		</graphicData>
 		<costStuffCount>10</costStuffCount>
 	</ThingDef>
@@ -276,7 +276,7 @@
 		<label>embedded cleaver</label>
 		<description>A cleaver stuck to a surface. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/EmbeddedCleaver</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/EmbeddedCleaver</texPath>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<stuffCategories>
@@ -301,7 +301,7 @@
 		<label>inert flasks</label>
 		<description>Chemically inactive flasks. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/ResearchFlask</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/ResearchFlask</texPath>
 		</graphicData>
 
 		<costList>
@@ -314,7 +314,7 @@
 		<label>inert vials</label>
 		<description>Chemically inactive vials. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/Vials</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/Vials</texPath>
 		</graphicData>
 
 		<costList>
@@ -327,7 +327,7 @@
 		<label>ruined mortar and pestle</label>
 		<description>A mortar and pestle in poor condition. Can be placed on top of tables for decoration.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/Props/MortarAndPestle</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Props/MortarAndPestle</texPath>
 		</graphicData>
 
 		<costList>
@@ -340,7 +340,7 @@
 		<defName>DankPyon_Fountain1x1c</defName>
 		<label>small fountain</label>
 		<graphicData>
-			<texPath>Furniture/Decoration/Fountain1x1</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Fountain1x1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,3)</drawSize>
@@ -374,7 +374,7 @@
 		<defName>DankPyon_Fountain2x2c</defName>
 		<label>large fountain</label>
 		<graphicData>
-			<texPath>Furniture/Decoration/Fountain2x2</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Fountain2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -410,7 +410,7 @@
 		<description>A barrel filled with water to clean oneself or the surroundings</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Furniture/Decoration/BarrelWater</texPath>
+			<texPath>Things/Building/Furniture/Decoration/BarrelWater</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -463,7 +463,7 @@
 		<label>wall banner (1x2)</label>
 		<description>A decorative wall banner. Can be mounted on walls.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/BannerFlag</texPath>
+			<texPath>Things/Building/Furniture/Decoration/BannerFlag</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.5,2)</drawSize>
 			<drawOffsetNorth>(0,0,0.25)</drawOffsetNorth>
@@ -520,7 +520,7 @@
 		<label>room divider (1x2)</label>
 		<description>A basic room divider that keeps the privacy of your pawns.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/RoomDivider1x2</texPath>
+			<texPath>Things/Building/Furniture/Decoration/RoomDivider1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.5,2)</drawSize>
 		</graphicData>
@@ -557,7 +557,7 @@
 		<label>thick open room divider (1x2)</label>
 		<description>A basic room divider that keeps the privacy of your pawns. Capable of holding up a roof.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/ThickDividerWindow</texPath>
+			<texPath>Things/Building/Furniture/Decoration/ThickDividerWindow</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 		</graphicData>
@@ -599,7 +599,7 @@
 		<label>thick covered room divider (1x2)</label>
 		<description>A basic room divider that keeps the privacy of your pawns. Capable of holding up a roof.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/ThickDividerCovered</texPath>
+			<texPath>Things/Building/Furniture/Decoration/ThickDividerCovered</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 		</graphicData>
@@ -641,7 +641,7 @@
 		<label>tall divider column (1x2)</label>
 		<description>A column capable of holding a roof. Does not block sight or movement and looks quite nice.</description>
 		<graphicData>
-			<texPath>Furniture/Decoration/TallColumn</texPath>
+			<texPath>Things/Building/Furniture/Decoration/TallColumn</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -690,7 +690,7 @@
 		<description>A wooden hanging sign use to symbolize the purpose of a room.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Furniture/Decoration/Signs/SignTavern</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Signs/SignTavern</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -729,7 +729,7 @@
 		<defName>DankPyon_Sign_Bread</defName>
 		<label>bakery sign</label>
 		<graphicData>
-			<texPath>Furniture/Decoration/Signs/SignBakery</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Signs/SignBakery</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -737,7 +737,7 @@
 		<defName>DankPyon_Sign_Butcher</defName>
 		<label>butcher sign</label>
 		<graphicData>
-			<texPath>Furniture/Decoration/Signs/SignButcher</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Signs/SignButcher</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -745,7 +745,7 @@
 		<defName>DankPyon_Sign_Smith</defName>
 		<label>smith sign</label>
 		<graphicData>
-			<texPath>Furniture/Decoration/Signs/SignSmith</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Signs/SignSmith</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -753,7 +753,7 @@
 		<defName>DankPyon_Sign_Apothecary</defName>
 		<label>apothecary sign</label>
 		<graphicData>
-			<texPath>Furniture/Decoration/Signs/SignHerbalist</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Signs/SignHerbalist</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -761,7 +761,7 @@
 		<defName>DankPyon_Sign_Jewelry</defName>
 		<label>jewelry sign</label>
 		<graphicData>
-			<texPath>Furniture/Decoration/Signs/SignJewelry</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Signs/SignJewelry</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -769,7 +769,7 @@
 		<defName>DankPyon_Sign_Library</defName>
 		<label>library sign</label>
 		<graphicData>
-			<texPath>Furniture/Decoration/Signs/SignBook</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Signs/SignBook</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -777,7 +777,7 @@
 		<defName>DankPyon_Sign_Tailor</defName>
 		<label>tailor sign</label>
 		<graphicData>
-			<texPath>Furniture/Decoration/Signs/SignTailor</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Signs/SignTailor</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -785,7 +785,7 @@
 		<defName>DankPyon_Sign_Woodworking</defName>
 		<label>woodworking sign</label>
 		<graphicData>
-			<texPath>Furniture/Decoration/Signs/SignWoodworking</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Signs/SignWoodworking</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -793,7 +793,7 @@
 		<defName>DankPyon_Sign_Barn</defName>
 		<label>barn sign</label>
 		<graphicData>
-			<texPath>Furniture/Decoration/Signs/SignBarn</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Signs/SignBarn</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -801,7 +801,7 @@
 		<defName>DankPyon_Sign_Winery</defName>
 		<label>winery sign</label>
 		<graphicData>
-			<texPath>Furniture/Decoration/Signs/SignWinery</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Signs/SignWinery</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -809,7 +809,7 @@
 		<defName>DankPyon_Sign_Scribe</defName>
 		<label>scribe sign</label>
 		<graphicData>
-			<texPath>Furniture/Decoration/Signs/SignScribe</texPath>
+			<texPath>Things/Building/Furniture/Decoration/Signs/SignScribe</texPath>
 		</graphicData>
 	</ThingDef>
 </Defs>

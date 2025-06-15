@@ -34,7 +34,7 @@
 		<description>A roughly stiched rug made up of seperate leathers.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Furniture/RugPatched1x1</texPath>
+			<texPath>Things/Building/Furniture/RugPatched1x1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
@@ -58,7 +58,7 @@
 		<description>A roughly stiched rug made up of seperate leathers.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Furniture/RugPatched2x2</texPath>
+			<texPath>Things/Building/Furniture/RugPatched2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -82,7 +82,7 @@
 		<description>A roughly stiched rug made up of seperate leathers.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Furniture/RugPatched3x3</texPath>
+			<texPath>Things/Building/Furniture/RugPatched3x3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
@@ -106,7 +106,7 @@
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Hyena rugs are small but the lavish patterns, from stripes to dots, make the piece a beautiful addition to decor.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Furniture/RugHyena2x2</texPath>
+			<texPath>Things/Building/Furniture/RugHyena2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -129,7 +129,7 @@
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. The grizzled grayish-brown fur of the timber wolf may make for a valuable rug but comes with a high cost as the hunter will likely face the beast in a pack.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Furniture/RugWolfTimber2x2</texPath>
+			<texPath>Things/Building/Furniture/RugWolfTimber2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -152,7 +152,7 @@
 	<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. A variant of the wolf, arctic wolf rugs tell the story of a hunter who braved dangerous temperatures and conquered starving predators biologically designed for survival.</description>
 	<thingClass>Building</thingClass>
 	<graphicData>
-		<texPath>Furniture/RugWolfArctic2x2</texPath>
+		<texPath>Things/Building/Furniture/RugWolfArctic2x2</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(2,2)</drawSize>
 	</graphicData>
@@ -176,7 +176,7 @@
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Cougars are prized for their luxurious pelts, which in turn makes for a valuable alternative to basic rugs.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Furniture/RugCougar2x2</texPath>
+			<texPath>Things/Building/Furniture/RugCougar2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -200,7 +200,7 @@
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Panther rugs, much like the animals themselves, fall into shadows during the night but marbled eyes illuminate in the darkness.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Furniture/RugPanther2x2</texPath>
+			<texPath>Things/Building/Furniture/RugPanther2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -224,7 +224,7 @@
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. The bear’s great coat is one of the most sought-after materials for animal-skinned rugs, making the grizzly bear rug a worthy choice for the daring colonist brave enough to face the hunt.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Furniture/RugBearGrizzly3x3</texPath>
+			<texPath>Things/Building/Furniture/RugBearGrizzly3x3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
@@ -248,7 +248,7 @@
 	<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. The polar bears found in frozen climates host great white fur that makes for cold-resistant rugs. Especially valuable to homesteads found in cold temperatures.</description>
 	<thingClass>Building</thingClass>
 	<graphicData>
-		<texPath>Furniture/RugBearPolar3x3</texPath>
+		<texPath>Things/Building/Furniture/RugBearPolar3x3</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(3,3)</drawSize>
 	</graphicData>
@@ -272,7 +272,7 @@
 	<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. The polar bears found in frozen climates host great white fur that makes for cold-resistant rugs. Especially valuable to homesteads found in cold temperatures.</description>
 	<thingClass>Building</thingClass>
 	<graphicData>
-		<texPath>Furniture/RugRox3x3</texPath>
+		<texPath>Things/Building/Furniture/RugRox3x3</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(3,3)</drawSize>
 	</graphicData>
@@ -296,7 +296,7 @@
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Few hunters can craft a trophy with a more refined and resistant coat than that of the thrumbo rug. Its long fur can catch the eye of any colonist, but the strong hide requires much work to tailor. Beware the horn while walking.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Furniture/RugThrumbo3x3</texPath>
+			<texPath>Things/Building/Furniture/RugThrumbo3x3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
@@ -319,7 +319,7 @@
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Few hunters can craft a trophy with a more refined and resistant coat than that of the thrumbo rug. Its long fur can catch the eye of any colonist, but the strong hide requires much work to tailor. Beware the horn while walking.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Furniture/RugDaer4x4</texPath>
+			<texPath>Things/Building/Furniture/RugDaer4x4</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -342,7 +342,7 @@
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. Human rugs are prized trophies admired by some and loathed by others, but like-minded cannibals will find comfort in its decor.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Furniture/RugHuman1x2</texPath>
+			<texPath>Things/Building/Furniture/RugHuman1x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>

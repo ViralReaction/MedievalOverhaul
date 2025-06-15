@@ -588,7 +588,7 @@
         <label>chest</label>
         <description>A chest to store treasures and junk.</description>
         <graphicData>
-            <texPath>Furniture/RusticChest</texPath>
+            <texPath>Things/Building/Furniture/RusticChest</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(2,2)</drawSize>
         </graphicData>
@@ -662,7 +662,7 @@
         <label>royal chest</label>
         <description>A royal chest to store royal treasures and royal junk.</description>
         <graphicData>
-            <texPath>Furniture/RoyalChest</texPath>
+            <texPath>Things/Building/Furniture/RoyalChest</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(2,2)</drawSize>
         </graphicData>

@@ -104,7 +104,7 @@
 		<label>rustic torch</label>
 		<description>A wooden torch for lighting an area. People need light to move and work at full speed. Can be automatically refueled with wood. Produces a small amount of heat.</description>
 		<graphicData>
-			<texPath>Furniture/RusticTorch</texPath>
+			<texPath>Things/Building/Furniture/RusticTorch</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
@@ -114,7 +114,7 @@
 		</graphicData>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<rotatable>true</rotatable>
-		<uiIconPath>Furniture/RusticTorch_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Furniture/RusticTorch_MenuIcon</uiIconPath>
 		<designationCategory>DankPyon_RusticFurniture</designationCategory>
 		<pathCost>14</pathCost>
 		<costList Inherit="false"/>
@@ -209,7 +209,7 @@
 		<description>A wall-mounted wooden torch for lighting an area. It is slightly less brighter than a regular torch lamp, but it can be mounted on walls. Produces a small amount of heat.</description>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Furniture/RusticWallTorch</texPath>
+			<texPath>Things/Building/Furniture/RusticWallTorch</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawOffsetNorth>(0,0,1)</drawOffsetNorth>
@@ -221,7 +221,7 @@
 			</damageData>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<uiIconPath>Furniture/RusticWallTorch_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Furniture/RusticWallTorch_MenuIcon</uiIconPath>
 		<uiIconScale>0.85</uiIconScale>
 
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -345,7 +345,7 @@
 		<description>A wall-mounted metallic oil lamp that shines bright as a regular torch and lasts longer. Can be refueled with tar. Fuel consumption rate is not affected by rain.</description>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Furniture/WallLamp</texPath>
+			<texPath>Things/Building/Furniture/WallLamp</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawOffsetNorth>(0,0,1)</drawOffsetNorth>
@@ -357,7 +357,7 @@
 			</damageData>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<uiIconPath>Furniture/WallLamp_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Furniture/WallLamp_MenuIcon</uiIconPath>
 		<uiIconScale>0.85</uiIconScale>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>Standable</passability>
@@ -430,12 +430,12 @@
 		<description>A lamp post for lighting an area. People need light to move and work at full speed. Can be automatically refueled with wood. Produces a small amount of heat.</description>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Furniture/LampPost</texPath>
+			<texPath>Things/Building/Furniture/LampPost</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
-		<uiIconPath>Furniture/LampPost_west</uiIconPath>
+		<uiIconPath>Things/Building/Furniture/LampPost_west</uiIconPath>
 		<uiIconScale>2</uiIconScale>
 		<uiIconOffset>(0, 0.15)</uiIconOffset>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -515,7 +515,7 @@
 		<defName>DankPyon_LogTable1x2c</defName>
 		<label>log table (1x2)</label>
 		<graphicData>
-			<texPath>Furniture/LogTable1x2</texPath>
+			<texPath>Things/Building/Furniture/LogTable1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,4)</drawSize>
 			<damageData>
@@ -553,7 +553,7 @@
 		<defName>DankPyon_LogTable1x3c</defName>
 		<label>log table (1x3)</label>
 		<graphicData>
-			<texPath>Furniture/LogTable1x3</texPath>
+			<texPath>Things/Building/Furniture/LogTable1x3</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,5)</drawSize>
 			<damageData>
@@ -583,7 +583,7 @@
 		<defName>DankPyon_LogTable1x4c</defName>
 		<label>log table (1x4)</label>
 		<graphicData>
-			<texPath>Furniture/LogTable1x4</texPath>
+			<texPath>Things/Building/Furniture/LogTable1x4</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,6)</drawSize>
 			<damageData>
@@ -621,7 +621,7 @@
 		<defName>DankPyon_LogTable2x4c</defName>
 		<label>log table (2x4)</label>
 		<graphicData>
-			<texPath>Furniture/LogTable2x4</texPath>
+			<texPath>Things/Building/Furniture/LogTable2x4</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,6)</drawSize>
 			<damageData>
@@ -661,7 +661,7 @@
 		<label>log chair</label>
 		<description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</description>
 		<graphicData>
-			<texPath>Furniture/LogChair1x1</texPath>
+			<texPath>Things/Building/Furniture/LogChair1x1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -698,7 +698,7 @@
 		<label>log bench (1x2)</label>
 		<description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</description>
 		<graphicData>
-			<texPath>Furniture/LogBench1x2</texPath>
+			<texPath>Things/Building/Furniture/LogBench1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,2)</drawSize>
 		</graphicData>
@@ -733,7 +733,7 @@
 		<label>log bench (1x3)</label>
 		<description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</description>
 		<graphicData>
-			<texPath>Furniture/LogBench1x3</texPath>
+			<texPath>Things/Building/Furniture/LogBench1x3</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,3)</drawSize>
 		</graphicData>
@@ -768,7 +768,7 @@
 		<label>log bench (1x4)</label>
 		<description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</description>
 		<graphicData>
-			<texPath>Furniture/LogBench1x4</texPath>
+			<texPath>Things/Building/Furniture/LogBench1x4</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,4)</drawSize>
 		</graphicData>
@@ -805,7 +805,7 @@
 		<label>rustic round stool</label>
 		<description>A simple platform on which to sit. Not very comfortable, but much better than nothing.Commonly seen at taverns and inns. Can be used at tables, work stations, and elsewhere.</description>
 		<graphicData>
-			<texPath>Furniture/RusticRoundStool</texPath>
+			<texPath>Things/Building/Furniture/RusticRoundStool</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<damageData>
 				<rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
@@ -849,7 +849,7 @@
 		<label>rustic dining chair</label>
 		<description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</description>
 		<graphicData>
-			<texPath>Furniture/RusticChair</texPath>
+			<texPath>Things/Building/Furniture/RusticChair</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<damageData>
@@ -891,7 +891,7 @@
 		<label>rustic noble chair</label>
 		<description>A comfortable and attractive chair. Can be used at tables, work stations, and elsewhere.</description>
 		<graphicData>
-			<texPath>Furniture/RusticNobleChair</texPath>
+			<texPath>Things/Building/Furniture/RusticNobleChair</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.5,2.5)</drawSize>
 			<damageData>
@@ -934,7 +934,7 @@
 		<description>A small bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.</description>
 		<surfaceType>Item</surfaceType>
 		<graphicData>
-			<texPath>Furniture/RusticEndTable</texPath>
+			<texPath>Things/Building/Furniture/RusticEndTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>
@@ -972,7 +972,7 @@
 		<description>A small bedside table which makes nearby beds a little bit more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.</description>
 		<surfaceType>Item</surfaceType>
 		<graphicData>
-			<texPath>Furniture/RusticTallEndTable</texPath>
+			<texPath>Things/Building/Furniture/RusticTallEndTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<shadowData>
@@ -1009,7 +1009,7 @@
 		<defName>DankPyon_RusticTable1x1c</defName>
 		<label>rustic table (1x1)</label>
 		<graphicData>
-			<texPath>Furniture/RusticTable1x1</texPath>
+			<texPath>Things/Building/Furniture/RusticTable1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 			<damageData>
@@ -1042,7 +1042,7 @@
 		<defName>DankPyon_ReinforcedRusticTable1x1c</defName>
 		<label>reinforced table (1x1)</label>
 		<graphicData>
-			<texPath>Furniture/ReinforcedRusticTable1x1</texPath>
+			<texPath>Things/Building/Furniture/ReinforcedRusticTable1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 			<damageData>
@@ -1078,7 +1078,7 @@
 		<defName>DankPyon_RusticTable1x2c</defName>
 		<label>rustic table (1x2)</label>
 		<graphicData>
-			<texPath>Furniture/RusticTable1x2</texPath>
+			<texPath>Things/Building/Furniture/RusticTable1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,4)</drawSize>
 			<damageData>
@@ -1111,7 +1111,7 @@
 		<defName>DankPyon_RusticTable1x3c</defName>
 		<label>rustic table (1x3)</label>
 		<graphicData>
-			<texPath>Furniture/RusticTable1x3</texPath>
+			<texPath>Things/Building/Furniture/RusticTable1x3</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,5)</drawSize>
 			<damageData>
@@ -1144,7 +1144,7 @@
 		<defName>DankPyon_ReinforcedRusticTable1x2c</defName>
 		<label>reinforced table (1x2)</label>
 		<graphicData>
-			<texPath>Furniture/ReinforcedRusticTable1x2</texPath>
+			<texPath>Things/Building/Furniture/ReinforcedRusticTable1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,4)</drawSize>
 			<damageData>
@@ -1180,7 +1180,7 @@
 		<defName>DankPyon_RusticTable2x2c</defName>
 		<label>rustic table (2x2)</label>
 		<graphicData>
-			<texPath>Furniture/RusticTable2x2</texPath>
+			<texPath>Things/Building/Furniture/RusticTable2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 			<damageData>
@@ -1214,7 +1214,7 @@
 		<defName>DankPyon_ReinforcedRusticTable2x2c</defName>
 		<label>reinforced table (2x2)</label>
 		<graphicData>
-			<texPath>Furniture/ReinforcedRusticTable2x2</texPath>
+			<texPath>Things/Building/Furniture/ReinforcedRusticTable2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 			<damageData>
@@ -1251,7 +1251,7 @@
 		<defName>DankPyon_RusticRoundTable2x2c</defName>
 		<label>rustic round table (2x2)</label>
 		<graphicData>
-			<texPath>Furniture/RusticRoundTable2x2</texPath>
+			<texPath>Things/Building/Furniture/RusticRoundTable2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 			<damageData>
@@ -1285,7 +1285,7 @@
 		<defName>DankPyon_Table2x4c</defName>
 		<label>rustic table (2x4)</label>
 		<graphicData>
-			<texPath>Furniture/RusticTable2x4</texPath>
+			<texPath>Things/Building/Furniture/RusticTable2x4</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,6)</drawSize>
 			<damageData>
@@ -1319,7 +1319,7 @@
 		<defName>DankPyon_ReinforcedTable2x4c</defName>
 		<label>reinforced table (2x4)</label>
 		<graphicData>
-			<texPath>Furniture/ReinforcedRusticTable2x4</texPath>
+			<texPath>Things/Building/Furniture/ReinforcedRusticTable2x4</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,6)</drawSize>
 			<damageData>
@@ -1356,7 +1356,7 @@
 		<defName>DankPyon_RusticCounter1x3c</defName>
 		<label>counter (1x3)</label>
 		<graphicData>
-			<texPath>Furniture/Counter</texPath>
+			<texPath>Things/Building/Furniture/Counter</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5,3)</drawSize>
 			<damageData>
@@ -1386,7 +1386,7 @@
 		<label>candle</label>
 		<description>A candle to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with animal tallow.</description>
 		<graphicData>
-			<texPath>Furniture/RusticCandle</texPath>
+			<texPath>Things/Building/Furniture/RusticCandle</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<damageData>
 				<rect>(0.35,0.35,0.3,0.3)</rect>
@@ -1398,7 +1398,7 @@
 		<pathCost>14</pathCost>
 		<constructEffect>ConstructWood</constructEffect>
 		<fillPercent>0.15</fillPercent>
-		<uiIconPath>Furniture/RusticCandle_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Furniture/RusticCandle_MenuIcon</uiIconPath>
 		<uiIconScale>0.85</uiIconScale>
 		<statBases>
 			<Beauty>3</Beauty>
@@ -1577,7 +1577,7 @@
 		<label>candles</label>
 		<description>Candles to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with animal tallow.</description>
 		<graphicData>
-			<texPath>Furniture/RusticCandles</texPath>
+			<texPath>Things/Building/Furniture/RusticCandles</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<damageData>
 				<rect>(0.35,0.35,0.3,0.3)</rect>
@@ -1589,7 +1589,7 @@
 		<pathCost>14</pathCost>
 		<constructEffect>ConstructWood</constructEffect>
 		<fillPercent>0.15</fillPercent>
-		<uiIconPath>Furniture/RusticCandles_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Furniture/RusticCandles_MenuIcon</uiIconPath>
 		<uiIconScale>0.85</uiIconScale>
 		<statBases>
 			<Beauty>3</Beauty>
@@ -1768,7 +1768,7 @@
 		<label>candlebra</label>
 		<description>A Candelabra to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with animal tallow or beeswax.</description>
 		<graphicData>
-			<texPath>Furniture/Candelabra</texPath>
+			<texPath>Things/Building/Furniture/Candelabra</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
@@ -1780,7 +1780,7 @@
 		<passability>PassThroughOnly</passability>
 		<pathCost>14</pathCost>
 		<fillPercent>0.15</fillPercent>
-		<uiIconPath>Furniture/Candelabra_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Furniture/Candelabra_MenuIcon</uiIconPath>
 		<uiIconScale>0.85</uiIconScale>
 		<statBases>
 			<Beauty>5</Beauty>
@@ -1897,7 +1897,7 @@
 		<label>candle stand</label>
 		<description>A candle stand to prevent darkness seeping in your room. Has lower brightness than a regular torch but lasts longer. Can be refueled with tallow or beeswax.</description>
 		<graphicData>
-			<texPath>Furniture/CandleStand</texPath>
+			<texPath>Things/Building/Furniture/CandleStand</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
@@ -2028,7 +2028,7 @@
 		<label>oil lamp</label>
 		<description>A metallic oil lamp that shines bright as a regular torch and lasts longer. Can be refueled with tar. Fuel consumption rate is not affected by rain.</description>
 		<graphicData>
-			<texPath>Furniture/RusticLamp</texPath>
+			<texPath>Things/Building/Furniture/RusticLamp</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
@@ -2036,7 +2036,7 @@
 			</damageData>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
-		<uiIconPath>Furniture/RusticLamp_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Furniture/RusticLamp_MenuIcon</uiIconPath>
 		<uiIconScale>0.85</uiIconScale>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -2119,7 +2119,7 @@
 		<label>rustic chest</label>
 		<description>A trusty wooden chest to store your personal belongings. Items stored in this will not affect room beauty and they won't deteriorate, even if outside. Multiple chests do not stack comfort bonuses.</description>
 		<graphicData>
-			<texPath>Furniture/RusticChest</texPath>
+			<texPath>Things/Building/Furniture/RusticChest</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -2152,7 +2152,7 @@
 		<label>metal strongbox</label>
 		<description>A trusty metal strongbox to store your personal belongings. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.Multiple chests do not stack comfort bonuses.</description>
 		<graphicData>
-			<texPath>Furniture/MetalStrongbox</texPath>
+			<texPath>Things/Building/Furniture/MetalStrongbox</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
@@ -2191,7 +2191,7 @@
 		<label>royal chest</label>
 		<description>An ornate chest store by the nobles. Items stored in this will not affect room beauty and they won't deteriorate, even if outside. Multiple chests do not stack comfort bonuses.</description>
 		<graphicData>
-			<texPath>Furniture/RoyalChest</texPath>
+			<texPath>Things/Building/Furniture/RoyalChest</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -2235,7 +2235,7 @@
 		<label>dresser</label>
 		<description>A dresser. Gives a small comfort bonus to all nearby beds. Placing more than one dresser near the same bed has no effect.</description>
 		<graphicData>
-			<texPath>Furniture/RusticDresser</texPath>
+			<texPath>Things/Building/Furniture/RusticDresser</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,1)</drawSize>
 			<damageData>
@@ -2289,7 +2289,7 @@
 		<label>closet</label>
 		<description>A closet to store clothes efficiently and beautifully. Place near beds for a slight comfort bonus</description>
 		<graphicData>
-			<texPath>Furniture/RusticCloset1x1</texPath>
+			<texPath>Things/Building/Furniture/RusticCloset1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>3</drawSize>
 		</graphicData>
@@ -2353,7 +2353,7 @@
 		<label>closet (1x2)</label>
 		<description>A closet to store clothes efficiently and beautifully. Place near beds for a slight comfort bonus</description>
 		<graphicData>
-			<texPath>Furniture/RusticCloset1x2</texPath>
+			<texPath>Things/Building/Furniture/RusticCloset1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.5,3)</drawSize>
 		</graphicData>
@@ -2418,7 +2418,7 @@
 		<label>small research shelf</label>
 		<description>Increases research speed when placed near research table. Each research bench can  use two small research shelves.</description>
 		<graphicData>
-			<texPath>Furniture/RusticBookshelf1x1</texPath>
+			<texPath>Things/Building/Furniture/RusticBookshelf1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>3</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -2498,7 +2498,7 @@
 		<label>large research shelf</label>
 		<description>Increases research speed when placed near research table. Each research bench can use one large research shelf.</description>
 		<graphicData>
-			<texPath>Furniture/RusticBookshelf1x2</texPath>
+			<texPath>Things/Building/Furniture/RusticBookshelf1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.5,3)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -2576,7 +2576,7 @@
 		<label>empty shelf</label>
 		<description>An empty shelf.</description>
 		<graphicData>
-			<texPath>Furniture/RusticEmptyShelf1x1</texPath>
+			<texPath>Things/Building/Furniture/RusticEmptyShelf1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
@@ -2642,7 +2642,7 @@
 		<label>empty large shelf</label>
 		<description>An empty bookshelf.</description>
 		<graphicData>
-			<texPath>Furniture/RusticEmptyShelf1x2</texPath>
+			<texPath>Things/Building/Furniture/RusticEmptyShelf1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.5,3)</drawSize>
 		</graphicData>
@@ -2738,7 +2738,7 @@
 		<label>log bed</label>
 		<description>A simple and quick to make log bed. Better than sleeping on bare ground.</description>
 		<graphicData>
-			<texPath>Furniture/LogSlabBed</texPath>
+			<texPath>Things/Building/Furniture/LogSlabBed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -2772,7 +2772,7 @@
 		<label>double log bed</label>
 		<description>A simple and quick to make log bed that fits two people. Better than sleeping on bare ground.</description>
 		<graphicData>
-			<texPath>Furniture/DoubleLogSlabBed</texPath>
+			<texPath>Things/Building/Furniture/DoubleLogSlabBed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.05,2.05)</drawSize>
@@ -2807,7 +2807,7 @@
 		<label>wicker bed</label>
 		<description>A simple and quick to make wicker bed.</description>
 		<graphicData>
-			<texPath>Furniture/BedWicker</texPath>
+			<texPath>Things/Building/Furniture/BedWicker</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -2843,7 +2843,7 @@
 		<label>double wicker bed</label>
 		<description>A simple and quick to make wicker bed that fits two people.</description>
 		<graphicData>
-			<texPath>Furniture/BedWickerDouble</texPath>
+			<texPath>Things/Building/Furniture/BedWickerDouble</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.05,2.05)</drawSize>
@@ -2880,7 +2880,7 @@
 		<label>straw bed</label>
 		<description>A simple and quick to make wicker bed, padded with straw for added comfort.</description>
 		<graphicData>
-			<texPath>Furniture/BedStraw</texPath>
+			<texPath>Things/Building/Furniture/BedStraw</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -2921,7 +2921,7 @@
 		<label>double straw bed</label>
 		<description>A simple and quick to make wicker bed, padded with straw for added comfort that fits two people.</description>
 		<graphicData>
-			<texPath>Furniture/BedStrawDouble</texPath>
+			<texPath>Things/Building/Furniture/BedStrawDouble</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.05,2.05)</drawSize>
@@ -2958,7 +2958,7 @@
 		<label>fur bed</label>
 		<description>A cozy bed made from pieces of soft and comfy fur.</description>
 		<graphicData>
-			<texPath>Furniture/BedFur</texPath>
+			<texPath>Things/Building/Furniture/BedFur</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -2999,7 +2999,7 @@
 		<label>double fur bed</label>
 		<description>A cozy double-wide bed made from pieces of soft and comfy fur that fits two people.</description>
 		<graphicData>
-			<texPath>Furniture/BedFurDouble</texPath>
+			<texPath>Things/Building/Furniture/BedFurDouble</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.05,2.05)</drawSize>
@@ -3041,7 +3041,7 @@
 		<label>rustic bed (red)</label>
 		<description>A rustic comfy bed made up of silk embroidered covers and soft pillows.</description>
 		<graphicData>
-			<texPath>Furniture/RusticBed1x2_Red</texPath>
+			<texPath>Things/Building/Furniture/RusticBed1x2_Red</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,3)</drawSize>
@@ -3087,7 +3087,7 @@
 		<defName>DankPyon_Bed_Rustic_Green</defName>
 		<label>rustic bed (green)</label>
 		<graphicData>
-			<texPath>Furniture/RusticBed1x2_Green</texPath>
+			<texPath>Things/Building/Furniture/RusticBed1x2_Green</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -3095,7 +3095,7 @@
 		<defName>DankPyon_Bed_Rustic_Blue</defName>
 		<label>rustic bed (blue)</label>
 		<graphicData>
-			<texPath>Furniture/RusticBed1x2_Blue</texPath>
+			<texPath>Things/Building/Furniture/RusticBed1x2_Blue</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -3104,7 +3104,7 @@
 		<label>rustic double bed (red)</label>
 		<description>A rustic comfy bed made up of silk embroidered covers and soft pillows. Double-wide bed that fits two people.</description>
 		<graphicData>
-			<texPath>Furniture/RusticBed2x2_Red</texPath>
+			<texPath>Things/Building/Furniture/RusticBed2x2_Red</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4.1,4.1)</drawSize>
@@ -3147,7 +3147,7 @@
 		<defName>DankPyon_Bed_RusticDouble_Green</defName>
 		<label>rustic double bed (green)</label>
 		<graphicData>
-			<texPath>Furniture/RusticBed2x2_Green</texPath>
+			<texPath>Things/Building/Furniture/RusticBed2x2_Green</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -3155,7 +3155,7 @@
 		<defName>DankPyon_Bed_RusticDouble_Blue</defName>
 		<label>rustic double bed (blue)</label>
 		<graphicData>
-			<texPath>Furniture/RusticBed2x2_Blue</texPath>
+			<texPath>Things/Building/Furniture/RusticBed2x2_Blue</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -3165,7 +3165,7 @@
 		<label>wood burning stove</label>
 		<description>A small wood burning stove to heat up a small room.</description>
 		<graphicData>
-			<texPath>Furniture/WoodBurningStove</texPath>
+			<texPath>Things/Building/Furniture/WoodBurningStove</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -3243,7 +3243,7 @@
 		<thingClass>Building_WorkTable</thingClass>
 		<description>A stone hearth for warmth and a homey atmosphere.</description>
 		<graphicData>
-			<texPath>Furniture/RusticHearth</texPath>
+			<texPath>Things/Building/Furniture/RusticHearth</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,3)</drawSize>
@@ -3388,7 +3388,7 @@
 		<passability>PassThroughOnly</passability>
 		<canOverlapZones>false</canOverlapZones>
 		<graphicData>
-			<texPath>Furniture/StrawBedAnimal</texPath>
+			<texPath>Things/Building/Furniture/StrawBedAnimal</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<damageData>
 				<rect>(0.05,0.05,0.9,0.9)</rect>

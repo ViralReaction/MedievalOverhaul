@@ -1024,7 +1024,7 @@
 		<graphicData>
 			<drawSize>(1,1.25)</drawSize>
 			<drawOffset>(0,0,0.2)</drawOffset>
-			<texPath>Furniture/LogColumn</texPath>
+			<texPath>Things/Building/Furniture/LogColumn</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.3, 0.5, 0.3)</volume>
@@ -1111,7 +1111,7 @@
 		<graphicData>
 			<drawSize>(1,1.25)</drawSize>
 			<drawOffset>(0,0,0.2)</drawOffset>
-			<texPath>Furniture/RoyalColumn</texPath>
+			<texPath>Things/Building/Furniture/RoyalColumn</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<shadowData>

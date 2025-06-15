@@ -6,7 +6,7 @@
 		<label>lecturn</label>
 		<description>A simple lecturn to place scriptures or books to be easily read.</description>
 		<graphicData>
-			<texPath>Furniture/Lecturn</texPath>
+			<texPath>Things/Building/Furniture/Lecturn</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shadowData>
 				<volume>(0.3, 0.6, 0.3)</volume>

@@ -7,7 +7,7 @@
 		<label>royal closet</label>
 		<description>A closet to store clothes efficiently and beautifully. Place near beds for a slight comfort bonus</description>
 		<graphicData>
-			<texPath>Furniture/RoyalCloset</texPath>
+			<texPath>Things/Building/Furniture/RoyalCloset</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>3</drawSize>
@@ -66,7 +66,7 @@
 		<label>royal bookshelf</label>
 		<description>Increases research speed when placed near research table. Each research bench can  use two bookshelf.</description>
 		<graphicData>
-			<texPath>Furniture/RoyalBookshelf</texPath>
+			<texPath>Things/Building/Furniture/RoyalBookshelf</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>3</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -127,7 +127,7 @@
 		<label>royal armchair</label>
 		<description>A luxurious, large, soft, comfy seat. Great for relaxation. Can be used at tables, work stations, and elsewhere.</description>
 		<graphicData>
-			<texPath>Furniture/RoyalArmchair</texPath>
+			<texPath>Things/Building/Furniture/RoyalArmchair</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,3)</drawSize>
@@ -177,7 +177,7 @@
 		<label>royal throne</label>
 		<description>A grand, ornate chair made for a king or queen, symbolizing their authority and power. It is often decorated with rich fabrics, carvings, and precious metals.</description>
 		<graphicData>
-			<texPath>Furniture/SimpleThrone</texPath>
+			<texPath>Things/Building/Furniture/SimpleThrone</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.5,2.5)</drawSize>
@@ -228,7 +228,7 @@
 		<defName>DankPyon_RoyalTable2x2c</defName>
 		<label>royal table (2x2)</label>
 		<graphicData>
-			<texPath>Furniture/RoyalTable2x2</texPath>
+			<texPath>Things/Building/Furniture/RoyalTable2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -265,7 +265,7 @@
 		<defName>DankPyon_RoyalTable2x4c</defName>
 		<label>royal table (2x4)</label>
 		<graphicData>
-			<texPath>Furniture/RoyalTable2x4</texPath>
+			<texPath>Things/Building/Furniture/RoyalTable2x4</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,6)</drawSize>
@@ -305,7 +305,7 @@
 		<description>A small luxurios gilded bedside table which makes nearby beds more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.</description>
 		<surfaceType>Item</surfaceType>
 		<graphicData>
-			<texPath>Furniture/RoyalEndTable</texPath>
+			<texPath>Things/Building/Furniture/RoyalEndTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<shadowData>
@@ -351,7 +351,7 @@
 		<label>royal dresser</label>
 		<description>An elegant dresser framed with gold. Gives a comfort bonus to all nearby beds. Placing more than one dresser near the same bed has no effect.</description>
 		<graphicData>
-			<texPath>Furniture/RoyalDresser</texPath>
+			<texPath>Things/Building/Furniture/RoyalDresser</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,1)</drawSize>
@@ -413,7 +413,7 @@
 		<label>royal tudor bed</label>
 		<description>A luxurious gold-inlaid bed fit for the highborn. Very comfy and beautiful, it is a work of art in itself. Fits two.</description>
 		<graphicData>
-			<texPath>Furniture/RoyalTudorBed</texPath>
+			<texPath>Things/Building/Furniture/RoyalTudorBed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4.05,4.05)</drawSize>
