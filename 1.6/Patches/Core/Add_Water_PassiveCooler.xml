@@ -54,7 +54,7 @@
 		<nomatch Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[defName="PassiveCooler"]</xpath>
 			<value>
-				<inspectorTabs></inspectorTabs>
+				<inspectorTabs/>
 			</value>
 		</nomatch>
 	</Operation>
