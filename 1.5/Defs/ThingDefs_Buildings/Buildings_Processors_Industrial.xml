@@ -12,7 +12,7 @@
 		<thingClass>Building_WorkTable</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Production/TanningDrum/TanningDrum</texPath>
+			<texPath>Things/Building/Production/TanningDrum/TanningDrum</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,3)</drawSize>
@@ -95,7 +95,7 @@
 		<thingClass>Building_WorkTable</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Production/BlastFurnace/BlastFurnace</texPath>
+			<texPath>Things/Building/Production/BlastFurnace/BlastFurnace</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(5,4)</drawSize>
@@ -106,7 +106,7 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Production/BlastFurnace/BlastFurnace</uiIconPath>
+		<uiIconPath>Things/Building/Production/BlastFurnace/BlastFurnace</uiIconPath>
 		<costList>
 			<Steel>200</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
@@ -181,7 +181,7 @@
 		<thingClass>Building_WorkTable</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Production/ClothSpinner/ClothSpinner</texPath>
+			<texPath>Things/Building/Production/ClothSpinner/ClothSpinner</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>

@@ -29,7 +29,7 @@
 		<description>The remains of an ancient battering ram. Were often used to breach castle gates, allowing troops to infiltrate fortifications. Can be destroyed to gain resources.</description>
 		<rotatable>false</rotatable>
 		<graphicData>
-			<texPath>Ruins/RuinedBatteringRam</texPath>
+			<texPath>Things/Building/Ruins/RuinedBatteringRam</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(5,4)</drawSize>
@@ -59,7 +59,7 @@
 		<description>The remains of an ancient siege tower. Tall and robust, siege towers were made to carry troops inside and were positioned againt walls to allow soldiers to climb and storm the fortress. Can be destroyed to gain resources.</description>
 		<rotatable>false</rotatable>
 		<graphicData>
-			<texPath>Ruins/RuinedSiegeTower</texPath>
+			<texPath>Things/Building/Ruins/RuinedSiegeTower</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<color>(119,94,75)</color>
@@ -88,7 +88,7 @@
 		<description>The remains of a soldier. Can be scavenged for resources.</description>
 		<!--thingClass>MedievalOverhaul.Building_Lootable</thingClass-->
 		<graphicData>
-			<texPath>Ruins/FootmanRemains</texPath>
+			<texPath>Things/Building/Ruins/FootmanRemains</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(1,1.5)</drawSize>
 		</graphicData>
@@ -124,7 +124,7 @@
 				<enemySpawnChance>0.15</enemySpawnChance>
 				<hostileEnemy>true</hostileEnemy>
 				<emptyGraphicData>
-                    <texPath>Ruins/FootmanLooted</texPath>
+                    <texPath>Things/Building/Ruins/FootmanLooted</texPath>
 					<graphicClass>Graphic_Random</graphicClass>
 					<drawSize>(1,1.5)</drawSize>
                 </emptyGraphicData>
@@ -194,7 +194,7 @@
 		<description>an old and rusty piece of chainmail. Can be salvaged for resources.</description>
 		<!--thingClass>MedievalOverhaul.Building_Lootable</thingClass-->
 		<graphicData>
-			<texPath>Ruins/RustedHauberk</texPath>
+			<texPath>Things/Building/Ruins/RustedHauberk</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
@@ -211,7 +211,7 @@
 				<enemySpawnChance>0.15</enemySpawnChance>
 				<hostileEnemy>true</hostileEnemy>
 				<emptyGraphicData>
-                    <texPath>Ruins/RustedHauberk</texPath>
+                    <texPath>Things/Building/Ruins/RustedHauberk</texPath>
 					<graphicClass>Graphic_Random</graphicClass>
 					<drawSize>(1,1)</drawSize>
                 </emptyGraphicData>
@@ -238,7 +238,7 @@
 		<description>Remains of a battlefield. Full of rusted weapons and armor. Can be salvaged for resources</description>
 		<!--thingClass>MedievalOverhaul.Building_Lootable</thingClass-->
 		<graphicData>
-			<texPath>Ruins/RustedHelm</texPath>
+			<texPath>Things/Building/Ruins/RustedHelm</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
@@ -254,7 +254,7 @@
 				<enemySpawnChance>0.15</enemySpawnChance>
 				<hostileEnemy>true</hostileEnemy>
 				<emptyGraphicData>
-                    <texPath>Ruins/RustedHelm</texPath>
+                    <texPath>Things/Building/Ruins/RustedHelm</texPath>
 					<graphicClass>Graphic_Random</graphicClass>
 					<drawSize>(1,1)</drawSize>
                 </emptyGraphicData>
@@ -283,7 +283,7 @@
 		<description>Remains of a battlefield. Full of rusted weapons and armor. Can be salvaged for resources</description>
 		<!--thingClass>MedievalOverhaul.Building_Lootable</thingClass-->
 		<graphicData>
-			<texPath>Ruins/RustedSwords</texPath>
+			<texPath>Things/Building/Ruins/RustedSwords</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
@@ -299,7 +299,7 @@
 				<enemySpawnChance>0.15</enemySpawnChance>
 				<hostileEnemy>true</hostileEnemy>
 				<emptyGraphicData>
-                    <texPath>Ruins/RustedSwords</texPath>
+                    <texPath>Things/Building/Ruins/RustedSwords</texPath>
 					<graphicClass>Graphic_Random</graphicClass>
 					<drawSize>(1,1)</drawSize>
                 </emptyGraphicData>
@@ -329,7 +329,7 @@
 		<label>ancient ruined banner</label>
 		<description>Remains of a battlefield. An ancient banner of an old long forgotten kingdom. Can be salvaged for resources</description>
 		<graphicData>
-			<texPath>Ruins/RuinedBanner</texPath>
+			<texPath>Things/Building/Ruins/RuinedBanner</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -346,7 +346,7 @@
 		<description>An ambushed caravan. There are still some goods left behind. Can be salvaged for resources</description>
 		<!--thingClass>MedievalOverhaul.Building_Lootable</thingClass-->
 		<graphicData>
-			<texPath>Ruins/Cart_Ruined</texPath>
+			<texPath>Things/Building/Ruins/Cart_Ruined</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(4,4)</drawSize>
 			<color>(119,94,75)</color>
@@ -371,7 +371,7 @@
 				<enemySpawnChance>0.15</enemySpawnChance>
 				<hostileEnemy>true</hostileEnemy>
 				<emptyGraphicData>
-                    <texPath>Ruins/Cart_Ruined</texPath>
+                    <texPath>Things/Building/Ruins/Cart_Ruined</texPath>
 					<graphicClass>Graphic_Random</graphicClass>
 					<drawSize>(4,4)</drawSize>
 					<color>(119,94,75)</color>
@@ -414,7 +414,7 @@
 		<description>An old and ruined empty crate. Can be salvaged for resources</description>
 		<!--thingClass>MedievalOverhaul.Building_Lootable</thingClass-->
 		<graphicData>
-			<texPath>Ruins/RuinedCrate</texPath>
+			<texPath>Things/Building/Ruins/RuinedCrate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<color>(119,94,75)</color>
@@ -431,7 +431,7 @@
 				<enemySpawnChance>0.15</enemySpawnChance>
 				<hostileEnemy>true</hostileEnemy>
 				<emptyGraphicData>
-                    <texPath>Ruins/Looted_RuinedCrate</texPath>
+                    <texPath>Things/Building/Ruins/Looted_RuinedCrate</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 					<color>(119,94,75)</color>
@@ -473,7 +473,7 @@
 		<label>ancient ruined barrel</label>
 		<description>An old and ruined empty barrel. Can be salvaged for resources</description>
 		<graphicData>
-			<texPath>Ruins/RuinedBarrel</texPath>
+			<texPath>Things/Building/Ruins/RuinedBarrel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<color>(119,94,75)</color>
@@ -486,7 +486,7 @@
 				<enemySpawnChance>0.15</enemySpawnChance>
 				<hostileEnemy>true</hostileEnemy>
 				<emptyGraphicData>
-                    <texPath>Ruins/Looted_RuinedBarrel</texPath>
+                    <texPath>Things/Building/Ruins/Looted_RuinedBarrel</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 					<color>(119,94,75)</color>

@@ -76,7 +76,7 @@
 		<thingClass>Building_WorkTable</thingClass>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Temperature/LargePyre</texPath>
+			<texPath>Things/Building/Temperature/LargePyre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawRotated>false</drawRotated>
@@ -89,7 +89,7 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<!-- <uiIconPath>Temperature/LargePyre</uiIconPath> -->
+		<!-- <uiIconPath>Things/Building/Temperature/LargePyre</uiIconPath> -->
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>42</pathCost>
@@ -219,7 +219,7 @@
 		<thingClass>Building_WorkTable</thingClass>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Temperature/LargeRoundPyre</texPath>
+			<texPath>Things/Building/Temperature/LargeRoundPyre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawRotated>false</drawRotated>

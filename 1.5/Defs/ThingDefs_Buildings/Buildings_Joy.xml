@@ -6,7 +6,7 @@
 		<label>cup and dice</label>
 		<description>A medieval game of luck. Played with a leather cup and some dice.</description>
 		<graphicData>
-			<texPath>Joy/CupAndDice</texPath>
+			<texPath>Things/Building/Joy/CupAndDice</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<shadowData>
@@ -57,7 +57,7 @@
 		<label>tarocco table</label>
 		<description>A table designed for playing card games like Tarocco. A great way to test your strategic skills and a bit of luck.\n\nThis building requires adjacent chairs or stools to use.</description>
 		<graphicData>
-			<texPath>Joy/Tarocco</texPath>
+			<texPath>Things/Building/Joy/Tarocco</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -111,7 +111,7 @@
 		<label>rim of war</label>
 		<description>A soft-topped bounded table for simulating a war game. A great way to test your strategic skills and a bit of luck.</description>
 		<graphicData>
-			<texPath>Joy/RimWar</texPath>
+			<texPath>Things/Building/Joy/RimWar</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>

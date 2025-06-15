@@ -23,7 +23,7 @@
 		<label>hay bale</label>
 		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
 		<graphicData>
-			<texPath>Storage/Bale1x2</texPath>
+			<texPath>Things/Building/Storage/Bale1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 			<color>(137,132,0)</color>
@@ -71,7 +71,7 @@
 		<label>straw bale</label>
 		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
 		<graphicData>
-			<texPath>Storage/Bale1x2</texPath>
+			<texPath>Things/Building/Storage/Bale1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 			<color>(229,186,90)</color>
@@ -87,7 +87,7 @@
 		<label>flax bale</label>
 		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
 		<graphicData>
-			<texPath>Storage/Bale1x2</texPath>
+			<texPath>Things/Building/Storage/Bale1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 			<color>(158,145,94)</color>
@@ -103,7 +103,7 @@
 		<label>hay bale(2x2)</label>
 		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
 		<graphicData>
-			<texPath>Storage/Bale2x2</texPath>
+			<texPath>Things/Building/Storage/Bale2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 			<color>(137,132,0)</color>
@@ -127,7 +127,7 @@
 		<defName>DankPyon_StrawBale2x2c</defName>
 		<label>straw bale(2x2)</label>
 		<graphicData>
-			<texPath>Storage/Bale2x2</texPath>
+			<texPath>Things/Building/Storage/Bale2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 			<color>(229,186,90)</color>
@@ -142,7 +142,7 @@
 		<defName>DankPyon_FlaxBale2x2c</defName>
 		<label>flax bale(2x2)</label>
 		<graphicData>
-			<texPath>Storage/Bale2x2</texPath>
+			<texPath>Things/Building/Storage/Bale2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 			<color>(158,145,94)</color>
@@ -159,7 +159,7 @@
 		<label>hay pile</label>
 		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
 		<graphicData>
-			<texPath>Storage/Pile1x2</texPath>
+			<texPath>Things/Building/Storage/Pile1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 			<color>(137,132,0)</color>
@@ -207,7 +207,7 @@
 		<label>straw pile</label>
 		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
 		<graphicData>
-			<texPath>Storage/Pile1x2</texPath>
+			<texPath>Things/Building/Storage/Pile1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 			<color>(229,186,90)</color>
@@ -223,7 +223,7 @@
 		<label>flax pile</label>
 		<description>A collective pile of straw, flax, and hay fashioned to conserve space.</description>
 		<graphicData>
-			<texPath>Storage/Pile1x2</texPath>
+			<texPath>Things/Building/Storage/Pile1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 			<color>(158,145,94)</color>
@@ -240,11 +240,11 @@
 		<label>raw wood pile</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/RawWood1x1</texPath>
+			<texPath>Things/Building/Storage/RawWood1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<uiIconPath>Storage/RawWood1x1_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/RawWood1x1_north</uiIconPath>
 		<uiIconScale>1</uiIconScale>
 		<size>(1,1)</size>
 
@@ -288,7 +288,7 @@
 		<label>raw wood (1x2)</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/RawWood1x2</texPath>
+			<texPath>Things/Building/Storage/RawWood1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 		</graphicData>
@@ -334,7 +334,7 @@
 		<label>raw wood (2x2)</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/RawWood2x2</texPath>
+			<texPath>Things/Building/Storage/RawWood2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -381,7 +381,7 @@
 		<label>timber (1x1)</label>
 		<description>Timber that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/Timber1x1</texPath>
+			<texPath>Things/Building/Storage/Timber1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -429,7 +429,7 @@
 		<label>timber (1x2)</label>
 		<description>Timber that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/Timber1x2</texPath>
+			<texPath>Things/Building/Storage/Timber1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 		</graphicData>
@@ -476,7 +476,7 @@
 		<label>timber (2x2)</label>
 		<description>Timber that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/Timber2x2</texPath>
+			<texPath>Things/Building/Storage/Timber2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -524,7 +524,7 @@
 		<label>bricks(1x1)</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/Bricks1x1</texPath>
+			<texPath>Things/Building/Storage/Bricks1x1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 	  		<drawRotated>false</drawRotated>
@@ -572,7 +572,7 @@
 		<label>bricks(1x2)</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/Bricks1x2</texPath>
+			<texPath>Things/Building/Storage/Bricks1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -618,7 +618,7 @@
 		<label>bricks</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/Bricks2x2</texPath>
+			<texPath>Things/Building/Storage/Bricks2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 	  	<drawRotated>false</drawRotated>
@@ -667,7 +667,7 @@
 		<label>iron ingot stack(1x1)</label>
 		<description>Ingots that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/IronIngotStack1x1</texPath>
+			<texPath>Things/Building/Storage/IronIngotStack1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
@@ -713,7 +713,7 @@
 		<defName>DankPyon_IronIngots1x2c</defName>
 		<label>iron ingot stack(1x2)</label>
 		<graphicData>
-			<texPath>Storage/IronIngotStack1x2</texPath>
+			<texPath>Things/Building/Storage/IronIngotStack1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 		</graphicData>
@@ -737,7 +737,7 @@
 		<defName>DankPyon_IronIngots2x2c</defName>
 		<label>iron ingot stack(2x2)</label>
 		<graphicData>
-			<texPath>Storage/IronIngotStack2x2</texPath>
+			<texPath>Things/Building/Storage/IronIngotStack2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -763,7 +763,7 @@
 		<label>steel ingot stack(1x1)</label>
 		<description>Ingots that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/IngotStack1x1</texPath>
+			<texPath>Things/Building/Storage/IngotStack1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 			<color>(105,105,105)</color>
@@ -810,7 +810,7 @@
 		<defName>DankPyon_SteelIngots1x2c</defName>
 		<label>steel ingot stack(1x2)</label>
 		<graphicData>
-			<texPath>Storage/IngotStack1x2</texPath>
+			<texPath>Things/Building/Storage/IngotStack1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 			<color>(105,105,105)</color>
@@ -835,7 +835,7 @@
 		<defName>DankPyon_SteelIngots2x2c</defName>
 		<label>steel ingot stack(2x2)</label>
 		<graphicData>
-			<texPath>Storage/IngotStack2x2</texPath>
+			<texPath>Things/Building/Storage/IngotStack2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 			<color>(105,105,105)</color>
@@ -862,7 +862,7 @@
 		<label>silver ingot stack(1x1)</label>
 		<description>Ingots that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/SilverIngotStack1x1</texPath>
+			<texPath>Things/Building/Storage/SilverIngotStack1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
@@ -907,7 +907,7 @@
 		<defName>DankPyon_SilverIngots1x2c</defName>
 		<label>silver ingot stack(1x2)</label>
 		<graphicData>
-			<texPath>Storage/SilverIngotStack1x2</texPath>
+			<texPath>Things/Building/Storage/SilverIngotStack1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 		</graphicData>
@@ -931,7 +931,7 @@
 		<defName>DankPyon_SilverIngots2x2c</defName>
 		<label>silver ingot stack(2x2)</label>
 		<graphicData>
-			<texPath>Storage/SilverIngotStack2x2</texPath>
+			<texPath>Things/Building/Storage/SilverIngotStack2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -957,7 +957,7 @@
 		<label>gold ingot stack(1x1)</label>
 		<description>Ingots that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/GoldIngotStack1x1</texPath>
+			<texPath>Things/Building/Storage/GoldIngotStack1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
@@ -1002,7 +1002,7 @@
 		<defName>DankPyon_GoldIngots1x2c</defName>
 		<label>gold ingot stack(1x2)</label>
 		<graphicData>
-			<texPath>Storage/GoldIngotStack1x2</texPath>
+			<texPath>Things/Building/Storage/GoldIngotStack1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 		</graphicData>
@@ -1026,7 +1026,7 @@
 		<defName>DankPyon_GoldIngots2x2c</defName>
 		<label>gold ingot stack(2x2)</label>
 		<graphicData>
-			<texPath>Storage/GoldIngotStack2x2</texPath>
+			<texPath>Things/Building/Storage/GoldIngotStack2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -1052,12 +1052,12 @@
 		<label>cupboard</label>
 		<description>An open cupboard to store and display objects in an efficient manner.</description>
 		<graphicData>
-			<texPath>Storage/CupboardEmpty</texPath>
+			<texPath>Things/Building/Storage/CupboardEmpty</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5,3)</drawSize>
 		</graphicData>
 		<size>(3,1)</size>
-		<uiIconPath>Storage/CupboardEmpty_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/CupboardEmpty_north</uiIconPath>
 		<uiIconScale>2</uiIconScale>
 
 		<statBases>
@@ -1078,13 +1078,13 @@
 		<label>bread cupboard</label>
 		<description>An open cupboard to store and display objects in an efficient manner.</description>
 		<graphicData>
-			<texPath>Storage/CupboardBread</texPath>
+			<texPath>Things/Building/Storage/CupboardBread</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(5,3)</drawSize>
 		</graphicData>
 		<size>(3,1)</size>
-		<uiIconPath>Storage/CupboardBread_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/CupboardBread_north</uiIconPath>
 		<uiIconScale>2</uiIconScale>
 
 		<statBases>
@@ -1123,9 +1123,9 @@
 		<defName>DankPyon_RusticCupboardCheese</defName>
 		<label>cheese cupboard</label>
 		<graphicData>
-			<texPath>Storage/CupboardCheese</texPath>
+			<texPath>Things/Building/Storage/CupboardCheese</texPath>
 		</graphicData>
-		<uiIconPath>Storage/CupboardCheese_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/CupboardCheese_north</uiIconPath>
 
 		<building>
 			<fixedStorageSettings Inherit="False">
@@ -1150,9 +1150,9 @@
 		<defName>DankPyon_RusticCupboardWine</defName>
 		<label>wine cupboard</label>
 		<graphicData>
-			<texPath>Storage/CupboardDrug</texPath>
+			<texPath>Things/Building/Storage/CupboardDrug</texPath>
 		</graphicData>
-		<uiIconPath>Storage/CupboardDrug_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/CupboardDrug_north</uiIconPath>
 
 		<building>
 			<fixedStorageSettings Inherit="False">
@@ -1180,7 +1180,7 @@
 		<label>large barrel</label>
 		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelBig</texPath>
+			<texPath>Things/Building/Storage/BarrelBig</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -1210,7 +1210,7 @@
 		<label>large grape barrel</label>
 		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelBigGrape</texPath>
+			<texPath>Things/Building/Storage/BarrelBigGrape</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -1241,7 +1241,7 @@
 		<label>large barrel</label>
 		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelBigDown</texPath>
+			<texPath>Things/Building/Storage/BarrelBigDown</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -1271,12 +1271,12 @@
 		<label>barrel shelf</label>
 		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelStack</texPath>
+			<texPath>Things/Building/Storage/BarrelStack</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5,3)</drawSize>
 		</graphicData>
 		<size>(3,1)</size>
-		<uiIconPath>Storage/BarrelStack_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelStack_north</uiIconPath>
 		<uiIconScale>2</uiIconScale>
 
 		<statBases>
@@ -1297,12 +1297,12 @@
 		<label>barrel</label>
 		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelClosed</texPath>
+			<texPath>Things/Building/Storage/BarrelClosed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelClosed</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelClosed</uiIconPath>
 		<uiIconScale>1.5</uiIconScale>
 		<castEdgeShadows>true</castEdgeShadows>
 		<size>(1,1)</size>
@@ -1326,13 +1326,13 @@
 		<label>barrel of wood</label>
 		<description>A cylindrical barrel reserved for wood ore to save space. Can hold up to 5 stacks of wood. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelWoodLog</texPath>
+			<texPath>Things/Building/Storage/BarrelWoodLog</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelWoodLog</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelWoodLog</uiIconPath>
 		<uiIconScale>1.5</uiIconScale>
 		<size>(1,1)</size>
 
@@ -1374,13 +1374,13 @@
 		<label>barrel of iron ore</label>
 		<description>A cylindrical barrel reserved for iron ore to save space. Can hold up to 5 stacks of iron ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelIronOre</texPath>
+			<texPath>Things/Building/Storage/BarrelIronOre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelIronOre</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelIronOre</uiIconPath>
 
 		<building>
 			<fixedStorageSettings Inherit = "false">
@@ -1407,13 +1407,13 @@
 		<label>barrel of silver ore</label>
 		<description>A cylindrical barrel reserved for silver ore to save space. Can hold up to 5 stacks of silver ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelSilverOre</texPath>
+			<texPath>Things/Building/Storage/BarrelSilverOre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelSilverOre</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelSilverOre</uiIconPath>
 		
 		<building>
 			<fixedStorageSettings Inherit = "false">
@@ -1440,13 +1440,13 @@
 		<label>barrel of gold ore</label>
 		<description>A cylindrical barrel reserved for gold ore to save space. Can hold up to 5 stacks of gold ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelGoldOre</texPath>
+			<texPath>Things/Building/Storage/BarrelGoldOre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelGoldOre</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelGoldOre</uiIconPath>
 
 		<building>
 			<fixedStorageSettings Inherit = "false">
@@ -1473,13 +1473,13 @@
 		<label>barrel of coal ore</label>
 		<description>A cylindrical barrel reserved for coal ore to save space. Can hold up to 5 stacks of coal ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelCoalOre</texPath>
+			<texPath>Things/Building/Storage/BarrelCoalOre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelCoalOre</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelCoalOre</uiIconPath>
 
 		<building>
 			<fixedStorageSettings Inherit = "false">
@@ -1506,13 +1506,13 @@
 		<label>barrel of textiles</label>
 		<description>A cylindrical barrel reserved for textiles to save space. Can hold up to 5 stacks of textiles. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-		<texPath>Storage/BarrelTextiles</texPath>
+		<texPath>Things/Building/Storage/BarrelTextiles</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
 		<drawSize>(2,2)</drawSize>
 		<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelTextiles</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelTextiles</uiIconPath>
 
 		<building>
 			<fixedStorageSettings Inherit = "false">
@@ -1539,13 +1539,13 @@
 		<label>barrel of leather</label>
 		<description>A cylindrical barrel reserved for leather to save space. Can hold up to 5 stacks of leather. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelLeather</texPath>
+			<texPath>Things/Building/Storage/BarrelLeather</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelLeather</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelLeather</uiIconPath>
 
 		<building>
 			<fixedStorageSettings Inherit = "false">
@@ -1572,13 +1572,13 @@
 		<label>barrel of basic components</label>
 		<description>A cylindrical barrel reserved for basic components to save space. Can hold up to 5 stacks of basic components. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelComponentBasic</texPath>
+			<texPath>Things/Building/Storage/BarrelComponentBasic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelComponentBasic</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelComponentBasic</uiIconPath>
 		<uiIconScale>1.5</uiIconScale>
 
 		<building>
@@ -1606,13 +1606,13 @@
 		<label>barrel of grape</label>
 		<description>A cylindrical barrel reserved for wood ore to save space. Can hold up to 5 stacks of wood. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelGrape</texPath>
+			<texPath>Things/Building/Storage/BarrelGrape</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelGrape</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelGrape</uiIconPath>
 		
 		<building>
 			<fixedStorageSettings Inherit = "false">
@@ -1639,7 +1639,7 @@
 		<label>large empty shelf</label>
 		<description>A large square platform designed to store things, keeping them clean and off the ground.</description>
 		<graphicData>
-			<texPath>Storage/StackEmpty</texPath>
+			<texPath>Things/Building/Storage/StackEmpty</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -1663,7 +1663,7 @@
 		<label>large bread shelf</label>
 		<description>A large square platform designed to store things, keeping them clean and off the ground.</description>
 		<graphicData>
-			<texPath>Storage/StackBread</texPath>
+			<texPath>Things/Building/Storage/StackBread</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -1706,7 +1706,7 @@
 		<defName>DankPyon_LargeShelf_Grain</defName>
 		<label>large grain shelf</label>
 		<graphicData>
-			<texPath>Storage/StackFlour</texPath>
+			<texPath>Things/Building/Storage/StackFlour</texPath>
 		</graphicData>
 
 		<building>
@@ -1733,7 +1733,7 @@
 		<defName>DankPyon_LargeShelf_Meat</defName>
 		<label>large meat shelf</label>
 		<graphicData>
-			<texPath>Storage/StackMeat</texPath>
+			<texPath>Things/Building/Storage/StackMeat</texPath>
 		</graphicData>
 
 		<building>
@@ -1758,7 +1758,7 @@
 		<defName>DankPyon_LargeShelf_Cheese</defName>
 		<label>large cheese shelf</label>
 		<graphicData>
-			<texPath>Storage/StackCheese</texPath>
+			<texPath>Things/Building/Storage/StackCheese</texPath>
 		</graphicData>
 
 		<building>
@@ -1784,7 +1784,7 @@
 		<defName>DankPyon_LargeShelf_Wine</defName>
 		<label>large wine shelf</label>
 		<graphicData>
-			<texPath>Storage/StackDrug</texPath>
+			<texPath>Things/Building/Storage/StackDrug</texPath>
 		</graphicData>
 
 		<building>
@@ -1810,7 +1810,7 @@
 		<defName>DankPyon_LargeShelf_Mead</defName>
 		<label>large mead shelf</label>
 		<graphicData>
-			<texPath>Storage/StackMead</texPath>
+			<texPath>Things/Building/Storage/StackMead</texPath>
 		</graphicData>
 
 		<building>
@@ -1836,7 +1836,7 @@
 		<defName>DankPyon_LargeShelf_Vegetables</defName>
 		<label>large vegetables shelf</label>
 		<graphicData>
-			<texPath>Storage/StackVegetables</texPath>
+			<texPath>Things/Building/Storage/StackVegetables</texPath>
 		</graphicData>
 
 		<building>
@@ -1864,7 +1864,7 @@
 		<label>sack</label>
 		<description>A robust fabric bag designed to store objects in a more efficient manner.</description>
 		<graphicData>
-			<texPath>Storage/SackClosed</texPath>
+			<texPath>Things/Building/Storage/SackClosed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -1890,7 +1890,7 @@
 		<label>sack of flour</label>
 		<description>A robust fabric bag designed to store objects in a more efficient manner.</description>
 		<graphicData>
-			<texPath>Storage/SackFlour</texPath>
+			<texPath>Things/Building/Storage/SackFlour</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -1935,7 +1935,7 @@
 		<label>sack of wheat</label>
 		<description>A robust fabric bag designed to store objects in a more efficient manner.</description>
 		<graphicData>
-			<texPath>Storage/SackWheat</texPath>
+			<texPath>Things/Building/Storage/SackWheat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -1964,7 +1964,7 @@
 		<label>sack of potatoes</label>
 		<description>A robust fabric bag designed to store objects in a more efficient manner.</description>
 		<graphicData>
-			<texPath>Storage/SackPotato</texPath>
+			<texPath>Things/Building/Storage/SackPotato</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -1993,7 +1993,7 @@
 		<label>sack of apples</label>
 		<description>A robust fabric bag designed to store objects in a more efficient manner.</description>
 		<graphicData>
-			<texPath>Storage/SackApple</texPath>
+			<texPath>Things/Building/Storage/SackApple</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -2023,7 +2023,7 @@
 		<label>crate</label>
 		<description>A wooden box made up of planks desinged to store resources. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/Crate1x1</texPath>
+			<texPath>Things/Building/Storage/Crate1x1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -2049,7 +2049,7 @@
 		<label>crate</label>
 		<description>A wooden box made up of planks desinged to store resources. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/Crate1x2</texPath>
+			<texPath>Things/Building/Storage/Crate1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 			<damageData>
@@ -2079,7 +2079,7 @@
 		<description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<thingClass>Building_Storage</thingClass>
 		<graphicData>
-			<texPath>Storage/RackEmpty</texPath>
+			<texPath>Things/Building/Storage/RackEmpty</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
@@ -2127,7 +2127,7 @@
 		<description>A rack for storing swords in an orderly fashion. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<thingClass>Building_Storage</thingClass>
 		<graphicData>
-			<texPath>Storage/RackFilled2</texPath>
+			<texPath>Things/Building/Storage/RackFilled2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,3)</drawSize>
@@ -2176,7 +2176,7 @@
 	<description>A rack for storing spears in an orderly fashion. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 	<thingClass>Building_Storage</thingClass>
 	<graphicData>
-	  <texPath>Storage/RackFilled3</texPath>
+	  <texPath>Things/Building/Storage/RackFilled3</texPath>
 	  <graphicClass>Graphic_Multi</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
 	  <drawSize>(3,3)</drawSize>
@@ -2189,7 +2189,7 @@
 	<description>A rack for storing weapons in an orderly fashion. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 	<thingClass>Building_Storage</thingClass>
 	<graphicData>
-	  <texPath>Storage/RackFilled1</texPath>
+	  <texPath>Things/Building/Storage/RackFilled1</texPath>
 	  <graphicClass>Graphic_Multi</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
 	  <drawSize>(3,3)</drawSize>
@@ -2203,12 +2203,12 @@
 		<description>A shelf for storing miscellaneous items. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<thingClass>Building_Storage</thingClass>
 		<graphicData>
-			<texPath>Storage/ShelfEmpty</texPath>
+			<texPath>Things/Building/Storage/ShelfEmpty</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Storage/ShelfEmpty_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/ShelfEmpty_north</uiIconPath>
 		<uiIconScale>1.25</uiIconScale>
 		<size>(2,1)</size>
 		<defaultPlacingRot>South</defaultPlacingRot>
@@ -2241,24 +2241,24 @@
 		<defName>DankPyon_ShelfFilled1c</defName>
 		<label>filled shelf</label>
 		<graphicData>
-		<texPath>Storage/ShelfHerb</texPath>
+		<texPath>Things/Building/Storage/ShelfHerb</texPath>
 		<graphicClass>Graphic_Multi</graphicClass>
 		<drawSize>(2.75,2.75)</drawSize>
 		<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Storage/ShelfHerb_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/ShelfHerb_north</uiIconPath>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_ShelfBase">
 		<defName>DankPyon_ShelfFilled2c</defName>
 		<label>filled shelf</label>
 		<graphicData>
-		<texPath>Storage/ShelfFilledA</texPath>
+		<texPath>Things/Building/Storage/ShelfFilledA</texPath>
 		<graphicClass>Graphic_Multi</graphicClass>
 		<drawSize>(2.75,2.75)</drawSize>
 		<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Storage/ShelfFilledA_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/ShelfFilledA_north</uiIconPath>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_ShelfBase">
@@ -2376,12 +2376,12 @@
 		<defName>DankPyon_ShelfFilledWine</defName>
 		<label>wine filled shelf</label>
 		<graphicData>
-		<texPath>Storage/ShelfFilledWine</texPath>
+		<texPath>Things/Building/Storage/ShelfFilledWine</texPath>
 		<graphicClass>Graphic_Multi</graphicClass>
 		<drawSize>(2.75,2.75)</drawSize>
 		<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Storage/ShelfFilledWine_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/ShelfFilledWine_north</uiIconPath>
 
 		<building>
 		<fixedStorageSettings>
@@ -2544,12 +2544,12 @@
 	<description>A shelf for reserved for clean plates. Items stored in this will not affect room beauty.</description>
 	<thingClass>Building_Storage</thingClass>
 	<graphicData>
-	  <texPath>Storage/ShelfPlate</texPath>
+	  <texPath>Things/Building/Storage/ShelfPlate</texPath>
 	  <graphicClass>Graphic_Multi</graphicClass>
 	  <drawSize>(2.70,2.70)</drawSize>
 	  <shaderType>CutoutComplex</shaderType>
 	</graphicData>
-	<uiIconPath>Storage/ShelfPlate_north</uiIconPath>
+	<uiIconPath>Things/Building/Storage/ShelfPlate_north</uiIconPath>
 
 	<altitudeLayer>Building</altitudeLayer>
 	<passability>PassThroughOnly</passability>
@@ -2608,7 +2608,7 @@
 		<label>empty cart</label>
 		<description>A trusty wagon to carry novelties, artifacts, and goods across the unforgiving lands of the rim. Can be used to store items.</description>
 		<graphicData>
-			<texPath>Storage/Cart_Empty</texPath>
+			<texPath>Things/Building/Storage/Cart_Empty</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -2637,7 +2637,7 @@
 		<defName>DankPyon_Storage_Cart_Assorted</defName>
 		<label>assorted cart</label>
 		<graphicData>
-			<texPath>Storage/Cart_Assorted</texPath>
+			<texPath>Things/Building/Storage/Cart_Assorted</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 	</ThingDef>
@@ -2646,7 +2646,7 @@
 		<defName>DankPyon_Storage_Cart_Ore</defName>
 		<label>ore cart</label>
 		<graphicData>
-			<texPath>Storage/Cart_Ore</texPath>
+			<texPath>Things/Building/Storage/Cart_Ore</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -2674,7 +2674,7 @@
 		<defName>DankPyon_Storage_Cart_PlantRaw</defName>
 		<label>raw plant cart</label>
 		<graphicData>
-			<texPath>Storage/Cart_PlantRaw</texPath>
+			<texPath>Things/Building/Storage/Cart_PlantRaw</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -2702,7 +2702,7 @@
 		<defName>DankPyon_Storage_Cart_Textiles</defName>
 		<label>textiles cart</label>
 		<graphicData>
-			<texPath>Storage/Cart_Textiles</texPath>
+			<texPath>Things/Building/Storage/Cart_Textiles</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -2732,7 +2732,7 @@
 		<defName>DankPyon_Storage_Cart_RawWood</defName>
 		<label>raw wood cart</label>
 		<graphicData>
-			<texPath>Storage/Cart_WoodLog</texPath>
+			<texPath>Things/Building/Storage/Cart_WoodLog</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 

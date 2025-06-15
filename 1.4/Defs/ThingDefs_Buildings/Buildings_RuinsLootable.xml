@@ -442,7 +442,7 @@
         <label>weapon rack</label>
         <description>A rack for storing swords in an orderly fashion.</description>
         <graphicData>
-            <texPath>Storage/RackFilled1</texPath>
+            <texPath>Things/Building/Storage/RackFilled1</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>(3,3)</drawSize>
@@ -504,7 +504,7 @@
         <label>sword rack</label>
         <description>A rack for storing swords in an orderly fashion.</description>
         <graphicData>
-            <texPath>Storage/RackFilled2</texPath>
+            <texPath>Things/Building/Storage/RackFilled2</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>(3,3)</drawSize>
@@ -546,7 +546,7 @@
         <label>spear rack</label>
         <description>A rack for storing spears in an orderly fashion.</description>
         <graphicData>
-            <texPath>Storage/RackFilled3</texPath>
+            <texPath>Things/Building/Storage/RackFilled3</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>(3,3)</drawSize>

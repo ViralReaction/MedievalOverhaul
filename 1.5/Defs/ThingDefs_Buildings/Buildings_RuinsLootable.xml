@@ -78,7 +78,7 @@
 		<label>filled shelf (herbs)</label>
 		<description>A shelf filled with herbs.</description>
 		<graphicData>
-			<texPath>Storage/Alchemy/Shelf_AssortedHerbs</texPath>
+			<texPath>Things/Building/Storage/Alchemy/Shelf_AssortedHerbs</texPath>
 		</graphicData>
 
 		<modExtensions>
@@ -116,7 +116,7 @@
 		<label>filled shelf (herbs)</label>
 		<description>A shelf filled with herbs.</description>
 		<graphicData>
-			<texPath>Storage/Alchemy/Shelf_GreenHerbs</texPath>
+			<texPath>Things/Building/Storage/Alchemy/Shelf_GreenHerbs</texPath>
 		</graphicData>
 
 		<modExtensions>
@@ -152,7 +152,7 @@
 		<label>filled shelf (herbs)</label>
 		<description>A shelf filled with herbs.</description>
 		<graphicData>
-			<texPath>Storage/Alchemy/Shelf_RedHerbs</texPath>
+			<texPath>Things/Building/Storage/Alchemy/Shelf_RedHerbs</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -190,7 +190,7 @@
 		<label>filled shelf (drugs)</label>
 		<description>A shelf filled with drugs.</description>
 		<graphicData>
-			<texPath>Storage/Alchemy/Shelf_BattleElixir</texPath>
+			<texPath>Things/Building/Storage/Alchemy/Shelf_BattleElixir</texPath>
 		</graphicData>
 
 		<building>
@@ -227,7 +227,7 @@
 		<label>filled shelf (drugs)</label>
 		<description>A shelf filled with drugs.</description>
 		<graphicData>
-			<texPath>Storage/Alchemy/Shelf_HappyPowder</texPath>
+			<texPath>Things/Building/Storage/Alchemy/Shelf_HappyPowder</texPath>
 		</graphicData>
 
 		<building>
@@ -264,7 +264,7 @@
 		<label>filled shelf (drugs)</label>
 		<description>A shelf filled with drugs.</description>
 		<graphicData>
-			<texPath>Storage/Alchemy/Shelf_VigorPill</texPath>
+			<texPath>Things/Building/Storage/Alchemy/Shelf_VigorPill</texPath>
 		</graphicData>
 
 		<building>
@@ -301,7 +301,7 @@
 		<label>filled shelf (drugs)</label>
 		<description>A shelf filled with drugs.</description>
 		<graphicData>
-			<texPath>Storage/Alchemy/Shelf_AssortedDrugsA</texPath>
+			<texPath>Things/Building/Storage/Alchemy/Shelf_AssortedDrugsA</texPath>
 		</graphicData>
 
 		<building>
@@ -340,7 +340,7 @@
 		<label>filled shelf (drugs)</label>
 		<description>A shelf filled with drugs.</description>
 		<graphicData>
-			<texPath>Storage/Alchemy/Shelf_Stardust</texPath>
+			<texPath>Things/Building/Storage/Alchemy/Shelf_Stardust</texPath>
 		</graphicData>
 
 		<building>
@@ -377,7 +377,7 @@
 		<label>filled shelf (drugs)</label>
 		<description>A shelf filled with drugs.</description>
 		<graphicData>
-			<texPath>Storage/Alchemy/Shelf_Luhix</texPath>
+			<texPath>Things/Building/Storage/Alchemy/Shelf_Luhix</texPath>
 		</graphicData>
 
 		<building>
@@ -414,7 +414,7 @@
 		<label>filled shelf (drugs)</label>
 		<description>A shelf filled with drugs.</description>
 		<graphicData>
-			<texPath>Storage/Alchemy/Shelf_Paregoric</texPath>
+			<texPath>Things/Building/Storage/Alchemy/Shelf_Paregoric</texPath>
 		</graphicData>
 
 		<building>
@@ -451,7 +451,7 @@
 		<label>filled shelf (drugs)</label>
 		<description>A shelf filled with drugs.</description>
 		<graphicData>
-			<texPath>Storage/Alchemy/Shelf_AssortedDrugsB</texPath>
+			<texPath>Things/Building/Storage/Alchemy/Shelf_AssortedDrugsB</texPath>
 		</graphicData>
 
 		<building>
@@ -872,7 +872,7 @@
 		<label>weapon rack</label>
 		<description>A rack for storing swords in an orderly fashion.</description>
 		<graphicData>
-			<texPath>Storage/RackFilled1</texPath>
+			<texPath>Things/Building/Storage/RackFilled1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,3)</drawSize>
@@ -934,7 +934,7 @@
 		<label>sword rack</label>
 		<description>A rack for storing swords in an orderly fashion.</description>
 		<graphicData>
-			<texPath>Storage/RackFilled2</texPath>
+			<texPath>Things/Building/Storage/RackFilled2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,3)</drawSize>
@@ -976,7 +976,7 @@
 		<label>spear rack</label>
 		<description>A rack for storing spears in an orderly fashion.</description>
 		<graphicData>
-			<texPath>Storage/RackFilled3</texPath>
+			<texPath>Things/Building/Storage/RackFilled3</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,3)</drawSize>

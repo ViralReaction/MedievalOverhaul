@@ -42,7 +42,7 @@
 	<ThingDef ParentName="DankPyon_LootableCrate_Base">
 		<defName>DankPyon_LootableCrate_Bones</defName>
 		<graphicData>
-			<texPath>Storage/Alchemy/Crate2x2_Bones</texPath>
+			<texPath>Things/Building/Storage/Alchemy/Crate2x2_Bones</texPath>
 		</graphicData>
 		
 		<modExtensions Inherit="False">
@@ -53,7 +53,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/Alchemy/Crate2x2_Empty</texPath>
+					<texPath>Things/Building/Storage/Alchemy/Crate2x2_Empty</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(4,4)</drawSize>
 				</emptyGraphicData>
@@ -78,7 +78,7 @@
 	<ThingDef ParentName="DankPyon_LootableCrate_Base">
 		<defName>DankPyon_LootableCrate_Unhold</defName>
 		<graphicData>
-			<texPath>Storage/Alchemy/Crate2x2_Unhold</texPath>
+			<texPath>Things/Building/Storage/Alchemy/Crate2x2_Unhold</texPath>
 		</graphicData>
 
 		<modExtensions Inherit="False">
@@ -89,7 +89,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/Alchemy/Crate2x2_Empty</texPath>
+					<texPath>Things/Building/Storage/Alchemy/Crate2x2_Empty</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(4,4)</drawSize>
 				</emptyGraphicData>
@@ -112,7 +112,7 @@
 	<ThingDef ParentName="DankPyon_LootableCrate_Base">
 		<defName>DankPyon_LootableCrate_Lindwurm</defName>
 		<graphicData>
-			<texPath>Storage/Alchemy/Crate2x2_Lindwurm</texPath>
+			<texPath>Things/Building/Storage/Alchemy/Crate2x2_Lindwurm</texPath>
 		</graphicData>
 
 		<modExtensions Inherit="False">
@@ -123,7 +123,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/Alchemy/Crate2x2_Empty</texPath>
+					<texPath>Things/Building/Storage/Alchemy/Crate2x2_Empty</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(4,4)</drawSize>
 				</emptyGraphicData>
@@ -676,11 +676,11 @@
 		<label>raw wood pile</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/RawWood1x1</texPath>
+			<texPath>Things/Building/Storage/RawWood1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<uiIconPath>Storage/RawWood1x1_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/RawWood1x1_north</uiIconPath>
 		<uiIconScale>1</uiIconScale>
 		<size>(1,1)</size>
 
@@ -704,7 +704,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>true</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/RawWood1x1</texPath>
+                    <texPath>Things/Building/Storage/RawWood1x1</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(2,2)</drawSize>
                 </emptyGraphicData>
@@ -727,7 +727,7 @@
 		<label>raw wood (1x2)</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/RawWood1x2</texPath>
+			<texPath>Things/Building/Storage/RawWood1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 		</graphicData>
@@ -754,7 +754,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/RawWood1x2</texPath>
+                    <texPath>Things/Building/Storage/RawWood1x2</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(4,3)</drawSize>
                 </emptyGraphicData>
@@ -777,7 +777,7 @@
 		<label>raw wood (2x2)</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/RawWood2x2</texPath>
+			<texPath>Things/Building/Storage/RawWood2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -804,7 +804,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/RawWood2x2</texPath>
+                    <texPath>Things/Building/Storage/RawWood2x2</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(4,4)</drawSize>
                 </emptyGraphicData>
@@ -827,7 +827,7 @@
 		<label>timber (1x1)</label>
 		<description>Timber that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/Timber1x1</texPath>
+			<texPath>Things/Building/Storage/Timber1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -855,7 +855,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/Timber1x1</texPath>
+                    <texPath>Things/Building/Storage/Timber1x1</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(2,2)</drawSize>
                 </emptyGraphicData>
@@ -878,7 +878,7 @@
 		<label>timber (1x2)</label>
 		<description>Timber that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/Timber1x2</texPath>
+			<texPath>Things/Building/Storage/Timber1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 		</graphicData>
@@ -905,7 +905,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/Timber1x2</texPath>
+                    <texPath>Things/Building/Storage/Timber1x2</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(4,3)</drawSize>
                 </emptyGraphicData>
@@ -928,7 +928,7 @@
 		<label>timber (2x2)</label>
 		<description>Timber that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/Timber2x2</texPath>
+			<texPath>Things/Building/Storage/Timber2x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -956,7 +956,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/Timber2x2</texPath>
+                    <texPath>Things/Building/Storage/Timber2x2</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(4,4)</drawSize>
                 </emptyGraphicData>
@@ -979,7 +979,7 @@
 		<label>bricks(1x1)</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/Bricks1x1</texPath>
+			<texPath>Things/Building/Storage/Bricks1x1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 	  		<drawRotated>false</drawRotated>
@@ -1007,7 +1007,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/Bricks1x1</texPath>
+                    <texPath>Things/Building/Storage/Bricks1x1</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(2,2)</drawSize>
 				</emptyGraphicData>	
@@ -1034,7 +1034,7 @@
 		<label>bricks(1x2)</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/Bricks1x2</texPath>
+			<texPath>Things/Building/Storage/Bricks1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -1060,7 +1060,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/Bricks1x2</texPath>
+                    <texPath>Things/Building/Storage/Bricks1x2</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(2,2)</drawSize>
 				</emptyGraphicData>	
@@ -1087,7 +1087,7 @@
 		<label>bricks</label>
 		<description>Bricks that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
-			<texPath>Storage/Bricks2x2</texPath>
+			<texPath>Things/Building/Storage/Bricks2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 	  	<drawRotated>false</drawRotated>
@@ -1115,7 +1115,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/Bricks2x2</texPath>
+                    <texPath>Things/Building/Storage/Bricks2x2</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(4,4)</drawSize>
 				</emptyGraphicData>	
@@ -1142,12 +1142,12 @@
 		<label>cupboard</label>
 		<description>An open cupboard to store and display objects in an efficient manner.</description>
 		<graphicData>
-			<texPath>Storage/CupboardEmpty</texPath>
+			<texPath>Things/Building/Storage/CupboardEmpty</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5,3)</drawSize>
 		</graphicData>
 		<size>(3,1)</size>
-		<uiIconPath>Storage/CupboardEmpty_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/CupboardEmpty_north</uiIconPath>
 		<uiIconScale>2</uiIconScale>
 
 		<statBases>
@@ -1168,13 +1168,13 @@
 		<label>bread cupboard</label>
 		<description>An open cupboard to store and display objects in an efficient manner.</description>
 		<graphicData>
-			<texPath>Storage/CupboardBread</texPath>
+			<texPath>Things/Building/Storage/CupboardBread</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5,3)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<size>(3,1)</size>
-		<uiIconPath>Storage/CupboardBread_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/CupboardBread_north</uiIconPath>
 		<uiIconScale>2</uiIconScale>
 
 		<statBases>
@@ -1197,7 +1197,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/CupboardEmpty</texPath>
+                    <texPath>Things/Building/Storage/CupboardEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(5,3)</drawSize>
 				</emptyGraphicData>	
@@ -1219,13 +1219,13 @@
 		<label>cheese cupboard</label>
 		<description>An open cupboard to store and display objects in an efficient manner.</description>
 		<graphicData>
-			<texPath>Storage/CupboardCheese</texPath>
+			<texPath>Things/Building/Storage/CupboardCheese</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5,3)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<size>(3,1)</size>
-		<uiIconPath>Storage/CupboardCheese_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/CupboardCheese_north</uiIconPath>
 		<uiIconScale>2</uiIconScale>
 
 		<statBases>
@@ -1248,7 +1248,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/CupboardEmpty</texPath>
+                    <texPath>Things/Building/Storage/CupboardEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(5,3)</drawSize>
 				</emptyGraphicData>	
@@ -1272,12 +1272,12 @@
 		<label>wine cupboard</label>
 		<description>An open cupboard to store and display objects in an efficient manner.</description>
 		<graphicData>
-			<texPath>Storage/CupboardDrug</texPath>
+			<texPath>Things/Building/Storage/CupboardDrug</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5,3)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Storage/CupboardDrug_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/CupboardDrug_north</uiIconPath>
 		<size>(3,1)</size>
 		<uiIconScale>2</uiIconScale>
 
@@ -1301,7 +1301,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/CupboardEmpty</texPath>
+                    <texPath>Things/Building/Storage/CupboardEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(5,3)</drawSize>
 				</emptyGraphicData>	
@@ -1334,7 +1334,7 @@
 		<label>large barrel</label>
 		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelBig</texPath>
+			<texPath>Things/Building/Storage/BarrelBig</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -1366,7 +1366,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/BarrelBig</texPath>
+                    <texPath>Things/Building/Storage/BarrelBig</texPath>
                     <graphicClass>Graphic_Single</graphicClass>
                     <drawSize>(4,4)</drawSize>
 				</emptyGraphicData>	
@@ -1388,7 +1388,7 @@
 		<label>large grape barrel</label>
 		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelBigGrape</texPath>
+			<texPath>Things/Building/Storage/BarrelBigGrape</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -1421,7 +1421,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/BarrelClosed</texPath>
+                    <texPath>Things/Building/Storage/BarrelClosed</texPath>
                     <graphicClass>Graphic_Single</graphicClass>
                     <drawSize>(4,4)</drawSize>
 				</emptyGraphicData>	
@@ -1452,7 +1452,7 @@
 		<label>large wine must barrel</label>
 		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelBigDown</texPath>
+			<texPath>Things/Building/Storage/BarrelBigDown</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -1484,7 +1484,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/BarrelBigDown</texPath>
+                    <texPath>Things/Building/Storage/BarrelBigDown</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(4,4)</drawSize>
 				</emptyGraphicData>	
@@ -1515,12 +1515,12 @@
 		<label>barrel shelf</label>
 		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelStack</texPath>
+			<texPath>Things/Building/Storage/BarrelStack</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5,3)</drawSize>
 		</graphicData>
 		<size>(3,1)</size>
-		<uiIconPath>Storage/BarrelStack_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelStack_north</uiIconPath>
 		<uiIconScale>2</uiIconScale>
 
 		<statBases>
@@ -1543,7 +1543,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/BarrelStack</texPath>
+                    <texPath>Things/Building/Storage/BarrelStack</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(5,3)</drawSize>
 				</emptyGraphicData>	
@@ -1565,12 +1565,12 @@
 		<label>barrel</label>
 		<description>A cylindrical barrel for general storage. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelClosed</texPath>
+			<texPath>Things/Building/Storage/BarrelClosed</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelClosed</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelClosed</uiIconPath>
 		<uiIconScale>1.5</uiIconScale>
 		<castEdgeShadows>true</castEdgeShadows>
 		<size>(1,1)</size>
@@ -1595,7 +1595,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/BarrelClosed</texPath>
+                    <texPath>Things/Building/Storage/BarrelClosed</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(2,2)</drawSize>
 				</emptyGraphicData>	
@@ -1635,13 +1635,13 @@
 		<defName>DankPyon_HideoutBarrelWoodLog</defName>
 		<label>barrel of wood</label>
 		<graphicData>
-			<texPath>Storage/BarrelWoodLog</texPath>
+			<texPath>Things/Building/Storage/BarrelWoodLog</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelWoodLog</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelWoodLog</uiIconPath>
 		
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -1651,7 +1651,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/BarrelClosed</texPath>
+					<texPath>Things/Building/Storage/BarrelClosed</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 				</emptyGraphicData>
@@ -1673,13 +1673,13 @@
 		<defName>DankPyon_HideoutBarrelIronOre</defName>
 		<label>barrel of iron ore</label>
 		<graphicData>
-			<texPath>Storage/BarrelIronOre</texPath>
+			<texPath>Things/Building/Storage/BarrelIronOre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelIronOre</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelIronOre</uiIconPath>
 		
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -1689,7 +1689,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/BarrelClosed</texPath>
+					<texPath>Things/Building/Storage/BarrelClosed</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 				</emptyGraphicData>
@@ -1711,13 +1711,13 @@
 		<defName>DankPyon_HideoutBarrelSilverOre</defName>
 		<label>barrel of silver ore</label>
 		<graphicData>
-			<texPath>Storage/BarrelSilverOre</texPath>
+			<texPath>Things/Building/Storage/BarrelSilverOre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelSilverOre</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelSilverOre</uiIconPath>
 		
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -1727,7 +1727,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/BarrelClosed</texPath>
+					<texPath>Things/Building/Storage/BarrelClosed</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 				</emptyGraphicData>
@@ -1749,13 +1749,13 @@
 		<defName>DankPyon_HideoutBarrelGoldOre</defName>
 		<label>barrel of gold ore</label>
 		<graphicData>
-			<texPath>Storage/BarrelGoldOre</texPath>
+			<texPath>Things/Building/Storage/BarrelGoldOre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelGoldOre</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelGoldOre</uiIconPath>
 		
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -1765,7 +1765,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/BarrelClosed</texPath>
+					<texPath>Things/Building/Storage/BarrelClosed</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 				</emptyGraphicData>
@@ -1787,13 +1787,13 @@
 		<defName>DankPyon_HideoutBarrelCoalOre</defName>
 		<label>barrel of coal ore</label>
 		<graphicData>
-			<texPath>Storage/BarrelCoalOre</texPath>
+			<texPath>Things/Building/Storage/BarrelCoalOre</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelCoalOre</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelCoalOre</uiIconPath>
 		
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -1803,7 +1803,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/BarrelClosed</texPath>
+					<texPath>Things/Building/Storage/BarrelClosed</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 				</emptyGraphicData>
@@ -1826,13 +1826,13 @@
 		<defName>DankPyon_HideoutBarrelPlasteelOre</defName>
 		<label>barrel of raw plasteel</label>
 		<graphicData>
-			<texPath>Storage/BarrelRawPlasteel</texPath>
+			<texPath>Things/Building/Storage/BarrelRawPlasteel</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelRawPlasteel</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelRawPlasteel</uiIconPath>
 		
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -1842,7 +1842,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/BarrelClosed</texPath>
+					<texPath>Things/Building/Storage/BarrelClosed</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 				</emptyGraphicData>
@@ -1863,13 +1863,13 @@
 		<defName>DankPyon_HideoutBarrelTextiles</defName>
 		<label>barrel of textiles</label>
 		<graphicData>
-			<texPath>Storage/BarrelTextiles</texPath>
+			<texPath>Things/Building/Storage/BarrelTextiles</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelTextiles</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelTextiles</uiIconPath>
 		
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -1879,7 +1879,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/BarrelClosed</texPath>
+					<texPath>Things/Building/Storage/BarrelClosed</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 				</emptyGraphicData>
@@ -1911,13 +1911,13 @@
 		<label>barrel of leather</label>
 		<description>A cylindrical barrel reserved for iron ore to save space. Can hold up to 5 stacks of iron ore. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/BarrelLeather</texPath>
+			<texPath>Things/Building/Storage/BarrelLeather</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelLeather</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelLeather</uiIconPath>
 		
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -1927,7 +1927,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/BarrelClosed</texPath>
+					<texPath>Things/Building/Storage/BarrelClosed</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 				</emptyGraphicData>
@@ -1958,13 +1958,13 @@
 		<defName>DankPyon_HideoutBarrelComponentBasic</defName>
 		<label>barrel of basic components</label>
 		<graphicData>
-			<texPath>Storage/BarrelComponentBasic</texPath>
+			<texPath>Things/Building/Storage/BarrelComponentBasic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelComponentBasic</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelComponentBasic</uiIconPath>
 		
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -1974,7 +1974,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/BarrelClosed</texPath>
+					<texPath>Things/Building/Storage/BarrelClosed</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 				</emptyGraphicData>
@@ -1996,13 +1996,13 @@
 		<defName>DankPyon_HideoutBarrelGrape</defName>
 		<label>barrel of grape</label>
 		<graphicData>
-			<texPath>Storage/BarrelGrape</texPath>
+			<texPath>Things/Building/Storage/BarrelGrape</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/BarrelGrape</uiIconPath>
+		<uiIconPath>Things/Building/Storage/BarrelGrape</uiIconPath>
 		
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -2012,7 +2012,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/BarrelClosed</texPath>
+					<texPath>Things/Building/Storage/BarrelClosed</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 				</emptyGraphicData>
@@ -2060,7 +2060,7 @@
 		<defName>DankPyon_HideoutLargeShelfEmpty</defName>
 		<label>large empty shelf</label>
 		<graphicData>
-			<texPath>Storage/StackEmpty</texPath>
+			<texPath>Things/Building/Storage/StackEmpty</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -2070,7 +2070,7 @@
 		<defName>DankPyon_HideoutLargeShelf_Bread</defName>
 		<label>large bread shelf</label>
 		<graphicData>
-			<texPath>Storage/StackBread</texPath>
+			<texPath>Things/Building/Storage/StackBread</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -2084,7 +2084,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/StackEmpty</texPath>
+					<texPath>Things/Building/Storage/StackEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(4,4)</drawSize>
 				</emptyGraphicData>
@@ -2105,7 +2105,7 @@
 		<defName>DankPyon_HideoutLargeShelf_Grain</defName>
 		<label>large grain shelf</label>
 		<graphicData>
-			<texPath>Storage/StackFlour</texPath>
+			<texPath>Things/Building/Storage/StackFlour</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -2119,7 +2119,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/StackEmpty</texPath>
+					<texPath>Things/Building/Storage/StackEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(4,4)</drawSize>
 				</emptyGraphicData>
@@ -2141,7 +2141,7 @@
 		<defName>DankPyon_HideoutLargeShelf_Meats</defName>
 		<label>large meat shelf</label>
 		<graphicData>
-			<texPath>Storage/StackMeat</texPath>
+			<texPath>Things/Building/Storage/StackMeat</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -2155,7 +2155,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/StackEmpty</texPath>
+					<texPath>Things/Building/Storage/StackEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(4,4)</drawSize>
 				</emptyGraphicData>
@@ -2177,7 +2177,7 @@
 		<defName>DankPyon_HideoutLargeShelf_Cheese</defName>
 		<label>large cheese shelf</label>
 		<graphicData>
-			<texPath>Storage/StackCheese</texPath>
+			<texPath>Things/Building/Storage/StackCheese</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -2191,7 +2191,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/StackEmpty</texPath>
+					<texPath>Things/Building/Storage/StackEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(4,4)</drawSize>
 				</emptyGraphicData>
@@ -2214,7 +2214,7 @@
 		<defName>DankPyon_HideoutLargeShelf_Wine</defName>
 		<label>large wine shelf</label>
 		<graphicData>
-			<texPath>Storage/StackDrug</texPath>
+			<texPath>Things/Building/Storage/StackDrug</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -2228,7 +2228,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/StackEmpty</texPath>
+					<texPath>Things/Building/Storage/StackEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(4,4)</drawSize>
 				</emptyGraphicData>
@@ -2249,7 +2249,7 @@
 		<defName>DankPyon_HideoutLargeShelf_Mead</defName>
 		<label>large mead shelf</label>
 		<graphicData>
-			<texPath>Storage/StackMead</texPath>
+			<texPath>Things/Building/Storage/StackMead</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -2263,7 +2263,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/StackEmpty</texPath>
+					<texPath>Things/Building/Storage/StackEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(4,4)</drawSize>
 				</emptyGraphicData>
@@ -2285,7 +2285,7 @@
 		<defName>DankPyon_HideoutLargeShelf_Vegetables</defName>
 		<label>large vegetables shelf</label>
 		<graphicData>
-			<texPath>Storage/StackVegetables</texPath>
+			<texPath>Things/Building/Storage/StackVegetables</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -2299,7 +2299,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/StackEmpty</texPath>
+					<texPath>Things/Building/Storage/StackEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(4,4)</drawSize>
 				</emptyGraphicData>
@@ -2349,7 +2349,7 @@
 		<defName>DankPyon_HideoutSackClosed</defName>
 		<label>closed sack</label>
 		<graphicData>
-			<texPath>Storage/SackClosed</texPath>
+			<texPath>Things/Building/Storage/SackClosed</texPath>
 		</graphicData>
 		
         <modExtensions>
@@ -2360,7 +2360,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/SackClosed</texPath>
+					<texPath>Things/Building/Storage/SackClosed</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 					<drawRotated>true</drawRotated>
@@ -2382,7 +2382,7 @@
 		<defName>DankPyon_HideoutSackFlour</defName>
 		<label>sack of flour</label>
 		<graphicData>
-			<texPath>Storage/SackFlour</texPath>
+			<texPath>Things/Building/Storage/SackFlour</texPath>
 		</graphicData>
 
         <modExtensions>
@@ -2393,7 +2393,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/SackClosed</texPath>
+					<texPath>Things/Building/Storage/SackClosed</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 					<drawRotated>true</drawRotated>
@@ -2415,7 +2415,7 @@
 		<defName>DankPyon_HideoutSackWheat</defName>
 		<label>sack of wheat</label>
 		<graphicData>
-			<texPath>Storage/SackWheat</texPath>
+			<texPath>Things/Building/Storage/SackWheat</texPath>
 		</graphicData>
 		
         <modExtensions>
@@ -2426,7 +2426,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/SackClosed</texPath>
+					<texPath>Things/Building/Storage/SackClosed</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 					<drawRotated>true</drawRotated>
@@ -2448,7 +2448,7 @@
 		<defName>DankPyon_HideoutSackPotato</defName>
 		<label>sack of potatoes</label>
 		<graphicData>
-			<texPath>Storage/SackPotato</texPath>
+			<texPath>Things/Building/Storage/SackPotato</texPath>
 		</graphicData>
 		
         <modExtensions>
@@ -2459,7 +2459,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/SackClosed</texPath>
+					<texPath>Things/Building/Storage/SackClosed</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 					<drawRotated>true</drawRotated>
@@ -2481,7 +2481,7 @@
 		<defName>DankPyon_HideoutSackApple</defName>
 		<label>sack of apples</label>
 		<graphicData>
-			<texPath>Storage/SackApple</texPath>
+			<texPath>Things/Building/Storage/SackApple</texPath>
 		</graphicData>
 		
         <modExtensions>
@@ -2492,7 +2492,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/SackClosed</texPath>
+					<texPath>Things/Building/Storage/SackClosed</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 					<drawRotated>true</drawRotated>
@@ -2516,7 +2516,7 @@
 		<label>crate</label>
 		<description>A wooden box made up of planks desinged to store resources. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/Crate1x1</texPath>
+			<texPath>Things/Building/Storage/Crate1x1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -2543,7 +2543,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/Crate1x1</texPath>
+					<texPath>Things/Building/Storage/Crate1x1</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2,2)</drawSize>
 					<drawRotated>true</drawRotated>
@@ -2567,7 +2567,7 @@
 		<label>crate</label>
 		<description>A wooden box made up of planks desinged to store resources. Items stored in this will not affect room beauty and they won't deteriorate, even if outside.</description>
 		<graphicData>
-			<texPath>Storage/Crate1x2</texPath>
+			<texPath>Things/Building/Storage/Crate1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,3)</drawSize>
 			<damageData>
@@ -2597,7 +2597,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/Crate1x2</texPath>
+					<texPath>Things/Building/Storage/Crate1x2</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(4,3)</drawSize>
 					<drawRotated>true</drawRotated>
@@ -2644,7 +2644,7 @@
 		<defName>DankPyon_HideoutRackEmpty</defName>
 		<label>empty rack</label>
 		<graphicData>
-			<texPath>Storage/RackEmpty</texPath>
+			<texPath>Things/Building/Storage/RackEmpty</texPath>
 		</graphicData>
 		
         <modExtensions>
@@ -2655,7 +2655,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/RackEmpty</texPath>
+                    <texPath>Things/Building/Storage/RackEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(4,4)</drawSize>
 				</emptyGraphicData>	
@@ -2677,7 +2677,7 @@
 		<defName>DankPyon_HideoutRackSword</defName>
 		<label>sword rack</label>
 		<graphicData>
-			<texPath>Storage/RackFilled2</texPath>
+			<texPath>Things/Building/Storage/RackFilled2</texPath>
 		</graphicData>
 		
         <modExtensions>
@@ -2688,7 +2688,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/RackEmpty</texPath>
+					<texPath>Things/Building/Storage/RackEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(3,3)</drawSize>
 				</emptyGraphicData>
@@ -2714,7 +2714,7 @@
 	<defName>DankPyon_HideoutRackSpear</defName>
 	<label>spear rack</label>
 	<graphicData>
-	  <texPath>Storage/RackFilled3</texPath>
+	  <texPath>Things/Building/Storage/RackFilled3</texPath>
 	</graphicData>
 		
         <modExtensions>
@@ -2725,7 +2725,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/RackEmpty</texPath>
+					<texPath>Things/Building/Storage/RackEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(3,3)</drawSize>
 				</emptyGraphicData>
@@ -2756,7 +2756,7 @@
 	<defName>DankPyon_HideoutRackMixed</defName>
 	<label>weapon rack</label>
 	<graphicData>
-	  <texPath>Storage/RackFilled1</texPath>
+	  <texPath>Things/Building/Storage/RackFilled1</texPath>
 	</graphicData>
 		
 	<modExtensions>
@@ -2767,7 +2767,7 @@
 			<enemySpawnChance>0.10</enemySpawnChance>
 			<hostileEnemy>false</hostileEnemy>
 			<emptyGraphicData>
-				<texPath>Storage/RackEmpty</texPath>
+				<texPath>Things/Building/Storage/RackEmpty</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<drawSize>(3,3)</drawSize>
 			</emptyGraphicData>
@@ -2833,11 +2833,11 @@
 		<defName>DankPyon_HideoutShelfEmpty</defName>
 		<label>empty shelf</label>
 		<graphicData>
-			<texPath>Storage/ShelfEmpty</texPath>
+			<texPath>Things/Building/Storage/ShelfEmpty</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 		</graphicData>
-		<uiIconPath>Storage/ShelfEmpty_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/ShelfEmpty_north</uiIconPath>
 		
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -2847,7 +2847,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/ShelfEmpty</texPath>
+                    <texPath>Things/Building/Storage/ShelfEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>	
@@ -2868,7 +2868,7 @@
 		<defName>DankPyon_HideoutLargeShelf_FilledA_Amboise</defName>
 		<label>(A) filled shelf</label>
 		<graphicData>
-			<texPath>Storage/ShelfFilledA</texPath>
+			<texPath>Things/Building/Storage/ShelfFilledA</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.75,2.75)</drawSize>
@@ -2882,7 +2882,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/ShelfEmpty</texPath>
+					<texPath>Things/Building/Storage/ShelfEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -2903,7 +2903,7 @@
 		<defName>DankPyon_HideoutLargeShelf_FilledB_Amboise</defName>
 		<label>(A) filled shelf</label>
 		<graphicData>
-			<texPath>Storage/ShelfHerb</texPath>
+			<texPath>Things/Building/Storage/ShelfHerb</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.75,2.75)</drawSize>
@@ -2917,7 +2917,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/ShelfEmpty</texPath>
+					<texPath>Things/Building/Storage/ShelfEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -2938,7 +2938,7 @@
 		<defName>DankPyon_HideoutLargeShelf_FilledA_Hesse</defName>
 		<label>(H) filled shelf</label>
 		<graphicData>
-			<texPath>Storage/ShelfFilledA</texPath>
+			<texPath>Things/Building/Storage/ShelfFilledA</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.75,2.75)</drawSize>
@@ -2952,7 +2952,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/ShelfEmpty</texPath>
+					<texPath>Things/Building/Storage/ShelfEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -2973,7 +2973,7 @@
 		<defName>DankPyon_HideoutLargeShelf_FilledB_Hesse</defName>
 		<label>(H) filled shelf</label>
 		<graphicData>
-			<texPath>Storage/ShelfHerb</texPath>
+			<texPath>Things/Building/Storage/ShelfHerb</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.75,2.75)</drawSize>
@@ -2987,7 +2987,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/ShelfEmpty</texPath>
+					<texPath>Things/Building/Storage/ShelfEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -3008,7 +3008,7 @@
 		<defName>DankPyon_HideoutLargeShelf_FilledA_Soren</defName>
 		<label>(S) filled shelf</label>
 		<graphicData>
-			<texPath>Storage/ShelfFilledA</texPath>
+			<texPath>Things/Building/Storage/ShelfFilledA</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.75,2.75)</drawSize>
@@ -3022,7 +3022,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/ShelfEmpty</texPath>
+					<texPath>Things/Building/Storage/ShelfEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -3043,7 +3043,7 @@
 		<defName>DankPyon_HideoutLargeShelf_FilledB_Soren</defName>
 		<label>(S) filled shelf</label>
 		<graphicData>
-			<texPath>Storage/ShelfHerb</texPath>
+			<texPath>Things/Building/Storage/ShelfHerb</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.75,2.75)</drawSize>
@@ -3057,7 +3057,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/ShelfEmpty</texPath>
+					<texPath>Things/Building/Storage/ShelfEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -3078,7 +3078,7 @@
 		<defName>DankPyon_HideoutLargeShelf_FilledA_Oswin</defName>
 		<label>(O) filled shelf</label>
 		<graphicData>
-			<texPath>Storage/ShelfFilledA</texPath>
+			<texPath>Things/Building/Storage/ShelfFilledA</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.75,2.75)</drawSize>
@@ -3092,7 +3092,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/ShelfEmpty</texPath>
+					<texPath>Things/Building/Storage/ShelfEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -3113,7 +3113,7 @@
 		<defName>DankPyon_HideoutLargeShelf_FilledB_Oswin</defName>
 		<label>(O) filled shelf</label>
 		<graphicData>
-			<texPath>Storage/ShelfHerb</texPath>
+			<texPath>Things/Building/Storage/ShelfHerb</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2.75,2.75)</drawSize>
@@ -3127,7 +3127,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/ShelfEmpty</texPath>
+					<texPath>Things/Building/Storage/ShelfEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -3148,24 +3148,24 @@
 		<defName>DankPyon_HideoutShelfFilled1c</defName>
 		<label>filled shelf</label>
 		<graphicData>
-			<texPath>Storage/ShelfHerb</texPath>
+			<texPath>Things/Building/Storage/ShelfHerb</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Storage/ShelfHerb_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/ShelfHerb_north</uiIconPath>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_HideoutShelfBase">
 		<defName>DankPyon_HideoutShelfFilled2c</defName>
 		<label>filled shelf</label>
 		<graphicData>
-		<texPath>Storage/ShelfFilledA</texPath>
+		<texPath>Things/Building/Storage/ShelfFilledA</texPath>
 		<graphicClass>Graphic_Multi</graphicClass>
 		<drawSize>(2.75,2.75)</drawSize>
 		<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Storage/ShelfFilledA_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/ShelfFilledA_north</uiIconPath>
 	</ThingDef-->
 
 	<ThingDef ParentName="DankPyon_HideoutShelfBase">
@@ -3187,7 +3187,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/ShelfEmpty</texPath>
+                    <texPath>Things/Building/Storage/ShelfEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(2.75,2.75)</drawSize>
                 </emptyGraphicData>
@@ -3233,7 +3233,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/ShelfEmpty</texPath>
+                    <texPath>Things/Building/Storage/ShelfEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(2.75,2.75)</drawSize>
                 </emptyGraphicData>
@@ -3279,7 +3279,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/ShelfEmpty</texPath>
+                    <texPath>Things/Building/Storage/ShelfEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(2.75,2.75)</drawSize>
                 </emptyGraphicData>
@@ -3325,7 +3325,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/ShelfEmpty</texPath>
+                    <texPath>Things/Building/Storage/ShelfEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(2.75,2.75)</drawSize>
                 </emptyGraphicData>
@@ -3370,7 +3370,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/ShelfEmpty</texPath>
+                    <texPath>Things/Building/Storage/ShelfEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(2.75,2.75)</drawSize>
                 </emptyGraphicData>
@@ -3415,7 +3415,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/ShelfEmpty</texPath>
+                    <texPath>Things/Building/Storage/ShelfEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(2.75,2.75)</drawSize>
                 </emptyGraphicData>
@@ -3460,12 +3460,12 @@
 		<defName>DankPyon_HideoutShelfFilledWine</defName>
 		<label>wine filled shelf</label>
 		<graphicData>
-			<texPath>Storage/ShelfFilledWine</texPath>
+			<texPath>Things/Building/Storage/ShelfFilledWine</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Storage/ShelfFilledWine_north</uiIconPath>
+		<uiIconPath>Things/Building/Storage/ShelfFilledWine_north</uiIconPath>
 		
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -3475,7 +3475,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/ShelfEmpty</texPath>
+					<texPath>Things/Building/Storage/ShelfEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -3520,7 +3520,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/ShelfEmpty</texPath>
+                    <texPath>Things/Building/Storage/ShelfEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(2.75,2.75)</drawSize>
                 </emptyGraphicData>
@@ -3565,7 +3565,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/ShelfEmpty</texPath>
+                    <texPath>Things/Building/Storage/ShelfEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(2.75,2.75)</drawSize>
                 </emptyGraphicData>
@@ -3609,7 +3609,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/ShelfEmpty</texPath>
+                    <texPath>Things/Building/Storage/ShelfEmpty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(2.75,2.75)</drawSize>
                 </emptyGraphicData>
@@ -3674,7 +3674,7 @@
 		<label>straw pile</label>
 		<description>Why is straw lying here?</description>
 		<graphicData>
-			<texPath>Storage/StrawPile</texPath>
+			<texPath>Things/Building/Storage/StrawPile</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2.70,2.70)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -3703,7 +3703,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/StrawPile</texPath>
+					<texPath>Things/Building/Storage/StrawPile</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(2.70,2.70)</drawSize>
 					<drawRotated>false</drawRotated>
@@ -3757,7 +3757,7 @@
 		<defName>DankPyon_HideOutBuildingBase_Cart_Empty</defName>
 		<label>empty cart</label>
 		<graphicData>
-			<texPath>Storage/Cart_Empty</texPath>
+			<texPath>Things/Building/Storage/Cart_Empty</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -3770,7 +3770,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/Cart_Empty</texPath>
+                    <texPath>Things/Building/Storage/Cart_Empty</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(4,4)</drawSize>
 				</emptyGraphicData>	
@@ -3791,7 +3791,7 @@
 		<defName>DankPyon_HideOutBuildingBase_Cart_Assorted</defName>
 		<label>assorted cart</label>
 		<graphicData>
-			<texPath>Storage/Cart_Assorted</texPath>
+			<texPath>Things/Building/Storage/Cart_Assorted</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -3804,7 +3804,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/Cart_Empty</texPath>
+					<texPath>Things/Building/Storage/Cart_Empty</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(4,4)</drawSize>
 				</emptyGraphicData>
@@ -3826,7 +3826,7 @@
 		<defName>DankPyon_HideOutBuildingBase_Cart_Ore</defName>
 		<label>ore cart</label>
 		<graphicData>
-			<texPath>Storage/Cart_Ore</texPath>
+			<texPath>Things/Building/Storage/Cart_Ore</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -3840,7 +3840,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/Cart_Empty</texPath>
+					<texPath>Things/Building/Storage/Cart_Empty</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(4,4)</drawSize>
 				</emptyGraphicData>
@@ -3885,7 +3885,7 @@
 		<defName>DankPyon_HideOutBuildingBase_Cart_PlantRaw</defName>
 		<label>raw plant cart</label>
 		<graphicData>
-			<texPath>Storage/Cart_PlantRaw</texPath>
+			<texPath>Things/Building/Storage/Cart_PlantRaw</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -3899,7 +3899,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/Cart_Empty</texPath>
+					<texPath>Things/Building/Storage/Cart_Empty</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(4,4)</drawSize>
 				</emptyGraphicData>
@@ -3925,7 +3925,7 @@
 		<defName>DankPyon_HideOutBuildingBase_Cart_Textiles</defName>
 		<label>textiles cart</label>
 		<graphicData>
-			<texPath>Storage/Cart_Textiles</texPath>
+			<texPath>Things/Building/Storage/Cart_Textiles</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,4)</drawSize>
@@ -3939,7 +3939,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/Cart_Empty</texPath>
+					<texPath>Things/Building/Storage/Cart_Empty</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<drawSize>(4,4)</drawSize>
 				</emptyGraphicData>
@@ -3969,7 +3969,7 @@
 		<defName>DankPyon_HideOutBuildingBase_Cart_RawWood</defName>
 		<label>raw wood cart</label>
 		<graphicData>
-			<texPath>Storage/Cart_WoodLog</texPath>
+			<texPath>Things/Building/Storage/Cart_WoodLog</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
@@ -3982,7 +3982,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Storage/Cart_Empty</texPath>
+                    <texPath>Things/Building/Storage/Cart_Empty</texPath>
                     <graphicClass>Graphic_Single</graphicClass>
                     <drawSize>(4,4)</drawSize>
                 </emptyGraphicData>
@@ -4017,12 +4017,12 @@
 		<defName>DankPyon_IngotStack1x1_Iron</defName>
 		<label>stack of iron ingots</label>
 		<graphicData>
-			<texPath>Storage/IronIngotStack1x1</texPath>
+			<texPath>Things/Building/Storage/IronIngotStack1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/IronIngotStack1x1_south</uiIconPath>
+		<uiIconPath>Things/Building/Storage/IronIngotStack1x1_south</uiIconPath>
 		
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -4032,7 +4032,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/IronIngotStack1x1</texPath>
+					<texPath>Things/Building/Storage/IronIngotStack1x1</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(3,3)</drawSize>
 				</emptyGraphicData>
@@ -4054,12 +4054,12 @@
 		<defName>DankPyon_IngotStack1x1_Steel</defName>
 		<label>stack of iron ingots</label>
 		<graphicData>
-			<texPath>Storage/IngotStack1x1</texPath>
+			<texPath>Things/Building/Storage/IngotStack1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/IngotStack1x1_south</uiIconPath>
+		<uiIconPath>Things/Building/Storage/IngotStack1x1_south</uiIconPath>
 		
 		<stuffCategories>
 			<li>Metallic</li>
@@ -4074,7 +4074,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/IngotStack1x1</texPath>
+					<texPath>Things/Building/Storage/IngotStack1x1</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(3,3)</drawSize>
 				</emptyGraphicData>
@@ -4096,12 +4096,12 @@
 		<defName>DankPyon_IngotStack1x1_Gold</defName>
 		<label>stack of iron ingots</label>
 		<graphicData>
-			<texPath>Storage/GoldIngotStack1x1</texPath>
+			<texPath>Things/Building/Storage/GoldIngotStack1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<uiIconPath>Storage/GoldIngotStack1x1_south</uiIconPath>
+		<uiIconPath>Things/Building/Storage/GoldIngotStack1x1_south</uiIconPath>
 		
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -4111,7 +4111,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
                 <hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Storage/GoldIngotStack1x1</texPath>
+					<texPath>Things/Building/Storage/GoldIngotStack1x1</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(3,3)</drawSize>
 				</emptyGraphicData>
@@ -4168,7 +4168,7 @@
 	<ThingDef ParentName="DankPyon_HideoutDryingRack">
 		<defName>DankPyon_HideoutDryingRack_Big</defName>
 		<graphicData>
-			<texPath>Production/DryingRack2x2/DryingRackFilledMeat</texPath>
+			<texPath>Things/Building/Production/DryingRack2x2/DryingRackFilledMeat</texPath>
 		</graphicData>
 
         <modExtensions>
@@ -4179,7 +4179,7 @@
 				<enemySpawnChance>0</enemySpawnChance>
                 <hostileEnemy>true</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Production/DryingRack2x2/DryingRack</texPath>
+                    <texPath>Things/Building/Production/DryingRack2x2/DryingRack</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(2.5,2.5)</drawSize>
                 </emptyGraphicData>
@@ -4260,7 +4260,7 @@
 	<ThingDef ParentName="DankPyon_HideoutTanningRack">
 		<defName>DankPyon_HideoutTanningRack</defName>
 		<graphicData>
-			<texPath>Production/TanningRack/TanningRackFilled</texPath>
+			<texPath>Things/Building/Production/TanningRack/TanningRackFilled</texPath>
 		</graphicData>
 
         <modExtensions>
@@ -4271,7 +4271,7 @@
 				<enemySpawnChance>0</enemySpawnChance>
                 <hostileEnemy>true</hostileEnemy>
                 <emptyGraphicData>
-                    <texPath>Production/TanningRack/TanningRack</texPath>
+                    <texPath>Things/Building/Production/TanningRack/TanningRack</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>(4,3)</drawSize>
                 </emptyGraphicData>

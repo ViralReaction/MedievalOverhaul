@@ -918,7 +918,7 @@
 		<description>serves no function at the moment, just acts as a placeholder</description>
 		<techLevel>Medieval</techLevel>
 		<graphicData>
-			<texPath>Production/IceCellar/IceCellar</texPath>
+			<texPath>Things/Building/Production/IceCellar/IceCellar</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.7,1.7)</drawSize>
 		</graphicData>

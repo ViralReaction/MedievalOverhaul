@@ -7,7 +7,7 @@
 		<description>A place for mining minerals. Production here is slow because of the lack of tools.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Production/MiningSpot</texPath>
+			<texPath>Things/Building/Production/MiningSpot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
@@ -62,7 +62,7 @@
 		<description>A place for digging the earth. Production here is slow because of the lack of tools.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Production/DiggingSpot</texPath>
+			<texPath>Things/Building/Production/DiggingSpot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
@@ -202,7 +202,7 @@
 		<description>A place for bashing stones to each other. Production here is slow because of the lack of tools.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Production/StonecuttingSpot</texPath>
+			<texPath>Things/Building/Production/StonecuttingSpot</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1.33,1.33)</drawSize>
@@ -269,7 +269,7 @@
 		<description>A wooden stump for butchering dead creatures into pieces of raw meat.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Production/ButcherBlock</texPath>
+			<texPath>Things/Building/Production/ButcherBlock</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1.5,1.5)</drawSize>
@@ -325,7 +325,7 @@
 		<thingClass>Building_WorkTable</thingClass>
 		<description>A small fortified hole dug through the ground to gain access to water.</description>
 		<graphicData>
-			<texPath>Production/Well</texPath>
+			<texPath>Things/Building/Production/Well</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,3)</drawSize>
@@ -399,7 +399,7 @@
 		<description>A wood-fueled oven with an attached countertop for preparing meals.</description>
 		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<graphicData>
-			<texPath>Production/RusticCookingTable</texPath>
+			<texPath>Things/Building/Production/RusticCookingTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3.5,1.5)</drawSize>
@@ -486,7 +486,7 @@
 		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<description>A cooking table with a stone oven designed for baking meals.</description>
 		<graphicData>
-			<texPath>Production/Oven</texPath>
+			<texPath>Things/Building/Production/Oven</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3.5,1.5)</drawSize>
@@ -550,7 +550,7 @@
 		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<description>A cooking table with a stone oven designed for baking meals.</description>
 		<graphicData>
-			<texPath>Production/LargeStoneOven</texPath>
+			<texPath>Things/Building/Production/LargeStoneOven</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 			<damageData>
@@ -618,7 +618,7 @@
 		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<description>A wood fueled grill used for cooking meals with an open fire.</description>
 		<graphicData>
-			<texPath>Production/Grill</texPath>
+			<texPath>Things/Building/Production/Grill</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -703,7 +703,7 @@
 		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<description>A large metal cauldron that can cook delicious soups.</description>
 		<graphicData>
-			<texPath>Production/StewPot</texPath>
+			<texPath>Things/Building/Production/StewPot</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -782,7 +782,7 @@
 		<thingClass>Building_WorkTable</thingClass>
 		<description>A small round stone for grinding raw plants.</description>
 		<graphicData>
-			<texPath>Production/Millstone</texPath>
+			<texPath>Things/Building/Production/Millstone</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,1)</drawSize>
@@ -835,7 +835,7 @@
 		<description>A simple platform to saw raw wood into planks.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Production/Trestle</texPath>
+			<texPath>Things/Building/Production/Trestle</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3.5,1.5)</drawSize>
@@ -879,7 +879,7 @@
 		<description>A table saw for turning logs into planks.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Production/SawTable/SawTable</texPath>
+			<texPath>Things/Building/Production/SawTable/SawTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3.5,1.5)</drawSize>
@@ -934,7 +934,7 @@
 		<description>A work table equipped with tools for crafting and designing items.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Production/Workbench</texPath>
+			<texPath>Things/Building/Production/Workbench</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3.5,1.5)</drawSize>
@@ -992,7 +992,7 @@
 		<description>A work table equipped with tools for crafting and designing items.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Production/JewelryBench</texPath>
+			<texPath>Things/Building/Production/JewelryBench</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3.5,1.5)</drawSize>
@@ -1037,7 +1037,7 @@
 		<description>A table to clean loot and ready them for display.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Production/CleaningTable</texPath>
+			<texPath>Things/Building/Production/CleaningTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3.5,1.5)</drawSize>
@@ -1070,7 +1070,7 @@
 		<description>A heavy table, secured with a layer of thick leather. Stocked with all sorts of thingamajigs, it’s useless to uneducated mind whilst perfectly functional for an adept of forbidden arts. It’s everything an aspiring alchemist could wish for to mix ingredients and prepare oddly specific reagents.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Production/AlchemyWorkbench</texPath>
+			<texPath>Things/Building/Production/AlchemyWorkbench</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(5,4)</drawSize>
@@ -1145,7 +1145,7 @@
 		<description>A wooden table equipped with inkwells, quills, and parchment, designed for writing manuscripts and scrolls.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Production/ScribeTable</texPath>
+			<texPath>Things/Building/Production/ScribeTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,2)</drawSize>
@@ -1194,7 +1194,7 @@
 		<thingClass>Building_ResearchBench</thingClass>
 		<size>(3,2)</size>
 		<graphicData>
-			<texPath>Production/ResearchBench</texPath>
+			<texPath>Things/Building/Production/ResearchBench</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(5,4)</drawSize>
@@ -1260,7 +1260,7 @@
 		<description>A support post to let viny plants grow effectively.</description>
 		<thingClass>Building_PlantGrower</thingClass>
 		<graphicData>
-			<texPath>Production/Post</texPath>
+			<texPath>Things/Building/Production/Post</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(6,3)</drawSize>
 		</graphicData>
@@ -1306,7 +1306,7 @@
 		<description>A rolling contraption that processes raw cotton into fabrics.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Production/SpinningWheel</texPath>
+			<texPath>Things/Building/Production/SpinningWheel</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -1361,7 +1361,7 @@
 		<description>A wooden worktable for sewing and stitching fabrics to produce wearable clothing.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Production/TailorsBench</texPath>
+			<texPath>Things/Building/Production/TailorsBench</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3.5,1.5)</drawSize>
@@ -1412,7 +1412,7 @@
 		<description>A large stone furnace used to smelt raw ores and refine resources.</description>
 		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<graphicData>
-			<texPath>Production/Furnace</texPath>
+			<texPath>Things/Building/Production/Furnace</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5,4)</drawSize>
 			<damageData>
@@ -1514,7 +1514,7 @@
 		<description>A large metalworking tool with a flattened top surface to strike objects on such as weapons and armor.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Production/Anvil</texPath>
+			<texPath>Things/Building/Production/Anvil</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1.1,1.1)</drawSize>
 			<damageData>
@@ -1579,7 +1579,7 @@
 		<description>A sturdy platform equipped with a primitive elevator built on top of a vertical tunnel. Can be used for mining resources and chunks.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Production/MineShaft</texPath>
+			<texPath>Things/Building/Production/MineShaft</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3.8,3.8)</drawSize>
@@ -1643,7 +1643,7 @@
 		<thingClass>Building_PlantGrower</thingClass>
 		<techLevel>Medieval</techLevel>
 		<graphicData>
-			<texPath>Production/GardeningBox</texPath>
+			<texPath>Things/Building/Production/GardeningBox</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,4)</drawSize>
@@ -1696,7 +1696,7 @@
 		<description>A wooden enclosure to host bees that produces honey and wax.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Production/Apiary</texPath>
+			<texPath>Things/Building/Production/Apiary</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -1788,7 +1788,7 @@
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<thingClass>MedievalOverhaul.Building_SlopPot</thingClass>
 		<graphicData>
-			<texPath>Production/Pot/SlopPot</texPath>
+			<texPath>Things/Building/Production/Pot/SlopPot</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,3)</drawSize>
@@ -1920,7 +1920,7 @@
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<thingClass>MedievalOverhaul.Building_SlopPot</thingClass>
 		<graphicData>
-			<texPath>Production/Pot/StewPot</texPath>
+			<texPath>Things/Building/Production/Pot/StewPot</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,3)</drawSize>
@@ -2047,7 +2047,7 @@
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<thingClass>MedievalOverhaul.Building_SlopPot</thingClass>
 		<graphicData>
-			<texPath>Production/Pot/CheesePot</texPath>
+			<texPath>Things/Building/Production/Pot/CheesePot</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,3)</drawSize>
@@ -2160,7 +2160,7 @@
 		<thingClass>Building_WorkTable</thingClass>
 		<description>A workbench for repairing clothes, armor, and weapons.</description>
 		<graphicData>
-			<texPath>Production/MendingWorkbench/MendingWorkbench</texPath>
+			<texPath>Things/Building/Production/MendingWorkbench/MendingWorkbench</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,3)</drawSize>

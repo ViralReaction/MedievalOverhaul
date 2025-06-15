@@ -22,7 +22,7 @@
 		<description>The сellar is designed to cool water and extract ice from it.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Production/Apiary</texPath>
+			<texPath>Things/Building/Production/Apiary</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(5,5)</drawSize>
 		</graphicData>
@@ -89,7 +89,7 @@
 		<label>Medieval fridge</label>
 		<description>Simple refrigerator. Requires ice to cool.</description>
 		<graphicData>
-			<texPath>Production/Apiary</texPath>
+			<texPath>Things/Building/Production/Apiary</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2.8,1.35)</drawSize>
 		</graphicData>

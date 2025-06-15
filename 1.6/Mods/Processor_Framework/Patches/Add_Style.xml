@@ -25,7 +25,7 @@
 		<xpath>Defs/ThingDef[defName="BarrelProcessor"]/graphicData</xpath>
 		<value>
 			<graphicData>
-				<texPath>Production/RusticFermentingBarrel</texPath>
+				<texPath>Things/Building/Production/RusticFermentingBarrel</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>2,2</drawSize>
 				<damageData>

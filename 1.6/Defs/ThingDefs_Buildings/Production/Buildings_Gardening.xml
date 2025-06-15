@@ -8,7 +8,7 @@
 		<description>A support post to let viny plants grow effectively.</description>
 		<thingClass>MedievalOverhaul.Building_PlanterBox</thingClass>
 		<graphicData>
-			<texPath>Production/Post</texPath>
+			<texPath>Things/Building/Production/Post</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(6,3)</drawSize>
 		</graphicData>
@@ -53,7 +53,7 @@
 		<thingClass>MedievalOverhaul.Building_PlanterBox</thingClass>
 		<techLevel>Medieval</techLevel>
 		<graphicData>
-			<texPath>Production/GardeningBox</texPath>
+			<texPath>Things/Building/Production/GardeningBox</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,4)</drawSize>
