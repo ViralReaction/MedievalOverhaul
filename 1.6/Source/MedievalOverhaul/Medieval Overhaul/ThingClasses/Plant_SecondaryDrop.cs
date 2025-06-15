@@ -13,7 +13,6 @@ namespace MedievalOverhaul
         private float secondaryDropChance = 1f;
         private bool secondaryNotWhenLeafless;
         private bool secondaryAffectedBySkill;
-        private bool secondaryHarvestWhenFail;
 
         #endregion
 

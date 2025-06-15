@@ -44,7 +44,7 @@
 			<body>DankPyon_SchratBody</body>
 			<fleshType>DankPyon_Schrat</fleshType>
 			<deathAction>
-				<workerClass>MedievalOverhaul.DeathActionWorker_DarkSchratSplit</workerClass>
+				<workerClass>MedievalOverhaul.DeathActionWorker_MonsterSplit</workerClass>
 			</deathAction>
 			<baseBodySize>4</baseBodySize>
 			<baseHealthScale>8.32</baseHealthScale>
@@ -96,6 +96,14 @@
                     </li>
                 </butcherOptions>
             </li>
+			<li Class="MedievalOverhaul.DeathSplitExtension">
+				<pawnKindDef>DankPyon_SchratDark_Sapling</pawnKindDef>
+				<createAmount>2</createAmount>
+				<explosion>true</explosion>
+				<damageDef>DankPyon_SchratCollapse</damageDef>
+				<explosionRadius>3</explosionRadius>
+				<explosionDamage>10</explosionDamage>
+			</li>
 		</modExtensions>
 	</ThingDef>
 
@@ -118,41 +126,4 @@
 		<destroyGearOnDrop>true</destroyGearOnDrop>
 	</PawnKindDef>
 
-	<!--==================== Schrat Plains ====================-->
-	<ThingDef ParentName="DankPyon_SchratBase">
-		<defName>DankPyon_SchratPlain</defName>
-		<race>
-			<body>DankPyon_SchratBody</body>
-			<fleshType>DankPyon_Schrat</fleshType>
-			<deathAction>
-				<workerClass>MedievalOverhaul.DeathActionWorker_PlainSchratSplit</workerClass>
-			</deathAction>
-			<baseBodySize>4</baseBodySize>
-			<baseHealthScale>6.32</baseHealthScale>
-		</race>
-		<butcherProducts Inherit="False">
-			<WoodLog>100</WoodLog>
-			<DankPyon_SchratHeart>1</DankPyon_SchratHeart>
-		</butcherProducts>
-	</ThingDef>
-
-	<PawnKindDef>
-		<defName>DankPyon_Schrat_Plain</defName>
-		<label>schrat</label>
-		<race>DankPyon_SchratPlain</race>
-		<combatPower>400</combatPower>
-		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Animal/SchratPlain</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>4.2</drawSize>
-				</bodyGraphicData>
-			</li>
-		</lifeStages>
-		<defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
-		<aiAvoidCover>true</aiAvoidCover>
-		<destroyGearOnDrop>true</destroyGearOnDrop>
-	</PawnKindDef>
-    
 </Defs>
