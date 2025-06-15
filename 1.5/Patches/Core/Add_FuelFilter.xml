@@ -101,35 +101,12 @@
 					</match>
 				</li>
 
-				<!-- <li Class="PatchOperationConditional"> -->
-					<!-- <xpath>Defs/ThingDef[defName="PassiveCooler"]/comps</xpath> -->
-					<!-- <match Class="PatchOperationAdd"> -->
-						<!-- <xpath>Defs/ThingDef[defName="PassiveCooler"]/comps</xpath> -->
-						<!-- <value> -->
-							<!-- <li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/> -->
-						<!-- </value> -->
-					<!-- </match> -->
-				<!-- </li> -->
-
-				<!-- <li Class="PatchOperationConditional"> -->
-					<!-- <xpath>Defs/ThingDef[defName="PassiveCooler"]/inspectorTabs</xpath> -->
-					<!-- <nomatch Class="PatchOperationAdd"> -->
-						<!-- <xpath>Defs/ThingDef[defName="PassiveCooler"]</xpath> -->
-						<!-- <value> -->
-							<!-- <inspectorTabs></inspectorTabs> -->
-						<!-- </value> -->
-					<!-- </nomatch> -->
-				<!-- </li> -->
-
-				<!-- <li Class="PatchOperationConditional"> -->
-					<!-- <xpath>Defs/ThingDef[defName="PassiveCooler"]/inspectorTabs</xpath> -->
-					<!-- <match Class="PatchOperationAdd"> -->
-						<!-- <xpath>Defs/ThingDef[defName="PassiveCooler"]/inspectorTabs</xpath> -->
-						<!-- <value> -->
-							<!-- <li>MedievalOverhaul.ITab_Fuel</li> -->
-						<!-- </value> -->
-					<!-- </match> -->
-				<!-- </li> -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[inspectorTabs/li[.="MedievalOverhaul.ITab_Fuel"] and not(comps/li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"])]/comps</xpath>
+					<value>
+						<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
+					</value>
+				</li>
 
 			</operations>
 		</nomatch>
