@@ -7,7 +7,7 @@
 		<label>Red bandana</label>
 		<description>A simple headwrap tied from a long strip of dark-red cloth. Provides a bit of warmth and padding for the noggin'.</description>
 		<graphicData>
-			<texPath>Headgear/RedBandana/RedBandana</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Headgear/RedBandana/RedBandana</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -39,7 +39,7 @@
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<wornGraphicPath>Headgear/RedBandana/RedBandana</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/RedBandana/RedBandana</wornGraphicPath>
 			<tags>
 				<li>DankPyon_BrigandThug</li>
         <li>DankPyon_PeasantHelmet</li>
@@ -56,7 +56,7 @@
 		<label>hood</label>
 		<description>A draped hood which covers the head and ears.</description>
 		<graphicData>
-			<texPath>Headgear/Hood/Hood</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Headgear/Hood/Hood</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -88,7 +88,7 @@
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<wornGraphicPath>Headgear/Hood/Hood</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/Hood/Hood</wornGraphicPath>
 			<tags>
 				<li>DankPyon_BrigandThug</li>
         <li>DankPyon_PeasantHelmet</li>
@@ -105,7 +105,7 @@
 		<label>coif</label>
 		<description>A close-fitting and lightly padded coif often worn beneath mail or a helmet, or on its own for warmth in cold weather.</description>
 		<graphicData>
-			<texPath>Headgear/Coif/Coif</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Headgear/Coif/Coif</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -137,7 +137,7 @@
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<wornGraphicPath>Headgear/Coif/Coif</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/Coif/Coif</wornGraphicPath>
 			<tags>
 				<li>DankPyon_BrigandThug</li>
         <li>DankPyon_PeasantHelmet</li>
@@ -154,7 +154,7 @@
 		<label>Arming Cap</label>
 		<description>A thickly padded cap most often worn beneath heavier helmets for an additional layer of protection. Quite insulating and offers a bit of blunt protection on its own.</description>
 		<graphicData>
-			<texPath>Headgear/ArmingCap/ArmingCap</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Headgear/ArmingCap/ArmingCap</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -186,7 +186,7 @@
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<wornGraphicPath>Headgear/ArmingCap/ArmingCap</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ArmingCap/ArmingCap</wornGraphicPath>
 			<tags>
 				<li>DankPyon_PeasantHelmet</li>
         <li>DankPyon_BrigandThug</li>
@@ -204,7 +204,7 @@
 		<label>full arming cap</label>
 		<description>A thickly padded hood most often worn beneath heavier helmets for an additional layer of protection. Very insulating and offers a bit of blunt protection on its own.</description>
 		<graphicData>
-			<texPath>Headgear/ArmingCapFull/ArmingCapFull</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Headgear/ArmingCapFull/ArmingCapFull</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -237,7 +237,7 @@
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<wornGraphicPath>Headgear/ArmingCapFull/ArmingCapFull</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ArmingCapFull/ArmingCapFull</wornGraphicPath>
 			<tags>
 				<li>DankPyon_PeasantHelmet</li>
         <li>DankPyon_BrigandThug</li>
@@ -256,7 +256,7 @@
 		<label>zweihander's hat</label>
 		<description>A thick, ornamented hat. Protective simply due to its size and shape, but mainly worn for decoration and as a status symbol.</description>
 		<graphicData>
-			<texPath>Headgear/ZweihandersHat/ZweihandersHat</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Headgear/ZweihandersHat/ZweihandersHat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -292,7 +292,7 @@
 			<layers>
 				<li>Overhead</li>
 			</layers>
-			<wornGraphicPath>Headgear/ZweihandersHat/ZweihandersHat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ZweihandersHat/ZweihandersHat</wornGraphicPath>
 			<tags>
 				<li>DankPyon_Zweihander</li>
 			</tags>
@@ -310,7 +310,7 @@
     <label>padded nasal helm</label>
     <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
     <graphicData>
-      <texPath>Headgear/PaddedNasal/PaddedNasal</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/PaddedNasal/PaddedNasal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -354,7 +354,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/PaddedNasal/PaddedNasal</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/PaddedNasal/PaddedNasal</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags>
         <li>DankPyon_BrigandRaider</li>
@@ -377,7 +377,7 @@
     <label>padded kettle</label>
     <description>A wide-rimmed kettle helmet paired with a thick padded coif, offering good protection of the head.</description>
     <graphicData>
-      <texPath>Headgear/PaddedKettle/PaddedKettle</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/PaddedKettle/PaddedKettle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>   
     <techLevel>Medieval</techLevel>
@@ -419,7 +419,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/PaddedKettle/PaddedKettle</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/PaddedKettle/PaddedKettle</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags>
         <li>DankPyon_BrigandRaider</li>
@@ -442,7 +442,7 @@
     <label>padded flat top</label>
     <description>A thick padded coif coupled with a simple flat-top nasal helmet. Offers good protection of the head, and is also quite insulating in cold weather.</description>
     <graphicData>
-      <texPath>Headgear/PaddedFlatTop/PaddedFlatTop</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/PaddedFlatTop/PaddedFlatTop</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -487,7 +487,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/PaddedFlatTop/PaddedFlatTop</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/PaddedFlatTop/PaddedFlatTop</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags>
         <li>DankPyon_BrigandRaider</li>
@@ -511,7 +511,7 @@
     <label>chain coif</label>
     <description>A thick hood forged from chains of metal provides excellent protection to the head against slashing and thrusting attacks.</description>
     <graphicData>
-      <texPath>Headgear/ChainCoif/ChainCoif</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainCoif/ChainCoif</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -547,7 +547,7 @@
         <li>UpperHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainCoif/ChainCoif</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainCoif/ChainCoif</wornGraphicPath>
       <tags>
         <li>DankPyon_BrigandRaider</li>
 				<li>DankPyon_FootmanHelmet</li>
@@ -568,7 +568,7 @@
     <label>closed chain coif</label>
     <description>A thick hood forged from chains of metal with additional protection reinforcing the lower face. Provides excellent protection to the entire head against piercing and slashing attacks.</description>
     <graphicData>
-      <texPath>Headgear/ChainCoifClosed/ChainCoifClosed</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainCoifClosed/ChainCoifClosed</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -604,7 +604,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainCoifClosed/ChainCoifClosed</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainCoifClosed/ChainCoifClosed</wornGraphicPath>
       <tags>
         <li>DankPyon_BrigandRaider</li>
         <li>DankPyon_ArbalesterHelmet</li>
@@ -625,7 +625,7 @@
     <label>full chain coif</label>
     <description>A thick hood forged from chains of metal with an added plate-metal noseguard to almost entirely protect the face, head,. Makes it a bit difficult to see, but otherwise offers excellent protection against cuts.</description>
     <graphicData>
-      <texPath>Headgear/ChainCoifFull/ChainCoifFull</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainCoifFull/ChainCoifFull</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -661,7 +661,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainCoifFull/ChainCoifFull</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainCoifFull/ChainCoifFull</wornGraphicPath>
       <tags>
         <li>DankPyon_BrigandRaider</li>
         <li>DankPyon_ArbalesterHelmet</li>
@@ -683,7 +683,7 @@
     <label>chain nasal helm</label>
     <description>A chainmail coif coupled with a simple round nasal helmet, offering excellent protection of the head.</description>
     <graphicData>
-      <texPath>Headgear/ChainNasal/ChainNasal</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainNasal/ChainNasal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -722,7 +722,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainNasal/ChainNasal</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainNasal/ChainNasal</wornGraphicPath>
       <tags>
         <li>DankPyon_BrigandLeader</li>
 				<li>DankPyon_FootmanHelmet</li>
@@ -742,7 +742,7 @@
     <label>chain nasal helm (bandana)</label>
     <description>A variation of the chain skull cap crafted as a chainmail coif coupled with a nasal helmet. Offers the same level of protection for the head, but the strip of red cloth tied around the forehead displays authority.</description>
     <graphicData>
-      <texPath>Headgear/ChainNasalRed/ChainNasalRed</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainNasalRed/ChainNasalRed</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -782,7 +782,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainNasalRed/ChainNasalRed</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainNasalRed/ChainNasalRed</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags>
         <li>DankPyon_BrigandRaider</li>
@@ -805,7 +805,7 @@
     <label>chain kettle helm</label>
     <description>A wide-rimmed kettle helmet paired with a chainmail coif, offering excellent protection of the head while providing comfortable shade from the sun.</description>
     <graphicData>
-      <texPath>Headgear/ChainKettle/ChainKettle</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainKettle/ChainKettle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -844,7 +844,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainKettle/ChainKettle</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainKettle/ChainKettle</wornGraphicPath>
       <tags>
         <li>DankPyon_BrigandLeader</li>
 				<li>DankPyon_FootmanHelmet</li>
@@ -864,7 +864,7 @@
     <label>chain flat-top</label>
     <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
     <graphicData>
-      <texPath>Headgear/ChainFlatTop/ChainFlatTop</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainFlatTop/ChainFlatTop</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -904,7 +904,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainFlatTop/ChainFlatTop</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainFlatTop/ChainFlatTop</wornGraphicPath>
       <tags>
         <li>DankPyon_BrigandLeader</li>
         <li>DankPyon_FootmanHelmet</li>
@@ -924,7 +924,7 @@
     <label>closed chain flat-top</label>
     <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
     <graphicData>
-      <texPath>Headgear/ChainFlatTop/ChainFlatTop</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainFlatTop/ChainFlatTop</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -963,7 +963,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainFlatTop/ChainFlatTop</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainFlatTop/ChainFlatTop</wornGraphicPath>
       <tags>
         <li>DankPyon_BrigandLeader</li>
         <li>DankPyon_FootmanHelmet</li>
@@ -983,7 +983,7 @@
     <label>chain closed flat-top</label>
     <description>An early design of the full-faced helmet, consisting of a reinforced flat-top helmet with an additional face-plate and a mail coif. Offers great protection of the entire head, but hinders eyesight and breathing.</description>
     <graphicData>
-      <texPath>Headgear/ChainClosedFlatTop/ChainClosedFlatTop</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainClosedFlatTop/ChainClosedFlatTop</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -1021,7 +1021,7 @@
        <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/ChainClosedFlatTop/ChainClosedFlatTop</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ChainClosedFlatTop/ChainClosedFlatTop</wornGraphicPath>
       <tags>
         <li>DankPyon_MercenaryHeavy</li>
         <li>DankPyon_KnightHelmet</li>
@@ -1041,7 +1041,7 @@
     <label>heavy barbrute</label>
     <description>PLACEHOLDER.</description>
     <graphicData>
-      <texPath>Headgear/HeavyBarbrute/HeavyBarbrute</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/HeavyBarbrute/HeavyBarbrute</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -1079,7 +1079,7 @@
        <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/HeavyBarbrute/HeavyBarbrute</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/HeavyBarbrute/HeavyBarbrute</wornGraphicPath>
       <tags>
         <li>DankPyon_MercenaryHeavy</li>
         <li>DankPyon_KnightHelmet</li>
@@ -1099,7 +1099,7 @@
     <label>open bascinet</label>
     <description>PLACEHOLDER.</description>
     <graphicData>
-      <texPath>Headgear/OpenBascinet/OpenBascinet</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/OpenBascinet/OpenBascinet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -1137,7 +1137,7 @@
        <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/OpenBascinet/OpenBascinet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/OpenBascinet/OpenBascinet</wornGraphicPath>
       <tags>
         <li>DankPyon_MercenaryHeavy</li>
         <li>DankPyon_KnightHelmet</li>
@@ -1157,7 +1157,7 @@
     <label>zweihander helm</label>
     <description>A sturdy metal helmet adorned with a flamboyant colored large baggy feathered hat to display one's status.</description>
     <graphicData>
-        <texPath>Headgear/ZweihanderHelmP/ZweihanderHelmP</texPath>
+        <texPath>Things/Pawn/Humanlike/Apparel/Headgear/ZweihanderHelmP/ZweihanderHelmP</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -1202,7 +1202,7 @@
        <bodyPartGroups>
             <li>FullHead</li>
         </bodyPartGroups>
-        <wornGraphicPath>Headgear/ZweihanderHelmP/ZweihanderHelmP</wornGraphicPath>
+        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ZweihanderHelmP/ZweihanderHelmP</wornGraphicPath>
         <useWornGraphicMask>true</useWornGraphicMask>
         <tags>
             <li>DankPyon_ZweihanderHelm</li>
@@ -1220,7 +1220,7 @@
     <defName>DankPyon_Headgear_ZweihanderHelmAmboise</defName>
     <label>zweihander helm (Amboise)</label>
     <graphicData>
-        <texPath>Headgear/ZweihanderHelmAmboise/ZweihanderHelmAmboise</texPath>
+        <texPath>Things/Pawn/Humanlike/Apparel/Headgear/ZweihanderHelmAmboise/ZweihanderHelmAmboise</texPath>
         <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 
@@ -1229,7 +1229,7 @@
     </recipeMaker>
 
     <apparel>
-        <wornGraphicPath>Headgear/ZweihanderHelmAmboise/ZweihanderHelmAmboise</wornGraphicPath>
+        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ZweihanderHelmAmboise/ZweihanderHelmAmboise</wornGraphicPath>
         <tags>
             <li>DankPyon_ZweihanderHelmAmboise</li>
         </tags>
@@ -1240,7 +1240,7 @@
     <defName>DankPyon_Headgear_ZweihanderHelmSoren</defName>
     <label>zweihander helm (Soren)</label>
     <graphicData>
-        <texPath>Headgear/ZweihanderHelmSoren/ZweihanderHelmSoren</texPath>
+        <texPath>Things/Pawn/Humanlike/Apparel/Headgear/ZweihanderHelmSoren/ZweihanderHelmSoren</texPath>
         <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 
@@ -1249,7 +1249,7 @@
     </recipeMaker>
 
     <apparel>
-        <wornGraphicPath>Headgear/ZweihanderHelmSoren/ZweihanderHelmSoren</wornGraphicPath>
+        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ZweihanderHelmSoren/ZweihanderHelmSoren</wornGraphicPath>
         <tags>
             <li>DankPyon_ZweihanderHelmSoren</li>
         </tags>
@@ -1260,7 +1260,7 @@
     <defName>DankPyon_Headgear_ZweihanderHelmOswin</defName>
     <label>zweihander helm (Oswin)</label>
     <graphicData>
-        <texPath>Headgear/ZweihanderHelmOswin/ZweihanderHelmOswin</texPath>
+        <texPath>Things/Pawn/Humanlike/Apparel/Headgear/ZweihanderHelmOswin/ZweihanderHelmOswin</texPath>
         <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 
@@ -1269,7 +1269,7 @@
     </recipeMaker>
 
     <apparel>
-        <wornGraphicPath>Headgear/ZweihanderHelmOswin/ZweihanderHelmOswin</wornGraphicPath>
+        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ZweihanderHelmOswin/ZweihanderHelmOswin</wornGraphicPath>
         <tags>
             <li>DankPyon_ZweihanderHelmOswin</li>
         </tags>
@@ -1280,7 +1280,7 @@
     <defName>DankPyon_Headgear_ZweihanderHelmHesse</defName>
     <label>zweihander helm (Hesse)</label>
     <graphicData>
-        <texPath>Headgear/ZweihanderHelmHesse/ZweihanderHelmHesse</texPath>
+        <texPath>Things/Pawn/Humanlike/Apparel/Headgear/ZweihanderHelmHesse/ZweihanderHelmHesse</texPath>
         <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 
@@ -1289,7 +1289,7 @@
     </recipeMaker>
 
     <apparel>
-        <wornGraphicPath>Headgear/ZweihanderHelmHesse/ZweihanderHelmHesse</wornGraphicPath>
+        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ZweihanderHelmHesse/ZweihanderHelmHesse</wornGraphicPath>
         <tags>
             <li>DankPyon_ZweihanderHelmHesse</li>
         </tags>
@@ -1301,7 +1301,7 @@
     <label>visored kettle helmet</label>
     <description>A broadly-rimmed nasal helmet that extends down past the eyes, with slits that allow the wearer to see. Provides great protection of the head and face, but leaves the neck exposed and hinders ones eyesight.</description>
     <graphicData>
-      <texPath>Headgear/KettleHelmet/KettleHelmet</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/KettleHelmet/KettleHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -1339,7 +1339,7 @@
        <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/KettleHelmet/KettleHelmet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/KettleHelmet/KettleHelmet</wornGraphicPath>
       <tags>
         <li>DankPyon_KnightHelmet</li>
         <li>DankPyon_MercenaryHeavy</li>
@@ -1358,7 +1358,7 @@
     <label>closed bascinet helmet</label>
     <description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
     <graphicData>
-      <texPath>Headgear/BascinetHelmet/BascinetHelmet</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/BascinetHelmet/BascinetHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -1399,7 +1399,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/BascinetHelmet/BascinetHelmet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/BascinetHelmet/BascinetHelmet</wornGraphicPath>
       <tags>
         <li>DankPyon_KnightHelmet</li>
         <li>DankPyon_HedgeKnightHelmet</li>
@@ -1418,7 +1418,7 @@
     <label>wolf-ribs bascinet</label>
     <description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
     <graphicData>
-      <texPath>Headgear/WolfBascinet/WolfBascinet</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/WolfBascinet/WolfBascinet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -1459,7 +1459,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/WolfBascinet/WolfBascinet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/WolfBascinet/WolfBascinet</wornGraphicPath>
       <tags>
         <li>DankPyon_KnightHelmet</li>
         <li>DankPyon_HedgeKnightHelmet</li>
@@ -1478,7 +1478,7 @@
     <label>klappviser bascinet</label>
     <description>A thick plate bascinet helmet coupled with a round-faced visor, paired with a chainmail coif and padding. Provides complete protection of the entire head, but is hindering to see and difficult to breathe in.</description>
     <graphicData>
-      <texPath>Headgear/KlappvisorBascinet/KlappvisorBascinet</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/KlappvisorBascinet/KlappvisorBascinet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -1519,7 +1519,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/KlappvisorBascinet/KlappvisorBascinet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/KlappvisorBascinet/KlappvisorBascinet</wornGraphicPath>
       <tags>
         <li>DankPyon_KnightHelmet</li>
         <li>DankPyon_HedgeKnightHelmet</li>
@@ -1538,7 +1538,7 @@
     <label>hounskull helmet</label>
     <description>A thick plate bascinet helmet coupled with an extended pig-faced visor, which allows for easier breathing. Still quite hindering to see out of, however.</description>
     <graphicData>
-      <texPath>Headgear/HounskullHelmet/HounskullHelmet</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/HounskullHelmet/HounskullHelmet</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -1579,7 +1579,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/HounskullHelmet/HounskullHelmet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/HounskullHelmet/HounskullHelmet</wornGraphicPath>
       <tags>
         <li>DankPyon_KnightHelmet</li>
         <li>DankPyon_HedgeKnightHelmet</li>
@@ -1598,7 +1598,7 @@
     <label>visored sallet</label>
     <description>A sleek three-part helmet consisting of a top, visor, and bevor to protect the head, face, respectively. Lightweight, and very protective, though it hinders eyesight significantly.</description>
     <graphicData>
-        <texPath>Headgear/SalletVisored/SalletVisored</texPath>
+        <texPath>Things/Pawn/Humanlike/Apparel/Headgear/SalletVisored/SalletVisored</texPath>
         <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -1638,7 +1638,7 @@
         <bodyPartGroups>
             <li>FullHead</li>
         </bodyPartGroups>
-        <wornGraphicPath>Headgear/SalletVisored/SalletVisored</wornGraphicPath>
+        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/SalletVisored/SalletVisored</wornGraphicPath>
         <tags>
             <li>DankPyon_KnightHelmet</li>
             <li>DankPyon_HedgeKnightHelmet</li>
@@ -1657,12 +1657,12 @@
     <label>bellow face sallet</label>
     <description>A sleek three-part helmet consisting of a top, visor, and bevor to protect the head, face, respectively. Lightweight, and very protective, though it hinders eyesight significantly.</description>
     <graphicData>
-        <texPath>Headgear/SalletBellowFace/SalletBellowFace</texPath>
+        <texPath>Things/Pawn/Humanlike/Apparel/Headgear/SalletBellowFace/SalletBellowFace</texPath>
         <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     
     <apparel>
-        <wornGraphicPath>Headgear/SalletBellowFace/SalletBellowFace</wornGraphicPath>
+        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/SalletBellowFace/SalletBellowFace</wornGraphicPath>
     </apparel>
 </ThingDef>
 
@@ -1671,12 +1671,12 @@
     <label>gryphon sallet</label>
     <description>A sleek three-part helmet consisting of a top, visor, and bevor to protect the head, face, respectively. Lightweight, and very protective, though it hinders eyesight significantly.</description>
     <graphicData>
-        <texPath>Headgear/SalletGryphon/SalletGryphon</texPath>
+        <texPath>Things/Pawn/Humanlike/Apparel/Headgear/SalletGryphon/SalletGryphon</texPath>
         <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     
     <apparel>
-        <wornGraphicPath>Headgear/SalletGryphon/SalletGryphon</wornGraphicPath>
+        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/SalletGryphon/SalletGryphon</wornGraphicPath>
     </apparel>
 </ThingDef>
   
@@ -1685,7 +1685,7 @@
     <label>closed klappvisier helmet</label>
     <description>A simple plate bascinet helmet with an affixed flip-up visor. Offers good protection of the head and face, but it hinders one's eyesight while wearing it.</description>
     <graphicData>
-      <texPath>Headgear/KlappvisierHelmet/KlappvisierHelmet</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/KlappvisierHelmet/KlappvisierHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -1725,7 +1725,7 @@
        <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/KlappvisierHelmet/KlappvisierHelmet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/KlappvisierHelmet/KlappvisierHelmet</wornGraphicPath>
       <tags>
         <li>DankPyon_KnightHelmet</li>
         <li>DankPyon_HedgeKnightHelmet</li>
@@ -1744,7 +1744,7 @@
     <label>open klappvisier helmet</label>
     <description>A simple plate bascinet helmet with a flipped-up klappviser. Forgoes protection of the face in exchange for better eyesight.</description>
     <graphicData>
-      <texPath>Headgear/KlappvisierHelmetOpen/KlappvisierHelmetOpen</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/KlappvisierHelmetOpen/KlappvisierHelmetOpen</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -1785,7 +1785,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/KlappvisierHelmetOpen/KlappvisierHelmetOpen</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/KlappvisierHelmetOpen/KlappvisierHelmetOpen</wornGraphicPath>
       <tags>
         <li>DankPyon_KnightHelmet</li>
         <li>DankPyon_HedgeKnightHelmet</li>
@@ -1804,7 +1804,7 @@
     <label>great helm</label>
     <description>An early design of the close helm, which is worn over a very thickly padded fabric coif. Provides excellent protection to the entire head, but, like with most full-face helmets, limits one's field of vision and constricts breathing when worn.</description>
     <graphicData>
-      <texPath>Headgear/GreatHelm/GreatHelm</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/GreatHelm/GreatHelm</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -1845,7 +1845,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/GreatHelm/GreatHelm</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/GreatHelm/GreatHelm</wornGraphicPath>
       <tags>
         <li>DankPyon_KnightHelmet</li>
         <li>DankPyon_HedgeKnightHelmet</li>
@@ -1864,7 +1864,7 @@
     <label>crusader's great helm</label>
     <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
     <graphicData>
-      <texPath>Headgear/CrusaderGreatHelm/CrusaderGreatHelm</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/CrusaderGreatHelm/CrusaderGreatHelm</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -1905,7 +1905,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/CrusaderGreatHelm/CrusaderGreatHelm</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/CrusaderGreatHelm/CrusaderGreatHelm</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags>
         <li>DankPyon_KnightHelmet</li>
@@ -1925,7 +1925,7 @@
     <label>royal great helm</label>
     <description>An ornamented construction of an archaic full-head helmet, which provides excellent protection of the entire head and face at the cost of hindered eyesight and constricted breathing.</description>
     <graphicData>
-      <texPath>Headgear/RoyalGreatHelm/RoyalGreatHelm</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/RoyalGreatHelm/RoyalGreatHelm</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -1967,7 +1967,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/RoyalGreatHelm/RoyalGreatHelm</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/RoyalGreatHelm/RoyalGreatHelm</wornGraphicPath>
       <tags>
         <li>DankPyon_LordHelmet</li>
 			</tags>
@@ -1986,7 +1986,7 @@
     <label>heraldic great helm (Amboise)</label>
     <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Amboise.</description>
     <graphicData>
-      <texPath>Headgear/HeraldicHelm1/HeraldicHelm1</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/HeraldicHelm1/HeraldicHelm1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -2024,7 +2024,7 @@
         <li>FullHead</li>
       </bodyPartGroups>
 
-      <wornGraphicPath>Headgear/HeraldicHelm1/HeraldicHelm1</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/HeraldicHelm1/HeraldicHelm1</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags>
         <li>DankPyon_HeraldicHelmAmboise</li>
@@ -2044,13 +2044,13 @@
     <label>heraldic great helm (Soren)</label>
     <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Soren.</description>
     <graphicData>
-      <texPath>Headgear/HeraldicHelm2/HeraldicHelm2</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/HeraldicHelm2/HeraldicHelm2</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
 
     <apparel>
-      <wornGraphicPath>Headgear/HeraldicHelm2/HeraldicHelm2</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/HeraldicHelm2/HeraldicHelm2</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags Inherit="False">
         <li>DankPyon_HeraldicHelmSoren</li>
@@ -2063,13 +2063,13 @@
     <label>heraldic great helm (Oswin)</label>
     <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Oswin.</description>
     <graphicData>
-      <texPath>Headgear/HeraldicHelm3/HeraldicHelm3</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/HeraldicHelm3/HeraldicHelm3</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
 
     <apparel>
-      <wornGraphicPath>Headgear/HeraldicHelm3/HeraldicHelm3</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/HeraldicHelm3/HeraldicHelm3</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags Inherit="False">
         <li>DankPyon_HeraldicHelmOswin</li>
@@ -2082,13 +2082,13 @@
     <label>heraldic great helm (Hesse)</label>
     <description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of house Hesse.</description>
     <graphicData>
-      <texPath>Headgear/HeraldicHelm4/HeraldicHelm4</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/HeraldicHelm4/HeraldicHelm4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
 
     <apparel>
-      <wornGraphicPath>Headgear/HeraldicHelm4/HeraldicHelm4</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/HeraldicHelm4/HeraldicHelm4</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags Inherit="False">
         <li>DankPyon_HeraldicHelmHesse</li>
@@ -2102,7 +2102,7 @@
     <label>armet</label>
     <description>A finely crafted, ergonomically shaped plate helmet that provides complete protection of the entire head, face,, shaped in such a way to optimize deflection of what would otherwise be direct blows.</description>
     <graphicData>
-      <texPath>Headgear/Armet/Armet</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/Armet/Armet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -2142,7 +2142,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/Armet/Armet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/Armet/Armet</wornGraphicPath>
       <tags>
         <li>DankPyon_LordHelmet</li>
         <li>DankPyon_Champion</li>
@@ -2161,7 +2161,7 @@
     <label>gilded armet</label>
     <description>A finely crafted, ergonomically shaped plate helmet that provides complete protection of the entire head, face,, shaped in such a way to optimize deflection of what would otherwise be direct blows.</description>
     <graphicData>
-      <texPath>Headgear/ArmetGilded/ArmetGilded</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/ArmetGilded/ArmetGilded</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -2206,7 +2206,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/ArmetGilded/ArmetGilded</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ArmetGilded/ArmetGilded</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags>
         <li>DankPyon_LordHelmet</li>
@@ -2227,7 +2227,7 @@
     <label>named armet</label>
     <description>An ancient ornate armet masterfully smithed by the under-forges of the ancient empire. It gives great protection for one's visage and embelishes an awe inspiring grace.</description>
     <graphicData>
-      <texPath>Headgear/ArmetNamed/ArmetNamed</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Headgear/ArmetNamed/ArmetNamed</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -2267,7 +2267,7 @@
         <li>FullHead</li>
         
       </bodyPartGroups>
-      <wornGraphicPath>Headgear/ArmetNamed/ArmetNamed</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/ArmetNamed/ArmetNamed</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <tags>
         <li>DankPyon_ArmetNamed</li>

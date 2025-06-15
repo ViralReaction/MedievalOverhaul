@@ -8,7 +8,7 @@
     <description>A wearable leather container designed for holding arrows. Wearing the quiver reduces the time it takes to shoot for bows and crossbows.</description>
     <techLevel>Neolithic</techLevel>
     <graphicData>
-      <texPath>Apparel/Utility/Quiver</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/Utility/Quiver</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -35,7 +35,7 @@
     </thingCategories>
     <generateAllowChance>0.15</generateAllowChance>
     <apparel>
-	  <wornGraphicPath>Apparel/Utility/Quiver</wornGraphicPath>
+	  <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Utility/Quiver</wornGraphicPath>
       <careIfWornByCorpse>false</careIfWornByCorpse>
       <careIfDamaged>false</careIfDamaged>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>

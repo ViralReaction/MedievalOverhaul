@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
 
 	<!-- ==================== Cleavers ==================== -->
@@ -9,7 +8,7 @@
 		<label>butcher's cleaver</label>
 		<description>A heavy blade used for chopping meat and bone, the cleaver excels for preparing food and dismembering animals. However, its sharp edge also makes it effective as a deadly weapon.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Cleavers/ButchersCleaver</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Cleavers/ButchersCleaver</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -75,7 +74,7 @@
 		<label>hatchet</label>
 		<description>A primitive tool used by apprentice lumberjacks, the hatchet is useful for both woodworking and chopping attacks. A great and accessible alternative to swords should the enemy hide behind a shield wall.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Axes/Hatchet</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Axes/Hatchet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -137,7 +136,7 @@
 		<label>handaxe</label>
 		<description>A longer version of the hatchet, the handaxe’s long shaft allows for stronger swings at a distance. Due to its easy use and practicality, this axe is a favorite against shielded enemies.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Axes/Handaxe</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Axes/Handaxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -198,7 +197,7 @@
 		<label>fighting axe</label>
 		<description>A variation of the axe forged for the sole purpose of warfare, with a sturdy metal head for splitting shields and sharp points for puncturing mail. Strong damage, but short range.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Axes/FightingAxe</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Axes/FightingAxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -254,7 +253,7 @@
 		<label>woodcutter's axe</label>
 		<description>A long axe used by experienced lumberjacks and brigands alike due to its long shaft and heavy sharp head. The design makes the two-handed axe great for chopping down trees as well as chopping down an enemy.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Axes/WoodcuttersAxe</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Axes/WoodcuttersAxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -317,7 +316,7 @@
 		<label>bardiche</label>
 		<description>An axe inspired by pikes, the bardiche features an axe head extended like a pike’s head. The design makes this two-handed weapon adaptable to many situations, as it can split unarmored enemies just as easily as it can split a shield.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Axes/Bardiche</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Axes/Bardiche</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -376,7 +375,7 @@
 		<label>greataxe</label>
 		<description>A heavier version of the two-handed axe, the greataxe’s weight allows for high raw damage as well as solid durability. A great option for splitting shields or unarmored enemies. Requires great strength to wield effectively.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Axes/Greataxe</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Axes/Greataxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -435,7 +434,7 @@
 		<label>longaxe</label>
 		<description>A widespread two-handed weapon often utilized by raiders due to its easy use and high damage. High damage, but the long shaft requires a warrior to forgo a shield, so the longaxe should be used by confident combatants.\nThe reach of the longaxe allows it to strike enemies much further away.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Axes/Longaxe</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Axes/Longaxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1.5,1.5)</drawSize>

@@ -6,7 +6,7 @@
 		<label>Sackcloth</label>
 		<description>A quickly made ragged piece of clothing, sewn from bits and pieces of various leathers.</description>
 		<graphicData>
-			<texPath>Apparel/LightArmor/Sackcloth</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/LightArmor/Sackcloth</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -40,7 +40,7 @@
 				<li>Torso</li>
 				<li>Shoulders</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/LightArmor/Sackcloth</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/LightArmor/Sackcloth</wornGraphicPath>
 			<tags>
 				<li>DankPyon_Peasant</li>
 				<li>DankPyon_BrigandThug</li>
@@ -62,7 +62,7 @@
 		<label>vest</label>
 		<description>A simple vest stitched from treated and tanned leathers, both comfortable and pragmatic. The thick leather is a decent balance between protection and encumbrance.</description>
 		<graphicData>
-			<texPath>Apparel/LightArmor/Leather_Tunic</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/LightArmor/Leather_Tunic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -94,7 +94,7 @@
 				<li>Torso</li>
 				<li>Shoulders</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/LightArmor/Leather_Tunic</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/LightArmor/Leather_Tunic</wornGraphicPath>
 			<tags>
 				<li>DankPyon_Peasant</li>
 				<li>DankPyon_BrigandThug</li>
@@ -123,7 +123,7 @@
 		<label>padded surcoat</label>
 		<description>A cloth mantle vest, sewn similarly to a gambeson, with a thick wool filling. Provides additional padding when worn but fails to deflect spear thrusts that come under shields.</description>
 		<graphicData>
-			<texPath>Apparel/LightArmor/Padded_Coat</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/LightArmor/Padded_Coat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -155,7 +155,7 @@
 				<li>Shoulders</li>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/LightArmor/Padded_Coat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/LightArmor/Padded_Coat</wornGraphicPath>
 			<tags>
 				<li>DankPyon_Peasant</li>
 				<li>DankPyon_BrigandThug</li>
@@ -184,7 +184,7 @@
 		<label>gambeson</label>
 		<description>A lightweight protective garment layered with tautly stitched linens, between which a dense stuffing of oakum or wool sits. Quite insulating and provides decent protection against cuts and blows.</description>
 		<graphicData>
-			<texPath>Apparel/LightArmor/Gambeson</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/LightArmor/Gambeson</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -216,7 +216,7 @@
 				<li>Shoulders</li>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/LightArmor/Gambeson</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/LightArmor/Gambeson</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
 			<tags>
 				<li>DankPyon_Peasant</li>
@@ -245,7 +245,7 @@
 		<label>padded armor</label>
 		<description>A padded linen tunic reinforced with mail plates and overlapping tanned leather, providing lightweight bodily protection at a low cost. A variation of the leather vest, the padded leather covers more of the body and is therefore more protective, but is more cumbersome as well.</description>
 		<graphicData>
-			<texPath>Apparel/LightArmor/Padded_Leather</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/LightArmor/Padded_Leather</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -278,7 +278,7 @@
 				<li>Shoulders</li>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/LightArmor/Padded_Leather</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/LightArmor/Padded_Leather</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
 				<li>DankPyon_Peasant</li>
@@ -303,7 +303,7 @@
 		<label>light lamellar</label>
 		<description>A leather lamellar built up of overlapping leather plates that can provide a substantial amount of protection.</description>
 		<graphicData>
-			<texPath>Apparel/LightArmor/Lamellar</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/LightArmor/Lamellar</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -335,7 +335,7 @@
 				<li>Shoulders</li>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/LightArmor/Lamellar</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/LightArmor/Lamellar</wornGraphicPath>
 			<tags>
 				<li>DankPyon_Peasant</li>
 				<li>DankPyon_BrigandRaider</li>

@@ -9,7 +9,7 @@
 		<label>bludgeon</label>
 		<description>The first version of the club, which is also more practical in battle. The metal head allows for greater armor penetration and can easily break the bones of unarmored foes.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Maces/Bludgeon</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Maces/Bludgeon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -66,7 +66,7 @@
 		<label>nomad mace</label>
 		<description>Popular amongst roaming tribals, the nomad mace features a wide and heavy metal head. While damage inflicted will be similar to other maces, the circumference of the head causes higher armor damage.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Maces/NomadMace</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Maces/NomadMace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -123,7 +123,7 @@
 		<label>morning star</label>
 		<description>A fierce and deadly mace loved by raiders and bandits for its blunt damage, as well as puncturing damage thanks to the spikes mounted around the head.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Maces/MorningStar</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Maces/MorningStar</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -180,7 +180,7 @@
 		<label>winged mace</label>
 		<description>Resembling an arrow with feathering, the winged mace features protruded ridges around the metal head, which further boasts armor penetration. Best when used against enemies turtling behind heavy plate armor.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Maces/WingedMace</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Maces/WingedMace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -239,7 +239,7 @@
 		<label>goedendag</label>
 		<description>A simple, yet ingenious weapon which merges the utility of a spear with the brute force of a club. Capable of delivering both deadly thrusts and rib-crushing smashes with its weighted, spiked head.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Maces/Goedendag</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Maces/Goedendag</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -303,7 +303,7 @@
 		<label>two-handed mace</label>
 		<description>The two-handed version of the morning star, warriors can trade their shields for further offensive potential. The handle’s longer reach allows for easier striking on mounts and greater armor penetration.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Maces/TwoHandedMace</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Maces/TwoHandedMace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -363,7 +363,7 @@
 		<label>two-handed flanged mace</label>
 		<description>The two-handed version of the winged mace, the long handle not only allows for higher damage but also greater armor penetration. The protruding flanges decimate both shields and metal plates.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Maces/TwoHandedFlangedMace</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Maces/TwoHandedFlangedMace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>

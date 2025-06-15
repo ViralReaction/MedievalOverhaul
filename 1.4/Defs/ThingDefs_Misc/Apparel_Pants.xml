@@ -9,7 +9,7 @@
             <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
         </recipeMaker>
         <graphicData>
-            <texPath>Apparel/Legwear/Hose</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/Legwear/Hose</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
 
@@ -68,7 +68,7 @@
         <label>trousers</label>
         <description>A standard pair of clothing for burghers and nobility alike.</description>
         <graphicData>
-            <texPath>Apparel/Legwear/Trousers</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/Legwear/Trousers</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
     </ThingDef>
@@ -78,7 +78,7 @@
         <label>braies</label>
         <description>Braies are underhose, usually of linen, although in some cultures they serve also as an outer garment.</description>
         <graphicData>
-            <texPath>Apparel/Legwear/Braies</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/Legwear/Braies</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
     </ThingDef>
@@ -110,7 +110,7 @@
         <label>padded chausses</label>
         <description>A quilted legwear that provides protection with padded fabric.</description>
         <graphicData>
-            <texPath>Apparel/Legwear/ChaussesPadded</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/Legwear/ChaussesPadded</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
 
@@ -161,7 +161,7 @@
         <label>splinted chausses</label>
         <description>A pair of splinted chausses to protect the leg with riveted metal plates. Cunningly crafted to allow the wearer almost complete freedom of mobility.</description>
         <graphicData>
-            <texPath>Apparel/Legwear/ChaussesSplinted</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/Legwear/ChaussesSplinted</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
 
@@ -210,7 +210,7 @@
         <label>plate chausses</label>
         <description>A pair of plate chausses to protect the leg with exceptionally crafted plates fitted to the wearer. It's strong riveted plate and finely articulated structure provides almost complete mobility.</description>
         <graphicData>
-            <texPath>Apparel/Legwear/ChaussesPlate</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/Legwear/ChaussesPlate</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
 

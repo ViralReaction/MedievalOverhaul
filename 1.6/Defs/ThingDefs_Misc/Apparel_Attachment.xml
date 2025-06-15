@@ -18,7 +18,7 @@
 		<label>wolf hood (timber)</label>
 		<description>A warm robust coat sewn from a wolf's fur. Wearing the pelt displays owner's strength, as it is proof that they have slain a ferocious wolf to don the trophy.</description>
 		<graphicData>
-			<texPath>Headgear/HelmetWolf/HelmetWolf</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Headgear/HelmetWolf/HelmetWolf</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<color>(107,103,99)</color>
 		</graphicData>
@@ -43,7 +43,7 @@
 			<layers>
 				<li>DankPyon_Hood</li>
 			</layers>
-			<wornGraphicPath>Headgear/HelmetWolf/HelmetWolf</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/HelmetWolf/HelmetWolf</wornGraphicPath>
 			<defaultOutfitTags>
 				<li>Worker</li>
 				<li>Soldier</li>
@@ -72,7 +72,7 @@
 		<label>bear hood (grizzly)</label>
 		<description>A warm robust coat sewn from a bears's fur. Wearing the pelt displays owner's strength, as it is proof that they have slain a ferocious bear to don the trophy.</description>
 		<graphicData>
-			<texPath>Headgear/HelmetBear/HelmetBear</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Headgear/HelmetBear/HelmetBear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<color>(112,82,65)</color>
 		</graphicData>
@@ -96,7 +96,7 @@
 			<layers>
 				<li>DankPyon_Hood</li>
 			</layers>
-			<wornGraphicPath>Headgear/HelmetBear/HelmetBear</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/HelmetBear/HelmetBear</wornGraphicPath>
 			<defaultOutfitTags>
 				<li>Worker</li>
 				<li>Soldier</li>
@@ -173,7 +173,7 @@
 		<label>direwolf pelt</label>
 		<description>A warm robust coat sewn from a direwolf's fur. Wearing the pelt displays owner's strength, as it is proof that they have slain a ferocious wolf to don the trophy.</description>
 		<graphicData>
-			<texPath>Apparel/Attachments/DirewolfPelt</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Attachments/DirewolfPelt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<color>(85,79,74)</color>
 		</graphicData>
@@ -193,7 +193,7 @@
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Apparel/Attachments/DirewolfPelt</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Attachments/DirewolfPelt</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
 		</apparel>
 	</ThingDef>
@@ -203,7 +203,7 @@
 		<label>hyena pelt</label>
 		<description>A warm robust coat sewn from a hyena's fur. Wearing the pelt displays owner's strength, as it is proof that they have slain a ferocious hyena to don the trophy. While intimidating the fearful, the pelt also grants strength and confidence in battle.</description>
 		<graphicData>
-			<texPath>Apparel/Attachments/HyenaPelt</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Attachments/HyenaPelt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
@@ -227,7 +227,7 @@
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Apparel/Attachments/HyenaPelt</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Attachments/HyenaPelt</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
 		</apparel>
 	</ThingDef>
@@ -237,7 +237,7 @@
 		<label>lindwurm scale cloak</label>
 		<description>A scaly robust cloak sewn from a lindwurm's scales. Wearing the cloak displays owner's strength, as it is proof that they have slain a dangerous lindwurm to don the trophy. \n\nGrants immunity to lindwurm acid.</description>
 		<graphicData>
-			<texPath>Apparel/Attachments/LindwurmScaleCloak</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Attachments/LindwurmScaleCloak</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
@@ -264,7 +264,7 @@
 			<SocialImpact>0.10</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Apparel/Attachments/LindwurmScaleCloak</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Attachments/LindwurmScaleCloak</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
 		</apparel>
 		<comps>
@@ -280,7 +280,7 @@
 		<label>fur cloak</label>
 		<description>A warm robust coat sewn from a thick unhold fur. Wearing the pelt displays owner's strength, as it is proof that they have slain an unhold to don the trophy. While intimidating the fearful, the cloak also grants the ability to shrug staggering hits.</description>
 		<graphicData>
-			<texPath>Apparel/Attachments/FurCoat</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Attachments/FurCoat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
@@ -303,7 +303,7 @@
 			<SocialImpact>0.20</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Apparel/Attachments/FurCoat</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Attachments/FurCoat</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
 		</apparel>
 		<comps>
@@ -319,7 +319,7 @@
 		<label>bone plating</label>
 		<description>Special plating that made from Unhold bones. WWhile intimidating the fearful, the cloak also grants the ability to shrug staggering hits</description>
 		<graphicData>
-			<texPath>Apparel/Attachments/BonePlate</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Attachments/BonePlate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
@@ -340,7 +340,7 @@
 			<SocialImpact>0.05</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Apparel/Attachments/BonePlate</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Attachments/BonePlate</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
 		</apparel>
 		<comps>
@@ -356,7 +356,7 @@
 		<label>additional fur padding</label>
 		<description>Additional padding made from Unhold Fur and the hide of a Direwolf. Wearing the pelt displays owner's strength, as it is proof that they have slain an unhold to don the trophy. While intimidating the fearful, the additional padding cushions blows upon the wearer.</description>
 		<graphicData>
-			<texPath>Apparel/Attachments/FurPadding</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Attachments/FurPadding</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
@@ -378,7 +378,7 @@
 			<IncomingDamageFactor>-0.25</IncomingDamageFactor>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Apparel/Attachments/FurPadding</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Attachments/FurPadding</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
 		</apparel>
 	</ThingDef>
@@ -388,7 +388,7 @@
 		<label>runes and sigils</label>
 		<description>Enchanted clothing adorned with mystical runes and sigils, boosting the wearer's mental fortitude</description>
 		<graphicData>
-			<texPath>Apparel/Attachments/RunesAndSigils</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Attachments/RunesAndSigils</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<recipeMaker>
@@ -410,7 +410,7 @@
 			<MentalBreakThreshold>-0.15</MentalBreakThreshold>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Apparel/Attachments/RunesAndSigils</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Attachments/RunesAndSigils</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
 		</apparel>
 		<comps>

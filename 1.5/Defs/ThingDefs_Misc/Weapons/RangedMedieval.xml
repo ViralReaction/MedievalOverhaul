@@ -7,7 +7,7 @@
     <label>crossbow</label>
     <description>A projectile launching weapon that, much like the bow, relies on a string pulled back for tension and propels a projectile upon release. However, the crossbow allows the wielder to maintain the draw thanks to the crossbow’s locking mechanism, thus making the ranged weapon both accessible to novices and powerful in combat.</description>
     <graphicData>
-      <texPath>WeaponRanged/Crossbow</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/Crossbow</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Bow_Recurve</soundInteract>
@@ -85,7 +85,7 @@
     <label>arbalest</label>
     <description>Although cumbersome to carry, the heavy crossbow is capable of inflicting heavy damage and piercing armored foes. Longer range and higher damage than the crossbow but takes time to reload. This makes the heavy crossbow a formidable defensive weapon and otherwise most effective in a group.</description>
     <graphicData>
-      <texPath>WeaponRanged/CrossbowHeavy</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/CrossbowHeavy</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.17,1.17)</drawSize>
     </graphicData>
@@ -168,7 +168,7 @@
     <label>handgonne</label>
     <description>War changes as the handgonnes take to the field; through powder and ignition, warriors fire hot shrapnel forward to pierce multiple targets. The long handle and heavy barrel make the weapon cumbersome to carry, but one skilled shot can turn the tides of battle in an instant.</description>
     <graphicData>
-        <texPath>WeaponRanged/Handgonne</texPath>
+        <texPath>Things/Item/Equipment/WeaponRanged/Handgonne</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <drawSize>(1.17,1.17)</drawSize>
     </graphicData>

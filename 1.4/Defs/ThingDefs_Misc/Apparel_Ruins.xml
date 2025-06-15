@@ -15,7 +15,7 @@
         <label>ring of holding</label>
         <description>A treasure to merchants and traveling warriors alike, this ring grants increased carrying capacity for those long campaigns and trading caravans.</description>
         <graphicData>
-            <texPath>Apparel/Jewelry/RingHolding</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/Jewelry/RingHolding</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1</drawSize>
         </graphicData>
@@ -42,7 +42,7 @@
         <label>ring of haste</label>
         <description>An enchanted ring that bestows upon the wearer additional movement speed—perfect for explorers looking to quickly cover ground and escape dangerous expeditions.</description>
         <graphicData>
-            <texPath>Apparel/Jewelry/RingHaste</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/Jewelry/RingHaste</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1</drawSize>
         </graphicData>
@@ -69,7 +69,7 @@
         <label>ring of tending</label>
         <description>A healer's basic ring, slippin on this garment imbues the hands with better tending quality and while also increasing the wearer's vitality.</description>
         <graphicData>
-            <texPath>Apparel/Jewelry/RingTending</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/Jewelry/RingTending</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1</drawSize>
         </graphicData>
@@ -97,7 +97,7 @@
         <label>ring of research</label>
         <description>Through perseverance and wit brings the wonders of the world. Upon wearing this ring, will bless enlightenment to open the mind into the depths of madness and ingenuity.</description>
         <graphicData>
-            <texPath>Apparel/Jewelry/RingResearch</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/Jewelry/RingResearch</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1</drawSize>
         </graphicData>

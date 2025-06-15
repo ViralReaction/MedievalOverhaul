@@ -8,7 +8,7 @@
 		<description>A wearable leather container designed for holding arrows. Wearing the quiver reduces the time it takes to shoot for bows and crossbows.</description>
 		<techLevel>Neolithic</techLevel>
 		<graphicData>
-			<texPath>Apparel/Utility/Quiver</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Utility/Quiver</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -35,7 +35,7 @@
 		</thingCategories>
 		<generateAllowChance>0.15</generateAllowChance>
 		<apparel>
-			<wornGraphicPath>Apparel/Utility/Quiver</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Utility/Quiver</wornGraphicPath>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<careIfDamaged>false</careIfDamaged>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -152,7 +152,7 @@
 			<DankPyon_Weapon_PotFlash>1</DankPyon_Weapon_PotFlash>
 		</costList>
 		<graphicData>
-			<texPath>Apparel/Utility/FlashPots</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Utility/FlashPots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<tickerType>Normal</tickerType>
@@ -169,7 +169,7 @@
 		</thingCategories>
 		<generateAllowChance>0.15</generateAllowChance>
 		<apparel>
-			<wornGraphicPath>Apparel/Utility/FlashPotBelt</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Utility/FlashPotBelt</wornGraphicPath>
 			<wornGraphicData>
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<north>
@@ -282,7 +282,7 @@
 			<DankPyon_Weapon_PotFire>1</DankPyon_Weapon_PotFire>
 		</costList>
 		<graphicData>
-			<texPath>Apparel/Utility/FirePots</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Utility/FirePots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<tickerType>Normal</tickerType>
@@ -299,7 +299,7 @@
 		</thingCategories>
 		<generateAllowChance>0.15</generateAllowChance>
 		<apparel>
-			<wornGraphicPath>Apparel/Utility/FirePotBelt</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Utility/FirePotBelt</wornGraphicPath>
 			<wornGraphicData>
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<north>
@@ -412,7 +412,7 @@
 			<DankPyon_Weapon_PotFlashSmoke>1</DankPyon_Weapon_PotFlashSmoke>
 		</costList>
 		<graphicData>
-			<texPath>Apparel/Utility/SmokePots</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Utility/SmokePots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<tickerType>Normal</tickerType>
@@ -429,7 +429,7 @@
 		</thingCategories>
 		<generateAllowChance>0.15</generateAllowChance>
 		<apparel>
-			<wornGraphicPath>Apparel/Utility/SmokePotBelt</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Utility/SmokePotBelt</wornGraphicPath>
 			<wornGraphicData>
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<north>
@@ -542,7 +542,7 @@
 			<DankPyon_Weapon_AcidFlask>1</DankPyon_Weapon_AcidFlask>
 		</costList>
 		<graphicData>
-			<texPath>Apparel/Utility/AcidFlaskBelt</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Utility/AcidFlaskBelt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<tickerType>Normal</tickerType>
@@ -559,7 +559,7 @@
 		</thingCategories>
 		<generateAllowChance>0.15</generateAllowChance>
 		<apparel>
-			<wornGraphicPath>Apparel/Utility/AcidFlaskBelt</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Utility/AcidFlaskBelt</wornGraphicPath>
 			<wornGraphicData>
 				<renderUtilityAsPack>true</renderUtilityAsPack>
 				<north>

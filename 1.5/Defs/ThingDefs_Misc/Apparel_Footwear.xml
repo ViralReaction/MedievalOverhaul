@@ -7,7 +7,7 @@
 		<label>boots</label>
 		<description>Tanned leathers sewn to fit the foot. Provides minimal protection. Wearing leather boots will increase movement speed.</description>
 		<graphicData>
-			<texPath>Apparel/Footwear/BootsLeather</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Footwear/BootsLeather</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -75,7 +75,7 @@
 		<label>splinted boots</label>
 		<description>The inner lining consists of small plates overlapping each other which may slighty restrict feet movement. Wearing splinted boots will reduce movement speed.</description>
 		<graphicData>
-			<texPath>Apparel/Footwear/BootsSplinted</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Footwear/BootsSplinted</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -142,7 +142,7 @@
 		<label>plate boots</label>
 		<description>A pair of meticulously crafted plate boots. Offers protection as great as its cost. Wearing plate gloves will reduce movement speed.</description>
 		<graphicData>
-			<texPath>Apparel/Footwear/BootsPlate</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Footwear/BootsPlate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>

@@ -78,7 +78,7 @@
 		<label>named greatsword</label>
 		<description>A humongous, two-handed sword with a long blade, capable of cleaving enemies with fierce swings and chops. Decent at long thrusts as well. \n\nAn ancient relic of the long forgotten under-empires. A masterfully crafted blade able to carve through plates of steel with its edge unwavering.\nThe reach of the greatsword allows it to strike enemies much further away.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Swords/NamedGreatsword/NamedGreatsword1</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Swords/NamedGreatsword/NamedGreatsword1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.25,1.25)</drawSize>
 		</graphicData>
@@ -149,7 +149,7 @@
 	<ThingDef ParentName="DankPyon_NamedGreatsword">
 		<defName>DankPyon_MeleeWeapon_NamedGreatsword1c</defName>
 		<graphicData>
-			<texPath>WeaponMelee/Swords/NamedGreatsword/NamedGreatsword2</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Swords/NamedGreatsword/NamedGreatsword2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.25</drawSize>
 		</graphicData>
@@ -158,7 +158,7 @@
 	<ThingDef ParentName="DankPyon_NamedGreatsword">
 		<defName>DankPyon_MeleeWeapon_NamedGreatsword2c</defName>
 		<graphicData>
-			<texPath>WeaponMelee/Swords/NamedGreatsword/NamedGreatsword3</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Swords/NamedGreatsword/NamedGreatsword3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.25</drawSize>
 		</graphicData>
@@ -170,7 +170,7 @@
 		<label>named two-handed flanged mace</label>
 		<description>The two-handed version of the winged mace, the long handle not only allows for higher damage but also greater armor penetration. The protruding flanges decimate both shields and metal plates.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Maces/NamedTwoHandedFlangedMace/NamedTwoHandedFlangedMace1</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Maces/NamedTwoHandedFlangedMace/NamedTwoHandedFlangedMace1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<modExtensions>
@@ -244,7 +244,7 @@
 		<label>named greataxe</label>
 		<description>A heavier version of the two-handed axe, the greataxe’s weight allows for high raw damage as well as solid durability. A great option for splitting shields or unarmored enemies. Requires great strength to wield effectively.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Axes/NamedGreataxe/NamedGreataxe1</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Axes/NamedGreataxe/NamedGreataxe1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<modExtensions>
@@ -316,7 +316,7 @@
 		<label>named two-handed hammer</label>
 		<description>An upgrade to the mallet, the two-handed hammer stacks a heavy metal head to multiply the force dealt to targets. The sheer force of hammer blows can crack solid plates and split strong shields.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Hammers/NamedTwoHandedHammer/NamedTwoHandedHammer1</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammers/NamedTwoHandedHammer/NamedTwoHandedHammer1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<modExtensions>
@@ -387,7 +387,7 @@
 	<ThingDef ParentName="DankPyon_NamedTwoHandedHammer">
 		<defName>DankPyon_MeleeWeapon_NamedTwoHandedHammer1c</defName>
 		<graphicData>
-			<texPath>WeaponMelee/Hammers/NamedTwoHandedHammer/NamedTwoHandedHammer2</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammers/NamedTwoHandedHammer/NamedTwoHandedHammer2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingDef>
@@ -398,7 +398,7 @@
 		<label>named halberd</label>
 		<description>A versatile pike with three deadly ends—a blade for strikes, a hook for grappling, and a spear-like point for puncturing chainmail and metal plates.\nThe reach of the halberd allows it to strike enemies much further away.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Polearms/NamedHalberd/NamedHalberd1</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Polearms/NamedHalberd/NamedHalberd1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
@@ -472,7 +472,7 @@
 	<ThingDef ParentName="DankPyon_NamedHalberd">
 		<defName>DankPyon_MeleeWeapon_NamedHalberd1c</defName>
 		<graphicData>
-			<texPath>WeaponMelee/Polearms/NamedHalberd/NamedHalberd2</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Polearms/NamedHalberd/NamedHalberd2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.5</drawSize>
 		</graphicData>

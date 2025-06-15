@@ -21,7 +21,7 @@
 		<description>An explosive clay pot designed to lit an area ablaze with its oil filled case.</description>
 		
 		<graphicData>
-			<texPath>WeaponRanged/FirePots</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/FirePots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconScale>1.3</uiIconScale>
@@ -90,7 +90,7 @@
 		<label>flash pot</label>
 		<description>An explosive clay pot designed to disorient victims with a bright flash and loude sharp noise.</description>
 		<graphicData>
-				<texPath>WeaponRanged/FlashPots</texPath>
+				<texPath>Things/Item/Equipment/WeaponRanged/FlashPots</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconScale>1.3</uiIconScale>
@@ -158,7 +158,7 @@
 		<label>smoke pot</label>
 		<description>An explosive clay pot designed to create a screen of smoke to provide visionary cover.</description>
 		<graphicData>
-				<texPath>WeaponRanged/FlashPots</texPath>
+				<texPath>Things/Item/Equipment/WeaponRanged/FlashPots</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconScale>1.3</uiIconScale>

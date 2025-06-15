@@ -51,28 +51,28 @@
 		<defName>DankPyon_Handwear</defName>
 		<label>handwear</label>
 		<parent>Apparel</parent>
-		<iconPath>Apparel/Handwear/GlovesPlate</iconPath>
+		<iconPath>Things/Pawn/Humanlike/Apparel/Handwear/GlovesPlate</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
 		<defName>DankPyon_Legwear</defName>
 		<label>legwear</label>
 		<parent>Apparel</parent>
-		<iconPath>Apparel/Legwear/ChaussesPlate</iconPath>
+		<iconPath>Things/Pawn/Humanlike/Apparel/Legwear/ChaussesPlate</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
 		<defName>DankPyon_Footwear</defName>
 		<label>footwear</label>
 		<parent>Apparel</parent>
-		<iconPath>Apparel/Footwear/BootsPlate</iconPath>
+		<iconPath>Things/Pawn/Humanlike/Apparel/Footwear/BootsPlate</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
 		<defName>DankPyon_Shields</defName>
 		<label>shields</label>
 		<parent>Apparel</parent>
-		<iconPath>Apparel/Utility/IconHeater</iconPath>
+		<iconPath>Things/Pawn/Humanlike/Apparel/Utility/IconHeater</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>

@@ -9,7 +9,7 @@
 		<label>blacksmith's hammer</label>
 		<description>A quintessential tool of the forge, the blacksmith hammer is designed for shaping molten metal and forging formidable weapons and armor. Though its primary function lies in crafting, its heavy head and stout handle make it a formidable weapon in its own right, capable of battering through defenses with the same efficiency it shapes ingots.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Hammers/BlacksmithHammer</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammers/BlacksmithHammer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -71,7 +71,7 @@
 		<label>pickaxe</label>
 		<description>A mining tool used to batter stones and ores; although primarily used to gather economic resources, the mine features deadly picks at both ends, capable of decimating armor as effectively as it mines ore.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Hammers/Pickaxe</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammers/Pickaxe</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -134,7 +134,7 @@
 		<label>military pick</label>
 		<description>Inspired by the miner’s pickaxe, the military pick consists of a long shaft with a pointy spike designed to puncture armor more effectively than the tool that inspired its design.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Hammers/MilitaryPick</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammers/MilitaryPick</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -196,7 +196,7 @@
 		<label>warhammer</label>
 		<description>While metal plates prove difficult to puncture, many warriors instead opt to damage the armor with a warhammer. Short, and thus wieldable with a shield, the warhammer continues to be a solid choice for battling rich nobles and heavily armored knights.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Hammers/Warhammer</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammers/Warhammer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -257,7 +257,7 @@
 		<label>two-handed mallet</label>
 		<description>A basic weapon composed of a single accessible material like wood, the two-handed mallet can disrupt enemy formations, whether the enemies are armored or not.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Hammers/TwoHandedMallet</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammers/TwoHandedMallet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -317,7 +317,7 @@
 		<label>two-handed hammer</label>
 		<description>An upgrade to the mallet, the two-handed hammer stacks a heavy metal head to multiply the force dealt to targets. The sheer force of hammer blows can crack solid plates and split strong shields.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Hammers/TwoHandedHammer</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammers/TwoHandedHammer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -374,7 +374,7 @@
 		<label>polehammer</label>
 		<description>A variation of the two-handed hammer that features two points at the head. This design offers additional ways to penetrate armored foes, as well as puncture less armored enemies with ease.\nThe reach of the polehammer allows it to strike enemies much further away.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Hammers/Polehammer</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Hammers/Polehammer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1.5,1.5)</drawSize>

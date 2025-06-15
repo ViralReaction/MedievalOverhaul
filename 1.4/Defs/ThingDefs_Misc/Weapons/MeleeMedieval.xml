@@ -8,7 +8,7 @@
     <label>bludgeon</label>
     <description>The first version of the club, which is also more practical in battle. The metal head allows for greater armor penetration and can easily break the bones of unarmored foes.</description>
     <graphicData>
-      <texPath>WeaponMelee/Maces/Bludgeon</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Maces/Bludgeon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -73,7 +73,7 @@
     <label>nomad mace</label>
     <description>Popular amongst roaming tribals, the nomad mace features a wide and heavy metal head. While damage inflicted will be similar to other maces, the circumference of the head causes higher armor damage.</description>
     <graphicData>
-      <texPath>WeaponMelee/Maces/NomadMace</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Maces/NomadMace</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -139,7 +139,7 @@
     <label>morning star</label>
     <description>A fierce and deadly mace loved by raiders and bandits for its blunt damage, as well as puncturing damage thanks to the spikes mounted around the head.</description>
     <graphicData>
-      <texPath>WeaponMelee/Maces/MorningStar</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Maces/MorningStar</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -205,7 +205,7 @@
     <label>winged mace</label>
     <description>Resembling an arrow with feathering, the winged mace features protruded ridges around the metal head, which further boasts armor penetration. Best when used against enemies turtling behind heavy plate armor.</description>
     <graphicData>
-      <texPath>WeaponMelee/Maces/WingedMace</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Maces/WingedMace</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -301,7 +301,7 @@
     <label>goedendag</label>
     <description>A simple, yet ingenious weapon which merges the utility of a spear with the brute force of a club. Capable of delivering both deadly thrusts and rib-crushing smashes with its weighted, spiked head.</description>
     <graphicData>
-      <texPath>WeaponMelee/Maces/Goedendag</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Maces/Goedendag</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -362,7 +362,7 @@
     <label>two-handed mace</label>
     <description>The two-handed version of the morning star, warriors can trade their shields for further offensive potential. The handle’s longer reach allows for easier striking on mounts and greater armor penetration.</description>
     <graphicData>
-      <texPath>WeaponMelee/Maces/TwoHandedMace</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Maces/TwoHandedMace</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -423,7 +423,7 @@
     <label>two-handed flanged mace</label>
     <description>The two-handed version of the winged mace, the long handle not only allows for higher damage but also greater armor penetration. The protruding flanges decimate both shields and metal plates.</description>
     <graphicData>
-      <texPath>WeaponMelee/Maces/TwoHandedFlangedMace</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Maces/TwoHandedFlangedMace</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -510,7 +510,7 @@
     <label>militia spear</label>
     <description>Since ancient times, lords provided militia spears to their fyrd, the peasants who take up arms during wartime. Their reasoning was simple: rather than practice the bow or sword, one with low melee skill will be more effective hidden behind a shield and jabbing with a long, pointy stick. Low damage, but decent armor penetration and easy to use.</description>
     <graphicData>
-      <texPath>WeaponMelee/Spears/MilitiaSpear</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Spears/MilitiaSpear</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -576,7 +576,7 @@
     <label>boar spear</label>
     <description>The two wings found at the base of the spear socket act as barriers to halt oncoming attacks. They also prevent the spear from penetrating too far and thus getting stuck, making the boar spear effective for hunting as well as quick thrusts.</description>
     <graphicData>
-      <texPath>WeaponMelee/Spears/BoarSpear</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Spears/BoarSpear</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -642,7 +642,7 @@
     <label>fighting spear</label>
     <description>A spear most effective for combat, the fighting spear is long and sturdy to help frontlines maintain their spear wall. Borrowing the wing design from the boar spear, the fighting spear also features two protruding points, which can help stop enemy swings.</description>
     <graphicData>
-      <texPath>WeaponMelee/Spears/FightingSpear</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Spears/FightingSpear</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -738,7 +738,7 @@
     <label>warfork</label>
     <description>An adaptation of the agricultural pitchfork, the warfork is designed for easy use like the spear but with the range of a pike. Solid damage and easy to use, great for beginner warriors.</description>
     <graphicData>
-		<texPath>WeaponMelee/Spears/Warfork</texPath>
+		<texPath>Things/Item/Equipment/WeaponMelee/Spears/Warfork</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
 		<drawSize>(1.25,1.25)</drawSize>
@@ -799,7 +799,7 @@
     <label>spetum</label>
     <description>A pole weapon with a spearhead at the tip and side blades that allow for several penetration points. A thrust from the spetum can damage multiple areas at once while providing additional defense from the pike-inspired side blades.</description>
     <graphicData>
-		<texPath>WeaponMelee/Spears/Spetum</texPath>
+		<texPath>Things/Item/Equipment/WeaponMelee/Spears/Spetum</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
 		<drawSize>(1.25,1.25)</drawSize>
@@ -860,7 +860,7 @@
     <label>pitchfork</label>
     <description>An agricultural tool, the pitchfork offers minimal damage and armor penetration. However, the length and pointy ends allow it to be useful as an improvised weapon by outranging swords and spears.</description>
     <graphicData>
-		<texPath>WeaponMelee/Polearms/Pitchfork</texPath>
+		<texPath>Things/Item/Equipment/WeaponMelee/Polearms/Pitchfork</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
 		<drawSize>(1.25,1.25)</drawSize>
@@ -921,7 +921,7 @@
     <label>hooked blade</label>
     <description>When striking isn’t enough, brave warriors can close distances with the hooked blade’s curved head. The sharp point can puncture both flesh and metal, ensuring a tight grip to pull in enemies. Deals impressive damage for an agricultural tool but shines thanks to its utility.</description>
     <graphicData>
-		<texPath>WeaponMelee/Polearms/HookedBlade</texPath>
+		<texPath>Things/Item/Equipment/WeaponMelee/Polearms/HookedBlade</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
 		<drawSize>(1.25,1.25)</drawSize>
@@ -983,7 +983,7 @@
     <label>Billhook</label>
     <description>A versatile pike with three deadly ends—a blade for strikes, a hook for grappling, and a spear-like point for puncturing chainmail and metal plates.</description>
     <graphicData>
-		<texPath>WeaponMelee/Polearms/Billhook</texPath>
+		<texPath>Things/Item/Equipment/WeaponMelee/Polearms/Billhook</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(1.5,1.5)</drawSize>
 		<shaderType>CutoutComplex</shaderType>
@@ -1043,7 +1043,7 @@
     <label>Pike</label>
     <description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline.</description>
     <graphicData>
-		<texPath>WeaponMelee/Polearms/Pike</texPath>
+		<texPath>Things/Item/Equipment/WeaponMelee/Polearms/Pike</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
 		<drawSize>(1.5,1.5)</drawSize>
@@ -1103,7 +1103,7 @@
     <label>pike (Amboise)</label>
     <description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline. \n\n This pike carries the colors of house Amboise.</description>
     <graphicData>
-      <texPath>WeaponMelee/Polearms/StandardAmboise</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Polearms/StandardAmboise</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -1125,7 +1125,7 @@
     <label>pike (Soren)</label>
     <description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline. \n\n This pike carries the colors of house Soren.</description>
     <graphicData>
-      <texPath>WeaponMelee/Polearms/StandardSoren</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Polearms/StandardSoren</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -1147,7 +1147,7 @@
     <label>pike (Oswin)</label>
     <description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline. \n\n This pike carries the colors of house Oswin.</description>
     <graphicData>
-      <texPath>WeaponMelee/Polearms/StandardOswin</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Polearms/StandardOswin</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -1169,7 +1169,7 @@
     <label>pike (Hesse)</label>
     <description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline. \n\n This pike carries the colors of house Hesse.</description>
     <graphicData>
-      <texPath>WeaponMelee/Polearms/StandardHesse</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Polearms/StandardHesse</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -1192,7 +1192,7 @@
     <label>swordlance</label>
     <description>Variation of the pike, although the curved blade allows for fierce slashing at a distance. This trades armor penetration for raw damage, making the swordlance deadly in experienced hands.</description>
     <graphicData>
-      <texPath>WeaponMelee/Polearms/Swordlance</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Polearms/Swordlance</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -1254,7 +1254,7 @@
     <label>halberd</label>
     <description>A versatile pike with three deadly ends—a blade for strikes, a hook for grappling, and a spear-like point for puncturing chainmail and metal plates.</description>
     <graphicData>
-		<texPath>WeaponMelee/Polearms/Halberd</texPath>
+		<texPath>Things/Item/Equipment/WeaponMelee/Polearms/Halberd</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(1.5,1.5)</drawSize>
     </graphicData>
@@ -1311,7 +1311,7 @@
     <label>pickaxe</label>
     <description>A mining tool used to batter stones and ingots; although primarily used to gather economic resources, the mine features deadly picks at both ends, capable of decimating armor as effectively as it mines ore.</description>
     <graphicData>
-      <texPath>WeaponMelee/Hammers/Pickaxe</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Hammers/Pickaxe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -1379,7 +1379,7 @@
     <label>military pick</label>
     <description>Inspired by the miner’s pickaxe, the military pick consists of a long shaft with a pointy spike designed to puncture armor more effectively than the tool that inspired its design.</description>
     <graphicData>
-      <texPath>WeaponMelee/Hammers/MilitaryPick</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Hammers/MilitaryPick</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -1448,7 +1448,7 @@
     <label>warhammer</label>
     <description>While metal plates prove difficult to puncture, many warriors instead opt to damage the armor with a warhammer. Short, and thus wieldable with a shield, the warhammer continues to be a solid choice for battling rich nobles and heavily armored knights.</description>
     <graphicData>
-      <texPath>WeaponMelee/Hammers/Warhammer</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Hammers/Warhammer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -1542,7 +1542,7 @@
     <label>two-handed mallet</label>
     <description>A basic weapon composed of a single accessible material like wood, the two-handed mallet can disrupt enemy formations, whether the enemies are armored or not.</description>
     <graphicData>
-      <texPath>WeaponMelee/Hammers/TwoHandedMallet</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Hammers/TwoHandedMallet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -1604,7 +1604,7 @@
     <label>two-handed hammer</label>
     <description>An upgrade to the mallet, the two-handed hammer stacks a heavy metal head to multiply the force dealt to targets. The sheer force of hammer blows can crack solid plates and split strong shields.</description>
     <graphicData>
-      <texPath>WeaponMelee/Hammers/TwoHandedHammer</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Hammers/TwoHandedHammer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -1661,7 +1661,7 @@
     <label>polehammer</label>
     <description>A variation of the two-handed hammer that features two points at the head. This design offers additional ways to penetrate armored foes, as well as puncture less armored enemies with ease.</description>
     <graphicData>
-		<texPath>WeaponMelee/Hammers/Polehammer</texPath>
+		<texPath>Things/Item/Equipment/WeaponMelee/Hammers/Polehammer</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
 		<drawSize>(1.5,1.5)</drawSize>
@@ -1721,7 +1721,7 @@
     <label>hatchet</label>
     <description>A primitive tool used by apprentice lumberjacks, the hatchet is useful for both woodworking and chopping attacks. A great and accessible alternative to swords should the enemy hide behind a shield wall.</description>
     <graphicData>
-      <texPath>WeaponMelee/Axes/Hatchet</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Axes/Hatchet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -1791,7 +1791,7 @@
     <label>handaxe</label>
     <description>A longer version of the hatchet, the handaxe’s long shaft allows for stronger swings at a distance. Due to its easy use and practicality, this axe is a favorite against shielded enemies.</description>
     <graphicData>
-      <texPath>WeaponMelee/Axes/Handaxe</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Axes/Handaxe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -1860,7 +1860,7 @@
     <label>fighting axe</label>
     <description>A variation of the axe forged for the sole purpose of warfare, with a sturdy metal head for splitting shields and sharp points for puncturing mail. Strong damage, but short range.</description>
     <graphicData>
-      <texPath>WeaponMelee/Axes/FightingAxe</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Axes/FightingAxe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -1923,7 +1923,7 @@
     <label>woodcutter's axe</label>
     <description>A long axe used by experienced lumberjacks and brigands alike due to its long shaft and heavy sharp head. The design makes the two-handed axe great for chopping down trees as well as chopping down an enemy.</description>
     <graphicData>
-      <texPath>WeaponMelee/Axes/WoodcuttersAxe</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Axes/WoodcuttersAxe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -1987,7 +1987,7 @@
     <label>bardiche</label>
     <description>An axe inspired by pikes, the bardiche features an axe head extended like a pike’s head. The design makes this two-handed weapon adaptable to many situations, as it can split unarmored enemies just as easily as it can split a shield.</description>
     <graphicData>
-      <texPath>WeaponMelee/Axes/Bardiche</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Axes/Bardiche</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -2047,7 +2047,7 @@
     <label>greataxe</label>
     <description>A heavier version of the two-handed axe, the greataxe’s weight allows for high raw damage as well as solid durability. A great option for splitting shields or unarmored enemies. Requires great strength to wield effectively.</description>
     <graphicData>
-      <texPath>WeaponMelee/Axes/Greataxe</texPath>
+      <texPath>Things/Item/Equipment/WeaponMelee/Axes/Greataxe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -2107,7 +2107,7 @@
     <label>longaxe</label>
     <description>A widespread two-handed weapon often utilized by raiders due to its easy use and high damage. High damage, but the long shaft requires a warrior to forgo a shield, so the longaxe should be used by confident combatants.</description>
     <graphicData>
-		<texPath>WeaponMelee/Axes/Longaxe</texPath>
+		<texPath>Things/Item/Equipment/WeaponMelee/Axes/Longaxe</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	    <shaderType>CutoutComplex</shaderType>
 		<drawSize>(1.5,1.5)</drawSize>
@@ -2191,7 +2191,7 @@
   <label>falchion</label>
   <description>A stout, broad-bladed falchion, often found in the hands of militiamen and peasantry due to the ease of its manufacture and use. Best used for slashing, but can still thrust in a pinch.</description>
   <graphicData>
-    <texPath>WeaponMelee/Swords/Falchion</texPath>
+    <texPath>Things/Item/Equipment/WeaponMelee/Swords/Falchion</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <shaderType>CutoutComplex</shaderType>
   </graphicData>
@@ -2253,7 +2253,7 @@
   <label>arming sword</label>
   <description>Many warriors see their weapons as tools, and so the most common swords are those most practical. Arming swords, praised for their light weight, fullered blade, and efficient craftsmanship, prove useful for both novices and veterans alike. Swords can bring warriors wealth, so when choosing the tool for warfare, one would be lucky to wield an arming sword.</description>
   <graphicData>
-    <texPath>WeaponMelee/Swords/Armingsword1</texPath>
+    <texPath>Things/Item/Equipment/WeaponMelee/Swords/Armingsword1</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <shaderType>CutoutComplex</shaderType>
   </graphicData>
@@ -2315,7 +2315,7 @@
   <label>fencing sword</label>
   <description>An elegant weapon both light and deadly, the fencing sword requires great skill to use effectively. However, mastery of such a weapon can lead duelists to many victories even against mails, as precise strikes can pierce weak points.</description>
   <graphicData>
-    <texPath>WeaponMelee/Swords/FencingSword</texPath>
+    <texPath>Things/Item/Equipment/WeaponMelee/Swords/FencingSword</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <shaderType>CutoutComplex</shaderType>
   </graphicData>
@@ -2377,7 +2377,7 @@
   <label>noble sword</label>
   <description>A well forged and masterfully balanced arming sword, ornately decorated and finely finished. Both a fine weapon and a work of art.</description>
   <graphicData>
-    <texPath>WeaponMelee/Swords/NobleSword</texPath>
+    <texPath>Things/Item/Equipment/WeaponMelee/Swords/NobleSword</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <shaderType>CutoutComplex</shaderType>
   </graphicData>
@@ -2466,7 +2466,7 @@
   <label>longsword</label>
   <description>Where shorter and lighter blades are most useful in shield walls, the longsword shines in skirmishes and duels. By increasing the length, and consequently ditching a shield, a warrior can increase reach to inflict high damage through swings and even thrusts. Do not assume that the increased size brings increased weight, as a swift strike from a longsword has caught many enemies off-guard.</description>
   <graphicData>
-    <texPath>WeaponMelee/Swords/Longsword</texPath>
+    <texPath>Things/Item/Equipment/WeaponMelee/Swords/Longsword</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <shaderType>CutoutComplex</shaderType>
     <drawSize>(1.25,1.25)</drawSize>
@@ -2521,7 +2521,7 @@
   <label>Greatsword</label>
   <description>A humongous, two-handed sword with a long blade, capable of cleaving enemies with fierce swings and chops. Decent at long thrusts as well.</description>
   <graphicData>
-    <texPath>WeaponMelee/Swords/Greatsword</texPath>
+    <texPath>Things/Item/Equipment/WeaponMelee/Swords/Greatsword</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <shaderType>CutoutComplex</shaderType>
     <drawSize>(1.25,1.25)</drawSize>
@@ -2643,7 +2643,7 @@
     <description>A humongous, two-handed sword with a long blade, capable of cleaving enemies with fierce swings and chops. Decent at long thrusts as well.
     \n\nAn ancient relic of the long forgotten under-empires. A masterfully crafted blade able to carve through plates of steel with its edge unwavering.</description>
     <graphicData>
-        <texPath>WeaponMelee/Swords/NamedGreatsword/NamedGreatsword1</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/Swords/NamedGreatsword/NamedGreatsword1</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <drawSize>(1.25,1.25)</drawSize>
   </graphicData>
@@ -2713,7 +2713,7 @@
 <ThingDef ParentName="DankPyon_NamedGreatsword">
     <defName>DankPyon_MeleeWeapon_NamedGreatsword1c</defName>
     <graphicData>
-        <texPath>WeaponMelee/Swords/NamedGreatsword/NamedGreatsword2</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/Swords/NamedGreatsword/NamedGreatsword2</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <drawSize>1.25</drawSize>
     </graphicData>
@@ -2722,7 +2722,7 @@
 <ThingDef ParentName="DankPyon_NamedGreatsword">
     <defName>DankPyon_MeleeWeapon_NamedGreatsword2c</defName>
     <graphicData>
-        <texPath>WeaponMelee/Swords/NamedGreatsword/NamedGreatsword3</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/Swords/NamedGreatsword/NamedGreatsword3</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <drawSize>1.25</drawSize>
     </graphicData>
@@ -2734,7 +2734,7 @@
     <label>named two-handed flanged mace</label>
     <description>The two-handed version of the winged mace, the long handle not only allows for higher damage but also greater armor penetration. The protruding flanges decimate both shields and metal plates.</description>
     <graphicData>
-        <texPath>WeaponMelee/Maces/NamedTwoHandedFlangedMace/NamedTwoHandedFlangedMace1</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/Maces/NamedTwoHandedFlangedMace/NamedTwoHandedFlangedMace1</texPath>
         <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.2</uiIconScale>
@@ -2786,7 +2786,7 @@
     <label>named greataxe</label>
     <description>A heavier version of the two-handed axe, the greataxe’s weight allows for high raw damage as well as solid durability. A great option for splitting shields or unarmored enemies. Requires great strength to wield effectively.</description>
     <graphicData>
-        <texPath>WeaponMelee/Axes/NamedGreataxe/NamedGreataxe1</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/Axes/NamedGreataxe/NamedGreataxe1</texPath>
         <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <techLevel>Medieval</techLevel>
@@ -2837,7 +2837,7 @@
     <label>named two-handed hammer</label>
     <description>An upgrade to the mallet, the two-handed hammer stacks a heavy metal head to multiply the force dealt to targets. The sheer force of hammer blows can crack solid plates and split strong shields.</description>
     <graphicData>
-        <texPath>WeaponMelee/Hammers/NamedTwoHandedHammer/NamedTwoHandedHammer1</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/Hammers/NamedTwoHandedHammer/NamedTwoHandedHammer1</texPath>
         <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <equippedAngleOffset>-65</equippedAngleOffset>
@@ -2886,7 +2886,7 @@
 <ThingDef ParentName="DankPyon_NamedTwoHandedHammer">
     <defName>DankPyon_MeleeWeapon_NamedTwoHandedHammer1c</defName>
     <graphicData>
-        <texPath>WeaponMelee/Hammers/NamedTwoHandedHammer/NamedTwoHandedHammer2</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/Hammers/NamedTwoHandedHammer/NamedTwoHandedHammer2</texPath>
         <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 </ThingDef>
@@ -2897,7 +2897,7 @@
     <label>named halberd</label>
     <description>A versatile pike with three deadly ends—a blade for strikes, a hook for grappling, and a spear-like point for puncturing chainmail and metal plates.</description>
     <graphicData>
-		<texPath>WeaponMelee/Polearms/NamedHalberd/NamedHalberd1</texPath>
+		<texPath>Things/Item/Equipment/WeaponMelee/Polearms/NamedHalberd/NamedHalberd1</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(1.5,1.5)</drawSize>
   </graphicData>
@@ -2971,7 +2971,7 @@
 <ThingDef ParentName="DankPyon_NamedHalberd">
     <defName>DankPyon_MeleeWeapon_NamedHalberd1c</defName>
     <graphicData>
-        <texPath>WeaponMelee/Polearms/NamedHalberd/NamedHalberd2</texPath>
+        <texPath>Things/Item/Equipment/WeaponMelee/Polearms/NamedHalberd/NamedHalberd2</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <drawSize>1.5</drawSize>
     </graphicData>

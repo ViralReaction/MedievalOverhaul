@@ -24,7 +24,7 @@
 		<label>heavy hauberk (adorned)</label>
 		<description>A thick and robust hauberk, covered by a fine quilted surcoat. The layered structure provides an ample amount of warmth. Overall, an impressive piece of armor, decorated with trophies and holy symbols.</description>
 		<graphicData>
-			<texPath>Apparel/Adorned/Adorned_MailShirt/Adorned_MailShirt</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Adorned/Adorned_MailShirt/Adorned_MailShirt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories>
@@ -61,7 +61,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/Adorned/Adorned_MailShirt/Adorned_MailShirt</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Adorned/Adorned_MailShirt/Adorned_MailShirt</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
 				<li>DankPyon_Initiate</li>
@@ -80,7 +80,7 @@
 		<label>warrior's armor (adorned)</label>
 		<description>A robust mail shirt, covered by a fine quilted surcoat. The layered structure provides an ample amount of warmth. Overall, an impressive piece of armor, decorated with trophies and holy symbols.</description>
 		<graphicData>
-			<texPath>Apparel/Adorned/Adorned_Warrior/Adorned_Warrior</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Adorned/Adorned_Warrior/Adorned_Warrior</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -118,7 +118,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/Adorned/Adorned_Warrior/Adorned_Warrior</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Adorned/Adorned_Warrior/Adorned_Warrior</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
 				<li>DankPyon_Oathtaker</li>
@@ -137,7 +137,7 @@
 		<label>full plate (adorned)</label>
 		<description>A heavy plate coverd by a thick riveted jacket and reinforced vambraces. The layered structure provides an ample amount of warmth. Typically worn by the oathbound, the best of the oathtakers, finely decorated with trophies and religious symbols.</description>
 		<graphicData>
-			<texPath>Apparel/Adorned/Adorned_FullPlate/Adorned_FullPlate</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Adorned/Adorned_FullPlate/Adorned_FullPlate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -181,7 +181,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/Adorned/Adorned_FullPlate/Adorned_FullPlate</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Adorned/Adorned_FullPlate/Adorned_FullPlate</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
 				<li>DankPyon_Oathbound</li>
@@ -201,7 +201,7 @@
 		<label>heavy chain coif (adorned)</label>
 		<description>A thick hood forged from chains of metal with an added plate-metal noseguard to almost entirely protect the face. Makes it a bit difficult to see, but otherwise offers excellent protection against cuts.</description>
 		<graphicData>
-			<texPath>Headgear/Adorned_HeavyMailCoif/Adorned_HeavyMailCoif</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Headgear/Adorned_HeavyMailCoif/Adorned_HeavyMailCoif</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -239,7 +239,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Headgear/Adorned_HeavyMailCoif/Adorned_HeavyMailCoif</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/Adorned_HeavyMailCoif/Adorned_HeavyMailCoif</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
 				<li>DankPyon_InitiateHelmet</li>
@@ -259,7 +259,7 @@
 		<label>chainveil helmet (adorned)</label>
 		<description>An early design of the full-faced helmet, consisting of a reinforced flat-top helmet with an additional face-plate and a mail coif. Offers great protection of the entire head, but hinders eyesight and breathing.</description>
 		<graphicData>
-			<texPath>Headgear/Adorned_ClosedFlatTop/Adorned_ClosedFlatTop</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Headgear/Adorned_ClosedFlatTop/Adorned_ClosedFlatTop</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -300,7 +300,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Headgear/Adorned_ClosedFlatTop/Adorned_ClosedFlatTop</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/Adorned_ClosedFlatTop/Adorned_ClosedFlatTop</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
 				<li>DankPyon_Ulrik_Warrior</li>
@@ -320,7 +320,7 @@
 		<label>great helm (adorned)</label>
 		<description>A greatly ornamented full-plate great helmet, often worn by jousters and heraldic champions and notable figures of notable houses in war. Portrays one’s noble status while still offering considerable protection in battle. \n\nThis great helm carries the colours of the Ulrik order.</description>
 		<graphicData>
-			<texPath>Headgear/Adorned_GreatHelm/Adorned_GreatHelm</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Headgear/Adorned_GreatHelm/Adorned_GreatHelm</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -364,7 +364,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Headgear/Adorned_GreatHelm/Adorned_GreatHelm</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Headgear/Adorned_GreatHelm/Adorned_GreatHelm</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
 				<li>DankPyon_Ulrik_Oathbound</li>

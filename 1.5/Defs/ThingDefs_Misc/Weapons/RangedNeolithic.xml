@@ -8,7 +8,7 @@
     <label>hunting bow</label>
     <description>A simple and short weapon, the hunting bow mixes dense wood for the belly along with springier wood for the front. This allows the dense wood to bend, but the wood always fights to return to the straight, and so ousts arrows pulled along the strand at great force. Smaller than the war bow, resulting in less distance and penetration, but deadly in the hands of a skilled archer or hunter.</description>
     <graphicData>
-      <texPath>WeaponRanged/BowHunting</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/BowHunting</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Bow_Recurve</soundInteract>
@@ -83,7 +83,7 @@
     <label>war bow</label>
     <description>A long bow carved from beautiful yew with tips steamed to provide slight bend and painted to keep the bow from shattering under stress—and the bow indeed experiences stress as the long body allows the hemp strand to pull further and with more tension. This helps arrows fly further and better penetrate surfaces, making the war bow a deadly weapon for combat.</description>
     <graphicData>
-      <texPath>WeaponRanged/BowWar</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/BowWar</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.25,1.25)</drawSize>
     </graphicData>

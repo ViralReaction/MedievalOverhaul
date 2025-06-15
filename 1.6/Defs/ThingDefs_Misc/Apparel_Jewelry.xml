@@ -91,7 +91,7 @@
 		<label>citrine necklace</label>
 		<description>This citrine-embedded necklace slightly increases wealth for the men and women seeking to improve their social status.</description>
 		<graphicData>
-			<texPath>Apparel/Jewelry/CitrineNecklace</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Jewelry/CitrineNecklace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
@@ -109,7 +109,7 @@
 		<label>jade necklace</label>
 		<description>This necklace, crafted to be as hardy and beautiful as the jade gem, offers moderate wealth to those who can afford it.</description>
 		<graphicData>
-			<texPath>Apparel/Jewelry/JadeNecklace</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Jewelry/JadeNecklace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
@@ -127,7 +127,7 @@
 		<label>amber necklace</label>
 		<description>This amber necklace, sharing the gem’s natural yellow-orange hue, is both familiar and valuable due to its natural beauty.</description>
 		<graphicData>
-			<texPath>Apparel/Jewelry/AmberNecklace</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Jewelry/AmberNecklace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
@@ -145,7 +145,7 @@
 		<label>onyx necklace</label>
 		<description>This necklace, black as onyx itself, speaks of more incredible wealth than the average man or woman as the gem inside continues to glint despite its dark color.</description>
 		<graphicData>
-			<texPath>Apparel/Jewelry/OnyxNecklace</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Jewelry/OnyxNecklace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
@@ -178,7 +178,7 @@
 		<label>emerald necklace</label>
 		<description>This gold necklace, embedded with a pristine emerald, offers a significant increase of wealth to its wearer and is often seen on nobles and merchants.</description>
 		<graphicData>
-			<texPath>Apparel/Jewelry/EmeraldNecklace</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Jewelry/EmeraldNecklace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
@@ -198,7 +198,7 @@
 		<label>sapphire necklace</label>
 		<description>This sapphire-embedded necklace shines its familiar blue gleam, ensuring those around the wearer take note of the wealthy man or woman who walks amongst them.</description>
 		<graphicData>
-			<texPath>Apparel/Jewelry/SapphireNecklace</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Jewelry/SapphireNecklace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
@@ -217,7 +217,7 @@
 		<label>ruby necklace</label>
 		<description>This gold necklace decorated with multiple tear-drop rubies offers great wealth and implies great power, as one who can afford or steal such a necklace is not one to be trifled with.</description>
 		<graphicData>
-			<texPath>Apparel/Jewelry/RubyNecklace</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Jewelry/RubyNecklace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
@@ -237,7 +237,7 @@
 		<label>citrine ring</label>
 		<description>This citrine-embedded ring slightly increases wealth for the men and women seeking to improve their social status.</description>
 		<graphicData>
-			<texPath>Apparel/Jewelry/CitrineRing</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Jewelry/CitrineRing</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -255,7 +255,7 @@
 		<label>jade ring</label>
 		<description>This ring, crafted to be as hardy and beautiful as the jade gem, offers moderate wealth to those who can afford it.</description>
 		<graphicData>
-			<texPath>Apparel/Jewelry/JadeRing</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Jewelry/JadeRing</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -273,7 +273,7 @@
 		<label>amber ring</label>
 		<description>This amber ring, sharing the gem’s natural yellow-orange hue, is both familiar and valuable due to its natural beauty.</description>
 		<graphicData>
-			<texPath>Apparel/Jewelry/AmberRing</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Jewelry/AmberRing</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -291,7 +291,7 @@
 		<label>onyx ring</label>
 		<description>This ring, black as onyx itself, speaks of more incredible wealth than the average man or woman as the gem inside continues to glint despite its dark color.</description>
 		<graphicData>
-			<texPath>Apparel/Jewelry/OnyxRing</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Jewelry/OnyxRing</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -324,7 +324,7 @@
 		<label>emerald ring</label>
 		<description>This gold ring, embedded with a pristine emerald, offers a significant increase of wealth to its wearer and is often seen on nobles and merchants.</description>
 		<graphicData>
-			<texPath>Apparel/Jewelry/EmeraldRing</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Jewelry/EmeraldRing</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -344,7 +344,7 @@
 		<label>sapphire ring</label>
 		<description>This sapphire-embedded necklace shines its familiar blue gleam, ensuring those around the wearer take note of the wealthy man or woman who walks amongst them.</description>
 		<graphicData>
-			<texPath>Apparel/Jewelry/SapphireRing</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Jewelry/SapphireRing</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>
@@ -363,7 +363,7 @@
 		<label>ruby ring</label>
 		<description>This gold necklace decorated with multiple tear-drop rubies offers great wealth and implies great power, as one who can afford or steal such a necklace is not one to be trifled with.</description>
 		<graphicData>
-			<texPath>Apparel/Jewelry/RubyRing</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Jewelry/RubyRing</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>

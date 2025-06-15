@@ -6,7 +6,7 @@
         <label>brigandine</label>
         <description>Two layers of armor give way to this fantastically protective, yet cumbersome, suit, consisting of internal strong-forged overlapping layers of metal plates riveted to the fabric for protecting vitals and extremities.</description>
         <graphicData>
-			<texPath>Apparel/HeavyArmor/Brigandine</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Brigandine</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
@@ -46,7 +46,7 @@
                 <li>Arms</li>
 				<li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/HeavyArmor/Brigandine</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Brigandine</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
             <layers>
                 <li>Shell</li>
@@ -85,7 +85,7 @@
         <label>coat of plates</label>
         <description>Two layers of armor give way to this fantastically protective, yet cumbersome, suit, consisting of strong-forged chains beset by overlapping layers of metal plates to protect vitals and extremities.</description>
         <graphicData>
-			<texPath>Apparel/HeavyArmor/Coat_Of_Plates</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Coat_Of_Plates</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
@@ -125,7 +125,7 @@
                 <li>Arms</li>
 				<li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/HeavyArmor/Coat_Of_Plates</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Coat_Of_Plates</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Shell</li>
@@ -165,7 +165,7 @@
         <label>breast plate</label>
         <description>A strong metal cuirass forged to encompass the torso while leaving the limbs exposed. Rather lightweight and protective.</description>
         <graphicData>
-			<texPath>Apparel/HeavyArmor/Chest_Plate</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Chest_Plate</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
@@ -202,7 +202,7 @@
                 <li>Torso</li>
                 <li>Shoulders</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/HeavyArmor/Chest_Plate</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Chest_Plate</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
             <layers>
                 <li>Shell</li>
@@ -242,7 +242,7 @@
         <label>full plate</label>
         <description>Few men can don armor as protective as the full plate set, which offers the greatest protection in the form of layered metal plates. They are nobles, lords, and men with the fortune required to purchase the masterfully crafted armor that effectively blocks many attacks. Light shining against the polished metal tells the enemy that the wearer is not only rich but also a lord of war.</description>
         <graphicData>
-			<texPath>Apparel/HeavyArmor/Chest_Plate_Full</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Chest_Plate_Full</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
@@ -282,7 +282,7 @@
                 <li>Arms</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/HeavyArmor/Chest_Plate_Full</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Chest_Plate_Full</wornGraphicPath>
 			<useWornGraphicMask>false</useWornGraphicMask>
             <layers>
                 <li>Shell</li>
@@ -322,7 +322,7 @@
         <label>heraldic full plate (Amboise)</label>
         <description>Few men can don armor as protective as the full plate set, which offers the greatest protection in the form of layered metal plates. They are nobles, lords, and men with the fortune required to purchase the masterfully crafted armor that effectively blocks many attacks. Light shining against the polished metal tells the enemy that the wearer is not only rich but also a lord of war. \n\nThis full plate carries the colours of house Amboise.</description>
         <graphicData>
-			<texPath>Apparel/HeavyArmor/Chest_PlateHeraldic_Full</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Chest_PlateHeraldic_Full</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <colorTwo>(99,99, 99)</colorTwo>
@@ -366,7 +366,7 @@
                 <li>Arms</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/HeavyArmor/Chest_PlateHeraldic_Full</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Chest_PlateHeraldic_Full</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Shell</li>
@@ -390,7 +390,7 @@
         </graphicData>
 
         <apparel>
-            <wornGraphicPath>Apparel/HeavyArmor/Chest_PlateHeraldic_Full</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Chest_PlateHeraldic_Full</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
             <tags>
                 <li>DankPyon_HeraldicPlate2</li>
@@ -408,7 +408,7 @@
         </graphicData>
 
         <apparel>
-            <wornGraphicPath>Apparel/HeavyArmor/Chest_PlateHeraldic_Full</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Chest_PlateHeraldic_Full</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
             <tags>
                 <li>DankPyon_HeraldicPlate3</li>
@@ -426,7 +426,7 @@
         </graphicData>
 
         <apparel>
-            <wornGraphicPath>Apparel/HeavyArmor/Chest_PlateHeraldic_Full</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Chest_PlateHeraldic_Full</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
             <tags>
                 <li>DankPyon_HeraldicPlate4</li>
@@ -440,7 +440,7 @@
         <label>gilded full plate</label>
         <description>Few men can don armor as protective as the full plate set, which offers the greatest protection in the form of layered metal plates. They are nobles, lords, and men with the fortune required to purchase the masterfully crafted armor that effectively blocks many attacks. Light shining against the polished metal tells the enemy that the wearer is not only rich but also a lord of war.</description>
         <graphicData>
-			<texPath>Apparel/HeavyArmor/Chest_PlateGilded_Full</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Chest_PlateGilded_Full</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
@@ -487,7 +487,7 @@
                 <li>Arms</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/HeavyArmor/Chest_PlateGilded_Full</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Chest_PlateGilded_Full</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Shell</li>
@@ -527,7 +527,7 @@
         <label>named full plate</label>
         <description>Few men can don armor as protective as the full plate set, which offers the greatest protection in the form of layered metal plates. They are nobles, lords, and men with the fortune required to purchase the masterfully crafted armor that effectively blocks many attacks. Light shining against the polished metal tells the enemy that the wearer is not only rich but also a lord of war.</description>
         <graphicData>
-			<texPath>Apparel/HeavyArmor/Named_Plate</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Named_Plate</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
 
@@ -575,7 +575,7 @@
                 <li>Arms</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/HeavyArmor/Named_Plate</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/HeavyArmor/Named_Plate</wornGraphicPath>
             <layers>
                 <li>Shell</li>
             </layers>

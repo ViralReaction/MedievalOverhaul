@@ -9,7 +9,7 @@
 		<label>militia spear</label>
 		<description>Since ancient times, lords provided militia spears to their fyrd, the peasants who take up arms during wartime. Their reasoning was simple: rather than practice the bow or sword, one with low melee skill will be more effective hidden behind a shield and jabbing with a long, pointy stick. Low damage, but decent armor penetration and easy to use.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Spears/MilitiaSpear</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Spears/MilitiaSpear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -68,7 +68,7 @@
 		<label>boar spear</label>
 		<description>The two wings found at the base of the spear socket act as barriers to halt oncoming attacks. They also prevent the spear from penetrating too far and thus getting stuck, making the boar spear effective for hunting as well as quick thrusts.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Spears/BoarSpear</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Spears/BoarSpear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -127,7 +127,7 @@
 		<label>fighting spear</label>
 		<description>A spear most effective for combat, the fighting spear is long and sturdy to help frontlines maintain their spear wall. Borrowing the wing design from the boar spear, the fighting spear also features two protruding points, which can help stop enemy swings.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Spears/FightingSpear</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Spears/FightingSpear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -188,7 +188,7 @@
 		<label>warfork</label>
 		<description>An adaptation of the agricultural pitchfork, the warfork is designed for easy use like the spear but with the range of a pike. Solid damage and easy to use, great for beginner warriors.\nThe reach of the warfork allows it to strike enemies much further away.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Spears/Warfork</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Spears/Warfork</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1.25,1.25)</drawSize>
@@ -249,7 +249,7 @@
 		<label>spetum</label>
 		<description>A pole weapon with a spearhead at the tip and side blades that allow for several penetration points. A thrust from the spetum can damage multiple areas at once while providing additional defense from the pike-inspired side blades.\nThe reach of the spetum allows it to strike enemies much further away.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Spears/Spetum</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Spears/Spetum</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1.25,1.25)</drawSize>
@@ -312,7 +312,7 @@
 		<label>pitchfork</label>
 		<description>An agricultural tool, the pitchfork offers minimal damage and armor penetration. However, the length and pointy ends allow it to be useful as an improvised weapon by outranging swords and spears.\nThe reach of the pitchfork allows it to strike enemies much further away.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Polearms/Pitchfork</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Polearms/Pitchfork</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1.25,1.25)</drawSize>
@@ -375,7 +375,7 @@
 		<label>hooked blade</label>
 		<description>When striking isn’t enough, brave warriors can close distances with the hooked blade’s curved head. The sharp point can puncture both flesh and metal, ensuring a tight grip to pull in enemies. Deals impressive damage for an agricultural tool but shines thanks to its utility.\nThe reach of the hooked blade allows it to strike enemies much further away.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Polearms/HookedBlade</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Polearms/HookedBlade</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1.25,1.25)</drawSize>
@@ -442,7 +442,7 @@
 		<label>Billhook</label>
 		<description>A versatile pike with three deadly ends—a blade for strikes, a hook for grappling, and a spear-like point for puncturing chainmail and metal plates.\nThe reach of the billhook allows it to strike enemies much further away.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Polearms/Billhook</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Polearms/Billhook</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.5,1.5)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -502,7 +502,7 @@
 		<label>Pike</label>
 		<description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline.\nThe reach of the pike allows it to strike enemies much further away.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Polearms/Pike</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Polearms/Pike</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1.5,1.5)</drawSize>
@@ -562,7 +562,7 @@
 		<label>pike (Amboise)</label>
 		<description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline.\nThe reach of the pike allows it to strike enemies much further away. \n\n This pike carries the colors of house Amboise.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Polearms/StandardAmboise</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Polearms/StandardAmboise</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.5</drawSize>
@@ -587,7 +587,7 @@
 		<label>pike (Soren)</label>
 		<description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline.\nThe reach of the pike allows it to strike enemies much further away. \n\n This pike carries the colors of house Soren.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Polearms/StandardSoren</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Polearms/StandardSoren</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.5</drawSize>
@@ -612,7 +612,7 @@
 		<label>pike (Oswin)</label>
 		<description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline.\nThe reach of the pike allows it to strike enemies much further away. \n\n This pike carries the colors of house Oswin.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Polearms/StandardOswin</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Polearms/StandardOswin</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.5</drawSize>
@@ -637,7 +637,7 @@
 		<label>pike (Hesse)</label>
 		<description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline.\nThe reach of the pike allows it to strike enemies much further away. \n\n This pike carries the colors of house Hesse.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Polearms/StandardHesse</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Polearms/StandardHesse</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.5</drawSize>
@@ -663,7 +663,7 @@
 		<label>swordlance</label>
 		<description>Variation of the pike, although the curved blade allows for fierce slashing at a distance. This trades armor penetration for raw damage, making the swordlance deadly in experienced hands.\nThe reach of the swordlance allows it to strike enemies much further away.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Polearms/Swordlance</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Polearms/Swordlance</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1.5</drawSize>
@@ -725,7 +725,7 @@
 		<label>halberd</label>
 		<description>A versatile pike with three deadly ends—a blade for strikes, a hook for grappling, and a spear-like point for puncturing chainmail and metal plates.\nThe reach of the halberd allows it to strike enemies much further away.</description>
 		<graphicData>
-			<texPath>WeaponMelee/Polearms/Halberd</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/Polearms/Halberd</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>

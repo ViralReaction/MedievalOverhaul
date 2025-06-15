@@ -70,7 +70,7 @@
 		<label>round shield</label>
 		<description>A round shield, provides decent coverage and protection against physical blows.</description>
 		<graphicData>
-			<texPath>Apparel/Utility/IconShield</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Utility/IconShield</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.83</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -103,7 +103,7 @@
 					<li>Hands</li>
 				</coveredBodyPartGroups>
 				<offHandGraphicData>
-					<texPath>Apparel/Utility/Shield</texPath>
+					<texPath>Things/Pawn/Humanlike/Apparel/Utility/Shield</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
 					<drawSize>1.6</drawSize>
@@ -143,7 +143,7 @@
 		<label>kite shield</label>
 		<description>An elongated shield that offers a wide area of protection. Somewhat bulky for close combat.</description>
 		<graphicData>
-			<texPath>Apparel/Utility/IconKite</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Utility/IconKite</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.83</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -175,7 +175,7 @@
 					<li>Hands</li>
 				</coveredBodyPartGroups>
 				<offHandGraphicData>
-					<texPath>Apparel/Utility/Kite</texPath>
+					<texPath>Things/Pawn/Humanlike/Apparel/Utility/Kite</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
 					<drawSize>1.6</drawSize>
@@ -206,7 +206,7 @@
 		<label>heater shield</label>
 		<description>A light triangular shield, provides decent coverage and good protection against physical blows.</description>
 		<graphicData>
-			<texPath>Apparel/Utility/IconHeater</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Utility/IconHeater</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.75</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -237,7 +237,7 @@
 					<li>Hands</li>
 				</coveredBodyPartGroups>
 				<offHandGraphicData>
-					<texPath>Apparel/Utility/Heater</texPath>
+					<texPath>Things/Pawn/Humanlike/Apparel/Utility/Heater</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
 					<drawSize>1.5</drawSize>
@@ -290,7 +290,7 @@
 		<defName>DankPyon_ShieldHeater_Amboise</defName>
 		<label>heater shield (Amboise)</label>
 		<graphicData>
-			<texPath>Apparel/Utility/HeaterAmboise/HeaterAmboise</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Utility/HeaterAmboise/HeaterAmboise</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>0.75</drawSize>
@@ -303,7 +303,7 @@
 				</shieldTags>
 				<useDeflectMetalEffect>false</useDeflectMetalEffect>
 				<offHandGraphicData Inherit="False">
-					<texPath>Apparel/Utility/HeaterAmboise/HeaterAmboise</texPath>
+					<texPath>Things/Pawn/Humanlike/Apparel/Utility/HeaterAmboise/HeaterAmboise</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
 					<drawSize>1.5</drawSize>
@@ -338,7 +338,7 @@
 		<defName>DankPyon_ShieldHeater_Soren</defName>
 		<label>heater shield (Soren)</label>
 		<graphicData>
-			<texPath>Apparel/Utility/HeaterSoren/HeaterSoren</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Utility/HeaterSoren/HeaterSoren</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>0.75</drawSize>
@@ -351,7 +351,7 @@
 				</shieldTags>
 				<useDeflectMetalEffect>false</useDeflectMetalEffect>
 				<offHandGraphicData>
-					<texPath>Apparel/Utility/HeaterSoren/HeaterSoren</texPath>
+					<texPath>Things/Pawn/Humanlike/Apparel/Utility/HeaterSoren/HeaterSoren</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
 					<drawSize>1.5</drawSize>
@@ -386,7 +386,7 @@
 		<defName>DankPyon_ShieldHeater_Oswin</defName>
 		<label>heater shield (Oswin)</label>
 		<graphicData>
-			<texPath>Apparel/Utility/HeaterOswin/HeaterOswin</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Utility/HeaterOswin/HeaterOswin</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>0.75</drawSize>
@@ -399,7 +399,7 @@
 				</shieldTags>
 				<useDeflectMetalEffect>false</useDeflectMetalEffect>
 				<offHandGraphicData>
-					<texPath>Apparel/Utility/HeaterOswin/HeaterOswin</texPath>
+					<texPath>Things/Pawn/Humanlike/Apparel/Utility/HeaterOswin/HeaterOswin</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
 					<drawSize>1.5</drawSize>
@@ -434,7 +434,7 @@
 		<defName>DankPyon_ShieldHeater_Hesse</defName>
 		<label>heater shield (Hesse)</label>
 		<graphicData>
-			<texPath>Apparel/Utility/HeaterHesse/HeaterHesse</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Utility/HeaterHesse/HeaterHesse</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>0.75</drawSize>
@@ -447,7 +447,7 @@
 				</shieldTags>
 				<useDeflectMetalEffect>false</useDeflectMetalEffect>
 				<offHandGraphicData>
-					<texPath>Apparel/Utility/HeaterHesse/HeaterHesse</texPath>
+					<texPath>Things/Pawn/Humanlike/Apparel/Utility/HeaterHesse/HeaterHesse</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
 					<drawSize>1.5</drawSize>

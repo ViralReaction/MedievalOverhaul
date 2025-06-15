@@ -7,7 +7,7 @@
 		<label>gloves</label>
 		<description>Tanned leathers sewn to fit the hand. Provides minimal protection. Wearing leather gloves will increase workspeed and shooting accuracy.</description>
 		<graphicData>
-			<texPath>Apparel/Handwear/GlovesLeather</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Handwear/GlovesLeather</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -75,7 +75,7 @@
 		<label>splinted gloves</label>
 		<description>The inner lining consists of small plates overlapping each other which may slighty restrict hand movement. Wearing splinted gloves will reduce workspeed and shooting accuracy.</description>
 		<graphicData>
-			<texPath>Apparel/Handwear/GlovesSplinted</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Handwear/GlovesSplinted</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -142,7 +142,7 @@
 		<label>plate gloves</label>
 		<description>A pair of meticulously crafted plate gloves. Offers protection as great as its cost. Wearing plate gloves will reduce the workspeed and shooting accuracy of the pawn.</description>
 		<graphicData>
-			<texPath>Apparel/Handwear/GlovesPlate</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/Handwear/GlovesPlate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>

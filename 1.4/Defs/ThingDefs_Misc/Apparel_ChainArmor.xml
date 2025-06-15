@@ -6,7 +6,7 @@
         <label>hauberk</label>
         <description>A basic and simple hauberk. Offers decent and affordable protection against slashing and piercing attacks.</description>
         <graphicData>
-			<texPath>Apparel/ChainArmor/Chain_Mail</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/ChainArmor/Chain_Mail</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
@@ -49,7 +49,7 @@
                 <li>Shoulders</li>
                 <li>Arms</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/ChainArmor/Chain_Mail</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ChainArmor/Chain_Mail</wornGraphicPath>
             <tags>
 				<li>DankPyon_BrigandRaider</li>
                 <li>DankPyon_Mercenary</li>
@@ -77,7 +77,7 @@
         <label>heavy hauberk</label>
         <description>A full-body suit of heavy chainmail reinforced in key places with additional sheets and links of metal. Quite fatiguing to wear, but very protective.</description>
         <graphicData>
-			<texPath>Apparel/ChainArmor/Chain_Mail_Pad</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/ChainArmor/Chain_Mail_Pad</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
@@ -121,7 +121,7 @@
                 <li>Arms</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_Pad</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ChainArmor/Chain_Mail_Pad</wornGraphicPath>
             <tags>
                 <li>DankPyon_BrigandRaider</li>
                 <li>DankPyon_BrigandLeader</li>
@@ -147,7 +147,7 @@
         <label>heraldic heavy hauberk (Amboise)</label>
         <description>A full-body suit of heavy chainmail reinforced in key places with additional sheets and links of metal. Quite fatiguing to wear, but very protective. \n\nThis heavy hauberk carries the colours of house Amboise.</description>
         <graphicData>
-			<texPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic1</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/ChainArmor/Chain_Mail_PadHeraldic1</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
@@ -189,7 +189,7 @@
                 <li>Arms</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic1</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ChainArmor/Chain_Mail_PadHeraldic1</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
             <tags>
                 <li>DankPyon_HeraldicChainMailAmboise</li>
@@ -209,11 +209,11 @@
         <label>heraldic heavy hauberk (Soren)</label>
         <description>A full-body suit of heavy chainmail reinforced in key places with additional sheets and links of metal. Quite fatiguing to wear, but very protective. \n\nThis heavy hauberk carries the colours of house Soren.</description>
         <graphicData>
-			<texPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic2</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/ChainArmor/Chain_Mail_PadHeraldic2</texPath>
         </graphicData>
 
         <apparel>
-            <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic2</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ChainArmor/Chain_Mail_PadHeraldic2</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
             <tags Inherit="False">
                 <li>DankPyon_HeraldicChainMailSoren</li>
@@ -226,11 +226,11 @@
         <label>heraldic heavy hauberk (Oswin)</label>
         <description>A full-body suit of heavy chainmail reinforced in key places with additional sheets and links of metal. Quite fatiguing to wear, but very protective. \n\nThis heavy hauberk carries the colours of house Oswin.</description>
         <graphicData>
-			<texPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic3</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/ChainArmor/Chain_Mail_PadHeraldic3</texPath>
         </graphicData>
 
         <apparel>
-            <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic3</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ChainArmor/Chain_Mail_PadHeraldic3</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
             <tags Inherit="False">
                 <li>DankPyon_HeraldicChainMailOswin</li>
@@ -243,11 +243,11 @@
         <label>heraldic heavy hauberk (Hesse)</label>
         <description>A full-body suit of heavy chainmail reinforced in key places with additional sheets and links of metal. Quite fatiguing to wear, but very protective. \n\nThis heavy hauberk carries the colours of house Hesse.</description>
         <graphicData>
-			<texPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic4</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/ChainArmor/Chain_Mail_PadHeraldic4</texPath>
         </graphicData>
 
         <apparel>
-            <wornGraphicPath>Apparel/ChainArmor/Chain_Mail_PadHeraldic4</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ChainArmor/Chain_Mail_PadHeraldic4</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
             <tags Inherit="False">
                 <li>DankPyon_HeraldicChainMailHesse</li>
