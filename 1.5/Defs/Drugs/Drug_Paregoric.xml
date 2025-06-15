@@ -7,7 +7,7 @@
 		<possessionCount>10</possessionCount>
 		<descriptionHyperlinks><HediffDef>DankPyon_High_Paregoric</HediffDef></descriptionHyperlinks>
 		<graphicData>
-			<texPath>Drug/Paregoric</texPath>
+			<texPath>Things/Item/Drug/Paregoric</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<socialPropernessMatters>false</socialPropernessMatters>

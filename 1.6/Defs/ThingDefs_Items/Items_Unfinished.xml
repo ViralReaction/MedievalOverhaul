@@ -6,7 +6,7 @@
 		<label>unfinished hide</label>
 		<description>An unfinished piece of an hide.</description>
 		<graphicData>
-			<texPath>Unfinished/UnfinishedHide</texPath>
+			<texPath>Things/Item/Unfinished/UnfinishedHide</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories>
@@ -24,7 +24,7 @@
 		<label>unfinished hide</label>
 		<description>An unfinished rug.</description>
 		<graphicData>
-			<texPath>Unfinished/UnfinishedRug</texPath>
+			<texPath>Things/Item/Unfinished/UnfinishedRug</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories>
@@ -46,7 +46,7 @@
 			<Flammability>1</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Unfinished/UnfinishedHide</texPath>
+			<texPath>Things/Item/Unfinished/UnfinishedHide</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories Inherit="false"/>
@@ -60,7 +60,7 @@
 			<Flammability>1</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Unfinished/UnfinishedLivingShield</texPath>
+			<texPath>Things/Item/Unfinished/UnfinishedLivingShield</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories Inherit="false"/>
@@ -74,7 +74,7 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Unfinished/UnfinishedLindwurmShield</texPath>
+			<texPath>Things/Item/Unfinished/UnfinishedLindwurmShield</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories Inherit="false"/>
@@ -88,7 +88,7 @@
 			<Flammability>1</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Unfinished/UnfinishedBook</texPath>
+			<texPath>Things/Item/Unfinished/UnfinishedBook</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stuffCategories Inherit="false"/>

@@ -6,7 +6,7 @@
 		<label>wine</label>
 		<description>Liquor of many faces. Old vintages are dainty drinks intended for connoisseurs and rather finicky tongues - mandatory positions at royal parties, feasts and masquerades. Younger are often sold to peasants in roadside inns, diluted with water as much as innkeepers conscience allows.</description>
 		<graphicData>
-			<texPath>Drug/Wine</texPath>
+			<texPath>Things/Item/Drug/Wine</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<equippedAngleOffset>-150</equippedAngleOffset>
@@ -110,7 +110,7 @@
 		<label>mulberry wine</label>
 		<description>Produced from the luscious bounty of mulberry orchards, often associated with the mulberry tree's role in nurturing silk worms. Aged vintages whisper tales of sophistication, beckoning connoisseurs with their intricate flavors, a staple of esteemed gatherings and royal banquets.</description>
 		<graphicData>
-			<texPath>Drug/MulberryWine</texPath>
+			<texPath>Things/Item/Drug/MulberryWine</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -129,7 +129,7 @@
 		<label>griffon wine</label>
 		<description>Produced from the luscious bounty of mulberry orchards, often associated with the mulberry tree's role in nurturing silk worms. Aged vintages whisper tales of sophistication, beckoning connoisseurs with their intricate flavors, a staple of esteemed gatherings and royal banquets.</description>
 		<graphicData>
-			<texPath>Drug/GriffonWine</texPath>
+			<texPath>Things/Item/Drug/GriffonWine</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -148,7 +148,7 @@
 		<label>ice wine</label>
 		<description>Crafted from the rare frostberries, is a sought-after elixir known for its enchanting qualities. The frostberries, harvested during the first winter's frost, yield a wine with a crisp, sweet flavor and a hint of winter's chill. Ice Wine imparts a subtle frost resistance to those who drink it, fortifying them against the harshest cold. This magical beverage is a favorite among adventurers and travelers braving icy terrains, offering both warmth and protection in a single, refreshing sip.</description>
 		<graphicData>
-			<texPath>Drug/IceWine</texPath>
+			<texPath>Things/Item/Drug/IceWine</texPath>
 		</graphicData>
 	</ThingDef>
 

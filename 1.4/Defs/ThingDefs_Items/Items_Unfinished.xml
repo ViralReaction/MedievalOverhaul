@@ -6,7 +6,7 @@
     <label>unfinished hide</label>
     <description>An unfinished piece of an hide.</description>
     <graphicData>
-      <texPath>Unfinished/UnfinishedHide</texPath>
+      <texPath>Things/Item/Unfinished/UnfinishedHide</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <stuffCategories>
@@ -27,7 +27,7 @@
       <Flammability>1</Flammability>
     </statBases>
     <graphicData>
-      <texPath>Unfinished/UnfinishedHide</texPath>
+      <texPath>Things/Item/Unfinished/UnfinishedHide</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <stuffCategories Inherit="false" />
@@ -41,7 +41,7 @@
       <Flammability>1</Flammability>
     </statBases>
     <graphicData>
-      <texPath>Unfinished/UnfinishedLivingShield</texPath>
+      <texPath>Things/Item/Unfinished/UnfinishedLivingShield</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <stuffCategories Inherit="false" />

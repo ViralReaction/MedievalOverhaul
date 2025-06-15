@@ -6,7 +6,7 @@
 		<description>Simple, hand-formed containers crafted from natural clay. They are beautiful to look at.</description>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
-			<texPath>Art/Vase</texPath>
+			<texPath>Things/Building/Art/Vase</texPath>
 			<drawSize>(2,2)</drawSize>
 			<color>(132, 99, 81)</color>
 		</graphicData>

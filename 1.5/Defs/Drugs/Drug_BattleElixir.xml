@@ -9,7 +9,7 @@
 			<HediffDef>DankPyon_Addiction_BattleElixir</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Drug/BattleElixir</texPath>
+			<texPath>Things/Item/Drug/BattleElixir</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<rotatable>false</rotatable>

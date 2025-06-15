@@ -7,7 +7,7 @@
 		<possessionCount>10</possessionCount>
 		<descriptionHyperlinks><HediffDef>DankPyon_High_Miracle</HediffDef></descriptionHyperlinks>
 		<graphicData>
-			<texPath>Drug/Miracle</texPath>
+			<texPath>Things/Item/Drug/Miracle</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<socialPropernessMatters>false</socialPropernessMatters>

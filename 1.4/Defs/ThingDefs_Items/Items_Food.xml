@@ -119,7 +119,7 @@
     <label>goat milk</label>
     <description>Milk from a goat.</description>
     <graphicData>
-      <texPath>Drug/Milk</texPath>
+      <texPath>Things/Item/Drug/Milk</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>

@@ -6,7 +6,7 @@
     <description>An insulated chest to store ice and passively refrigerate the surrounding environment.</description>
     <category>Building</category>
     <graphicData>
-        <texPath>Misc/IceChest</texPath>
+        <texPath>Things/Building/Misc/IceChest</texPath>
         <graphicClass>Graphic_Multi</graphicClass>
         <drawSize>(4,3)</drawSize>
         <damageData>

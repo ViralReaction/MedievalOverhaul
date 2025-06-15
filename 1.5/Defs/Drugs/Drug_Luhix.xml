@@ -7,7 +7,7 @@
 		<possessionCount>10</possessionCount>
 		<descriptionHyperlinks><HediffDef>DankPyon_High_Luhix</HediffDef></descriptionHyperlinks>
 		<graphicData>
-			<texPath>Drug/Luhix</texPath>
+			<texPath>Things/Item/Drug/Luhix</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<socialPropernessMatters>true</socialPropernessMatters>

@@ -56,7 +56,7 @@
 		<description>A torso-sized piece of material sculpted into an artistic form.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Art/Bust</texPath>
+			<texPath>Things/Building/Art/Bust</texPath>
 		</graphicData>
 		<fillPercent>0.35</fillPercent>
 		<statBases>
@@ -80,7 +80,7 @@
 		<label>pedestal</label>
 		<description>A stand that acts as a base to display your items.</description>
 		<graphicData>
-			<texPath>Art/Pedestal</texPath>
+			<texPath>Things/Building/Art/Pedestal</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
@@ -106,7 +106,7 @@
 		<label>armor statue</label>
 		<description>A lifesize replica of a knight.</description>
 		<graphicData>
-			<texPath>Art/ArmorStatue</texPath>
+			<texPath>Things/Building/Art/ArmorStatue</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<damageData>
@@ -143,7 +143,7 @@
 		<label>ancient column</label>
 		<description>A tall pillar of ornate design.</description>
 		<graphicData>
-			<texPath>Art/Column1x1</texPath>
+			<texPath>Things/Building/Art/Column1x1</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5,5)</drawSize>
 			<damageData>
@@ -184,7 +184,7 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Art/RNGLarge2x2</texPath>
+			<texPath>Things/Building/Art/RNGLarge2x2</texPath>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingDef>
@@ -196,7 +196,7 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Art/RNG2x2</texPath>
+			<texPath>Things/Building/Art/RNG2x2</texPath>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingDef>
@@ -208,7 +208,7 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Art/ArchonLarge2x2</texPath>
+			<texPath>Things/Building/Art/ArchonLarge2x2</texPath>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 	</ThingDef>
@@ -220,7 +220,7 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Art/Archon2x2</texPath>
+			<texPath>Things/Building/Art/Archon2x2</texPath>
 			<drawSize>(5,5)</drawSize>
 		</graphicData>
 	</ThingDef>
@@ -232,7 +232,7 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Art/Obelisk2x2</texPath>
+			<texPath>Things/Building/Art/Obelisk2x2</texPath>
 			<drawSize>(5,5)</drawSize>
 		</graphicData>
 	</ThingDef>
@@ -244,7 +244,7 @@
     
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Art/AncientBrazier2x2</texPath>
+			<texPath>Things/Building/Art/AncientBrazier2x2</texPath>
 			<drawSize>(5,5)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -307,7 +307,7 @@
 		<description>An ancient brazier, burning ever so brightly.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Art/AncientBrazier1x1</texPath>
+			<texPath>Things/Building/Art/AncientBrazier1x1</texPath>
 			<drawSize>(2,2)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>

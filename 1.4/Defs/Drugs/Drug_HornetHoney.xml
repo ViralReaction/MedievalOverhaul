@@ -9,7 +9,7 @@
 			<HediffDef>DankPyon_HornetHoneyAddiction</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Drug/HornetHoney</texPath>
+			<texPath>Things/Item/Drug/HornetHoney</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<rotatable>false</rotatable>

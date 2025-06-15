@@ -10,7 +10,7 @@
 			<HediffDef>HeartAttack</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Drug/VigorPill</texPath>
+			<texPath>Things/Item/Drug/VigorPill</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<rotatable>false</rotatable>

@@ -6,7 +6,7 @@
 		<label>apple juice</label>
 		<description>Freshly pressed apple juice, a sweet and refreshing drink. Ferment for a few days at target temperature to turn into cider.</description>
 		<graphicData>
-			<texPath>Drug/JuiceApple</texPath>
+			<texPath>Things/Item/Drug/JuiceApple</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<equippedAngleOffset>-150</equippedAngleOffset>
@@ -68,7 +68,7 @@
 		<label>unfermented apple juice</label>
 		<description>Apple juice that is undergoing fermentation. Keep at room temperature to finish fermentation process.</description>
 		<graphicData>
-			<texPath>Drug/UnfermentedJuiceApple</texPath>
+			<texPath>Things/Item/Drug/UnfermentedJuiceApple</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<equippedAngleOffset>-150</equippedAngleOffset>

@@ -6,7 +6,7 @@
     <description>A ceremonial building that protects and displays a relic.</description>
     <graphicData>
         <drawSize>(5,4)</drawSize>
-        <texPath>Art/AncientReliquaryEmpty</texPath>
+        <texPath>Things/Building/Art/AncientReliquaryEmpty</texPath>
         <graphicClass>Graphic_Multi</graphicClass>
         <shadowData>
             <volume>(2.9,0.6,1.9)</volume>
@@ -67,7 +67,7 @@
 
     <graphicData>
         <drawSize>(5,4)</drawSize>
-        <texPath>Art/AncientReliquary</texPath>
+        <texPath>Things/Building/Art/AncientReliquary</texPath>
         <graphicClass>Graphic_Multi</graphicClass>
         <shaderType>CutoutComplex</shaderType>
         <shadowData>

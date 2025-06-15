@@ -8,14 +8,14 @@
 		<label>Tool Rack</label>
 		<description>A collection of smithing tools. Increases workspeed when placed near medieval workbenches.</description>
 		<graphicData>
-			<texPath>Misc/ToolRack</texPath>
+			<texPath>Things/Building/Misc/ToolRack</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>4</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<thingClass>Building</thingClass>
 		<uiIconScale>1</uiIconScale>
-		<uiIconPath>Misc/ToolRack_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Misc/ToolRack_MenuIcon</uiIconPath>
 		<uiIconOffset>(0, 0)</uiIconOffset>
 		<size>(2,1)</size>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -70,7 +70,7 @@
 		<label>Quenching Bucket</label>
 		<description>A bucket full of oil used in quenching smoldering metals. Increases workspeed when placed near medieval workbenches.</description>
 		<graphicData>
-			<texPath>Misc/QuenchingBucket</texPath>
+			<texPath>Things/Building/Misc/QuenchingBucket</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<shadowData>
@@ -131,7 +131,7 @@
 		<label>Grinding Wheel</label>
 		<description>Used for sharpening weapons. Increases workspeed when placed near medieval workbenches.</description>
 		<graphicData>
-			<texPath>Misc/GrindingWheel</texPath>
+			<texPath>Things/Building/Misc/GrindingWheel</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -189,7 +189,7 @@
 		<label>Bellows</label>
 		<description>Used to furnish a strong blast of air. Increases workspeed when placed near medieval workbenches.</description>
 		<graphicData>
-			<texPath>Misc/Bellows</texPath>
+			<texPath>Things/Building/Misc/Bellows</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -245,14 +245,14 @@
 		<label>tableware shelf</label>
 		<description>A shelf for Tableware. Increases Cook speed when placed near rustic cooking table.</description>
 		<graphicData>
-			<texPath>Misc/RusticCupboard</texPath>
+			<texPath>Things/Building/Misc/RusticCupboard</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>4</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<thingClass>Building</thingClass>
 		<uiIconScale>1</uiIconScale>
-		<uiIconPath>Misc/RusticCupboard_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Misc/RusticCupboard_MenuIcon</uiIconPath>
 		<uiIconOffset>(0, 0)</uiIconOffset>
 		<size>(2,1)</size>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -308,7 +308,7 @@
 	<label>Cooking Tools</label>
 	<description>A table full of useful cooking equipment. Increases work speed when placed near a rustic cooking table.</description>
 	<graphicData>
-		<texPath>Misc/RusticCookingTools</texPath>
+		<texPath>Things/Building/Misc/RusticCookingTools</texPath>
 		<graphicClass>Graphic_Multi</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
 		<drawSize>(2,2)</drawSize>
@@ -370,7 +370,7 @@
 		<label>baking tools</label>
 		<description>A table full of useful cooking equipment. Increases work speed when placed near an oven.</description>
 		<graphicData>
-			<texPath>Misc/TableDough</texPath>
+			<texPath>Things/Building/Misc/TableDough</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,3)</drawSize>
@@ -431,7 +431,7 @@
 	<description>Some birds, when taught by expert trainers, are capable of flying to a designated location before returning to their home roost. This allows for communication with neighboring factions, assuming one can afford the costly requirements of obtaining and training the bird, as well as feeding the animals with meat. Requires the scribe table for correspondence.</description>
 	<thingClass>Building</thingClass>
     <graphicData>
-      <texPath>Misc/BirdPost</texPath>
+      <texPath>Things/Building/Misc/BirdPost</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
       <drawSize>(1,1)</drawSize>
@@ -505,7 +505,7 @@
     <description>A table housing wax tablets, which contain records and receipts. Alongside the tablets lay parchments, a seal, quills, and ink to allow for correspondence. When used alongside the bird post, the written letters can reach far lands quicker than a messenger. One can invite allies for feasts, rivals for a challenge, or neutral factions for trade.</description>
     <thingClass>Building_CommsConsole</thingClass>
     <graphicData>
-      <texPath>Misc/TableScribe</texPath>
+      <texPath>Things/Building/Misc/TableScribe</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
       <drawSize>(5,4)</drawSize>
@@ -577,7 +577,7 @@
     <description>A trusty wagon to carry novelties, artifacts, and goods across the unforgiving lands of the rim. n/n/Required for long distance trading, you can only sell goods to other factions if they're near a cart.</description>
     <thingClass>Building_OrbitalTradeBeacon</thingClass>
 	<graphicData>
-      <texPath>Misc/Cart</texPath>
+      <texPath>Things/Building/Misc/Cart</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,4)</drawSize>
       <damageData>

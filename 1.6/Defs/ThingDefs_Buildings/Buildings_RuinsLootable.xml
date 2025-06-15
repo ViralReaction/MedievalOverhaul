@@ -1164,7 +1164,7 @@
 		<label>named armor statue</label>
 		<description>A stand displaying a prestigious set of armor worn by ancient kings and champions.</description>
 		<graphicData>
-			<texPath>Art/ArmorStatueNamed</texPath>
+			<texPath>Things/Building/Art/ArmorStatueNamed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<damageData>

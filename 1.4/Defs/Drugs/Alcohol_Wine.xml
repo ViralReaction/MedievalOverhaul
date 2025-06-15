@@ -6,7 +6,7 @@
         <label>wine</label>
         <description>Liquor of many faces. Old vintages are dainty drinks intended for connoisseurs and rather finicky tongues - mandatory positions at royal parties, feasts and masquerades. Younger are often sold to peasants in roadside inns, diluted with water as much as innkeepers conscience allows.</description>
         <graphicData>
-            <texPath>Drug/Wine</texPath>
+            <texPath>Things/Item/Drug/Wine</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <equippedAngleOffset>-150</equippedAngleOffset>
@@ -107,7 +107,7 @@
         <label>mulberry wine</label>
         <description>PLACEHOLDER.</description>
         <graphicData>
-            <texPath>Drug/MulberryWine</texPath>
+            <texPath>Things/Item/Drug/MulberryWine</texPath>
         </graphicData>
     </ThingDef>
 

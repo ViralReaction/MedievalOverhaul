@@ -6,7 +6,7 @@
 		<label>cider</label>
 		<description>Apple juice that is fermented for a few days to develop its alcoholic content. Consuming enough cider can make you drunk.</description>
 		<graphicData>
-			<texPath>Drug/Cider</texPath>
+			<texPath>Things/Item/Drug/Cider</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<equippedAngleOffset>-150</equippedAngleOffset>

@@ -27,7 +27,7 @@
 			<li>Diggable</li>
 			<li>Light</li>
 		</affordances>
-		<generatedFilth>Filth_Dirt</generatedFilth>
+		<generatedFilth>Things/Filth_Dirt</generatedFilth>
 		<fertility>1.25</fertility>
 		<takeFootprints>True</takeFootprints>
 		<tools>

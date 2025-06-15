@@ -12,7 +12,7 @@
     <socialPropernessMatters>true</socialPropernessMatters>
     <tickerType>Rare</tickerType>
     <graphicData>
-      <texPath>Drug/GriffonBerry</texPath>
+      <texPath>Things/Item/Drug/GriffonBerry</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>

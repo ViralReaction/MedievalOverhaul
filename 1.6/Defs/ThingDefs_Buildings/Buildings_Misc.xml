@@ -9,7 +9,7 @@
 		<label>mining tools</label>
 		<description>A set of tools designed for mining resources deep in the earth. Increases mining speed when placed near mining spots.</description>
 		<graphicData>
-			<texPath>Misc/MiningTools</texPath>
+			<texPath>Things/Building/Misc/MiningTools</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1.5,1.5)</drawSize>
@@ -66,14 +66,14 @@
 		<label>tool rack</label>
 		<description>A collection of smithing tools. Increases workspeed when placed near medieval workbenches.</description>
 		<graphicData>
-			<texPath>Misc/ToolRack</texPath>
+			<texPath>Things/Building/Misc/ToolRack</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>4</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<thingClass>Building</thingClass>
 		<uiIconScale>1</uiIconScale>
-		<uiIconPath>Misc/ToolRack_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Misc/ToolRack_MenuIcon</uiIconPath>
 		<uiIconOffset>(0, 0)</uiIconOffset>
 		<size>(2,1)</size>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -128,7 +128,7 @@
 		<label>quenching bucket</label>
 		<description>A bucket full of oil used in quenching smoldering metals. Increases workspeed when placed near medieval workbenches.</description>
 		<graphicData>
-			<texPath>Misc/QuenchingBucket</texPath>
+			<texPath>Things/Building/Misc/QuenchingBucket</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<shadowData>
@@ -189,7 +189,7 @@
 		<label>grinding wheel</label>
 		<description>Used for sharpening weapons. Increases workspeed when placed near medieval workbenches.</description>
 		<graphicData>
-			<texPath>Misc/GrindingWheel</texPath>
+			<texPath>Things/Building/Misc/GrindingWheel</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -247,7 +247,7 @@
 		<label>bellows</label>
 		<description>Used to furnish a strong blast of air. Increases workspeed when placed near medieval workbenches.</description>
 		<graphicData>
-			<texPath>Misc/Bellows</texPath>
+			<texPath>Things/Building/Misc/Bellows</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -305,7 +305,7 @@
 		<label>vials table</label>
 		<description>Used for organizing recipes and vials. Increases workspeed when placed near an alchemy bench or cauldron.</description>
 		<graphicData>
-			<texPath>Misc/VialsTable</texPath>
+			<texPath>Things/Building/Misc/VialsTable</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -369,7 +369,7 @@
 		<label>herb table</label>
 		<description>Used for grinding herbs and ingredients. Increases workspeed when placed near an alchemy bench or cauldron.</description>
 		<graphicData>
-			<texPath>Misc/HerbTable</texPath>
+			<texPath>Things/Building/Misc/HerbTable</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -437,7 +437,7 @@
 		<label>alembic</label>
 		<description>Used for distilling mixtures. Increases workspeed when placed near an alchemy bench or cauldron.</description>
 		<graphicData>
-			<texPath>Misc/Alembic</texPath>
+			<texPath>Things/Building/Misc/Alembic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -502,7 +502,7 @@
 		<label>paper hanging rack</label>
 		<description>A handing rack for drying freshly written manuscripts. Increases workspeed when placed near a book scribe table.</description>
 		<graphicData>
-			<texPath>Misc/HangingPaperRack</texPath>
+			<texPath>Things/Building/Misc/HangingPaperRack</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,3)</drawSize>
@@ -563,7 +563,7 @@
 		<label>quill and inkwell table</label>
 		<description>Supply of quills and ink. Increases workspeed when placed near a book scribe table.</description>
 		<graphicData>
-			<texPath>Misc/QuillAndInkwell</texPath>
+			<texPath>Things/Building/Misc/QuillAndInkwell</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -616,7 +616,7 @@
 		<label>stack of books</label>
 		<description>Stack of easily accessible books for reference. Increases workspeed when placed near a book scribe table.</description>
 		<graphicData>
-			<texPath>Misc/BookStack</texPath>
+			<texPath>Things/Building/Misc/BookStack</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -667,7 +667,7 @@
 		<label>stack of papers</label>
 		<description>Stack of easily accessible papers for writing. Increases workspeed when placed near a book scribe table.</description>
 		<graphicData>
-			<texPath>Misc/PaperStack</texPath>
+			<texPath>Things/Building/Misc/PaperStack</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -718,14 +718,14 @@
 		<label>tableware shelf</label>
 		<description>A shelf for Tableware. Increases Cook speed when placed near rustic cooking table.</description>
 		<graphicData>
-			<texPath>Misc/RusticCupboard</texPath>
+			<texPath>Things/Building/Misc/RusticCupboard</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>4</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<thingClass>Building</thingClass>
 		<uiIconScale>1</uiIconScale>
-		<uiIconPath>Misc/RusticCupboard_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Misc/RusticCupboard_MenuIcon</uiIconPath>
 		<uiIconOffset>(0, 0)</uiIconOffset>
 		<size>(2,1)</size>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -781,7 +781,7 @@
 		<label>cooking tools</label>
 		<description>A table full of useful cooking equipment. Increases work speed when placed near a rustic cooking table.</description>
 		<graphicData>
-			<texPath>Misc/RusticCookingTools</texPath>
+			<texPath>Things/Building/Misc/RusticCookingTools</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(2,2)</drawSize>
@@ -843,7 +843,7 @@
 		<label>baking tools</label>
 		<description>A table full of useful cooking equipment. Increases work speed when placed near an oven.</description>
 		<graphicData>
-			<texPath>Misc/TableDough</texPath>
+			<texPath>Things/Building/Misc/TableDough</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4,3)</drawSize>
@@ -904,7 +904,7 @@
 		<thingClass>Building</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Misc/BirdPost</texPath>
+			<texPath>Things/Building/Misc/BirdPost</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,1)</drawSize>
@@ -990,7 +990,7 @@
 		<description>A table housing wax tablets, which contain records and receipts. Alongside the tablets lay parchments, a seal, quills, and ink to allow for correspondence. When used alongside the bird post, the written letters can reach far lands quicker than a messenger. One can invite allies for feasts, rivals for a challenge, or neutral factions for trade.</description>
 		<thingClass>MedievalOverhaul.Building_ScribeTable</thingClass>
 		<graphicData>
-			<texPath>Misc/TableScribe</texPath>
+			<texPath>Things/Building/Misc/TableScribe</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(5,4)</drawSize>
@@ -1063,7 +1063,7 @@
 		<description>A trusty wagon to carry novelties, artifacts, and goods across the unforgiving lands of the rim. \n\nRequired for long distance trading, you can only sell goods to other factions if they're near a cart.</description>
 		<thingClass>Building_OrbitalTradeBeacon</thingClass>
 		<graphicData>
-			<texPath>Misc/Cart</texPath>
+			<texPath>Things/Building/Misc/Cart</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 			<damageData>

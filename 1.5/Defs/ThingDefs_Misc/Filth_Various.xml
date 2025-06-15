@@ -15,7 +15,7 @@
 			<Flammability>2.0</Flammability>
 		</statBases>
 		<graphicData>
-			<texPath>Filth/TarFilth</texPath>
+			<texPath>Things/Filth/TarFilth</texPath>
 		</graphicData>
 		<filth>
 			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>

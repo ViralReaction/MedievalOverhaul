@@ -27,7 +27,7 @@
 	<ThingDef ParentName="ResourceBase" Name="DankPyon_MixtureBase" Abstract="True">
 		<possessionCount>1</possessionCount>
 		<graphicData>
-			<texPath>Drug/Mixture</texPath>
+			<texPath>Things/Item/Drug/Mixture</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>1</drawSize>

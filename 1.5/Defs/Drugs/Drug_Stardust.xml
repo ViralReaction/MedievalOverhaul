@@ -7,7 +7,7 @@
 		<possessionCount>10</possessionCount>
 		<descriptionHyperlinks><HediffDef>DankPyon_High_Stardust</HediffDef></descriptionHyperlinks>
 		<graphicData>
-			<texPath>Drug/Stardust</texPath>
+			<texPath>Things/Item/Drug/Stardust</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<socialPropernessMatters>true</socialPropernessMatters>

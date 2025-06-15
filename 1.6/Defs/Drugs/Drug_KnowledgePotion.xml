@@ -9,7 +9,7 @@
 		<possessionCount>1</possessionCount>
 		<stackLimit>1</stackLimit>
 		<graphicData>
-			<texPath>Drug/KnowledgePotion</texPath>
+			<texPath>Things/Item/Drug/KnowledgePotion</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<socialPropernessMatters>true</socialPropernessMatters>

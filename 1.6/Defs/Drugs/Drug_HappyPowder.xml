@@ -11,7 +11,7 @@
 			<HediffDef>ChemicalDamageSevere</HediffDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Drug/HappyPowder</texPath>
+			<texPath>Things/Item/Drug/HappyPowder</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<drawSize>1</drawSize>
 		</graphicData>

@@ -6,7 +6,7 @@
     <label>mead</label>
     <description>Fermented beverage of deep golden colouring, a real lifeblood of social life in these parts. Few mugs in the tavern are all what's needed to forget about hardships of field work, dangers awaiting on the road or ill-considered marriage vows. Let the warm haze of drunkenness embrace you, no need to worry about anything. Not today.</description>
     <graphicData>
-      <texPath>Drug/Mead</texPath>
+      <texPath>Things/Item/Drug/Mead</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
 

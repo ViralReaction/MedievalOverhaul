@@ -79,14 +79,14 @@
         <defName>DankPyon_NonAlcoholic</defName>
         <label>non-alcoholic</label>
         <parent>Foods</parent>
-        <iconPath>Drug/Cider/Cider_a</iconPath>
+        <iconPath>Things/Item/Drug/Cider/Cider_a</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
         <defName>DankPyon_Milk</defName>
         <label>milk</label>
         <parent>AnimalProductRaw</parent>
-        <iconPath>Drug/Milk/Milk_a</iconPath>
+        <iconPath>Things/Item/Drug/Milk/Milk_a</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>

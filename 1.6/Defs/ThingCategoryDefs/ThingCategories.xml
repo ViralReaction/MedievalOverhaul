@@ -79,7 +79,7 @@
 		<defName>DankPyon_NonAlcoholic</defName>
 		<label>non-alcoholic</label>
 		<parent>Foods</parent>
-		<iconPath>Drug/Cider/Cider_a</iconPath>
+		<iconPath>Things/Item/Drug/Cider/Cider_a</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
