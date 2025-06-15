@@ -2,21 +2,6 @@
 <Defs>
 
 	<!--===== Rustic Furniture Group =====-->
-	<!--ResearchProjectDef>
-		<defName>DankPyon_PrimitiveFurniture</defName>
-		<label>Primitive furniture</label>
-		<description>Construct primitiv furniture like log beds, log tables, and more.</description>
-		<baseCost>150</baseCost>
-		<tab>DankPyon_MedievalResearchTab</tab>
-		<techLevel>Neolithic</techLevel>
-		<tags>
-			<li>DankPyon_MedievalStart</li>
-		</tags>
-		<researchViewX>1</researchViewX>
-		<researchViewY>4.2</researchViewY>
-	</ResearchProjectDef-->
-	
-
 	<ResearchProjectDef>
 		<defName>DankPyon_Lumber</defName>
 		<label>Basic woodworking</label>
@@ -35,7 +20,7 @@
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>
-	
+
 	<ResearchProjectDef>
 		<defName>DankPyon_RusticFurniture</defName>
 		<label>Rustic furniture</label>
@@ -956,6 +941,26 @@
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+        <defName>DankPyon_PlowedSoil</defName>
+        <label>plowed soil</label>
+        <description>Research how to plow soil.</description>
+        <baseCost>300</baseCost>
+        <tab>DankPyon_MedievalResearchTab</tab>
+        <techLevel>Neolithic</techLevel>
+        <prerequisites>
+            <li>DankPyon_BasicAgriculture</li>
+        </prerequisites>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>1.30</researchViewY>
+        <generalRules>
+            <rulesStrings>
+                <li>subject->tilled soil</li>
+                <li>subject->plowed soil</li>
+            </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
 
 	<!--=========================== Cooking ==============================-->
 	<ResearchProjectDef>
@@ -1026,32 +1031,6 @@
 	</ResearchProjectDef>
 
 	<!--=========================== Food Preservation ==============================-->
-
-	<!--ResearchProjectDef>                                             -IS VANILLA PEMMICAN RESEARCH
-		<defName>DankPyon_FoodPreservation</defName>
-		<label>food preservation</label>
-		<description>Build drying racks or apply salt to meat to remove the moisture of meats, prolonging their shelf life.</description>
-		<baseCost>400</baseCost>
-		<tab>DankPyon_MedievalResearchTab</tab>
-		<techLevel>Neolithic</techLevel>
-		<researchViewX>1</researchViewX>
-		<researchViewY>2.1</researchViewY> 
-	</ResearchProjectDef-->
-	
-	<!--ResearchProjectDef>
-		<defName>DankPyon_CheeseMaking</defName>
-		<label>cheese making</label>
-		<description>Learn how to make a cheese press to produce cheese from milk.</description>
-		<baseCost>600</baseCost>
-		<tab>DankPyon_MedievalResearchTab</tab>
-		<techLevel>Neolithic</techLevel>
-		<researchViewX>3</researchViewX>
-		<researchViewY>4.6</researchViewY> 
-		<prerequisites>
-			<li>DankPyon_FoodPreservation</li>
-		</prerequisites>   
-	</ResearchProjectDef-->
-
 	<ResearchProjectDef>
 		<defName>DankPyon_Smoker</defName>
 		<label>smoker</label>
@@ -1072,7 +1051,6 @@
 	</ResearchProjectDef>
 
 	<!--=========================== Food Production Tables ==============================-->
-
 	<ResearchProjectDef>
 		<defName>DankPyon_Grill</defName>
 		<label>grill</label>
@@ -1129,37 +1107,7 @@
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>
-	
-	<!--=========================== 1.4 New Additions based off image ==============================-->
-	
-	<!--ResearchProjectDef>                                      ice assembly not yet updated
-		<defName>DankPyon_IcePreservation</defName>
-		<label>Ice preservation</label>
-		<description>Template</description>
-		<baseCost>400</baseCost>
-		<tab>DankPyon_MedievalResearchTab</tab>
-		<techLevel>Neolithic</techLevel>
-		<researchViewX>6</researchViewX>
-		<researchViewY>3.3</researchViewY> 
-		<prerequisites>
-			<li>DankPyon_RusticFurniture</li>
-		</prerequisites>   
-	</ResearchProjectDef-->
-	
-	<!--ResearchProjectDef>
-		<defName>DankPyon_Chordophones</defName>
-		<label>Chordophones</label>
-		<description>Template</description>
-		<baseCost>1500</baseCost>
-		<tab>DankPyon_MedievalResearchTab</tab>
-		<techLevel>Medieval</techLevel>
-		<researchViewX>6</researchViewX>
-		<researchViewY>5.2</researchViewY> 
-		<prerequisites>
-			<li>ComplexFurniture</li>
-		</prerequisites>   
-	</ResearchProjectDef-->
-	
+
 	<ResearchProjectDef>
 		<defName>DankPyon_AdornedArmor</defName>
 		<label>Adorned armor</label>

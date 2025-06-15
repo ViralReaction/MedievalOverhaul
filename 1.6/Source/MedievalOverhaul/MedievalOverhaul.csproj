@@ -1,294 +1,294 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MedievalOverhaul</RootNamespace>
-    <AssemblyName>MedievalOverhaul</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
-    <LangVersion>latest</LangVersion>
-    <TargetFrameworkProfile />
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>false</DebugSymbols>
-    <DebugType>none</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\..\Assemblies\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\..\Assemblies\</OutputPath>
-    <DefineConstants>
-    </DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_AlpSleep.cs" />
-    <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetFuelLevelCustom.cs" />
-    <Compile Include="Medieval Overhaul\Gizmo\Command_RetrieveSlop.cs" />
-    <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableStatusCustom.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\Building_CommsConsole_CanUseCommsNow.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\Building_CommsConsole_AnnounceTradeShips.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerPlantWater_ForceOthersToRebuildCache.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerPlantWater_RebuildCache.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CalcSpeedFactor.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CurrentWindFactor.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\ApparelGraphicRecordGetter_TryGetGraphicApparel.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\ThingDefGenerator_Buildings_ImpliedBlueprintAndFrameDefs.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\ThingListGroupHelper_Includes.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\Room_Notify_RoomShapeChanged.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\Plant_PlantCollected.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\FoodUtility_BestFoodSourceOnMap_Transpile.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\MainTabWindow_Inspect_CurTabs.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\PlaceWorker_WatermillGenerator_DrawGhost.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_ClearSnow_MakeNewToils.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\ResearchProjectDef_CanResearchNow.cs" />
-    <Compile Include="Medieval Overhaul\HediffComps\HediffComp_Nightmare.cs" />
-    <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_DeepDrillInfestation.cs" />
-    <Compile Include="Medieval Overhaul\Interface\ICompFuelHandler.cs" />
-    <Compile Include="Medieval Overhaul\ITab\ITab_Fuel.cs" />
-    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_EmptyIceMold.cs" />
-    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_EmptySlopPot.cs" />
-    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DispenseSlop.cs" />
-    <Compile Include="Medieval Overhaul\Listing_Tree\Listing_TreeThingFilter_Nutrition.cs" />
-    <Compile Include="Medieval Overhaul\Listing_Tree\Listing_TreeThingFilter_Fuel.cs" />
-    <Compile Include="Medieval Overhaul\Listing_Tree\ThingFilterUI_Nutrition.cs" />
-    <Compile Include="Medieval Overhaul\Listing_Tree\ThingFilterUI_Fuel.cs" />
-    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelAtomicCustom.cs" />
-    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelCustom.cs" />
-    <Compile Include="Medieval Overhaul\MapComponent\RefuelableMapComponent.cs" />
-    <Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_PlowSoil.cs" />
-    <Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_WindMill.cs" />
-    <Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_WaterWheel.cs" />
-    <Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_WaterGather.cs" />
-    <Compile Include="Medieval Overhaul\QuestStuff\ThoughtWorker_AlpEclipse.cs" />
-    <Compile Include="Medieval Overhaul\QuestStuff\GameCondition_AlpEclipse.cs" />
-    <Compile Include="Medieval Overhaul\QuestStuff\QuestNode_Root_AlpEclipse.cs" />
-    <Compile Include="Medieval Overhaul\QuestStuff\QuestPart_AlpDarkness.cs" />
-    <Compile Include="Medieval Overhaul\Recipes\RecipeWorkerCounter_WaterGather.cs" />
-    <Compile Include="Medieval Overhaul\StatWorkers\StatPart_Mass_Hide.cs" />
-    <Compile Include="Medieval Overhaul\StatWorkers\StatPart_MarketValue.cs" />
-    <Compile Include="Medieval Overhaul\Storyteller\StorytellerComp\StorytellerCompProperties_MineshaftInfestation.cs" />
-    <Compile Include="Medieval Overhaul\Storyteller\StorytellerComp_MineshaftInfestation.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_WaterGather.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ItemLootExtension.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\Building_Art_Ice.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompCreatesInfestations_Mine.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_CreatesInfestations_Mine.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_RefuelableCustom.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompRefuelableCustom.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompPotionUseable.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompPowerWaterWheel.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompIceBoxFill.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\MinifiedIceThing.cs" />
-    <Compile Include="Medieval Overhaul\Utilities\CachingUtility.cs" />
-    <Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs" />
-    <Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetNutritionLevel.cs" />
-    <Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableNutritionStatus.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_DoTicks_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\Compatibility\BackCompatibileCurentVersion.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\CompRefuelable_Refuel.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Refuel_MakeNewToils.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\Pawn_JobTracker_EndCurrentJob_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\Bill_Notify_PawnDidWork_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\BookOutcomeDoerGainSkillExp_OnBookGenerated_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\BookOutcomeProperties_GainSkillExp_OnReadingTick_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\Book_GenerateBook_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\CompQuality_SetQuality_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Reading_ReadBook.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\MainTabWindow_Research_DrawUnlockableHyperlinks_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\QualityUtility_GenerateQualityCreatedByPawn.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\RefuelWorkGiverUtility_FindBestFuel.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\ResearchProjectDef_CanBeResearchedAt.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\RoomRoleWorker_Workshop_GetScore_Patch.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_RandomGeneralGoods_Generate.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_RandomOption_Generate.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_MarketValue_Generate.cs" />
-    <Compile Include="Medieval Overhaul\Recipes\RecipeWorker_GrindWheat.cs" />
-    <Compile Include="Medieval Overhaul\Recipes\RecipeWorker_MakeSkillBook.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_ResourcePod_Generate.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\StockGenerator_Category_GenerateThings.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\CompPowerTrader_PowerOn.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\DamageWorker_Stun_Result.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\Alert_PasteDispenserNeedsHopper.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\Quest_End.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\StaggerHandler_StaggerFor.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_Meteorite_Reset.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Ingest_GetReport.cs" />
-    <Compile Include="Medieval Overhaul\HediffComps\CompProperties\HediffCompProperties_LindwurmAcid.cs" />
-    <Compile Include="Medieval Overhaul\HediffComps\HediffComp_Daze.cs" />
-    <Compile Include="Medieval Overhaul\HediffComps\HediffComp_LindwurmAcid.cs" />
-    <Compile Include="Medieval Overhaul\Recipes\RoomRoleWorker_Library.cs" />
-    <Compile Include="Medieval Overhaul\Recipes\TreatiseSkill.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\BookWithAuthor.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ApparelExtension_ImmuneLindwurmAcid.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompGlowerOnlyWhenUsed.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompMeltable.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\BookOutcomeProperties_GainResearchDefinable.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\BookOutcomeProperties_GainSkillExpDefinable.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_DefinableBook.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_GenericHide.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_Melt.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_StoreFuelThing.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_TrollRegen.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompStoreFuelThing.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\Comp_TrollRegen.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompGenericHide.cs" />
-    <Compile Include="Medieval Overhaul\Utilities\Breakdown.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\CannotBePlacedTogetherWithThisModExtension.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\AdditionalButcherProducts.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\FixBrokenDownBuilding_JobOnThing.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\FixBrokenDownBuilding_HasJobOnThing.cs" />
-    <Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_DropItems.cs" />
-    <Compile Include="Medieval Overhaul\QuestFinderUtility.cs" />
-    <Compile Include="Medieval Overhaul\GameComponent_QuestFinder.cs" />
-    <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GolemImpactor.cs" />
-    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_OperateQuest.cs" />
-    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_Mine_Golem.cs" />
-    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DoMending.cs" />
-    <Compile Include="Medieval Overhaul\Utilities\CustomWidget.cs" />
-    <Compile Include="Medieval Overhaul\Utilities\Listing_Custom.cs" />
-    <Compile Include="Medieval Overhaul\Utilities\Setting_Utility.cs" />
-    <Compile Include="Medieval Overhaul\Utilities\WindMillUtility.cs" />
-    <Compile Include="Medieval Overhaul\Utilities\SitePartWorker_WorkSite_Hunting.cs" />
-    <Compile Include="Medieval Overhaul\Utilities\MayRequireCEAttribute.cs" />
-    <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_DoMending.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\HediffFallRateMultiplier.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\MeteorProperties.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ProcessorExtension.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\DeathDropOptions.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RequireLinkables.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\QuestInformation.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Mine.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Timber.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\Building_QuestScanner.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\Building_ScribeTable.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\Mineable_CompSpawnerDestroy.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_QuestFinder.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompQuestFinder.cs" />
-    <Compile Include="Medieval Overhaul\Utilities\Utility.cs" />
-    <Compile Include="Medieval Overhaul\DefOfs\StuffabilityDefOf.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\GenRecipe_MakeRecipeProducts.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\DefGenerator_GenerateImpliedDefs_PreResolve.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\StatWorker_MarketValue_CalculableRecipe.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\CompProcessor_TakeOutProduct.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\Pawn_ButcherProducts.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_ManTurret_FindAmmoForTurret.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\GenConstruct_CanPlaceBlueprintOver.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\GenConstruct_CanBuildOnTerrain.cs" />
-    <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GhoulPack.cs" />
-    <Compile Include="Medieval Overhaul\ModOptions\Settings\MedievalOverhaul_Settings.cs" />
-    <Compile Include="Medieval Overhaul\ModOptions\MedievalOverhaulMod.cs" />
-    <Compile Include="Medieval Overhaul\Production Chains\Hide Generation\HideUtility.cs" />
-    <Compile Include="Medieval Overhaul\Utilities\SeperateHideList.cs" />
-    <Compile Include="Medieval Overhaul\Production Chains\Hide Generation\ThingDefGenerator_Hide.cs" />
-    <Compile Include="Medieval Overhaul\ModOptions\PatchOperation.cs" />
-    <Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_PlainSchratSplit.cs" />
-    <Compile Include="Medieval Overhaul\Production Chains\Timber Generation\TimberUtility.cs" />
-    <Compile Include="Medieval Overhaul\Production Chains\Timber Generation\ThingDefGenerator_Timber.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_Ghoul.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_HornetNestSpawner.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_BedCureHediff.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\Comp_Ghoul.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\Comp_HornetNestSpawner.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_ThingProducer.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\Comp_ThingProducer.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\Comp_BedCureHediff.cs" />
-    <Compile Include="Medieval Overhaul\Utilities\Item.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompPropertiesUseEffect_LearnSkillImproved.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompUseEffect_LearnSkillImproved.cs" />
-    <Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_DarkSchratSplit.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\SecondaryPlantDropExtension.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\IncidentProperties.cs" />
-    <Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GenericWandersIn.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\Plant_SecondaryDrop.cs" />
-    <Compile Include="Medieval Overhaul\HediffComps\Hediff_UnpleasantAftermathSet.cs" />
-    <Compile Include="Medieval Overhaul\HediffComps\Hediff_UnpleasantAftermath.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\Plant_SpawnerOnDestroy.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ButcherProperties.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\Building_Lootable.cs" />
-    <Compile Include="Medieval Overhaul\Recipes\RecipeWorkerCounter_MakeWoodPlanks.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_PawnSpawnerOnDestroy.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\Comp_RandomName.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\Comp_PawnSpawnerOnDestroy.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\BuildingLootableExtension.cs" />
-    <Compile Include="Medieval Overhaul\DefOfs\MedievalOverhaulDefOf.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\Comp_FireOverlaySouth.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_FireOverlaySouth.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\Comp_WindMill.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\AdditionalProjectileProperties.cs" />
-    <Compile Include="Medieval Overhaul\BiomeWorkers\BiomeWorker_DarkForest.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\Bullet_ExplosiveProperty.cs" />
-    <Compile Include="Medieval Overhaul\DamageWorkers\DamagerWorker_ExplosionNoFlash.cs" />
-    <Compile Include="Medieval Overhaul\HediffComps\HediffComp_HealScars.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\FuelValueProperty.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\HarmonyInstance.cs" />
-    <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_OperateQuest.cs" />
-    <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_Miner_Golem.cs" />
-    <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_RefuelCustom.cs" />
-    <Compile Include="Medieval Overhaul\Utilities\DebugTools.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\Building_SlopPot.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_RefuelableStat.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_Slop.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompRefuelableStat.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompSlop.cs" />
-    <Compile Include="Medieval Overhaul\ThingComps\CompUnpowered.cs" />
-    <Compile Include="Medieval Overhaul\ITab\ITab_StewPot.cs" />
-    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelStat.cs" />
-    <Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelStatAtomic.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\Building_NutrientPasteDispenser_CanDispenseNow.cs" />
-    <Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_RefuelStat.cs" />
-    <Compile Include="Medieval Overhaul\Utilities\TooltipStringInit.cs" />
-    <Compile Include="Medieval Overhaul\Harmony Patches\SettlementPreferencePatch.cs" />
-    <Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\SettlementPreference.cs" />
-    <Compile Include="TransparentThings\Core.cs" />
-    <Compile Include="TransparentThings\RoofSetter.cs" />
-    <Compile Include="TransparentThings\ThingExtension.cs" />
-    <Compile Include="TransparentThings\ThingWithExtension.cs" />
-    <Compile Include="TransparentThings\TransparentThingsDefOf.cs" />
-    <Compile Include="TransparentThings\TransparentThingsMod.cs" />
-    <Compile Include="TransparentThings\TransparentThingsSettings.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Medieval Overhaul\DeathActionWorker\DeathActionProperties\" />
-    <Folder Include="Medieval Overhaul\IncidentWorkers\ThingSetMaker\" />
-    <Folder Include="Properties\" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Krafs.Publicizer">
-      <Version>2.3.0</Version>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.6.4489-beta</Version>
-    </PackageReference>
-    <PackageReference Include="Lib.Harmony">
-      <ExcludeAssets>runtime</ExcludeAssets>
-      <Version>2.*</Version>
-    </PackageReference>
-    <Publicize Include="Assembly-CSharp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="ProcessorFramework">
-      <HintPath>..\..\..\..\ProcessorFramework\1.6\Assemblies\ProcessorFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="VEF">
-      <HintPath>..\..\..\..\VanillaExpandedFramework\1.6\Assemblies\VEF.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProjectGuid>{97FA1308-3ED7-41D8-827D-0CC3A3291EE8}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>MedievalOverhaul</RootNamespace>
+		<AssemblyName>MedievalOverhaul</AssemblyName>
+		<TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+		<FileAlignment>512</FileAlignment>
+		<Deterministic>true</Deterministic>
+		<LangVersion>latest</LangVersion>
+		<TargetFrameworkProfile/>
+		<NuGetPackageImportStamp>
+		</NuGetPackageImportStamp>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<DebugSymbols>false</DebugSymbols>
+		<DebugType>none</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>..\..\Assemblies\</OutputPath>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<DebugType>pdbonly</DebugType>
+		<Optimize>true</Optimize>
+		<OutputPath>..\..\Assemblies\</OutputPath>
+		<DefineConstants>
+		</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_AlpSleep.cs"/>
+		<Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetFuelLevelCustom.cs"/>
+		<Compile Include="Medieval Overhaul\Gizmo\Command_RetrieveSlop.cs"/>
+		<Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableStatusCustom.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\Building_CommsConsole_CanUseCommsNow.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\Building_CommsConsole_AnnounceTradeShips.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\CompPowerPlantWater_ForceOthersToRebuildCache.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\CompPowerPlantWater_RebuildCache.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CalcSpeedFactor.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_CurrentWindFactor.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\ApparelGraphicRecordGetter_TryGetGraphicApparel.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\ThingDefGenerator_Buildings_ImpliedBlueprintAndFrameDefs.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\ThingListGroupHelper_Includes.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\Room_Notify_RoomShapeChanged.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\Plant_PlantCollected.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\FoodUtility_BestFoodSourceOnMap_Transpile.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\MainTabWindow_Inspect_CurTabs.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\PlaceWorker_WatermillGenerator_DrawGhost.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_ClearSnow_MakeNewToils.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\ResearchProjectDef_CanResearchNow.cs"/>
+		<Compile Include="Medieval Overhaul\HediffComps\HediffComp_Nightmare.cs"/>
+		<Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_DeepDrillInfestation.cs"/>
+		<Compile Include="Medieval Overhaul\Interface\ICompFuelHandler.cs"/>
+		<Compile Include="Medieval Overhaul\ITab\ITab_Fuel.cs"/>
+		<Compile Include="Medieval Overhaul\JobDrivers\JobDriver_EmptyIceMold.cs"/>
+		<Compile Include="Medieval Overhaul\JobDrivers\JobDriver_EmptySlopPot.cs"/>
+		<Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DispenseSlop.cs"/>
+		<Compile Include="Medieval Overhaul\Listing_Tree\Listing_TreeThingFilter_Nutrition.cs"/>
+		<Compile Include="Medieval Overhaul\Listing_Tree\Listing_TreeThingFilter_Fuel.cs"/>
+		<Compile Include="Medieval Overhaul\Listing_Tree\ThingFilterUI_Nutrition.cs"/>
+		<Compile Include="Medieval Overhaul\Listing_Tree\ThingFilterUI_Fuel.cs"/>
+		<Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelAtomicCustom.cs"/>
+		<Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelCustom.cs"/>
+		<Compile Include="Medieval Overhaul\MapComponent\RefuelableMapComponent.cs"/>
+		<Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_PlowSoil.cs"/>
+		<Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_WindMill.cs"/>
+		<Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_WaterWheel.cs"/>
+		<Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_WaterGather.cs"/>
+		<Compile Include="Medieval Overhaul\QuestStuff\ThoughtWorker_AlpEclipse.cs"/>
+		<Compile Include="Medieval Overhaul\QuestStuff\GameCondition_AlpEclipse.cs"/>
+		<Compile Include="Medieval Overhaul\QuestStuff\QuestNode_Root_AlpEclipse.cs"/>
+		<Compile Include="Medieval Overhaul\QuestStuff\QuestPart_AlpDarkness.cs"/>
+		<Compile Include="Medieval Overhaul\Recipes\RecipeWorkerCounter_WaterGather.cs"/>
+		<Compile Include="Medieval Overhaul\StatWorkers\StatPart_Mass_Hide.cs"/>
+		<Compile Include="Medieval Overhaul\StatWorkers\StatPart_MarketValue.cs"/>
+		<Compile Include="Medieval Overhaul\Storyteller\StorytellerComp\StorytellerCompProperties_MineshaftInfestation.cs"/>
+		<Compile Include="Medieval Overhaul\Storyteller\StorytellerComp_MineshaftInfestation.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\Building_PlanterBox.cs" />
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_WaterGather.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ItemLootExtension.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\Building_Art_Ice.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompCreatesInfestations_Mine.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_CreatesInfestations_Mine.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_RefuelableCustom.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompRefuelableCustom.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompPotionUseable.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompPowerWaterWheel.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompIceBoxFill.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\MinifiedIceThing.cs"/>
+		<Compile Include="Medieval Overhaul\Utilities\CachingUtility.cs"/>
+		<Compile Include="Medieval Overhaul\DamageWorkers\DamageWorker_Daze.cs"/>
+		<Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetNutritionLevel.cs"/>
+		<Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableNutritionStatus.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\ActiveProcess_DoTicks_Patch.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\Compatibility\BackCompatibileCurentVersion.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\CompRefuelable_Refuel.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Refuel_MakeNewToils.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\Pawn_JobTracker_EndCurrentJob_Patch.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\Bill_Notify_PawnDidWork_Patch.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\BookOutcomeDoerGainSkillExp_OnBookGenerated_Patch.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\BookOutcomeProperties_GainSkillExp_OnReadingTick_Patch.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\Book_GenerateBook_Patch.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\CompQuality_SetQuality_Patch.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Reading_ReadBook.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\MainTabWindow_Research_DrawUnlockableHyperlinks_Patch.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\QualityUtility_GenerateQualityCreatedByPawn.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\RefuelWorkGiverUtility_FindBestFuel.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\ResearchProjectDef_CanBeResearchedAt.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\RoomRoleWorker_Workshop_GetScore_Patch.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_RandomGeneralGoods_Generate.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_RandomOption_Generate.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_MarketValue_Generate.cs"/>
+		<Compile Include="Medieval Overhaul\Recipes\RecipeWorker_GrindWheat.cs"/>
+		<Compile Include="Medieval Overhaul\Recipes\RecipeWorker_MakeSkillBook.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_ResourcePod_Generate.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\StockGenerator_Category_GenerateThings.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\CompPowerTrader_PowerOn.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\DamageWorker_Stun_Result.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\Alert_PasteDispenserNeedsHopper.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\Quest_End.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\StaggerHandler_StaggerFor.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_Meteorite_Reset.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Ingest_GetReport.cs"/>
+		<Compile Include="Medieval Overhaul\HediffComps\CompProperties\HediffCompProperties_LindwurmAcid.cs"/>
+		<Compile Include="Medieval Overhaul\HediffComps\HediffComp_Daze.cs"/>
+		<Compile Include="Medieval Overhaul\HediffComps\HediffComp_LindwurmAcid.cs"/>
+		<Compile Include="Medieval Overhaul\Recipes\RoomRoleWorker_Library.cs"/>
+		<Compile Include="Medieval Overhaul\Recipes\TreatiseSkill.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\BookWithAuthor.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ApparelExtension_ImmuneLindwurmAcid.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompGlowerOnlyWhenUsed.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompMeltable.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\BookOutcomeProperties_GainResearchDefinable.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\BookOutcomeProperties_GainSkillExpDefinable.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_DefinableBook.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_GenericHide.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_Melt.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_StoreFuelThing.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_TrollRegen.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompStoreFuelThing.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\Comp_TrollRegen.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompGenericHide.cs"/>
+		<Compile Include="Medieval Overhaul\Utilities\Breakdown.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\CannotBePlacedTogetherWithThisModExtension.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\AdditionalButcherProducts.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\FixBrokenDownBuilding_JobOnThing.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\FixBrokenDownBuilding_HasJobOnThing.cs"/>
+		<Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_DropItems.cs"/>
+		<Compile Include="Medieval Overhaul\QuestFinderUtility.cs"/>
+		<Compile Include="Medieval Overhaul\GameComponent_QuestFinder.cs"/>
+		<Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GolemImpactor.cs"/>
+		<Compile Include="Medieval Overhaul\JobDrivers\JobDriver_OperateQuest.cs"/>
+		<Compile Include="Medieval Overhaul\JobDrivers\JobDriver_Mine_Golem.cs"/>
+		<Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DoMending.cs"/>
+		<Compile Include="Medieval Overhaul\Utilities\CustomWidget.cs"/>
+		<Compile Include="Medieval Overhaul\Utilities\Listing_Custom.cs"/>
+		<Compile Include="Medieval Overhaul\Utilities\Setting_Utility.cs"/>
+		<Compile Include="Medieval Overhaul\Utilities\WindMillUtility.cs"/>
+		<Compile Include="Medieval Overhaul\Utilities\SitePartWorker_WorkSite_Hunting.cs"/>
+		<Compile Include="Medieval Overhaul\Utilities\MayRequireCEAttribute.cs"/>
+		<Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_DoMending.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\HediffFallRateMultiplier.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\MeteorProperties.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ProcessorExtension.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\DeathDropOptions.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RequireLinkables.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\QuestInformation.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Mine.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\RecipeExtension_Timber.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\Building_QuestScanner.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\Building_ScribeTable.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\Mineable_CompSpawnerDestroy.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_QuestFinder.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompQuestFinder.cs"/>
+		<Compile Include="Medieval Overhaul\Utilities\Utility.cs"/>
+		<Compile Include="Medieval Overhaul\DefOfs\StuffabilityDefOf.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\GenRecipe_MakeRecipeProducts.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\DefGenerator_GenerateImpliedDefs_PreResolve.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\StatWorker_MarketValue_CalculableRecipe.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\CompProcessor_TakeOutProduct.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\Pawn_ButcherProducts.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_ManTurret_FindAmmoForTurret.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\GenConstruct_CanPlaceBlueprintOver.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\GenConstruct_CanBuildOnTerrain.cs"/>
+		<Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GhoulPack.cs"/>
+		<Compile Include="Medieval Overhaul\ModOptions\Settings\MedievalOverhaul_Settings.cs"/>
+		<Compile Include="Medieval Overhaul\ModOptions\MedievalOverhaulMod.cs"/>
+		<Compile Include="Medieval Overhaul\Production Chains\Hide Generation\HideUtility.cs"/>
+		<Compile Include="Medieval Overhaul\Utilities\SeperateHideList.cs"/>
+		<Compile Include="Medieval Overhaul\Production Chains\Hide Generation\ThingDefGenerator_Hide.cs"/>
+		<Compile Include="Medieval Overhaul\ModOptions\PatchOperation.cs"/>
+		<Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_PlainSchratSplit.cs"/>
+		<Compile Include="Medieval Overhaul\Production Chains\Timber Generation\TimberUtility.cs"/>
+		<Compile Include="Medieval Overhaul\Production Chains\Timber Generation\ThingDefGenerator_Timber.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_Ghoul.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_HornetNestSpawner.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_BedCureHediff.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\Comp_Ghoul.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\Comp_HornetNestSpawner.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_ThingProducer.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\Comp_ThingProducer.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\Comp_BedCureHediff.cs"/>
+		<Compile Include="Medieval Overhaul\Utilities\Item.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompPropertiesUseEffect_LearnSkillImproved.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompUseEffect_LearnSkillImproved.cs"/>
+		<Compile Include="Medieval Overhaul\DeathActionWorker\DeathActionWorker_DarkSchratSplit.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\SecondaryPlantDropExtension.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\IncidentProperties.cs"/>
+		<Compile Include="Medieval Overhaul\IncidentWorkers\IncidentWorker_GenericWandersIn.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\Plant_SecondaryDrop.cs"/>
+		<Compile Include="Medieval Overhaul\HediffComps\Hediff_UnpleasantAftermathSet.cs"/>
+		<Compile Include="Medieval Overhaul\HediffComps\Hediff_UnpleasantAftermath.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\Plant_SpawnerOnDestroy.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\ButcherProperties.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\Building_Lootable.cs"/>
+		<Compile Include="Medieval Overhaul\Recipes\RecipeWorkerCounter_MakeWoodPlanks.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_PawnSpawnerOnDestroy.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\Comp_RandomName.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\Comp_PawnSpawnerOnDestroy.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\BuildingLootableExtension.cs"/>
+		<Compile Include="Medieval Overhaul\DefOfs\MedievalOverhaulDefOf.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\Comp_FireOverlaySouth.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_FireOverlaySouth.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\Comp_WindMill.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\AdditionalProjectileProperties.cs"/>
+		<Compile Include="Medieval Overhaul\BiomeWorkers\BiomeWorker_DarkForest.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\Bullet_ExplosiveProperty.cs"/>
+		<Compile Include="Medieval Overhaul\DamageWorkers\DamagerWorker_ExplosionNoFlash.cs"/>
+		<Compile Include="Medieval Overhaul\HediffComps\HediffComp_HealScars.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\FuelValueProperty.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\HarmonyInstance.cs"/>
+		<Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_OperateQuest.cs"/>
+		<Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_Miner_Golem.cs"/>
+		<Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_RefuelCustom.cs"/>
+		<Compile Include="Medieval Overhaul\Utilities\DebugTools.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\Building_SlopPot.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_RefuelableStat.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompProps\CompProperties_Slop.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompRefuelableStat.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompSlop.cs"/>
+		<Compile Include="Medieval Overhaul\ThingComps\CompUnpowered.cs"/>
+		<Compile Include="Medieval Overhaul\ITab\ITab_StewPot.cs"/>
+		<Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelStat.cs"/>
+		<Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelStatAtomic.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\Building_NutrientPasteDispenser_CanDispenseNow.cs"/>
+		<Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_RefuelStat.cs"/>
+		<Compile Include="Medieval Overhaul\Utilities\TooltipStringInit.cs"/>
+		<Compile Include="Medieval Overhaul\Harmony Patches\SettlementPreferencePatch.cs"/>
+		<Compile Include="Medieval Overhaul\ThingClasses\DefModExtensions\SettlementPreference.cs"/>
+		<Compile Include="TransparentThings\Core.cs"/>
+		<Compile Include="TransparentThings\RoofSetter.cs"/>
+		<Compile Include="TransparentThings\ThingExtension.cs"/>
+		<Compile Include="TransparentThings\ThingWithExtension.cs"/>
+		<Compile Include="TransparentThings\TransparentThingsDefOf.cs"/>
+		<Compile Include="TransparentThings\TransparentThingsMod.cs"/>
+		<Compile Include="TransparentThings\TransparentThingsSettings.cs"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Medieval Overhaul\DeathActionWorker\DeathActionProperties\"/>
+		<Folder Include="Medieval Overhaul\IncidentWorkers\ThingSetMaker\"/>
+		<Folder Include="Properties\"/>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Krafs.Publicizer" Version="2.2.1">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Krafs.Rimworld.Ref">
+			<Version>1.6.4489-beta</Version>
+		</PackageReference>
+		<PackageReference Include="Lib.Harmony">
+			<ExcludeAssets>runtime</ExcludeAssets>
+			<Version>2.*</Version>
+		</PackageReference>
+		<Publicize Include="Assembly-CSharp"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="ProcessorFramework">
+			<HintPath>..\..\..\..\ProcessorFramework\1.6\Assemblies\ProcessorFramework.dll</HintPath>
+		</Reference>
+		<Reference Include="VEF">
+			<HintPath>..\..\..\..\VanillaExpandedFramework\1.6\Assemblies\VEF.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
 </Project>

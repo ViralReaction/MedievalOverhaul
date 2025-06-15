@@ -8,7 +8,7 @@
 		<thingClass>MedievalOverhaul.Plant_SpawnerOnDestroy</thingClass>
 		<minifiedDef IsNull="True" />
 		<graphicData>
-			<texPath>Plants/GreatOak</texPath>
+			<texPath>Things/Plants/FullGrown/GreatOak</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.55, 0.2, 0.2)</volume>
@@ -27,7 +27,7 @@
 			<fertilityMin>0.8</fertilityMin>
 			<harvestedThingDef>DankPyon_RawDarkWood</harvestedThingDef>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
-			<leaflessGraphicPath>Plants_Leafless/GreatOak_Leafless</leaflessGraphicPath>
+			<leaflessGraphicPath>Things/Plants/FullGrown/GreatOak_Leafless</leaflessGraphicPath>
 			<growDays>300</growDays>
 			<harvestWork>2000</harvestWork>
 			<harvestYield>150</harvestYield>
@@ -87,7 +87,7 @@
 		<thingClass>MedievalOverhaul.Plant_SpawnerOnDestroy</thingClass>
 		<minifiedDef IsNull="True" />
 		<graphicData>
-			<texPath>Plants/GreatIter</texPath>
+			<texPath>Things/Plants/FullGrown/GreatIter</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.55, 0.2, 0.2)</volume>
@@ -106,7 +106,7 @@
 			<fertilityMin>0.8</fertilityMin>
 			<harvestedThingDef>DankPyon_RawDarkWood</harvestedThingDef>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
-			<leaflessGraphicPath>Plants_Leafless/GreatIter_Leafless</leaflessGraphicPath>
+			<leaflessGraphicPath>Things/Plants/FullGrown/GreatIter_Leafless</leaflessGraphicPath>
 			<growDays>300</growDays>
 			<harvestWork>2000</harvestWork>
 			<harvestYield>150</harvestYield>
@@ -165,7 +165,7 @@
 		<description>Three hundred feet high giant cousins of cedars. Those trees are often called the last guardians of summer, evergreen stretches of hopeful colour, contrasting against the snow. Be wary when traversing a close-knit fir forest, as 10-inch cones can knock down even a knight in full armour.</description>
 		<minifiedDef IsNull="True" />
 		<graphicData>
-			<texPath>Plants/GreatFir</texPath>
+			<texPath>Things/Plants/FullGrown/GreatFir</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<altitudeLayer>Pawn</altitudeLayer>
@@ -216,7 +216,7 @@
 		<thingClass>MedievalOverhaul.Plant_SpawnerOnDestroy</thingClass>
 		<minifiedDef IsNull="True" />
 		<graphicData>
-			<texPath>Plants/GreatWillow</texPath>
+			<texPath>Things/Plants/FullGrown/GreatWillow</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.2, 0.3, 0.13)</volume>
@@ -233,7 +233,7 @@
 		<plant>
 			<dieIfLeafless>False</dieIfLeafless>
 			<growDays>200</growDays>
-			<leaflessGraphicPath>Plants_Leafless/GreatWillow_Leafless</leaflessGraphicPath>
+			<leaflessGraphicPath>Things/Plants/FullGrown/GreatWillow_Leafless</leaflessGraphicPath>
 			<harvestWork>2000</harvestWork>
 			<harvestYield>100</harvestYield>
 			<wildClusterWeight>32</wildClusterWeight>

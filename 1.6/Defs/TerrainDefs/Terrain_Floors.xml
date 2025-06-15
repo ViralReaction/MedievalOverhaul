@@ -41,7 +41,7 @@
 			</li>
 		</tools>
 		<researchPrerequisites>
-			<li>DankPyon_BasicAgriculture</li>
+			 <li>DankPyon_PlowedSoil</li>
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>MedievalOverhaul.PlaceWorker_PlowSoil</li>

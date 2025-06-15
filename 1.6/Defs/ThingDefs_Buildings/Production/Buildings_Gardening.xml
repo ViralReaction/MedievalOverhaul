@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Gardening Box -->
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>DankPyon_Post</defName>
+		<label>post</label>
+		<description>A support post to let viny plants grow effectively.</description>
+		<thingClass>MedievalOverhaul.Building_PlanterBox</thingClass>
+		<graphicData>
+			<texPath>Production/Post</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(6,3)</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-5</Cleanliness>
+			<Mass>10</Mass>
+		</statBases>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<size>(4,1)</size>
+		<passability>PassThroughOnly</passability>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<designationCategory>Production</designationCategory>
+		<researchPrerequisites>
+			<li>DankPyon_IntermediateAgriculture</li>
+		</researchPrerequisites>
+		<techLevel>Medieval</techLevel>
+		<building>
+            <defaultPlantToGrow>DankPyon_Plant_Tomatoes</defaultPlantToGrow>
+            <sowTag>DankPyon_VinePost</sowTag>
+            <buildingTags>
+                <li>Production</li>
+            </buildingTags>
+        </building>
+		<terrainAffordanceNeeded>DankPyon_GrowSoilVine</terrainAffordanceNeeded>
+	</ThingDef>
+
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>DankPyon_GardeningBox</defName>
+		<label>gardening box</label>
+		<description>A box filled with dirt to grow plants.</description>
+		<thingClass>MedievalOverhaul.Building_PlanterBox</thingClass>
+		<techLevel>Medieval</techLevel>
+		<graphicData>
+			<texPath>Production/GardeningBox</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,4)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-5</Cleanliness>
+			<Mass>10</Mass>
+		</statBases>
+		<altitudeLayer>LowPlant</altitudeLayer>
+		<size>(1,4)</size>
+		<passability>PassThroughOnly</passability>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>DankPyon_RawWood</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<fertility>0.8</fertility>
+		<designationCategory>Production</designationCategory>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<researchPrerequisites>
+			<li>DankPyon_BasicAgriculture</li>
+		</researchPrerequisites>
+		<building>
+			<defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+			<sowTag>Ground</sowTag>
+			<paintable>false</paintable>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+	</ThingDef>
+
+</Defs>

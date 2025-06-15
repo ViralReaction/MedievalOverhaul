@@ -12,7 +12,7 @@
 			<Nutrition>0.15</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/GarlicPlant</texPath>
+			<texPath>Things/Plants/FullGrown/GarlicPlant</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -36,7 +36,7 @@
 			<growDays>3</growDays>
 			<fertilitySensitivity>0.2</fertilitySensitivity>
 			<visualSizeRange>0.2~0.4</visualSizeRange>
-			<immatureGraphicPath>Plants_Immature/GarlicPlant</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plants/Immature/GarlicPlant</immatureGraphicPath>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<sowMinSkill>3</sowMinSkill>
@@ -53,7 +53,7 @@
 			<Nutrition>0.03</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/OnionPlant</texPath>
+			<texPath>Things/Plants/FullGrown/OnionPlant</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -77,7 +77,7 @@
 			<growDays>4</growDays>
 			<fertilitySensitivity>0.2</fertilitySensitivity>
 			<visualSizeRange>0.2~0.4</visualSizeRange>
-			<immatureGraphicPath>Plants_Immature/OnionPlant</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plants/Immature/OnionPlant</immatureGraphicPath>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<sowMinSkill>3</sowMinSkill>
@@ -93,7 +93,7 @@
 			<Nutrition>0.2</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/LentilPlant</texPath>
+			<texPath>Things/Plants/FullGrown/LentilPlant</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -117,7 +117,7 @@
 			<growDays>3</growDays>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
 			<visualSizeRange>0.3~0.5</visualSizeRange>
-			<!--immatureGraphicPath>Plants_Immature/</immatureGraphicPath-->
+			<!--immatureGraphicPath>Things/Plants/Immature/</immatureGraphicPath-->
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<sowMinSkill>8</sowMinSkill>
@@ -133,7 +133,7 @@
 			<Nutrition>0.2</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/MushroomPatch</texPath>
+			<texPath>Things/Plants/FullGrown/MushroomPatch</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -157,7 +157,7 @@
 			<growDays>3</growDays>
 			<fertilitySensitivity>0.1</fertilitySensitivity>
 			<visualSizeRange>0.9~1</visualSizeRange>
-			<!--immatureGraphicPath>Plants_Immature/</immatureGraphicPath-->
+			<!--immatureGraphicPath>Things/Plants/Immature/</immatureGraphicPath-->
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<sowMinSkill>3</sowMinSkill>
@@ -175,7 +175,7 @@
 			<Nutrition>0.2</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/WheatPlant</texPath>
+			<texPath>Things/Plants/FullGrown/WheatPlant</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -199,7 +199,7 @@
 			<growDays>12</growDays>
 			<fertilitySensitivity>0.9</fertilitySensitivity>
 			<visualSizeRange>0.5~1.0</visualSizeRange>
-			<immatureGraphicPath>Plants_Immature/WheatPlant</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plants/Immature/WheatPlant</immatureGraphicPath>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 		</plant>
@@ -215,7 +215,7 @@
 			<Nutrition>0.3</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/Flax</texPath>
+			<texPath>Things/Plants/FullGrown/Flax</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -248,7 +248,7 @@
 			<Nutrition>0.3</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/SugarcanePlant</texPath>
+			<texPath>Things/Plants/FullGrown/SugarcanePlant</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -272,7 +272,7 @@
 			<growDays>5.8</growDays>
 			<fertilitySensitivity>0.7</fertilitySensitivity>
 			<visualSizeRange>0.3~1.0</visualSizeRange>
-			<!--immatureGraphicPath>Plants_Immature/</immatureGraphicPath-->
+			<!--immatureGraphicPath>Things/Plants/Immature/</immatureGraphicPath-->
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<sowMinSkill>3</sowMinSkill>
@@ -288,7 +288,7 @@
 			<Nutrition>0.2</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/CarrotPlant</texPath>
+			<texPath>Things/Plants/FullGrown/CarrotPlant</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -312,7 +312,7 @@
 			<growDays>3.25</growDays>
 			<fertilitySensitivity>0.6</fertilitySensitivity>
 			<visualSizeRange>0.2~0.4</visualSizeRange>
-			<immatureGraphicPath>Plants_Immature/CarrotPlant</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plants/Immature/CarrotPlant</immatureGraphicPath>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<sowMinSkill>4</sowMinSkill>
@@ -328,7 +328,7 @@
 			<Nutrition>0.2</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/HerbPlant</texPath>
+			<texPath>Things/Plants/FullGrown/HerbPlant</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -369,7 +369,7 @@
 			<Nutrition>0.2</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/GrapePlant</texPath>
+			<texPath>Things/Plants/FullGrown/GrapePlant</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -392,7 +392,7 @@
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
 			<wildOrder>2</wildOrder>
-			<immatureGraphicPath>Plants_Immature/GrapePlant</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plants/Immature/GrapePlant</immatureGraphicPath>
 			<purpose>Food</purpose>
 			<visualSizeRange>1~2</visualSizeRange>
 		</plant>
@@ -407,7 +407,7 @@
 			<Nutrition>0.2</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/TomatoPlant</texPath>
+			<texPath>Things/Plants/FullGrown/TomatoPlant</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -431,7 +431,7 @@
 			<topWindExposure>0.1</topWindExposure>
 			<wildOrder>2</wildOrder>
 			<visualSizeRange>1~2.0</visualSizeRange>
-			<immatureGraphicPath>Plants_Immature/TomatoPlant</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plants/Immature/TomatoPlant</immatureGraphicPath>
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
@@ -445,7 +445,7 @@
 			<Nutrition>0.4</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/CabbagePlant</texPath>
+			<texPath>Things/Plants/FullGrown/CabbagePlant</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -469,7 +469,7 @@
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
 			<wildOrder>2</wildOrder>
-			<!--immatureGraphicPath>Plants_Immature/</immatureGraphicPath-->
+			<!--immatureGraphicPath>Things/Plants/Immature/</immatureGraphicPath-->
 			<purpose>Food</purpose>
 			<visualSizeRange>0.7~0.7</visualSizeRange>
 		</plant>
@@ -484,7 +484,7 @@
 			<Nutrition>0.5</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/PumpkinPlant</texPath>
+			<texPath>Things/Plants/FullGrown/PumpkinPlant</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -508,7 +508,7 @@
 			<growDays>4.4</growDays>
 			<fertilitySensitivity>0.9</fertilitySensitivity>
 			<visualSizeRange>0.8~1.0</visualSizeRange>
-			<immatureGraphicPath>Plants_Immature/PumpkinPlant</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plants/Immature/PumpkinPlant</immatureGraphicPath>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
 			<sowMinSkill>8</sowMinSkill>
@@ -526,7 +526,7 @@
 			<Nutrition>1.5</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/TreeApple</texPath>
+			<texPath>Things/Plants/FullGrown/TreeApple</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -550,7 +550,7 @@
 			</sowResearchPrerequisites>
 			<topWindExposure>0.1</topWindExposure>
 			<wildOrder>2</wildOrder>
-			<immatureGraphicPath>Plants_Immature/TreeApple</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plants/Immature/TreeApple</immatureGraphicPath>
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
@@ -564,7 +564,7 @@
 			<Nutrition>1.5</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/TreeLemon</texPath>
+			<texPath>Things/Plants/FullGrown/TreeLemon</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -588,7 +588,7 @@
 			</sowResearchPrerequisites>
 			<topWindExposure>0.1</topWindExposure>
 			<wildOrder>2</wildOrder>
-			<immatureGraphicPath>Plants_Immature/TreeLemon</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plants/Immature/TreeLemon</immatureGraphicPath>
 			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
@@ -603,7 +603,7 @@
 			<Nutrition>1.5</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/TreeMulberry</texPath>
+			<texPath>Things/Plants/FullGrown/TreeMulberry</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -627,7 +627,7 @@
 			</sowResearchPrerequisites>
 			<topWindExposure>0.1</topWindExposure>
 			<wildOrder>2</wildOrder>
-			<immatureGraphicPath>Plants_Immature/TreeMulberry</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plants/Immature/TreeMulberry</immatureGraphicPath>
 			<purpose>Food</purpose>
 		</plant>
 		<modExtensions>
@@ -652,7 +652,7 @@
 		</statBases>
 
 		<graphicData>
-			<texPath>Plants/TreeGriffonBerry</texPath>
+			<texPath>Things/Plants/FullGrown/TreeGriffonBerry</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.15, 0.3, 0.15)</volume>
@@ -667,7 +667,7 @@
 			<dieIfLeafless>False</dieIfLeafless>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
 			<growDays>33</growDays>
-			<immatureGraphicPath>Plants_Immature/TreeGriffonBerry</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plants/Immature/TreeGriffonBerry</immatureGraphicPath>
 			<harvestYield>9</harvestYield>
 			<harvestTag>Standard</harvestTag>
 			<harvestAfterGrowth>0.3</harvestAfterGrowth>
@@ -696,7 +696,7 @@
 			<Nutrition>0.4</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/MacciPlant</texPath>
+			<texPath>Things/Plants/FullGrown/MacciPlant</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
@@ -716,7 +716,7 @@
 			</sowResearchPrerequisites>
 			<topWindExposure>0.35</topWindExposure>
 			<growDays>11.3</growDays>
-			<immatureGraphicPath>Plants_Immature/MacciPlant</immatureGraphicPath>
+			<immatureGraphicPath>Things/Plants/Immature/MacciPlant</immatureGraphicPath>
 			<visualSizeRange>0.3~1.4</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>

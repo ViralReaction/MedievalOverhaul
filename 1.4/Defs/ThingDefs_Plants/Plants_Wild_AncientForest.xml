@@ -6,7 +6,7 @@
 		<label>lylses</label>
 		<description>The lylses, native to ancient biomes, stands taller than (or rivals the height of) the vanilla oak. Its long hardy bark and branches hold up bright green leaves that flourish in sunlight. Felled lylses produces elven timber more durable, yet also lighter, than oak, making lylses logs desirable for construction and woodworking.</description>
 		<graphicData>
-			<texPath>Plants/TreeLylses</texPath>
+			<texPath>Things/Plants/FullGrown/TreeLylses</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.55, 0.2, 0.2)</volume>
@@ -25,7 +25,7 @@
 			<fertilityMin>0.9</fertilityMin>
 			<harvestedThingDef>DankPyon_ElvenWoodLog</harvestedThingDef>
 			<fertilitySensitivity>0.9</fertilitySensitivity>
-			<leaflessGraphicPath>Plants_Leafless/GreatOak_Leafless</leaflessGraphicPath>
+			<leaflessGraphicPath>Things/Plants/FullGrown/GreatOak_Leafless</leaflessGraphicPath>
 			<growDays>400</growDays>
 			<harvestWork>3000</harvestWork>
 			<harvestYield>150</harvestYield>
@@ -59,7 +59,7 @@
 		<label>scara</label>
 		<description>Scara trees, while often quadruple the size of other trees, still dwarfs its sister genus, the lylses. Its wide trunk supports a wide array of autumn-stained leaves and foliage that quickly shadows the ground in large groups. The elven wood harvested from scaras are more durable and lighter than vanilla wood, and thus consecutively more expensive and stronger.</description>
 		<graphicData>
-			<texPath>Plants/TreeScara</texPath>
+			<texPath>Things/Plants/FullGrown/TreeScara</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<altitudeLayer>Pawn</altitudeLayer>

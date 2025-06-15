@@ -7,7 +7,7 @@
 		<description>The tallest variety of common hardwood tree. While an everyday view and trusted source of shadow for local villagers, Great Oak amazes foreigners with its imposing scale. Grows mostly on black soils, with thick roots reaching far underground. Its broad canopy easily reaches three or even four hundred feet diameter.</description>
 		<thingClass>MedievalOverhaul.Plant_SpawnerOnDestroy</thingClass>
 		<graphicData>
-			<texPath>Plants/GreatOak</texPath>
+			<texPath>Things/Plants/FullGrown/GreatOak</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.55, 0.2, 0.2)</volume>
@@ -26,7 +26,7 @@
 			<fertilityMin>0.8</fertilityMin>
 			<harvestedThingDef>DankPyon_RawDarkWood</harvestedThingDef>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
-			<leaflessGraphicPath>Plants_Leafless/GreatOak_Leafless</leaflessGraphicPath>
+			<leaflessGraphicPath>Things/Plants/FullGrown/GreatOak_Leafless</leaflessGraphicPath>
 			<growDays>300</growDays>
 			<harvestWork>2000</harvestWork>
 			<harvestYield>150</harvestYield>
@@ -83,7 +83,7 @@
 		<description>The smallest of giant trees, iters are distinguished by a thick foliage and an abundance of viscous, sour fruits. During particularly scorching summers they start to form a new leaf terrace, hence iter is commonly used as a symbol of thermophilia and heat protection.</description>
 		<thingClass>MedievalOverhaul.Plant_SpawnerOnDestroy</thingClass>
 		<graphicData>
-			<texPath>Plants/GreatIter</texPath>
+			<texPath>Things/Plants/FullGrown/GreatIter</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.55, 0.2, 0.2)</volume>
@@ -102,7 +102,7 @@
 			<fertilityMin>0.8</fertilityMin>
 			<harvestedThingDef>DankPyon_RawDarkWood</harvestedThingDef>
 			<fertilitySensitivity>0.8</fertilitySensitivity>
-			<leaflessGraphicPath>Plants_Leafless/GreatIter_Leafless</leaflessGraphicPath>
+			<leaflessGraphicPath>Things/Plants/FullGrown/GreatIter_Leafless</leaflessGraphicPath>
 			<growDays>300</growDays>
 			<harvestWork>2000</harvestWork>
 			<harvestYield>150</harvestYield>
@@ -158,7 +158,7 @@
 		<label>great fir</label>
 		<description>Three hundred feet high giant cousins of cedars. Those trees are often called the last guardians of summer, evergreen stretches of hopeful colour, contrasting against the snow. Be wary when traversing a close-knit fir forest, as 10-inch cones can knock down even a knight in full armour.</description>
 		<graphicData>
-			<texPath>Plants/GreatFir</texPath>
+			<texPath>Things/Plants/FullGrown/GreatFir</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<altitudeLayer>Pawn</altitudeLayer>
@@ -206,7 +206,7 @@
     <description>A willow tree that has managed to live for thousands of years.</description>
     <thingClass>MedievalOverhaul.Plant_SpawnerOnDestroy</thingClass>
 	<graphicData>
-      <texPath>Plants/GreatWillow</texPath>
+      <texPath>Things/Plants/FullGrown/GreatWillow</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <shadowData>
         <volume>(0.2, 0.3, 0.13)</volume>
@@ -223,7 +223,7 @@
     <plant>
 		<dieIfLeafless>False</dieIfLeafless> 
 		<growDays>200</growDays>
-		<leaflessGraphicPath>Plants_Leafless/GreatWillow_Leafless</leaflessGraphicPath>
+		<leaflessGraphicPath>Things/Plants/FullGrown/GreatWillow_Leafless</leaflessGraphicPath>
 		<harvestWork>2000</harvestWork>
 		<harvestYield>100</harvestYield>
 		<wildClusterWeight>32</wildClusterWeight>
