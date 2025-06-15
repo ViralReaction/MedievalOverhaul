@@ -227,8 +227,8 @@
 	</KCSG.SymbolDef>
 
 	<KCSG.SymbolDef>
-		<defName>DankPyon_TailorsBench_WoodLog_North</defName>
-		<thing>DankPyon_TailorsBench</thing>
+		<defName>HandTailoringBench_WoodLog_North</defName>
+		<thing>HandTailoringBench</thing>
 		<stuff>WoodLog</stuff>
 	</KCSG.SymbolDef>
 
@@ -702,8 +702,8 @@
 	</KCSG.SymbolDef>
 
 	<KCSG.SymbolDef>
-		<defName>DankPyon_TailorsBench_WoodLog_East</defName>
-		<thing>DankPyon_TailorsBench</thing>
+		<defName>HandTailoringBench_WoodLog_East</defName>
+		<thing>HandTailoringBench</thing>
 		<stuff>WoodLog</stuff>
 		<rotation>East</rotation>
 	</KCSG.SymbolDef>

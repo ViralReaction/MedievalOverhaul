@@ -132,7 +132,7 @@
 				<Crafting>4</Crafting>
 			</skillRequirements>
 			<recipeUsers Inherit="False">
-				<li>DankPyon_TailorsBench</li>
+				<li>HandTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<apparel>

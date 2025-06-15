@@ -27,7 +27,7 @@
 		<recipeMaker>
 			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
 			<recipeUsers>
-				<li>DankPyon_TailorsBench</li>
+				<li>HandTailoringBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<thingCategories>

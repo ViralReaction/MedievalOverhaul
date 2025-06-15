@@ -10,14 +10,6 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="DankPyon_TailorsBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-		<value>
-			<li>VFEM2_TailoringLoom</li>
-			<li>VFEM2_MannequinStand</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="DankPyon_StonecuttingSpot"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 		<value>
 			<li>VFEM2_ChiselRack</li>

@@ -17,7 +17,6 @@
 			<li>Campfire</li>
 			<li>FueledStove</li>
 			<li>ElectricStove</li>
-			<li>DankPyon_RusticCookingTable</li>
 		</recipeUsers>
 		<researchPrerequisites>
 			<li>DankPyon_LeatherTanning</li>
@@ -118,7 +117,6 @@
 			<li>Campfire</li>
 			<li>FueledStove</li>
 			<li>ElectricStove</li>
-			<li>DankPyon_RusticCookingTable</li>
 		</recipeUsers>
 		<researchPrerequisites>
 			<li>DankPyon_LeatherTanning</li>

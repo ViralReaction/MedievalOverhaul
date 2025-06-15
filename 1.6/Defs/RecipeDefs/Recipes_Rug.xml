@@ -11,7 +11,7 @@
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
 		<recipeUsers>
-			<li>DankPyon_TailorsBench</li>
+			<li>HandTailoringBench</li>
 		</recipeUsers>
 		<researchPrerequisites>
 			<li>DankPyon_LeatherTanning</li>

@@ -15,7 +15,6 @@
 			<li>Campfire</li>
 			<li>FueledStove</li>
 			<li>ElectricStove</li>
-			<li>DankPyon_RusticCookingTable</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -63,7 +62,6 @@
 			<li>Campfire</li>
 			<li>FueledStove</li>
 			<li>ElectricStove</li>
-			<li>DankPyon_RusticCookingTable</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -108,7 +106,9 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>100</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -144,7 +144,9 @@
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<workAmount>1000</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -462,7 +464,9 @@
 			<li>DankPyon_BasicCooking</li>
 		</researchPrerequisites>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 	</RecipeDef>
 
@@ -532,7 +536,9 @@
 			<li>DankPyon_BasicCooking</li>
 		</researchPrerequisites>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 	</RecipeDef>
 
@@ -811,7 +817,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>100</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -859,7 +867,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>500</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>	
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -904,7 +914,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>300</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>  	  
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -959,7 +971,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>1000</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li> 
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -1297,7 +1311,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>750</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -1358,7 +1374,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>1500</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -1908,7 +1926,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>150</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -1969,8 +1989,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>750</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
-		  			
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -3018,7 +3039,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>450</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 			<li>DankPyon_RusticHearth</li>
 		</recipeUsers>
 		<ingredients>
@@ -3103,7 +3126,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>2250</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -3188,7 +3213,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>500</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 			<li>DankPyon_RusticHearth</li>
 		</recipeUsers>
 		<ingredients>
@@ -3260,7 +3287,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>1500</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -3896,7 +3925,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>650</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 			<li>DankPyon_RusticHearth</li>
 		</recipeUsers>
 		<ingredients>
@@ -3968,7 +3999,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>1950</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -4040,7 +4073,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>800</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -4130,7 +4165,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>2400</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -4227,7 +4264,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>1100</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -4294,7 +4333,9 @@
 		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<workAmount>2200</workAmount>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -4709,7 +4750,9 @@
 		</skillRequirements>
 		<researchPrerequisite>Pemmican</researchPrerequisite>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 	</RecipeDef>
   
@@ -4791,7 +4834,9 @@
 		</skillRequirements>
 		<researchPrerequisite>Pemmican</researchPrerequisite>
 		<recipeUsers>
-			<li>DankPyon_RusticCookingTable</li>
+			<li>Campfire</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
 		</recipeUsers>
 	</RecipeDef>
 

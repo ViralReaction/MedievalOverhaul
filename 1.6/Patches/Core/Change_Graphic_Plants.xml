@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Corn -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Plant_Corn"]/graphicData/texPath</xpath>
+        <value>
+            <texPath>Things/Plants/FullGrown/MacciPlant</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Plant_Corn"]/plant/immatureGraphicPath</xpath>
+        <value>
+            <immatureGraphicPath>Things/Plants/Immature/MacciPlant</immatureGraphicPath>
+        </value>
+    </Operation>
+
+</Patch>

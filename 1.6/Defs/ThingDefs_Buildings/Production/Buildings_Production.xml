@@ -1,201 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>DankPyon_MiningSpot</defName>
-		<label>mining spot</label>
-		<description>A place for mining minerals. Production here is slow because of the lack of tools.</description>
-		<thingClass>Building_WorkTable</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Production/MiningSpot</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1,1)</drawSize>
-		</graphicData>
-		<altitudeLayer>FloorEmplacement</altitudeLayer>
-		<statBases>
-			<WorkToBuild>0</WorkToBuild>
-			<WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
-		</statBases>
-		<scatterableOnMapGen>false</scatterableOnMapGen>
-		<useHitPoints>false</useHitPoints>
-		<size>(1,1)</size>
-		<designationCategory>Production</designationCategory>
-		<passability>Standable</passability>
-		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-		<surfaceType>Item</surfaceType>
-		<terrainAffordanceNeeded>SmoothableStone</terrainAffordanceNeeded>
-		<inspectorTabs>
-			<li>ITab_Bills</li>
-		</inspectorTabs>
-		<building>
-			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-			<sowTag>SupportPlantsOnly</sowTag>
-			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-			<ai_chillDestination>false</ai_chillDestination>
-			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-			<buildingTags>
-				<li>Production</li>
-			</buildingTags>
-		</building>
-		<comps>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>DankPyon_MiningTools</li>
-				</linkableFacilities>
-			</li>
-			<li Class="CompProperties_ReportWorkSpeed">
-				<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
-			</li>
-		</comps>
-		<designationHotKey>Misc1</designationHotKey>
-		<placeWorkers>
-			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
-			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-		</placeWorkers>
-	</ThingDef>
-
-	<ThingDef ParentName="BuildingBase">
-		<defName>DankPyon_DiggingSpot</defName>
-		<label>digging spot</label>
-		<description>A place for digging the earth. Production here is slow because of the lack of tools.</description>
-		<thingClass>Building_WorkTable</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Production/DiggingSpot</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1,1)</drawSize>
-		</graphicData>
-		<altitudeLayer>FloorEmplacement</altitudeLayer>
-		<statBases>
-			<WorkToBuild>0</WorkToBuild>
-			<WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
-		</statBases>
-		<scatterableOnMapGen>false</scatterableOnMapGen>
-		<useHitPoints>false</useHitPoints>
-		<size>(1,1)</size>
-		<designationCategory>Production</designationCategory>
-		<passability>Standable</passability>
-		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-		<surfaceType>Item</surfaceType>
-		<terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
-		<inspectorTabs>
-			<li>ITab_Bills</li>
-		</inspectorTabs>
-		<building>
-			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-			<sowTag>SupportPlantsOnly</sowTag>
-			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-			<ai_chillDestination>false</ai_chillDestination>
-			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
-			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-			<buildingTags>
-				<li>Production</li>
-			</buildingTags>
-		</building>
-		<comps>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>DankPyon_MiningTools</li>
-				</linkableFacilities>
-			</li>
-			<li Class="CompProperties_ReportWorkSpeed">
-				<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
-			</li>
-		</comps>
-		<designationHotKey>Misc1</designationHotKey>
-		<placeWorkers>
-			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
-			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-		</placeWorkers>
-	</ThingDef>
-
-	<ThingDef ParentName="BuildingBase">
-		<defName>DankPyon_ResearchingSpot</defName>
-		<label>researching spot</label>
-		<description>A place for research simple concepts. Researching here is slow because of the lack of tools.</description>
-		<thingClass>Building_ResearchBench</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Production/CraftingSpot</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1,1)</drawSize>
-		</graphicData>
-		<altitudeLayer>FloorEmplacement</altitudeLayer>
-		<statBases>
-			<WorkToBuild>0</WorkToBuild>
-			<ResearchSpeedFactor>0.5</ResearchSpeedFactor>
-		</statBases>
-		<scatterableOnMapGen>false</scatterableOnMapGen>
-		<useHitPoints>false</useHitPoints>
-		<size>(1,1)</size>
-		<designationCategory>Production</designationCategory>
-		<passability>Standable</passability>
-		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-		<surfaceType>Item</surfaceType>
-		<building>
-			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-			<sowTag>SupportPlantsOnly</sowTag>
-			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-			<ai_chillDestination>false</ai_chillDestination>
-			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-			<buildingTags>
-				<li>Production</li>
-			</buildingTags>
-		</building>
-		<placeWorkers>
-			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-		</placeWorkers>
-	</ThingDef>
-	
-	<ThingDef ParentName="BuildingBase">
-		<defName>DankPyon_WaterSpot</defName>
-		<label>water gathering spot</label>
-		<description>A place for gathering water. Production here is slow because of the lack of tools.</description>
-		<thingClass>Building_WorkTable</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Production/CraftingSpot</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1,1)</drawSize>
-		</graphicData>
-		<uiIconPath>UI/GatherWater</uiIconPath>
-		<altitudeLayer>FloorEmplacement</altitudeLayer>
-		<statBases>
-			<WorkToBuild>0</WorkToBuild>
-			<WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
-		</statBases>
-		<scatterableOnMapGen>false</scatterableOnMapGen>
-		<useHitPoints>false</useHitPoints>
-		<size>(1,1)</size>
-		<designationCategory>Production</designationCategory>
-		<passability>Standable</passability>
-		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-		<surfaceType>Item</surfaceType>
-		<terrainAffordanceNeeded IsNull="True" />
-		<inspectorTabs>
-			<li>ITab_Bills</li>
-		</inspectorTabs>
-		<building>
-			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-			<sowTag>SupportPlantsOnly</sowTag>
-			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-			<ai_chillDestination>false</ai_chillDestination>
-			<wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
-			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-			<buildingTags>
-				<li>Production</li>
-			</buildingTags>
-		</building>
-		<designationHotKey>Misc1</designationHotKey>
-		<placeWorkers>
-			<li>MedievalOverhaul.PlaceWorker_WaterGather</li>
-			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-		</placeWorkers>
-	</ThingDef>
-
 	<ThingDef ParentName="BenchBase">
 		<defName>DankPyon_StonecuttingSpot</defName>
 		<label>stonecutter's block</label>
@@ -238,6 +43,8 @@
 		</recipes>
 		<size>(1,1)</size>
 		<designationCategory>Production</designationCategory>
+		<uiOrder>2299</uiOrder>
+		<uiIconScale>0.85</uiIconScale>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
@@ -297,6 +104,8 @@
 		</statBases>
 		<size>(1,1)</size>
 		<designationCategory>Production</designationCategory>
+		<uiOrder>2099</uiOrder>
+		<uiIconScale>0.85</uiIconScale>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
@@ -394,93 +203,6 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
-		<defName>DankPyon_RusticCookingTable</defName>
-		<label>rustic cooking table</label>
-		<description>A wood-fueled oven with an attached countertop for preparing meals.</description>
-		<thingClass>Building_WorkTable_HeatPush</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Production/RusticCookingTable</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(3.5,1.5)</drawSize>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-			</damageData>
-		</graphicData>
-		<castEdgeShadows>true</castEdgeShadows>
-		<staticSunShadowHeight>0.20</staticSunShadowHeight>
-		<costList>
-			<WoodLog>60</WoodLog>
-		</costList>
-		<costStuffCount>20</costStuffCount>
-		<stuffCategories>
-			<li>Stony</li>
-		</stuffCategories>
-		<recipes>
-			<li>CookMealSimple</li>
-			<li>CookMealFine</li>
-			<li>CookMealFine_Veg</li>
-			<li>CookMealFine_Meat</li>
-			<li>CookMealLavish</li>
-			<li>CookMealLavish_Veg</li>
-			<li>CookMealLavish_Meat</li>
-			<li>CookMealSurvival</li>
-			<li>CookMealSimpleBulk</li>
-			<li>CookMealFineBulk</li>
-			<li>CookMealFineBulk_Veg</li>
-			<li>CookMealFineBulk_Meat</li>
-			<li>CookMealLavishBulk</li>
-			<li>CookMealLavishBulk_Veg</li>
-			<li>CookMealLavishBulk_Meat</li>
-			<li>CookMealSurvivalBulk</li>
-			<li>Make_Pemmican</li>
-			<li>Make_PemmicanBulk</li>
-			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFood</li>
-			<li MayRequire="Ludeon.RimWorld.Biotech">Make_BabyFoodBulk</li>
-		</recipes>
-		<comps>
-			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>160.0</fuelConsumptionRate>
-				<fuelCapacity>50.0</fuelCapacity>
-				<fuelFilter>
-					<thingDefs>
-						<li>DankPyon_Coal</li>
-						<li>DankPyon_Tar</li>
-					</thingDefs>
-					<categories>
-						<li>DankPyon_RawWood</li>
-						<li>DankPyon_Wood</li>
-					</categories>
-				</fuelFilter>
-				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
-				<fuelIconPath>UI/IconRawWood</fuelIconPath>
-			</li>
-			<li Class="CompProperties_HeatPusher">
-				<compClass>CompHeatPusherPowered</compClass>
-				<heatPerSecond>4</heatPerSecond>
-			</li>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>DankPyon_RusticCookingTools</li>
-				</linkableFacilities>
-			</li>
-			<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
-		</comps>
-		<building>
-			<isMealSource>true</isMealSource>
-			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-			<heatPerTickWhileWorking>0.10</heatPerTickWhileWorking>
-		</building>
-		<inspectorTabs>
-			<li>MedievalOverhaul.ITab_Fuel</li>
-		</inspectorTabs>
-	</ThingDef>
-
-	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
 		<defName>DankPyon_StoneOven</defName>
 		<label>rustic oven</label>
 		<thingClass>Building_WorkTable_HeatPush</thingClass>
@@ -561,8 +283,8 @@
 			</damageData>
 		</graphicData>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<uiIconScale>0.70</uiIconScale>
 		<size>(2,2)</size>
-		<uiIconScale>0.85</uiIconScale>
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>
@@ -1308,56 +1030,56 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<ThingDef ParentName="DankPyon_1X3WorkbenchBase">
-		<defName>DankPyon_TailorsBench</defName>
-		<label>tailor's bench</label>
-		<description>A wooden worktable for sewing and stitching fabrics to produce wearable clothing.</description>
-		<thingClass>Building_WorkTable</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Production/TailorsBench</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(3.5,1.5)</drawSize>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-			</damageData>
-		</graphicData>
-		<castEdgeShadows>true</castEdgeShadows>
-		<staticSunShadowHeight>0.20</staticSunShadowHeight>
-		<costStuffCount>75</costStuffCount>
-		<stuffCategories>
-			<li>Woody</li>
-		</stuffCategories>
-		<comps>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>DankPyon_ToolRack</li>
-				</linkableFacilities>
-			</li>
-		</comps>
-		<designationCategory>Production</designationCategory>
-		<passability>PassThroughOnly</passability>
-		<pathCost>50</pathCost>
-		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-		<surfaceType>Item</surfaceType>
-		<recipes>
-			<li>Make_Patchleather</li>
-		</recipes>
-		<building>
-			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-		</building>
-		<placeWorkers>
-			<li>PlaceWorker_ShowFacilitiesConnections</li>
-			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-		</placeWorkers>
-		<researchPrerequisites>
-			<li>DankPyon_Tailoring</li>
-		</researchPrerequisites>
-	</ThingDef>
+	<!-- <ThingDef ParentName="DankPyon_1X3WorkbenchBase"> -->
+		<!-- <defName>HandTailoringBench</defName> -->
+		<!-- <label>tailor's bench</label> -->
+		<!-- <description>A wooden worktable for sewing and stitching fabrics to produce wearable clothing.</description> -->
+		<!-- <thingClass>Building_WorkTable</thingClass> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Things/Building/Production/TailorsBench</texPath> -->
+			<!-- <graphicClass>Graphic_Multi</graphicClass> -->
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <drawSize>(3.5,1.5)</drawSize> -->
+			<!-- <damageData> -->
+				<!-- <cornerTL>Damage/Corner</cornerTL> -->
+				<!-- <cornerTR>Damage/Corner</cornerTR> -->
+				<!-- <cornerBL>Damage/Corner</cornerBL> -->
+				<!-- <cornerBR>Damage/Corner</cornerBR> -->
+			<!-- </damageData> -->
+		<!-- </graphicData> -->
+		<!-- <castEdgeShadows>true</castEdgeShadows> -->
+		<!-- <staticSunShadowHeight>0.20</staticSunShadowHeight> -->
+		<!-- <costStuffCount>75</costStuffCount> -->
+		<!-- <stuffCategories> -->
+			<!-- <li>Woody</li> -->
+		<!-- </stuffCategories> -->
+		<!-- <comps> -->
+			<!-- <li Class="CompProperties_AffectedByFacilities"> -->
+				<!-- <linkableFacilities> -->
+					<!-- <li>DankPyon_ToolRack</li> -->
+				<!-- </linkableFacilities> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+		<!-- <designationCategory>Production</designationCategory> -->
+		<!-- <passability>PassThroughOnly</passability> -->
+		<!-- <pathCost>50</pathCost> -->
+		<!-- <hasInteractionCell>True</hasInteractionCell> -->
+		<!-- <interactionCellOffset>(0,0,-1)</interactionCellOffset> -->
+		<!-- <surfaceType>Item</surfaceType> -->
+		<!-- <recipes> -->
+			<!-- <li>Make_Patchleather</li> -->
+		<!-- </recipes> -->
+		<!-- <building> -->
+			<!-- <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity> -->
+		<!-- </building> -->
+		<!-- <placeWorkers> -->
+			<!-- <li>PlaceWorker_ShowFacilitiesConnections</li> -->
+			<!-- <li>PlaceWorker_PreventInteractionSpotOverlap</li> -->
+		<!-- </placeWorkers> -->
+		<!-- <researchPrerequisites> -->
+			<!-- <li>DankPyon_Tailoring</li> -->
+		<!-- </researchPrerequisites> -->
+	<!-- </ThingDef> -->
 
 	<ThingDef ParentName="BenchBase">
 		<defName>DankPyon_Furnace</defName>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Rustic Stove -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="FueledStove"]/graphicData/texPath</xpath>
+            <value>
+                <texPath>Things/Building/Production/RusticCookingTable</texPath>
+            </value>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="FueledStove"]/graphicData/shaderType</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="FueledStove"]/graphicData</xpath>
+            <value>
+                <shaderType>CutoutComplex</shaderType>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="FueledStove"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="FueledStove"]/constructEffect</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="FueledStove"]/costList</xpath>
+        <value>
+            <costList>
+                <WoodLog>60</WoodLog>
+            </costList>
+            <costStuffCount>20</costStuffCount>
+            <stuffCategories>
+                <li>Stony</li>
+            </stuffCategories>
+        </value>
+    </Operation>
+
+    <!-- Rustic Tailor -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="HandTailoringBench"]/graphicData/texPath</xpath>
+        <value>
+            <texPath>Things/Building/Production/TailorsBench</texPath>
+        </value>
+    </Operation>
+
+    <!-- Brewery Table -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Brewery"]/graphicData/texPath</xpath>
+        <value>
+            <texPath>Things/Building/Production/TableBreweryStuffed</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Brewery"]/graphicData/shaderType</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Brewery"]/graphicData</xpath>
+            <value>
+                <shaderType>CutoutComplex</shaderType>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Brewery"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="Brewery"]/constructEffect</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Brewery"]/costList</xpath>
+        <value>
+            <costList>
+                <WoodLog>120</WoodLog>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Brewery"]/costStuffCount</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Brewery"]</xpath>
+            <value>
+                <costStuffCount/>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Brewery"]/stuffCategories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Brewery"]</xpath>
+            <value>
+                <stuffCategories/>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Brewery"]/stuffCategories</xpath>
+        <value>
+            <stuffCategories>
+                <li>Woody</li>
+                <li>Stony</li>
+                <li>Metallic</li>
+            </stuffCategories>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Brewery"]/costStuffCount</xpath>
+        <value>
+            <costStuffCount>30</costStuffCount>
+        </value>
+    </Operation>
+
+    <!-- Fermenting Barrel -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="FermentingBarrel"]/graphicData/texPath</xpath>
+        <value>
+            <texPath>Things/Building/Production/RusticFermentingBarrel</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="FermentingBarrel"]/graphicData/drawSize</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="FermentingBarrel"]/graphicData</xpath>
+            <value>
+                <drawSize/>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="FermentingBarrel"]/graphicData/drawSize</xpath>
+        <value>
+            <drawSize>2,2</drawSize>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="FermentingBarrel"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="FermentingBarrel"]/constructEffect</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="FermentingBarrel"]/costList</xpath>
+        <value>
+            <costStuffCount>40</costStuffCount>
+            <stuffCategories>
+                <li>Woody</li>
+            </stuffCategories>
+            <uiIconScale>0.65</uiIconScale>
+        </value>
+    </Operation>
+
+</Patch>

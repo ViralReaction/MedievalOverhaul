@@ -68,23 +68,6 @@
 	</WorkGiverDef>
 
 	<WorkGiverDef>
-		<defName>DankPyon_DoBillsRusticCookingTable</defName>
-		<label>cook meals</label>
-		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Cooking</workType>
-		<priorityInType>110</priorityInType>
-		<fixedBillGiverDefs>
-			<li>DankPyon_RusticCookingTable</li>
-		</fixedBillGiverDefs>
-		<verb>cook</verb>
-		<gerund>cooking at</gerund>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-		<prioritizeSustains>true</prioritizeSustains>
-	</WorkGiverDef>
-
-	<WorkGiverDef>
 		<defName>DankPyon_DoBillsStewPot</defName>
 		<label>cook soup</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
@@ -258,7 +241,7 @@
 		<workType>Tailoring</workType>
 		<priorityInType>110</priorityInType>
 		<fixedBillGiverDefs>
-			<li>DankPyon_TailorsBench</li>
+			<li>HandTailoringBench</li>
 		</fixedBillGiverDefs>
 		<verb>tailor</verb>
 		<gerund>tailoring at</gerund>
