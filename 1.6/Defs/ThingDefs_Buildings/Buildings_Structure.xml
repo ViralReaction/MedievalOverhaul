@@ -447,7 +447,7 @@
 		<building>
 			<paintable>false</paintable>
 			<blueprintGraphicData>
-				<texPath>Buildings/Linked/Tent_Blueprint</texPath>
+				<texPath>Buildings/Linked/HideTent_Blueprint</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands>
 				<li>Door</li>
