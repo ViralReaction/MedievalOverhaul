@@ -197,7 +197,7 @@
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
-        <texPath>Things/Building/Linked/HideTent_Atlas</texPath>
+        <texPath>Buildings/Linked/Tent/Tent_Atlas_Hide</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <linkType>Basic</linkType>
         <linkFlags>
@@ -289,7 +289,7 @@
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
-        <texPath>Things/Building/Linked/Tent_Atlas</texPath>
+        <texPath>Buildings/Linked/Tent/Tent_Atlas_Textile</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <linkType>Basic</linkType>
         <linkFlags>
