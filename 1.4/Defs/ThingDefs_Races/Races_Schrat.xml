@@ -106,7 +106,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/SchratDark</texPath>
+          <texPath>Things/Pawn/Animal/SchratDark</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>4.8</drawSize>
         </bodyGraphicData>
@@ -144,7 +144,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/SchratPlain</texPath>
+          <texPath>Things/Pawn/Animal/SchratPlain</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>4.2</drawSize>
         </bodyGraphicData>

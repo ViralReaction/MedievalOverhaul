@@ -54,7 +54,7 @@
 			<xpath>/Defs/ResearchProjectDef[defName="NobleApparel"]/prerequisites</xpath>
 			<value>
 				<prerequisites>
-						<li>DankPyon_Tailoring</li>
+						<li>ComplexClothing</li>
 				</prerequisites>
 			</value>
 		</match>

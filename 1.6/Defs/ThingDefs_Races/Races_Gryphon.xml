@@ -154,7 +154,7 @@
 			<li>
 				<label>Chick</label>
 				<bodyGraphicData>
-					<texPath>Animal/Griffon</texPath>
+					<texPath>Things/Pawn/Animal/Griffon</texPath>
 					<drawSize>2.8</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -162,13 +162,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/Dessicated_Griffon</texPath>
+					<texPath>Things/Pawn/Animal/Dessicated_Griffon</texPath>
 					<drawSize>2.8</drawSize>
 					</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/Griffon</texPath>
+					<texPath>Things/Pawn/Animal/Griffon</texPath>
 					<drawSize>3.8</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -176,13 +176,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/Dessicated_Griffon</texPath>
+					<texPath>Things/Pawn/Animal/Dessicated_Griffon</texPath>
 					<drawSize>3.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/Griffon</texPath>
+					<texPath>Things/Pawn/Animal/Griffon</texPath>
 					<drawSize>4.4</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -190,7 +190,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/Dessicated_Griffon</texPath>
+					<texPath>Things/Pawn/Animal/Dessicated_Griffon</texPath>
 					<drawSize>4.4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

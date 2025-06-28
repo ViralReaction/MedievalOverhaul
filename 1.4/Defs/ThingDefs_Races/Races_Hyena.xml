@@ -146,7 +146,7 @@
         <label>Hyena cub</label>
         <labelPlural>Hyena cubs</labelPlural>
         <bodyGraphicData>
-          <texPath>Animal/Hyena</texPath>
+          <texPath>Things/Pawn/Animal/Hyena</texPath>
           <drawSize>1.05</drawSize>
 		  <shadowData>
             <volume>(0.2, 0.2, 0.2)</volume>
@@ -160,7 +160,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/Hyena</texPath>
+          <texPath>Things/Pawn/Animal/Hyena</texPath>
           <drawSize>1.5</drawSize>
           <shadowData>
             <volume>(0.25, 0.3, 0.25)</volume>
@@ -174,7 +174,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/Hyena</texPath>
+          <texPath>Things/Pawn/Animal/Hyena</texPath>
           <drawSize>1.95</drawSize>
           <shadowData>
             <volume>(0.3, 0.4, 0.3)</volume>

@@ -105,7 +105,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/SaplingDark</texPath>
+					<texPath>Things/Pawn/Animal/SaplingDark</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>3</drawSize>
 				</bodyGraphicData>
@@ -138,7 +138,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/SaplingPlain</texPath>
+					<texPath>Things/Pawn/Animal/SaplingPlain</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>3</drawSize>
 				</bodyGraphicData>

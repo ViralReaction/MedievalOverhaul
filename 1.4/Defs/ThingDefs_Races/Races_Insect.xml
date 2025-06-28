@@ -88,27 +88,27 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/Deathstinger</texPath>
+          <texPath>Things/Pawn/Animal/Deathstinger</texPath>
           <drawSize>1</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_Deathstinger</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_Deathstinger</texPath>
           <drawSize>1</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/Deathstinger</texPath>
+          <texPath>Things/Pawn/Animal/Deathstinger</texPath>
           <drawSize>1.25</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_Deathstinger</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_Deathstinger</texPath>
           <drawSize>1.25</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/Deathstinger</texPath>
+          <texPath>Things/Pawn/Animal/Deathstinger</texPath>
           <drawSize>1.5</drawSize>
           <shadowData>
             <volume>(0.2, 0.3, 0.2)</volume>
@@ -116,7 +116,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_Deathstinger</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_Deathstinger</texPath>
           <drawSize>1.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>

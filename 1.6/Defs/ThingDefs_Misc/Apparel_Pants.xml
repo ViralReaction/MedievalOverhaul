@@ -6,7 +6,7 @@
 		<label>hose</label>
 		<description>A standard pair of clothing for burghers and nobility alike.</description>
 		<recipeMaker>
-			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/Legwear/Hose</texPath>

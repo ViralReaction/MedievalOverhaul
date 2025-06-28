@@ -571,24 +571,24 @@
 	</ResearchProjectDef-->
 
 	<!--=========================== Apparel ==============================-->
-	<ResearchProjectDef>
-		<defName>DankPyon_Tailoring</defName>
-		<label>tailoring</label>
-		<description>Learn how to sew everyday garments, fit for civillian.</description>
-		<baseCost>300</baseCost>
-		<tab>DankPyon_MedievalResearchTab</tab>
-		<techLevel>Medieval</techLevel>
-		<researchViewX>6</researchViewX>
-		<researchViewY>2.40</researchViewY>
-		<prerequisites>
-			<li>DankPyon_RusticFurniture</li>
-		</prerequisites>
-		<generalRules>
-			<rulesStrings>
-				<li>subject->tailoring</li>
-			</rulesStrings>
-		</generalRules>
-	</ResearchProjectDef>
+	<!-- <ResearchProjectDef> -->
+		<!-- <defName>DankPyon_Tailoring</defName> -->
+		<!-- <label>tailoring</label> -->
+		<!-- <description>Learn how to sew everyday garments, fit for civillian.</description> -->
+		<!-- <baseCost>300</baseCost> -->
+		<!-- <tab>DankPyon_MedievalResearchTab</tab> -->
+		<!-- <techLevel>Medieval</techLevel> -->
+		<!-- <researchViewX>6</researchViewX> -->
+		<!-- <researchViewY>2.40</researchViewY> -->
+		<!-- <prerequisites> -->
+			<!-- <li>DankPyon_RusticFurniture</li> -->
+		<!-- </prerequisites> -->
+		<!-- <generalRules> -->
+			<!-- <rulesStrings> -->
+				<!-- <li>subject->tailoring</li> -->
+			<!-- </rulesStrings> -->
+		<!-- </generalRules> -->
+	<!-- </ResearchProjectDef> -->
 
 	<ResearchProjectDef>
 		<defName>DankPyon_ProtectiveClothing</defName>
@@ -600,7 +600,7 @@
 		<researchViewX>8</researchViewX>
 		<researchViewY>1.8</researchViewY>
 		<prerequisites>
-			<li>DankPyon_Tailoring</li>
+			<li>ComplexClothing</li>
 		</prerequisites>
 		<generalRules>
 			<rulesStrings>

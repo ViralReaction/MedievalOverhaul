@@ -152,7 +152,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/Daer</texPath>
+          <texPath>Things/Pawn/Animal/Daer</texPath>
           <drawSize>2.5</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
@@ -166,7 +166,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/Daer</texPath>
+          <texPath>Things/Pawn/Animal/Daer</texPath>
           <drawSize>4.0</drawSize>
           <shadowData>
             <volume>(0.7, 0.6, 0.4)</volume>
@@ -180,7 +180,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/Daer</texPath>
+          <texPath>Things/Pawn/Animal/Daer</texPath>
           <drawSize>4.8</drawSize>
           <shadowData>
             <volume>(1, 0.8, 0.5)</volume>

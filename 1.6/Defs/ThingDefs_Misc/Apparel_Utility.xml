@@ -25,7 +25,7 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<recipeMaker>
-			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 			<recipeUsers>
 				<li>HandTailoringBench</li>
 			</recipeUsers>

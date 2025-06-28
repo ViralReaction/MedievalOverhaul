@@ -116,7 +116,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/GolemIron</texPath>
+					<texPath>Things/Pawn/Animal/GolemIron</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>3.8</drawSize>
 					<shadowData>
@@ -208,7 +208,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/GolemGold</texPath>
+					<texPath>Things/Pawn/Animal/GolemGold</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>3.8</drawSize>
 					<shadowData>
@@ -297,7 +297,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/GolemSteel</texPath>
+					<texPath>Things/Pawn/Animal/GolemSteel</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>3.8</drawSize>
 					<shadowData>
@@ -385,7 +385,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/GolemSilver</texPath>
+					<texPath>Things/Pawn/Animal/GolemSilver</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>3.8</drawSize>
 					<shadowData>

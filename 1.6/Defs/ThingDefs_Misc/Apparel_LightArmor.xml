@@ -70,7 +70,7 @@
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
-			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
@@ -131,7 +131,7 @@
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
-			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -192,7 +192,7 @@
 			<skillRequirements>
 				<Crafting>4</Crafting>
 			</skillRequirements>
-			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
 		<stuffCategories>
 			<li>Fabric</li>

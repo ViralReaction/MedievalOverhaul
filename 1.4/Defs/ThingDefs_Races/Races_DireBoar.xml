@@ -147,7 +147,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/DireBoar</texPath>
+          <texPath>Things/Pawn/Animal/DireBoar</texPath>
           <drawSize>1.4</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
@@ -155,13 +155,13 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_DireBoar</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_DireBoar</texPath>
           <drawSize>1.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/DireBoar</texPath>
+          <texPath>Things/Pawn/Animal/DireBoar</texPath>
           <drawSize>2</drawSize>
           <shadowData>
             <volume>(0.7, 0.6, 0.4)</volume>
@@ -169,13 +169,13 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_DireBoar</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_DireBoar</texPath>
           <drawSize>2</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/DireBoar</texPath>
+          <texPath>Things/Pawn/Animal/DireBoar</texPath>
           <drawSize>2.7</drawSize>
           <shadowData>
             <volume>(1, 0.8, 0.5)</volume>
@@ -183,7 +183,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_DireBoar</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_DireBoar</texPath>
           <drawSize>2.7</drawSize>
         </dessicatedBodyGraphicData>
         <butcherBodyPart>

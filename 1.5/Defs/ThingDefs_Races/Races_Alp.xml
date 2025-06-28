@@ -179,13 +179,13 @@
 		<defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
 		<alternateGraphicChance>0.33</alternateGraphicChance>
 		<alternateGraphics>
-			<li><texPath>Animal/Alp2</texPath></li>
-			<li><texPath>Animal/Alp3</texPath></li>
+			<li><texPath>Things/Pawn/Animal/Alp2</texPath></li>
+			<li><texPath>Things/Pawn/Animal/Alp3</texPath></li>
 		</alternateGraphics>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/Alp1</texPath>
+					<texPath>Things/Pawn/Animal/Alp1</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>

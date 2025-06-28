@@ -111,7 +111,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/ForestCobra</texPath>
+          <texPath>Things/Pawn/Animal/ForestCobra</texPath>
           <drawSize>1.05</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -121,7 +121,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/ForestCobra</texPath>
+          <texPath>Things/Pawn/Animal/ForestCobra</texPath>
           <drawSize>1.5</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -131,7 +131,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/ForestCobra</texPath>
+          <texPath>Things/Pawn/Animal/ForestCobra</texPath>
           <drawSize>2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -186,7 +186,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/CaveCobra</texPath>
+          <texPath>Things/Pawn/Animal/CaveCobra</texPath>
           <drawSize>1.05</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -196,7 +196,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/CaveCobra</texPath>
+          <texPath>Things/Pawn/Animal/CaveCobra</texPath>
           <drawSize>1.6</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -206,7 +206,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/CaveCobra</texPath>
+          <texPath>Things/Pawn/Animal/CaveCobra</texPath>
           <drawSize>2.1</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -314,31 +314,31 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/ForestGiantConstrictor</texPath>
+          <texPath>Things/Pawn/Animal/ForestGiantConstrictor</texPath>
           <drawSize>2.05</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_GiantConstrictor</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_GiantConstrictor</texPath>
           <drawSize>2.05</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/ForestGiantConstrictor</texPath>
+          <texPath>Things/Pawn/Animal/ForestGiantConstrictor</texPath>
           <drawSize>3.6</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_GiantConstrictor</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_GiantConstrictor</texPath>
           <drawSize>3.6</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/ForestGiantConstrictor</texPath>
+          <texPath>Things/Pawn/Animal/ForestGiantConstrictor</texPath>
           <drawSize>4.4</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_GiantConstrictor</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_GiantConstrictor</texPath>
           <drawSize>4.4</drawSize>
         </dessicatedBodyGraphicData>
         <butcherBodyPart>
@@ -384,31 +384,31 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/CaveGiantConstrictor</texPath>
+          <texPath>Things/Pawn/Animal/CaveGiantConstrictor</texPath>
           <drawSize>2.05</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_GiantConstrictor</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_GiantConstrictor</texPath>
           <drawSize>2.05</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/CaveGiantConstrictor</texPath>
+          <texPath>Things/Pawn/Animal/CaveGiantConstrictor</texPath>
           <drawSize>3.7</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_GiantConstrictor</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_GiantConstrictor</texPath>
           <drawSize>3.7</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/CaveGiantConstrictor</texPath>
+          <texPath>Things/Pawn/Animal/CaveGiantConstrictor</texPath>
           <drawSize>4.55</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_GiantConstrictor</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_GiantConstrictor</texPath>
           <drawSize>4.55</drawSize>
         </dessicatedBodyGraphicData>
         <butcherBodyPart>
@@ -574,7 +574,7 @@
         <label>lindwurm hatchling</label>
         <labelPlural>lindwurm hatchlings</labelPlural>
         <bodyGraphicData>
-          <texPath>Animal/LindwurmForest</texPath>
+          <texPath>Things/Pawn/Animal/LindwurmForest</texPath>
           <drawSize>2.5</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
@@ -582,13 +582,13 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_Lindwurm</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_Lindwurm</texPath>
           <drawSize>2.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/LindwurmForest</texPath>
+          <texPath>Things/Pawn/Animal/LindwurmForest</texPath>
           <drawSize>4.0</drawSize>
           <shadowData>
             <volume>(0.7, 0.6, 0.4)</volume>
@@ -596,13 +596,13 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_Lindwurm</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_Lindwurm</texPath>
           <drawSize>4.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/LindwurmForest</texPath>
+          <texPath>Things/Pawn/Animal/LindwurmForest</texPath>
           <drawSize>4.8</drawSize>
           <shadowData>
             <volume>(1, 0.8, 0.5)</volume>
@@ -610,7 +610,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_Lindwurm</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_Lindwurm</texPath>
           <drawSize>4.8</drawSize>
         </dessicatedBodyGraphicData>
         <butcherBodyPart>
@@ -656,7 +656,7 @@
         <label>lindwurm hatchling</label>
         <labelPlural>lindwurm hatchlings</labelPlural>
         <bodyGraphicData>
-          <texPath>Animal/LindwurmCave</texPath>
+          <texPath>Things/Pawn/Animal/LindwurmCave</texPath>
           <drawSize>2.5</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
@@ -664,13 +664,13 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_Lindwurm</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_Lindwurm</texPath>
           <drawSize>2.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/LindwurmCave</texPath>
+          <texPath>Things/Pawn/Animal/LindwurmCave</texPath>
           <drawSize>4.0</drawSize>
           <shadowData>
             <volume>(0.7, 0.6, 0.4)</volume>
@@ -678,13 +678,13 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_Lindwurm</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_Lindwurm</texPath>
           <drawSize>4.0</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/LindwurmCave</texPath>
+          <texPath>Things/Pawn/Animal/LindwurmCave</texPath>
           <drawSize>4.9</drawSize>
           <shadowData>
             <volume>(1, 0.8, 0.5)</volume>
@@ -692,7 +692,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_Lindwurm</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_Lindwurm</texPath>
           <drawSize>4.9</drawSize>
         </dessicatedBodyGraphicData>
         <butcherBodyPart>

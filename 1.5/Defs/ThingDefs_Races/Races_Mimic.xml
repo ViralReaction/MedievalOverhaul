@@ -182,14 +182,14 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/Mimic</texPath>
+					<texPath>Things/Pawn/Animal/Mimic</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
 					<color>(133,97,67)</color>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/Mimic</texPath>
+					<texPath>Things/Pawn/Animal/Mimic</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -205,14 +205,14 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/Mimic</texPath>
+					<texPath>Things/Pawn/Animal/Mimic</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
 					<color>(112,91,76)</color>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/Mimic</texPath>
+					<texPath>Things/Pawn/Animal/Mimic</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -401,12 +401,12 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/RoyalMimic</texPath>
+					<texPath>Things/Pawn/Animal/RoyalMimic</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/RoyalMimic</texPath>
+					<texPath>Things/Pawn/Animal/RoyalMimic</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

@@ -141,7 +141,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/Ghoul1</texPath>
+					<texPath>Things/Pawn/Animal/Ghoul1</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -298,7 +298,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/Ghoul2</texPath>
+					<texPath>Things/Pawn/Animal/Ghoul2</texPath>
 					<drawSize>2.2</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -306,7 +306,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/Dessicated_Ghoul2_east</texPath>
+					<texPath>Things/Pawn/Animal/Dessicated_Ghoul2_east</texPath>
 					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -469,7 +469,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/Ghoul3</texPath>
+					<texPath>Things/Pawn/Animal/Ghoul3</texPath>
 					<drawSize>3.5</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -477,7 +477,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/Dessicated_Ghoul3_east</texPath>
+					<texPath>Things/Pawn/Animal/Dessicated_Ghoul3_east</texPath>
 					<drawSize>3.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

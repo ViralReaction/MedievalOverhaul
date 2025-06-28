@@ -240,7 +240,7 @@
 		</placeWorkers>
 		<techLevel>Industrial</techLevel>
 		<researchPrerequisites>
-			<li>DankPyon_Tailoring</li>
+			<li>ComplexClothing</li>
 			<li>Electricity</li>
 		</researchPrerequisites>
 	</ThingDef>

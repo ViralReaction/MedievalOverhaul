@@ -141,7 +141,7 @@
 				<label>Rox calf</label>
 				<labelPlural>Rox calves</labelPlural>
 				<bodyGraphicData>
-					<texPath>Animal/Rox</texPath>
+					<texPath>Things/Pawn/Animal/Rox</texPath>
 					<drawSize>2.2</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -149,13 +149,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/Dessicated_Rox</texPath>
+					<texPath>Things/Pawn/Animal/Dessicated_Rox</texPath>
 					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/Rox</texPath>
+					<texPath>Things/Pawn/Animal/Rox</texPath>
 					<drawSize>3</drawSize>
 					<shadowData>
 						<volume>(0.7, 0.6, 0.4)</volume>
@@ -163,13 +163,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/Dessicated_Rox</texPath>
+					<texPath>Things/Pawn/Animal/Dessicated_Rox</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/Rox</texPath>
+					<texPath>Things/Pawn/Animal/Rox</texPath>
 					<drawSize>4.2</drawSize>
 					<shadowData>
 						<volume>(1, 0.8, 0.5)</volume>
@@ -177,7 +177,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/Dessicated_Rox</texPath>
+					<texPath>Things/Pawn/Animal/Dessicated_Rox</texPath>
 					<drawSize>4.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

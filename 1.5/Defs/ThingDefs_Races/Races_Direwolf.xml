@@ -153,18 +153,18 @@
 				<label>Direwolf puppy</label>
 				<labelPlural>Direwolf puppies</labelPlural>
 				<bodyGraphicData>
-					<texPath>Animal/WhiteDirewolf</texPath>
+					<texPath>Things/Pawn/Animal/WhiteDirewolf</texPath>
 					<drawSize>1.05</drawSize>
 					<!--color>(123,104,89)</color-->
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/Dessicated_WhiteDirewol</texPath>
+					<texPath>Things/Pawn/Animal/Dessicated_WhiteDirewol</texPath>
 					<drawSize>1.05</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/WhiteDirewolf</texPath>
+					<texPath>Things/Pawn/Animal/WhiteDirewolf</texPath>
 					<drawSize>1.7</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -172,13 +172,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/Dessicated_WhiteDirewol</texPath>
+					<texPath>Things/Pawn/Animal/Dessicated_WhiteDirewol</texPath>
 					<drawSize>1.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/WhiteDirewolf</texPath>
+					<texPath>Things/Pawn/Animal/WhiteDirewolf</texPath>
 					<drawSize>2.15</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -186,7 +186,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/Dessicated_WhiteDirewol</texPath>
+					<texPath>Things/Pawn/Animal/Dessicated_WhiteDirewol</texPath>
 					<drawSize>2.15</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

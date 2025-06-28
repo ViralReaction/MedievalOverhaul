@@ -14,7 +14,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Animal/CaveGiantConstrictor</texPath>
+          <texPath>Things/Pawn/Animal/CaveGiantConstrictor</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>4.55</drawSize>
           <shadowData>
@@ -22,7 +22,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Animal/Dessicated_GiantConstrictor</texPath>
+          <texPath>Things/Pawn/Animal/Dessicated_GiantConstrictor</texPath>
           <drawSize>4.55</drawSize>
         </dessicatedBodyGraphicData>
         <butcherBodyPart>

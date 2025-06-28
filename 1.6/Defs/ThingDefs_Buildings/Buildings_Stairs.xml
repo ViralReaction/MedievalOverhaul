@@ -22,7 +22,7 @@
 		<rotatable>false</rotatable>
 	
 		<researchPrerequisites>
-			<li>DankPyon_Tailoring</li>
+			<li>ComplexClothing</li>
 		</researchPrerequisites>
 
 		<!--For Testing-->

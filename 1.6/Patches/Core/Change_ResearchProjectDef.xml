@@ -71,96 +71,96 @@
 	</Operation>
 
 	<!-- ============================ Core Research Project Prerequisite Add ========================== -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/researchViewX</xpath>
-        <value>
-            <researchViewX>0.00</researchViewX>
-        </value>
-    </Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/researchViewX</xpath>
+		<value>
+			<researchViewX>0.00</researchViewX>
+		</value>
+	</Operation>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/researchViewY</xpath>
-        <value>
-            <researchViewY>0.00</researchViewY>
-        </value>
-    </Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/researchViewY</xpath>
+		<value>
+			<researchViewY>0.00</researchViewY>
+		</value>
+	</Operation>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Cocoa"]/researchViewX</xpath>
-        <value>
-            <researchViewX>2.00</researchViewX>
-        </value>
-    </Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Cocoa"]/researchViewX</xpath>
+		<value>
+			<researchViewX>2.00</researchViewX>
+		</value>
+	</Operation>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Cocoa"]/researchViewY</xpath>
-        <value>
-            <researchViewY>0.00</researchViewY>
-        </value>
-    </Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Cocoa"]/researchViewY</xpath>
+		<value>
+			<researchViewY>0.00</researchViewY>
+		</value>
+	</Operation>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Cocoa"]/label</xpath>
-        <value>
-            <label>Fruit tree sowing</label>
-        </value>
-    </Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Cocoa"]/label</xpath>
+		<value>
+			<label>Fruit tree sowing</label>
+		</value>
+	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Brewing"]/researchViewX</xpath>
-        <value>
-          <researchViewX>4.0</researchViewX>
-        </value>
-    </Operation>
+		<xpath>Defs/ResearchProjectDef[defName="Brewing"]/researchViewX</xpath>
+		<value>
+			<researchViewX>4.0</researchViewX>
+		</value>
+	</Operation>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Brewing"]/researchViewY</xpath>
-        <value>
-				<researchViewY>0.00</researchViewY>
-        </value>
-    </Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Brewing"]/researchViewY</xpath>
+		<value>
+			<researchViewY>0.00</researchViewY>
+		</value>
+	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="LongBlades"]/researchViewX</xpath>
-        <value>
-          <researchViewX>10.00</researchViewX>
-        </value>
-    </Operation>
+		<xpath>Defs/ResearchProjectDef[defName="LongBlades"]/researchViewX</xpath>
+		<value>
+			<researchViewX>10.00</researchViewX>
+		</value>
+	</Operation>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="LongBlades"]/researchViewY</xpath>
-        <value>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="LongBlades"]/researchViewY</xpath>
+		<value>
 			<researchViewY>3.6</researchViewY>
-        </value>
-    </Operation>
+		</value>
+	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="PlateArmor"]/researchViewX</xpath>
-        <value>
+		<xpath>Defs/ResearchProjectDef[defName="PlateArmor"]/researchViewX</xpath>
+		<value>
 			<researchViewX>10</researchViewX>
-        </value>
-    </Operation>
+		</value>
+	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="PlateArmor"]/researchViewY</xpath>
-        <value>
+		<xpath>Defs/ResearchProjectDef[defName="PlateArmor"]/researchViewY</xpath>
+		<value>
 			<researchViewY>1.8</researchViewY>
-        </value>
-    </Operation>
+		</value>
+	</Operation>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Stonecutting"]/researchViewX</xpath>
-        <value>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]/researchViewX</xpath>
+		<value>
 			<researchViewX>5</researchViewX>
-        </value>
-    </Operation>
+		</value>
+	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Stonecutting"]/researchViewY</xpath>
-        <value>
+		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]/researchViewY</xpath>
+		<value>
 			<researchViewY>4.2</researchViewY>
-        </value>
-    </Operation>
+		</value>
+	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ResearchProjectDef[defName="Pemmican"]/researchViewX</xpath>
@@ -357,6 +357,33 @@
 		<match Class="PatchOperationRemove">
 			<xpath>Defs/ResearchProjectDef[defName="PlateArmor"]/prerequisites/li[.="Smithing"]</xpath>
 		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]/prerequisites</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]</xpath>
+			<value>
+				<prerequisites/>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]/prerequisites</xpath>
+		<value>
+			<prerequisites>
+				<li>DankPyon_RusticFurniture</li>
+			</prerequisites>
+		</value>
+	</Operation>
+	
+	<!-- ============================ Labeling Changes ========================== -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]/label</xpath>
+		<value>
+			<label>tailoring</label>
+		</value>
 	</Operation>
 
 </Patch>

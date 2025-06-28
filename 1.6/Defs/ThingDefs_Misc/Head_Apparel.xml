@@ -49,7 +49,7 @@ X
 		</graphicData>
 		<generateCommonality>0.95</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<Cloth>20</Cloth>
@@ -86,7 +86,7 @@ X
 		</graphicData>
 		<generateCommonality>0.95</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
@@ -123,7 +123,7 @@ X
 		</graphicData>
 		<generateCommonality>0.95</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
@@ -168,7 +168,7 @@ X
 		</graphicData>
 		<generateCommonality>0.50</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
@@ -214,7 +214,7 @@ X
 		</graphicData>
 		<generateCommonality>0.95</generateCommonality>
 		<recipeMaker>
-			<researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
 
 		<costStuffCount>30</costStuffCount>

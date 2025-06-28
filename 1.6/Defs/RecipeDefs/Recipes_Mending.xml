@@ -43,7 +43,7 @@
 			<li>DankPyon_MendingBench</li>
 		</recipeUsers>
 		<researchPrerequisites>
-			<li>DankPyon_Tailoring</li>
+			<li>ComplexClothing</li>
 		</researchPrerequisites>
 	</RecipeDef>
 	

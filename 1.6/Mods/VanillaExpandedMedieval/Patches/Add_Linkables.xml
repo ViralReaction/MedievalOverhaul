@@ -16,18 +16,26 @@
 			<li>VFEM2_StoneClamp</li>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="DankPyon_ButchersBlock"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="DankPyon_ButchersBlock"]</xpath>
+			<value>
+				<comps/>
+			</value>
+		</nomatch>
+	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="DankPyon_ButchersBlock"]</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_ButchersBlock"]/comps</xpath>
 		<value>
-			<comps>
-				<li Class="CompProperties_AffectedByFacilities">
-					<linkableFacilities>
-						<li>VFEM2_CleaverRack</li>
-						<li>VFEM2_CarvingBoard</li>
-					</linkableFacilities>
-				</li>
-			</comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>VFEM2_CleaverRack</li>
+					<li>VFEM2_CarvingBoard</li>
+				</linkableFacilities>
+			</li>
 		</value>
 	</Operation>
 

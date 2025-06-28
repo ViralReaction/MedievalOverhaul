@@ -176,31 +176,31 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/Webknecht</texPath>
+					<texPath>Things/Pawn/Animal/Webknecht</texPath>
 					<drawSize>0.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/Dessicated_Webknecht</texPath>
+					<texPath>Things/Pawn/Animal/Dessicated_Webknecht</texPath>
 					<drawSize>0.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/Webknecht</texPath>
+					<texPath>Things/Pawn/Animal/Webknecht</texPath>
 					<drawSize>1.25</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/Dessicated_Webknecht</texPath>
+					<texPath>Things/Pawn/Animal/Dessicated_Webknecht</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Animal/Webknecht</texPath>
+					<texPath>Things/Pawn/Animal/Webknecht</texPath>
 					<drawSize>1.75</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Animal/Dessicated_Webknecht</texPath>
+					<texPath>Things/Pawn/Animal/Dessicated_Webknecht</texPath>
 					<drawSize>1.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
