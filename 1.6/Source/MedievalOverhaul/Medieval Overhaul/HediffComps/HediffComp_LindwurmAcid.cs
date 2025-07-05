@@ -35,30 +35,29 @@ namespace MedievalOverhaul
 
         public override void CompPostTick(ref float severityAdjustment)
         {
-           
-
-            if (this.Pawn.IsHashIntervalTick(Props.tickInterval))
+            if (Pawn.IsHashIntervalTick(Props.tickInterval))
             {
-                Pawn pawn = this.Pawn;
-                if (!pawn.health.hediffSet.HasHediff(MedievalOverhaulDefOf.DankPyon_LindwurmAcidImmune))
+                Pawn pawn = Pawn;
+                if (pawn.health.hediffSet.HasHediff(MedievalOverhaulDefOf.DankPyon_LindwurmAcidImmune)) return;
+                apparelList = pawn.apparel?.WornApparel;
+                if (apparelList == null || apparelList.Count == 0) return;
+                List<Thing> apparelListCopy = new List<Thing>(apparelList.Count);
+                for (int i = 0; i < apparelList.Count; i++)
                 {
-                    apparelList = pawn?.apparel?.WornApparel;
-                    if (apparelList == null || apparelList.Count == 0) return;
-                    int apparelListCount = apparelList.Count;
-                    for (int i = 0; i < apparelListCount; i++)
+                    apparelListCopy.Add(apparelList[i]);
+                }
+                for (int i = 0; i < apparelListCopy.Count; i++)
+                {
+                    Thing apparel = apparelListCopy[i];
+                    if (apparel == null) continue;
+                    if (apparel.HitPoints <= apparelDamageAmount)
                     {
-                        Thing apparel = apparelList[i];
-                        if (apparel != null)
-                        {
-                            if (apparel.HitPoints <= apparelDamageAmount)
-                            {
-                                apparel.HitPoints = 0;
-                                apparel.Destroy(DestroyMode.Vanish);
-                            }
-                            else
-                                apparel.HitPoints -= apparelDamageAmount;
-                        }
-
+                        apparel.HitPoints = 0;
+                        apparel.Destroy();
+                    }
+                    else
+                    {
+                        apparel.HitPoints -= apparelDamageAmount;
                     }
                 }
             }
