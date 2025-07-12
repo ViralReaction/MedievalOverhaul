@@ -429,13 +429,14 @@
 			</damageData>
 		</graphicData>
 		<uiIconPath>Buildings/Linked/HideTent_MenuIcon</uiIconPath>
+		<uiIconPathsStuff Inherit="False"/>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>50</WorkToBuild>
 			<Flammability>2.0</Flammability>
 			<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
-		<stuffCategories>
+		<stuffCategories Inherit="False">
 			<li>Leathery</li>
 		</stuffCategories>
 		<costStuffCount>5</costStuffCount>
@@ -487,13 +488,14 @@
 			</damageData>
 		</graphicData>
 		<uiIconPath>Buildings/Linked/Tent_MenuIcon</uiIconPath>
+		<uiIconPathsStuff Inherit="False"/>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>135</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
-		<stuffCategories>
+		<stuffCategories Inherit="False">
 			<li>Fabric</li>
 		</stuffCategories>
 		<costStuffCount>5</costStuffCount>
@@ -533,13 +535,14 @@
 			</linkFlags>
 		</graphicData>
 		<uiIconPath>Buildings/Linked/Palisade_MenuIcon</uiIconPath>
+		<uiIconPathsStuff Inherit="False"/>
 		<statBases>
 			<MaxHitPoints>450</MaxHitPoints>
 			<WorkToBuild>355</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
-		<stuffCategories>
+		<stuffCategories Inherit="False">
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>8</costStuffCount>
@@ -580,13 +583,14 @@
 			</linkFlags>
 		</graphicData>
 		<uiIconPath>Buildings/Linked/EmbPalisade_MenuIcon</uiIconPath>
+		<uiIconPathsStuff Inherit="False"/>
 		<statBases>
 			<MaxHitPoints>450</MaxHitPoints>
 			<WorkToBuild>355</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
-		<stuffCategories>
+		<stuffCategories Inherit="False">
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
 		<costStuffCount>8</costStuffCount>
@@ -645,6 +649,7 @@
 			</damageData>
 		</graphicData>
 		<uiIconPath>Buildings/Linked/TudorWall_MenuIcon</uiIconPath>
+		<uiIconPathsStuff Inherit="False"/>
 		<statBases>
 			<Beauty>3</Beauty>
 			<MaxHitPoints>450</MaxHitPoints>
@@ -655,7 +660,7 @@
 		<costList>
 			<DankPyon_Clay>3</DankPyon_Clay>
 		</costList>	
-		<stuffCategories>
+		<stuffCategories Inherit="False">
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>2</costStuffCount>
@@ -709,13 +714,14 @@
 			</damageData>
 		</graphicData>
 		<uiIconPath>Buildings/Linked/CastleWall_icon</uiIconPath>
+		<uiIconPathsStuff Inherit="False"/>
 		<statBases>
 			<MaxHitPoints>1000</MaxHitPoints>
 			<WorkToBuild>800</WorkToBuild>
 			<Flammability>0</Flammability>
 			<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
-		<stuffCategories>
+		<stuffCategories Inherit="False">
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>15</costStuffCount>
@@ -757,6 +763,7 @@
 			<texPath>Buildings/Linked/CastleWallEmbrasures</texPath>
 		</graphicData>
 		<uiIconPath>Buildings/Linked/CastleWallEmbrasures_icon</uiIconPath>
+		<uiIconPathsStuff Inherit="False"/>
 		<statBases>
 			<MaxHitPoints>800</MaxHitPoints>
 			<WorkToBuild>800</WorkToBuild>
@@ -792,7 +799,6 @@
 				<li>Custom4</li>
 			</linkFlags>
 		</graphicData>
-
 		<stuffCategories>
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
