@@ -38,47 +38,123 @@ namespace MedievalOverhaul
 
         private bool TrySpawnPawn(out Pawn pawn)
         {
+            Log.Message("[TrySpawnPawn] Entered method.");
+            pawn = null;
+
+            if (this.parent == null)
+            {
+                Log.Error("[TrySpawnPawn] parent is null.");
+                return false;
+            }
+
+            if (this.parent.Map == null)
+            {
+                Log.Error("[TrySpawnPawn] parent.Map is null.");
+                return false;
+            }
+
+            if (this.Props == null)
+            {
+                Log.Error("[TrySpawnPawn] Props is null.");
+                return false;
+            }
+
+            if (this.Props.spawnablePawnKinds == null)
+            {
+                Log.Error("[TrySpawnPawn] spawnablePawnKinds is null.");
+                return false;
+            }
+
             int num = 0;
             HashSet<string> uniqueDefNames = new HashSet<string>();
 
             foreach (string defName in this.Props.spawnablePawnKinds)
             {
+                Log.Message($"[TrySpawnPawn] Checking ThingDef '{defName}'");
                 if (uniqueDefNames.Add(defName))
                 {
-                    num += this.parent.Map.listerThings.ThingsOfDef(ThingDef.Named(defName)).Count;
+                    ThingDef thingDef = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
+                    if (thingDef == null)
+                    {
+                        Log.Warning($"[TrySpawnPawn] ThingDef '{defName}' not found.");
+                        continue;
+                    }
+
+                    var things = this.parent.Map.listerThings.ThingsOfDef(thingDef);
+                    Log.Message($"[TrySpawnPawn] Found {things.Count} things of def '{defName}'");
+                    num += things.Count;
                 }
             }
 
+            Log.Message($"[TrySpawnPawn] Total count of matching things: {num}");
+
             if (num < Props.maxPawnCount)
             {
-                PawnKindDef named = DefDatabase<PawnKindDef>.GetNamed(this.Props.spawnablePawnKinds.RandomElement<string>(), false);
+                string selectedDefName = this.Props.spawnablePawnKinds.RandomElement();
+                Log.Message($"[TrySpawnPawn] Randomly selected PawnKindDef: {selectedDefName}");
+
+                PawnKindDef named = DefDatabase<PawnKindDef>.GetNamed(selectedDefName, false);
                 if (named != null)
                 {
-                    Faction faction = Props.faction != null && FactionUtility.DefaultFactionFrom(Props.faction) != null ? FactionUtility.DefaultFactionFrom(Props.faction) : null;
+                    Faction faction = Props.faction != null ? FactionUtility.DefaultFactionFrom(Props.faction) : null;
+                    Log.Message($"[TrySpawnPawn] Faction resolved: {(faction != null ? faction.ToString() : "null")}");
+
                     PawnGenerationRequest pawnRequest = new PawnGenerationRequest(named, faction, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, 1f, false, false, true, true, false, false);
                     Pawn pawnToCreate = PawnGenerator.GeneratePawn(pawnRequest);
-                    GenSpawn.Spawn((Thing)pawnToCreate, CellFinder.RandomClosewalkCellNear(this.parent.Position, this.parent.Map, this.Props.pawnSpawnRadius), this.parent.Map);
+                    Log.Message($"[TrySpawnPawn] Pawn generated: {pawnToCreate}");
+
+                    IntVec3 spawnCell = CellFinder.RandomClosewalkCellNear(this.parent.Position, this.parent.Map, this.Props.pawnSpawnRadius);
+                    Log.Message($"[TrySpawnPawn] Spawning pawn at {spawnCell}");
+                    GenSpawn.Spawn(pawnToCreate, spawnCell, this.parent.Map);
+
                     if (this.parent.Map != null)
                     {
-                        Lord lord = (Lord)null;
-                        if (this.parent.Map.mapPawns.SpawnedPawnsInFaction(faction).Any<Pawn>((Predicate<Pawn>)(p => p != pawnToCreate)))
-                            lord = ((Pawn)GenClosest.ClosestThing_Global(this.parent.Position, (IEnumerable)this.parent.Map.mapPawns.SpawnedPawnsInFaction(faction), 30f, (Predicate<Thing>)(p => p != pawnToCreate && ((Pawn)p).GetLord() != null))).GetLord();
-                        if (lord == null)
-                            lord = LordMaker.MakeNewLord(faction, (LordJob)new LordJob_DefendPoint(this.parent.Position, new float?(10f)), this.parent.Map);
-                        lord.AddPawn(pawnToCreate);
+                        Lord lord = null;
+
+                        var factionPawns = faction != null ? this.parent.Map.mapPawns.SpawnedPawnsInFaction(faction) : null;
+                        Log.Message($"[TrySpawnPawn] Found {factionPawns?.Count ?? 0} faction pawns");
+
+                        if (factionPawns != null && factionPawns.Any(p => p != pawnToCreate))
+                        {
+                            Thing closest = GenClosest.ClosestThing_Global(this.parent.Position, factionPawns, 30f, p => p != pawnToCreate && ((Pawn)p).GetLord() != null);
+                            Log.Message($"[TrySpawnPawn] Closest pawn with lord: {(closest != null ? closest.ToString() : "null")}");
+
+                            if (closest != null)
+                                lord = ((Pawn)closest).GetLord();
+                        }
+
+                        if (lord == null && faction != null)
+                        {
+                            Log.Message("[TrySpawnPawn] Creating new lord.");
+                            lord = LordMaker.MakeNewLord(faction, new LordJob_DefendPoint(this.parent.Position, 10f), this.parent.Map);
+                        }
+
+                        if (lord != null)
+                        {
+                            Log.Message("[TrySpawnPawn] Adding pawn to lord.");
+                            lord.AddPawn(pawnToCreate);
+                        }
                     }
-                    pawn = pawnToCreate;
+
                     if (this.Props.spawnSound != null)
-                        this.Props.spawnSound.PlayOneShot((SoundInfo)(Thing)this.parent);
+                    {
+                        Log.Message("[TrySpawnPawn] Playing spawn sound.");
+                        this.Props.spawnSound.PlayOneShot(SoundInfo.InMap(this.parent));
+                    }
+
+                    pawn = pawnToCreate;
                     return true;
                 }
-                pawn = (Pawn)null;
+
+                Log.Warning("[TrySpawnPawn] PawnKindDef was null.");
                 return false;
             }
+
+            Log.Message("[TrySpawnPawn] Max pawn count reached, cannot spawn more.");
             canSpawnPawns = false;
-            pawn = (Pawn)null;
             return false;
         }
+
         public override void CompTick()
         {
             if (this.parent.Spawned && this.nextPawnSpawnTick == -1)

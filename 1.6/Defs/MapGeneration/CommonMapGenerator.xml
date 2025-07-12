@@ -3,14 +3,14 @@
 
 	<GenStepDef>
 		<defName>DankPyon_TarPits</defName>
-		<order>500</order>
+		<order>950</order>
 		<genStep Class="GenStep_ScatterThings">
 			<thingDef>DankPyon_TarPit</thingDef>
 			<allowInWaterBiome>false</allowInWaterBiome>
-			<minSpacing>25</minSpacing>
+			<minSpacing>10</minSpacing>
 			<extraNoBuildEdgeDist>4</extraNoBuildEdgeDist>
 			<countPer10kCellsRange>0.7~1</countPer10kCellsRange>
-			<clearSpaceSize>30</clearSpaceSize>
+			<clearSpaceSize>4</clearSpaceSize>
 			<terrainValidationRadius>4</terrainValidationRadius>
 			<terrainValidationDisallowed>
 				<li>Road</li>
@@ -18,7 +18,7 @@
 			<validators>
 				<li Class="ScattererValidator_Buildable">
 					<radius>4</radius>
-					<affordance>Heavy</affordance>
+					<affordance>Light</affordance>
 				</li>
 				<li Class="ScattererValidator_NoNonNaturalEdifices">
 					<radius>4</radius>
@@ -29,14 +29,14 @@
 
 	<GenStepDef>
 		<defName>DankPyon_BeeHives</defName>
-		<order>500</order>
+		<order>1120</order>
 		<genStep Class="GenStep_ScatterThings">
 			<thingDef>DankPyon_BeeHive</thingDef>
 			<allowInWaterBiome>false</allowInWaterBiome>
-			<minSpacing>200</minSpacing>
+			<minSpacing>30</minSpacing>
 			<extraNoBuildEdgeDist>4</extraNoBuildEdgeDist>
-			<countPer10kCellsRange>0.7~1</countPer10kCellsRange>
-			<clearSpaceSize>30</clearSpaceSize>
+			<countPer10kCellsRange>0.25~0.50</countPer10kCellsRange>
+			<clearSpaceSize>4</clearSpaceSize>
 			<terrainValidationRadius>4</terrainValidationRadius>
 			<terrainValidationDisallowed>
 				<li>Road</li>
@@ -44,7 +44,7 @@
 			<validators>
 				<li Class="ScattererValidator_Buildable">
 					<radius>6</radius>
-					<affordance>Heavy</affordance>
+					<affordance>Light</affordance>
 				</li>
 				<li Class="ScattererValidator_NoNonNaturalEdifices">
 					<radius>4</radius>
@@ -55,22 +55,23 @@
 
 	<GenStepDef>
 		<defName>DankPyon_HornetNest</defName>
-		<order>500</order>
+		<order>1120</order>
 		<genStep Class="GenStep_ScatterThings">
 			<thingDef>DankPyon_HornetNest</thingDef>
 			<allowInWaterBiome>false</allowInWaterBiome>
-			<minSpacing>200</minSpacing>
+			<minSpacing>20</minSpacing>
 			<extraNoBuildEdgeDist>4</extraNoBuildEdgeDist>
-			<countPer10kCellsRange>1~2</countPer10kCellsRange>
-			<clearSpaceSize>30</clearSpaceSize>
+			<countPer10kCellsRange>0.25~0.50</countPer10kCellsRange>
+			<clearSpaceSize>4</clearSpaceSize>
 			<terrainValidationRadius>4</terrainValidationRadius>
 			<terrainValidationDisallowed>
 				<li>Road</li>
 			</terrainValidationDisallowed>
+			<minDistToPlayerStart>30</minDistToPlayerStart>
 			<validators>
 				<li Class="ScattererValidator_Buildable">
 					<radius>3</radius>
-					<affordance>Heavy</affordance>
+					<affordance>Light</affordance>
 				</li>
 				<li Class="ScattererValidator_NoNonNaturalEdifices">
 					<radius>4</radius>
@@ -81,14 +82,14 @@
 	
 	<GenStepDef>
 		<defName>DankPyon_GolemRock_Iron</defName>
-		<order>500</order>
+		<order>1120</order>
 		<genStep Class="GenStep_ScatterThings">
 			<thingDef>DankPyon_GolemRock_Iron_MapGen</thingDef>
 			<allowInWaterBiome>false</allowInWaterBiome>
-			<minSpacing>200</minSpacing>
+			<minSpacing>30</minSpacing>
 			<extraNoBuildEdgeDist>4</extraNoBuildEdgeDist>
-			<countPer10kCellsRange>3.5~5</countPer10kCellsRange>
-			<clearSpaceSize>30</clearSpaceSize>
+			<countPer10kCellsRange>0.25~0.5</countPer10kCellsRange>
+			<clearSpaceSize>4</clearSpaceSize>
 			<terrainValidationRadius>4</terrainValidationRadius>
 			<terrainValidationDisallowed>
 				<li>Road</li>
@@ -96,7 +97,7 @@
 			<validators>
 				<li Class="ScattererValidator_Buildable">
 					<radius>5</radius>
-					<affordance>Medium</affordance>
+					<affordance>Heavy</affordance>
 				</li>
 				<li Class="ScattererValidator_NoNonNaturalEdifices">
 					<radius>4</radius>
@@ -107,14 +108,14 @@
 	
 	<GenStepDef>
 		<defName>DankPyon_GolemRock_Silver</defName>
-		<order>500</order>
+		<order>1120</order>
 		<genStep Class="GenStep_ScatterThings">
 			<thingDef>DankPyon_GolemRock_Silver_MapGen</thingDef>
 			<allowInWaterBiome>false</allowInWaterBiome>
-			<minSpacing>200</minSpacing>
+			<minSpacing>30</minSpacing>
 			<extraNoBuildEdgeDist>4</extraNoBuildEdgeDist>
-			<countPer10kCellsRange>2~3</countPer10kCellsRange>
-			<clearSpaceSize>30</clearSpaceSize>
+			<countPer10kCellsRange>0.10~0.30</countPer10kCellsRange>
+			<clearSpaceSize>4</clearSpaceSize>
 			<terrainValidationRadius>4</terrainValidationRadius>
 			<terrainValidationDisallowed>
 				<li>Road</li>
@@ -132,7 +133,7 @@
 	</GenStepDef>
 
 	<GenStepDef>
-		<order>319</order>
+		<order>750</order>
 		<defName>DankPyon_BattlefieldRemains</defName>
 		<genStep Class="GenStep_ScatterGroup">
 			<allowInWaterBiome>false</allowInWaterBiome>

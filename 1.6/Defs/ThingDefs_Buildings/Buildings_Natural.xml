@@ -323,22 +323,97 @@
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingNaturalBase" Name="DankPyon_HornetNestBase">
+	<!-- <ThingDef ParentName="BuildingNaturalBase" Name="DankPyon_HornetNestBase"> -->
+	<!-- <defName>DankPyon_HornetNest</defName> -->
+	<!-- <label>hornet nest</label> -->
+	<!-- <description>A hive of giant insects. If activated, it will spawn additional insects and hives over time, as well as valuable hornet honey.</description> -->
+	<!-- <thingClass>Building</thingClass> -->
+	<!-- <graphicData> -->
+	<!-- <texPath>Natural/HornetNest</texPath> -->
+	<!-- <graphicClass>Graphic_Random</graphicClass> -->
+	<!-- <drawSize>4,4</drawSize> -->
+	<!-- </graphicData> -->
+	<!-- <altitudeLayer>Building</altitudeLayer> -->
+	<!-- <rotatable>false</rotatable> -->
+	<!-- <fillPercent>0.5</fillPercent> -->
+	<!-- <statBases> -->
+	<!-- <MaxHitPoints>230</MaxHitPoints> -->
+	<!-- <Flammability>0.5</Flammability> -->
+	<!-- </statBases> -->
+	<!-- <pathCost>42</pathCost> -->
+	<!-- <receivesSignals>true</receivesSignals> -->
+	<!-- <blockWind>true</blockWind> -->
+	<!-- <tickerType>Normal</tickerType> -->
+	<!-- <passability>PassThroughOnly</passability> -->
+	<!-- <killedLeavings> -->
+	<!-- <DankPyon_HornetHoney>30</DankPyon_HornetHoney> -->
+	<!-- </killedLeavings> -->
+	<!-- <comps> -->
+	<!-- <li Class="CompProperties_CanBeDormant"> -->
+	<!-- <startsDormant>false</startsDormant> -->
+	<!-- <canWakeUpFogged>false</canWakeUpFogged> -->
+	<!-- </li> -->
+	<!-- <li Class="CompProperties_WakeUpDormant"/> -->
+	<!-- <li Class="CompProperties_SelfhealHitpoints"> -->
+	<!-- <ticksPerHeal>6000</ticksPerHeal> -->
+	<!-- </li> -->
+	<!-- <li Class="CompProperties_Spawner"> -->
+	<!-- <thingToSpawn>DankPyon_HornetHoney</thingToSpawn> -->
+	<!-- <spawnCount>2</spawnCount> -->
+	<!-- <spawnIntervalRange>26000~30000</spawnIntervalRange> -->
+	<!-- <spawnMaxAdjacent>20</spawnMaxAdjacent> -->
+	<!-- <spawnForbidden>true</spawnForbidden> -->
+	<!-- <saveKeysPrefix>hornethoney</saveKeysPrefix> -->
+	<!-- </li> -->
+	<!-- <li Class="CompProperties_Spawner"> -->
+	<!-- <thingToSpawn>DankPyon_HornetJelly</thingToSpawn> -->
+	<!-- <spawnCount>10</spawnCount> -->
+	<!-- <spawnIntervalRange>26000~30000</spawnIntervalRange> -->
+	<!-- <spawnMaxAdjacent>13</spawnMaxAdjacent> -->
+	<!-- <spawnForbidden>true</spawnForbidden> -->
+	<!-- <saveKeysPrefix>hornetjelly</saveKeysPrefix> -->
+	<!-- </li> -->
+	<!-- <li Class="MedievalOverhaul.CompProperties_HornetNestSpawner"> -->
+	<!-- <spawnablePawnKinds> -->
+	<!-- <li>DankPyon_Deathstinger</li> -->
+	<!-- </spawnablePawnKinds> -->
+	<!-- <spawnSound>Hive_Spawn</spawnSound> -->
+	<!-- <initialPawnCount>0</initialPawnCount> -->
+	<!-- <maxPawnCount>4</maxPawnCount> -->
+	<!-- <pawnSpawnIntervalDays>0.5~1</pawnSpawnIntervalDays> -->
+	<!-- <defendRadius>5</defendRadius> -->
+	<!-- <faction>DankPyon_Hornets</faction> -->
+	<!-- </li> -->
+	<!-- <li Class="CompProperties_HeatPusher"> -->
+	<!-- <heatPerSecond>6</heatPerSecond> -->
+	<!-- <heatPushMaxTemperature>38</heatPushMaxTemperature> -->
+	<!-- </li> -->
+	<!-- <li Class="CompProperties_SpawnerFilth"> -->
+	<!-- <filthDef>Filth_Slime</filthDef> -->
+	<!-- <spawnCountOnSpawn>10</spawnCountOnSpawn> -->
+	<!-- <spawnMtbHours>4</spawnMtbHours> -->
+	<!-- <spawnRadius>5</spawnRadius> -->
+	<!-- </li> -->
+	<!-- </comps> -->
+	<!-- </ThingDef> -->
+	
+	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>DankPyon_HornetNest</defName>
-		<label>hornet nest</label>
-		<description>A hive of giant insects. If activated, it will spawn additional insects and hives over time, as well as valuable hornet honey.</description>
+		<label>hive</label>
+		<description>A hive of giant insects. If activated, it will spawn additional insects and hives over time, as well as valuable insect jelly.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Natural/HornetNest</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
-			<drawSize>4,4</drawSize>
+			<drawSize>(4,4)</drawSize>
 		</graphicData>
+		<uiIconScale>0.65</uiIconScale>
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>false</rotatable>
 		<fillPercent>0.5</fillPercent>
 		<statBases>
-			<MaxHitPoints>230</MaxHitPoints>
-			<Flammability>0.5</Flammability>
+			<MaxHitPoints>130</MaxHitPoints>
+			<Flammability>1.0</Flammability>
 		</statBases>
 		<pathCost>42</pathCost>
 		<receivesSignals>true</receivesSignals>
@@ -346,7 +421,7 @@
 		<tickerType>Normal</tickerType>
 		<passability>PassThroughOnly</passability>
 		<killedLeavings>
-			<DankPyon_HornetHoney>30</DankPyon_HornetHoney>
+			<InsectJelly>30</InsectJelly>
 		</killedLeavings>
 		<comps>
 			<li Class="CompProperties_CanBeDormant">
@@ -355,24 +430,9 @@
 			</li>
 			<li Class="CompProperties_WakeUpDormant"/>
 			<li Class="CompProperties_SelfhealHitpoints">
-				<ticksPerHeal>6000</ticksPerHeal>
+				<ticksPerHeal>6000</ticksPerHeal><!-- 60k ticks = 1 day, 10 hp per day -->
 			</li>
-			<li Class="CompProperties_Spawner">
-				<thingToSpawn>DankPyon_HornetHoney</thingToSpawn>
-				<spawnCount>2</spawnCount>
-				<spawnIntervalRange>26000~30000</spawnIntervalRange>
-				<spawnMaxAdjacent>20</spawnMaxAdjacent>
-				<spawnForbidden>true</spawnForbidden>
-				<saveKeysPrefix>hornethoney</saveKeysPrefix>
-			</li>
-			<li Class="CompProperties_Spawner">
-				<thingToSpawn>DankPyon_HornetJelly</thingToSpawn>
-				<spawnCount>10</spawnCount>
-				<spawnIntervalRange>26000~30000</spawnIntervalRange>
-				<spawnMaxAdjacent>13</spawnMaxAdjacent>
-				<spawnForbidden>true</spawnForbidden>
-				<saveKeysPrefix>hornetjelly</saveKeysPrefix>
-			</li>
+			<li Class="CompProperties_SpawnerHives"/>
 			<li Class="MedievalOverhaul.CompProperties_HornetNestSpawner">
 				<spawnablePawnKinds>
 					<li>DankPyon_Deathstinger</li>
@@ -382,7 +442,15 @@
 				<maxPawnCount>4</maxPawnCount>
 				<pawnSpawnIntervalDays>0.5~1</pawnSpawnIntervalDays>
 				<defendRadius>5</defendRadius>
-				<faction>DankPyon_Hornets</faction>
+				<faction>Insect</faction>
+			</li>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>InsectJelly</thingToSpawn>
+				<spawnCount>20</spawnCount>
+				<spawnIntervalRange>26000~30000</spawnIntervalRange>
+				<spawnMaxAdjacent>40</spawnMaxAdjacent>
+				<spawnForbidden>true</spawnForbidden>
+				<saveKeysPrefix>jelly</saveKeysPrefix>
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<heatPerSecond>6</heatPerSecond>
@@ -394,11 +462,11 @@
 				<spawnMtbHours>4</spawnMtbHours>
 				<spawnRadius>5</spawnRadius>
 			</li>
-			<!--li Class="CompProperties_Maintainable">
-				<ticksHealthy>60000</ticksHealthy>
-				<ticksNeedsMaintenance>60000</ticksNeedsMaintenance>
-				<damagePerTickRare>10</damagePerTickRare>
-			</li-->
+			<!-- <li Class="CompProperties_Maintainable"> -->
+				<!-- <ticksHealthy>60000</ticksHealthy> -->
+				<!-- <ticksNeedsMaintenance>60000</ticksNeedsMaintenance> -->
+				<!-- <damagePerTickRare>10</damagePerTickRare> -->
+			<!-- </li> -->
 		</comps>
 	</ThingDef>
 	
@@ -451,10 +519,10 @@
 			<supportsWallAttachments>false</supportsWallAttachments>
 		</building>
 		<damageMultipliers>
-		  <li>
-			<damageDef>Thump</damageDef>
-			<multiplier>4</multiplier>
-		  </li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>4</multiplier>
+			</li>
 		</damageMultipliers>
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_PawnSpawnerOnDestroy">
@@ -521,10 +589,10 @@
 			<supportsWallAttachments>false</supportsWallAttachments>
 		</building>
 		<damageMultipliers>
-		  <li>
-			<damageDef>Thump</damageDef>
-			<multiplier>4</multiplier>
-		  </li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>4</multiplier>
+			</li>
 		</damageMultipliers>
 		<comps>
 			<li Class="MedievalOverhaul.CompProperties_PawnSpawnerOnDestroy">
@@ -590,10 +658,10 @@
 			<supportsWallAttachments>false</supportsWallAttachments>
 		</building>
 		<damageMultipliers>
-		  <li>
-			<damageDef>Thump</damageDef>
-			<multiplier>4</multiplier>
-		  </li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>4</multiplier>
+			</li>
 		</damageMultipliers>
 		<comps>
 			<li Class="CompProperties_CanBeDormant">
@@ -652,10 +720,10 @@
 			<supportsWallAttachments>false</supportsWallAttachments>
 		</building>
 		<damageMultipliers>
-		  <li>
-			<damageDef>Thump</damageDef>
-			<multiplier>4</multiplier>
-		  </li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>4</multiplier>
+			</li>
 		</damageMultipliers>
 		<comps>
 			<li Class="CompProperties_CanBeDormant">
@@ -714,10 +782,10 @@
 			<supportsWallAttachments>false</supportsWallAttachments>
 		</building>
 		<damageMultipliers>
-		  <li>
-			<damageDef>Thump</damageDef>
-			<multiplier>4</multiplier>
-		  </li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>4</multiplier>
+			</li>
 		</damageMultipliers>
 		<comps>
 			<li Class="CompProperties_CanBeDormant">
@@ -729,65 +797,65 @@
 	</ThingDef>
 	
 	<!-- <ThingDef ParentName="BuildingNaturalBase"> -->
-		<!-- <defName>DankPyon_GolemRock_Steel_Incident</defName> -->
-		<!-- <thingClass>MedievalOverhaul.Mineable_CompSpawnerDestroy</thingClass> -->
-		<!-- <label>unusual steel formation</label> -->
-		<!-- <description>An unusual steel formation.</description> -->
-		<!-- <graphicData> -->
-			<!-- <texPath>Natural/GolemRock</texPath> -->
-			<!-- <graphicClass>Graphic_Random</graphicClass> -->
-			<!-- <color>(207, 207, 207)</color> -->
-			<!-- <drawSize>6,6</drawSize> -->
-		<!-- </graphicData> -->
-		<!-- <size>(3,3)</size> -->
-		<!-- <altitudeLayer>Building</altitudeLayer> -->
-		<!-- <rotatable>false</rotatable> -->
-		<!-- <statBases> -->
-			<!-- <MaxHitPoints>10000</MaxHitPoints> -->
-			<!-- <Flammability>0</Flammability> -->
-		<!-- </statBases> -->
-		<!-- <pathCost>42</pathCost> -->
-		<!-- <receivesSignals>true</receivesSignals> -->
-		<!-- <blockWind>true</blockWind> -->
-		<!-- <tickerType>Normal</tickerType> -->
-		<!-- <passability>Impassable</passability> -->
-		<!-- <castEdgeShadows>true</castEdgeShadows> -->
-		<!-- <fillPercent>1</fillPercent> -->
-		<!-- <coversFloor>true</coversFloor> -->
-		<!-- <neverMultiSelect>true</neverMultiSelect> -->
-		<!-- <saveCompressible>true</saveCompressible> -->
-		<!-- <holdsRoof>true</holdsRoof> -->
-		<!-- <staticSunShadowHeight>1.0</staticSunShadowHeight> -->
-		<!-- <blockLight>true</blockLight> -->
-		<!-- <fertility>0</fertility> -->
-		<!-- <mineable>true</mineable> -->
-		<!-- <building> -->
-			<!-- <isResourceRock>true</isResourceRock> -->
-			<!-- <mineableThing>DankPyon_SilverOre</mineableThing> -->
-			<!-- <mineableYield>200</mineableYield> -->
-			<!-- <mineableScatterCommonality>0</mineableScatterCommonality> -->
-			<!-- <mineableScatterLumpSizeRange>0~0</mineableScatterLumpSizeRange> -->
-			<!-- <veinMineable>false</veinMineable> -->
-			<!-- <isInert>true</isInert> -->
-			<!-- <isNaturalRock>true</isNaturalRock> -->
-			<!-- <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder> -->
-			<!-- <deconstructible>false</deconstructible> -->
-			<!-- <destroyShakeAmount>0</destroyShakeAmount> -->
-			<!-- <supportsWallAttachments>false</supportsWallAttachments> -->
-		<!-- </building> -->
-		<!-- <damageMultipliers> -->
-		  <!-- <li> -->
-			<!-- <damageDef>Thump</damageDef> -->
-			<!-- <multiplier>4</multiplier> -->
-		  <!-- </li> -->
-		<!-- </damageMultipliers> -->
-		<!-- <comps> -->
-			<!-- <li Class="CompProperties_CanBeDormant"> -->
-				<!-- <startsDormant>true</startsDormant> -->
-				<!-- <canWakeUpFogged>false</canWakeUpFogged> -->
-			<!-- </li> -->
-			<!-- <li Class="CompProperties_WakeUpDormant"/> -->
-		<!-- </comps> -->
+	<!-- <defName>DankPyon_GolemRock_Steel_Incident</defName> -->
+	<!-- <thingClass>MedievalOverhaul.Mineable_CompSpawnerDestroy</thingClass> -->
+	<!-- <label>unusual steel formation</label> -->
+	<!-- <description>An unusual steel formation.</description> -->
+	<!-- <graphicData> -->
+	<!-- <texPath>Natural/GolemRock</texPath> -->
+	<!-- <graphicClass>Graphic_Random</graphicClass> -->
+	<!-- <color>(207, 207, 207)</color> -->
+	<!-- <drawSize>6,6</drawSize> -->
+	<!-- </graphicData> -->
+	<!-- <size>(3,3)</size> -->
+	<!-- <altitudeLayer>Building</altitudeLayer> -->
+	<!-- <rotatable>false</rotatable> -->
+	<!-- <statBases> -->
+	<!-- <MaxHitPoints>10000</MaxHitPoints> -->
+	<!-- <Flammability>0</Flammability> -->
+	<!-- </statBases> -->
+	<!-- <pathCost>42</pathCost> -->
+	<!-- <receivesSignals>true</receivesSignals> -->
+	<!-- <blockWind>true</blockWind> -->
+	<!-- <tickerType>Normal</tickerType> -->
+	<!-- <passability>Impassable</passability> -->
+	<!-- <castEdgeShadows>true</castEdgeShadows> -->
+	<!-- <fillPercent>1</fillPercent> -->
+	<!-- <coversFloor>true</coversFloor> -->
+	<!-- <neverMultiSelect>true</neverMultiSelect> -->
+	<!-- <saveCompressible>true</saveCompressible> -->
+	<!-- <holdsRoof>true</holdsRoof> -->
+	<!-- <staticSunShadowHeight>1.0</staticSunShadowHeight> -->
+	<!-- <blockLight>true</blockLight> -->
+	<!-- <fertility>0</fertility> -->
+	<!-- <mineable>true</mineable> -->
+	<!-- <building> -->
+	<!-- <isResourceRock>true</isResourceRock> -->
+	<!-- <mineableThing>DankPyon_SilverOre</mineableThing> -->
+	<!-- <mineableYield>200</mineableYield> -->
+	<!-- <mineableScatterCommonality>0</mineableScatterCommonality> -->
+	<!-- <mineableScatterLumpSizeRange>0~0</mineableScatterLumpSizeRange> -->
+	<!-- <veinMineable>false</veinMineable> -->
+	<!-- <isInert>true</isInert> -->
+	<!-- <isNaturalRock>true</isNaturalRock> -->
+	<!-- <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder> -->
+	<!-- <deconstructible>false</deconstructible> -->
+	<!-- <destroyShakeAmount>0</destroyShakeAmount> -->
+	<!-- <supportsWallAttachments>false</supportsWallAttachments> -->
+	<!-- </building> -->
+	<!-- <damageMultipliers> -->
+	<!-- <li> -->
+	<!-- <damageDef>Thump</damageDef> -->
+	<!-- <multiplier>4</multiplier> -->
+	<!-- </li> -->
+	<!-- </damageMultipliers> -->
+	<!-- <comps> -->
+	<!-- <li Class="CompProperties_CanBeDormant"> -->
+	<!-- <startsDormant>true</startsDormant> -->
+	<!-- <canWakeUpFogged>false</canWakeUpFogged> -->
+	<!-- </li> -->
+	<!-- <li Class="CompProperties_WakeUpDormant"/> -->
+	<!-- </comps> -->
 	<!-- </ThingDef> -->
 
 </Defs>
