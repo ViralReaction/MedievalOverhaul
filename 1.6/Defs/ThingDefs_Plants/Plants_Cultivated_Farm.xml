@@ -726,7 +726,7 @@
 				<li>Ground</li>
 			</sowTags>
 			<sowResearchPrerequisites Inherit="False">
-				<li>Cocoa</li>
+				<li>DankPyon_TreeGriffonBerry</li>
 			</sowResearchPrerequisites>
 			<visualSizeRange>0.8~2.0</visualSizeRange>
 			<topWindExposure>0.1</topWindExposure>

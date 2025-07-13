@@ -102,7 +102,7 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[inspectorTabs/li[.="MedievalOverhaul.ITab_Fuel"] and not(comps/li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"])]/comps</xpath>
+					<xpath>Defs/ThingDef[inspectorTabs/li[.="MedievalOverhaul.ITab_Fuel"] and not(comps/li[@Class="MedievalOverhaul.CompProperties_StoreFuelThing"]) and not(comps/li[@Class="MedievalOverhaul.CompProperties_RefuelableCustom"])]/comps</xpath>
 					<value>
 						<li Class="MedievalOverhaul.CompProperties_StoreFuelThing"/>
 					</value>

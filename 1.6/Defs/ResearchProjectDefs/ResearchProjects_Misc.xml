@@ -220,8 +220,8 @@
 		<tags>
 			<li>DankPyon_MedievalStart</li>
 		</tags>
-		<researchViewX>0</researchViewX>
-		<researchViewY>1.40</researchViewY>
+		<researchViewX>2.0</researchViewX>
+		<researchViewY>2.10</researchViewY>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->candle making</li>
@@ -572,22 +572,22 @@
 
 	<!--=========================== Apparel ==============================-->
 	<!-- <ResearchProjectDef> -->
-		<!-- <defName>DankPyon_Tailoring</defName> -->
-		<!-- <label>tailoring</label> -->
-		<!-- <description>Learn how to sew everyday garments, fit for civillian.</description> -->
-		<!-- <baseCost>300</baseCost> -->
-		<!-- <tab>DankPyon_MedievalResearchTab</tab> -->
-		<!-- <techLevel>Medieval</techLevel> -->
-		<!-- <researchViewX>6</researchViewX> -->
-		<!-- <researchViewY>2.40</researchViewY> -->
-		<!-- <prerequisites> -->
-			<!-- <li>DankPyon_RusticFurniture</li> -->
-		<!-- </prerequisites> -->
-		<!-- <generalRules> -->
-			<!-- <rulesStrings> -->
-				<!-- <li>subject->tailoring</li> -->
-			<!-- </rulesStrings> -->
-		<!-- </generalRules> -->
+	<!-- <defName>DankPyon_Tailoring</defName> -->
+	<!-- <label>tailoring</label> -->
+	<!-- <description>Learn how to sew everyday garments, fit for civillian.</description> -->
+	<!-- <baseCost>300</baseCost> -->
+	<!-- <tab>DankPyon_MedievalResearchTab</tab> -->
+	<!-- <techLevel>Medieval</techLevel> -->
+	<!-- <researchViewX>6</researchViewX> -->
+	<!-- <researchViewY>2.40</researchViewY> -->
+	<!-- <prerequisites> -->
+	<!-- <li>DankPyon_RusticFurniture</li> -->
+	<!-- </prerequisites> -->
+	<!-- <generalRules> -->
+	<!-- <rulesStrings> -->
+	<!-- <li>subject->tailoring</li> -->
+	<!-- </rulesStrings> -->
+	<!-- </generalRules> -->
 	<!-- </ResearchProjectDef> -->
 
 	<ResearchProjectDef>
@@ -620,8 +620,10 @@
 		<researchViewY>1.8</researchViewY>
 		<prerequisites>
 			<li>DankPyon_ProtectiveClothing</li>
-			<li>Smithing</li>
 		</prerequisites>
+		<hiddenPrerequisites>
+			<li>Smithing</li>
+		</hiddenPrerequisites>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->chain armor</li>
@@ -943,24 +945,24 @@
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
-        <defName>DankPyon_PlowedSoil</defName>
-        <label>plowed soil</label>
-        <description>Research how to plow soil.</description>
-        <baseCost>300</baseCost>
-        <tab>DankPyon_MedievalResearchTab</tab>
-        <techLevel>Neolithic</techLevel>
-        <prerequisites>
-            <li>DankPyon_BasicAgriculture</li>
-        </prerequisites>
-        <researchViewX>1.00</researchViewX>
-        <researchViewY>1.30</researchViewY>
-        <generalRules>
-            <rulesStrings>
-                <li>subject->tilled soil</li>
-                <li>subject->plowed soil</li>
-            </rulesStrings>
-        </generalRules>
-    </ResearchProjectDef>
+		<defName>DankPyon_PlowedSoil</defName>
+		<label>plowed soil</label>
+		<description>Research how to plow soil.</description>
+		<baseCost>300</baseCost>
+		<tab>DankPyon_MedievalResearchTab</tab>
+		<techLevel>Neolithic</techLevel>
+		<prerequisites>
+			<li>DankPyon_BasicAgriculture</li>
+		</prerequisites>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>1.30</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->tilled soil</li>
+				<li>subject->plowed soil</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
 
 	<!--=========================== Cooking ==============================-->
 	<ResearchProjectDef>
@@ -1117,6 +1119,9 @@
 		<techLevel>Medieval</techLevel>
 		<researchViewX>9</researchViewX>
 		<researchViewY>1.2</researchViewY>
+		<prerequisites>
+				<li MayRequire="Ludeon.Royalty">NobleApparel</li>
+		</prerequisites>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->adorned armor</li>
