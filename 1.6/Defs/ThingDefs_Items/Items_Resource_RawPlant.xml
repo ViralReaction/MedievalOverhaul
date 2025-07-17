@@ -180,7 +180,7 @@
 			<texPath>Things/Item/Resource/PlantFoodRaw/RawTomatoes</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.2</MarketValue>
+			<MarketValue>1.1</MarketValue>
 		</statBases>
 		<ingestible>
 			<foodType>VegetableOrFruit</foodType>
@@ -202,8 +202,8 @@
 			<texPath>Things/Item/Resource/PlantFoodRaw/RawApples</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.92</MarketValue>
-			<Nutrition>0.08</Nutrition>
+			<MarketValue>1.1</MarketValue>
+			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible Inherit="False">
 			<preferability>RawBad</preferability>
@@ -227,8 +227,8 @@
 			<texPath>Things/Item/Resource/PlantFoodRaw/RawLemons</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.66</MarketValue>
-			<Nutrition>0.03</Nutrition>
+			<MarketValue>1.1</MarketValue>
+			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
 			<tasteThought>AteRawFood</tasteThought>
@@ -250,8 +250,8 @@
 			<texPath>Things/Item/Resource/PlantFoodRaw/RawMulberry</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.92</MarketValue>
-			<Nutrition>0.08</Nutrition>
+			<MarketValue>1.1</MarketValue>
+			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible Inherit="False">
 			<preferability>RawBad</preferability>
@@ -275,8 +275,8 @@
 			<texPath>Things/Item/Resource/PlantFoodRaw/RawCabbage</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>3.8</MarketValue>
-			<Nutrition>0.4</Nutrition>
+			<MarketValue>1.1</MarketValue>
+			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
 			<tasteThought>AteRawFood</tasteThought>
@@ -321,8 +321,8 @@
 			<texPath>Things/Item/Resource/PlantFoodRaw/RawGarlic</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.44</MarketValue>
-			<Nutrition>0.02</Nutrition>
+			<MarketValue>1.1</MarketValue>
+			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
 			<tasteThought>AteRawFood</tasteThought>
@@ -344,8 +344,8 @@
 			<texPath>Things/Item/Resource/PlantFoodRaw/RawOnions</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.66</MarketValue>
-			<Nutrition>0.03</Nutrition>
+			<MarketValue>1.1</MarketValue>
+			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
 			<tasteThought>AteRawFood</tasteThought>
@@ -367,8 +367,8 @@
 			<texPath>Things/Item/Resource/PlantFoodRaw/RawPumpkins</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>10.8</MarketValue>
-			<Nutrition>0.9</Nutrition>
+			<MarketValue>1.1</MarketValue>
+			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
 			<tasteThought>AteRawFood</tasteThought>
@@ -390,8 +390,8 @@
 			<texPath>Things/Item/Resource/PlantFoodRaw/RawLentils</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.44</MarketValue>
-			<Nutrition>0.02</Nutrition>
+			<MarketValue>1.1</MarketValue>
+			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
 			<tasteThought>AteRawFood</tasteThought>
@@ -414,7 +414,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>10</MarketValue>
+			<MarketValue>1.1</MarketValue>
 			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<ingestible>
@@ -424,29 +424,6 @@
 		<comps>
 			<li Class="CompProperties_Rottable">
 				<daysToRotStart>40</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-	</ThingDef>
-
-	<ThingDef ParentName="PlantFoodRawBase">
-		<defName>DankPyon_RawMacci</defName>
-		<label>macci</label>
-		<description>Raw macci.</description>
-		<soundInteract>Grain_Drop</soundInteract>
-		<soundDrop>Grain_Drop</soundDrop>
-		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/RawMacci</texPath>
-		</graphicData>
-		<statBases>
-			<MarketValue>1.1</MarketValue>
-		</statBases>
-		<ingestible>
-			<foodType>VegetableOrFruit</foodType>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>60</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>

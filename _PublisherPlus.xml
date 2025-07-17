@@ -5,6 +5,7 @@
     <exclude>.vs</exclude>
     <exclude>1.4\Source</exclude>
     <exclude>1.5\Source</exclude>
+    <exclude>1.6\Source</exclude>
     <exclude>About\Preview01.png</exclude>
     <exclude>About\Preview01_shrunk.png</exclude>
     <exclude>About\Preview02.png</exclude>

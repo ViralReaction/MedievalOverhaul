@@ -65,7 +65,7 @@
 			<li Class="VEF.Cooking.CompProperties_IngestedThoughtFromQuality">
 				<ingestedThought>DankPyon_DrankWine</ingestedThought>
 			</li>
-			<li MayRequire="vanillaexpanded.vcooke" Class="VEF.Cooking.CompProperties_StackByQuality"/>
+			<li Class="VEF.Cooking.CompProperties_StackByQuality"/>
 		</comps>
 		<techLevel>Neolithic</techLevel>
 		<researchPrerequisites>

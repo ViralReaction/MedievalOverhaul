@@ -4854,7 +4854,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>DankPyon_RawMacci</li>
+						<li>RawCorn</li>
 					</thingDefs>
 				</filter>
 				<count>0.85</count>
@@ -4892,7 +4892,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>DankPyon_RawMacci</li>
+						<li>RawCorn</li>
 					</thingDefs>
 				</filter>
 				<count>4.25</count>
@@ -4930,7 +4930,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>DankPyon_RawMacci</li>
+						<li>RawCorn</li>
 					</thingDefs>
 				</filter>
 				<count>12.75</count>
