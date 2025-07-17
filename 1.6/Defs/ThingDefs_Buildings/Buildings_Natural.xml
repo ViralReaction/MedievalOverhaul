@@ -323,80 +323,6 @@
 		</building>
 	</ThingDef>
 
-	<!-- <ThingDef ParentName="BuildingNaturalBase" Name="DankPyon_HornetNestBase"> -->
-	<!-- <defName>DankPyon_HornetNest</defName> -->
-	<!-- <label>hornet nest</label> -->
-	<!-- <description>A hive of giant insects. If activated, it will spawn additional insects and hives over time, as well as valuable hornet honey.</description> -->
-	<!-- <thingClass>Building</thingClass> -->
-	<!-- <graphicData> -->
-	<!-- <texPath>Natural/HornetNest</texPath> -->
-	<!-- <graphicClass>Graphic_Random</graphicClass> -->
-	<!-- <drawSize>4,4</drawSize> -->
-	<!-- </graphicData> -->
-	<!-- <altitudeLayer>Building</altitudeLayer> -->
-	<!-- <rotatable>false</rotatable> -->
-	<!-- <fillPercent>0.5</fillPercent> -->
-	<!-- <statBases> -->
-	<!-- <MaxHitPoints>230</MaxHitPoints> -->
-	<!-- <Flammability>0.5</Flammability> -->
-	<!-- </statBases> -->
-	<!-- <pathCost>42</pathCost> -->
-	<!-- <receivesSignals>true</receivesSignals> -->
-	<!-- <blockWind>true</blockWind> -->
-	<!-- <tickerType>Normal</tickerType> -->
-	<!-- <passability>PassThroughOnly</passability> -->
-	<!-- <killedLeavings> -->
-	<!-- <DankPyon_HornetHoney>30</DankPyon_HornetHoney> -->
-	<!-- </killedLeavings> -->
-	<!-- <comps> -->
-	<!-- <li Class="CompProperties_CanBeDormant"> -->
-	<!-- <startsDormant>false</startsDormant> -->
-	<!-- <canWakeUpFogged>false</canWakeUpFogged> -->
-	<!-- </li> -->
-	<!-- <li Class="CompProperties_WakeUpDormant"/> -->
-	<!-- <li Class="CompProperties_SelfhealHitpoints"> -->
-	<!-- <ticksPerHeal>6000</ticksPerHeal> -->
-	<!-- </li> -->
-	<!-- <li Class="CompProperties_Spawner"> -->
-	<!-- <thingToSpawn>DankPyon_HornetHoney</thingToSpawn> -->
-	<!-- <spawnCount>2</spawnCount> -->
-	<!-- <spawnIntervalRange>26000~30000</spawnIntervalRange> -->
-	<!-- <spawnMaxAdjacent>20</spawnMaxAdjacent> -->
-	<!-- <spawnForbidden>true</spawnForbidden> -->
-	<!-- <saveKeysPrefix>hornethoney</saveKeysPrefix> -->
-	<!-- </li> -->
-	<!-- <li Class="CompProperties_Spawner"> -->
-	<!-- <thingToSpawn>DankPyon_HornetJelly</thingToSpawn> -->
-	<!-- <spawnCount>10</spawnCount> -->
-	<!-- <spawnIntervalRange>26000~30000</spawnIntervalRange> -->
-	<!-- <spawnMaxAdjacent>13</spawnMaxAdjacent> -->
-	<!-- <spawnForbidden>true</spawnForbidden> -->
-	<!-- <saveKeysPrefix>hornetjelly</saveKeysPrefix> -->
-	<!-- </li> -->
-	<!-- <li Class="MedievalOverhaul.CompProperties_HornetNestSpawner"> -->
-	<!-- <spawnablePawnKinds> -->
-	<!-- <li>DankPyon_Deathstinger</li> -->
-	<!-- </spawnablePawnKinds> -->
-	<!-- <spawnSound>Hive_Spawn</spawnSound> -->
-	<!-- <initialPawnCount>0</initialPawnCount> -->
-	<!-- <maxPawnCount>4</maxPawnCount> -->
-	<!-- <pawnSpawnIntervalDays>0.5~1</pawnSpawnIntervalDays> -->
-	<!-- <defendRadius>5</defendRadius> -->
-	<!-- <faction>DankPyon_Hornets</faction> -->
-	<!-- </li> -->
-	<!-- <li Class="CompProperties_HeatPusher"> -->
-	<!-- <heatPerSecond>6</heatPerSecond> -->
-	<!-- <heatPushMaxTemperature>38</heatPushMaxTemperature> -->
-	<!-- </li> -->
-	<!-- <li Class="CompProperties_SpawnerFilth"> -->
-	<!-- <filthDef>Filth_Slime</filthDef> -->
-	<!-- <spawnCountOnSpawn>10</spawnCountOnSpawn> -->
-	<!-- <spawnMtbHours>4</spawnMtbHours> -->
-	<!-- <spawnRadius>5</spawnRadius> -->
-	<!-- </li> -->
-	<!-- </comps> -->
-	<!-- </ThingDef> -->
-	
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>DankPyon_HornetNest</defName>
 		<label>hive</label>
@@ -421,7 +347,7 @@
 		<tickerType>Normal</tickerType>
 		<passability>PassThroughOnly</passability>
 		<killedLeavings>
-			<InsectJelly>30</InsectJelly>
+			<DankPyon_HornetHoney>30</DankPyon_HornetHoney>
 		</killedLeavings>
 		<comps>
 			<li Class="CompProperties_CanBeDormant">
@@ -439,18 +365,26 @@
 				</spawnablePawnKinds>
 				<spawnSound>Hive_Spawn</spawnSound>
 				<initialPawnCount>0</initialPawnCount>
-				<maxPawnCount>4</maxPawnCount>
+				<maxPawnCount>10</maxPawnCount>
 				<pawnSpawnIntervalDays>0.5~1</pawnSpawnIntervalDays>
 				<defendRadius>5</defendRadius>
 				<faction>Insect</faction>
 			</li>
 			<li Class="CompProperties_Spawner">
-				<thingToSpawn>InsectJelly</thingToSpawn>
-				<spawnCount>20</spawnCount>
+				<thingToSpawn>DankPyon_HornetHoney</thingToSpawn>
+				<spawnCount>2</spawnCount>
+				<spawnIntervalRange>26000~30000</spawnIntervalRange>
+				<spawnMaxAdjacent>20</spawnMaxAdjacent>
+				<spawnForbidden>true</spawnForbidden>
+				<saveKeysPrefix>hornethoney</saveKeysPrefix>
+			</li>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>DankPyon_HornetJelly</thingToSpawn>
+				<spawnCount>10</spawnCount>
 				<spawnIntervalRange>26000~30000</spawnIntervalRange>
 				<spawnMaxAdjacent>40</spawnMaxAdjacent>
 				<spawnForbidden>true</spawnForbidden>
-				<saveKeysPrefix>jelly</saveKeysPrefix>
+				<saveKeysPrefix>hornetjelly</saveKeysPrefix>
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<heatPerSecond>6</heatPerSecond>
@@ -463,9 +397,9 @@
 				<spawnRadius>5</spawnRadius>
 			</li>
 			<!-- <li Class="CompProperties_Maintainable"> -->
-				<!-- <ticksHealthy>60000</ticksHealthy> -->
-				<!-- <ticksNeedsMaintenance>60000</ticksNeedsMaintenance> -->
-				<!-- <damagePerTickRare>10</damagePerTickRare> -->
+			<!-- <ticksHealthy>60000</ticksHealthy> -->
+			<!-- <ticksNeedsMaintenance>60000</ticksNeedsMaintenance> -->
+			<!-- <damagePerTickRare>10</damagePerTickRare> -->
 			<!-- </li> -->
 		</comps>
 	</ThingDef>
