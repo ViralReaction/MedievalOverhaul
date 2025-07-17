@@ -5,7 +5,7 @@
 		<defName>EEG_WaterTowerS</defName>
 		<label>water barrel</label>
 		<graphicData>
-			<texPath>Storage/BarrelBigDown</texPath>
+			<texPath>Things/Building/Storage/BarrelBigDown</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 			<drawRotated>false</drawRotated>
@@ -45,7 +45,7 @@
 			<li MayRequire="dbhlitemode">Plumbing</li>
 		</researchPrerequisites>
 		<graphicData>
-			<texPath>Production/Well</texPath>
+			<texPath>Things/Building/Production/Well</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 			<drawRotated>false</drawRotated>
