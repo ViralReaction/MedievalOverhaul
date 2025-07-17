@@ -42,6 +42,7 @@
 				<li>Road</li>
 			</terrainValidationDisallowed>
 			<validators>
+				<li Class="MedievalOverhaul.ScattererValidator_NestTemp" />
 				<li Class="ScattererValidator_Buildable">
 					<radius>6</radius>
 					<affordance>Light</affordance>
@@ -69,6 +70,7 @@
 			</terrainValidationDisallowed>
 			<minDistToPlayerStart>30</minDistToPlayerStart>
 			<validators>
+				<li Class="MedievalOverhaul.ScattererValidator_NestTemp" />
 				<li Class="ScattererValidator_Buildable">
 					<radius>3</radius>
 					<affordance>Light</affordance>

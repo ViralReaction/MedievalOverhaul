@@ -91,6 +91,7 @@
 		<Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelAtomicCustom.cs" />
 		<Compile Include="Medieval Overhaul\JobDrivers\JobDriver_RefuelCustom.cs" />
 		<Compile Include="Medieval Overhaul\MapComponent\RefuelableMapComponent.cs" />
+		<Compile Include="Medieval Overhaul\MapGeneration\ScattererValidator_NestTemp.cs" />
 		<Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_PlowSoil.cs" />
 		<Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_WindMill.cs" />
 		<Compile Include="Medieval Overhaul\PlaceWorker\PlaceWorker_WaterWheel.cs" />
