@@ -3200,10 +3200,8 @@
 			<WorkToBuild>3000</WorkToBuild>
 			<MaxHitPoints>200</MaxHitPoints>
 		</statBases>
-
 		<staticSunShadowHeight>0</staticSunShadowHeight>
     	<castEdgeShadows>False</castEdgeShadows>
-
 		<stuffCategories>
 			<li>Stony</li>
 			<li>Metallic</li>
@@ -3230,7 +3228,6 @@
 		</building>
 		<researchPrerequisites Inherit="False">
 			<li>Stonecutting</li>
-			<li>DankPyon_RusticFurniture</li>
 		</researchPrerequisites>
 	</ThingDef>
 
