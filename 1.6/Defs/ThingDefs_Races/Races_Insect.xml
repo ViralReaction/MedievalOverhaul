@@ -89,7 +89,7 @@
 		<defName>DankPyon_Deathstinger</defName>
 		<label>deathstinger</label>
 		<race>DankPyon_Deathstinger</race>
-		<defaultFactionType>DankPyon_Hornets</defaultFactionType>
+		<defaultFactionType>Insect</defaultFactionType>
 		<combatPower>60</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.15</ecoSystemWeight>

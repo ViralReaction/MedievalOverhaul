@@ -7,7 +7,7 @@
 		<description>These giant insect-like creatures live underground and burrow up to attack when attracted by noise or pheromone signals.</description>
 		<pawnSingular>insect</pawnSingular>
 		<pawnsPlural>insects</pawnsPlural>
-		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<requiredCountAtGameStart>0</requiredCountAtGameStart>
 		<fixedName>Hornets</fixedName>
 		<factionIconPath>World/WorldObjects/Expanding/Insects</factionIconPath>
 		<colorSpectrum>
@@ -28,7 +28,7 @@
 		<permanentEnemy>true</permanentEnemy>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<allowedArrivalTemperatureRange>0~45</allowedArrivalTemperatureRange>
-		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>1000</configurationListOrderPriority>
 	</FactionDef>
 
