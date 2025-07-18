@@ -49,7 +49,7 @@
 		<li IfModActive="Ludeon.RimWorld.Odyssey">1.6/Mods/Odyssey</li>
 		<li IfModActive="syrchalis.processor.framework, vr.processor.framework">1.6/Mods/Processor_Framework</li>
 		<li IfModActive="vanillaexpanded.vplantse">1.6/Mods/VanillaPlantsExpanded</li>
-		<li IfModActive="vanillaexpanded.vcef">1.6/Mods/VanillaFishingExpanded</li>
+		<li IfModActive="vanillaexpanded.vcef" IfModNotActive="Ludeon.RimWorld.Odyssey">1.6/Mods/VanillaFishingExpanded</li>
 		<li IfModActive="vanillaexpanded.vcooke">1.6/Mods/VanillaCookingExpanded</li>
 		<li IfModActive="vanillaexpanded.vmemese">1.6/Mods/VanillaMemesExpanded</li>
 		<li IfModActive="dubwise.dubsbadhygiene">1.6/Mods/DubsBadHygiene</li>

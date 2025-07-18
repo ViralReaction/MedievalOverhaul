@@ -208,7 +208,6 @@
 					<li>DankPyon_DriedMeatProcess</li>
 					<li>DankPyon_DriedMeatHumanProcess</li>
 					<li>DankPyon_DriedMeatInsectProcess</li>
-					<li MayRequire="vanillaexpanded.vcef">DankPyon_DriedFishProcess</li>
 					<li>DankPyon_StrawProcess</li>
 				</processes>
 			</li>
@@ -270,7 +269,6 @@
 					<li>DankPyon_DriedMeatProcess</li>
 					<li>DankPyon_DriedMeatHumanProcess</li>
 					<li>DankPyon_DriedMeatInsectProcess</li>
-					<li MayRequire="vanillaexpanded.vcef">DankPyon_DriedFishProcess</li>
 					<li>DankPyon_StrawProcess</li>
 				</processes>
 			</li>
@@ -645,7 +643,6 @@
 					<li>DankPyon_SmokedMeatProcess</li>
 					<li>DankPyon_SmokedMeatHumanProcess</li>
 					<li>DankPyon_SmokedMeatInsectProcess</li>
-					<li MayRequire="vanillaexpanded.vcef">DankPyon_SmokedFishProcess</li>
 				</processes>
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
