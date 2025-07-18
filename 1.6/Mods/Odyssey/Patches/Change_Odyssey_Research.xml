@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- ===== Odyssey Research Patches ==== -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Fishing"]/tab</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="Fishing"]/tab</xpath>
+			<value>
+				<tab>DankPyon_MedievalResearchTab</tab>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="Fishing"]</xpath>
+			<value>
+				<tab>DankPyon_MedievalResearchTab</tab>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Fishing"]/researchViewX</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="Fishing"]/researchViewX</xpath>
+			<value>
+				<researchViewX>0.00</researchViewX>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Fishing"]/researchViewY</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="Fishing"]/researchViewY</xpath>
+			<value>
+				<researchViewY>3.40</researchViewY>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>
