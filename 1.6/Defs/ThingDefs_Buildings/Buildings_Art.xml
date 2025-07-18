@@ -43,6 +43,7 @@
 			<li>Metallic</li>
 			<li>Woody</li>
 			<li>Stony</li>
+			<li>DankPyon_Gems</li>
 		</stuffCategories>
 		<costStuffCount>400</costStuffCount>
 		<castEdgeShadows>true</castEdgeShadows>
@@ -66,11 +67,11 @@
 			<WorkToMake>18000</WorkToMake>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
-  
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
 			<li>Stony</li>
+			<li>DankPyon_Gems</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 	</ThingDef>
@@ -92,15 +93,15 @@
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
 		<fillPercent>0.35</fillPercent>
-    
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
 			<li>Stony</li>
+			<li>DankPyon_Gems</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 	</ThingDef>
-  
+
 	<ThingDef ParentName="DankPyon_SculptureBase">
 		<defName>DankPyon_ArmorStatue</defName>
 		<label>armor statue</label>
@@ -123,6 +124,7 @@
 			<li>Metallic</li>
 			<li>Woody</li>
 			<li>Stony</li>
+			<li>DankPyon_Gems</li>
 		</stuffCategories>
 		<costStuffCount>100</costStuffCount>
 		<statBases>
@@ -132,7 +134,6 @@
 			<WorkToMake>30000</WorkToMake>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
 		</statBases>
-
 		<size>(1,1)</size>
 	</ThingDef>
 
@@ -161,6 +162,7 @@
 			<li>Metallic</li>
 			<li>Woody</li>
 			<li>Stony</li>
+			<li>DankPyon_Gems</li>
 		</stuffCategories>
 		<costStuffCount>100</costStuffCount>
 		<statBases>

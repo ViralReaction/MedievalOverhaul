@@ -741,7 +741,6 @@
 			<categories>
 				<li>DankPyon_Gems</li>
 			</categories>
-
 			<constructEffect>ConstructMetal</constructEffect>
 			<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
