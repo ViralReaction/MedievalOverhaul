@@ -10,7 +10,7 @@
   <label>fat</label>
   <description>An abundant material, fat serves multiple purposes. In food, added fat improves meals and fills a colonist’s gut longer, but too much and the colonist will more likely get sick. In survival, fat can be added to flames, whether in a torch or a bonfire, to maintain heat longer. Finally, rendered fat can mold into candles, soaps, sculptures, and more.</description>
   <graphicData>
-    <texPath>Resources/Fat</texPath>
+    <texPath>Things/Item/Resource/Fat</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
   </graphicData>
   <thingCategories>
@@ -47,7 +47,7 @@
   <description>Tallow is a rendered form of fat, solid at room temperature, which allows it to be stored for extended periods of time. Can be made into candles.</description>
   <stackLimit>75</stackLimit>	
   <graphicData>
-    <texPath>Resources/Tallow</texPath>
+    <texPath>Things/Item/Resource/Tallow</texPath>
     <graphicClass>Graphic_Single</graphicClass>
     <drawSize>(1,1)</drawSize>
   </graphicData>
@@ -75,7 +75,7 @@
   <description>Flour is used to prepare many different meals and can be stored for very long periods of time, but cannot be eaten raw. Due to its nature, it can be stored very efficiently.</description>
   <stackLimit>75</stackLimit>	
   <graphicData>
-    <texPath>Resources/Flour</texPath>
+    <texPath>Things/Item/Resource/Flour</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
     <drawSize>(1,1)</drawSize>
   </graphicData>
@@ -104,7 +104,7 @@
   <description>Dried stalks of grain, used especially as fodder, harvested and compacted for storage. Straw is good animal feed, but inedible for humans.</description>
   <stackLimit>200</stackLimit>
   <graphicData>
-    <texPath>Resources/Straw</texPath>
+    <texPath>Things/Item/Resource/Straw</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
   </graphicData>
   <statBases>
@@ -126,7 +126,7 @@
   <description>Salt is a common mineral, often found in natural rocky deposits and in abundance in the ocean. It is often used for food preservation, and as a seasoning in meals.</description>
   <stackLimit>200</stackLimit>
   <graphicData>
-    <texPath>Resources/Salt</texPath>
+    <texPath>Things/Item/Resource/Salt</texPath>
   </graphicData>
   <statBases>
     <MarketValue>1</MarketValue>	        
@@ -150,7 +150,7 @@
   <label>sugar</label>
   <description>A sweet, white powdery substance extracted from the sugar cane plant.</description>
   <graphicData>
-    <texPath>Resources/Sugar</texPath>
+    <texPath>Things/Item/Resource/Sugar</texPath>
   </graphicData>
   <statBases>
     <MarketValue>2.2</MarketValue>
@@ -176,7 +176,7 @@
   <label>spices</label>
   <description>A mix of dried and crushed seasonings, provides wonderful aroma and flavours.</description>
   <graphicData>
-    <texPath>Resources/Spices</texPath>
+    <texPath>Things/Item/Resource/Spices</texPath>
   </graphicData>
   <statBases>
     <MarketValue>2.5</MarketValue>
@@ -203,7 +203,7 @@
   <description>Minced meat mixed with herbs and spices.</description>
   <stackLimit>30</stackLimit>
   <graphicData>
-    <texPath>Resources/Sausage</texPath>
+    <texPath>Things/Item/Resource/Sausage</texPath>
     <graphicClass>Graphic_StackCount</graphicClass>
   </graphicData>
   <statBases>

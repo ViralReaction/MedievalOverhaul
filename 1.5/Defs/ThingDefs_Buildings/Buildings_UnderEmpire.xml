@@ -104,7 +104,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/AncientReliquaryRuined</texPath>
+					<texPath>Things/Building/Ruin/AncientReliquaryRuined</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(5,4)</drawSize>
 				</emptyGraphicData>

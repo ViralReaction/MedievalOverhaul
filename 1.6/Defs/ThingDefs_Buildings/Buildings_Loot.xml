@@ -41,7 +41,7 @@
 		<defName>DankPyon_Building_ChaliceSilver</defName>
 		<label>silver chalice</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/ChaliceSilver</texPath>
+			<texPath>Things/Building/Ruin/ChaliceSilver</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -60,7 +60,7 @@
 		<defName>DankPyon_Building_ChaliceGold</defName>
 		<label>golden chalice</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/ChaliceGold</texPath>
+			<texPath>Things/Building/Ruin/ChaliceGold</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -81,7 +81,7 @@
 		<defName>DankPyon_Building_BowlSilver</defName>
 		<label>silver bowl</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/BowlSilver</texPath>
+			<texPath>Things/Building/Ruin/BowlSilver</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -100,7 +100,7 @@
 		<defName>DankPyon_Building_BowlGold</defName>
 		<label>gold bowl</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/BowlGold</texPath>
+			<texPath>Things/Building/Ruin/BowlGold</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -120,7 +120,7 @@
 		<defName>DankPyon_Building_SkullGold</defName>
 		<label>gold skull</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/SkullGold</texPath>
+			<texPath>Things/Building/Ruin/SkullGold</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -140,7 +140,7 @@
 		<defName>DankPyon_Building_SkullEmerald</defName>
 		<label>emerald skull</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/SkullEmerald</texPath>
+			<texPath>Things/Building/Ruin/SkullEmerald</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -160,7 +160,7 @@
 		<defName>DankPyon_Building_SkullSapphire</defName>
 		<label>sapphire skull</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/SkullSapphire</texPath>
+			<texPath>Things/Building/Ruin/SkullSapphire</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -180,7 +180,7 @@
 		<defName>DankPyon_Building_SkullRuby</defName>
 		<label>ruby skull</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/SkullRuby</texPath>
+			<texPath>Things/Building/Ruin/SkullRuby</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -201,7 +201,7 @@
 		<defName>DankPyon_Building_AncientCodex</defName>
 		<label>ancient codex</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/AncientCodex</texPath>
+			<texPath>Things/Building/Ruin/AncientCodex</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>

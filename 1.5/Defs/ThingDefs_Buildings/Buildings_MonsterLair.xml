@@ -6,7 +6,7 @@
 		<label>large clutch</label>
 		<description>A gigantic group of eggs that has not yet hatched. Widely sought for and can sell for a huge sum.</description>
 		<graphicData>
-			<texPath>Buildings/SnakeLair/ClutchLarge</texPath>
+			<texPath>Things/Building/SnakeLair/ClutchLarge</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<damageData>

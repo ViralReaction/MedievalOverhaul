@@ -7,7 +7,7 @@
     <label>basic component</label>
     <description>Miscellaneous gears, wheels, nails. Necessary for assembling complex contraptions.</description>
     <graphicData>
-        <texPath>Resources/ComponentMedieval</texPath>
+        <texPath>Things/Item/Resource/ComponentMedieval</texPath>
         <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
@@ -33,7 +33,7 @@
     <label>paper</label>
     <description>An empty sheet of paper. Useful for scribbling or writing notes.</description>
     <graphicData>
-        <texPath>Resources/Paper</texPath>
+        <texPath>Things/Item/Resource/Paper</texPath>
         <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <soundInteract>Wood_Drop</soundInteract>
@@ -57,8 +57,8 @@
     <label>tanning liquor</label>
     <description>Tannins leeched from various natural sources have been concentrated into this liquor. It can be used to process raw hides into tanned leathers.</description>
     <graphicData>
-        <texPath>Resources/Tannin</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
+        <texPath>Things/Item/Resource/Tannin</texPath>
+        <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
     <stackLimit>25</stackLimit>
@@ -80,7 +80,7 @@
     <label>tar</label>
     <description>A black viscious liquid that acts as an adhesive or flammable source of material used for siege warfare.</description>
     <graphicData>
-        <texPath>Resources/Tar</texPath>
+        <texPath>Things/Item/Resource/Tar</texPath>
         <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
@@ -109,7 +109,7 @@
     <label>gunpowder</label>
     <description>A black powdery substance that is highly explosive and typically used in firearms.</description>
     <graphicData>
-        <texPath>Resources/Gunpowder</texPath>
+        <texPath>Things/Item/Resource/Gunpowder</texPath>
         <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
@@ -140,10 +140,10 @@
     <label>scorpio bolts</label>
     <description>A heavy bolt used by scorpios.</description>
     <graphicData>
-        <texPath>Resources/BoltScorpio</texPath>
+        <texPath>Things/Item/Resource/BoltScorpio</texPath>
         <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <uiIconPath>Resources/BoltScorpio/BoltScorpio_Icon</uiIconPath>
+    <uiIconPath>Things/Item/Resource/BoltScorpio/BoltScorpio_Icon</uiIconPath>
     <costList>
         <DankPyon_IronIngot>1</DankPyon_IronIngot>
         <WoodLog>3</WoodLog>
@@ -171,7 +171,7 @@
     <label>ballista bolts</label>
     <description>A heavy bolt used by ballistas.</description>
     <graphicData>
-        <texPath>Resources/BoltBallista</texPath>
+        <texPath>Things/Item/Resource/BoltBallista</texPath>
         <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <costList>
@@ -202,7 +202,7 @@
     <description>A heavy chunk of rock, robust and round.</description>
     
     <graphicData>
-        <texPath>Resources/StoneBoulder</texPath>
+        <texPath>Things/Item/Resource/StoneBoulder</texPath>
         <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
 
@@ -256,7 +256,7 @@
     <description>A heavy chunk of rock, robust and round. \n\nCovered with tar, which can be lit once ready to be thrown.</description>
     
     <graphicData>
-        <texPath>Resources/STarredStoneBoulder</texPath>
+        <texPath>Things/Item/Resource/STarredStoneBoulder</texPath>
         <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
 
@@ -314,7 +314,7 @@
     <label>Clean Plate</label>
     <description>A clean plate, ready to be used by dishes.</description>
     <graphicData>
-      <texPath>Resources/PlateClean</texPath>
+      <texPath>Things/Item/Resource/PlateClean</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <costList>
@@ -330,7 +330,7 @@
     <label>Dirty Plate</label>
     <description>A dirty plate, needs to be washed first to be usable.</description>
     <graphicData>
-      <texPath>Resources/PlateDirty</texPath>
+      <texPath>Things/Item/Resource/PlateDirty</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <costList>
@@ -346,7 +346,7 @@
     <label>Clean Bowl</label>
     <description>A clean bowl, ready to be used in meals.</description>
     <graphicData>
-      <texPath>Resources/BowlClean</texPath>
+      <texPath>Things/Item/Resource/BowlClean</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <costList>
@@ -361,7 +361,7 @@
     <label>Dirty Bowl</label>
     <description>A dirty bowl, needs to be washed first to be usable.</description>
     <graphicData>
-      <texPath>Resources/BowlDirty</texPath>
+      <texPath>Things/Item/Resource/BowlDirty</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <costList>

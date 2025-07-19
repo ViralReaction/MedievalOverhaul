@@ -24,7 +24,7 @@ namespace MedievalOverhaul
 
         private static float SpinRateFactor = 0.035f;
 
-        private static readonly Material WindTurbineBladesMat = MaterialPool.MatFrom("Buildings/Windmill/WindmillBlades");
+        private static readonly Material WindTurbineBladesMat = MaterialPool.MatFrom("Things/Building/Production/Windmill/WindmillBlades");
 
         private List<IntVec3> windPathCells = new List<IntVec3>();
         private List<Thing> windPathBlockedByThings = new List<Thing>();

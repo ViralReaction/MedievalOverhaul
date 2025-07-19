@@ -24,7 +24,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "Steel"]/graphicData/texPath</xpath>
 					<value>
-						<texPath>Resources/Steel</texPath>
+						<texPath>Things/Item/Resource/Steel</texPath>
 					</value>
 				</li>
 
@@ -47,7 +47,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "Silver"]/graphicData/texPath</xpath>
 					<value>
-						<texPath>Resources/Silver</texPath>
+						<texPath>Things/Item/Resource/Silver</texPath>
 					</value>
 				</li>
 
@@ -61,7 +61,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "Gold"]/graphicData/texPath</xpath>
 					<value>
-						<texPath>Resources/Gold</texPath>
+						<texPath>Things/Item/Resource/Gold</texPath>
 					</value>
 				</li>
 
@@ -82,7 +82,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="Plasteel"]/graphicData/texPath</xpath>
 					<value>
-						<texPath>Resources/PlasteelIngot</texPath>
+						<texPath>Things/Item/Resource/PlasteelIngot</texPath>
 					</value>
 				</li>
 

@@ -28,7 +28,7 @@
     <description>A wooden rack to dry goods under the sun for preservation and long time use.</description>
     <graphicData>
       <texPath>Things/Building/Production/DryingRack2x2/DryingRack</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2.5,2.5)</drawSize>
 			<damageData>
 				<rect>(0.05,0.1,0.9,0.9)</rect>

@@ -30,7 +30,7 @@
 		<label>silkworm</label>
 		<description>Small wormy critters that produces silk for their cocoons that can be harvested to create fine silk.</description>
 		<graphicData>
-			<texPath>Resources/Silkworm</texPath>
+			<texPath>Things/Item/Resource/Silkworm</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>

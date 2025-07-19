@@ -19,7 +19,7 @@
 		<label>blocked door</label>
 		<description>A door that has been permanently locked by fixing wooden planks between its doors. Needs destroyed in order to pass through</description>
 		<graphicData>
-			<texPath>Buildings/Ruin/RuinedRusticDoor</texPath>
+			<texPath>Things/Building/Ruin/RuinedRusticDoor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -42,7 +42,7 @@
 		<label>ruined slab door</label>
 		<description>Crumbled into a pile of stone. Traversing through is impossible. Needs destroyed in order to pass through</description>
 		<graphicData>
-			<texPath>Buildings/Ruin/RuinedSlabDoor</texPath>
+			<texPath>Things/Building/Ruin/RuinedSlabDoor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -65,7 +65,7 @@
 		<label>locked gate</label>
 		<description>A locked metal gate, the only way in is to break the door.</description>
 		<graphicData>
-			<texPath>Buildings/Ruin/LockedGate</texPath>
+			<texPath>Things/Building/Ruin/LockedGate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -88,7 +88,7 @@
 		<label>ruined column</label>
 		<description>A simple platform on which to sit. Not very comfortable, but much better than nothing.Commonly seen at taverns and inns. Can be used at tables, work stations, and elsewhere.</description>
 		<graphicData>
-			<texPath>Buildings/Ruin/RuinedColumn</texPath>
+			<texPath>Things/Building/Ruin/RuinedColumn</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawRotated>false</drawRotated>
 			<shadowData>
@@ -122,7 +122,7 @@
     <label>ancient column</label>
     <description>A tall pillar of ornate design.</description>
     <graphicData>
-        <texPath>Buildings/Ruin/RuinedAncientColumn1x1</texPath>
+        <texPath>Things/Building/Ruin/RuinedAncientColumn1x1</texPath>
         <graphicClass>Graphic_Multi</graphicClass>
         <drawSize>(5,5)</drawSize>
         <damageData>
@@ -165,7 +165,7 @@
 		<label>ruined round stool</label>
 		<description>A simple platform on which to sit. Not very comfortable, but much better than nothing.Commonly seen at taverns and inns. Can be used at tables, work stations, and elsewhere.</description>
 		<graphicData>
-			<texPath>Buildings/Ruin/RuinedStool</texPath>
+			<texPath>Things/Building/Ruin/RuinedStool</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawRotated>false</drawRotated>
 			<damageData>
@@ -202,7 +202,7 @@
 		<label>wicker bed</label>
 		<description>A simple and quick to make wicker bed.</description>
 		<graphicData>
-		<texPath>Buildings/Ruin/RuinedBedWicker</texPath>
+		<texPath>Things/Building/Ruin/RuinedBedWicker</texPath>
 		<graphicClass>Graphic_Multi</graphicClass>
 		<drawSize>(2,2)</drawSize>
 		<damageData>
@@ -238,7 +238,7 @@
 		<label>ruined double wicker bed</label>
 		<description>A ruined simple and quick to make wicker bed.</description>
 		<graphicData>
-			<texPath>Buildings/Ruin/RuinedBedWickerDouble</texPath>
+			<texPath>Things/Building/Ruin/RuinedBedWickerDouble</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.05,2.05)</drawSize>
 			<damageData>
@@ -275,7 +275,7 @@
 		<label>Debris</label>
 		<description>A pile of ruined furniture seemingly stacked together in a deliberate fashion.</description>
 		<graphicData>
-			<texPath>Buildings/Ruin/WoodenDebris</texPath>
+			<texPath>Things/Building/Ruin/WoodenDebris</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>4</drawSize>
 		</graphicData>
@@ -307,7 +307,7 @@
 		<label>ruined closet</label>
 		<description>A ruined closet.</description>
 		<graphicData>
-			<texPath>Buildings/Ruin/RuinedCloset</texPath>
+			<texPath>Things/Building/Ruin/RuinedCloset</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>3</drawSize>
 		</graphicData>
@@ -337,7 +337,7 @@
 		<label>ruined bookshelf</label>
 		<description>A ruined bookshelf.</description>
 		<graphicData>
-			<texPath>Buildings/Ruin/RuinedBookshelf</texPath>
+			<texPath>Things/Building/Ruin/RuinedBookshelf</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>3</drawSize>
@@ -368,7 +368,7 @@
         <label>empty bucket</label>
         <description>An empty wooden bucket. Could have some scraps inside.</description>
         <graphicData>
-            <texPath>Buildings/Ruin/EmptyBucket</texPath>
+            <texPath>Things/Building/Ruin/EmptyBucket</texPath>
             <graphicClass>Graphic_Single</graphicClass>
 	    </graphicData>
         <rotatable>false</rotatable>
@@ -392,7 +392,7 @@
         <label>ruined crate</label>
         <description>A broken crate. Could have some scraps inside.</description>
         <graphicData>
-            <texPath>Buildings/Ruin/RuinedCrate1x1</texPath>
+            <texPath>Things/Building/Ruin/RuinedCrate1x1</texPath>
             <graphicClass>Graphic_Random</graphicClass>
 	    </graphicData>
         <rotatable>false</rotatable>
@@ -418,7 +418,7 @@
 		<defName>DankPyon_RuinedTable1x2c</defName>
 		<label>ruined table (1x2)</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/Ruined1x2Table</texPath>
+			<texPath>Things/Building/Ruin/Ruined1x2Table</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,4)</drawSize>
 			<damageData>
@@ -448,7 +448,7 @@
 		<defName>DankPyon_RuinedTable2x4c</defName>
 		<label>ruined table (2x4)</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/Ruined2x4Table</texPath>
+			<texPath>Things/Building/Ruin/Ruined2x4Table</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,6)</drawSize>
 			<damageData>
@@ -483,7 +483,7 @@
 		<description>Trophies for the accomplished hunter, animal rugs are formed from stained and stuffed animal hides sewed to felt and padding to form rugs. The bear’s great coat is one of the most sought-after materials for animal-skinned rugs, making the grizzly bear rug a worthy choice for the daring colonist brave enough to face the hunt.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Buildings/Ruin/RuinedBearRug3x3</texPath>
+			<texPath>Things/Building/Ruin/RuinedBearRug3x3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
@@ -512,7 +512,7 @@
 		<label>remains</label>
 		<description>Old bones that are crudely stacked in a spot.</description>
 		<graphicData>
-			<texPath>Buildings/Ruin/RuinBonePile1x1</texPath>
+			<texPath>Things/Building/Ruin/RuinBonePile1x1</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<damageData>
@@ -552,7 +552,7 @@
 		<tickerType>Normal</tickerType>
 		<description>Old bones that are crudely stacked in a spot.</description>
 		<graphicData>
-			<texPath>Buildings/Ruin/RuinBonePile1x2</texPath>
+			<texPath>Things/Building/Ruin/RuinBonePile1x2</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(2,1)</drawSize>
 			<damageData>
@@ -590,7 +590,7 @@
 				<enemySpawnChance>0.15</enemySpawnChance>
 				<hostileEnemy>true</hostileEnemy>
 				<emptyGraphicData>
-                    <texPath>Buildings/Ruin/RuinBonePile1x1</texPath>
+                    <texPath>Things/Building/Ruin/RuinBonePile1x1</texPath>
 					<graphicClass>Graphic_Random</graphicClass>
 					<drawSize>(1,1)</drawSize>
 					<color>(199,181,129)</color>
@@ -633,7 +633,7 @@
         <label>massive remains</label>
         <description>Old bones crudely deposited in a random spot.</description>
         <graphicData>
-            <texPath>Buildings/Ruin/RuinBonePile2x2</texPath>
+            <texPath>Things/Building/Ruin/RuinBonePile2x2</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(2,2)</drawSize>
             <damageData>
@@ -669,7 +669,7 @@
         <label>ruined bust</label>
         <description>A broken avatar of a once prominent person.</description>
         <graphicData>
-            <texPath>Buildings/Ruin/RuinedBust</texPath>
+            <texPath>Things/Building/Ruin/RuinedBust</texPath>
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
 
@@ -697,12 +697,12 @@
         <label>ruined candles</label>
         <description>Old and dusted candles, unfit for use.</description>
         <graphicData>
-            <texPath>Buildings/Ruin/RuinedCandles</texPath>
+            <texPath>Things/Building/Ruin/RuinedCandles</texPath>
             <graphicClass>Graphic_Random</graphicClass>
             <drawRotated>false</drawRotated>
             <drawSize>(2,2)</drawSize>
         </graphicData>
-        <uiIconPath>Buildings/Ruin/MenuIcon_RuinedCandles</uiIconPath>
+        <uiIconPath>Things/Building/Ruin/MenuIcon_RuinedCandles</uiIconPath>
 
         <rotatable>false</rotatable>
         <altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -733,7 +733,7 @@
         <label>ruined candle stand</label>
         <description>A candle stand to prevent darkness seeping in your room. Can be refueled with tallow.</description>
         <graphicData>
-        <texPath>Buildings/Ruin/RuinedCandleStand</texPath>
+        <texPath>Things/Building/Ruin/RuinedCandleStand</texPath>
         <graphicClass>Graphic_Random</graphicClass>
         <shaderType>CutoutComplex</shaderType>
         <drawRotated>false</drawRotated>
@@ -774,7 +774,7 @@
         <label>ruined stew pot</label>
         <description>An old and rusted cauldron, filled with the remains of unrecognizable creatures.</description>
         <graphicData>
-        <texPath>Buildings/Ruin/RuinStewPot</texPath>
+        <texPath>Things/Building/Ruin/RuinStewPot</texPath>
         <graphicClass>Graphic_Multi</graphicClass>
         <shaderType>CutoutComplex</shaderType>
         <drawSize>(2,2)</drawSize>
@@ -808,7 +808,7 @@
         <label>ruined anvil</label>
         <description>Busted and bent, this anvil have seen better days.</description>
         <graphicData>
-            <texPath>Buildings/Ruin/RuinedAnvil</texPath>
+            <texPath>Things/Building/Ruin/RuinedAnvil</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(1.1,1.1)</drawSize>
             <damageData>
@@ -845,7 +845,7 @@
 		<thingClass>Building</thingClass>
 		<description>A ruined stone hearth.</description>
 		<graphicData>
-			<texPath>Buildings/Ruin/RuinedHearth</texPath>
+			<texPath>Things/Building/Ruin/RuinedHearth</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4,4)</drawSize>
 			<damageData>
@@ -878,7 +878,7 @@
         <label>ruined mine shaft</label>
         <description>An abandoned mine, with no maintanance, led to the collapse of its bearings, overall rendering the mine unsusable.</description>
         <graphicData>
-        <texPath>Buildings/Ruin/RuinedMineShaft</texPath>
+        <texPath>Things/Building/Ruin/RuinedMineShaft</texPath>
         <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>(3.8,3.8)</drawSize>
@@ -919,7 +919,7 @@
         <description>A collapsed chunk of stone bricks, resembling of old ruins and dungeons.\n\n It still contains useful resources which you can acquire by deconstructing it.</description>
         <category>Building</category>
         <graphicData>
-            <texPath>Buildings/Ruin/StoneDebris</texPath>
+            <texPath>Things/Building/Ruin/StoneDebris</texPath>
             <graphicClass>Graphic_Random</graphicClass>
             <drawSize>(2,2)</drawSize>
             <damageData>
@@ -955,7 +955,7 @@
 		<label>stone debris small</label>
 		<description>A collapsed chunk of stone bricks, resembling of old ruins and dungeons.\n\n It still contains useful resources which you can acquire by deconstructing it.</description>
 		<graphicData>
-			<texPath>Buildings/Ruin/SmallStoneDebris</texPath>
+			<texPath>Things/Building/Ruin/SmallStoneDebris</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawRotated>false</drawRotated>
 			<drawSize>(1,1)</drawSize>

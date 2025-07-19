@@ -4,21 +4,21 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName = "Bow_Short"]/graphicData/texPath</xpath>
 		<value>
-			<texPath>WeaponRanged/BowShort</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/BowShort</texPath>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName = "Bow_Recurve"]/graphicData/texPath</xpath>
 		<value>
-			<texPath>WeaponRanged/BowComposite</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/BowComposite</texPath>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName = "Bow_Great"]/graphicData/texPath</xpath>
 		<value>
-			<texPath>WeaponRanged/BowGreat</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/BowGreat</texPath>
 		</value>
 	</Operation>
 

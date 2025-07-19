@@ -11,7 +11,7 @@
 		<label>raw wood</label>
 		<description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
 		<graphicData>
-			<texPath>Resources/WoodLog</texPath>
+			<texPath>Things/Item/Resource/WoodLog</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(142,99,47)</color>
 		</graphicData>
@@ -97,7 +97,7 @@
 		<label>raw dark wood</label>
 		<description>A darkish hard and old type of wood that has withstand the test of time. Useful for building structures and weapons. It is a good fuel for campfires.</description>
 		<graphicData>
-			<texPath>Resources/WoodLog</texPath>
+			<texPath>Things/Item/Resource/WoodLog</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(112,91,76)</color>
 		</graphicData>
@@ -177,7 +177,7 @@
 		<label>dark timber</label>
 		<description>A darkish hard and old type of wood that has withstand the test of time. Useful for building structures and weapons. It is a good fuel for campfires.</description>
 		<graphicData>
-			<texPath>Resources/WoodPlank</texPath>
+			<texPath>Things/Item/Resource/WoodPlank</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(112,91,76)</color>
 		</graphicData>
@@ -254,7 +254,7 @@
 		<label>elven timber</label>
 		<description>Nimble but resilient, highly sought for its beauty and strength. Useful for building structures and weapons. It is a good fuel for campfires.</description>
 		<graphicData>
-			<texPath>Resources/WoodPlank</texPath>
+			<texPath>Things/Item/Resource/WoodPlank</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(131,158,67)</color>
 		</graphicData>
@@ -331,7 +331,7 @@
 	<label>dryad timber</label>
 	<description>Nimble but reslient, highly sought for its beauty and strength. Useful for building structures and weapons. It is a good fuel for campfires.</description>
 	<graphicData>
-	  <texPath>Resources/DryadWoodLog</texPath>
+	  <texPath>Things/Item/Resource/DryadWoodLog</texPath>
 	  <graphicClass>Graphic_StackCount</graphicClass>
 	</graphicData>
 	<equippedAngleOffset>-20</equippedAngleOffset>
@@ -405,7 +405,7 @@
 	<label>ancient timber</label>
 	<description>PLACEHOLDER. Useful for building structures and weapons. It is a good fuel for campfires.</description>
 	<graphicData>
-	  <texPath>Resources/AncientWoodLog</texPath>
+	  <texPath>Things/Item/Resource/AncientWoodLog</texPath>
 	  <graphicClass>Graphic_StackCount</graphicClass>
 	</graphicData>
 	<equippedAngleOffset>-20</equippedAngleOffset>
@@ -471,7 +471,7 @@
 	<label>Coal Chunks</label>
 	<description>Coal is a black combustible chunk of rock formed by mostly carbon. A good source of fuel for stoves and furnaces.</description>
 	<graphicData>
-	  <texPath>Resources/Coal</texPath>
+	  <texPath>Things/Item/Resource/Coal</texPath>
 	  <graphicClass>Graphic_StackCount</graphicClass>
 	  <drawSize>(1,1)</drawSize>	  
 	</graphicData>
@@ -525,7 +525,7 @@
 	<label>Ice</label>
 	<description>Water which has been frozen to create blocks of ice. Will melt in temperatures above freezing.</description>
 	<graphicData>
-	  <texPath>Resources/IceBlocks</texPath>
+	  <texPath>Things/Item/Resource/IceBlocks</texPath>
 	  <graphicClass>Graphic_StackCount</graphicClass>
 	  <shaderType>Transparent</shaderType>
 	</graphicData>
@@ -580,7 +580,7 @@
 	<description>An organic compound, solid at room temperature, which allows it to be stored for extended periods of time. Can be made into candles.</description>
 	<stackLimit>75</stackLimit>	
 	<graphicData>
-		<texPath>Resources/Wax</texPath>
+		<texPath>Things/Item/Resource/Wax</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
 		<drawSize>(1,1)</drawSize>
 	</graphicData>
@@ -606,7 +606,7 @@
 	<description>The matriarch of a vulture bee colony originating from the regions of house oswin. Unlike typical bees, they consume carrion and produce a smokey and savory honey.</description>
 	<stackLimit>1</stackLimit>	
 	<graphicData>
-		<texPath>Resources/QueenBee</texPath>
+		<texPath>Things/Item/Resource/QueenBee</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(1,1)</drawSize>
 	</graphicData>
@@ -624,7 +624,7 @@
 	<label>smokey honey</label>
 	<description>A smokey and savory liquid substance made by vulture bees that can be used as a preservative or fermented into an alcoholic drink.</description>
 	<graphicData>
-		<texPath>Resources/HoneyLiquid</texPath>
+		<texPath>Things/Item/Resource/HoneyLiquid</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
 	</graphicData>
 	<healthAffectsPrice>false</healthAffectsPrice>
@@ -660,7 +660,7 @@
 	<label>smokey honeycomb</label>
 	<description>Raw smokey honeycombs that contain vulture bee honey. \n\nCan be extracted to gain wax and smokey honey.</description>
 	<graphicData>
-		<texPath>Resources/Honeycomb</texPath>
+		<texPath>Things/Item/Resource/Honeycomb</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
 	</graphicData>
 	<healthAffectsPrice>false</healthAffectsPrice>
@@ -703,7 +703,7 @@
 	<label>iron ore</label>
 	<description>A raw iron ore, needs to be processed into ingots at a smelter to be usable.</description>
 	<graphicData>
-	  <texPath>Resources/IronOre</texPath>
+	  <texPath>Things/Item/Resource/IronOre</texPath>
 	  <graphicClass>Graphic_StackCount</graphicClass>
 	</graphicData>
 	<soundInteract>Metal_Drop</soundInteract>
@@ -730,7 +730,7 @@
 	<label>iron ingot</label>
 	<description>A bar of iron. Ready to be used in crafting and construction.</description>
 	<graphicData>
-	  <texPath>Resources/IronIngot</texPath>
+	  <texPath>Things/Item/Resource/IronIngot</texPath>
 	  <graphicClass>Graphic_StackCount</graphicClass>
 	</graphicData>
 	<soundInteract>Metal_Drop</soundInteract>
@@ -783,7 +783,7 @@
 	<label>silver ore</label>
 	<description>A raw silver ore, needs to be processed into ingots at a smelter to be usable.</description>
 	<graphicData>
-	  <texPath>Resources/SilverOre</texPath>
+	  <texPath>Things/Item/Resource/SilverOre</texPath>
 	  <graphicClass>Graphic_StackCount</graphicClass>
 	</graphicData>
 	<soundInteract>Metal_Drop</soundInteract>
@@ -810,7 +810,7 @@
 	<label>silver ingot</label>
 	<description>A bar of silver. A more compact form of silver. Can be minted into silver coins</description>
 	<graphicData>
-	  <texPath>Resources/SilverIngot</texPath>
+	  <texPath>Things/Item/Resource/SilverIngot</texPath>
 	  <graphicClass>Graphic_StackCount</graphicClass>
 	</graphicData>
 	<soundInteract>Metal_Drop</soundInteract>
@@ -840,7 +840,7 @@
 		<label>gold ore</label>
 		<description>A raw gold ore, needs to be processed into ingots at a smelter to be usable.</description>
 		<graphicData>
-			<texPath>Resources/GoldOre</texPath>
+			<texPath>Things/Item/Resource/GoldOre</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 
@@ -873,7 +873,7 @@
 		<label>bone</label>
 		<description>Bone from animals, including humans, can be used as a general material. Bone weapons and armor offer poor durability but accessible protection. Buildings and art inlaid with bone provide decoration to otherwise poor or dull materials. Although easy to acquire, using bones as entire structures, such as a wall or door, should be cautioned. The best use of bone, whether for armor or art, should be to elevate other materials.</description>
 		<graphicData>
-			<texPath>Resources/Bone</texPath>
+			<texPath>Things/Item/Resource/Bone</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 
@@ -941,7 +941,7 @@
 		<label>linen</label>
 		<description>A resillient fabric made out of dried fibres of flax.</description>
 		<graphicData>
-		<texPath>Resources/Linen</texPath>
+		<texPath>Things/Item/Resource/Linen</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
 		<color>(202,195,170)</color>
 		</graphicData>
@@ -1010,7 +1010,7 @@
 		<label>silk</label>
 		<description>A soft and luxurious fabric frequently tailored for noble apparel.</description>
 		<graphicData>
-		<texPath>Resources/SilkFabric</texPath>
+		<texPath>Things/Item/Resource/SilkFabric</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
 		<!--color>(202,195,170)</color-->
 		</graphicData>
@@ -1113,7 +1113,7 @@
 		<label>citrine</label>
 		<description>The pale, yellow quartz known as citrine is one of the lowest-valued crystals. Decorating jewelry with this gem increases wealth, even if by a smaller margin than more valuable gems.</description>
 		<graphicData>
-			<texPath>Resources/Citrine</texPath>
+			<texPath>Things/Item/Resource/Citrine</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		
@@ -1153,7 +1153,7 @@
 		<label>amber</label>
 		<description>A hardened gem of fossilized tree resin. Commonly admired by its natural yellowish orange hue, and is often used for ornaments and decorations. However, it is too soft to be used for weapons.</description>
 		<graphicData>
-			<texPath>Resources/Amber</texPath>
+			<texPath>Things/Item/Resource/Amber</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		
@@ -1193,7 +1193,7 @@
 		<label>onyx</label>
 		<description>This black and white mineral alternates its colors through parallel bands, sometimes in harmony and other times in disarray. However, the chaotic colors don’t devalue this gem, yet instead increase its wealth, especially in carvings and jewelry.</description>
 		<graphicData>
-			<texPath>Resources/Onyx</texPath>
+			<texPath>Things/Item/Resource/Onyx</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		
@@ -1233,7 +1233,7 @@
 		<label>emerald</label>
 		<description>A hardy gemstone with a primarily green hue. The value brought by this crystal adds value to any ornament, be it a gem on a sword hilt or embellishment in a ring.</description>
 		<graphicData>
-			<texPath>Resources/Emerald</texPath>
+			<texPath>Things/Item/Resource/Emerald</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		
@@ -1273,7 +1273,7 @@
 		<label>sapphire</label>
 		<description>One of the more valuable and sought-after gemstones due to its crystalline facet. Its blue tone and gleam make for aesthetic jewelry, though even the gem holds enough value to draw the attention of dangerous vagrants.</description>
 		<graphicData>
-			<texPath>Resources/Sapphire</texPath>
+			<texPath>Things/Item/Resource/Sapphire</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		
@@ -1313,7 +1313,7 @@
 		<label>ruby</label>
 		<description>The most sought-after gemstone with a color as bloody as the sacrifice people take to obtain it. Cultures across the lands find themselves drawn to the aesthetically rich gem used for trading, jewelry-making, and even display.</description>
 		<graphicData>
-			<texPath>Resources/Ruby</texPath>
+			<texPath>Things/Item/Resource/Ruby</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		

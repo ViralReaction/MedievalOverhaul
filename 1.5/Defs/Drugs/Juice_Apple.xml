@@ -136,7 +136,7 @@
 		<label>apple mince</label>
 		<description>Apples sliced and diced into smaller pieces. Needs to be pressed to become juice.</description>
 		<graphicData>
-			<texPath>Resources/MincedApple</texPath>
+			<texPath>Things/Item/Resource/MincedApple</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<healthAffectsPrice>false</healthAffectsPrice>

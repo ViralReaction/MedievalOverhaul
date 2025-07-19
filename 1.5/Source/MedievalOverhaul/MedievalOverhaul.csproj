@@ -271,16 +271,16 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">
-      <Version>2.*</Version>
+      <Version>2.2.0</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.*-*</Version>
+      <Version>1.5.4409</Version>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <ExcludeAssets>runtime</ExcludeAssets>
-      <Version>2.*</Version>
+      <Version>2.3.3</Version>
     </PackageReference>
     <Publicize Include="Assembly-CSharp" />
   </ItemGroup>

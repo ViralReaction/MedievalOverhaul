@@ -5,7 +5,7 @@
         <label>large hatched clutch</label>
         <description>A gigantic egg that has hatched, whatever was inside lies a massive beast.</description>
         <graphicData>
-            <texPath>Buildings/SnakeLair/HatchedClutchLarge</texPath>
+            <texPath>Things/Building/SnakeLair/HatchedClutchLarge</texPath>
             <graphicClass>Graphic_Random</graphicClass>
             <drawSize>(4,4)</drawSize>
             <damageData>
@@ -43,7 +43,7 @@
         <label>hatched clutch</label>
         <description>A group of snake eggs that has survived enough to hatch.</description>
         <graphicData>
-        <texPath>Buildings/SnakeLair/HatchedClutchSmall</texPath>
+        <texPath>Things/Building/SnakeLair/HatchedClutchSmall</texPath>
         <graphicClass>Graphic_Random</graphicClass>
             <drawSize>(1,1)</drawSize>
             <damageData>

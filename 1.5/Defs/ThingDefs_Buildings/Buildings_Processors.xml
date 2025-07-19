@@ -988,7 +988,7 @@
 		<label>windmill</label>
 		<description>A wind-powered mill to automate grinding and sawing produce. Requires a large clear space in front and behind for optimal air flow.</description>
 		<graphicData>
-			<texPath>Buildings/Windmill/WindmillBody</texPath>
+			<texPath>Things/Building/Production/Windmill/WindmillBody</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5,6)</drawSize>
 			<shadowData>
@@ -1076,7 +1076,7 @@
 		<label>watermill</label>
 		<description>A water-powered mill to automate grinding and sawing produce. Must be placed with its wheel in moving water. If watermills are placed too close together, the turbulence they generate will interfere.</description>
 		<graphicData>
-			<texPath>Buildings/Windmill/WindmillBody</texPath>
+			<texPath>Things/Building/Production/Windmill/WindmillBody</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5,6)</drawSize>
 			<shadowData>

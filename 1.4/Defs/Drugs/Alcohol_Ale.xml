@@ -76,8 +76,8 @@
 		<label>ale wort</label>
 		<description>Un-fermented ale. This substance needs to ferment in a fermenting barrel before it becomes drinkable ale.</description>
 		<graphicData>
-		  <texPath>Resources/WortAle</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
+		  <texPath>Things/Item/Resource/WortAle</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<rotatable>false</rotatable>

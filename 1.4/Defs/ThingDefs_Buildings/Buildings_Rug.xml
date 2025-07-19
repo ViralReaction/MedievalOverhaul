@@ -34,7 +34,7 @@
 		<description>A roughly stiched rug made up of seperate leathers.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Furniture/RugPatched1x1</texPath>
+			<texPath>Things/Building/Furniture/RugsCraftable/RugPatched_Leather_1x1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
@@ -58,7 +58,7 @@
 		<description>A roughly stiched rug made up of seperate leathers.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Furniture/RugPatched2x2</texPath>
+			<texPath>Things/Building/Furniture/RugsCraftable/RugPatched_Leather_2x2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -82,7 +82,7 @@
 		<description>A roughly stiched rug made up of seperate leathers.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Things/Building/Furniture/RugPatched3x3</texPath>
+			<texPath>Things/Building/Furniture/RugsCraftable/RugPatched_Leather_3x3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>

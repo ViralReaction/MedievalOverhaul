@@ -23,7 +23,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="MedicineHerbal"]/graphicData/texPath</xpath>
 		<value>
-			<texPath>Resources/Healroot</texPath>
+			<texPath>Things/Item/Resource/Healroot</texPath>
 		</value>
 	</Operation>
 

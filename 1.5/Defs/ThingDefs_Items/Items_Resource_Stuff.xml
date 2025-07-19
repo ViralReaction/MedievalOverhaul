@@ -7,7 +7,7 @@
 		<label>bone</label>
 		<description>Bone from animals, including humans, can be used as a general material. Bone weapons and armor offer poor durability but accessible protection. Buildings and art inlaid with bone provide decoration to otherwise poor or dull materials. Although easy to acquire, using bones as entire structures, such as a wall or door, should be cautioned. The best use of bone, whether for armor or art, should be to elevate other materials.</description>
 		<graphicData>
-			<texPath>Resources/Bone</texPath>
+			<texPath>Things/Item/Resource/Bone</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<equippedAngleOffset>-20</equippedAngleOffset>
@@ -86,7 +86,7 @@
 		<label>linen</label>
 		<description>A resillient fabric made out of dried fibres of flax.</description>
 		<graphicData>
-			<texPath>Resources/Linen</texPath>
+			<texPath>Things/Item/Resource/Linen</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(202,195,170)</color>
 		</graphicData>
@@ -151,7 +151,7 @@
 		<label>silk</label>
 		<description>A soft and luxurious fabric frequently tailored for noble apparel.</description>
 		<graphicData>
-			<texPath>Resources/SilkFabric</texPath>
+			<texPath>Things/Item/Resource/SilkFabric</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<!--color>(202,195,170)</color-->
 		</graphicData>

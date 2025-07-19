@@ -3,7 +3,7 @@
 	<ThingDef Abstract="True" Name="DankPyon_HideBase" ParentName="ResourceBase">
 		<description>These raw hides and pelts were removed from a creature, and with the right skills and tools, could be processed into tanned leather.</description>
 		<graphicData>
-			<texPath>Resources/HideTiny</texPath>
+			<texPath>Things/Item/Resource/HideTiny</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -50,7 +50,7 @@
 
 	<ThingDef Abstract="True" Name="DankPyon_HideBaseTiny" ParentName="DankPyon_Hide_NonGeneric">
 		<graphicData>
-			<texPath>Resources/HideTiny</texPath>
+			<texPath>Things/Item/Resource/HideTiny</texPath>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>30</MaxHitPoints>
@@ -63,7 +63,7 @@
 
 	<ThingDef Abstract="True" Name="DankPyon_HideBaseSmall" ParentName="DankPyon_Hide_NonGeneric">
 		<graphicData>
-			<texPath>Resources/HideSmall</texPath>
+			<texPath>Things/Item/Resource/HideSmall</texPath>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>40</MaxHitPoints>
@@ -76,7 +76,7 @@
 
 	<ThingDef Abstract="True" Name="DankPyon_HideBaseMedium" ParentName="DankPyon_Hide_NonGeneric">
 		<graphicData>
-			<texPath>Resources/HideMedium</texPath>
+			<texPath>Things/Item/Resource/HideMedium</texPath>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
@@ -89,7 +89,7 @@
 
 	<ThingDef Abstract="True" Name="DankPyon_HideBaseLarge" ParentName="DankPyon_Hide_NonGeneric">
 		<graphicData>
-			<texPath>Resources/HideLarge</texPath>
+			<texPath>Things/Item/Resource/HideLarge</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -103,7 +103,7 @@
 
 	<ThingDef Abstract="True" Name="DankPyon_HideBaseHuge" ParentName="DankPyon_Hide_NonGeneric">
 		<graphicData>
-			<texPath>Resources/HideHuge</texPath>
+			<texPath>Things/Item/Resource/HideHuge</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -198,7 +198,7 @@
 		<label>hide</label>
 		<thingClass>DankPyon.HideGeneric</thingClass>
 		<graphicData>
-			<texPath>Resources/HideLarge</texPath>
+			<texPath>Things/Item/Resource/HideLarge</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -327,7 +327,7 @@
 		<defName>DankPyon_Hide_SoftPeltTiny</defName>
 		<label>tiny soft pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurTiny</texPath>
+			<texPath>Things/Item/Resource/HeavyFurTiny</texPath>
 			<color>(140,85,36)</color>
 		</graphicData>
 		<statBases>
@@ -345,7 +345,7 @@
 		<defName>DankPyon_Hide_SoftPeltSmall</defName>
 		<label>small soft pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurSmall</texPath>
+			<texPath>Things/Item/Resource/HeavyFurSmall</texPath>
 			<color>(140,85,36)</color>
 		</graphicData>
 		<statBases>
@@ -363,7 +363,7 @@
 		<defName>DankPyon_Hide_SoftPeltMedium</defName>
 		<label>medium soft pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurMedium</texPath>
+			<texPath>Things/Item/Resource/HeavyFurMedium</texPath>
 			<color>(140,85,36)</color>
 		</graphicData>
 		<statBases>
@@ -381,7 +381,7 @@
 		<defName>DankPyon_Hide_SoftPeltLarge</defName>
 		<label>large soft pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurLarge</texPath>
+			<texPath>Things/Item/Resource/HeavyFurLarge</texPath>
 			<color>(140,85,36)</color>
 		</graphicData>
 		<statBases>
@@ -399,7 +399,7 @@
 		<defName>DankPyon_Hide_SoftPeltHuge</defName>
 		<label>huge soft pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurHuge</texPath>
+			<texPath>Things/Item/Resource/HeavyFurHuge</texPath>
 			<color>(140,85,36)</color>
 		</graphicData>
 		<statBases>
@@ -419,7 +419,7 @@
 		<defName>DankPyon_Hide_HeavyPeltTiny</defName>
 		<label>tiny heavy pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurTiny</texPath>
+			<texPath>Things/Item/Resource/HeavyFurTiny</texPath>
 			<color>(152,170,174)</color>
 		</graphicData>
 		<statBases>
@@ -437,7 +437,7 @@
 		<defName>DankPyon_Hide_HeavyPeltSmall</defName>
 		<label>small heavy pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurSmall</texPath>
+			<texPath>Things/Item/Resource/HeavyFurSmall</texPath>
 			<color>(152,170,174)</color>
 		</graphicData>
 		<statBases>
@@ -455,7 +455,7 @@
 		<defName>DankPyon_Hide_HeavyPeltMedium</defName>
 		<label>medium heavy pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurMedium</texPath>
+			<texPath>Things/Item/Resource/HeavyFurMedium</texPath>
 			<color>(152,170,174)</color>
 		</graphicData>
 		<statBases>
@@ -473,7 +473,7 @@
 		<defName>DankPyon_Hide_HeavyPeltLarge</defName>
 		<label>large heavy pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurLarge</texPath>
+			<texPath>Things/Item/Resource/HeavyFurLarge</texPath>
 			<color>(152,170,174)</color>
 		</graphicData>
 		<statBases>
@@ -491,7 +491,7 @@
 		<defName>DankPyon_Hide_HeavyPeltHuge</defName>
 		<label>huge heavy pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurHuge</texPath>
+			<texPath>Things/Item/Resource/HeavyFurHuge</texPath>
 			<color>(152,170,174)</color>
 		</graphicData>
 		<statBases>
@@ -511,7 +511,7 @@
 		<defName>DankPyon_Hide_ScaleTiny</defName>
 		<label>tiny scale hide</label>
 		<graphicData>
-			<texPath>Resources/ScaleTiny</texPath>
+			<texPath>Things/Item/Resource/ScaleTiny</texPath>
 			<color>(101,116,58)</color>
 		</graphicData>
 		<statBases>
@@ -529,7 +529,7 @@
 		<defName>DankPyon_Hide_ScaleSmall</defName>
 		<label>small scale hide</label>
 		<graphicData>
-			<texPath>Resources/ScaleSmall</texPath>
+			<texPath>Things/Item/Resource/ScaleSmall</texPath>
 			<color>(101,116,58)</color>
 		</graphicData>
 		<statBases>
@@ -547,7 +547,7 @@
 		<defName>DankPyon_Hide_ScaleMedium</defName>
 		<label>medium scale hide</label>
 		<graphicData>
-			<texPath>Resources/ScaleMedium</texPath>
+			<texPath>Things/Item/Resource/ScaleMedium</texPath>
 			<color>(101,116,58)</color>
 		</graphicData>
 		<statBases>
@@ -565,7 +565,7 @@
 		<defName>DankPyon_Hide_ScaleLarge</defName>
 		<label>large scale hide</label>
 		<graphicData>
-			<texPath>Resources/ScaleLarge</texPath>
+			<texPath>Things/Item/Resource/ScaleLarge</texPath>
 			<color>(101,116,58)</color>
 		</graphicData>
 		<statBases>
@@ -583,7 +583,7 @@
 		<defName>DankPyon_Hide_ScaleHuge</defName>
 		<label>huge scale hide</label>
 		<graphicData>
-			<texPath>Resources/ScaleHuge</texPath>
+			<texPath>Things/Item/Resource/ScaleHuge</texPath>
 			<color>(101,116,58)</color>
 		</graphicData>
 		<statBases>
@@ -603,7 +603,7 @@
 		<defName>DankPyon_Hide_ThickScaleTiny</defName>
 		<label>tiny thick scale hide</label>
 		<graphicData>
-			<texPath>Resources/ScaleTiny</texPath>
+			<texPath>Things/Item/Resource/ScaleTiny</texPath>
 			<color>(84,89,61)</color>
 		</graphicData>
 		<statBases>
@@ -621,7 +621,7 @@
 		<defName>DankPyon_Hide_ThickScaleSmall</defName>
 		<label>small thick scale hide</label>
 		<graphicData>
-			<texPath>Resources/ScaleSmall</texPath>
+			<texPath>Things/Item/Resource/ScaleSmall</texPath>
 			<color>(84,89,61)</color>
 		</graphicData>
 		<statBases>
@@ -639,7 +639,7 @@
 		<defName>DankPyon_Hide_ThickScaleMedium</defName>
 		<label>medium thick scale hide</label>
 		<graphicData>
-			<texPath>Resources/ScaleMedium</texPath>
+			<texPath>Things/Item/Resource/ScaleMedium</texPath>
 			<color>(84,89,61)</color>
 		</graphicData>
 		<statBases>
@@ -657,7 +657,7 @@
 		<defName>DankPyon_Hide_ThickScaleLarge</defName>
 		<label>large thick scale hide</label>
 		<graphicData>
-			<texPath>Resources/ScaleLarge</texPath>
+			<texPath>Things/Item/Resource/ScaleLarge</texPath>
 			<color>(84,89,61)</color>
 		</graphicData>
 		<statBases>
@@ -675,7 +675,7 @@
 		<defName>DankPyon_Hide_ThickScaleHuge</defName>
 		<label>huge thick scale hide</label>
 		<graphicData>
-			<texPath>Resources/ScaleLarge</texPath>
+			<texPath>Things/Item/Resource/ScaleLarge</texPath>
 			<color>(84,89,61)</color>
 		</graphicData>
 		<statBases>
@@ -695,7 +695,7 @@
 		<defName>DankPyon_Hide_BirdTiny</defName>
 		<label>tiny birdskin</label>
 		<graphicData>
-			<texPath>Resources/HideTiny</texPath>
+			<texPath>Things/Item/Resource/HideTiny</texPath>
 			<color>(76,83,99)</color>
 		</graphicData>
 		<statBases>
@@ -713,7 +713,7 @@
 		<defName>DankPyon_Hide_BirdSmall</defName>
 		<label>small birdskin</label>
 		<graphicData>
-			<texPath>Resources/HideSmall</texPath>
+			<texPath>Things/Item/Resource/HideSmall</texPath>
 			<color>(76,83,99)</color>
 		</graphicData>
 		<statBases>
@@ -731,7 +731,7 @@
 		<defName>DankPyon_Hide_BirdMedium</defName>
 		<label>medium birdskin</label>
 		<graphicData>
-			<texPath>Resources/HideMedium</texPath>
+			<texPath>Things/Item/Resource/HideMedium</texPath>
 			<color>(76,83,99)</color>
 		</graphicData>
 		<statBases>
@@ -749,7 +749,7 @@
 		<defName>DankPyon_Hide_BirdLarge</defName>
 		<label>large birdskin</label>
 		<graphicData>
-			<texPath>Resources/HideLarge</texPath>
+			<texPath>Things/Item/Resource/HideLarge</texPath>
 			<color>(76,83,99)</color>
 		</graphicData>
 		<statBases>
@@ -767,7 +767,7 @@
 		<defName>DankPyon_Hide_BirdHuge</defName>
 		<label>huge birdskin</label>
 		<graphicData>
-			<texPath>Resources/HideHuge</texPath>
+			<texPath>Things/Item/Resource/HideHuge</texPath>
 			<color>(76,83,99)</color>
 		</graphicData>
 		<statBases>
@@ -787,7 +787,7 @@
 		<defName>DankPyon_Hide_Hyena</defName>
 		<label>large hyena pelt</label>
 		<graphicData>
-			<texPath>Resources/HideHyena</texPath>
+			<texPath>Things/Item/Resource/HideHyena</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>54</MarketValue>
@@ -879,7 +879,7 @@
 		<defName>DankPyon_Hide_Muffalo</defName>
 		<label>huge muffalo pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurHuge</texPath>
+			<texPath>Things/Item/Resource/HeavyFurHuge</texPath>
 			<color>(152,170,174)</color>
 		</graphicData>
 		<statBases>
@@ -898,7 +898,7 @@
 		<defName>DankPyon_Hide_Bison</defName>
 		<label>huge bison hide</label>
 		<graphicData>
-			<texPath>Resources/HideHuge</texPath>
+			<texPath>Things/Item/Resource/HideHuge</texPath>
 			<color>(177,136,112)</color>
 		</graphicData>
 		<statBases>
@@ -991,7 +991,7 @@
 		<defName>DankPyon_Hide_Megasloth</defName>
 		<label>huge megasloth pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurHuge</texPath>
+			<texPath>Things/Item/Resource/HeavyFurHuge</texPath>
 			<color>(204,170,121)</color>
 		</graphicData>
 		<statBases>
@@ -1028,7 +1028,7 @@
 		<defName>DankPyon_Hide_Rox</defName>
 		<label>huge rox pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurHuge</texPath>
+			<texPath>Things/Item/Resource/HeavyFurHuge</texPath>
 			<color>(80,75,72)</color>
 		</graphicData>
 		<statBases>
@@ -1047,7 +1047,7 @@
 		<defName>DankPyon_Hide_GiantConstrictor</defName>
 		<label>huge constrictor scales</label>
 		<graphicData>
-			<texPath>Resources/ScaleHuge</texPath>
+			<texPath>Things/Item/Resource/ScaleHuge</texPath>
 			<color>(80,75,72)</color>
 		</graphicData>
 		<statBases>
@@ -1066,7 +1066,7 @@
 		<defName>DankPyon_Hide_Daer</defName>
 		<label>huge daer pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurHuge</texPath>
+			<texPath>Things/Item/Resource/HeavyFurHuge</texPath>
 			<color>(93,71,62)</color>
 		</graphicData>
 		<statBases>
@@ -1092,7 +1092,7 @@
 		<defName>DankPyon_Hide_Lindwurm</defName>
 		<label>huge lindwurm scales</label>
 		<graphicData>
-			<texPath>Resources/ScaleHuge</texPath>
+			<texPath>Things/Item/Resource/ScaleHuge</texPath>
 			<color>(80,75,72)</color>
 		</graphicData>
 		<statBases>
@@ -1111,7 +1111,7 @@
 		<defName>DankPyon_Hide_Thrumbo</defName>
 		<label>huge thrumbo pelt</label>
 		<graphicData>
-			<texPath>Resources/HeavyFurHuge</texPath>
+			<texPath>Things/Item/Resource/HeavyFurHuge</texPath>
 			<color>(233,233,233)</color>
 		</graphicData>
 		<statBases>
@@ -1131,7 +1131,7 @@
 		<defName>DankPyon_Hide_Human</defName>
 		<label>human skin</label>
 		<graphicData>
-			<texPath>Resources/HideHuge</texPath>
+			<texPath>Things/Item/Resource/HideHuge</texPath>
 			<color>(211,194,143)</color>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>

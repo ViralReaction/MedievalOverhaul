@@ -5,21 +5,21 @@
         <defName>DankPyon_Condiments</defName>
         <label>condiments</label>
         <parent>Foods</parent>
-        <iconPath>Resources/Salt</iconPath>
+        <iconPath>Things/Item/Resource/Salt</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
         <defName>DankPyon_Hides</defName>
         <label>hides</label>
         <parent>ResourcesRaw</parent>
-        <iconPath>Resources/HideLarge</iconPath>
+        <iconPath>Things/Item/Resource/HideLarge</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
         <defName>DankPyon_Metallic</defName>
         <label>metallics</label>
         <parent>ResourcesRaw</parent>
-        <iconPath>Resources/SteelIngot/SteelIngot_b</iconPath>
+        <iconPath>Things/Item/Resource/Steel/Steel_b</iconPath>
         <resourceReadoutRoot>true</resourceReadoutRoot>
     </ThingCategoryDef>
 
@@ -27,7 +27,7 @@
         <defName>DankPyon_RawOres</defName>
         <label>raw ore</label>
         <parent>ResourcesRaw</parent>
-        <iconPath>Resources/IronOre/IronOre_b</iconPath>
+        <iconPath>Things/Item/Resource/IronOre/IronOre_b</iconPath>
         <resourceReadoutRoot>true</resourceReadoutRoot>
     </ThingCategoryDef>
 
@@ -93,7 +93,7 @@
         <defName>DankPyon_Cheese</defName>
         <label>cheese</label>
         <parent>FoodMeals</parent>
-        <iconPath>Meal/Cheese/Cheese_a</iconPath>
+        <iconPath>Things/Item/Meal/Cheese/Cheese_a</iconPath>
     </ThingCategoryDef>
 
     <ThingCategoryDef>

@@ -9,7 +9,7 @@
 		<description>Useful herb that is used in creation of several powerful medicines.</description>
 		<possessionCount>4</possessionCount>
 		<graphicData>
-		<texPath>Resources/Mindwort</texPath>
+		<texPath>Things/Item/Resource/Mindwort</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
 		<drawSize>1</drawSize>
 		</graphicData>
@@ -38,7 +38,7 @@
 		<description>Useful herb that is used in creation of several powerful medicines.</description>
 		<possessionCount>4</possessionCount>
 		<graphicData>
-		<texPath>Resources/Poppy</texPath>
+		<texPath>Things/Item/Resource/Poppy</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
 		<drawSize>1</drawSize>
 		</graphicData>
@@ -67,7 +67,7 @@
 		<description>Useful herb that is used in creation of several powerful medicines.</description>
 		<possessionCount>4</possessionCount>
 		<graphicData>
-		<texPath>Resources/Fleawort</texPath>
+		<texPath>Things/Item/Resource/Fleawort</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
 		<drawSize>1</drawSize>
 		</graphicData>
@@ -96,7 +96,7 @@
 		<description>Useful herb that is used in creation of several powerful medicines.</description>
 		<possessionCount>4</possessionCount>
 		<graphicData>
-		<texPath>Resources/FlyAgaric</texPath>
+		<texPath>Things/Item/Resource/FlyAgaric</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
 		<drawSize>1</drawSize>
 		</graphicData>

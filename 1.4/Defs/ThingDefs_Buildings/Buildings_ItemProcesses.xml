@@ -41,7 +41,7 @@
   <defName>DankPyon_DummyIngot</defName>
   <label>ingot</label>
   <graphicData>
-      <texPath>Resources/IronIngot_b</texPath>
+      <texPath>Things/Item/Resource/IronIngot_b</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 </ThingDef-->

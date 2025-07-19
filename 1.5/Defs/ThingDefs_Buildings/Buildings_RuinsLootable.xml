@@ -7,7 +7,7 @@
 		<label>ruined shelf</label>
 		<description>A ruined shelf.</description>
 		<graphicData>
-			<texPath>Buildings/Ruin/RuinedShelf</texPath>
+			<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 		</graphicData>
@@ -89,7 +89,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -127,7 +127,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -166,7 +166,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -205,7 +205,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -242,7 +242,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -279,7 +279,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -316,7 +316,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -355,7 +355,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -392,7 +392,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -429,7 +429,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -466,7 +466,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -490,7 +490,7 @@
 		<description>A shelf filled with items.</description>
 		<thingClass>MedievalOverhaul.Building_Lootable</thingClass>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfChaliceSilver</texPath>
+			<texPath>Things/Building/Ruin/ShelfChaliceSilver</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
@@ -526,7 +526,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -554,7 +554,7 @@
 	<ThingDef ParentName="DankPyon_LootShelfBase">
 		<defName>DankPyon_LootableShelf_Emerald</defName>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfEmerald</texPath>
+			<texPath>Things/Building/Ruin/ShelfEmerald</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 		</graphicData>
@@ -567,7 +567,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -598,7 +598,7 @@
 	<ThingDef ParentName="DankPyon_LootShelfBase">
 		<defName>DankPyon_LootableShelf_Ruby</defName>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfRuby</texPath>
+			<texPath>Things/Building/Ruin/ShelfRuby</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 		</graphicData>
@@ -611,7 +611,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -641,7 +641,7 @@
 	<ThingDef ParentName="DankPyon_LootShelfBase">
 		<defName>DankPyon_LootableShelf_Sapphire</defName>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfSapphire</texPath>
+			<texPath>Things/Building/Ruin/ShelfSapphire</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 		</graphicData>
@@ -654,7 +654,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -684,7 +684,7 @@
 	<ThingDef ParentName="DankPyon_LootShelfBase">
 		<defName>DankPyon_LootableShelf_Rations</defName>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfRations</texPath>
+			<texPath>Things/Building/Ruin/ShelfRations</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 		</graphicData>
@@ -697,7 +697,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -726,7 +726,7 @@
 	<ThingDef ParentName="DankPyon_LootShelfBase">
 		<defName>DankPyon_LootableShelf_IronIngot</defName>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfIngotIron</texPath>
+			<texPath>Things/Building/Ruin/ShelfIngotIron</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 		</graphicData>
@@ -739,7 +739,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -767,7 +767,7 @@
 	<ThingDef ParentName="DankPyon_LootShelfBase">
 		<defName>DankPyon_LootableShelf_Bowl</defName>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfBowl</texPath>
+			<texPath>Things/Building/Ruin/ShelfBowl</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 		</graphicData>
@@ -780,7 +780,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -809,7 +809,7 @@
 	<ThingDef ParentName="DankPyon_LootShelfBase">
 		<defName>DankPyon_LootableShelf_Book</defName>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfBook</texPath>
+			<texPath>Things/Building/Ruin/ShelfBook</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 		</graphicData>
@@ -822,7 +822,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RuinedShelf</texPath>
+					<texPath>Things/Building/Ruin/RuinedShelf</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2.75,2.75)</drawSize>
 				</emptyGraphicData>
@@ -906,7 +906,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RackBroken</texPath>
+					<texPath>Things/Building/Ruin/RackBroken</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(3,3)</drawSize>
 				</emptyGraphicData>
@@ -948,7 +948,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RackBroken</texPath>
+					<texPath>Things/Building/Ruin/RackBroken</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(3,3)</drawSize>
 				</emptyGraphicData>
@@ -990,7 +990,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RackBroken</texPath>
+					<texPath>Things/Building/Ruin/RackBroken</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(3,3)</drawSize>
 				</emptyGraphicData>
@@ -1051,7 +1051,7 @@
 				<enemySpawnChance>0.1</enemySpawnChance>
 				<hostileEnemy>true</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RusticChestOpened</texPath>
+					<texPath>Things/Building/Ruin/RusticChestOpened</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2,2)</drawSize>
 				</emptyGraphicData>
@@ -1122,7 +1122,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RoyalChestOpened</texPath>
+					<texPath>Things/Building/Ruin/RoyalChestOpened</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2,2)</drawSize>
 				</emptyGraphicData>
@@ -1196,7 +1196,7 @@
 				<enemySpawnChance>0.10</enemySpawnChance>
 				<hostileEnemy>false</hostileEnemy>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/ArmorStatueNamedEmpty</texPath>
+					<texPath>Things/Building/Ruin/ArmorStatueNamedEmpty</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2,2)</drawSize>
 				</emptyGraphicData>

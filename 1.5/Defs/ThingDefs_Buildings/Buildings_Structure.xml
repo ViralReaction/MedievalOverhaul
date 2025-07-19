@@ -11,7 +11,7 @@
 			<WorkToBuild>850</WorkToBuild>
 		</statBases>
 		<graphicData>
-			<texPath>Buildings/RusticDoor_Mover</texPath>
+			<texPath>Things/Building/Door/RusticDoor_Mover</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<damageData>
 				<!--  no damage marks because they don't move with the door
@@ -22,13 +22,13 @@
 		<stuffCategories Inherit="False">
 			<li>Woody</li>
 		</stuffCategories>
-		<uiIconPath>Buildings/RusticDoor_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Door/RusticDoor_MenuIcon</uiIconPath>
 		<costStuffCount>25</costStuffCount>
 		<designationHotKey>Misc1</designationHotKey>
 
 		<building>
 			<blueprintGraphicData>
-				<texPath>Buildings/RusticDoor_Blueprint</texPath>
+				<texPath>Things/Building/Door/RusticDoor_Blueprint</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 			</blueprintGraphicData>
 		</building>
@@ -42,7 +42,7 @@
 			<WorkToBuild>1200</WorkToBuild>
 		</statBases>
 		<graphicData>
-			<texPath>Buildings/LogGate_Mover</texPath>
+			<texPath>Things/Building/Door/LogGate_Mover</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<damageData>
 				<!--  no damage marks because they don't move with the door
@@ -53,13 +53,13 @@
 		<stuffCategories Inherit="False">
 			<li>DankPyon_RawWood</li>
 		</stuffCategories>
-		<uiIconPath>Buildings/LogGate_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Door/LogGate_MenuIcon</uiIconPath>
 		<costStuffCount>25</costStuffCount>
 		<designationHotKey>Misc1</designationHotKey>
 
 		<building>
 			<blueprintGraphicData>
-				<texPath>Buildings/LogGate_Blueprint</texPath>
+				<texPath>Things/Building/Door/LogGate_Blueprint</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 			</blueprintGraphicData>
 		</building>
@@ -74,7 +74,7 @@
 			<WorkToBuild>1200</WorkToBuild>
 		</statBases>
 		<graphicData>
-			<texPath>Buildings/Gate_Mover</texPath>
+			<texPath>Things/Building/Door/Gate_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<damageData>
 				<enabled>false</enabled>
@@ -85,7 +85,7 @@
 			<li>Metallic</li>
 			<li>Woody</li>
 		</stuffCategories>
-		<uiIconPath>Buildings/Gate_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Door/Gate_MenuIcon</uiIconPath>
 		<costStuffCount>35</costStuffCount>
 		<designationHotKey>Misc1</designationHotKey>
 	</ThingDef>
@@ -101,14 +101,14 @@
 			<Beauty>30</Beauty>
 		</statBases>
 		<graphicData>
-			<texPath>Buildings/ReinforcedLogGate/ReinforcedLogGate_Mover</texPath>
+			<texPath>Things/Building/Door/ReinforcedLogGate/ReinforcedLogGate_Mover</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<damageData>
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Buildings/ReinforcedLogGate/ReinforcedLogGate_south</uiIconPath>
+		<uiIconPath>Things/Building/Door/ReinforcedLogGate/ReinforcedLogGate_south</uiIconPath>
 		<uiIconScale>1.35</uiIconScale>
 		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
 		<size>(1,1)</size>
@@ -121,13 +121,13 @@
 		<building>
 			<blueprintClass>Blueprint_Build</blueprintClass>
 			<blueprintGraphicData>
-				<texPath>Buildings/ReinforcedLogGate/ReinforcedLogGate</texPath>
+				<texPath>Things/Building/Door/ReinforcedLogGate/ReinforcedLogGate</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<shaderType>EdgeDetect</shaderType>
 				<drawSize>(2,2)</drawSize>
 			</blueprintGraphicData>
 			<doorTopGraphic>
-				<texPath>Buildings/ReinforcedLogGate/ReinforcedLogGate_Top</texPath>
+				<texPath>Things/Building/Door/ReinforcedLogGate/ReinforcedLogGate_Top</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<drawSize>(2,2)</drawSize>
 			</doorTopGraphic>
@@ -156,7 +156,7 @@
 			<DoorOpenSpeed>0.4</DoorOpenSpeed>
 		</statBases>
 		<graphicData>
-			<texPath>Buildings/SlabDoor_Mover</texPath>
+			<texPath>Things/Building/Door/SlabDoor_Mover</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<damageData>
 				<enabled>false</enabled>
@@ -166,7 +166,7 @@
 		<stuffCategories Inherit="False">
 			<li>Stony</li>
 		</stuffCategories>
-		<uiIconPath>Buildings/SlabDoor_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Door/SlabDoor_MenuIcon</uiIconPath>
 		<costStuffCount>55</costStuffCount>
 		<designationHotKey>Misc1</designationHotKey>
 	</ThingDef>
@@ -181,14 +181,14 @@
 			<MaxHitPoints>320</MaxHitPoints>
 		</statBases>
 		<graphicData>
-		<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_Mover</texPath>
+		<texPath>Things/Building/Door/RusticDoor1x2/RusticDoor1x2_Mover</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<!--shaderType>CutoutComplex</shaderType-->
 		<damageData>
 			<enabled>false</enabled>
 		</damageData>
 		</graphicData>
-		<uiIconPath>Buildings/RusticDoor1x2/RusticDoor1x2_MenuIcon_south</uiIconPath>
+		<uiIconPath>Things/Building/Door/RusticDoor1x2/RusticDoor1x2_MenuIcon_south</uiIconPath>
 		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
 		<size>(2, 1)</size>
 		<rotatable>true</rotatable>
@@ -197,18 +197,18 @@
 		<building>
 		<blueprintClass>Blueprint_Build</blueprintClass>
 		<blueprintGraphicData>
-			<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_MenuIcon</texPath>
+			<texPath>Things/Building/Door/RusticDoor1x2/RusticDoor1x2_MenuIcon</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>EdgeDetect</shaderType>
 			<drawSize>(3,2)</drawSize>
 		</blueprintGraphicData>
 		<doorTopGraphic>
-			<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_Top</texPath>
+			<texPath>Things/Building/Door/RusticDoor1x2/RusticDoor1x2_Top</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3, 2)</drawSize>
 		</doorTopGraphic>
 		<doorSupportGraphic>
-			<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_Support</texPath>
+			<texPath>Things/Building/Door/RusticDoor1x2/RusticDoor1x2_Support</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3, 2)</drawSize>
 		</doorSupportGraphic>
@@ -231,14 +231,14 @@
 			<MaxHitPoints>500</MaxHitPoints>
 		</statBases>
 		<graphicData>
-		<texPath>Buildings/Gate1x2/Gate1x2_Mover</texPath>
+		<texPath>Things/Building/Door/Gate1x2/Gate1x2_Mover</texPath>
 		<graphicClass>Graphic_Multi</graphicClass>
 		<!--shaderType>CutoutComplex</shaderType-->
 		<damageData>
 			<enabled>false</enabled>
 		</damageData>
 		</graphicData>
-		<uiIconPath>Buildings/Gate1x2/Gate1x2_MenuIcon_south</uiIconPath>
+		<uiIconPath>Things/Building/Door/Gate1x2/Gate1x2_MenuIcon_south</uiIconPath>
 		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
 		<size>(2, 1)</size>
 		<rotatable>true</rotatable>
@@ -251,18 +251,18 @@
 		<building>
 		<blueprintClass>Blueprint_Build</blueprintClass>
 		<blueprintGraphicData>
-			<texPath>Buildings/Gate1x2/Gate1x2_MenuIcon</texPath>
+			<texPath>Things/Building/Door/Gate1x2/Gate1x2_MenuIcon</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>EdgeDetect</shaderType>
 			<drawSize>(3,2)</drawSize>
 		</blueprintGraphicData>
 		<doorTopGraphic>
-			<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_Top</texPath>
+			<texPath>Things/Building/Door/RusticDoor1x2/RusticDoor1x2_Top</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3, 2)</drawSize>
 		</doorTopGraphic>
 		<doorSupportGraphic>
-			<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_Support</texPath>
+			<texPath>Things/Building/Door/RusticDoor1x2/RusticDoor1x2_Support</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3, 2)</drawSize>
 		</doorSupportGraphic>
@@ -286,14 +286,14 @@
 			<DoorOpenSpeed>0.4</DoorOpenSpeed>
 		</statBases>
 		<graphicData>
-		<texPath>Buildings/SlabDoor1x2/SlabDoor1x2_Mover</texPath>
+		<texPath>Things/Building/Door/SlabDoor1x2/SlabDoor1x2_Mover</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 		<!--shaderType>CutoutComplex</shaderType-->
 		<damageData>
 			<enabled>false</enabled>
 		</damageData>
 		</graphicData>
-		<uiIconPath>Buildings/SlabDoor1x2/SlabDoor1x2_MenuIcon_south</uiIconPath>
+		<uiIconPath>Things/Building/Door/SlabDoor1x2/SlabDoor1x2_MenuIcon_south</uiIconPath>
 		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
 		<size>(2, 1)</size>
 		<rotatable>true</rotatable>
@@ -305,18 +305,18 @@
 		<building>
 		<blueprintClass>Blueprint_Build</blueprintClass>
 		<blueprintGraphicData>
-			<texPath>Buildings/SlabDoor1x2/SlabDoor1x2_MenuIcon</texPath>
+			<texPath>Things/Building/Door/SlabDoor1x2/SlabDoor1x2_MenuIcon</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<shaderType>EdgeDetect</shaderType>
 			<drawSize>(3,2)</drawSize>
 		</blueprintGraphicData>
 		<doorTopGraphic>
-			<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_Top</texPath>
+			<texPath>Things/Building/Door/RusticDoor1x2/RusticDoor1x2_Top</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3, 2)</drawSize>
 		</doorTopGraphic>
 		<doorSupportGraphic>
-			<texPath>Buildings/RusticDoor1x2/RusticDoor1x2_Support</texPath>
+			<texPath>Things/Building/Door/RusticDoor1x2/RusticDoor1x2_Support</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3, 2)</drawSize>
 		</doorSupportGraphic>
@@ -336,7 +336,7 @@
 		<description>A wooden frame to be placed on top of doors.</description>
 		<thingClass>Building</thingClass>
 		<graphicData>
-			<texPath>Buildings/LogFrame</texPath>
+			<texPath>Things/Building/Door/LogFrame</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -373,10 +373,10 @@
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Buildings/Linked/LogWall_Atlas</texPath>
+			<texPath>Things/Building/Linked/LogWall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<uiIconPath>Buildings/Linked/LogWall_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/LogWall_MenuIcon</uiIconPath>
 		<uiIconPathsStuff Inherit="False"/>
 		<statBases>
 			<MaxHitPoints>400</MaxHitPoints>
@@ -407,7 +407,7 @@
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Buildings/Linked/HideTent_Atlas</texPath>
+			<texPath>Things/Building/Linked/HideTent_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>Basic</linkType>
 			<linkFlags>
@@ -424,7 +424,7 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Buildings/Linked/HideTent_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/HideTent_MenuIcon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>50</WorkToBuild>
@@ -461,7 +461,7 @@
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>false</ai_chillDestination>
 			<blueprintGraphicData>
-				<texPath>Buildings/Linked/HideTent_Blueprint</texPath>
+				<texPath>Things/Building/Linked/HideTent_Blueprint</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands>
 				<li>Door</li>
@@ -497,7 +497,7 @@
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Buildings/Linked/Tent_Atlas</texPath>
+			<texPath>Things/Building/Linked/Tent_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>Basic</linkType>
 			<linkFlags>
@@ -514,7 +514,7 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Buildings/Linked/Tent_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/Tent_MenuIcon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>135</WorkToBuild>
@@ -551,7 +551,7 @@
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>false</ai_chillDestination>
 			<blueprintGraphicData>
-				<texPath>Buildings/Linked/Tent_Blueprint</texPath>
+				<texPath>Things/Building/Linked/Tent_Blueprint</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands>
 				<li>Door</li>
@@ -587,14 +587,14 @@
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Buildings/Linked/Palisade_Atlas</texPath>
+			<texPath>Things/Building/Linked/Palisade_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>Basic</linkType>
 			<linkFlags>
 				<li>Fences</li>
 			</linkFlags>
 		</graphicData>
-		<uiIconPath>Buildings/Linked/Palisade_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/Palisade_MenuIcon</uiIconPath>
    
 		<statBases>
 			<MaxHitPoints>450</MaxHitPoints>
@@ -630,7 +630,7 @@
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>false</ai_chillDestination>
 			<blueprintGraphicData>
-				<texPath>Buildings/Linked/Palisade_Blueprint</texPath>
+				<texPath>Things/Building/Linked/Palisade_Blueprint</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>DankPyon_ReinfocedLogGate</li>
@@ -666,14 +666,14 @@
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Buildings/Linked/EmbPalisade_Atlas</texPath>
+			<texPath>Things/Building/Linked/EmbPalisade_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>Basic</linkType>
 			<linkFlags>
 				<li>Fences</li>
 			</linkFlags>
 		</graphicData>
-		<uiIconPath>Buildings/Linked/EmbPalisade_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/EmbPalisade_MenuIcon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>450</MaxHitPoints>
 			<WorkToBuild>355</WorkToBuild>
@@ -709,7 +709,7 @@
 			<isPlaceOverableWall>true</isPlaceOverableWall>
 			<ai_chillDestination>false</ai_chillDestination>
 			<blueprintGraphicData>
-				<texPath>Buildings/Linked/EmbPalisade_Blueprint</texPath>
+				<texPath>Things/Building/Linked/EmbPalisade_Blueprint</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>DankPyon_ReinfocedLogGate</li>
@@ -745,7 +745,7 @@
 		<thingClass>Building_TrapDamager</thingClass>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Buildings/Linked/Spike_Atlas</texPath>
+			<texPath>Things/Building/Linked/Spike_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>Basic</linkType>
 			<linkFlags>
@@ -760,7 +760,7 @@
 
 		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
 		<blockLight>false</blockLight>
-		<uiIconPath>Buildings/Linked/Spike_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/Spike_MenuIcon</uiIconPath>
 		<altitudeLayer>Building</altitudeLayer>
 		<pathCost>150</pathCost>
 		<passability>PassThroughOnly</passability>
@@ -789,7 +789,7 @@
 			<expandHomeArea>false</expandHomeArea>
 			<isInert>true</isInert>
 			<blueprintGraphicData>
-				<texPath>Buildings/Linked/Spike_Blueprint_Atlas</texPath>
+				<texPath>Things/Building/Linked/Spike_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
 		</building>
 
@@ -811,7 +811,7 @@
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Buildings/Linked/TudorWall_Atlas</texPath>
+			<texPath>Things/Building/Linked/TudorWall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<linkType>CornerFiller</linkType>
@@ -831,7 +831,7 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Buildings/Linked/TudorWall_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/TudorWall_MenuIcon</uiIconPath>
 		<statBases>
 			<Beauty>3</Beauty>
 			<MaxHitPoints>450</MaxHitPoints>
@@ -873,7 +873,7 @@
 			<ai_chillDestination>false</ai_chillDestination>
 			<supportsWallAttachments>true</supportsWallAttachments>
 			<blueprintGraphicData>
-				<texPath>Buildings/Linked/TudowWall_Atlas_Blueprint</texPath>
+				<texPath>Things/Building/Linked/TudowWall_Atlas_Blueprint</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>DankPyon_RusticDoor</li>
@@ -913,7 +913,7 @@
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Buildings/Linked/CastleWall</texPath>
+			<texPath>Things/Building/Linked/CastleWall</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
@@ -931,7 +931,7 @@
 				<edgeRight>Damage/Edge</edgeRight>
 			</damageData>
 		</graphicData>
-		<uiIconPath>Buildings/Linked/CastleWall_icon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/CastleWall_icon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>1000</MaxHitPoints>
 			<WorkToBuild>800</WorkToBuild>
@@ -967,7 +967,7 @@
 			<ai_chillDestination>false</ai_chillDestination>
 			<supportsWallAttachments>true</supportsWallAttachments>
 			<blueprintGraphicData>
-				<texPath>Buildings/Linked/CastleWall_blueprint</texPath>
+				<texPath>Things/Building/Linked/CastleWall_blueprint</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>DankPyon_CastleWallEmbrasures</li>
@@ -993,9 +993,9 @@
 		<defName>DankPyon_CastleWallEmbrasures</defName>
 		<label>castle wall embrasures</label>
 		<graphicData>
-			<texPath>Buildings/Linked/CastleWallEmbrasures</texPath>
+			<texPath>Things/Building/Linked/CastleWallEmbrasures</texPath>
 		</graphicData>
-		<uiIconPath>Buildings/Linked/CastleWallEmbrasures_icon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/CastleWallEmbrasures_icon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>800</MaxHitPoints>
 			<WorkToBuild>800</WorkToBuild>
@@ -1005,7 +1005,7 @@
 		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
 		<building>
 			<blueprintGraphicData>
-				<texPath>Buildings/Linked/CastleWallEmbrasures_blueprint</texPath>
+				<texPath>Things/Building/Linked/CastleWallEmbrasures_blueprint</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands Inherit="False">
 				<li>DankPyon_CastleWall</li>
@@ -1022,12 +1022,12 @@
     <description>This is an ice wall that will cool its surroundings but needs to be refueled.</description>
 
     <graphicData>
-      <texPath>Buildings/Linked/IceWall_Atlas</texPath>
+      <texPath>Things/Building/Linked/IceWall_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>	
       <shaderType>Transparent</shaderType>
       <color>(180,210,230)</color>
     </graphicData>
-    <uiIconPath>Buildings/Linked/IceWall_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Building/Linked/IceWall_MenuIcon</uiIconPath>
     <statBases>
       <MaxHitPoints>90</MaxHitPoints>
       <WorkToBuild>350</WorkToBuild>
@@ -1077,7 +1077,7 @@
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Buildings/Linked/Trench_Atlas</texPath>
+			<texPath>Things/Building/Linked/Trench_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>Basic</linkType>
 			<linkFlags>
@@ -1091,7 +1091,7 @@
 			</li>
 		</damageMultipliers>
 		<blockLight>false</blockLight>
-		<uiIconPath>Buildings/Linked/Trench_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/Trench_MenuIcon</uiIconPath>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<pathCost>300</pathCost>
 		<passability>Standable</passability>
@@ -1112,7 +1112,7 @@
 			<expandHomeArea>false</expandHomeArea>
 			<isInert>true</isInert>
 			<blueprintGraphicData>
-				<texPath>Buildings/Linked/Trench_Blueprint</texPath>
+				<texPath>Things/Building/Linked/Trench_Blueprint</texPath>
 			</blueprintGraphicData>
 		</building>
 		<placingDraggableDimensions>1</placingDraggableDimensions>
@@ -1134,7 +1134,7 @@
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Buildings/Linked/RTrench_Atlas</texPath>
+			<texPath>Things/Building/Linked/RTrench_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>Basic</linkType>
 			<linkFlags>
@@ -1148,7 +1148,7 @@
 			</li>
 		</damageMultipliers>
 		<blockLight>false</blockLight>
-		<uiIconPath>Buildings/Linked/RTrench_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/RTrench_MenuIcon</uiIconPath>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<pathCost>300</pathCost>
 		<passability>Standable</passability>
@@ -1175,7 +1175,7 @@
 			<expandHomeArea>false</expandHomeArea>
 			<isInert>true</isInert>
 			<blueprintGraphicData>
-				<texPath>Buildings/Linked/RTrench_Blueprint</texPath>
+				<texPath>Things/Building/Linked/RTrench_Blueprint</texPath>
 			</blueprintGraphicData>
 		</building>
 		<placingDraggableDimensions>1</placingDraggableDimensions>

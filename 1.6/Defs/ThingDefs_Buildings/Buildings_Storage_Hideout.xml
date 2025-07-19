@@ -3172,12 +3172,12 @@
 		<defName>DankPyon_HideoutShelfFilledEmerald</defName>
 		<label>emerald filled shelf</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfEmerald</texPath>
+			<texPath>Things/Building/Ruin/ShelfEmerald</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Buildings/Ruin/ShelfEmerald_north</uiIconPath>
+		<uiIconPath>Things/Building/Ruin/ShelfEmerald_north</uiIconPath>
 
         <modExtensions Inherit="False">
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -3218,12 +3218,12 @@
 		<defName>DankPyon_HideoutShelfFilledSapphire</defName>
 		<label>sapphire filled shelf</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfSapphire</texPath>
+			<texPath>Things/Building/Ruin/ShelfSapphire</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Buildings/Ruin/ShelfSapphire_north</uiIconPath>
+		<uiIconPath>Things/Building/Ruin/ShelfSapphire_north</uiIconPath>
 
         <modExtensions Inherit="False">
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -3264,12 +3264,12 @@
 		<defName>DankPyon_HideoutShelfFilledRuby</defName>
 		<label>ruby filled shelf</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfRuby</texPath>
+			<texPath>Things/Building/Ruin/ShelfRuby</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Buildings/Ruin/ShelfRuby_north</uiIconPath>
+		<uiIconPath>Things/Building/Ruin/ShelfRuby_north</uiIconPath>
 
         <modExtensions Inherit="False">
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -3310,12 +3310,12 @@
 		<defName>DankPyon_HideoutShelfFilledSilverware</defName>
 		<label>silverware filled shelf</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfBowl</texPath>
+			<texPath>Things/Building/Ruin/ShelfBowl</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Buildings/Ruin/ShelfBowl_north</uiIconPath>
+		<uiIconPath>Things/Building/Ruin/ShelfBowl_north</uiIconPath>
 
         <modExtensions Inherit="False">
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -3355,12 +3355,12 @@
 		<defName>DankPyon_HideoutShelfFilledGoldware</defName>
 		<label>goldware filled shelf</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfBowlGold</texPath>
+			<texPath>Things/Building/Ruin/ShelfBowlGold</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Buildings/Ruin/ShelfBowlGold_north</uiIconPath>
+		<uiIconPath>Things/Building/Ruin/ShelfBowlGold_north</uiIconPath>
 
         <modExtensions Inherit="False">
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -3400,12 +3400,12 @@
 		<defName>DankPyon_HideoutShelfFilledChaliceSilver</defName>
 		<label>silver chalice filled shelf</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfChaliceSilver</texPath>
+			<texPath>Things/Building/Ruin/ShelfChaliceSilver</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Buildings/Ruin/ShelfChaliceSilver_north</uiIconPath>
+		<uiIconPath>Things/Building/Ruin/ShelfChaliceSilver_north</uiIconPath>
 
         <modExtensions>
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -3444,12 +3444,12 @@
 		<defName>DankPyon_HideoutShelfFilledChaliceGold</defName>
 		<label>gold chalice filled shelf</label>
 		<graphicData>
-		<texPath>Buildings/Ruin/ShelfChaliceGold</texPath>
+		<texPath>Things/Building/Ruin/ShelfChaliceGold</texPath>
 		<graphicClass>Graphic_Multi</graphicClass>
 		<drawSize>(2.75,2.75)</drawSize>
 		<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Buildings/Ruin/ShelfChaliceGold_north</uiIconPath>
+		<uiIconPath>Things/Building/Ruin/ShelfChaliceGold_north</uiIconPath>
 		<costList>
 		<DankPyon_ChaliceGold>2</DankPyon_ChaliceGold>
 		<DankPyon_Book>1</DankPyon_Book>
@@ -3505,12 +3505,12 @@
 		<defName>DankPyon_HideoutShelfFilledFood</defName>
 		<label>food filled shelf</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfRations</texPath>
+			<texPath>Things/Building/Ruin/ShelfRations</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Buildings/Ruin/ShelfRations_north</uiIconPath>
+		<uiIconPath>Things/Building/Ruin/ShelfRations_north</uiIconPath>
 
         <modExtensions Inherit="False">
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -3550,12 +3550,12 @@
 		<defName>DankPyon_HideoutShelfFilledIngot</defName>
 		<label>ingot filled shelf</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfIngotIron</texPath>
+			<texPath>Things/Building/Ruin/ShelfIngotIron</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Buildings/Ruin/ShelfIngotIron_north</uiIconPath>
+		<uiIconPath>Things/Building/Ruin/ShelfIngotIron_north</uiIconPath>
 
         <modExtensions Inherit="False">
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -3594,12 +3594,12 @@
 		<defName>DankPyon_HideoutShelfFilledBook</defName>
 		<label>book filled shelf</label>
 		<graphicData>
-			<texPath>Buildings/Ruin/ShelfBook</texPath>
+			<texPath>Things/Building/Ruin/ShelfBook</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.75,2.75)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<uiIconPath>Buildings/Ruin/ShelfBook_north</uiIconPath>
+		<uiIconPath>Things/Building/Ruin/ShelfBook_north</uiIconPath>
 		
         <modExtensions Inherit="False">
 			<li Class="MedievalOverhaul.BuildingLootableExtension">
@@ -4329,7 +4329,7 @@
 				<hostileEnemy>true</hostileEnemy>
 				<faction>DankPyon_ShadowSect</faction>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RusticChestOpened</texPath>
+					<texPath>Things/Building/Ruin/RusticChestOpened</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2,2)</drawSize>
 				</emptyGraphicData>
@@ -4381,7 +4381,7 @@
 				<hostileEnemy>true</hostileEnemy>
 				<faction>DankPyon_ShadowSect</faction>
 				<emptyGraphicData>
-					<texPath>Buildings/Ruin/RoyalChestOpened</texPath>
+					<texPath>Things/Building/Ruin/RoyalChestOpened</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>(2,2)</drawSize>
 				</emptyGraphicData>

@@ -5,14 +5,14 @@
 		<defName>DankPyon_Condiments</defName>
 		<label>condiments</label>
 		<parent>Foods</parent>
-		<iconPath>Resources/Salt</iconPath>
+		<iconPath>Things/Item/Resource/Salt</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
 		<defName>DankPyon_Hides</defName>
 		<label>hides</label>
 		<parent>Root</parent>
-		<iconPath>Resources/HideLarge</iconPath>
+		<iconPath>Things/Item/Resource/HideLarge</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
@@ -27,7 +27,7 @@
 		<defName>DankPyon_RawOres</defName>
 		<label>raw ore</label>
 		<parent>ResourcesRaw</parent>
-		<iconPath>Resources/IronOre/IronOre_b</iconPath>
+		<iconPath>Things/Item/Resource/IronOre/IronOre_b</iconPath>
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 	</ThingCategoryDef>
 
@@ -100,14 +100,14 @@
 		<defName>DankPyon_Flour</defName>
 		<label>flour</label>
 		<parent>FoodRaw</parent>
-		<iconPath>Resources/Flour/Flour_b</iconPath>
+		<iconPath>Things/Item/Resource/Flour/Flour_b</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
 		<defName>DankPyon_Honey</defName>
 		<label>honey</label>
 		<parent>AnimalProductRaw</parent>
-		<iconPath>Resources/HoneyLiquid/HoneyLiquid_a</iconPath>
+		<iconPath>Things/Item/Resource/HoneyLiquid/HoneyLiquid_a</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
@@ -177,7 +177,7 @@
 		<defName>DankPyon_GemStones</defName>
 		<label>gemstones</label>
 		<parent>ResourcesRaw</parent>
-		<iconPath>Resources/Ruby/Ruby_b</iconPath>
+		<iconPath>Things/Item/Resource/Ruby/Ruby_b</iconPath>
 	</ThingCategoryDef>
 
     <ThingCategoryDef>

@@ -211,7 +211,7 @@ namespace MedievalOverhaul
 
         private static string GetHideGraphic(ThingDef raceDef)
         {
-            string texPathString = "Resources/HeavyFurMedium";
+            string texPathString = "Things/Item/Resource/HeavyFurMedium";
             float bodySize = raceDef.race.baseBodySize;
             string bodyDef = raceDef.race.body.ToString();
             string defName = raceDef.ToString();
@@ -219,60 +219,60 @@ namespace MedievalOverhaul
             {
                 if (bodySize < 0.5)
                 {
-                    texPathString = "Resources/ScaleTiny";
+                    texPathString = "Things/Item/Resource/ScaleTiny";
                     return texPathString;
                 }
                 if (bodySize < 1)
                 {
-                    texPathString = "Resources/ScaleSmall";
+                    texPathString = "Things/Item/Resource/ScaleSmall";
                     return texPathString;
                 }
                 if (bodySize < 2)
                 {
-                    texPathString = "Resources/ScaleMedium";
+                    texPathString = "Things/Item/Resource/ScaleMedium";
                     return texPathString;
                 }
                 //if (bodySize < 3)
                 //{
-                //    texPathString = "Resources/ScaleLarge";
+                //    texPathString = "Things/Item/Resource/ScaleLarge";
                 //    return texPathString;
                 //}
-                //texPathString = "Resources/ScaleHuge";
+                //texPathString = "Things/Item/Resource/ScaleHuge";
                 //    return texPathString;
             }
             if (Utility.HideGraphicList.furHidesBodyDef.Contains(bodyDef) || Utility.HideGraphicList.scaleHidesRaceDef.Contains(defName))
             {
                 if (bodySize < 0.5)
                 {
-                    texPathString = "Resources/HeavyFurTiny";
+                    texPathString = "Things/Item/Resource/HeavyFurTiny";
                     return texPathString;
                 }
                 if (bodySize < 1)
                 {
-                    texPathString = "Resources/HeavyFurSmall";
+                    texPathString = "Things/Item/Resource/HeavyFurSmall";
                     return texPathString;
                 }
                 if (bodySize < 2)
                 {
-                    texPathString = "Resources/HeavyFurMedium";
+                    texPathString = "Things/Item/Resource/HeavyFurMedium";
                     return texPathString;
                 }
                 //if (bodySize < 3)
                 //{
-                //    texPathString = "Resources/HeavyFurHuge";
+                //    texPathString = "Things/Item/Resource/HeavyFurHuge";
                 //    return texPathString;
                 //}
-                //    texPathString = "Resources/HeavyFurHuge";
+                //    texPathString = "Things/Item/Resource/HeavyFurHuge";
                 //    return texPathString;
             }
             if (bodySize < 0.5)
             {
-                texPathString = "Resources/HideTiny";
+                texPathString = "Things/Item/Resource/HideTiny";
                 return texPathString;
             }
             if (bodySize < 1)
             {
-                texPathString = "Resources/HideTiny";
+                texPathString = "Things/Item/Resource/HideTiny";
                 return texPathString;
             }
             return texPathString;

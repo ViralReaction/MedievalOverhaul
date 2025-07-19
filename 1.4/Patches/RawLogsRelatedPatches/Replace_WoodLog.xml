@@ -23,7 +23,7 @@
 			<label>timber</label>
 			<description>Timber is processed wood. It has been cut into more manageable sizes making it more manageable to build with.</description>
 			<graphicData>
-				<texPath>Resources/WoodPlank</texPath>
+				<texPath>Things/Item/Resource/WoodPlank</texPath>
       			<graphicClass>Graphic_StackCount</graphicClass>
 				<color>(133,97,67)</color>
 			</graphicData>
