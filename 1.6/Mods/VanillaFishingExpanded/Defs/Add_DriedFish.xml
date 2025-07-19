@@ -6,7 +6,7 @@
 		<label>dried fish</label>
 		<description>Smoked fish to preserve and prolong shelf life.</description>
 		<graphicData>
-			<texPath>Meal/DriedMeat</texPath>
+			<texPath>Things/Item/Meal/DriedMeat</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<thingCategories>

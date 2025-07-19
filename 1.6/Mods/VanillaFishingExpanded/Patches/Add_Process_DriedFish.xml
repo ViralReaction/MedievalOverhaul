@@ -2,14 +2,14 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="DankPyon_DryingRack_Small" or defName="DankPyon_DryingRack_Big"]/comps/li[@="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_DryingRack_Small" or defName="DankPyon_DryingRack_Big"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
 		<value>
 			<li>DankPyon_DriedFishProcess</li>	
 		</value>
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="DankPyon_Smoker"]/comps/li[@="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
+		<xpath>Defs/ThingDef[defName="DankPyon_Smoker"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
 		<value>
 			<li>DankPyon_SmokedFishProcess</li>	
 		</value>
