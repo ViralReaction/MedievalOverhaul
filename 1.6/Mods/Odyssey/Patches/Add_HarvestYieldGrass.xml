@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Nightgrass -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName = "Plant_Nightgrass"]/plant/harvestYield</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "Plant_Nightgrass"]/plant</xpath>
+			<value>
+				<harvestYield/>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName = "Plant_Nightgrass"]/plant/harvestedThingDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "Plant_Nightgrass"]/plant</xpath>
+			<value>
+				<harvestedThingDef/>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "Plant_Nightgrass"]/plant/harvestYield</xpath>
+		<value>
+			<harvestYield>1</harvestYield>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "Plant_Nightgrass"]/plant/harvestedThingDef</xpath>
+		<value>
+			<harvestedThingDef>Hay</harvestedThingDef>
+		</value>
+	</Operation>
+	
+	<!-- Yellow Grass -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName = "Plant_YellowGrass"]/plant/harvestYield</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "Plant_YellowGrass"]/plant</xpath>
+			<value>
+				<harvestYield/>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName = "Plant_YellowGrass"]/plant/harvestedThingDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "Plant_YellowGrass"]/plant</xpath>
+			<value>
+				<harvestedThingDef/>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "Plant_YellowGrass"]/plant/harvestYield</xpath>
+		<value>
+			<harvestYield>1</harvestYield>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "Plant_YellowGrass"]/plant/harvestedThingDef</xpath>
+		<value>
+			<harvestedThingDef>Hay</harvestedThingDef>
+		</value>
+	</Operation>
+	
+	<!-- Tall Yellow Grass -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName = "Plant_YellowTallGrass"]/plant/harvestYield</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "Plant_YellowTallGrass"]/plant</xpath>
+			<value>
+				<harvestYield/>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName = "Plant_YellowTallGrass"]/plant/harvestedThingDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "Plant_YellowTallGrass"]/plant</xpath>
+			<value>
+				<harvestedThingDef/>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "Plant_YellowTallGrass"]/plant/harvestYield</xpath>
+		<value>
+			<harvestYield>1</harvestYield>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "Plant_YellowTallGrass"]/plant/harvestedThingDef</xpath>
+		<value>
+			<harvestedThingDef>Hay</harvestedThingDef>
+		</value>
+	</Operation>
+
+</Patch>

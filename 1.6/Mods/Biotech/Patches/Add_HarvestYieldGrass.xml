@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Grey Grass -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName = "Plant_GrayGrass"]/plant/harvestYield</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "Plant_GrayGrass"]/plant</xpath>
+			<value>
+				<harvestYield/>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName = "Plant_GrayGrass"]/plant/harvestedThingDef</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "Plant_GrayGrass"]/plant</xpath>
+			<value>
+				<harvestedThingDef/>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "Plant_GrayGrass"]/plant/harvestYield</xpath>
+		<value>
+			<harvestYield>1</harvestYield>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "Plant_GrayGrass"]/plant/harvestedThingDef</xpath>
+		<value>
+			<harvestedThingDef>Hay</harvestedThingDef>
+		</value>
+	</Operation>
+
+</Patch>
