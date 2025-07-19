@@ -5,7 +5,7 @@
 		<defName>DankPyon_WebknechtWeb</defName>
 		<label>web</label>
 		<graphicData>
-			<texPath>Projectile/Web</texPath>
+			<texPath>Things/Projectile/Web</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>2</drawSize>
 		</graphicData>
@@ -22,7 +22,7 @@
 		<defName>DankPyon_AlpSleep</defName>
 		<label>sleep</label>
 		<graphicData>
-			<texPath>Projectile/Projectile_AlpBolt</texPath>
+			<texPath>Things/Projectile/Projectile_AlpBolt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>2</drawSize>
 		</graphicData>
