@@ -12,13 +12,11 @@ namespace MedievalOverhaul
         public static ThingDef DankPyon_Artillery_Boulder;
         public static TerrainDef DankPyon_PlowedSoil;
         public static DamageDef DankPyon_SchratCollapse;
-        public static BodyPartGroupDef HeadAttackTool;
 
         public static ThingDef DankPyon_Fat;
         public static ThingDef DankPyon_Bone;
 
         public static ThingCategoryDef DankPyon_Wood;
-        public static ThingDef DankPyon_Leather_Rawhide;
         public static ProcessDef DankPyon_RawHidesProcess;
 
         public static HediffDef DankPyon_UnpleasantAftermath;
@@ -26,33 +24,9 @@ namespace MedievalOverhaul
         public static ThingCategoryDef DankPyon_Hides;
         public static ThingCategoryDef DankPyon_RawWood;
 
-        public static PawnKindDef DankPyon_Schrat_Dark;
         public static PawnKindDef DankPyon_SchratDark_Sapling;
-        public static FactionDef DankPyon_Forest_Faction;
-        public static FactionDef DankPyon_Hornets;
-
-        public static ThingDef DankPyon_MineableIron;
-        public static ThingDef DankPyon_MineableGold;
-        public static ThingDef MineableSilver;
-        public static ThingDef MineablePlasteel;
-
-        public static PawnKindDef DankPyon_Golem_Iron;
-        public static PawnKindDef DankPyon_Golem_Silver;
-        public static PawnKindDef DankPyon_Golem_Gold;
-        public static PawnKindDef DankPyon_Golem_Steel;
-
-        public static ThingDef DankPyon_GolemRock_Iron_Incident;
 
         public static ThingDef DankPyon_MineShaft;
-        public static ThingDef DankPyon_Citrine;
-        public static ThingDef DankPyon_Amber;
-        public static ThingDef DankPyon_Onyx;
-        public static ThingDef DankPyon_Emerald;
-        public static ThingDef DankPyon_Sapphire;
-        public static ThingDef DankPyon_Ruby;
-        public static ThingDef DankPyon_GoldOre;
-
-        public static ThingDef DankPyon_Tree_GriffonBerry;
         public static ThingDef DankPyon_ComponentBasic;
 
         public static JobDef DankPyon_Slop_Refuel_StatAtomic;
@@ -66,8 +40,6 @@ namespace MedievalOverhaul
         public static JobDef DankPyon_EmptyPot;
         public static JobDef DankPyon_IceMold_Empty;
 
-        public static BodyDef Bird;
-
         public static SoundDef MeleeHit_Wood;
         public static SoundDef BulletImpact_Wood;
         public static SoundDef Pawn_Melee_Punch_HitBuilding_Wood;
@@ -75,24 +47,14 @@ namespace MedievalOverhaul
         public static HediffDef DankPyon_LindwurmAcidImmune;
         public static HediffDef DankPyon_StunImmune;
         public static HediffDef DankPyon_DazeImmune;
-        public static HediffDef DankPyon_High_VigorPill;
 
-        public static TerrainDef Ice;
         public static ThingDef DankPyon_IceCellar;
         public static ThingDef DankPyon_IceBlock;
-        public static ThingDef DankPyon_Waterskin;
         public static ThingDef DankPyon_Book_ScribeTable;
         public static ThingDef DankPyon_Flour;
-        public static ThingDef DankPyon_Coal;
-        public static ThingDef DankPyon_Tar;
         public static ThingDef DankPyon_WaterMill;
 
         public static DamageDef DankPyon_AlpNightmare;
-       // public static GameConditionDef DankPyon_AlpEclipse;
-       // public static PawnGroupKindDef DankPyon_AlpGroup;
-       // public static TaleDef DankPyon_AlpEclipseTale;
-       // public static WeatherDef DankPyon_AlpEclipse_Weather;
-       // public static ThoughtDef DankPyon_AlpRaidFinished;
         public static StatDef RestFallRateFactor;
         public static TerrainAffordanceDef GrowSoil;
 
