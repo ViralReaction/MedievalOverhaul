@@ -2,6 +2,58 @@
 <Defs>
 
 	<!-- Pawns -->
+	<KCSG.SymbolDef>
+		<defName>Rat</defName>
+		<pawnKindDef>Rat</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_ShadowSect</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+		<defName>Donkey</defName>
+		<pawnKindDef>Donkey</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_ShadowSect</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+		<defName>Hare</defName>
+		<pawnKindDef>Hare</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_ShadowSect</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+	
+	<KCSG.SymbolDef>
+		<defName>Ibex</defName>
+		<pawnKindDef>Ibex</pawnKindDef>
+		<isSlave>false</isSlave>
+		<spawnPartOfFaction>true</spawnPartOfFaction>
+		<faction>DankPyon_ShadowSect</faction>
+		<numberToSpawn>1</numberToSpawn>
+		<spawnDead>false</spawnDead>
+		<spawnRotten>false</spawnRotten>
+		<spawnFilthAround>false</spawnFilthAround>
+		<defendSpawnPoint>true</defendSpawnPoint>
+	</KCSG.SymbolDef>
+
 	<!-- Mimics -->
 	<KCSG.SymbolDef>
 		<defName>DankPyon_RusticMimic_WoodLog</defName>

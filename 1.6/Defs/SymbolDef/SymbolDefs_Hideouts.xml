@@ -447,7 +447,7 @@
 	</KCSG.SymbolDef>
 
 	<KCSG.SymbolDef>
-		<defName>DankPyon_RusticCookingTable_BlocksGranite_West</defName>
+		<defName>FueledStove_BlocksGranite_West</defName>
 		<thing>FueledStove</thing>
 		<stuff>BlocksGranite</stuff>
 		<rotation>West</rotation>
@@ -543,7 +543,7 @@
 	</KCSG.SymbolDef>
 
 	<KCSG.SymbolDef>
-		<defName>DankPyon_RusticCookingTable_BlocksGranite_East</defName>
+		<defName>FueledStove_BlocksGranite_East</defName>
 		<thing>FueledStove</thing>
 		<stuff>BlocksGranite</stuff>
 		<rotation>East</rotation>
@@ -1057,7 +1057,7 @@
 
 	<KCSG.SymbolDef>
 		<defName>DankPyon_RusticCookingTable_BlocksGranite_South</defName>
-		<thing>DankPyon_RusticCookingTable</thing>
+		<thing>FueledStove</thing>
 		<stuff>BlocksGranite</stuff>
 		<rotation>South</rotation>
 	</KCSG.SymbolDef>
