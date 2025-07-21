@@ -205,6 +205,9 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>125</costStuffCount>
+		<costList>
+			<DankPyon_Silk>50</DankPyon_Silk>
+		</costList>
 		<pathCost>30</pathCost>
 		<fillPercent>0.40</fillPercent>
 		<defaultPlacingRot>South</defaultPlacingRot>
