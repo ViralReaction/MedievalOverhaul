@@ -26,7 +26,6 @@
 			<Nutrition>0.01</Nutrition>
 		</statBases>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Ingredients"/>
 			<li Class="CompProperties_FoodPoisonable"/>
 			<li Class="CompProperties_Rottable">
