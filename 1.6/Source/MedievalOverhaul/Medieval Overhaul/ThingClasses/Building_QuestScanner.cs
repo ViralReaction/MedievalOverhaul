@@ -1,6 +1,5 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
-using UnityEngine;
 using Verse;
 
 namespace MedievalOverhaul
@@ -8,13 +7,7 @@ namespace MedievalOverhaul
     public class Building_QuestScanner : Building
     {
 
-        public bool CanWorkWithoutFuel
-        {
-            get
-            {
-                return this.refuelableComp == null;
-            }
-        }
+        public bool CanWorkWithoutFuel => refuelableComp == null;
         private CompRefuelable refuelableComp;
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
@@ -22,18 +15,16 @@ namespace MedievalOverhaul
             base.SpawnSetup(map, respawningAfterLoad);
             if (QuestScriptDefOf.LongRangeMineralScannerLump == null)
             {
-                this.Destroy(DestroyMode.Refund);
+                Destroy(DestroyMode.Refund);
                 Log.Error("Long Range Mineral Lump Quest has been removed. Destroying and refunding building. ");
             }
-            this.refuelableComp = base.GetComp<CompRefuelable>();
+            LessonAutoActivator.TeachOpportunity(MedievalOverhaulDefOf.DankPyon_Concept_ExplorerTable, OpportunityType.Important);
+            refuelableComp = GetComp<CompRefuelable>();
         }
 
         public virtual void UsedThisTick()
         {
-            if (this.refuelableComp != null)
-            {
-                this.refuelableComp.Notify_UsedThisTick();
-            }
+            refuelableComp?.Notify_UsedThisTick();
         }
 
         public override IEnumerable<Gizmo> GetGizmos()
@@ -42,16 +33,16 @@ namespace MedievalOverhaul
             {
                 yield return gizmo;
             }
-            BuildableDef def = MedievalOverhaulDefOf.DankPyon_CultBook;
-            if (def != null)
+            BuildableDef cultBook = MedievalOverhaulDefOf.DankPyon_CultBook;
+            if (cultBook != null)
             {
                 yield return new Command_Action
                 {
                     defaultLabel = "Tome of Knowledge",
-                    icon = def.uiIcon,
+                    icon = cultBook.uiIcon,
                     action = () =>
                     {
-                        Find.DesignatorManager.Select(new Designator_Build(def));
+                        Find.DesignatorManager.Select(new Designator_Build(cultBook));
                     }
                 };
             }

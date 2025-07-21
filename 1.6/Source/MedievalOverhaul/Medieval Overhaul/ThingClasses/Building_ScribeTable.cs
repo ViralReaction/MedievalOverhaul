@@ -15,28 +15,28 @@ namespace MedievalOverhaul
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            this.facilities = this.TryGetComp<CompAffectedByFacilities>();
-            this.extension = this.def.GetModExtension<RequireLinkables>();
-            if (this.extension == null)
+            facilities = this.TryGetComp<CompAffectedByFacilities>();
+            extension = def.GetModExtension<RequireLinkables>();
+            if (extension == null)
             {
-                Log.Error(this.def + " " + "does not have the required Mod Extesion.");
+                Log.Error(def + " " + "does not have the required Mod Extesion.");
             }
-            LessonAutoActivator.TeachOpportunity(ConceptDefOf.BuildOrbitalTradeBeacon, OpportunityType.GoodToKnow);
+            //LessonAutoActivator.TeachOpportunity(ConceptDefOf.BuildOrbitalTradeBeacon, OpportunityType.GoodToKnow);
             LessonAutoActivator.TeachOpportunity(ConceptDefOf.OpeningComms, OpportunityType.GoodToKnow);
-            if (this.CanUseCommsNow)
+            if (CanUseCommsNow)
             {
-                LongEventHandler.ExecuteWhenFinished(new Action(this.AnnounceTradeShips));
+                LongEventHandler.ExecuteWhenFinished(new Action(AnnounceTradeShips));
             }
         }
         public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn myPawn)
         {
-            FloatMenuOption failureReason = this.GetActualFailureReason(myPawn);
+            FloatMenuOption failureReason = GetActualFailureReason(myPawn);
             if (failureReason != null)
             {
                 yield return failureReason;
                 yield break;
             }
-            foreach (ICommunicable communicable in this.GetCommTargets_Messenger(myPawn))
+            foreach (ICommunicable communicable in GetCommTargets_Messenger(myPawn))
             {
                 FloatMenuOption floatMenuOption = communicable.CommFloatMenuOption(this, myPawn);
                 if (floatMenuOption != null)
@@ -49,7 +49,7 @@ namespace MedievalOverhaul
 
         public IEnumerable<ICommunicable> GetCommTargets_Messenger(Pawn myPawn)
         {
-            List<ICommunicable> targets = new List<ICommunicable>();
+            List<ICommunicable> targets = [];
             // Add valid factions
             if (Find.FactionManager != null)
             {
@@ -68,13 +68,13 @@ namespace MedievalOverhaul
 
         public FloatMenuOption GetActualFailureReason(Pawn myPawn)
         {
-            if (this.facilities.LinkedFacilitiesListForReading.Count < extension.linkablesNeeded)
+            if (facilities.LinkedFacilitiesListForReading.Count < extension.linkablesNeeded)
             {
                 return new FloatMenuOption("Missing required building", null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
             }
-            for (int i = 0; i < this.facilities.LinkedFacilitiesListForReading.Count; i++)
+            for (int i = 0; i < facilities.LinkedFacilitiesListForReading.Count; i++)
             {
-                if (this.facilities.LinkedFacilitiesListForReading[i] is Building building)
+                if (facilities.LinkedFacilitiesListForReading[i] is Building building)
                 {
                     var fuelComp = building.TryGetComp<CompRefuelableCustom>();
                     if (fuelComp != null && !fuelComp.HasFuel)
@@ -92,7 +92,7 @@ namespace MedievalOverhaul
                 return new FloatMenuOption("CannotUseReason".Translate("IncapableOfCapacity".Translate(PawnCapacityDefOf.Talking.label, myPawn.Named("PAWN"))), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
             }
             bool hasCommTarget = false;
-            foreach (ICommunicable target in this.GetCommTargets_Messenger(myPawn))
+            foreach (ICommunicable target in GetCommTargets_Messenger(myPawn))
             {
                 hasCommTarget = true;
                 break; // Exit early if at least one target exists
@@ -103,20 +103,14 @@ namespace MedievalOverhaul
                 return new FloatMenuOption("CannotUseReason".Translate("NoCommsTarget".Translate()), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
             }
 
-            if (!this.CanActuallyUseCommsNow)
+            if (!CanActuallyUseCommsNow)
             {
                 Log.Error(myPawn + " could not use comm console for unknown reason.");
                 return new FloatMenuOption("Cannot use now", null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
             }
             return null;
         }
-        public bool CanActuallyUseCommsNow
-        {
-            get
-            {
-                return base.Spawned && (this.powerComp == null || this.powerComp.PowerOn);
-            }
-        }
+        public bool CanActuallyUseCommsNow => Spawned && (powerComp == null || powerComp.PowerOn);
 
     }
 }

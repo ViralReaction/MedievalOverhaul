@@ -63,6 +63,10 @@ namespace MedievalOverhaul
 
         public static ThingDef DankPyon_CultBook;
 
+        public static ConceptDef DankPyon_Concept_Tanning;
+        public static ConceptDef DankPyon_Concept_Lumber;
+        public static ConceptDef DankPyon_Concept_ExplorerTable;
+
         [MayRequireCE]
         public static StatDef Bulk;
 

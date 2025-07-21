@@ -21,8 +21,8 @@ namespace MedievalOverhaul.Patches
         {
             if (__instance.HarvestableNow)
             {
-                var terrainGrid = __state.terrainGrid;
-                var position = __instance.Position;
+                TerrainGrid terrainGrid = __state.terrainGrid;
+                IntVec3 position = __instance.Position;
                 if (terrainGrid.TerrainAt(position).defName == "DankPyon_PlowedSoil")
                 {
 
@@ -35,7 +35,10 @@ namespace MedievalOverhaul.Patches
                         }
                     }
                 }
-
+            }
+            if (__instance.def.plant.IsTree && MedievalOverhaulSettings.settings.woodChain)
+            {
+                LessonAutoActivator.TeachOpportunity(MedievalOverhaulDefOf.DankPyon_Concept_Lumber, OpportunityType.Important);
             }
         }
     }

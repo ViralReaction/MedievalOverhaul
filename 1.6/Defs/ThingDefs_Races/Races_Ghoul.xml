@@ -454,7 +454,6 @@
                 </butcherOptions>
 			</li>
 		</modExtensions>
-		
 	</ThingDef>
   
 	<PawnKindDef ParentName="AnimalKindBase">

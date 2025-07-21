@@ -46,16 +46,22 @@ namespace MedievalOverhaul.Patches
                             productThing.stackCount = 1;
                         }
                         productList.Add(productThing);
+                        LessonAutoActivator.TeachOpportunity(MedievalOverhaulDefOf.DankPyon_Concept_Tanning, OpportunityType.Important);
                     }
                     else
+                    {
                         productList.Add(product);
+                    }
                 }
             }
-            else foreach (Thing product in __result)
+            else
+            {
+                foreach (Thing product in __result)
                 {
                     productList.Add(product);
                 }
-                
+            }
+
             // Checking for additional butcher products and adding to list
             var additionalButcherOptions = __instance.def.GetModExtension<AdditionalButcherProducts>();
             if (additionalButcherOptions != null)
