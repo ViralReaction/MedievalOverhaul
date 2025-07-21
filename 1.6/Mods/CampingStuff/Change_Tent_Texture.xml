@@ -5,7 +5,7 @@
 		<xpath>Defs/ThingDef[defName="NCS_TentWall"]/graphicData</xpath>
 		<value>
 			<graphicData>
-				<texPath>Buildings/Linked/Tent</texPath>
+				<texPath>Thing/Building/Linked/Tent</texPath>
 				<graphicClass>Graphic_Appearances</graphicClass>
 				<linkType>CornerFiller</linkType>
 				<linkFlags Inherit="False">

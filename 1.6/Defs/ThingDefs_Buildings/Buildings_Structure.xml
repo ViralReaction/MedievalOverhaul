@@ -494,7 +494,7 @@
 		</building>
 		<designationHotKey Inherit="False"/>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RusticWallBase">
 		<defName>DankPyon_EmbPalisade</defName>
 		<label>palisade embrasures</label>
@@ -539,7 +539,7 @@
 		</building>
 		<designationHotKey Inherit="False"/>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RusticWallBase">
 		<defName>DankPyon_TudorWall</defName>
 		<label>tudor wall</label>
