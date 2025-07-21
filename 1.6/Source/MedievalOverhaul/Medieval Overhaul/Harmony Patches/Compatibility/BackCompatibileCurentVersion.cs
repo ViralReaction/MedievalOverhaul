@@ -12,38 +12,28 @@ namespace MedievalOverhaul.Patches
 
         internal static bool Prefix(string providedClassName, ref Type __result, XmlNode node)
         {
-            if (node["stuff"] != null && node["stuff"].InnerText.ToString() == "DankPyon_Log_RawDarkWood")
+            if (node["def"] != null && node["def"].InnerText.Contains("DankPyon_HideTentWall"))
             {
-                node["stuff"].InnerText = "DankPyon_RawDarkWood";
+                node["def"].InnerText = node["def"].InnerText.Replace("DankPyon_HideTentWall", "DankPyon_TentWall");
             }
-            if (providedClassName == "MedievalOverhaul.Building_WorkTable_HeatPushCustom")
+            if (node["def"] != null && node["def"].InnerText.Contains("Blueprint_DankPyon_HideTentWall"))
             {
-                __result = typeof(Building_WorkTable_HeatPush);
-                return false;
+                node["def"].InnerText = node["def"].InnerText.Replace("Blueprint_DankPyon_HideTentWall", "Blueprint_DankPyon_TentWall");
             }
-            if (providedClassName == "MedievalOverhaul.Building_WorkTableCustom")
+            if (node["def"] != null && node["def"].InnerText.Contains("Frame_DankPyon_HideTentWall"))
             {
-                __result = typeof(Building_WorkTable);
-                return false;
+                node["def"].InnerText = node["def"].InnerText.Replace("Frame_DankPyon_HideTentWall", "Frame_DankPyon_TentWall");
             }
             return true;
         }
     }
-    [HarmonyPatch(typeof(BackCompatibility), nameof(BackCompatibility.BackCompatibleDefName))]
-    public class BackCompatibile_BackCompatibleDefName
-    {
-
-        internal static void Postfix(Type defType, ref string __result, bool forDefInjections = false, XmlNode node = null)
-        {
-            if (defType == typeof(ThingDef))
-            {
-                if (__result == "DankPyon_Log_RawDarkWood")
-                {
-                    __result = "DankPyon_RawDarkWood";
-                    return;
-
-                }
-            }
-        }
-    }
+    // [HarmonyPatch(typeof(BackCompatibility), nameof(BackCompatibility.BackCompatibleDefName))]
+    // public class BackCompatibile_BackCompatibleDefName
+    // {
+    //
+    //     internal static void Postfix(Type defType, ref string __result, bool forDefInjections = false, XmlNode node = null)
+    //     {
+    //
+    //     }
+    //}
 }

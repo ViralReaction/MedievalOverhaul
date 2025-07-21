@@ -403,74 +403,52 @@
 		</building>
 		<designationHotKey Inherit="False"/>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RusticWallBase">
-		<defName>DankPyon_HideTentWall</defName>
-		<label>hide tent</label>
-		<description>A patchleather tent made up of raw hide. Fast and easy to build but can be easily destroyed.\n\nDismantling the tent will return all resources.</description>
+		<defName>DankPyon_TentWall</defName>
+		<label>tent</label>
+		<description>A tent made up of soft fabric or raw hide. Fast and easy to build but can be easily destroyed.\n\nDismantling the tent will return all resources.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/HideTent_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<linkType>Basic</linkType>
-			<linkFlags>
+			<texPath>Things/Building/Linked/Tent</texPath>
+			<graphicClass>Graphic_Appearances</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags Inherit="False">
 				<li>Custom10</li>
 			</linkFlags>
 		</graphicData>
-		<uiIconPath>Things/Building/Linked/HideTent_MenuIcon</uiIconPath>
-		<uiIconPathsStuff Inherit="False"/>
+		<uiIconPath>Things/Building/Linked/Tent_MenuIcon</uiIconPath>
+		<uiIconPathsStuff Inherit="False">
+			<li>
+				<appearance>Textile</appearance>
+				<iconPath>Things/Building/Linked/Tent_MenuIcon</iconPath>
+			</li>
+			<li>
+				<appearance>Hide</appearance>
+				<iconPath>Things/Building/Linked/HideTent_MenuIcon</iconPath>
+			</li>
+		</uiIconPathsStuff>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>50</WorkToBuild>
 			<Flammability>2.0</Flammability>
 			<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<stuffCategories Inherit="False">
+			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
 		<costStuffCount>5</costStuffCount>
+		<coversFloor>false</coversFloor>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
 		<building>
+			<paintable>false</paintable>
 			<blueprintGraphicData>
 				<texPath>Things/Building/Linked/HideTent_Blueprint</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands>
-				<li>DankPyon_RusticDoor</li>
-			</relatedBuildCommands>
-		</building>
-		<designationHotKey Inherit="False"/>
-	</ThingDef>
-	
-	<ThingDef ParentName="RusticWallBase">
-		<defName>DankPyon_TentWall</defName>
-		<label>tent</label>
-		<description>A tent made up of soft fabric. Fast and easy to build but can be easily destroyed.\n\nDismantling the tent will return all resources.</description>
-		<graphicData>
-			<texPath>Things/Building/Linked/Tent_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<linkType>Basic</linkType>
-			<linkFlags>
-				<li>Custom10</li>
-			</linkFlags>
-		</graphicData>
-		<uiIconPath>Things/Building/Linked/Tent_MenuIcon</uiIconPath>
-		<uiIconPathsStuff Inherit="False"/>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToBuild>135</WorkToBuild>
-			<Flammability>1.0</Flammability>
-			<MeditationFocusStrength>0.22</MeditationFocusStrength>
-		</statBases>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded><!-- Best affordance needed for stone -->
-		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
-		<stuffCategories Inherit="False">
-			<li>Fabric</li>
-		</stuffCategories>
-		<costStuffCount>5</costStuffCount>
-		<building>
-			<blueprintGraphicData>
-				<texPath>Things/Building/Linked/Tent_Blueprint</texPath>
-			</blueprintGraphicData>
-			<relatedBuildCommands>
+				<li>Door</li>
+				<li>Autodoor</li>
 				<li>DankPyon_RusticDoor</li>
 			</relatedBuildCommands>
 		</building>
@@ -516,7 +494,7 @@
 		</building>
 		<designationHotKey Inherit="False"/>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RusticWallBase">
 		<defName>DankPyon_EmbPalisade</defName>
 		<label>palisade embrasures</label>
@@ -561,7 +539,7 @@
 		</building>
 		<designationHotKey Inherit="False"/>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RusticWallBase">
 		<defName>DankPyon_TudorWall</defName>
 		<label>tudor wall</label>
