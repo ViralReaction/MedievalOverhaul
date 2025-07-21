@@ -43,6 +43,9 @@
 		<color>(255, 255, 255)</color><!-- 0-255 or 0.0-1.0 -->
 		<customLabel/>
 		<destroyChance>0.0</destroyChance>
+		<useStatForEfficiency>true</useStatForEfficiency>
+		<efficiencyStat>Nutrition</efficiencyStat>
+		<statBaselineValue>0.05</statBaselineValue>
 	</ProcessorFramework.ProcessDef>
 
 	<!-- Dried Human Meat Process-->
