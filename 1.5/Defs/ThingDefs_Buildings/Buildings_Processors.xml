@@ -171,6 +171,7 @@
 		<graphicData>
 			<texPath>Things/Building/Production/DryingRack1x2/DryingRack1x2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(3,3)</drawSize>
 			<damageData>
 				<rect>(0.05,0.1,0.9,0.9)</rect>
