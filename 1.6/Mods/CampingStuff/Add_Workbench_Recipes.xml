@@ -2,13 +2,6 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[@Name="TentPartTailored"]/recipeMaker/recipeUsers</xpath>
-		<value>
-			<li>DankPyon_TailorsBench</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/RecipeDef[@Name="NCS_PartSmithRecipe"]/recipeUsers</xpath>
 		<value>
 			<li>DankPyon_Anvil</li>
