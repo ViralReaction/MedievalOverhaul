@@ -403,13 +403,11 @@
 		</building>
 		<designationHotKey Inherit="False"/>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="RusticWallBase">
 		<defName>DankPyon_TentWall</defName>
 		<label>tent</label>
 		<description>A tent made up of soft fabric or raw hide. Fast and easy to build but can be easily destroyed.\n\nDismantling the tent will return all resources.</description>
-		<thingClass>Building</thingClass>
-		<category>Building</category>
 		<graphicData>
 			<texPath>Things/Building/Linked/Tent</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
@@ -454,14 +452,6 @@
 				<li>DankPyon_RusticDoor</li>
 			</relatedBuildCommands>
 		</building>
-		<comps>
-			<li Class="CompProperties_MeditationFocus">
-				<statDef>MeditationFocusStrength</statDef>
-				<focusTypes>
-					<li>Minimal</li>
-				</focusTypes>
-			</li>
-		</comps>
 		<designationHotKey Inherit="False"/>
 	</ThingDef>
 
