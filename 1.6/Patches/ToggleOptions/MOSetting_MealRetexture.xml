@@ -12,7 +12,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="MealSurvivalPack"]/graphicData/texPath</xpath>
 					<value>
-						<texPath>Things/Item/Meal/SurvivalPack</texPath>
+						<texPath>Things/Item/Meal/RetexSurvivalPack</texPath>
 					</value>
 				</li>
 
@@ -27,7 +27,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="MealNutrientPaste"]/graphicData/texPath</xpath>
 					<value>
-						<texPath>Things/Item/Meal/NutrientPaste</texPath>
+						<texPath>Things/Item/Meal/RetexNutrientPaste</texPath>
 					</value>
 				</li>
 
@@ -49,7 +49,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="MealSimple"]/graphicData/texPath</xpath>
 					<value>
-						<texPath>Things/Item/Meal/Simple</texPath>
+						<texPath>Things/Item/Meal/RetexSimple</texPath>
 					</value>
 				</li>
 
@@ -71,7 +71,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="MealFine"]/graphicData/texPath</xpath>
 					<value>
-						<texPath>Things/Item/Meal/Fine</texPath>
+						<texPath>Things/Item/Meal/RetexFine</texPath>
 					</value>
 				</li>
 
@@ -93,7 +93,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="MealFine_Veg"]/graphicData/texPath</xpath>
 					<value>
-						<texPath>Things/Item/Meal/FineVeg</texPath>
+						<texPath>Things/Item/Meal/RetexFineVeg</texPath>
 					</value>
 				</li>
 
@@ -108,7 +108,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="MealFine_Meat"]/graphicData/texPath</xpath>
 					<value>
-						<texPath>Things/Item/Meal/FineMeat</texPath>
+						<texPath>Things/Item/Meal/RetexFineMeat</texPath>
 					</value>
 				</li>
 
@@ -123,7 +123,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="MealLavish"]/graphicData/texPath</xpath>
 					<value>
-						<texPath>Things/Item/Meal/Lavish</texPath>
+						<texPath>Things/Item/Meal/RetexLavish</texPath>
 					</value>
 				</li>
 
@@ -145,7 +145,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="MealLavish_Veg"]/graphicData/texPath</xpath>
 					<value>
-						<texPath>Things/Item/Meal/LavishVeg</texPath>
+						<texPath>Things/Item/Meal/RetexLavishVeg</texPath>
 					</value>
 				</li>
 
@@ -160,7 +160,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="MealLavish_Meat"]/graphicData/texPath</xpath>
 					<value>
-						<texPath>Things/Item/Meal/LavishMeat</texPath>
+						<texPath>Things/Item/Meal/RetexLavishMeat</texPath>
 					</value>
 				</li>
 
