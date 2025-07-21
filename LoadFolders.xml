@@ -68,6 +68,7 @@
 		<li IfModActive="Owlchemist.SimpleFX.Smoke2">1.6/Mods/SimpleFXSmoke</li>
 		<li IfModActive="orion.hospitality">1.6/Mods/Hospitality</li>
 		<li IfModActive="OskarPotocki.VFE.Medieval2">1.6/Mods/VanillaExpandedMedieval</li>
+		<li IfModActive="Alias.CampingStuff">1.6/Mods/CampingStuff</li>
 		<!-- <li IfModActive="dankpyon.medieval.overhaul.house.roxmont">1.6/Mods/Roxmont</li> -->
 	</v1.6>
 
