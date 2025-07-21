@@ -50,6 +50,7 @@ namespace MedievalOverhaul.Patches
         public static void Postfix(MainTabWindow_Research __instance, ref float __result, ref Rect rect, float __state)
         {
             __result = rect.yMin - __state; // Return the updated yMin as the final result
+            LessonAutoActivator.TeachOpportunity(MedievalOverhaulDefOf.DankPyon_Concept_Schematics, OpportunityType.Important);
         }
 
     }

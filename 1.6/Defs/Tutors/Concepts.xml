@@ -21,5 +21,12 @@
 		<priority>50</priority>
 		<helpText>Explorer's Table can used to find quest locations by using torn notes as fuel.\nThe more objects linked to the table the higher level of locations can be searched for.</helpText>
 	</ConceptDef>
+	
+	<ConceptDef>
+		<defName>DankPyon_Concept_Schematics</defName>
+		<label>MO: Schematics</label>
+		<priority>50</priority>
+		<helpText>Some research require schematics placed inside a bookshelf to start research.\nSchematics can be found in quest locations from explorer's table or very rarely from traders.</helpText>
+	</ConceptDef>
 
 </Defs>
