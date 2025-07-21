@@ -344,7 +344,7 @@
 			</prerequisites>
 		</value>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ResearchProjectDef[defName="LongBlades"]/prerequisites</xpath>
 		<value>
@@ -367,7 +367,7 @@
 			<xpath>Defs/ResearchProjectDef[defName="PlateArmor"]/prerequisites/li[.="Smithing"]</xpath>
 		</match>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]/prerequisites</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -377,7 +377,7 @@
 			</value>
 		</nomatch>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]/prerequisites</xpath>
 		<value>
@@ -386,7 +386,27 @@
 			</prerequisites>
 		</value>
 	</Operation>
-	
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]/prerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]/prerequisites</xpath>
+			<value>
+				<prerequisites>
+					<li>DankPyon_RusticFurniture</li>
+				</prerequisites>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]</xpath>
+			<value>
+				<prerequisites>
+					<li>DankPyon_RusticFurniture</li>
+				</prerequisites>
+			</value>
+		</nomatch>
+	</Operation>
+
 	<!-- ============================ Labeling Changes ========================== -->
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]/label</xpath>
