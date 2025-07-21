@@ -411,22 +411,22 @@
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Buildings/Linked/Tent</texPath>
+			<texPath>Things/Building/Linked/Tent</texPath>
 			<graphicClass>Graphic_Appearances</graphicClass>
 			<linkType>CornerFiller</linkType>
 			<linkFlags Inherit="False">
 				<li>Custom10</li>
 			</linkFlags>
 		</graphicData>
-		<uiIconPath>Buildings/Linked/Tent_MenuIcon</uiIconPath>
+		<uiIconPath>Things/Building/Linked/Tent_MenuIcon</uiIconPath>
 		<uiIconPathsStuff Inherit="False">
 			<li>
 				<appearance>Textile</appearance>
-				<iconPath>Buildings/Linked/Tent_MenuIcon</iconPath>
+				<iconPath>Things/Building/Linked/Tent_MenuIcon</iconPath>
 			</li>
 			<li>
 				<appearance>Hide</appearance>
-				<iconPath>Buildings/Linked/HideTent_MenuIcon</iconPath>
+				<iconPath>Things/Building/Linked/HideTent_MenuIcon</iconPath>
 			</li>
 		</uiIconPathsStuff>
 		<statBases>
@@ -446,7 +446,7 @@
 		<building>
 			<paintable>false</paintable>
 			<blueprintGraphicData>
-				<texPath>Buildings/Linked/HideTent_Blueprint</texPath>
+				<texPath>Things/Building/Linked/HideTent_Blueprint</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands>
 				<li>Door</li>

@@ -497,7 +497,7 @@
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<graphicData>
-			<texPath>Buildings/Linked/Tent/Tent_Atlas_Textile</texPath>
+			<texPath>Things/Building/Linked/Tent/Tent_Atlas_Textile</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<linkType>Basic</linkType>
 			<linkFlags>
