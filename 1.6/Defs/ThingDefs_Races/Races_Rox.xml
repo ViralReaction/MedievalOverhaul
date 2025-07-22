@@ -77,7 +77,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<race>
 			<herdAnimal>true</herdAnimal>
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
@@ -87,6 +86,7 @@
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
 			<leatherDef>DankPyon_Leather_Rox</leatherDef>
 			<trainability>Advanced</trainability>
+			<roamMtbDays>4</roamMtbDays>
 			<gestationPeriodDays>14</gestationPeriodDays>
 			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
 			<packAnimal>true</packAnimal>
@@ -96,6 +96,7 @@
 				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
 				<li MayRequire="Ludeon.RimWorld.Biotech">Plant_TreePolux</li>
 				<li MayRequire="Ludeon.RimWorld.Anomaly">Plant_TreeHarbinger</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">Plant_TreeArchean</li>
 			</willNeverEat>
 			<lifeStageAges>
 				<li>
