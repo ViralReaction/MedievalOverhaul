@@ -9,7 +9,11 @@ namespace MedievalOverhaul
     public static class MedievalOverhaulDefOf
     {
         public static ThingDef DankPyon_Artillery_Trebuchet;
+        public static ThingDef DankPyon_Turret_Trebuchet;
         public static ThingDef DankPyon_Artillery_Boulder;
+        public static ThingDef DankPyon_CavalrySpike;
+        public static ThingDef DankPyon_MealBread;
+
         public static TerrainDef DankPyon_PlowedSoil;
         public static DamageDef DankPyon_SchratCollapse;
 

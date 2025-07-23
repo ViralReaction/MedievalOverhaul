@@ -369,7 +369,7 @@
 		<tickerType>Normal</tickerType>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Security</designationCategory>
-		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<costList>
 			<WoodLog>250</WoodLog>
 			<DankPyon_IronIngot>90</DankPyon_IronIngot>
@@ -386,12 +386,15 @@
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Mannable">
 				<manWorkType>Violent</manWorkType>
+				<planetLayerWhitelist>
+					<li>Surface</li>
+				</planetLayerWhitelist>
 			</li>
 		</comps>
 		<statBases>
 			<MaxHitPoints>550</MaxHitPoints>
 			<Flammability>1</Flammability>
-			<WorkToBuild>12000</WorkToBuild>
+			<WorkToBuild>4000</WorkToBuild>
 			<Mass>100</Mass>
 			<Beauty>-20</Beauty>
 		</statBases>
@@ -402,7 +405,6 @@
 			<turretTopOffset>(0, -1)</turretTopOffset>
 			<buildingTags>
 				<li>Artillery</li>
-				<li>Artillery_BaseDestroyer</li>
 				<li>ArtilleryMedieval</li>
 				<li>ArtilleryMedieval_BaseDestroyer</li>
 			</buildingTags>
@@ -442,6 +444,7 @@
 		<designationHotKey>Misc5</designationHotKey>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
+			<blueprintClass>Blueprint_Build</blueprintClass>
 			<turretGunDef>DankPyon_Artillery_Trebuchet</turretGunDef>
 			<buildingTags>
 				<li>Artillery_BaseDestroyer</li>
@@ -453,7 +456,7 @@
 		<uiIconScale>0.9</uiIconScale>
 		<weaponTags>
 			<li>DankPyon_Trebuchet</li>
-				<li>ArtilleryMedieval_BaseDestroyer</li>
+			<li>ArtilleryMedieval_BaseDestroyer</li>
 		</weaponTags>
 	</ThingDef>
 
@@ -466,7 +469,7 @@
 		</graphicData>
 		<weaponTags>
 			<li>DankPyon_Trebuchet</li>
-				<li>ArtilleryMedieval_BaseDestroyer</li>
+			<li>ArtilleryMedieval_BaseDestroyer</li>
 		</weaponTags>
 		<verbs>
 			<li>
@@ -506,11 +509,6 @@
 					</categories>
 				</filter>
 			</defaultStorageSettings>
-			<buildingTags>
-				<li>Artillery_BaseDestroyer</li>
-				<li>ArtilleryMedieval</li>
-				<li>ArtilleryMedieval_BaseDestroyer</li>
-			</buildingTags>
 		</building>
 	</ThingDef>
 

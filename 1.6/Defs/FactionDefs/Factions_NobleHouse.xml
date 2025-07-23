@@ -149,6 +149,9 @@
 				<swampinessRangeMax>0.8</swampinessRangeMax>
 				<IgnoreBiomeSelectionWeight>false</IgnoreBiomeSelectionWeight>
 			</li>
+			<li Class="MedievalOverhaul.FactionSiegeExtension">
+				<medievalSiege>true</medievalSiege>
+			</li>
 		</modExtensions>
 	</FactionDef>
 

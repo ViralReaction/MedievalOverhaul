@@ -45,6 +45,7 @@
 		<Compile Include="Medieval Overhaul\DefModExtension\CannotBePlacedTogetherWithThisModExtension.cs" />
 		<Compile Include="Medieval Overhaul\DefModExtension\DeathDropOptions.cs" />
 		<Compile Include="Medieval Overhaul\DefModExtension\DeathSplitExtension.cs" />
+		<Compile Include="Medieval Overhaul\DefModExtension\FactionSiegeExtension.cs" />
 		<Compile Include="Medieval Overhaul\DefModExtension\FuelValueProperty.cs" />
 		<Compile Include="Medieval Overhaul\DefModExtension\HediffFallRateMultiplier.cs" />
 		<Compile Include="Medieval Overhaul\DefModExtension\IncidentProperties.cs" />
@@ -58,6 +59,7 @@
 		<Compile Include="Medieval Overhaul\DefModExtension\RequireLinkables.cs" />
 		<Compile Include="Medieval Overhaul\DefModExtension\SecondaryPlantDropExtension.cs" />
 		<Compile Include="Medieval Overhaul\DefModExtension\SettlementPreference.cs" />
+		<Compile Include="Medieval Overhaul\DefOfs\MedievalOverhaulThingDefOf.cs" />
 		<Compile Include="Medieval Overhaul\Gizmo\Command_SetTargetFuelLevelCustom.cs" />
 		<Compile Include="Medieval Overhaul\Gizmo\Command_RetrieveSlop.cs" />
 		<Compile Include="Medieval Overhaul\Gizmo\Gizmo_RefuelableStatusCustom.cs" />
@@ -256,6 +258,10 @@
 		<Compile Include="Medieval Overhaul\WorkGiver\WorkGiver_RefuelStat.cs" />
 		<Compile Include="Medieval Overhaul\Utilities\TooltipStringInit.cs" />
 		<Compile Include="Medieval Overhaul\Harmony Patches\SettlementPreferencePatch.cs" />
+		<Compile Include="SiegeStuff\RaidStrategyWorker_MedievalSiege.cs" />
+		<Compile Include="SiegeStuff\LordJob_MedievalSiege.cs" />
+		<Compile Include="SiegeStuff\LordToil_MedievalSiege.cs" />
+		<Compile Include="SiegeStuff\SiegeUtility.cs" />
 		<Compile Include="TransparentThings\Core.cs" />
 		<Compile Include="TransparentThings\RoofSetter.cs" />
 		<Compile Include="TransparentThings\ThingExtension.cs" />

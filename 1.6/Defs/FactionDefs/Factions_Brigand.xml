@@ -104,9 +104,13 @@
 		</pawnGroupMakers>
 		<hidden>true</hidden>
 		<settlementTexturePath>WorldObjects/MedievalSettlement</settlementTexturePath>
-
 		<permanentEnemy>true</permanentEnemy>
 		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<modExtensions>
+			<li Class="MedievalOverhaul.FactionSiegeExtension">
+				<medievalSiege>true</medievalSiege>
+			</li>
+		</modExtensions>
 	</FactionDef>
 
 	<FactionDef ParentName="DankPyon_BrigandFactionBase">
