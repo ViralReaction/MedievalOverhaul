@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[@Name="BaseLakeMut"]/biomeWhitelist</xpath>
+		<value>
+			<li>DankPyon_DarkForest</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Pond"]/biomeWhitelist</xpath>
+		<value>
+			<li>DankPyon_DarkForest</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Wetland"]/biomeWhitelist</xpath>
+		<value>
+			<li>DankPyon_DarkForest</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="HotSprings"]/biomeWhitelist</xpath>
+		<value>
+			<li>DankPyon_DarkForest</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Cliffs"]/biomeWhitelist</xpath>
+		<value>
+			<li>DankPyon_DarkForest</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Basin"]/biomeWhitelist</xpath>
+		<value>
+			<li>DankPyon_DarkForest</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="TerraformingScar"]/biomeWhitelist</xpath>
+		<value>
+			<li>DankPyon_DarkForest</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[@Name="BaseCoastMut"]/biomeWhitelist</xpath>
+		<value>
+			<li>DankPyon_DarkForest</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Iceberg"]/biomeWhitelist</xpath>
+		<value>
+			<li>DankPyon_DarkForest</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Fertile"]/biomeWhitelist</xpath>
+		<value>
+			<li>DankPyon_DarkForest</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="MixedBiome"]/biomeWhitelist</xpath>
+		<value>
+			<li>DankPyon_DarkForest</li>
+		</value>
+	</Operation>
+
+</Patch>
