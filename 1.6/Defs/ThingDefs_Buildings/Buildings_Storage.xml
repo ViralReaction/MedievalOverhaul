@@ -285,7 +285,7 @@
 	<!--== Wood Logs 1x2 ==-->
 	<ThingDef ParentName="DankPyon_LumberStorageBase">
 		<defName>DankPyon_WoodLogs1x2c</defName>
-		<label>raw wood (1x2)</label>
+		<label>raw wood pile (1x2)</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
 			<texPath>Things/Building/Storage/RawWood1x2</texPath>
@@ -328,7 +328,7 @@
 	<!--== Wood Logs 2x2 ==-->
 	<ThingDef ParentName="DankPyon_LumberStorageBase">
 		<defName>DankPyon_WoodLogs2x2c</defName>
-		<label>raw wood (2x2)</label>
+		<label>raw wood pile (2x2)</label>
 		<description>Logs that are stacked in an efficient manner to save more space.</description>
 		<graphicData>
 			<texPath>Things/Building/Storage/RawWood2x2</texPath>
