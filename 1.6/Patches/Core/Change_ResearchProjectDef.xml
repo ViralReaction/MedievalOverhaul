@@ -161,20 +161,6 @@
 			<researchViewY>4.2</researchViewY>
 		</value>
 	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ResearchProjectDef[defName="Pemmican"]/researchViewX</xpath>
-		<value>
-			<researchViewX>1.00</researchViewX>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ResearchProjectDef[defName="Pemmican"]/researchViewY</xpath>
-		<value>
-			<researchViewY>1.40</researchViewY>
-		</value>
-	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]/researchViewX</xpath>
@@ -298,7 +284,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ResearchProjectDef[defName="Pemmican"]/researchViewY</xpath>
 		<value>
-			<researchViewY>1.40</researchViewY>
+			<researchViewY>1.30</researchViewY>
 		</value>
 	</Operation>
 	
@@ -412,6 +398,13 @@
 		<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]/label</xpath>
 		<value>
 			<label>tailoring</label>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Pemmican"]/label</xpath>
+		<value>
+			<label>food preservation</label>
 		</value>
 	</Operation>
 	

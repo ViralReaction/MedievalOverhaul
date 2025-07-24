@@ -12,7 +12,6 @@
 		</graphicData>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<researchPrerequisite>DankPyon_LeatherTanning</researchPrerequisite>
 			<recipeUsers>
 				<li>CraftingSpot</li>
 			</recipeUsers>
