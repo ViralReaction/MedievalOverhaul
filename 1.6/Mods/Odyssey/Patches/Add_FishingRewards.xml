@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingSetMakerDef[@Name="RareFishingCatchesBase"]/root/options</xpath>
+		<value>
+			<li>
+				<weight>5</weight>
+				<thingSetMaker Class="ThingSetMaker_Count">
+					<fixedParams>
+						<qualityGenerator>Reward</qualityGenerator>
+						<filter>
+							<categories>
+								<li>DankPyon_Schematics</li>
+							</categories>
+						</filter>
+					</fixedParams>
+				</thingSetMaker>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

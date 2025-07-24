@@ -192,5 +192,12 @@
 		<parent>Foods</parent>
 		<iconPath>UI/Icons/ThingCategories/PlantFoodRaw</iconPath>
 	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>DankPyon_Schematics</defName>
+		<label>ancient schematic</label>
+		<parent>Books</parent>
+		<iconPath>Special/Book/SchematicScroll</iconPath>
+	</ThingCategoryDef>
 
 </Defs>

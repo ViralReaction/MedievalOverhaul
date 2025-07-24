@@ -15,6 +15,9 @@
 		<tradeTags>
 			<li>DankPyon_Schematic</li>
 		</tradeTags>
+		 <thingCategories Inherit="False">
+			<li>DankPyon_Schematics</li>
+		</thingCategories>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">

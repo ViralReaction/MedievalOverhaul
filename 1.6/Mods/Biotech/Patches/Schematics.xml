@@ -232,7 +232,7 @@
 							</statBases>
 							<intricate>true</intricate>
 							<thingCategories>
-								<li>Manufactured</li>
+								<li>DankPyon_Schematics</li>
 							</thingCategories>
 							<isTechHediff>true</isTechHediff>
 						</ThingDef>
