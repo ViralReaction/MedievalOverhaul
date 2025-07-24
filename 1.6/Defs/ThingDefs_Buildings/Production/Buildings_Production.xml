@@ -804,7 +804,6 @@
 			</damageData>
 		</graphicData>
 		<size>(3,2)</size>
-
 		<techLevel>Medieval</techLevel>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -814,7 +813,6 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<hasInteractionCell>true</hasInteractionCell>
 		<designationCategory>Production</designationCategory>
-
 		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
 			<li>Woody</li>
@@ -825,22 +823,20 @@
 			<DankPyon_IronIngot>25</DankPyon_IronIngot>
 			<DankPyon_ComponentBasic>3</DankPyon_ComponentBasic>
 		</costList>
-
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<WorkToBuild>5000</WorkToBuild>
 			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
-
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 			<paintable>true</paintable>
+			<workTableRoomRole>Laboratory</workTableRoomRole>
+			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
 		</building>
-
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
@@ -851,7 +847,6 @@
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
-
 		<placeWorkers>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
@@ -954,6 +949,11 @@
 		<designationCategory>Production</designationCategory>
 		<surfaceType>Item</surfaceType>
 		<techLevel>Medieval</techLevel>
+		<building>
+			<paintable>true</paintable>
+			<workTableRoomRole>Laboratory</workTableRoomRole>
+			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+		</building>
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>

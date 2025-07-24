@@ -3373,13 +3373,10 @@
 		<building>
 			<isMealSource>true</isMealSource>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+			 <workTableRoomRole>None</workTableRoomRole>
 		</building>
 	</ThingDef>
 
-	
-	
-		
-	
 	<!--============================== Animal Beds ==============================-->
 	
 	<!--ThingDef ParentName="FurnitureWithQualityBase">
@@ -3433,7 +3430,5 @@
 		<uiIconScale>0.75</uiIconScale>
 	<designationCategory>DankPyon_RusticFurniture</designationCategory>
 	</ThingDef-->
-
-	
 
 </Defs>
