@@ -17,6 +17,7 @@
 				<li>Meat_Megaspider</li>
 			</disallowedThingDefs>
 			<disallowedCategories>
+				<li>Fish</li>
 				<li MayRequire="vanillaexpanded.vcef">VCEF_RawFishCategory</li>
 			</disallowedCategories>
 		</ingredientFilter>

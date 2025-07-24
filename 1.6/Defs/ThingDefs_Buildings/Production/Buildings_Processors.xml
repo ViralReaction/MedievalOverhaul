@@ -271,6 +271,7 @@
 					<li>DankPyon_DriedMeatHumanProcess</li>
 					<li>DankPyon_DriedMeatInsectProcess</li>
 					<li>DankPyon_StrawProcess</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">DankPyon_DriedFishProcess</li>
 				</processes>
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
