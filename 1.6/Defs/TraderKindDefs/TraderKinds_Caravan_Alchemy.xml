@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<TraderKindDef>
+		<defName>DankPyon_Caravan_Medieval_Alchemist</defName>
+		<label>alchemical goods merchant</label>
+		<commonality>3</commonality>
+		<stockGenerators>
+			<!-- Alchemical Items -->
+			<li Class="StockGenerator_Category">
+				<categoryDef>DankPyon_AlchemyIngredients</categoryDef>
+				<thingDefCountRange>1~4</thingDefCountRange>
+				<totalPriceRange>100~1000</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>DankPyon_AlchemyIngredients</categoryDef>
+				<thingDefCountRange>0~1</thingDefCountRange>
+				<totalPriceRange>100~1000</totalPriceRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_Mindwort</thingDef>
+				<countRange>5~24</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_Poppy</thingDef>
+				<countRange>5~24</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_Fleawort</thingDef>
+				<countRange>5~24</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_FlyAgaric</thingDef>
+				<countRange>5~24</countRange>
+			</li>
+			<!-- Medicine -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineHerbal</thingDef>
+				<countRange>10~24</countRange>
+			</li>
+			<!-- Drugs -->
+			<li Class="StockGenerator_Category">
+				<categoryDef>Drugs</categoryDef>
+				<countRange>2~4</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Drugs</categoryDef>
+				<countRange>2~4</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>Drugs</categoryDef>
+				<countRange>2~4</countRange>
+			</li>
+			<!-- Alcohol -->
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_Wine</thingDef>
+				<countRange>2~4</countRange>
+			</li>
+			
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>DankPyon_TornNote_Hideout</thingDef>
+				<countRange>0~2</countRange>
+			</li>
+			
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>1500~2500</countRange>
+			</li>
+			
+			<!-- Buy -->
+			<li Class="StockGenerator_BuyTradeTag"><tag>Drugs</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>DankPyon_AlchemyIngredients</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>Alcohol</tag></li>
+			<li Class="StockGenerator_BuyTradeTag"><tag>DankPyon_Loot</tag></li>
+		</stockGenerators>
+	</TraderKindDef>
+
+</Defs>

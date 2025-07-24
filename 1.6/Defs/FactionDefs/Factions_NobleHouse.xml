@@ -87,6 +87,7 @@
 			<li>DankPyon_Caravan_Medieval_Weaponsmith</li>
 			<li>DankPyon_Caravan_Medieval_RuinsMerchant</li>
 			<li>DankPyon_Caravan_Medieval_Scholar</li>
+			<li>DankPyon_Caravan_Medieval_Alchemist</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
 			<li>DankPyon_Visitor_Medieval_Standard</li>
