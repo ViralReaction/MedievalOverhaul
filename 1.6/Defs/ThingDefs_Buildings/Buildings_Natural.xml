@@ -358,7 +358,6 @@
 			<li Class="CompProperties_SelfhealHitpoints">
 				<ticksPerHeal>6000</ticksPerHeal><!-- 60k ticks = 1 day, 10 hp per day -->
 			</li>
-			<li Class="CompProperties_SpawnerHives"/>
 			<li Class="MedievalOverhaul.CompProperties_HornetNestSpawner">
 				<spawnablePawnKinds>
 					<li>DankPyon_Deathstinger</li>
