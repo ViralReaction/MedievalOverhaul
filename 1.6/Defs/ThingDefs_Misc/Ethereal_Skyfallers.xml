@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DropPodIncoming">
+		<defName>DankPyon_BalloonIncoming</defName>
+		<label>balloon (incoming)</label>
+		<thingClass>DropPodIncoming</thingClass>
+		<graphicData>
+			<texPath>Things/Special/Balloon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutFlying</shaderType>
+			<drawSize>1.9</drawSize>
+		</graphicData>
+		<skyfaller>
+			<movementType>Decelerate</movementType>
+			<shadow>Things/Special/Balloon</shadow>
+			<shadowSize>(2, 2)</shadowSize>
+			<anticipationSound>DropPod_Fall</anticipationSound>
+			<anticipationSoundTicks>100</anticipationSoundTicks>
+			<impactSound>DropPod_Impact</impactSound>
+			<motesPerCell>0</motesPerCell>
+		</skyfaller>
+	</ThingDef>
+
+	<ThingDef ParentName="DropPodLeaving">
+		<defName>DankPyon_BalloonLeaving</defName>
+		<label>balloon (leaving)</label>
+		<thingClass>FlyShipLeaving</thingClass>
+		<graphicData>
+			<texPath>Things/Special/Balloon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutFlying</shaderType>
+			<drawSize>1.9</drawSize>
+		</graphicData>
+		<skyfaller>
+			<movementType>Decelerate</movementType>
+			<reversed>true</reversed>
+			<shadow>Things/Special/Balloon</shadow>
+			<shadowSize>(2, 2)</shadowSize>
+			<anticipationSound>DropPod_Leaving</anticipationSound>
+			<anticipationSoundTicks>-10</anticipationSoundTicks>
+			<ticksToImpactRange><min>-40</min><max>-15</max></ticksToImpactRange>
+		</skyfaller>
+	</ThingDef>
+	
+	<ThingDef ParentName="ActiveDropPod">
+    <defName>DankPyon_ActiveBalloon</defName>
+    <graphicData>
+      <texPath>Things/Special/Balloon</texPath>
+    </graphicData>
+  </ThingDef>
+
+</Defs>

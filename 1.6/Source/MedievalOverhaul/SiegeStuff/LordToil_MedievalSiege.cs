@@ -136,7 +136,7 @@ public class LordToil_MedievalSiege : LordToil
 			list4.Add(item);
 		}
 		list2.Add(list4);
-		DropPodUtility.DropThingGroupsNear(lordToilData_Siege.siegeCenter, base.Map, list2);
+		DropPodUtility.DropThingGroupsNear(lordToilData_Siege.siegeCenter, base.Map, list2, 110, false, false, true, true, true, false, lord.faction);
 		lordToilData_Siege.desiredBuilderFraction = BuilderCountFraction.RandomInRange;
 	}
 
@@ -319,7 +319,7 @@ public class LordToil_MedievalSiege : LordToil
 		Thing thing = ThingMaker.MakeThing(thingDef);
 		thing.stackCount = count;
 		list.Add(thing);
-		DropPodUtility.DropThingsNear(Data.siegeCenter, base.Map, list);
+		DropPodUtility.DropThingsNear(Data.siegeCenter, base.Map, list, 110, false, false, true, true, true, lord.faction);
 	}
 
 	public override void Cleanup()

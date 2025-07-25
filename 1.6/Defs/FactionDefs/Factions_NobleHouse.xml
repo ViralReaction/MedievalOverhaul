@@ -137,7 +137,8 @@
 			</li>
 		</pawnGroupMakers>
 		<settlementTexturePath>WorldObjects/MedievalSettlement</settlementTexturePath>
-
+		<dropPodActive>DankPyon_ActiveBalloon</dropPodActive>
+		<dropPodIncoming>DankPyon_BalloonIncoming</dropPodIncoming>
 		<modExtensions>
 			<li Class="MedievalOverhaul.SettlementPreference">
 				<chance>0.8</chance>

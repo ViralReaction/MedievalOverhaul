@@ -106,6 +106,8 @@
 		<settlementTexturePath>WorldObjects/MedievalSettlement</settlementTexturePath>
 		<permanentEnemy>true</permanentEnemy>
 		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<dropPodActive>DankPyon_ActiveBalloon</dropPodActive>
+		<dropPodIncoming>DankPyon_BalloonIncoming</dropPodIncoming>
 		<modExtensions>
 			<li Class="MedievalOverhaul.FactionSiegeExtension">
 				<medievalSiege>true</medievalSiege>
@@ -122,7 +124,6 @@
 			<li>(1, 0.1, 0.1)</li>
 		</colorSpectrum>
 		<factionIconPath>WorldObjects/Bandit</factionIconPath>
-    
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 		</requiredMemes>
