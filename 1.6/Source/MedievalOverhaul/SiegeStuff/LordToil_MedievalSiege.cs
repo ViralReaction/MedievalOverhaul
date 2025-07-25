@@ -20,9 +20,9 @@ public class LordToil_MedievalSiege : LordToil
 
 	private const int StartBuildingDelay = 360;
 
-	private static readonly FloatRange BuilderCountFraction = new FloatRange(0.40f, FractionLossesToAssault);
+	private static readonly FloatRange BuilderCountFraction = new FloatRange(0.35f, FractionLossesToAssault);
 
-	private const float FractionLossesToAssault = 0.8f;
+	private const float FractionLossesToAssault = 0.6f;
 
 	private const int InitialShellsPerCannon = 12;
 
@@ -129,20 +129,21 @@ public class LordToil_MedievalSiege : LordToil
 			}
 		}
 		List<Thing> list4 = [];
-		int num2 = Mathf.RoundToInt(MealCountRangePerRaider.RandomInRange * (float)lord.ownedPawns.Count);
+		int num2 = Mathf.RoundToInt(MealCountRangePerRaider.RandomInRange * lord.ownedPawns.Count);
 		for (int l = 0; l < num2; l++)
 		{
 			Thing item = ThingMaker.MakeThing(MedievalOverhaulDefOf.DankPyon_MealBread);
 			list4.Add(item);
 		}
 		list2.Add(list4);
-		DropPodUtility.DropThingGroupsNear(lordToilData_Siege.siegeCenter, base.Map, list2, 110, false, false, true, true, true, false, lord.faction);
+		DropPodUtility.DropThingGroupsNear(lordToilData_Siege.siegeCenter, Map, list2, 110, false, false, true, true, true, false, lord.faction);
 		lordToilData_Siege.desiredBuilderFraction = BuilderCountFraction.RandomInRange;
 	}
 
 	public override void UpdateAllDuties()
 	{
 		LordToilData_Siege data = Data;
+
 		if (lord.ticksInToil < StartBuildingDelay)
 		{
 			for (int i = 0; i < lord.ownedPawns.Count; i++)
@@ -151,50 +152,93 @@ public class LordToil_MedievalSiege : LordToil
 			}
 			return;
 		}
+
 		rememberedDuties.Clear();
-		int num = Mathf.RoundToInt(lord.ownedPawns.Count * data.desiredBuilderFraction);
-		if (num <= 0)
+
+		int desiredBuilderCount = Mathf.RoundToInt(lord.ownedPawns.Count * data.desiredBuilderFraction);
+		if (desiredBuilderCount <= 0)
 		{
-			num = 1;
+			desiredBuilderCount = 1;
 		}
-		int num2 = (from b in Map.listerThings.ThingsInGroup(ThingRequestGroup.BuildingArtificial)
-			where b.def.hasInteractionCell && b.Faction == lord.faction && b.Position.InHorDistOf(FlagLoc, data.baseRadius)
-			select b).Count();
-		if (num < num2)
+
+		int artificialBuildingCount = 0;
+		List<Thing> things = Map.listerThings.ThingsInGroup(ThingRequestGroup.BuildingArtificial);
+		for (int i = 0; i < things.Count; i++)
 		{
-			num = num2;
+			Thing thing = things[i];
+			if (thing.def.hasInteractionCell &&
+					thing.Faction == lord.faction &&
+					thing.Position.InHorDistOf(FlagLoc, data.baseRadius))
+			{
+				artificialBuildingCount++;
+			}
 		}
-		int num3 = 0;
-		for (int j = 0; j < lord.ownedPawns.Count; j++)
+		if (desiredBuilderCount < artificialBuildingCount)
 		{
-			Pawn pawn = lord.ownedPawns[j];
+			desiredBuilderCount = artificialBuildingCount;
+		}
+
+		int assignedBuilderCount = 0;
+		for (int i = 0; i < lord.ownedPawns.Count; i++)
+		{
+			Pawn pawn = lord.ownedPawns[i];
 			if (pawn.mindState.duty.def == DutyDefOf.Build)
 			{
 				rememberedDuties.Add(pawn, DutyDefOf.Build);
 				SetAsBuilder(pawn);
-				num3++;
+				assignedBuilderCount++;
 			}
 		}
-		int num4 = num - num3;
-		for (int k = 0; k < num4; k++)
+
+		List<Pawn> builderCandidates = [];
+		for (int i = 0; i < lord.ownedPawns.Count; i++)
 		{
-			if (lord.ownedPawns.Where( pa => !rememberedDuties.ContainsKey(pa) && CanBeBuilder(pa)).TryRandomElement(out Pawn result))
+			Pawn pawn = lord.ownedPawns[i];
+			if (!rememberedDuties.ContainsKey(pawn) && CanBeBuilder(pawn))
+			{
+				builderCandidates.Add(pawn);
+			}
+		}
+
+		builderCandidates.Sort((a, b) =>
+		{
+			int aSkill = a.skills?.GetSkill(SkillDefOf.Construction)?.Level ?? 0;
+			int bSkill = b.skills?.GetSkill(SkillDefOf.Construction)?.Level ?? 0;
+			return bSkill.CompareTo(aSkill);
+		});
+
+		int buildersToAssign = desiredBuilderCount - assignedBuilderCount;
+		for (int i = 0; i < builderCandidates.Count && buildersToAssign > 0; i++)
+		{
+			Pawn pawn = builderCandidates[i];
+			rememberedDuties.Add(pawn, DutyDefOf.Build);
+			SetAsBuilder(pawn);
+			assignedBuilderCount++;
+			buildersToAssign--;
+		}
+
+		for (int i = 0; i < buildersToAssign; i++)
+		{
+			if (lord.ownedPawns.Where(( pa) => !rememberedDuties.ContainsKey(pa) && CanBeBuilder(pa)).TryRandomElement(out Pawn result))
 			{
 				rememberedDuties.Add(result, DutyDefOf.Build);
 				SetAsBuilder(result);
-				num3++;
+				assignedBuilderCount++;
+				break;
 			}
 		}
-		for (int l = 0; l < lord.ownedPawns.Count; l++)
+
+		for (int i = 0; i < lord.ownedPawns.Count; i++)
 		{
-			Pawn pawn2 = lord.ownedPawns[l];
-			if (!rememberedDuties.ContainsKey(pawn2))
+			Pawn pawn = lord.ownedPawns[i];
+			if (!rememberedDuties.ContainsKey(pawn))
 			{
-				SetAsDefender(pawn2);
-				rememberedDuties.Add(pawn2, DutyDefOf.Defend);
+				SetAsDefender(pawn);
+				rememberedDuties.Add(pawn, DutyDefOf.Defend);
 			}
 		}
-		if (num3 == 0)
+
+		if (assignedBuilderCount == 0)
 		{
 			lord.ReceiveMemo("NoBuilders");
 		}
@@ -227,8 +271,10 @@ public class LordToil_MedievalSiege : LordToil
 	private void SetAsBuilder(Pawn p)
 	{
 		LordToilData_Siege lordToilData_Siege = Data;
-		p.mindState.duty = new PawnDuty(DutyDefOf.Build, lordToilData_Siege.siegeCenter);
-		p.mindState.duty.radius = lordToilData_Siege.baseRadius;
+		p.mindState.duty = new PawnDuty(DutyDefOf.Build, lordToilData_Siege.siegeCenter)
+		{
+			radius = lordToilData_Siege.baseRadius
+		};
 		int minLevel = Mathf.Max(ThingDefOf.Sandbags.constructionSkillPrerequisite, MedievalOverhaulDefOf.DankPyon_Artillery_Trebuchet.constructionSkillPrerequisite);
 		p.skills.GetSkill(SkillDefOf.Construction).EnsureMinLevelWithMargin(minLevel);
 		p.workSettings.EnableAndInitialize();
@@ -250,8 +296,10 @@ public class LordToil_MedievalSiege : LordToil
 	private void SetAsDefender(Pawn p)
 	{
 		LordToilData_Siege lordToilData_Siege = Data;
-		p.mindState.duty = new PawnDuty(DutyDefOf.Defend, lordToilData_Siege.siegeCenter);
-		p.mindState.duty.radius = lordToilData_Siege.baseRadius;
+		p.mindState.duty = new PawnDuty(DutyDefOf.Defend, lordToilData_Siege.siegeCenter)
+		{
+			radius = lordToilData_Siege.baseRadius
+		};
 	}
 
 	public override void LordToilTick()
@@ -270,7 +318,7 @@ public class LordToil_MedievalSiege : LordToil
 		{
 			return;
 		}
-		if (!Frames.Where(frame => !frame.Destroyed).Any() && !lordToilData_Siege.blueprints.Where((Blueprint blue) => !blue.Destroyed).Any() && !base.Map.listerThings.ThingsInGroup(ThingRequestGroup.BuildingArtificial).Any((Thing b) => b.Faction == lord.faction && b.def.building.buildingTags.Contains("Artillery")))
+		if (Frames.All(frame => frame.Destroyed) && !lordToilData_Siege.blueprints.Any(blue => !blue.Destroyed) && !Map.listerThings.ThingsInGroup(ThingRequestGroup.BuildingArtificial).Any(( b) => b.Faction == lord.faction && b.def.building.buildingTags.Contains("Artillery")))
 		{
 			lord.ReceiveMemo("NoArtillery");
 			return;
@@ -319,13 +367,13 @@ public class LordToil_MedievalSiege : LordToil
 		Thing thing = ThingMaker.MakeThing(thingDef);
 		thing.stackCount = count;
 		list.Add(thing);
-		DropPodUtility.DropThingsNear(Data.siegeCenter, base.Map, list, 110, false, false, true, true, true, lord.faction);
+		DropPodUtility.DropThingsNear(Data.siegeCenter, Map, list, 110, false, false, true, true, true, lord.faction);
 	}
 
 	public override void Cleanup()
 	{
 		LordToilData_Siege lordToilData_Siege = Data;
-		lordToilData_Siege.blueprints.RemoveAll((Blueprint blue) => blue.Destroyed);
+		lordToilData_Siege.blueprints.RemoveAll(( blue) => blue.Destroyed);
 		for (int i = 0; i < lordToilData_Siege.blueprints.Count; i++)
 		{
 			lordToilData_Siege.blueprints[i].Destroy(DestroyMode.Cancel);
