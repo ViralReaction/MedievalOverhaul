@@ -35,6 +35,10 @@
 			<categories>
 				<li>DankPyon_Milk</li>
 			</categories>
+			<disallowedThingDefs>
+				<li>DankPyon_GoatMilk</li>
+				<li>DankPyon_SheepMilk</li>
+			</disallowedThingDefs>
 		</ingredientFilter>
 	</ProcessorFramework.ProcessDef>
 

@@ -42,7 +42,7 @@
 			<li>Butchery</li>
 		</specialProducts>
 	</RecipeDef>
-	
+
 	<RecipeDef ParentName="DankPyon_MakeTimberBase">
 		<defName>DankPyon_Make_TimberAny_Bulk</defName>
 		<label>make timber x40</label>
@@ -102,7 +102,7 @@
 			<li Class="MedievalOverhaul.RecipeExtension_Timber"/>
 		</modExtensions>
 	</RecipeDef>
-	
+
 	<RecipeDef ParentName="DankPyon_MakeTimberBase">
 		<defName>DankPyon_Make_Timber</defName>
 		<label>make timber x2</label>
@@ -176,7 +176,7 @@
 				<WoodLog>200</WoodLog>
 		</products>
 	</RecipeDef>
-	
+
 	<RecipeDef ParentName="DankPyon_MakeTimberBase">
 		<defName>DankPyon_Make_TimberDark</defName>
 		<label>make dark timber x2</label>
