@@ -149,7 +149,6 @@
 		<Compile Include="Medieval Overhaul\Harmony Patches\Alert_PasteDispenserNeedsHopper.cs" />
 		<Compile Include="Medieval Overhaul\Harmony Patches\Quest_End.cs" />
 		<Compile Include="Medieval Overhaul\Harmony Patches\StaggerHandler_StaggerFor.cs" />
-		<Compile Include="Medieval Overhaul\Harmony Patches\ThingSetMaker_Meteorite_Reset.cs" />
 		<Compile Include="Medieval Overhaul\Harmony Patches\JobDriver_Ingest_GetReport.cs" />
 		<Compile Include="Medieval Overhaul\HediffComps\CompProperties\HediffCompProperties_LindwurmAcid.cs" />
 		<Compile Include="Medieval Overhaul\HediffComps\HediffComp_Daze.cs" />
