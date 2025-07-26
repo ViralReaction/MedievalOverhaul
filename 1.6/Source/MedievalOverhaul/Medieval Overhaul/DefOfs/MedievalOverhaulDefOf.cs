@@ -71,6 +71,7 @@ namespace MedievalOverhaul
         public static ConceptDef DankPyon_Concept_Lumber;
         public static ConceptDef DankPyon_Concept_ExplorerTable;
         public static ConceptDef DankPyon_Concept_Schematics;
+        public static ConceptDef DankPyon_Concept_Regeneration;
 
         [MayRequireCE]
         public static StatDef Bulk;

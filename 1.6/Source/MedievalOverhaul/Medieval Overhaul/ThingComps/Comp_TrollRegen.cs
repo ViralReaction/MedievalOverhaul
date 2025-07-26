@@ -7,25 +7,23 @@ namespace MedievalOverhaul
     public class Comp_TrollRegen : ThingComp
     {
         private bool fireFlag = false;
-        public CompProperties_TrollRegen Props => (CompProperties_TrollRegen)this.props;
+        public CompProperties_TrollRegen Props => (CompProperties_TrollRegen)props;
         public override void CompTick()
         {
             base.CompTick();
-            if (this.parent.HasAttachment(ThingDefOf.Fire))
+            if (parent.HasAttachment(ThingDefOf.Fire))
             {
                 fireFlag = true;
             }
-            if (this.parent.IsHashIntervalTick(Props.tickInterval) && !fireFlag)
+            if (parent.IsHashIntervalTick(Props.tickInterval) && !fireFlag)
             {
-                Pawn pawn = this.parent as Pawn;
-                if (pawn.health != null)
+                if (parent is Pawn pawn && pawn.health != null)
                 {
-                    List<Hediff_Injury> injuryList = new List<Hediff_Injury>();
+                    List<Hediff_Injury> injuryList = [];
                     List<Hediff> injuryCheck = pawn.health.hediffSet.hediffs;
                     for (int i = 0; i < injuryCheck.Count; i++)
                     {
-                        Hediff_Injury injury = injuryCheck[i] as Hediff_Injury;
-                        if (injury != null)
+                        if (injuryCheck[i] is Hediff_Injury injury)
                         {
                             injuryList.Add(injury);
                         }
@@ -36,11 +34,13 @@ namespace MedievalOverhaul
                         hurt.Severity = hurt.Severity - Props.healAmount;
                     }
                 }
+                LessonAutoActivator.TeachOpportunity(MedievalOverhaulDefOf.DankPyon_Concept_Regeneration, OpportunityType.GoodToKnow);
+
             }
-            if (this.parent.IsHashIntervalTick(Props.tickRegenBurn) && fireFlag)
+            if (parent.IsHashIntervalTick(Props.tickRegenBurn) && fireFlag)
             {
-                if (!this.parent.HasAttachment(ThingDefOf.Fire))
-                { 
+                if (!parent.HasAttachment(ThingDefOf.Fire))
+                {
                     fireFlag = false;
                 }
             }

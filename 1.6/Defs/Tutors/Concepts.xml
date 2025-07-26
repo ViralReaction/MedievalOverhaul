@@ -28,5 +28,12 @@
 		<priority>50</priority>
 		<helpText>Some research require schematics placed inside a bookshelf to start research.\nSchematics can be found in quest locations from explorer's table or very rarely from traders.</helpText>
 	</ConceptDef>
+	
+	<ConceptDef>
+		<defName>DankPyon_Concept_Regeneration</defName>
+		<label>MO: Regeneration</label>
+		<priority>500</priority>
+		<helpText>Some monsters have a fast healing factor called "regeneration".\nRegeneration can be turned off with the use of fire.</helpText>
+	</ConceptDef>
 
 </Defs>

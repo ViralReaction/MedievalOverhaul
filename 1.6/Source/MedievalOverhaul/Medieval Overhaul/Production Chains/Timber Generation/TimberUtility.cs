@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
 using RimWorld;
 using System.Collections.Generic;
+using UnityEngine;
 using Verse;
 
 namespace MedievalOverhaul
@@ -231,26 +232,27 @@ namespace MedievalOverhaul
 
             log.stuffProps = new StuffProperties
             {
-                categories = new List<StuffCategoryDef>
-                {
-                   StuffabilityDefOf.DankPyon_RawWood,
-                },
+                categories =
+                [
+                    StuffabilityDefOf.DankPyon_RawWood
+                ],
                 stuffAdjective = wood.stuffProps.stuffAdjective.ToString(),
                 constructEffect = wood.stuffProps.constructEffect,
-                soundImpactBullet = wood?.stuffProps?.soundImpactBullet ?? MedievalOverhaulDefOf.BulletImpact_Wood,
-                soundMeleeHitBlunt = wood?.stuffProps?.soundMeleeHitBlunt ?? MedievalOverhaulDefOf.MeleeHit_Wood,
-                soundMeleeHitSharp = wood?.stuffProps?.soundMeleeHitSharp ?? MedievalOverhaulDefOf.MeleeHit_Wood,
-                soundImpactMelee = wood?.stuffProps?.soundImpactMelee ?? MedievalOverhaulDefOf.Pawn_Melee_Punch_HitBuilding_Wood,
+                soundImpactBullet = wood.stuffProps.soundImpactBullet ?? MedievalOverhaulDefOf.BulletImpact_Wood,
+                soundMeleeHitBlunt = wood.stuffProps.soundMeleeHitBlunt ?? MedievalOverhaulDefOf.MeleeHit_Wood,
+                soundMeleeHitSharp = wood.stuffProps.soundMeleeHitSharp ?? MedievalOverhaulDefOf.MeleeHit_Wood,
+                soundImpactMelee = wood.stuffProps.soundImpactMelee ?? MedievalOverhaulDefOf.Pawn_Melee_Punch_HitBuilding_Wood,
                 color = wood.stuffProps.color,
                 statFactors = wood.stuffProps.statFactors,
             };
-            log.modExtensions = new List<DefModExtension>
-            {
+            log.modExtensions =
+            [
                 new FuelValueProperty()
                 {
                     fuelValue = 2,
-                },
-            };
+                }
+
+            ];
 
 
             return log;
