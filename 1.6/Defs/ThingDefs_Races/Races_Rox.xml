@@ -23,6 +23,11 @@
 				<shearIntervalDays>15</shearIntervalDays>
 				<woolAmount>160</woolAmount>
 			</li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Milk</milkDef>
+				<milkIntervalDays>1</milkIntervalDays>
+				<milkAmount>10</milkAmount>
+			</li>
 		</comps>
 		<tools>
 			<li>
@@ -86,7 +91,6 @@
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
 			<leatherDef>DankPyon_Leather_Rox</leatherDef>
 			<trainability>Advanced</trainability>
-			<roamMtbDays>4</roamMtbDays>
 			<gestationPeriodDays>14</gestationPeriodDays>
 			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
 			<packAnimal>true</packAnimal>
