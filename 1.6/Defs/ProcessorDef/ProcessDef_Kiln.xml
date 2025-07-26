@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<!-- Smoked Meat-->
 	<ProcessorFramework.ProcessDef>
 		<defName>DankPyon_ClayIntoBrick</defName>
 		<thingDef>DankPyon_BlocksClay</thingDef>

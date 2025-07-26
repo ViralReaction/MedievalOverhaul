@@ -80,4 +80,75 @@
 		<tradeability>Sellable</tradeability>
 	</ThingDef>
 
+	<!-- Smoked Meat-->
+	<ProcessorFramework.ProcessDef>
+		<defName>DankPyon_SmokedFishProcess</defName>
+		<thingDef>DankPyon_SmokedFish</thingDef>
+		<ingredientFilter>
+			<categories>
+				<li>Fish</li>
+			</categories>
+		</ingredientFilter>
+		<processDays>1</processDays><!-- in days, a day is 60,000 ticks -->
+		<capacityFactor>1.0</capacityFactor>
+		<efficiency>0.10</efficiency>
+		<usesTemperature>true</usesTemperature>
+		<temperatureSafe>-99.0~99.0</temperatureSafe>
+		<temperatureIdeal>21.0~99.0</temperatureIdeal>
+		<ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour><!-- percent per degree per hour -->
+		<speedBelowSafe>0.1</speedBelowSafe>
+		<speedAboveSafe>1.0</speedAboveSafe>
+		<sunFactor>1.0~1.0</sunFactor>
+		<rainFactor>1.0~0.5</rainFactor>
+		<snowFactor>1.0~0.5</snowFactor>
+		<windFactor>1.0~1.0</windFactor>
+		<unpoweredFactor>0.0</unpoweredFactor>
+		<unfueledFactor>0.0</unfueledFactor>
+		<powerUseFactor>1.0</powerUseFactor>
+		<fuelUseFactor>1.0</fuelUseFactor>
+		<filledGraphicSuffix>Filled</filledGraphicSuffix>
+		<usesQuality>false</usesQuality>
+		<qualityDays>(1, 2, 3, 4, 5, 6, 7)</qualityDays>
+		<color>(255, 255, 255)</color><!-- 0-255 or 0.0-1.0 -->
+		<customLabel/>
+		<destroyChance>0.0</destroyChance>
+	</ProcessorFramework.ProcessDef>
+
+	<!-- Smoked Meats -->
+	<ThingDef ParentName="MealBaseIngredientless">
+		<defName>DankPyon_SmokedFish</defName>
+		<label>smoked meat</label>
+		<description>Dried meat to preserve and prolong shelf life.</description>
+		<possessionCount>2</possessionCount>
+		<graphicData>
+			<texPath>Things/Item/Meal/SmokedFish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>15</MarketValue>
+		  <WorkToMake>450</WorkToMake>
+		  <Nutrition>0.85</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealAwful</preferability>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+			<tasteThought>DankPyon_AteSmokedMeat</tasteThought>
+			<optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients">
+				<splitTransferableFoodKind>true</splitTransferableFoodKind>
+				<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+			</li>
+		</comps>
+		<rotatable>false</rotatable>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+
 </Defs>

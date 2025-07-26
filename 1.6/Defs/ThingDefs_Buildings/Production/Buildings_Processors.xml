@@ -646,6 +646,7 @@
 					<li>DankPyon_SmokedMeatProcess</li>
 					<li>DankPyon_SmokedMeatHumanProcess</li>
 					<li>DankPyon_SmokedMeatInsectProcess</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">DankPyon_SmokedFishProcess</li>
 				</processes>
 			</li>
 			<li Class="CompProperties_Forbiddable"/>

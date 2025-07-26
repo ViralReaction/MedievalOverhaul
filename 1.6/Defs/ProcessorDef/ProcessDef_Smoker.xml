@@ -17,6 +17,7 @@
 				<li>DankPyon_DriedMeat_Insect</li>
 			</disallowedThingDefs>
 			<disallowedCategories>
+				<li MayRequire="Ludoen.RimWorld.Odyssey">Fish</li>
 				<li MayRequire="vanillaexpanded.vcef">VCEF_RawFishCategory</li>
 			</disallowedCategories>
 		</ingredientFilter>
@@ -45,7 +46,7 @@
 		<destroyChance>0.0</destroyChance>
 	</ProcessorFramework.ProcessDef>
 	
-	<!-- Smoked Meat -->
+	<!-- Smoked Human Meat -->
 	<ProcessorFramework.ProcessDef>
 		<defName>DankPyon_SmokedMeatHumanProcess</defName>
 		<thingDef>DankPyon_SmokedMeat_Human</thingDef>
