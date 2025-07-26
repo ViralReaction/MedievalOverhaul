@@ -218,7 +218,7 @@ namespace MedievalOverhaul
             log.graphicData = new GraphicData
             {
                 graphicClass = typeof(Graphic_StackCount),
-                texPath = "Things/Item/Resource/WoodLog"
+                texPath = "Things/Item/Resource/WoodLogs"
             };
 
             log.comps.Add(new CompProperties_Forbiddable());
