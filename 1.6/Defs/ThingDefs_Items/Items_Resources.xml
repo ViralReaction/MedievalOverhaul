@@ -43,7 +43,7 @@
 		<label>raw wood</label>
 		<description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/WoodLog</texPath>
+			<texPath>Things/Item/Resource/WoodLogs</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(133,97,67)</color>
 		</graphicData>
@@ -123,7 +123,7 @@
 		<label>dark wood</label>
 		<description>A darkish hard and old type of wood that has withstand the test of time. Useful for building structures and weapons. It is a good fuel for campfires.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/WoodLog</texPath>
+			<texPath>Things/Item/Resource/WoodLogs</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(112,91,76)</color>
 		</graphicData>
