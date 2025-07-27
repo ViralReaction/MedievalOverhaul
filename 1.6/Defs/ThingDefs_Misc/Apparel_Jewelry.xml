@@ -13,6 +13,7 @@
 			<ArmorRating_Sharp>0.0001</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.0001</ArmorRating_Blunt>
 		</statBases>
+		<useHitPoints>false</useHitPoints>
 		<recipeMaker>
 			<recipeUsers Inherit="False">
 				<li>DankPyon_JewelryBench</li>
@@ -65,6 +66,7 @@
 			<Flammability>0</Flammability>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
+		<useHitPoints>false</useHitPoints>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups Inherit="False">
