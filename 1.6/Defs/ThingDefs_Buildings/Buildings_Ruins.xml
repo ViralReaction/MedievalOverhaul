@@ -7,6 +7,7 @@
 			<ai_chillDestination>false</ai_chillDestination>
 			<claimable>false</claimable>
 			<!--alwaysDeconstructible>true</alwaysDeconstructible-->
+			<canLandGravshipOn>true</canLandGravshipOn>
 		</building>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<altitudeLayer>Building</altitudeLayer>
