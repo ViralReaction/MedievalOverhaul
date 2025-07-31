@@ -66,6 +66,7 @@ namespace MedievalOverhaul
         public static ApparelLayerDef DankPyon_InnerHelmet;
 
         public static ThingDef DankPyon_CultBook;
+        public static FactionDef DankPyon_ShadowSect;
 
         public static ConceptDef DankPyon_Concept_Tanning;
         public static ConceptDef DankPyon_Concept_Lumber;

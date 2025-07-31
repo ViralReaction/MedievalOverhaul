@@ -18,7 +18,7 @@ namespace MedievalOverhaul
         private const float SNOWMULTIPLIER = 1f;
         public Job activeJob = null;
         public Pawn jobPawn = null;
-        public bool jobStarted = false; // Track if a job is currently active
+        public bool jobStarted = false;
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
 

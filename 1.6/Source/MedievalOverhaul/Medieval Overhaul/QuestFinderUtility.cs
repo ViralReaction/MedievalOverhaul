@@ -30,6 +30,22 @@ namespace MedievalOverhaul
                 QuestFinderUtility.extensions[q] = q.GetModExtension<QuestInformation>();
             }
         }
+        private static Faction _cachedCultistFaction;
+        public static Faction CultistFaction()
+        {
+            if (_cachedCultistFaction != null) return _cachedCultistFaction;
+
+            // ReSharper disable once TooWideLocalVariableScope
+            Faction findFaction;
+            for (int i = 0; i < Find.FactionManager.AllFactionsListForReading.Count; i++)
+            {
+                findFaction = Find.FactionManager.AllFactionsListForReading[i];
+                if (findFaction.def != MedievalOverhaulDefOf.DankPyon_ShadowSect) continue;
+                _cachedCultistFaction = findFaction;
+                return _cachedCultistFaction;
+            }
+            return null;
+        }
 
         public static IEnumerable<QuestScriptDef> PossibleQuests => (IEnumerable<QuestScriptDef>)QuestFinderUtility.possibleQuests;
 
