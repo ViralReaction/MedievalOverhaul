@@ -801,14 +801,12 @@
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>1800</WorkToBuild>
 			<Mass>15</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
-
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
@@ -816,7 +814,6 @@
 		<costList>
 			<DankPyon_IronIngot>50</DankPyon_IronIngot>
 		</costList>
-
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
@@ -826,7 +823,6 @@
 				<maxSimultaneous>2</maxSimultaneous>
 			</li>
 		</comps>
-
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 		</placeWorkers>
