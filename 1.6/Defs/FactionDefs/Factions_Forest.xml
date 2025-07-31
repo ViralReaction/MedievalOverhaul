@@ -76,7 +76,7 @@
     
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
-		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>80</configurationListOrderPriority>
 	</FactionDef>
 
