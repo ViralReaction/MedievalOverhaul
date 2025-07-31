@@ -106,7 +106,7 @@
 		<defName>DankPyon_Bullet_Scorpio</defName>
 		<label>scorpio bolt</label>
 		<graphicData>
-				<texPath>Projectile/BallistaBullet</texPath>
+				<texPath>Things/Projectile/BallistaBullet</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
 				<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
@@ -274,7 +274,7 @@
 		<defName>DankPyon_Bullet_Ballista</defName>
 		<label>ballista bolt</label>
 		<graphicData>
-			<texPath>Projectile/BallistaBullet</texPath>
+			<texPath>Things/Projectile/BallistaBullet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.2,1.2)</drawSize>
 		</graphicData>

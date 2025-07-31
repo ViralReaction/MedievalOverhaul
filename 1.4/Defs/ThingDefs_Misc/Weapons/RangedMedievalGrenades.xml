@@ -70,7 +70,7 @@
 		<defName>DankPyon_Proj_PotFire</defName>
 		<label>fire pot</label>
 		<graphicData>
-			<texPath>Projectile/FirePot</texPath>
+			<texPath>Things/Projectile/FirePot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
@@ -140,7 +140,7 @@
 		<label>flash pot</label>
 		<thingClass>Projectile_Explosive</thingClass>
 		<graphicData>
-			<texPath>Projectile/FlashPot</texPath>
+			<texPath>Things/Projectile/FlashPot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
@@ -207,7 +207,7 @@
 		<label>smoke pot</label>
 		<thingClass>Projectile_Explosive</thingClass>
 		<graphicData>
-			<texPath>Projectile/SmokePot</texPath>
+			<texPath>Things/Projectile/SmokePot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
