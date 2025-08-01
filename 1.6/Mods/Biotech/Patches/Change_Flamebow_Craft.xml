@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Flamebow"]/recipeMaker</xpath>
+					<value>
+						<recipeMaker>
+							<recipeUsers>
+								<li>CraftingSpot</li>
+								<li>DankPyon_Workbench</li>
+							</recipeUsers>
+							<researchPrerequisite>RecurveBow</researchPrerequisite>
+							<skillRequirements>
+								<Crafting>4</Crafting>
+							</skillRequirements>
+							<displayPriority>510</displayPriority>
+						</recipeMaker>
+					</value>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Flamebow"]/costList</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Flamebow"]</xpath>
+						<value>
+							<costList>
+								<WoodLog>30</WoodLog>
+								<DankPyon_Tar>30</DankPyon_Tar>
+							</costList>
+						</value>
+					</nomatch>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Flamebow"]/statBases/WorkToMake</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Flamebow"]/statBases</xpath>
+						<value>
+							<WorkToMake>3600</WorkToMake>
+						</value>
+					</nomatch>
+				</li>
+
+			</operations>
+		</nomatch>
+	</Operation>
+
+</Patch>

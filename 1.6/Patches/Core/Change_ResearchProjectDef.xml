@@ -408,6 +408,20 @@
 		</value>
 	</Operation>
 	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RecurveBow"]/label</xpath>
+		<value>
+			<label>archery</label>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RecurveBow"]/description</xpath>
+		<value>
+			<description>Learn to craft more than the most basic of bows.</description>
+		</value>
+	</Operation>
+	
 	<!-- Cost Changes -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/baseCost</xpath>
