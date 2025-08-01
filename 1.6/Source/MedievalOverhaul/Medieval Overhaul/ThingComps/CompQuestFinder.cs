@@ -99,22 +99,16 @@ namespace MedievalOverhaul
         {
             if (this.currentQuest == QuestScriptDefOf.LongRangeMineralScannerLump)
             {
-                Map map = parent.Map;
-                if (!CellFinderLoose.TryFindRandomNotEdgeCellWith(10, (IntVec3 x) => CanScatterAt(x, map), map, out var result))
+                Slate slate = new Slate();
+                slate.Set("map", parent.Map);
+                slate.Set("targetMineable", targetMineable);
+                slate.Set("targetMineableThing", targetMineable.building.mineableThing);
+                slate.Set("worker", worker);
+                if (QuestScriptDefOf.LongRangeMineralScannerLump.CanRun(slate, parent.Map))
                 {
-                    Log.Error("Could not find a center cell for deep scanning lump generation!");
+                    Quest quest = QuestUtility.GenerateQuestAndMakeAvailable(QuestScriptDefOf.LongRangeMineralScannerLump, slate);
+                    Find.LetterStack.ReceiveLetter(quest.name, quest.description, LetterDefOf.PositiveEvent, null, null, quest);
                 }
-                ThingDef thingDef = this.targetMineable;
-                int numCells = Mathf.CeilToInt(thingDef.deepLumpSizeRange.RandomInRange);
-                foreach (IntVec3 item in GridShapeMaker.IrregularLump(result, map, numCells))
-                {
-                    if (CanScatterAt(item, map) && !item.InNoBuildEdgeArea(map))
-                    {
-                        map.deepResourceGrid.SetAt(item, thingDef, thingDef.deepCountPerCell);
-                    }
-                }
-                string key = ("LetterDeepScannerFoundLump".CanTranslate() ? "LetterDeepScannerFoundLump" : ((!"DeepScannerFoundLump".CanTranslate()) ? "LetterDeepScannerFoundLump" : "DeepScannerFoundLump"));
-                Find.LetterStack.ReceiveLetter("LetterLabelDeepScannerFoundLump".Translate() + ": " + thingDef.LabelCap, key.Translate(thingDef.label, worker.Named("FINDER")), LetterDefOf.PositiveEvent, new LookTargets(result, map));
                 // Slate slate = new Slate();
                 // slate.Set<Map>("map", this.parent.Map, false);
                 // slate.Set<ThingDef>("targetMineable", this.targetMineable, false);
