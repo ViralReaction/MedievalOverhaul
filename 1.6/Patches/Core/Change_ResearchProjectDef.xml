@@ -2,69 +2,273 @@
 <Patch>
 
 	<!-- ============================ Core Tab Change ========================== -->
+	<!-- Devilstrand -->
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ResearchProjectDef[
-			defName="Devilstrand" or
-			defName="PsychoidBrewing" or
-			defName="Smithing" or
-			defName="CarpetMaking" or
-			defName="PassiveCooler" or
-			defName="ComplexFurniture" or
-			defName="TreeSowing" or
-			defName="Cocoa" or
-			defName="Pemmican" or
-			defName="Brewing" or
-			defName="Stonecutting" or
-			defName="RecurveBow" or
-			defName="Greatbow" or
-			defName="ComplexClothing" or
-			defName="PlateArmor" or
-			defName="LongBlades"]/tab
-		</xpath>
+		<xpath>Defs/ResearchProjectDef[defName="Devilstrand"]/tab</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ResearchProjectDef[
-				defName="Devilstrand" or
-				defName="PsychoidBrewing" or
-				defName="Smithing" or
-				defName="CarpetMaking" or
-				defName="PassiveCooler" or
-				defName="ComplexFurniture" or
-				defName="TreeSowing" or
-				defName="Cocoa" or
-				defName="Pemmican" or
-				defName="Brewing" or
-				defName="Stonecutting" or
-				defName="RecurveBow" or
-				defName="Greatbow" or
-				defName="ComplexClothing" or
-				defName="PlateArmor" or
-				defName="LongBlades"]
-			</xpath>
+			<xpath>Defs/ResearchProjectDef[defName="Devilstrand"]</xpath>
 			<value>
 				<tab/>
 			</value>
 		</nomatch>
 	</Operation>
-
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ResearchProjectDef[
-			defName="Devilstrand" or
-			defName="PsychoidBrewing" or
-			defName="Smithing" or
-			defName="CarpetMaking" or
-			defName="PassiveCooler" or
-			defName="ComplexFurniture" or
-			defName="TreeSowing" or
-			defName="Cocoa" or
-			defName="Pemmican" or
-			defName="Brewing" or
-			defName="Stonecutting" or
-			defName="RecurveBow" or
-			defName="Greatbow" or
-			defName="ComplexClothing" or
-			defName="PlateArmor" or
-			defName="LongBlades"]/tab
-		</xpath>
+		<xpath>Defs/ResearchProjectDef[defName="Devilstrand"]/tab</xpath>
+		<value>
+			<tab>DankPyon_MedievalResearchTab</tab>
+		</value>
+	</Operation>
+
+	<!-- PsychoidBrewing -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]/tab</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]</xpath>
+			<value>
+				<tab/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="PsychoidBrewing"]/tab</xpath>
+		<value>
+			<tab>DankPyon_MedievalResearchTab</tab>
+		</value>
+	</Operation>
+
+	<!-- Smithing -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Smithing"]/tab</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="Smithing"]</xpath>
+			<value>
+				<tab/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Smithing"]/tab</xpath>
+		<value>
+			<tab>DankPyon_MedievalResearchTab</tab>
+		</value>
+	</Operation>
+
+	<!-- CarpetMaking -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]/tab</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]</xpath>
+			<value>
+				<tab/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]/tab</xpath>
+		<value>
+			<tab>DankPyon_MedievalResearchTab</tab>
+		</value>
+	</Operation>
+
+	<!-- PassiveCooler -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="PassiveCooler"]/tab</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="PassiveCooler"]</xpath>
+			<value>
+				<tab/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="PassiveCooler"]/tab</xpath>
+		<value>
+			<tab>DankPyon_MedievalResearchTab</tab>
+		</value>
+	</Operation>
+
+	<!-- ComplexFurniture -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]/tab</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]</xpath>
+			<value>
+				<tab/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ComplexFurniture"]/tab</xpath>
+		<value>
+			<tab>DankPyon_MedievalResearchTab</tab>
+		</value>
+	</Operation>
+
+	<!-- TreeSowing -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/tab</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="TreeSowing"]</xpath>
+			<value>
+				<tab/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/tab</xpath>
+		<value>
+			<tab>DankPyon_MedievalResearchTab</tab>
+		</value>
+	</Operation>
+
+	<!-- Cocoa -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Cocoa"]/tab</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="Cocoa"]</xpath>
+			<value>
+				<tab/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Cocoa"]/tab</xpath>
+		<value>
+			<tab>DankPyon_MedievalResearchTab</tab>
+		</value>
+	</Operation>
+
+	<!-- Pemmican -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Pemmican"]/tab</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="Pemmican"]</xpath>
+			<value>
+				<tab/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Pemmican"]/tab</xpath>
+		<value>
+			<tab>DankPyon_MedievalResearchTab</tab>
+		</value>
+	</Operation>
+
+	<!-- Brewing -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Brewing"]/tab</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+			<value>
+				<tab/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Brewing"]/tab</xpath>
+		<value>
+			<tab>DankPyon_MedievalResearchTab</tab>
+		</value>
+	</Operation>
+
+	<!-- Stonecutting -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]/tab</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]</xpath>
+			<value>
+				<tab/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Stonecutting"]/tab</xpath>
+		<value>
+			<tab>DankPyon_MedievalResearchTab</tab>
+		</value>
+	</Operation>
+
+	<!-- RecurveBow -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="RecurveBow"]/tab</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="RecurveBow"]</xpath>
+			<value>
+				<tab/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="RecurveBow"]/tab</xpath>
+		<value>
+			<tab>DankPyon_MedievalResearchTab</tab>
+		</value>
+	</Operation>
+
+	<!-- Greatbow -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Greatbow"]/tab</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="Greatbow"]</xpath>
+			<value>
+				<tab/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="Greatbow"]/tab</xpath>
+		<value>
+			<tab>DankPyon_MedievalResearchTab</tab>
+		</value>
+	</Operation>
+
+	<!-- ComplexClothing -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]/tab</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]</xpath>
+			<value>
+				<tab/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="ComplexClothing"]/tab</xpath>
+		<value>
+			<tab>DankPyon_MedievalResearchTab</tab>
+		</value>
+	</Operation>
+
+	<!-- PlateArmor -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="PlateArmor"]/tab</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="PlateArmor"]</xpath>
+			<value>
+				<tab/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="PlateArmor"]/tab</xpath>
+		<value>
+			<tab>DankPyon_MedievalResearchTab</tab>
+		</value>
+	</Operation>
+
+	<!-- LongBlades -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="LongBlades"]/tab</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="LongBlades"]</xpath>
+			<value>
+				<tab/>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ResearchProjectDef[defName="LongBlades"]/tab</xpath>
 		<value>
 			<tab>DankPyon_MedievalResearchTab</tab>
 		</value>
