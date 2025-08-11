@@ -27,6 +27,7 @@
 		<li>farxmai2.dbh.expanded</li>
 		<li>vanillaexpanded.vfearchitect</li>
 		<li>MrHydralisk.VOEAdditionalOutposts</li>
+		<li>zal.wmbp</li>
 	</loadAfter>
 	<forceLoadAfter>
 		<li>OskarPotocki.VanillaExpanded.RoyaltyPatches</li>

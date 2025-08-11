@@ -53,7 +53,7 @@
 		<li IfModActive="vanillaexpanded.vmemese">1.6/Mods/VanillaMemesExpanded</li>
 		<li IfModActive="dubwise.dubsbadhygiene">1.6/Mods/DubsBadHygiene</li>
 		<li IfModActive="dubwise.dubsbadhygiene.lite">1.6/Mods/DubsBadHygieneLite</li>
-		<li IfModActive="regrowth.botr.core">1.6/Mods/ReGrowth</li>
+		<li IfModActive="zal.wmbp">1.6/Mods/WMBP</li>
 		<li IfModActive="divinederivative.autowool">1.6/Mods/BetterWoolProduction</li>
 		<li IfModActive="swablu.ambience">1.6/Mods/AmbientRim</li>
 		<li IfModActive="seohyeon.optimizationmeats">1.6/Mods/OptimizationMeats</li>
