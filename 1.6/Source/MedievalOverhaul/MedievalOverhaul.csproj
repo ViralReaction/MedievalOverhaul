@@ -178,6 +178,7 @@
 		<Compile Include="Medieval Overhaul\JobDrivers\JobDriver_OperateQuest.cs" />
 		<Compile Include="Medieval Overhaul\JobDrivers\JobDriver_Mine_Golem.cs" />
 		<Compile Include="Medieval Overhaul\JobDrivers\JobDriver_DoMending.cs" />
+		<Compile Include="Medieval Overhaul\Utilities\CustomDropPodUtility.cs" />
 		<Compile Include="Medieval Overhaul\Utilities\CustomWidget.cs" />
 		<Compile Include="Medieval Overhaul\Utilities\Listing_Custom.cs" />
 		<Compile Include="Medieval Overhaul\Utilities\Setting_Utility.cs" />
@@ -280,7 +281,7 @@
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
 		<PackageReference Include="Krafs.Rimworld.Ref">
-			<Version>1.6.4523</Version>
+			<Version>1.6.4543</Version>
 		</PackageReference>
 		<PackageReference Include="Lib.Harmony">
 			<ExcludeAssets>runtime</ExcludeAssets>

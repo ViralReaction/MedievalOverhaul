@@ -44,10 +44,38 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="ActiveDropPod">
-    <defName>DankPyon_ActiveBalloon</defName>
-    <graphicData>
-      <texPath>Things/Special/Balloon</texPath>
-    </graphicData>
-  </ThingDef>
+		<defName>DankPyon_ActiveBalloon</defName>
+		<graphicData>
+			<texPath>Things/Special/Balloon</texPath>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="DropPodIncoming">
+		<defName>DankPyon_InvisPodIncoming</defName>
+		<label>invis pod (incoming)</label>
+		<thingClass>DropPodIncoming</thingClass>
+		<graphicData>
+			<texPath>Things/Skyfaller/Meteorite</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutFlying</shaderType>
+			<drawSize>1.9</drawSize>
+		</graphicData>
+		<skyfaller>
+			<movementType>Decelerate</movementType>
+			<shadow>Things/Special/InvisPod</shadow>
+			<shadowSize>(2, 2)</shadowSize>
+			<anticipationSound>DropPod_Fall</anticipationSound>
+			<anticipationSoundTicks>100</anticipationSoundTicks>
+			<impactSound>DropPod_Impact</impactSound>
+			<motesPerCell>0</motesPerCell>
+		</skyfaller>
+	</ThingDef>
+  
+	<ThingDef ParentName="ActiveDropPod">
+		<defName>DankPyon_InvisPod</defName>
+		<graphicData>
+			<texPath>Things/Special/InvisPod</texPath>
+		</graphicData>
+	</ThingDef>
 
 </Defs>

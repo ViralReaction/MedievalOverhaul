@@ -25,7 +25,7 @@ namespace MedievalOverhaul
             Map map = (Map)parms.target;
             List<TargetInfo> targetInfoList = [];
             ThingDef golemImpactDef = FindRandomImpact(meteorProperties.golemDict);
-            IntVec3 dropPodLocation = IncidentWorker_GolemImpactor.FindDropPodLocation(map, (Predicate<IntVec3>)(spot => CanPlaceAt(spot)));
+            IntVec3 dropPodLocation = FindDropPodLocation(map, (Predicate<IntVec3>)(spot => CanPlaceAt(spot)));
             if (dropPodLocation == IntVec3.Invalid)
                 return false;
             float num = Mathf.Max(parms.points * 0.9f, 300f);
@@ -34,24 +34,25 @@ namespace MedievalOverhaul
             int num2 = GenMath.RoundRandom(storytellerPoints / golemKindDef.combatPower);
             num2 = Mathf.Clamp(num2, 1, 20);
             List<Pawn> list = [];
+            Faction faction = meteorProperties.factionDef != null && FactionUtility.DefaultFactionFrom(meteorProperties.factionDef) != null ? FactionUtility.DefaultFactionFrom(meteorProperties.factionDef) : null;
             for (int i = 0; i < num2; i++)
             {
-                Pawn pawn = PawnGenerator.GeneratePawn(golemKindDef, meteorProperties.factionDef != null && FactionUtility.DefaultFactionFrom(meteorProperties.factionDef) != null ? FactionUtility.DefaultFactionFrom(meteorProperties.factionDef) : null);
+                Pawn pawn = PawnGenerator.GeneratePawn(golemKindDef, faction);
                 list.Add(pawn);
             }
             Thing innerThing = ThingMaker.MakeThing(golemImpactDef);
-            innerThing.SetFaction(list[0].Faction);
-            LordMaker.MakeNewLord(list[0].Faction, (LordJob)new LordJob_SleepThenMechanoidsDefend(
-      [
-        innerThing
-      ], list[0].Faction, DefendRadius, dropPodLocation, false, false), map, (IEnumerable<Pawn>)list);
-            DropPodUtility.DropThingsNear(dropPodLocation, map, list.Cast<Thing>());
-            foreach (Thing thing in list)
-                thing.TryGetComp<CompCanBeDormant>()?.ToSleep();
-            targetInfoList.AddRange(list.Select<Pawn, TargetInfo>((Func<Pawn, TargetInfo>)(p => new TargetInfo((Thing)p))));
-            GenSpawn.Spawn((Thing)SkyfallerMaker.MakeSkyfaller(ThingDefOf.CrashedShipPartIncoming, innerThing), dropPodLocation, map);
+            innerThing.SetFaction(faction);
+            LordMaker.MakeNewLord(faction, new LordJob_SleepThenMechanoidsDefend([innerThing], faction, DefendRadius, dropPodLocation, false, false), map, (IEnumerable<Pawn>)list);
+            CustomDropPodUtility.DropThingsNear(dropPodLocation, map, list.Cast<Thing>(), 0, false, false, true, true, true, faction);
+            foreach (Pawn pawn in list)
+            {
+                pawn.TryGetComp<CompCanBeDormant>()?.ToSleep();
+            }
+            targetInfoList.AddRange(list.Select<Pawn, TargetInfo>((Func<Pawn, TargetInfo>)(p => new TargetInfo(p))));
+            GenSpawn.Spawn(SkyfallerMaker.MakeSkyfaller(ThingDefOf.MeteoriteIncoming, innerThing), dropPodLocation, map);
+
             targetInfoList.Add(new TargetInfo(dropPodLocation, map));
-            this.SendStandardLetter(parms, (LookTargets)targetInfoList);
+            SendStandardLetter(parms, targetInfoList);
             return true;
 
             bool CanPlaceAt(IntVec3 loc)
@@ -73,7 +74,7 @@ namespace MedievalOverhaul
         {
             for (int index = 0; index < 200; ++index)
             {
-                IntVec3 siegePositionFrom = RCellFinder.FindSiegePositionFrom(DropCellFinder.FindRaidDropCenterDistant(map, true), map, true);
+                IntVec3 siegePositionFrom = RCellFinder.FindSiegePositionFrom(DropCellFinder.FindRaidDropCenterDistant(map, true, false), map, true);
                 if (validator(siegePositionFrom))
                     return siegePositionFrom;
             }
