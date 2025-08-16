@@ -120,7 +120,7 @@ namespace MedievalOverhaul
             }
             try
             {
-                wood.graphicData.texPath = "Resources/WoodPlank";
+                wood.graphicData.texPath = "Things/Item/Resource/WoodPlank";
                 wood.graphicData.color = log.graphicData.color;
                 wood.stuffProps.stuffAdjective = wood.stuffProps.stuffAdjective.ToString() + " " + "DankPyon_Plank".Translate();
             }
@@ -218,7 +218,7 @@ namespace MedievalOverhaul
             log.graphicData = new GraphicData
             {
                 graphicClass = typeof(Graphic_StackCount),
-                texPath = "Resources/WoodLog"
+                texPath = "Things/Item/Resource/WoodLogs"
             };
 
             log.comps.Add(new CompProperties_Forbiddable());
