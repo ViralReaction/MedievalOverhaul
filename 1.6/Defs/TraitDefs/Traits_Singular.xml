@@ -15,15 +15,12 @@
 					<MeleeDodgeChance>6</MeleeDodgeChance>
 					<IncomingDamageFactor>-0.10</IncomingDamageFactor>
 					<PawnTrapSpringChance>-0.1</PawnTrapSpringChance>
-					<MentalBreakThreshold>-0.9</MentalBreakThreshold>
+					<MentalBreakThreshold>-0.1</MentalBreakThreshold>
 					<PainShockThreshold>0.10</PainShockThreshold>
 				</statOffsets>
 				<statFactors>
 					<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.05</CertaintyLossFactor>
 				</statFactors>
-				<!--disallowedInspirations>
-          <li>Frenzy_Go</li>
-        </disallowedInspirations-->
 			</li>
 		</degreeDatas>
 	</TraitDef>
@@ -53,5 +50,5 @@
 			</li>
 		</degreeDatas>
 	</TraitDef>
-
+	
 </Defs>
