@@ -341,6 +341,38 @@
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_SchematicBase">
+		<defName>DankPyon_Schematic_Arquebus</defName>
+		<label>ancient arquebus schematic</label>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>DankPyon_AncientLore_Name</nameMaker>
+				<descriptionMaker>DankPyon_AncientLore_Description</descriptionMaker>
+				<ageYearsRange>1000~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Special/Book/SchematicScroll_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Special/Book/SchematicScroll_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="MedievalOverhaul.BookOutcomeProperties_GainResearchDefinable">
+						<researchProjects>
+							<li>
+								<researchProject>DankPyon_Arquebus</researchProject>
+								<gainMultiplier>1</gainMultiplier>
+							</li>
+						</researchProjects>
+					</li>
+				</doers>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="DankPyon_SchematicBase">
 		<defName>DankPyon_Schematic_Tar</defName>
 		<label>ancient tar schematic</label>
 		<comps>

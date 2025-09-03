@@ -163,6 +163,7 @@
     </projectile>
   </ThingDef>
 
+  <!-- ============================== Firearms ========================== -->
   <ThingDef ParentName="BaseMakeableGun">
     <defName>DankPyon_Handgonne</defName>
     <label>handgonne</label>
@@ -179,20 +180,17 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <costList>
         <WoodLog>20</WoodLog>
-        <DankPyon_IronIngot>65</DankPyon_IronIngot>
+        <DankPyon_IronIngot>30</DankPyon_IronIngot>
     </costList>
     <statBases>
-        <WorkToMake>12000</WorkToMake>
+        <WorkToMake>8000</WorkToMake>
         <Mass>4</Mass>
         <AccuracyTouch>0.87</AccuracyTouch>
-        <AccuracyShort>0.83</AccuracyShort>
-        <AccuracyMedium>0.73</AccuracyMedium>
-        <AccuracyLong>0.61</AccuracyLong>
-        <RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
+        <AccuracyShort>0.78</AccuracyShort>
+        <AccuracyMedium>0.62</AccuracyMedium>
+        <AccuracyLong>0.45</AccuracyLong>
+        <RangedWeapon_Cooldown>8</RangedWeapon_Cooldown>
     </statBases>
-    <equippedStatOffsets>
-        <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
-    </equippedStatOffsets>
     <weaponTags>
         <li>DankPyon_Handgonne</li>
     </weaponTags>
@@ -200,21 +198,21 @@
         <li>ShortShots</li>
     </weaponClasses>
     <recipeMaker Inherit="False">
-		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Smith</soundWorking>
-        <recipeUsers>
-            <li>DankPyon_Workbench</li>
-        </recipeUsers>
-		<researchPrerequisites>
-			<li>DankPyon_Gunpowder</li>
-			<li>Smithing</li>
-		</researchPrerequisites>
-		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-        <skillRequirements>
-            <Crafting>6</Crafting>
-        </skillRequirements>
+      <recipeUsers>
+          <li>DankPyon_Workbench</li>
+      </recipeUsers>
+      <researchPrerequisites>
+        <li>DankPyon_Gunpowder</li>
+        <li>Smithing</li>
+      </researchPrerequisites>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <skillRequirements>
+          <Crafting>6</Crafting>
+      </skillRequirements>
     </recipeMaker>
     <verbs>
       <li>
@@ -251,20 +249,120 @@
     </tools>
   </ThingDef>
 
-<ThingDef ParentName="BaseBullet">
-    <defName>DankPyon_Bullet_Handgonne</defName>
-    <label>handgonne blast</label>
-    <graphicData>
-        <texPath>Things/Projectile/Bullet_Shotgun</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-        <damageDef>Bullet</damageDef>
-        <damageAmountBase>15</damageAmountBase>
-        <stoppingPower>3</stoppingPower>
-        <armorPenetrationBase>0.10</armorPenetrationBase>
-        <speed>70</speed>
-    </projectile>
-</ThingDef>
+  <ThingDef ParentName="BaseBullet">
+      <defName>DankPyon_Bullet_Handgonne</defName>
+      <label>handgonne blast</label>
+      <graphicData>
+          <texPath>Things/Projectile/Bullet_Small</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <projectile>
+          <damageDef>Bullet</damageDef>
+          <damageAmountBase>15</damageAmountBase>
+          <stoppingPower>3</stoppingPower>
+          <armorPenetrationBase>0.10</armorPenetrationBase>
+          <speed>70</speed>
+      </projectile>
+  </ThingDef>
   
+  <ThingDef ParentName="BaseMakeableGun">
+    <defName>DankPyon_Arquebus</defName>
+    <label>arquebus</label>
+    <description>With a longer barrel than more primitive firearms, the arquebus strikes farther and bites deeper, capable of piercing armor where arrows falter. Though slower to reload and still prone to misfire, its shoulder stock and trigger grant steadier aim, letting disciplined volleys break even the strongest charge.</description>
+    <graphicData>
+        <texPath>Things/Item/Equipment/WeaponRanged/Arquebus</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(1.17,1.17)</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <costList>
+        <WoodLog>20</WoodLog>
+        <DankPyon_IronIngot>65</DankPyon_IronIngot>
+    </costList>
+    <statBases>
+        <WorkToMake>16000</WorkToMake>
+        <Mass>5</Mass>
+        <AccuracyTouch>0.86</AccuracyTouch>
+        <AccuracyShort>0.9</AccuracyShort>
+        <AccuracyMedium>0.76</AccuracyMedium>
+        <AccuracyLong>0.54</AccuracyLong>
+        <RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+        <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <weaponTags>
+        <li>DankPyon_Arquebus</li>
+    </weaponTags>
+    <weaponClasses>
+        <li>LongShots</li>
+    </weaponClasses>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+          <li>DankPyon_Workbench</li>
+      </recipeUsers>
+      <researchPrerequisites>
+        <li>DankPyon_Arquebus</li>
+      </researchPrerequisites>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <skillRequirements>
+          <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DankPyon_Bullet_Arquebus</defaultProjectile>
+        <warmupTime>1.35</warmupTime>
+        <range>28.9</range>
+        <soundCast>Shot_Shotgun</soundCast>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+        <li>
+            <label>stock</label>
+            <capacities>
+            <li>Blunt</li>
+            </capacities>
+            <power>9</power>
+            <cooldownTime>2</cooldownTime>
+        </li>
+        <li>
+            <label>barrel</label>
+            <capacities>
+            <li>Blunt</li>
+            <li>Poke</li>
+            </capacities>
+            <power>9</power>
+            <cooldownTime>2</cooldownTime>
+        </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+      <defName>DankPyon_Bullet_Arquebus</defName>
+      <label>handgonne blast</label>
+      <graphicData>
+          <texPath>Things/Projectile/Bullet_Big</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <projectile>
+          <damageDef>Bullet</damageDef>
+          <damageAmountBase>24</damageAmountBase>
+          <stoppingPower>3</stoppingPower>
+          <armorPenetrationBase>0.30</armorPenetrationBase>
+          <speed>70</speed>
+      </projectile>
+  </ThingDef>
+
 </Defs>

@@ -236,7 +236,7 @@
 		<baseCost>600</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
-		<researchViewX>9</researchViewX>
+		<researchViewX>10</researchViewX>
 		<researchViewY>5.4</researchViewY>
 		<prerequisites>
 			<li>Smithing</li>
@@ -335,7 +335,7 @@
 		<baseCost>400</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
-		<researchViewX>9</researchViewX>
+		<researchViewX>10</researchViewX>
 		<researchViewY>4.8</researchViewY>
 		<prerequisites>
 			<li>Smithing</li>
@@ -359,7 +359,7 @@
 		<baseCost>700</baseCost>
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
-		<researchViewX>10</researchViewX>
+		<researchViewX>11</researchViewX>
 		<researchViewY>5.4</researchViewY>
 		<prerequisites>
 			<li>DankPyon_Crossbow</li>
@@ -518,7 +518,7 @@
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>7.00</researchViewX>
-		<researchViewY>5.40</researchViewY>
+		<researchViewY>4.80</researchViewY>
 		<prerequisites>
 			<li>DankPyon_Alchemy</li>
 		</prerequisites>
@@ -542,7 +542,7 @@
 		<tab>DankPyon_MedievalResearchTab</tab>
 		<techLevel>Medieval</techLevel>
 		<researchViewX>7.00</researchViewX>
-		<researchViewY>4.80</researchViewY>
+		<researchViewY>5.40</researchViewY>
 		<prerequisites>
 			<li>DankPyon_Alchemy</li>
 		</prerequisites>
@@ -557,6 +557,32 @@
 			</li>
 		</modExtensions>
 	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>DankPyon_Arquebus</defName>
+		<label>arquebus</label>
+		<description>Learn how to craft more effective gunpowder weapons.</description>
+		<baseCost>1000</baseCost>
+		<tab>DankPyon_MedievalResearchTab</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>5.40</researchViewY>
+		<prerequisites>
+			<li>DankPyon_Gunpowder</li>
+			<li>Smithing</li>
+		</prerequisites>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->arquebus</li>
+			</rulesStrings>
+		</generalRules>
+		<modExtensions>
+			<li Class="MedievalOverhaul.RequiredSchematic">
+				<schematicDef>DankPyon_Schematic_Arquebus</schematicDef>
+			</li>
+		</modExtensions>
+	</ResearchProjectDef>
+
 
 	<!--=========================== Alcoholics ==============================-->
 	<!--ResearchProjectDef>                                                           <==== IS IN Change_research.xml PATCHES
