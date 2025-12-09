@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!--Adds anvils to MedProstheics-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="BodyPartMedMechanicalBase"]/recipeMaker/recipeUsers</xpath>
+        <value>
+            <li>DankPyon_Anvil</li>
+        </value>
+    </Operation> 
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="BodyPartMedAmbroisenBase"]/recipeMaker/recipeUsers</xpath>
+        <value>
+            <li>DankPyon_Anvil</li>
+        </value>
+    </Operation>
+
+    <!--Research Related Patches/Changes-->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="CrudeLimbs"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>Defs/ResearchProjectDef[defName="CrudeLimbs"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchTabDef[defName="MedPros"]</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>Defs/ResearchTabDef[defName="MedPros"]</xpath>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="ArtificialLimbs"]</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName="ArtificialLimbs"]</xpath>
+            <value>
+	            <ResearchProjectDef>
+                    <defName>ArtificialLimbs</defName>
+                    <label>Artificial Limbs</label>
+                    <description>Still quite unrefined, but better than the shoddy limbs that came before. Artificial limbs can now be crafted at a Crafting Spot.</description>
+                    <baseCost>500</baseCost>
+                    <techLevel>Neolithic</techLevel>
+                    <tags>
+                        <li>ClassicStart</li>
+                    </tags>
+                    <tab>DankPyon_MedievalResearchTab</tab>
+                    <researchViewX>12</researchViewX>
+                    <researchViewY>1.2</researchViewY>
+            		<prerequisites>
+			            <li>DankPyon_Engineering</li>
+                    </prerequisites>
+	            </ResearchProjectDef>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="MechanicalLimbs"]</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName="MechanicalLimbs"]</xpath>
+            <value>
+	            <ResearchProjectDef>
+		            <defName>MechanicalLimbs</defName>
+		            <label>Mechanical Limbs</label>
+		            <description>Intricately crafted limbs with many pulleys and gears. While these are a great improvement, the mechanics of the human body are tough to reproduce. Mechanical limbs can be crafted at a Fueled Smithy.</description>
+		            <baseCost>1200</baseCost>
+		            <techLevel>Medieval</techLevel>
+		            <prerequisites>
+			            <li>ArtificialLimbs</li>
+		            </prerequisites>
+		            <tags>
+			            <li>ClassicStart</li>
+		            </tags>
+		            <tab>DankPyon_MedievalResearchTab</tab>
+		            <researchViewX>13</researchViewX>
+		            <researchViewY>1.2</researchViewY>
+	            </ResearchProjectDef>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ResearchProjectDef[defName="AmbroisenLimbs"]</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ResearchProjectDef[defName="AmbroisenLimbs"]</xpath>
+            <value>
+	            <ResearchProjectDef>
+		            <defName>AmbroisenLimbs</defName>
+		            <label>Paresian Limbs</label>
+		            <description>Incredible engineering and craftmanship utilized in tangent have allowed for elegant limbs that are on par with natural limbs. Quite time and resource expensive. Paresian limbs can be crafted at a Fueled Smithy.</description>
+		            <baseCost>2000</baseCost>
+		            <techLevel>Medieval</techLevel>
+		            <prerequisites>
+			            <li>MechanicalLimbs</li>
+		            </prerequisites>
+		            <tags>
+			            <li>ClassicStart</li>
+		            </tags>
+		            <tab>DankPyon_MedievalResearchTab</tab>
+		            <researchViewX>14</researchViewX>
+		            <researchViewY>1.2</researchViewY>
+	            </ResearchProjectDef>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>
