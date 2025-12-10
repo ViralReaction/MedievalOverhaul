@@ -5,14 +5,14 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[@Name="BodyPartMedMechanicalBase"]/recipeMaker/recipeUsers</xpath>
         <value>
-            <li>DankPyon_Anvil</li>
+            <li>DankPyon_Workbench</li>
         </value>
     </Operation> 
 
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[@Name="BodyPartMedAmbroisenBase"]/recipeMaker/recipeUsers</xpath>
         <value>
-            <li>DankPyon_Anvil</li>
+            <li>DankPyon_Workbench</li>
         </value>
     </Operation>
 
