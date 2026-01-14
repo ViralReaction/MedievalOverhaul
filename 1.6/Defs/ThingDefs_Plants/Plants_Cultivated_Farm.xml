@@ -168,7 +168,7 @@
 	<ThingDef ParentName="CavePlantBase">
 		<defName>DankPyon_Plant_Mushrooms</defName>
 		<label>mushrooms</label>
-		<description>Small button shaped fungus that are safe to digest, but are an acquired taste. It dies when exposed to light</description>
+		<description>Small button shaped fungus that are safe to digest, but are an acquired taste. It dies when exposed to light.</description>
 		<descriptionHyperlinks>
 			<ThingDef>RawFungus</ThingDef>
 		</descriptionHyperlinks>
