@@ -264,10 +264,20 @@
 					</match>
 				</li>
 
+				<!-- <li class="patchoperationconditional"> -->
+				<!-- <xpath>defs/thingdef[not(stuffprops/categories/li[.="woody"])]/stuffprops/categories/li[.="dankpyon_rawwood"]</xpath> -->
+				<!-- <match class="patchoperationreplace"> -->
+				<!-- <xpath>defs/thingdef[not(stuffprops/categories/li[.="woody"])]/stuffprops/categories/li[.="dankpyon_rawwood"]</xpath> -->
+				<!-- <value> -->
+				<!-- <li>woody</li> -->
+				<!-- </value> -->
+				<!-- </match> -->
+				<!-- </li> -->
+				
 				<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[not(stuffProps/categories/li[.="Woody"])]/stuffProps/categories/li[.="DankPyon_RawWood"]</xpath>
+					<xpath>Defs/ThingDef[not(stuffProps/categories/li[.="Woody"]) and not(defName="DankPyon_RawWood")]/stuffProps/categories/li[.="DankPyon_RawWood"]</xpath>
 					<match Class="PatchOperationReplace">
-						<xpath>Defs/ThingDef[not(stuffProps/categories/li[.="Woody"])]/stuffProps/categories/li[.="DankPyon_RawWood"]</xpath>
+						<xpath>Defs/ThingDef[not(stuffProps/categories/li[.="Woody"]) and not(defName="DankPyon_RawWood")]/stuffProps/categories/li[.="DankPyon_RawWood"]</xpath>
 						<value>
 							<li>Woody</li>
 						</value>

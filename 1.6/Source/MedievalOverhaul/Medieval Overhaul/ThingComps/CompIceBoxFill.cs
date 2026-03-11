@@ -34,8 +34,8 @@ namespace MedievalOverhaul
         public override void CompTickRare()
         {
             if (_compProcessor.SpaceLeft == 0) return;
-            if (_map.weatherManager.RainRate == 0 && _map.weatherManager.SnowRate == 0) return;
-            if (!_parent.IsOutside() || _parent.Position.Roofed(_map)) return;
+                if (_map.weatherManager.RainRate == 0 && _map.weatherManager.SnowRate == 0) return;
+                if (!_parent.IsOutside() || _parent.Position.Roofed(_map)) return;
 
 
             float rainRate = _map.weatherManager.RainRate;

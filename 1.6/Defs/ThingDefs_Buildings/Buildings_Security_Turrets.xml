@@ -404,7 +404,6 @@
 			<turretTopDrawSize>6</turretTopDrawSize>
 			<turretTopOffset>(0, -1)</turretTopOffset>
 			<buildingTags>
-				<li>Artillery</li>
 				<li>ArtilleryMedieval</li>
 				<li>ArtilleryMedieval_BaseDestroyer</li>
 			</buildingTags>
@@ -447,7 +446,6 @@
 			<blueprintClass>Blueprint_Build</blueprintClass>
 			<turretGunDef>DankPyon_Artillery_Trebuchet</turretGunDef>
 			<buildingTags>
-				<li>Artillery_BaseDestroyer</li>
 				<li>ArtilleryMedieval</li>
 				<li>ArtilleryMedieval_BaseDestroyer</li>
 			</buildingTags>

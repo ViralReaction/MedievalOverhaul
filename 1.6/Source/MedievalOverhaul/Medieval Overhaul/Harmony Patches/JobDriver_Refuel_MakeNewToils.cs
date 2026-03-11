@@ -26,6 +26,5 @@ namespace MedievalOverhaul.Patches
                 yield return toil;
             }
         }
-
     }
 }

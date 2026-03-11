@@ -46,14 +46,13 @@ namespace MedievalOverhaul
                     {
                         if (TimberUtility.WoodDefsSeen.ContainsKey(product))
                         {
-                            double productCount = butcherProduct.count / 2;
-                            int productNum = (int)Math.Round(productCount);
+                            int productCount = butcherProduct.count / 2;
                             animal.butcherProducts = new List<ThingDefCountClass>
                         {
                             new ThingDefCountClass
                             {
                                 thingDef = product,
-                                count = productNum
+                                count = productCount
                             }
                         };
 
