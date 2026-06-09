@@ -9,12 +9,14 @@
 		<minifiedDef IsNull="True" />
 		<graphicData>
 			<texPath>Things/Plants/FullGrown/GreatOak</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
+			<graphicClass>TransparentThings.Graphic_TransparentThing</graphicClass>
+			<drawSize>(10,10)</drawSize>
 			<shadowData>
 				<volume>(0.55, 0.2, 0.2)</volume>
 				<offset>(0,0,-0.25)</offset>
 			</shadowData>
 		</graphicData>
+		<drawerType>RealtimeOnly</drawerType>
 		<altitudeLayer>Skyfaller</altitudeLayer>
 		<statBases>
 			<Beauty>15</Beauty>
@@ -56,21 +58,7 @@
 				<!-- <notToxicFallout>false</notToxicFallout> -->
 			</li>
 		</comps>
-
 		<modExtensions>
-			<li Class="TransparentThings.ThingExtension">
-				<transparentWhenPawnIsInsideArea>true</transparentWhenPawnIsInsideArea>
-				<transparentWhenItemIsInsideArea>true</transparentWhenItemIsInsideArea>
-				<firstAreaOffset>(-1, 0)</firstAreaOffset>
-				<firstArea>(3, 7)</firstArea>
-				<secondArea>(11, 4)</secondArea>
-				<secondAreaOffset>(-5, 7)</secondAreaOffset>
-				<ignoredThings>
-					<li>ChunkMarble</li>
-					<li>ChunkGranite</li>
-					<li>ChunkSandstone</li>
-				</ignoredThings>
-			</li>
 			<li Class="MedievalOverhaul.SecondaryPlantDropExtension">
 				<secondaryDrop>DankPyon_Amber</secondaryDrop>
 				<secondaryDropAmountRange>10</secondaryDropAmountRange>
@@ -88,12 +76,14 @@
 		<minifiedDef IsNull="True" />
 		<graphicData>
 			<texPath>Things/Plants/FullGrown/GreatIter</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
+			<graphicClass>TransparentThings.Graphic_TransparentThing</graphicClass>
+			<drawSize>(10,10)</drawSize>
 			<shadowData>
 				<volume>(0.55, 0.2, 0.2)</volume>
 				<offset>(0,0,-0.25)</offset>
 			</shadowData>
 		</graphicData>
+		<drawerType>RealtimeOnly</drawerType>
 		<altitudeLayer>Pawn</altitudeLayer>
 		<statBases>
 			<Beauty>10</Beauty>
@@ -137,19 +127,6 @@
 		</comps>
 
 		<modExtensions>
-			<li Class="TransparentThings.ThingExtension">
-				<transparentWhenPawnIsInsideArea>true</transparentWhenPawnIsInsideArea>
-				<transparentWhenItemIsInsideArea>true</transparentWhenItemIsInsideArea>
-				<firstAreaOffset>(-3, 0)</firstAreaOffset>
-				<firstArea>(7, 6)</firstArea>
-				<secondArea>(6, 5)</secondArea>
-				<secondAreaOffset>(-2, 6)</secondAreaOffset>
-				<ignoredThings>
-					<li>ChunkMarble</li>
-					<li>ChunkGranite</li>
-					<li>ChunkSandstone</li>
-				</ignoredThings>
-			</li>
 			<li Class="MedievalOverhaul.SecondaryPlantDropExtension">
 				<secondaryDrop>DankPyon_Amber</secondaryDrop>
 				<secondaryDropAmountRange>10</secondaryDropAmountRange>
@@ -166,8 +143,10 @@
 		<minifiedDef IsNull="True" />
 		<graphicData>
 			<texPath>Things/Plants/FullGrown/GreatFir</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
+			<graphicClass>TransparentThings.Graphic_TransparentThing</graphicClass>
+			<drawSize>(10,10)</drawSize>
 		</graphicData>
+		<drawerType>RealtimeOnly</drawerType>
 		<altitudeLayer>Pawn</altitudeLayer>
 		<statBases>
 			<Beauty>4</Beauty>
@@ -186,20 +165,6 @@
 		</plant>
 
 		<modExtensions>
-			<li Class="TransparentThings.ThingExtension">
-				<transparentWhenPawnIsInsideArea>true</transparentWhenPawnIsInsideArea>
-				<transparentWhenItemIsInsideArea>true</transparentWhenItemIsInsideArea>
-				<firstAreaOffset>(-1, 0)</firstAreaOffset>
-				<firstArea>(3, 3)</firstArea>
-				<secondAreaOffset>(0, 3)</secondAreaOffset>
-				<secondArea>(1, 2)</secondArea>
-				<ignoredThings>
-					<li>ChunkMarble</li>
-					<li>ChunkGranite</li>
-					<li>ChunkSandstone</li>
-					<li>ChunkLimestone</li>
-				</ignoredThings>
-			</li>
 			<li Class="MedievalOverhaul.SecondaryPlantDropExtension">
 				<secondaryDrop>DankPyon_Amber</secondaryDrop>
 				<secondaryDropAmountRange>2</secondaryDropAmountRange>
@@ -217,7 +182,8 @@
 		<minifiedDef IsNull="True" />
 		<graphicData>
 			<texPath>Things/Plants/FullGrown/GreatWillow</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
+			<graphicClass>TransparentThings.Graphic_TransparentThing</graphicClass>
+			<drawSize>(10,10)</drawSize>
 			<shadowData>
 				<volume>(0.2, 0.3, 0.13)</volume>
 				<offset>(0,0,-0.44)</offset>
@@ -227,6 +193,7 @@
 				<_FallTransitionRange>(0.02, 0.14)</_FallTransitionRange>
 			</shaderParameters>
 		</graphicData>
+		<drawerType>RealtimeOnly</drawerType>
 		<statBases>
 			<Beauty>15</Beauty>
 		</statBases>
@@ -263,20 +230,6 @@
 		</comps>
 
 		<modExtensions>
-			<li Class="TransparentThings.ThingExtension">
-				<transparentWhenPawnIsInsideArea>true</transparentWhenPawnIsInsideArea>
-				<transparentWhenItemIsInsideArea>true</transparentWhenItemIsInsideArea>
-				<firstAreaOffset>(-1, 0)</firstAreaOffset>
-				<firstArea>(3, 3)</firstArea>
-				<secondAreaOffset>(0, 3)</secondAreaOffset>
-				<secondArea>(1, 2)</secondArea>
-				<ignoredThings>
-					<li>ChunkMarble</li>
-					<li>ChunkGranite</li>
-					<li>ChunkSandstone</li>
-					<li>ChunkLimestone</li>
-				</ignoredThings>
-			</li>
 			<li Class="MedievalOverhaul.SecondaryPlantDropExtension">
 				<secondaryDrop>DankPyon_Amber</secondaryDrop>
 				<secondaryDropAmountRange>2</secondaryDropAmountRange>

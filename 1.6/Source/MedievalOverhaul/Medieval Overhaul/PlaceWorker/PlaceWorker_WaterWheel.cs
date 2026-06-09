@@ -9,7 +9,7 @@ namespace MedievalOverhaul
     {
         public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot, Map map, Thing thingToIgnore = null, Thing thing = null)
         {
-            foreach (IntVec3 c in CompPower_WaterWheel.GroundCells(loc, rot))
+            foreach (IntVec3 c in CompPowerWaterWheel.GroundCells(loc, rot))
             {
                 if (!map.terrainGrid.TerrainAt(c).affordances.Contains(TerrainAffordanceDefOf.Heavy))
                 {
@@ -25,7 +25,7 @@ namespace MedievalOverhaul
 
         private bool WaterCellsPresent(IntVec3 loc, Rot4 rot, Map map)
         {
-            foreach (IntVec3 c in CompPower_WaterWheel.WaterCells(loc, rot))
+            foreach (IntVec3 c in CompPowerWaterWheel.WaterCells(loc, rot))
             {
                 if (!c.InBounds(map) || !map.terrainGrid.TerrainAt(c).affordances.Contains(TerrainAffordanceDefOf.MovingFluid))
                 {
