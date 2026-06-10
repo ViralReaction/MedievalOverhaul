@@ -11,7 +11,7 @@
 			<texPath>Things/Plants/FullGrown/GreatOak</texPath>
 			<graphicClass>TransparentThings.Graphic_TransparentThing</graphicClass>
 			<drawSize>(10,10)</drawSize>
-			<drawOffset>(0,0,2.25)</drawOffset>
+			<drawOffset>(0,0,4.5)</drawOffset>
 			<shadowData>
 				<volume>(0.55, 0.2, 0.2)</volume>
 				<offset>(0,0,-0.25)</offset>
@@ -79,7 +79,7 @@
 			<texPath>Things/Plants/FullGrown/GreatIter</texPath>
 			<graphicClass>TransparentThings.Graphic_TransparentThing</graphicClass>
 			<drawSize>(10,10)</drawSize>
-			<drawOffset>(0,0,2.25)</drawOffset>
+			<drawOffset>(0,0,4.5)</drawOffset>
 			<shadowData>
 				<volume>(0.55, 0.2, 0.2)</volume>
 				<offset>(0,0,-0.25)</offset>
@@ -147,7 +147,7 @@
 			<texPath>Things/Plants/FullGrown/GreatFir</texPath>
 			<graphicClass>TransparentThings.Graphic_TransparentThing</graphicClass>
 			<drawSize>(10,10)</drawSize>
-			<drawOffset>(0,0,2.25)</drawOffset>
+			<drawOffset>(0,0,4.5)</drawOffset>
 		</graphicData>
 		<drawerType>RealtimeOnly</drawerType>
 		<altitudeLayer>Pawn</altitudeLayer>
@@ -187,7 +187,7 @@
 			<texPath>Things/Plants/FullGrown/GreatWillow</texPath>
 			<graphicClass>TransparentThings.Graphic_TransparentThing</graphicClass>
 			<drawSize>(10,10)</drawSize>
-			<drawOffset>(0,0,2.25)</drawOffset>
+			<drawOffset>(0,0,4.5)</drawOffset>
 			<shadowData>
 				<volume>(0.2, 0.3, 0.13)</volume>
 				<offset>(0,0,-0.44)</offset>
