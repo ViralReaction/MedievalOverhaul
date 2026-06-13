@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DankPyon_Alp</defName>
-		<label>Alp</label>
+		<label>alp</label>
 		<description>A pale creature of the night, Alps invade the dreams of nearby creatures, trapping them in a nightmare and feeding on their negative emotions. Victims often report extreme signs of distress upon waking, and most travelers will not stay at a settlement without some kind of night watch due to the intense experiences often reported. Despite this, Alps tend to be easy prey with their frail bones, parchment-like skin, and decaying insides. Scholars remain unsure about the origins of these creatures, though some theorize an ancient curse may be responsible.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
@@ -170,7 +170,7 @@
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>DankPyon_Alp</defName>
-		<label>Alp</label>
+		<label>alp</label>
 		<labelPlural>Ghouls</labelPlural>
 		<race>DankPyon_Alp</race>
 		<combatPower>120</combatPower>

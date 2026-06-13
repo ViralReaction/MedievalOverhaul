@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="BaseInsect">
 		<defName>DankPyon_Webknecht</defName>
-		<label>Webknecht</label>
+		<label>webknecht</label>
 		<description>The Webknecht is a large arachnid that lives in sizable colonies in the dark areas of forests throughout the world of Battle Brothers. It’s there that they spin their webs between trees to trap anything from bird to deer and between.</description>
 		<statBases>
 			<MoveSpeed>5.2</MoveSpeed>
@@ -100,6 +100,7 @@
 		<race>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<predator>true</predator>
+			<maxPreyBodySize>1.80</maxPreyBodySize>			
 			<body>DankPyon_WebknechtBody</body>
 			<herdAnimal>true</herdAnimal>
 			<baseBodySize>1</baseBodySize>
@@ -167,7 +168,7 @@
     <PawnKindDef ParentName="AnimalKindBase">
 		<defName>DankPyon_Webknecht</defName>
 		<race>DankPyon_Webknecht</race>
-		<label>Webknecht</label>
+		<label>webknecht</label>
 		<combatPower>180</combatPower>
 		<ecoSystemWeight>0.2</ecoSystemWeight>
 		<wildGroupSize>

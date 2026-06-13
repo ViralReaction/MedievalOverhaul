@@ -4,7 +4,7 @@
 	<!-- =========================The Big Bad============================= -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DankPyon_Daer</defName>
-		<label>Daer</label>
+		<label>daer</label>
 		<description>A fabled legend amongst commonfolk, a gigantic deer with with a body of a bear... or was it a bear with the horns of the deer, nevertheless, its maws does not discriminate for when the beast hungers for prey.\n\nA daer's caracass contain majestic antlers that can be recovered by butchering, as well as providing meat that gives a mood bonus.</description>
 		<statBases>
 			<MoveSpeed>5.6</MoveSpeed>
@@ -138,7 +138,7 @@
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>DankPyon_Daer</defName>
-		<label>Daer</label>
+		<label>daer</label>
 		<race>DankPyon_Daer</race>
 		<combatPower>600</combatPower>
 		<ecoSystemWeight>1</ecoSystemWeight>

@@ -4,7 +4,7 @@
 	<!-- =========================The Big Bad============================= -->
 	<ThingDef ParentName="AnimalThingBase" Name="DankPyon_LargeCobraBase">
 		<defName>DankPyon_LargeCobraForest</defName>
-		<label>large cobra</label>
+		<label>large forest cobra</label>
 		<description>Larger than their cousins and more resilient, large cobras prove to be deadlier and more agressive when it hunts for its pray. Their bite injects toxic venom into the victim.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
@@ -139,7 +139,7 @@
 
 	<ThingDef ParentName="DankPyon_LargeCobraBase">
 		<defName>DankPyon_LargeCobraCave</defName>
-		<label>large cobra</label>
+		<label>large cave cobra</label>
 		<description>A venomous snake with a hood along its head that it rears when threatened. This giant creature dwells in caves and will not hesitate to protect its territory.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
@@ -212,7 +212,7 @@
 
 	<ThingDef ParentName="AnimalThingBase" Name="DankPyon_GiantConstrictorBase">
 		<defName>DankPyon_GiantConstrictorForest</defName>
-		<label>giant constrictor</label>
+		<label>giant forest constrictor</label>
 		<description>A primadorial snake, gigantic in size and old as the forlorn trees.</description>
 		<statBases>
 			<MoveSpeed>5.2</MoveSpeed>
@@ -257,7 +257,7 @@
 			<body>Snake</body>
 			<leatherDef>Leather_Rhinoceros</leatherDef><!-- Rhino is turned into heavy scale leather -->
 			<predator>true</predator>
-			<maxPreyBodySize>0.80</maxPreyBodySize>
+			<maxPreyBodySize>3</maxPreyBodySize>
 			<baseBodySize>3.55</baseBodySize>
 			<baseHungerRate>0.5</baseHungerRate>
 			<baseHealthScale>6.5</baseHealthScale>
@@ -579,15 +579,15 @@
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>DankPyon_LindwurmForest</defName>
-		<label>lindwurm</label>
+		<label>forest lindwurm</label>
 		<race>DankPyon_LindwurmForest</race>
 		<combatPower>700</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
 			<li>
-				<label>lindwurm hatchling</label>
-				<labelPlural>lindwurm hatchlings</labelPlural>
+				<label>forest lindwurm hatchling</label>
+				<labelPlural>forest lindwurm hatchlings</labelPlural>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/LindwurmForest</texPath>
 					<drawSize>2.5</drawSize>
@@ -657,7 +657,7 @@
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>DankPyon_LindwurmCave</defName>
-		<label>lindwurm</label>
+		<label>cave lindwurm</label>
 		<race>DankPyon_LindwurmCave</race>
 		<defaultFactionType>DankPyon_SnakeCave_Faction</defaultFactionType>
 		<combatPower>700</combatPower>
@@ -665,8 +665,8 @@
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
 			<li>
-				<label>lindwurm hatchling</label>
-				<labelPlural>lindwurm hatchlings</labelPlural>
+				<label>cave lindwurm hatchling</label>
+				<labelPlural>cave lindwurm hatchlings</labelPlural>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/LindwurmCave</texPath>
 					<drawSize>2.5</drawSize>

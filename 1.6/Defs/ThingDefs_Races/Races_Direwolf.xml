@@ -4,7 +4,7 @@
 	<!-- ========================== Warg ================================= -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>DankPyon_Direwolf</defName>
-		<label>Direwolf</label>
+		<label>direwolf</label>
 		<description>A subspecies of the great wolf, hardened by the relentless frosts of the north. Aggressive and resolute, they hunt in well-coordinated packs. In the olden days direwolves preferred domains of cold. Lack of prey during extremely hostile winters forced them to migrate to warmer regions, where they descend upon caravans and small settlements.</description>
 		<statBases>
 			<MoveSpeed>5.2</MoveSpeed>
@@ -144,7 +144,7 @@
   
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>DankPyon_Direwolf</defName>
-		<label>Direwolf</label>
+		<label>direwolf</label>
 		<race>DankPyon_Direwolf</race>
 		<combatPower>160</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
