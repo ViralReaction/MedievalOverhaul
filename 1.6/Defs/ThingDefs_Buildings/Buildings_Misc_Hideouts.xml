@@ -276,6 +276,10 @@ Requirements:
 		<building>
 			<paintable>false</paintable>
 		</building>
+		<researchPrerequisites>
+			<li>DankPyon_Exploration</li>
+		</researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
 	</ThingDef>
 		
 	<ThingDef ParentName="DankPyon_QuestLinkables">
@@ -315,6 +319,10 @@ Requirements:
 			<glowColor>(195,200,9,0)</glowColor>
 			</li>
 		</comps>
+		<researchPrerequisites>
+			<li>DankPyon_Exploration</li>
+		</researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
 	</ThingDef>
 
 	<ThingDef ParentName="DankPyon_ShelfBase">
@@ -353,7 +361,7 @@ Requirements:
 			<WorkToBuild>500</WorkToBuild>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
 		</statBases>
-		<designationCategory Inherit="False"/>
+		<designationCategory>DankPyon_RusticStorage</designationCategory>
 		<costStuffCount>200</costStuffCount>
 		<building>
 			<maxItemsInCell>1</maxItemsInCell>
@@ -380,5 +388,10 @@ Requirements:
 				<maxSimultaneous>8</maxSimultaneous>
 			</li>
 		</comps>
+		<researchPrerequisites>
+			<li>DankPyon_Exploration</li>
+			<li>DankPyon_RusticStorage</li>
+		</researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
 	</ThingDef>
 </Defs>
