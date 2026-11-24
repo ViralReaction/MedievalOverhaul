@@ -59,6 +59,7 @@
 		<li IfModActive="seohyeon.optimizationmeats">1.6/Mods/OptimizationMeats</li>
 		<li IfModActive="wexman.mines">1.6/Mods/Mines</li>
 		<li IfModActive="owlchemist.giddyup">1.6/Mods/GiddyUp2</li>
+		<li IfModActive="memegoddess.giddyup">1.6/Mods/GiddyUp2</li>
 		<li IfModActive="ReBuild.COTR.DoorsAndCorners">1.6/Mods/ReBuildDoorsAndCorners</li>
 		<li IfModActive="rimedieval.ice.revamped">1.6/Mods/Rimedieval_Ice</li>
 		<li IfModActive="vanillaexpanded.outposts">1.6/Mods/VanillaExpandedOutposts</li>
